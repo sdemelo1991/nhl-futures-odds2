@@ -41,7 +41,8 @@ BOOKS = {
         ],
         "match": ["sportscontent"],
         "settle": 7.0,
-        "out": "dk.har",  # draftkings.py globs dk*.har
+        "out": "dk.har",       # draftkings.py globs dk*.har
+        "crawl_links": "category=futures",  # follow every futures tab link on the page
     },
     # The rest are now DIRECT-fetch (see their <book>.py) — kept here only as a
     # browser fallback if a direct call ever gets gated.
@@ -60,6 +61,7 @@ def capture(book, urls, headed):
 
     cfg = BOOKS[book]
     match = cfg["match"]
+    link_match = cfg.get("crawl_links")
     entries, seen = [], set()
 
     with sync_playwright() as p:
@@ -87,7 +89,12 @@ def capture(book, urls, headed):
             print(f"    + {len(body):>8,}B  {u[:90]}")
 
         page.on("response", on_response)
-        for url in urls:
+        queue, visited = list(urls), set()
+        while queue and len(visited) < 30:
+            url = queue.pop(0)
+            if url in visited:
+                continue
+            visited.add(url)
             print(f"  navigating: {url}")
             try:
                 page.goto(url, wait_until="domcontentloaded", timeout=60000)
@@ -102,6 +109,15 @@ def capture(book, urls, headed):
                 page.mouse.wheel(0, 4000)
                 time.sleep(1.0)
             time.sleep(cfg.get("settle", 5.0))
+            if link_match:  # discover sibling futures tabs from the page's own links
+                try:
+                    hrefs = page.eval_on_selector_all(
+                        f'a[href*="{link_match}"]', "els => els.map(e => e.href)")
+                except Exception:  # noqa: BLE001
+                    hrefs = []
+                for h in hrefs:
+                    if link_match in h and h not in visited and h not in queue:
+                        queue.append(h)
         browser.close()
 
     return entries
