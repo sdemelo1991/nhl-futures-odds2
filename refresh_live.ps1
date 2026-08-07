@@ -9,7 +9,7 @@ Set-Location $PSScriptRoot
 $ts  = Get-Date -Format "yyyy-MM-dd HH:mm"
 $log = "$PSScriptRoot\live_refresh.log"
 
-foreach ($b in @("pinnacle", "fanduel", "kalshi", "kambi", "dazn", "betmgm")) {
+foreach ($b in @("pinnacle", "fanduel", "kalshi", "kambi", "dazn", "betmgm", "betano")) {
     python "scrapers\$b.py" --write | Out-Null
 }
 python scrapers\dedupe_players.py --write | Out-Null
