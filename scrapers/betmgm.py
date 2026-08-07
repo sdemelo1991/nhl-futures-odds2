@@ -39,11 +39,20 @@ WIDGET_URLS = [
     _WIDGET_BASE + "&widgetId=/mobilesports-v1.0/layout/layout_us/modules/topevents-new/"
                    "nhl/nhl-dailyprops/nhl-dailyprops&useAggregateMatchList=true&shouldIncludePayload=true",
 ]
+_NHL_PAGE = "https://www.on.betmgm.ca/en/sports/hockey-12/betting/usa-9/nhl-34"
 _HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
-    "Accept": "application/json",
-    "Referer": "https://www.on.betmgm.ca/en/sports/hockey-12/nhl-34",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": _NHL_PAGE,
+    # These bwin/Entain headers are what make the widget return its payload;
+    # without Sports-Api-Version the endpoint answers 200 with an empty shell.
+    "Sports-Api-Version": "SportsAPIv2",
+    "X-Bwin-Sports-Api": "prod",
+    "X-From-Product": "host-app",
+    "X-Device-Type": "desktop_Windows 11",
+    "X-Bwin-Browser-Url": _NHL_PAGE,
     "X-Requested-With": "XMLHttpRequest",
 }
 
@@ -69,9 +78,13 @@ def fetch_direct():
         try:
             obj = r.json()
         except ValueError:
+            print(f"  non-JSON response ({len(r.content):,}B)")
             continue
         if isinstance(obj, dict) and obj.get("widgets") is not None:
             out.append(obj)
+        else:
+            keys = list(obj.keys())[:10] if isinstance(obj, dict) else type(obj).__name__
+            print(f"  200 but no 'widgets'; top keys={keys}")
     return out
 
 try:
