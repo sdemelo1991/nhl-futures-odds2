@@ -188,9 +188,12 @@ table.cmp {{ width:100%; border-collapse:collapse; font-size:.85rem; font-varian
 [class*="st-key-oddsfmt"] {{ margin-top:2.4rem; }}
 /* big section nav — custom button bar (proven .stButton selector) */
 .st-key-secnav {{ margin:8px 0 6px 0; }}
-.st-key-secnav .stButton>button {{ font-size:1.6rem !important; font-weight:800 !important;
-  padding:18px 8px !important; height:auto !important; border-radius:13px !important;
-  letter-spacing:-.4px; white-space:nowrap; }}
+.st-key-secnav .stButton>button {{ font-size:2.0rem !important; font-weight:800 !important;
+  padding:20px 10px !important; height:auto !important; border-radius:13px !important;
+  letter-spacing:-.3px; white-space:nowrap; }}
+/* search result list — left-aligned name buttons */
+[class*="st-key-searchresults"] button {{ justify-content:flex-start !important;
+  text-align:left !important; font-weight:600 !important; }}
 .st-key-secnav .stButton>button[kind="primary"] {{ background:var(--accent) !important;
   color:#fff !important; border-color:var(--accent) !important; }}
 .st-key-secnav .stButton>button[kind="secondary"] {{ background:var(--card) !important;
@@ -629,6 +632,8 @@ def kpi_row(k, fd_arb_n=0, fd_mid_n=0):
                      "& Player Props. The book we manage; monitor it closest.")
     if clicked:
         st.session_state["nav_section"] = "FD Desk"
+        st.session_state.pop("search_pick", None)
+        st.session_state["search_q"] = ""  # FD Desk overrides any active search
         st.rerun()
 
 
@@ -1249,23 +1254,14 @@ def render_player_view(data, player, sharp_cols, nonsharp_cols):
         st.info(f"No markets found for {player} yet.")
 
 
-def render_search(data, sharp_cols, nonsharp_cols):
-    st.markdown("<div class='legend'>Type a team or player — e.g. “Toronto” or “McDavid” — for a "
-                "one-stop snapshot of every market they're listed in.</div>", unsafe_allow_html=True)
-    opts = {}
-    for t in sorted(t for t in TEAMS if _team_has_any(data, t)):
-        opts[f"{t}  —  Team"] = ("team", t)
-    for p in sorted(_all_players(data)):
-        opts[f"{p}  —  Player"] = ("player", p)
-    sel = st.selectbox("Search", list(opts), index=None, key="search_sel",
-                       placeholder="Search a team or player name…", label_visibility="collapsed")
-    if not sel:
-        return
-    kind, name = opts[sel]
-    if kind == "team":
-        render_team_view(data, name, sharp_cols, nonsharp_cols)
-    else:
-        render_player_view(data, name, sharp_cols, nonsharp_cols)
+def _search_matches(data, qn):
+    """Teams + players matching query `qn` (substring), starts-with first."""
+    ml = qn.lower()
+    opts = [(t, "team") for t in sorted(TEAMS) if _team_has_any(data, t)] + \
+           [(p, "player") for p in sorted(_all_players(data))]
+    starts = [o for o in opts if o[0].lower().startswith(ml)]
+    contains = [o for o in opts if ml in o[0].lower() and not o[0].lower().startswith(ml)]
+    return starts + contains
 
 
 # --------------------------------------------------------------------------- main
@@ -1283,8 +1279,8 @@ def main():
             st.cache_data.clear()
             st.rerun()
 
-    hc = st.columns([5, 1])
-    with hc[1]:
+    hc = st.columns([2.3, 2.7, 1.7])
+    with hc[2]:
         # Per-user, survives reload on the shared link: theme lives in each
         # browser's own URL (?theme=). session_state wins once toggled in-session.
         saved_theme = st.query_params.get("theme", "light")
@@ -1317,6 +1313,9 @@ def main():
             f"<div class='app-sub'>Cup · Conference · Division · Playoffs · Team Points · Awards "
             f"— {esc(meta.get('season','?'))} &nbsp;·&nbsp; updated {esc(meta.get('last_updated') or '—')}</div>",
             unsafe_allow_html=True)
+    with hc[1]:  # persistent search field — always in view, on every tab
+        st.text_input("Search", key="search_q", label_visibility="collapsed",
+                      placeholder="🔎  Search a team or player — press Enter")
     if meta.get("notes"):
         st.info(meta["notes"], icon="ℹ️")
 
@@ -1324,9 +1323,17 @@ def main():
     kpi_row(compute_kpis(data), len(fd_arbs), len(fd_mids))
 
     sharp_cols, nonsharp_cols = ordered(sharp_active + nonsharp_active)
-    # Custom button bar for the section nav — reliable sizing + dark-mode contrast
-    # (the native segmented_control ignored our CSS in this Streamlit build).
-    SECTIONS = ["Search", "To Win", "Playoffs", "Team Points", "Awards", "Player Props"]
+
+    # Persistent-search state: a chosen team/player takes over the content area
+    # while the field + nav stay in view. Query change invalidates the pick.
+    qn = (st.session_state.get("search_q") or "").strip()
+    pick = st.session_state.get("search_pick")
+    if pick and st.session_state.get("search_pick_q") != qn:
+        pick = None
+        st.session_state.pop("search_pick", None)
+
+    # Custom button bar for the section nav — reliable sizing + dark-mode contrast.
+    SECTIONS = ["To Win", "Playoffs", "Team Points", "Awards", "Player Props"]
     # FD Desk is reachable only via the top-right KPI tile, not the nav bar.
     if st.session_state.get("nav_section") not in SECTIONS + ["FD Desk"]:
         st.session_state["nav_section"] = "To Win"
@@ -1334,16 +1341,41 @@ def main():
     with nav:
         for col, name in zip(st.columns(len(SECTIONS)), SECTIONS):
             with col:
+                active = st.session_state["nav_section"] == name and not pick and not qn
                 if st.button(name, key=f"nav_{name}", use_container_width=True,
-                             type="primary" if st.session_state["nav_section"] == name else "secondary"):
+                             type="primary" if active else "secondary"):
                     st.session_state["nav_section"] = name
+                    st.session_state.pop("search_pick", None)
+                    st.session_state["search_q"] = ""  # leaving search when picking a tab
                     st.rerun()
     section = st.session_state["nav_section"]
     st.divider()
-    if section == "FD Desk":
+
+    if pick:  # isolated team/player snapshot (search result selected)
+        kind, name = pick
+        if st.button("✕  Clear search", key="srch_clear"):
+            st.session_state.pop("search_pick", None)
+            st.session_state["search_q"] = ""
+            st.rerun()
+        (render_team_view if kind == "team" else render_player_view)(
+            data, name, sharp_cols, nonsharp_cols)
+    elif qn:  # typing — show matching names (no dropdown until you type)
+        matches = _search_matches(data, qn)
+        if not matches:
+            st.caption(f"No team or player matches “{esc(qn)}”.")
+        else:
+            st.caption("Select a result:")
+            res = st.container(key="searchresults")
+            with res:
+                for nm, kind in matches[:12]:
+                    if st.button(nm, key=f"srch_{kind}_{nm}", use_container_width=True):
+                        st.session_state["search_pick"] = (kind, nm)
+                        st.session_state["search_pick_q"] = qn
+                        st.rerun()
+            if len(matches) > 12:
+                st.caption(f"+{len(matches) - 12} more — keep typing to narrow.")
+    elif section == "FD Desk":
         render_fd_desk(data, sharp_cols, nonsharp_cols)
-    elif section == "Search":
-        render_search(data, sharp_cols, nonsharp_cols)
     elif section == "Playoffs":
         render_playoffs(data, sharp_cols, nonsharp_cols)
     elif section == "Team Points":
