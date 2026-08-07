@@ -7028,7 +7028,7 @@
         "team": "",
         "prices": {
           "fanduel": 270,
-          "draftkings": 400,
+          "draftkings": 300,
           "betonline": 300,
           "betmgm": 300,
           "caesars": 260,
@@ -7118,7 +7118,7 @@
         "team": "",
         "prices": {
           "fanduel": 3000,
-          "draftkings": 2500,
+          "draftkings": 3000,
           "betonline": 2800,
           "betmgm": 2000,
           "caesars": 3500,
@@ -7133,7 +7133,7 @@
         "team": "",
         "prices": {
           "fanduel": 3500,
-          "draftkings": 1200,
+          "draftkings": 1700,
           "betonline": 1600,
           "betmgm": 1200,
           "caesars": 2000,
@@ -7349,7 +7349,7 @@
         "team": "",
         "prices": {
           "fanduel": 10000,
-          "draftkings": 4000,
+          "draftkings": 5000,
           "betonline": 4000,
           "betmgm": 6600,
           "caesars": 6500,
@@ -7394,7 +7394,7 @@
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "draftkings": 10000,
+          "draftkings": 15000,
           "betonline": 10000,
           "betmgm": 15000,
           "kambi": 15000,
@@ -7474,7 +7474,7 @@
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "draftkings": 8000,
+          "draftkings": 15000,
           "betonline": 10000,
           "betmgm": 30000,
           "betano": 19900,
@@ -7521,7 +7521,7 @@
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "draftkings": 10000,
+          "draftkings": 15000,
           "betonline": 10000,
           "betmgm": 10000,
           "betano": 19900,
@@ -9199,10 +9199,10 @@
           },
           "80": {
             "betmgm": 450,
-            "draftkings": 425
+            "draftkings": 270
           },
           "75": {
-            "draftkings": 175
+            "draftkings": 125
           }
         }
       },
@@ -9888,13 +9888,13 @@
         },
         "plus": {
           "60": {
-            "draftkings": -130
+            "draftkings": -115
           },
           "65": {
             "draftkings": 170
           },
           "70": {
-            "draftkings": 425
+            "draftkings": 370
           }
         }
       },
@@ -10111,13 +10111,13 @@
         "plus": {
           "50": {
             "betmgm": 260,
-            "draftkings": 290
+            "draftkings": 250
           },
           "40": {
-            "draftkings": -145
+            "draftkings": -160
           },
           "45": {
-            "draftkings": 135
+            "draftkings": 120
           }
         }
       },
@@ -10177,6 +10177,276 @@
           },
           "25": {
             "draftkings": -140
+          }
+        }
+      },
+      "Thomas Harley": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "40": {
+            "draftkings": -240
+          },
+          "50": {
+            "draftkings": 170
+          },
+          "45": {
+            "draftkings": -120
+          }
+        }
+      },
+      "Brayden Schenn": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "40": {
+            "draftkings": -160
+          },
+          "50": {
+            "draftkings": 250
+          },
+          "45": {
+            "draftkings": 120
+          }
+        }
+      },
+      "Morgan Rielly": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "40": {
+            "draftkings": -125
+          },
+          "50": {
+            "draftkings": 340
+          },
+          "45": {
+            "draftkings": 160
+          }
+        }
+      },
+      "Joel Eriksson Ek": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "50": {
+            "draftkings": -220
+          },
+          "55": {
+            "draftkings": -110
+          },
+          "60": {
+            "draftkings": 190
+          }
+        }
+      },
+      "Nazem Kadri": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "55": {
+            "draftkings": -170
+          },
+          "60": {
+            "draftkings": 120
+          },
+          "65": {
+            "draftkings": 240
+          }
+        }
+      },
+      "Cutter Gauthier": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "60": {
+            "draftkings": -225
+          },
+          "65": {
+            "draftkings": -110
+          },
+          "70": {
+            "draftkings": 190
+          }
+        }
+      },
+      "Morgan Geekie": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "60": {
+            "draftkings": -185
+          },
+          "65": {
+            "draftkings": 110
+          },
+          "70": {
+            "draftkings": 225
+          }
+        }
+      },
+      "Steven Stamkos": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "60": {
+            "draftkings": -135
+          },
+          "65": {
+            "draftkings": 150
+          },
+          "70": {
+            "draftkings": 300
+          }
+        }
+      },
+      "Mark Stone": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "65": {
+            "draftkings": -260
+          },
+          "70": {
+            "draftkings": -125
+          },
+          "75": {
+            "draftkings": 150
+          }
+        }
+      },
+      "John Tavares": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "65": {
+            "draftkings": -250
+          },
+          "70": {
+            "draftkings": -120
+          },
+          "75": {
+            "draftkings": 160
+          }
+        }
+      },
+      "Adrian Kempe": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "70": {
+            "draftkings": -180
+          },
+          "75": {
+            "draftkings": 110
+          },
+          "80": {
+            "draftkings": 225
+          }
+        }
+      },
+      "Drake Batherson": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "70": {
+            "draftkings": -145
+          },
+          "75": {
+            "draftkings": 140
+          },
+          "80": {
+            "draftkings": 285
+          }
+        }
+      },
+      "Mika Zibanejad": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "70": {
+            "draftkings": -140
+          },
+          "75": {
+            "draftkings": 145
+          },
+          "80": {
+            "draftkings": 300
+          }
+        }
+      },
+      "Rasmus Dahlin": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "75": {
+            "draftkings": -110
+          },
+          "80": {
+            "draftkings": 185
+          },
+          "85": {
+            "draftkings": 380
+          }
+        }
+      },
+      "Brandon Hagel": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "80": {
+            "draftkings": -130
+          },
+          "85": {
+            "draftkings": 155
+          },
+          "90": {
+            "draftkings": 310
+          }
+        }
+      },
+      "Robert Thomas": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "80": {
+            "draftkings": -120
+          },
+          "85": {
+            "draftkings": 165
+          },
+          "90": {
+            "draftkings": 340
+          }
+        }
+      },
+      "Jesper Bratt": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "80": {
+            "draftkings": -115
+          },
+          "85": {
+            "draftkings": 175
+          },
+          "90": {
+            "draftkings": 360
+          }
+        }
+      },
+      "Lane Hutson": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "80": {
+            "draftkings": 100
+          },
+          "85": {
+            "draftkings": 200
+          },
+          "90": {
+            "draftkings": 390
           }
         }
       }
