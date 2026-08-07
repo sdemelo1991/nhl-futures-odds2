@@ -22,8 +22,67 @@ import re
 import sys
 from collections import defaultdict
 
+import requests
+
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff,
                     set_team_points, set_award, classify_special, set_special)
+
+_SKIP_HDRS = {"host", "content-length", "accept-encoding", "connection",
+              "cookie", "pragma", "cache-control"}
+
+
+def _har_requests(fp):
+    """(url, headers) for each graphql persisted_query GET in a saved HAR — the
+    'recipe' we replay live for fresh odds without re-capturing."""
+    raw = json.load(open(fp, encoding="utf-8"))
+    out, seen = [], set()
+    for e in (raw.get("log", {}) or {}).get("entries", []) or []:
+        rq = e.get("request", {}) or {}
+        u = rq.get("url", "")
+        if "graphql/persisted_queries/" not in u or u in seen:
+            continue
+        if rq.get("method", "GET").upper() != "GET":
+            continue
+        seen.add(u)
+        hdrs = {h["name"]: h["value"] for h in rq.get("headers", [])
+                if not h["name"].startswith(":") and h["name"].lower() not in _SKIP_HDRS}
+        out.append((u, hdrs))
+    return out
+
+
+def fetch_direct():
+    """Replay the captured persisted-query GETs live (headers carry theScore's
+    anonymous-auth token + client IDs). Returns payloads with a 'data' key; []
+    on failure so the caller falls back to parsing the saved HAR as-is."""
+    hars = sorted(glob.glob(os.path.join(CACHE_DIR, "thescore*.har")))
+    if not hars:
+        return []
+    reqs = _har_requests(hars[-1])
+    if not reqs:
+        return []
+    try:
+        import truststore
+        truststore.inject_into_ssl()
+    except ImportError:
+        pass
+    out = []
+    for u, h in reqs:
+        try:
+            r = requests.get(u, headers=h, timeout=25)
+        except Exception as e:  # noqa: BLE001
+            print(f"  req error: {e}")
+            continue
+        if r.status_code != 200:
+            print(f"  HTTP {r.status_code} (auth/IDs may have rotated — re-capture HAR)")
+            continue
+        try:
+            obj = r.json()
+        except ValueError:
+            continue
+        if isinstance(obj, dict) and obj.get("data") is not None:
+            out.append(obj)
+    print(f"  replayed {len(out)}/{len(reqs)} graphql queries live")
+    return out
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from teams import TEAMS, normalize_team  # noqa: E402
@@ -222,15 +281,26 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--file", default=None)
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--har", action="store_true", help="parse saved HAR as-is (no live replay)")
     args = ap.parse_args()
-    files = [args.file] if args.file else sorted(glob.glob(os.path.join(CACHE_DIR, "thescore*.har")))
-    if not files:
-        print(f"No capture. Save the HAR as {CACHE_DIR}\\thescore.har")
-        return
+
     payloads = []
-    for fp in files:
-        payloads += har_payloads(fp)
+    if args.file:
+        payloads = har_payloads(args.file)
+    elif args.har:
+        for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "thescore*.har"))):
+            payloads += har_payloads(fp)
+    else:
+        payloads = fetch_direct()  # replay the captured queries live
+        if not payloads:
+            print("  live replay empty — parsing saved HAR as-is (stale)")
+            for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "thescore*.har"))):
+                payloads += har_payloads(fp)
+
     print(f"graphql payloads: {len(payloads)}")
+    if not payloads:
+        print(f"  No data. No live replay and no HAR at {CACHE_DIR}\\thescore.har")
+        return
     if args.write:
         write_all(payloads)
     else:
