@@ -22,6 +22,7 @@ Flags: --host <base>, --page <customPageId>, --url <full url>, --insecure.
 import argparse
 import re
 import sys
+import time
 from collections import defaultdict
 
 import requests
@@ -39,6 +40,10 @@ HEADERS = {
     "Accept": "application/json",
     "Referer": "https://on.sportsbook.fanduel.ca/",
     "X-Requested-With": "XMLHttpRequest",
+    # bypass FanDuel's CDN cache on the content-managed-page (it's edge-cached,
+    # which was serving a stale snapshot for many minutes)
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
 }
 
 
@@ -59,8 +64,9 @@ def configure_tls(insecure):
 
 
 def build_url(host, page):
+    cb = int(time.time() * 1000)  # unique each call so the CDN can't serve a cached copy
     return (f"{host}/api/content-managed-page?page=CUSTOM&customPageId={page}"
-            f"&pbHorizontal=false&_ak={API_KEY}&timezone=America%2FNew_York")
+            f"&pbHorizontal=false&_ak={API_KEY}&timezone=America%2FNew_York&_={cb}")
 
 
 def fetch(url):
