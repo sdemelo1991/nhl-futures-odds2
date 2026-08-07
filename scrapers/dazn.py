@@ -23,6 +23,7 @@ import sys
 from collections import defaultdict
 
 import requests
+import time
 
 from common import (CACHE_DIR, load, save, set_playoff, set_to_win, stamp_book,
                     classify_special, set_special)
@@ -44,7 +45,12 @@ URL = ("https://sb2frontend-altenar2.biahosted.com/api/widget/GetOutrightEvents"
 # preview). The full participant list for one event comes from GetEventDetails.
 EVENT_DETAILS_URL = ("https://sb2frontend-altenar2.biahosted.com/api/widget/"
                      "GetEventDetails?" + _Q + "&eventId={}")
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", "Accept": "application/json"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", "Accept": "application/json",
+           "Cache-Control": "no-cache", "Pragma": "no-cache"}
+
+
+def _cb():
+    return f"&_={int(time.time() * 1000)}"  # cache-buster; both URLs already carry a query string
 SKIP = ("winning conference", "winning division", "winning nationality")
 
 
@@ -84,7 +90,7 @@ def fetch_direct():
         truststore.inject_into_ssl()
     except ImportError:
         pass
-    r = requests.get(URL, headers=HEADERS, timeout=25)
+    r = requests.get(URL + _cb(), headers=HEADERS, timeout=25)
     r.raise_for_status()
     return [r.json()]
 
@@ -109,7 +115,7 @@ def market_type(name):
 def fetch_event_odds(eid):
     """Full participant list for one outright event (un-truncated)."""
     try:
-        j = requests.get(EVENT_DETAILS_URL.format(eid), headers=HEADERS, timeout=20).json()
+        j = requests.get(EVENT_DETAILS_URL.format(eid) + _cb(), headers=HEADERS, timeout=20).json()
         return [o for o in j.get("odds", []) or [] if o.get("price")]
     except Exception:  # noqa: BLE001
         return None

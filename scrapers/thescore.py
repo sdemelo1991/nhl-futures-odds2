@@ -67,6 +67,9 @@ def fetch_direct():
         pass
     out = []
     for u, h in reqs:
+        # no URL cache-buster here: these are persisted GraphQL queries and an extra
+        # param can break the persisted-query match — headers alone bypass CDN caching
+        h = {**h, "Cache-Control": "no-cache", "Pragma": "no-cache"}
         try:
             r = requests.get(u, headers=h, timeout=25)
         except Exception as e:  # noqa: BLE001

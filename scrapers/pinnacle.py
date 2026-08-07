@@ -17,6 +17,7 @@ import argparse
 import sys
 
 import requests
+import time
 
 from common import load, save, dump_raw, set_to_win, classify_special, set_special
 
@@ -47,6 +48,8 @@ NHL_LEAGUE = 1456
 API_KEY = "CmX2KcMrXuFmNg6YFbmTxE0y9CIrOi0R"
 HEADERS = {
     "X-API-Key": API_KEY,
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
     "Referer": "https://www.pinnacle.ca/",
@@ -56,7 +59,8 @@ BOOK = "pinnacle"
 
 
 def get(path):
-    url = f"{ARCADIA}{path}"
+    sep = "&" if "?" in path else "?"
+    url = f"{ARCADIA}{path}{sep}_={int(time.time() * 1000)}"  # cache-buster
     r = requests.get(url, headers=HEADERS, timeout=20, verify=_VERIFY)
     if r.status_code != 200:
         print(f"  !! {url} -> HTTP {r.status_code}\n{r.text[:300]}")

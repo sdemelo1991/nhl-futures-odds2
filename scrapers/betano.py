@@ -25,6 +25,7 @@ import urllib.parse as up
 from collections import defaultdict
 
 import requests
+import time
 
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff, set_award,
                     classify_special, set_special)
@@ -37,6 +38,8 @@ _HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
     "Accept": "application/json, text/plain, */*",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
     "Accept-Language": "en-US,en;q=0.9",
     "Referer": "https://www.betano.ca/sport/hockey/north-america/nhl/10118/",
     "X-Requested-With": "XMLHttpRequest",
@@ -53,7 +56,7 @@ def fetch_direct():
         pass
     out = []
     for bt in _TABS:
-        u = _URL.format(bt=bt)
+        u = _URL.format(bt=bt) + f"&_={int(time.time() * 1000)}"  # cache-buster
         try:
             r = requests.get(u, headers=_HEADERS, timeout=25)
         except Exception as e:  # noqa: BLE001

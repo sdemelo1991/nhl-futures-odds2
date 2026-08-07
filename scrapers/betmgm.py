@@ -22,6 +22,7 @@ import sys
 from collections import defaultdict
 
 import requests
+import time
 
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff,
                     set_team_points, set_award, set_player_prop,
@@ -44,6 +45,8 @@ _HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
     "Accept": "application/json, text/plain, */*",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
     "Accept-Language": "en-US,en;q=0.9",
     "Referer": _NHL_PAGE,
     # These bwin/Entain headers are what make the widget return its payload;
@@ -68,7 +71,7 @@ def fetch_direct():
     out = []
     for u in WIDGET_URLS:
         try:
-            r = requests.get(u, headers=_HEADERS, timeout=25)
+            r = requests.get(u + f"&_={int(time.time() * 1000)}", headers=_HEADERS, timeout=25)
         except Exception as e:  # noqa: BLE001
             print(f"  direct fetch error: {e}")
             continue

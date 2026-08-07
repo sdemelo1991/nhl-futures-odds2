@@ -25,6 +25,7 @@ import sys
 from collections import defaultdict
 
 import requests
+import time
 
 from common import (CACHE_DIR, load, save, set_to_win, set_award, set_playoff,
                     set_team_points, classify_special, set_special)
@@ -43,7 +44,12 @@ LISTVIEW_URL = ("https://eu.offering-api.kambicdn.com/offering/v2018/torstarcaon
 # betOffers, which the competitions listView returns empty. Fetch each by id.
 EVENT_URL = ("https://eu.offering-api.kambicdn.com/offering/v2018/torstarcaon/"
              "betoffer/event/{}.json?lang=en_CA&market=CA-ON&client_id=200&channel_id=3")
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", "Accept": "application/json"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", "Accept": "application/json",
+           "Cache-Control": "no-cache", "Pragma": "no-cache"}
+
+
+def _cb():
+    return f"&_={int(time.time() * 1000)}"  # cache-buster; both URLs already carry a query string
 AWARD_KW = {"calder": "calder", "norris": "norris", "vezina": "vezina", "hart": "hart",
             "jack adams": "jack_adams", "art ross": "art_ross",
             "rocket richard": "rocket_richard", "selke": "selke"}
@@ -191,7 +197,7 @@ def fetch_direct():
         truststore.inject_into_ssl()
     except ImportError:
         pass
-    r = requests.get(LISTVIEW_URL, headers=HEADERS, timeout=25)
+    r = requests.get(LISTVIEW_URL + _cb(), headers=HEADERS, timeout=25)
     r.raise_for_status()
     return [r.json()]
 
@@ -209,7 +215,7 @@ def route_team_markets(payloads, doc, counts):
                 team_events[team] = e["id"]
     for team, eid in team_events.items():
         try:
-            data = requests.get(EVENT_URL.format(eid), headers=HEADERS, timeout=20).json()
+            data = requests.get(EVENT_URL.format(eid) + _cb(), headers=HEADERS, timeout=20).json()
         except Exception:  # noqa: BLE001
             continue
         for bo in data.get("betOffers", []) or []:

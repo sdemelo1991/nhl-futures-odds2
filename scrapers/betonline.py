@@ -27,6 +27,7 @@ import sys
 from collections import defaultdict
 
 import requests
+import time
 
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff,
                     set_team_points, set_award, classify_special, set_special)
@@ -51,6 +52,8 @@ _HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
     "Accept": "application/json, text/plain, */*",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
     "Content-Type": "application/json",
     "Origin": "https://www.betonline.ag",
     "Referer": "https://www.betonline.ag/",
@@ -70,7 +73,7 @@ def fetch_direct():
     out = []
     for ct, ct2 in _QUERIES:
         try:
-            r = requests.post(_ENDPOINT, headers=_HEADERS, timeout=25,
+            r = requests.post(_ENDPOINT + f"?_={int(time.time() * 1000)}", headers=_HEADERS, timeout=25,
                               json={"ContestType": ct, "ContestType2": ct2, "filterTime": 0})
         except Exception as e:  # noqa: BLE001
             print(f"  {ct2}: fetch error {e}")
