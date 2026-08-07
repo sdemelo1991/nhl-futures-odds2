@@ -26,9 +26,68 @@ import re
 import sys
 from collections import defaultdict
 
+import requests
+
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff,
                     set_team_points, set_award, classify_special, set_special)
 from teams import TEAMS, normalize_team
+
+# Direct-fetch: POST each futures contest the page requests (static gsetting, no
+# auth/cookies). HAR is the fallback if BetOnline ever gates these.
+_ENDPOINT = "https://api-offering.betonline.ag/api/offering/Sports/get-contests-by-contest-type2"
+_QUERIES = [
+    ("nhl-futures", "stanley-cup"),
+    ("nhl-futures", "conference-futures"),
+    ("nhl-futures", "division-futures"),
+    ("nhl-futures", "specials"),
+    ("nhl-player-futures", "hart-memorial-trophy"),
+    ("nhl-player-futures", "vezina-trophy"),
+    ("nhl-player-futures", "james-norris-memorial-trophy"),
+    ("nhl-player-futures", "calder-memorial-trophy"),
+    ("nhl-team-points", "regular-season-points"),
+    ("nhl-playoff-specials", "to-make-the-playoffs"),
+]
+_HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
+    "Accept": "application/json, text/plain, */*",
+    "Content-Type": "application/json",
+    "Origin": "https://www.betonline.ag",
+    "Referer": "https://www.betonline.ag/",
+    "gsetting": "bolsassite",
+    "utc-offset": "240",
+}
+
+
+def fetch_direct():
+    """POST each futures contest directly. Returns [payload,...] with
+    ContestOfferings; [] on failure so the caller falls back to a saved HAR."""
+    try:
+        import truststore
+        truststore.inject_into_ssl()
+    except ImportError:
+        pass
+    out = []
+    for ct, ct2 in _QUERIES:
+        try:
+            r = requests.post(_ENDPOINT, headers=_HEADERS, timeout=25,
+                              json={"ContestType": ct, "ContestType2": ct2, "filterTime": 0})
+        except Exception as e:  # noqa: BLE001
+            print(f"  {ct2}: fetch error {e}")
+            continue
+        if r.status_code != 200:
+            print(f"  {ct2}: HTTP {r.status_code}")
+            continue
+        try:
+            obj = r.json()
+        except ValueError:
+            print(f"  {ct2}: non-JSON response")
+            continue
+        if isinstance(obj, dict) and obj.get("ContestOfferings"):
+            out.append(obj)
+        else:
+            print(f"  {ct2}: 200 but no ContestOfferings")
+    return out
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -204,17 +263,31 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--file", default=None)
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--har", action="store_true", help="skip direct fetch, use saved HAR only")
     args = ap.parse_args()
-    files = [args.file] if args.file else sorted(glob.glob(os.path.join(CACHE_DIR, "betonline*.har")))
-    if not files:
-        print(f"No capture. Save the HAR as {CACHE_DIR}\\betonline.har")
-        return
+
+    payloads = []
+    if args.file:
+        payloads = har_payloads(args.file)
+    elif args.har:
+        for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "betonline*.har"))):
+            payloads += har_payloads(fp)
+    else:
+        payloads = fetch_direct()  # direct API first
+        if payloads:
+            print(f"  (direct fetch: {len(payloads)} contest payloads)")
+        else:
+            print("  direct fetch returned nothing — falling back to saved HAR")
+            for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "betonline*.har"))):
+                payloads += har_payloads(fp)
 
     all_markets = []
-    for fp in files:
-        for payload in har_payloads(fp):
-            all_markets += markets_from(payload)
+    for payload in payloads:
+        all_markets += markets_from(payload)
     print(f"markets found: {len(all_markets)}")
+    if not all_markets:
+        print(f"  No data. Direct fetch failed and no HAR at {CACHE_DIR}\\betonline.har")
+        return
 
     if args.write:
         doc = load()
