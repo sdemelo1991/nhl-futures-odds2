@@ -244,14 +244,19 @@ def write(doc, payload, live):
             for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_to_win(doc, "worst", team, BOOK, od); n["worst"] += 1
-        elif low.endswith("team to make playoffs"):
+        elif "make playoffs" in low and "conference" in low:
+            # Conference-split make-playoffs markets carry FanDuel's LIVE prices;
+            # the aggregate "Team To Make Playoffs" market is a stale snapshot, so
+            # prefer these (32 teams total across East+West) and skip the aggregate.
             for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_playoff(doc, team, BOOK, "yes", od); n["po_yes"] += 1
-        elif low.endswith("team to miss playoffs"):
+        elif "miss playoffs" in low and "conference" in low:
             for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_playoff(doc, team, BOOK, "no", od); n["po_no"] += 1
+        elif low.endswith("team to make playoffs") or low.endswith("team to miss playoffs"):
+            pass  # stale aggregate duplicate — superseded by the conference markets above
         elif "- o/u regular season points" in low:
             team = name.split(" - ")[0]
             line = over = under = None
