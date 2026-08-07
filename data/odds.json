@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-07 15:58",
+    "last_updated": "2026-08-07 16:08",
     "books": [
       "pinnacle",
       "circa",
@@ -4620,7 +4620,8 @@
           "betano": 350,
           "bet365": 350,
           "hardrock": 350,
-          "thescore": 375
+          "thescore": 375,
+          "kalshi": 257
         }
       },
       "Macklin Celebrini": {
@@ -7754,7 +7755,7 @@
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 3579
+        "kalshi": 3578
       },
       "Dallas Stars": {
         "kalshi": 3043
@@ -7813,7 +7814,7 @@
         "kalshi": 15154
       },
       "Boston Bruins": {
-        "kalshi": 15979
+        "kalshi": 15977
       },
       "Utah Mammoth": {
         "kalshi": 7116
@@ -7924,22 +7925,24 @@
       "Connor Bedard": {},
       "Pavel Dorofeyev": {},
       "Nick Suzuki": {
-        "kalshi": 550
+        "kalshi": 555
       },
       "David Pastrnak": {},
       "Mikko Rantanen": {},
       "Kirill Kaprizov": {
-        "kalshi": 396
+        "kalshi": 401
       },
       "Mitchell Marner": {},
       "Quinn Hughes": {},
-      "Nathan MacKinnon": {},
+      "Nathan MacKinnon": {
+        "kalshi": 511
+      },
       "Auston Matthews": {
         "kalshi": 421
       },
       "Jack Eichel": {},
       "Nikita Kucherov": {
-        "kalshi": 300
+        "kalshi": 305
       },
       "Connor Hellebuyck": {},
       "Jack Hughes": {},
