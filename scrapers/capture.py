@@ -41,6 +41,7 @@ BOOKS = {
         ],
         "match": ["sportscontent"],
         "settle": 7.0,
+        "out": "dk.har",  # draftkings.py globs dk*.har
     },
     # The rest are now DIRECT-fetch (see their <book>.py) — kept here only as a
     # browser fallback if a direct call ever gets gated.
@@ -127,7 +128,7 @@ def main():
         return
 
     os.makedirs(CACHE, exist_ok=True)
-    out = args.out or os.path.join(CACHE, f"{args.book}.har")
+    out = args.out or os.path.join(CACHE, BOOKS[args.book].get("out", f"{args.book}.har"))
     with open(out, "w", encoding="utf-8") as f:
         json.dump({"log": {"version": "1.2", "entries": entries}}, f, ensure_ascii=False)
     print(f"  captured {len(entries)} matching response(s) -> {out}")
