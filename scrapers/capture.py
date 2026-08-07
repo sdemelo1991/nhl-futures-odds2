@@ -26,6 +26,8 @@ import time
 
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache")
 
+_DK = "https://sportsbook.draftkings.com/leagues/hockey/nhl?category=futures&subcategory="
+
 # Per-book capture config. `match` = URL substrings; a response whose URL
 # contains any is saved. `url` = the human futures page (override with --url
 # until confirmed). `settle` = extra seconds after network idle for late XHRs.
@@ -34,15 +36,20 @@ BOOKS = {
     # blocks server-side fetch). Load each futures subcategory page and pool the
     # sportscontent market responses the page fires.
     "draftkings": {
-        "urls": [
-            "https://sportsbook.draftkings.com/leagues/hockey/nhl?category=futures&subcategory=team&nav_1=playoffs",
-            "https://sportsbook.draftkings.com/leagues/hockey/nhl?category=futures&subcategory=player&nav_1=goals",
-            "https://sportsbook.draftkings.com/leagues/hockey/nhl?category=futures&subcategory=awards&nav_1=hart",
-        ],
+        # Full futures board — one URL per tab (DK renders tabs as JS buttons, not
+        # <a href>, so a link-crawl finds nothing; explicit URLs are reliable).
+        "urls": [_DK + s for s in (
+            "team&nav_1=playoffs", "team&nav_1=champion", "team&nav_1=points",
+            "team&nav_1=division", "team&nav_1=conference", "team&nav_1=presidents%27-trophy",
+            "player&nav_1=goals", "player&nav_1=points",
+            "awards&nav_1=hart", "awards&nav_1=norris", "awards&nav_1=vezina", "awards&nav_1=calder",
+            "stanley-cup-specials&nav_1=winning-state-province",
+            "stanley-cup-specials&nav_1=winning-conference",
+            "stanley-cup-specials&nav_1=winning-division",
+        )],
         "match": ["sportscontent"],
-        "settle": 7.0,
+        "settle": 4.0,
         "out": "dk.har",       # draftkings.py globs dk*.har
-        "crawl_links": "category=futures",  # follow every futures tab link on the page
     },
     # The rest are now DIRECT-fetch (see their <book>.py) — kept here only as a
     # browser fallback if a direct call ever gets gated.
