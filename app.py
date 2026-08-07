@@ -191,15 +191,13 @@ table.cmp {{ width:100%; border-collapse:collapse; font-size:.85rem; font-varian
 .st-key-secnav .stButton>button {{ font-size:2.0rem !important; font-weight:800 !important;
   padding:20px 10px !important; height:auto !important; border-radius:13px !important;
   letter-spacing:-.3px; white-space:nowrap; }}
-/* search result list — left-aligned name buttons */
-[class*="st-key-searchresults"] button {{ justify-content:flex-start !important;
-  text-align:left !important; font-weight:600 !important; }}
 .st-key-secnav .stButton>button[kind="primary"] {{ background:var(--accent) !important;
   color:#fff !important; border-color:var(--accent) !important; }}
 .st-key-secnav .stButton>button[kind="secondary"] {{ background:var(--card) !important;
   color:var(--text) !important; border:1px solid var(--border) !important; }}
 .st-key-secnav .stButton>button[kind="secondary"]:hover {{ border-color:var(--accent) !important;
   color:var(--accent) !important; }}
+[class*="st-key-search_sel"] {{ margin-top:2px; }}
 /* bigger sub-tabs */
 [data-testid="stTabs"] button[role="tab"] {{ padding:8px 16px !important; height:auto !important; }}
 [data-testid="stTabs"] button[role="tab"] p {{ font-size:1.25rem !important; font-weight:600; }}
@@ -632,8 +630,7 @@ def kpi_row(k, fd_arb_n=0, fd_mid_n=0):
                      "& Player Props. The book we manage; monitor it closest.")
     if clicked:
         st.session_state["nav_section"] = "FD Desk"
-        st.session_state.pop("search_pick", None)
-        st.session_state["search_q"] = ""  # FD Desk overrides any active search
+        st.session_state["_clear_search"] = True  # FD Desk overrides any active search
         st.rerun()
 
 
@@ -1175,7 +1172,7 @@ def render_team_view(data, team, sharp_cols, nonsharp_cols):
         rows.append([label, fmt_odds(consensus_american(prices, all_books, "Average")),
                      best_chip(prices, subset=SHARP), best_chip(prices)])
     if rows:
-        card(_mini_table(["Market", "Consensus", "Best (Sharp)", "Best (All)"], rows),
+        card(_mini_table(["Market", "Average", "Best (Sharp)", "Best (All)"], rows),
              "Outright markets")
 
     # --- two-way & totals: playoffs (Yes/No + arb) and points (line range + middle) ---
@@ -1226,46 +1223,51 @@ def render_player_view(data, player, sharp_cols, nonsharp_cols):
         rows.append([label, fmt_odds(consensus_american(prices, all_books, "Average")),
                      best_chip(prices, subset=SHARP), best_chip(prices)])
     if rows:
-        card(_mini_table(["Award", "Consensus", "Best (Sharp)", "Best (All)"], rows), "Award markets")
+        card(_mini_table(["Award", "Average", "Best (Sharp)", "Best (All)"], rows), "Award markets")
 
-    # --- player props: line range (Hi/Lo + book) + arb/middle ---
+    # --- player props: Best Over / Best Under (O/U lines only, same logic as the
+    # Player Props tab — milestones stay out of the line "range" so it isn't
+    # misleading) + arb/middle signal (which does span cross-form middles). ---
+    def _best_ou(ou, extreme, side):
+        """Over at the lowest posted line / Under at the highest (best price at
+        that line) — O/U only, matching the Player Props tab. side in {over,under}."""
+        pts = [(q["line"], bk, q[side]) for bk, q in ou.items()
+               if q.get("line") is not None and q.get(side) is not None]
+        if not pts:
+            return "<span class='dim'>—</span>"
+        ln = extreme(p[0] for p in pts)
+        bb, bo = best_price({bk: od for l2, bk, od in pts if l2 == ln})
+        return chip(bb, f"{'o' if side == 'over' else 'u'}{ln:g} {fmt_odds(bo)}")
+
     prows = []
     for cat, label in PROP_CATEGORIES.items():
         entry = data.get("player_markets", {}).get(cat, {}).get(player)
         if not entry:
             continue
         q = unify_quotes(entry)
-        lines = [(x["book"], x["line"]) for x in q if x.get("line") is not None]
-        if not lines:
+        if not q:
             continue
-        hi = max(lines, key=lambda x: x[1])
-        lo = min(lines, key=lambda x: x[1])
+        ou = entry.get("ou", {}) or {}
         parts = []
         if prop_arbs(q):
             parts.append(f"⚡ {max(a['margin'] for a in prop_arbs(q))*100:.2f}%")
         mids = prop_middles(q, min_gap=1.0, max_gap=3.0)
         if mids:
             parts.append(f"🎯 gap {max(m['gap'] for m in mids):g}")
-        prows.append([label, chip(hi[0], f"{hi[1]:g} · {book_label(hi[0])}"),
-                      chip(lo[0], f"{lo[1]:g} · {book_label(lo[0])}"), " · ".join(parts) or "—"])
+        prows.append([label, _best_ou(ou, min, "over"), _best_ou(ou, max, "under"),
+                      " · ".join(parts) or "—"])
     if prows:
-        card(_mini_table(["Prop", "Highest line", "Lowest line", "Arb / Middle"], prows), "Player props")
+        card(_mini_table(["Prop", "Best Over", "Best Under", "Arb / Middle"], prows), "Player props")
     if not rows and not prows:
         st.info(f"No markets found for {player} yet.")
 
 
-def _search_matches(data, qn):
-    """Teams + players matching query `qn` (substring), starts-with first."""
-    ml = qn.lower()
-    opts = [(t, "team") for t in sorted(TEAMS) if _team_has_any(data, t)] + \
-           [(p, "player") for p in sorted(_all_players(data))]
-    starts = [o for o in opts if o[0].lower().startswith(ml)]
-    contains = [o for o in opts if ml in o[0].lower() and not o[0].lower().startswith(ml)]
-    return starts + contains
-
-
 # --------------------------------------------------------------------------- main
 def main():
+    # A nav-tab / FD-tile click asks to leave search; clear the selectbox here,
+    # BEFORE it's instantiated (can't modify a widget's state after it renders).
+    if st.session_state.pop("_clear_search", False):
+        st.session_state.pop("search_sel", None)
     with st.sidebar:
         st.header("Books")
         st.caption("SHARP")
@@ -1279,7 +1281,7 @@ def main():
             st.cache_data.clear()
             st.rerun()
 
-    hc = st.columns([2.3, 2.7, 1.7])
+    hc = st.columns([2.4, 2.4, 2.2], gap="large")
     with hc[2]:
         # Per-user, survives reload on the shared link: theme lives in each
         # browser's own URL (?theme=). session_state wins once toggled in-session.
@@ -1313,9 +1315,13 @@ def main():
             f"<div class='app-sub'>Cup · Conference · Division · Playoffs · Team Points · Awards "
             f"— {esc(meta.get('season','?'))} &nbsp;·&nbsp; updated {esc(meta.get('last_updated') or '—')}</div>",
             unsafe_allow_html=True)
-    with hc[1]:  # persistent search field — always in view, on every tab
-        st.text_input("Search", key="search_q", label_visibility="collapsed",
-                      placeholder="🔎  Search a team or player — press Enter")
+    with hc[1]:  # persistent search — always in view, filters live as you type
+        idx = {t: ("team", t) for t in sorted(TEAMS) if _team_has_any(data, t)}
+        for p in sorted(_all_players(data)):
+            idx.setdefault(p, ("player", p))
+        sel = st.selectbox("Search", sorted(idx), index=None, key="search_sel",
+                           placeholder="🔎  Search a team or player…",
+                           label_visibility="collapsed")
     if meta.get("notes"):
         st.info(meta["notes"], icon="ℹ️")
 
@@ -1323,14 +1329,6 @@ def main():
     kpi_row(compute_kpis(data), len(fd_arbs), len(fd_mids))
 
     sharp_cols, nonsharp_cols = ordered(sharp_active + nonsharp_active)
-
-    # Persistent-search state: a chosen team/player takes over the content area
-    # while the field + nav stay in view. Query change invalidates the pick.
-    qn = (st.session_state.get("search_q") or "").strip()
-    pick = st.session_state.get("search_pick")
-    if pick and st.session_state.get("search_pick_q") != qn:
-        pick = None
-        st.session_state.pop("search_pick", None)
 
     # Custom button bar for the section nav — reliable sizing + dark-mode contrast.
     SECTIONS = ["To Win", "Playoffs", "Team Points", "Awards", "Player Props"]
@@ -1341,39 +1339,19 @@ def main():
     with nav:
         for col, name in zip(st.columns(len(SECTIONS)), SECTIONS):
             with col:
-                active = st.session_state["nav_section"] == name and not pick and not qn
+                active = st.session_state["nav_section"] == name and not sel
                 if st.button(name, key=f"nav_{name}", use_container_width=True,
                              type="primary" if active else "secondary"):
                     st.session_state["nav_section"] = name
-                    st.session_state.pop("search_pick", None)
-                    st.session_state["search_q"] = ""  # leaving search when picking a tab
+                    st.session_state["_clear_search"] = True  # leave search for the tab
                     st.rerun()
     section = st.session_state["nav_section"]
     st.divider()
 
-    if pick:  # isolated team/player snapshot (search result selected)
-        kind, name = pick
-        if st.button("✕  Clear search", key="srch_clear"):
-            st.session_state.pop("search_pick", None)
-            st.session_state["search_q"] = ""
-            st.rerun()
+    if sel:  # isolated team/player snapshot (search selection)
+        kind, name = idx[sel]
         (render_team_view if kind == "team" else render_player_view)(
             data, name, sharp_cols, nonsharp_cols)
-    elif qn:  # typing — show matching names (no dropdown until you type)
-        matches = _search_matches(data, qn)
-        if not matches:
-            st.caption(f"No team or player matches “{esc(qn)}”.")
-        else:
-            st.caption("Select a result:")
-            res = st.container(key="searchresults")
-            with res:
-                for nm, kind in matches[:12]:
-                    if st.button(nm, key=f"srch_{kind}_{nm}", use_container_width=True):
-                        st.session_state["search_pick"] = (kind, nm)
-                        st.session_state["search_pick_q"] = qn
-                        st.rerun()
-            if len(matches) > 12:
-                st.caption(f"+{len(matches) - 12} more — keep typing to narrow.")
     elif section == "FD Desk":
         render_fd_desk(data, sharp_cols, nonsharp_cols)
     elif section == "Playoffs":
