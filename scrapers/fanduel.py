@@ -27,7 +27,7 @@ from collections import defaultdict
 import requests
 
 from common import (dump_raw, load, save, set_to_win, set_playoff, set_team_points,
-                    set_award, set_player_prop, classify_special, set_special)
+                    set_award, set_player_prop, classify_special, set_special, stamp_book)
 
 _VERIFY = True
 HOST = "https://sbapi.on.sportsbook.fanduel.ca"
@@ -221,6 +221,8 @@ def write(doc, payload):
                             set_award(doc, cat, player, "", BOOK, od); n[f"award:{cat}"] += 1
                     break
 
+    if sum(n.values()):
+        stamp_book(doc, BOOK)  # record freshness (meta.book_updated.fanduel)
     print("  wrote FanDuel:", dict(n))
     return sum(n.values())
 

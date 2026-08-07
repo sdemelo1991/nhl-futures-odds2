@@ -1,6 +1,6 @@
 {
-  "_comment": "Caesars (manual/paste, from CZR screenshots). Cup/Conf/Div/Presidents/Worst/TeamPoints/Playoffs/Awards/Specials.",
-  "updated": "2026-08-06",
+  "_comment": "Caesars (manual/paste, from CZR screenshots). Cup/Conf/Div/Presidents/Worst/TeamPoints/Playoffs/Awards/Specials/PlayerProps(goals).",
+  "updated": "2026-08-07",
   "specials": {
     "conf": {
       "Western": -105,
@@ -11,6 +11,58 @@
       "Central": 250,
       "Metropolitan": 285,
       "Pacific": 255
+    }
+  },
+  "player_markets": {
+    "goals": {
+      "Adrian Kempe": {"line": 34.5, "over": -110, "under": -120},
+      "Alex DeBrincat": {"line": 36.5, "over": -115, "under": -115},
+      "Alex Ovechkin": {"line": 29.5, "over": -115, "under": -115},
+      "Alex Tuch": {"line": 32.5, "over": -115, "under": -115},
+      "Auston Matthews": {"line": 41.5, "over": -110, "under": -120},
+      "Bo Horvat": {"line": 31.5, "over": -115, "under": -115},
+      "Brady Tkachuk": {"line": 30.5, "over": -115, "under": -115},
+      "Brandon Hagel": {"line": 35.5, "over": -115, "under": -115},
+      "Clayton Keller": {"line": 29.5, "over": -115, "under": -115},
+      "Cole Caufield": {"line": 39.5, "over": -115, "under": -115},
+      "Connor McDavid": {"line": 41.5, "over": -110, "under": -120},
+      "Cutter Gauthier": {"line": 35.5, "over": -115, "under": -115},
+      "David Pastrnak": {"line": 35.5, "over": -115, "under": -115},
+      "Drake Batherson": {"line": 29.5, "over": -115, "under": -115},
+      "Dylan Guenther": {"line": 35.5, "over": -115, "under": -115},
+      "Filip Forsberg": {"line": 36.5, "over": -110, "under": -120},
+      "Gavin McKenna": {"line": 22.5, "over": -115, "under": -115},
+      "Jack Eichel": {"line": 29.5, "over": -110, "under": -120},
+      "Jack Hughes": {"line": 30.5, "over": -110, "under": -120},
+      "Jake Guentzel": {"line": 34.5, "over": -115, "under": -115},
+      "Jared McCann": {"line": 22.5, "over": -115, "under": -115},
+      "Jason Robertson": {"line": 39.5, "over": -115, "under": -115},
+      "Jordan Kyrou": {"line": 28.5, "over": -115, "under": -115},
+      "Kevin Fiala": {"line": 28.5, "over": -110, "under": -120},
+      "Kirill Kaprizov": {"line": 43.5, "over": -115, "under": -115},
+      "Kirill Marchenko": {"line": 28.5, "over": -115, "under": -115},
+      "Kyle Connor": {"line": 37.5, "over": -115, "under": -115},
+      "Leo Carlsson": {"line": 29.5, "over": -115, "under": -115},
+      "Leon Draisaitl": {"line": 43.5, "over": -115, "under": -115},
+      "Macklin Celebrini": {"line": 40.5, "over": -115, "under": -115},
+      "Mark Scheifele": {"line": 32.5, "over": -115, "under": -115},
+      "Matt Boldy": {"line": 36.5, "over": -115, "under": -115},
+      "Matthew Tkachuk": {"line": 28.5, "over": -110, "under": -120},
+      "Mika Zibanejad": {"line": 26.5, "over": -120, "under": -110},
+      "Mitch Marner": {"line": 25.5, "over": -115, "under": -115},
+      "Morgan Geekie": {"line": 34.5, "over": -115, "under": -115},
+      "Nathan MacKinnon": {"line": 45.5, "over": -115, "under": -115},
+      "Nico Hischier": {"line": 28.5, "over": -115, "under": -115},
+      "Nikita Kucherov": {"line": 40.5, "over": -115, "under": -115},
+      "Owen Tippett": {"line": 27.5, "over": -115, "under": -115},
+      "Pavel Dorofeyev": {"line": 33.5, "over": -115, "under": -115},
+      "Sam Reinhart": {"line": 36.5, "over": -115, "under": -115},
+      "Sebastian Aho": {"line": 29.5, "over": -115, "under": -115},
+      "Sidney Crosby": {"line": 30.5, "over": -115, "under": -115},
+      "Tage Thompson": {"line": 39.5, "over": -110, "under": -120},
+      "Tyler Bertuzzi": {"line": 26.5, "over": -120, "under": -110},
+      "William Nylander": {"line": 37.5, "over": -115, "under": -115},
+      "Wyatt Johnston": {"line": 38.5, "over": -115, "under": -115}
     }
   },
   "cup": {
@@ -565,136 +617,6 @@
       "Artur Akhtyamov": 6500,
       "Roger McQueen": 7000,
       "Carter Yakemchuk": 8000
-    }
-  },
-  "player_markets": {
-    "points": {},
-    "goals": {
-      "Alex DeBrincat": {
-        "line": 36.5,
-        "over": -115,
-        "under": -115
-      },
-      "Alex Tuch": {
-        "line": 32.5,
-        "over": -115,
-        "under": -115
-      },
-      "Auston Matthews": {
-        "line": 41.5,
-        "over": -110,
-        "under": -120
-      },
-      "Brady Tkachuk": {
-        "line": 30.5,
-        "over": -115,
-        "under": -115
-      },
-      "Cole Caufield": {
-        "line": 44.5,
-        "over": -115,
-        "under": -115
-      },
-      "Connor McDavid": {
-        "line": 41.5,
-        "over": -110,
-        "under": -120
-      },
-      "David Pastrnak": {
-        "line": 35.5,
-        "over": -115,
-        "under": -115
-      },
-      "Gavin McKenna": {
-        "line": 22.5,
-        "over": -115,
-        "under": -115
-      },
-      "Jack Hughes": {
-        "line": 30.5,
-        "over": -110,
-        "under": -120
-      },
-      "Jason Robertson": {
-        "line": 41.5,
-        "over": -110,
-        "under": -120
-      },
-      "Jordan Kyrou": {
-        "line": 28.5,
-        "over": -115,
-        "under": -115
-      },
-      "Kirill Kaprizov": {
-        "line": 43.5,
-        "over": -115,
-        "under": -115
-      },
-      "Leo Carlsson": {
-        "line": 30.5,
-        "over": -115,
-        "under": -115
-      },
-      "Leon Draisaitl": {
-        "line": 44.5,
-        "over": -115,
-        "under": -115
-      },
-      "Macklin Celebrini": {
-        "line": 40.5,
-        "over": -115,
-        "under": -115
-      },
-      "Mark Scheifele": {
-        "line": 32.5,
-        "over": -115,
-        "under": -115
-      },
-      "Matthew Tkachuk": {
-        "line": 28.5,
-        "over": -110,
-        "under": -120
-      },
-      "Mitch Marner": {
-        "line": 25.5,
-        "over": -115,
-        "under": -115
-      },
-      "Nathan MacKinnon": {
-        "line": 45.5,
-        "over": -115,
-        "under": -115
-      },
-      "Nikita Kucherov": {
-        "line": 41.5,
-        "over": -110,
-        "under": -120
-      },
-      "Pavel Dorofeyev": {
-        "line": 32.5,
-        "over": -115,
-        "under": -115
-      },
-      "Sam Reinhart": {
-        "line": 36.5,
-        "over": -115,
-        "under": -115
-      },
-      "Sidney Crosby": {
-        "line": 29.5,
-        "over": -115,
-        "under": -115
-      },
-      "Tage Thompson": {
-        "line": 39.5,
-        "over": -110,
-        "under": -120
-      },
-      "Wyatt Johnston": {
-        "line": 38.5,
-        "over": -115,
-        "under": -115
-      }
     }
   }
 }
