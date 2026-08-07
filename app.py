@@ -188,9 +188,9 @@ table.cmp {{ width:100%; border-collapse:collapse; font-size:.85rem; font-varian
 [class*="st-key-oddsfmt"] {{ margin-top:2.4rem; }}
 /* big section nav — custom button bar (proven .stButton selector) */
 .st-key-secnav {{ margin:8px 0 6px 0; }}
-.st-key-secnav .stButton>button {{ font-size:2.0rem !important; font-weight:800 !important;
-  padding:20px 10px !important; height:auto !important; border-radius:13px !important;
-  letter-spacing:-.3px; white-space:nowrap; }}
+.st-key-secnav .stButton>button {{ font-size:1.6rem !important; font-weight:800 !important;
+  padding:18px 8px !important; height:auto !important; border-radius:13px !important;
+  letter-spacing:-.4px; white-space:nowrap; }}
 .st-key-secnav .stButton>button[kind="primary"] {{ background:var(--accent) !important;
   color:#fff !important; border-color:var(--accent) !important; }}
 .st-key-secnav .stButton>button[kind="secondary"] {{ background:var(--card) !important;
@@ -1125,6 +1125,149 @@ def render_fd_desk(data, sharp_cols, nonsharp_cols):
         st.caption(f"No FanDuel middles ≥ {min_gap:g} index apart right now.")
 
 
+def _mini_table(headers, rows):
+    """Small standardized comparison table (reuses .cmp styling)."""
+    th = "".join(f"<th class='{'name' if i == 0 else ''}'>{h}</th>" for i, h in enumerate(headers))
+    body = "".join("<tr>" + "".join(
+        f"<td class='{'name' if i == 0 else ''}'>{c}</td>" for i, c in enumerate(r)) + "</tr>"
+        for r in rows)
+    return (f"<div class='tablewrap'><table class='cmp'><thead><tr>{th}</tr></thead>"
+            f"<tbody>{body}</tbody></table></div>")
+
+
+def _team_has_any(data, t):
+    if any(data["to_win"].get(m, {}).get(t) for m in ("cup", "conference", "division", "presidents", "worst")):
+        return True
+    return bool(data["playoffs"].get(t) or data["team_points"].get(t))
+
+
+def _all_players(data):
+    s = set()
+    for players in data.get("awards", {}).values():
+        s |= set(players)
+    for players in data.get("player_markets", {}).values():
+        s |= set(players)
+    return s
+
+
+def render_team_view(data, team, sharp_cols, nonsharp_cols):
+    all_books = sharp_cols + nonsharp_cols
+    conf, div = TEAMS.get(team, ("", ""))
+    conf_lbl = "Eastern" if conf == "East" else "Western" if conf == "West" else conf
+    st.markdown(
+        f"<div style='display:flex;align-items:center;gap:14px;margin:4px 0 10px;'>{team_logo(team)}"
+        f"<div><div style='font-size:1.6rem;font-weight:800;letter-spacing:-.3px;'>{esc(team)}</div>"
+        f"<div class='legend' style='margin:0;'>{esc(div)} Division · {conf_lbl} Conference</div></div></div>",
+        unsafe_allow_html=True)
+
+    # --- outright markets (one row each): consensus + best chips ---
+    rows = []
+    for key, label in (("cup", "Stanley Cup"), ("conference", "Conference"), ("division", "Division"),
+                       ("presidents", "Most Points"), ("worst", "Least Points")):
+        prices = data["to_win"].get(key, {}).get(team)
+        if not prices:
+            continue
+        rows.append([label, fmt_odds(consensus_american(prices, all_books, "Average")),
+                     best_chip(prices, subset=SHARP), best_chip(prices)])
+    if rows:
+        card(_mini_table(["Market", "Consensus", "Best (Sharp)", "Best (All)"], rows),
+             "Outright markets")
+
+    # --- two-way & totals: playoffs (Yes/No + arb) and points (line range + middle) ---
+    tw = []
+    sides = data["playoffs"].get(team, {})
+    yes, no = sides.get("yes", {}), sides.get("no", {})
+    if yes or no:
+        arb = two_way_arb(yes, no)
+        sig = (f"⚡ {arb['margin']*100:.2f}% ({esc(book_label(arb['a_book']))}/{esc(book_label(arb['b_book']))})"
+               if arb else "—")
+        tw.append(["Make Playoffs", best_chip(yes), best_chip(no), sig])
+    lines = data["team_points"].get(team, {})
+    priced = [(b, q.get("line")) for b, q in lines.items() if q and q.get("line") is not None]
+    if priced:
+        hi = max(priced, key=lambda x: x[1])
+        lo = min(priced, key=lambda x: x[1])
+        parts = []
+        if points_same_index_arb(lines):
+            parts.append(f"⚡ {max(a['margin'] for a in points_same_index_arb(lines))*100:.2f}%")
+        mids = points_middles(lines, min_gap=0.5)
+        if mids:
+            parts.append(f"🎯 gap {max(m['gap'] for m in mids):g}")
+        tw.append(["Reg. Season Points", chip(hi[0], f"{hi[1]:g} · {book_label(hi[0])}"),
+                   chip(lo[0], f"{lo[1]:g} · {book_label(lo[0])}"), " · ".join(parts) or "—"])
+    if tw:
+        card(_mini_table(["Market", "Best (Yes / Highest)", "Best (No / Lowest)", "Arb / Middle"], tw),
+             "Yes/No & totals")
+    if not rows and not tw:
+        st.info(f"No markets found for {team} yet.")
+
+
+def render_player_view(data, player, sharp_cols, nonsharp_cols):
+    all_books = sharp_cols + nonsharp_cols
+    tm = player_team(player)
+    logo = team_logo(tm) if tm else ""
+    st.markdown(
+        f"<div style='display:flex;align-items:center;gap:14px;margin:4px 0 10px;'>{logo}"
+        f"<div style='font-size:1.6rem;font-weight:800;letter-spacing:-.3px;'>{esc(player)}</div></div>",
+        unsafe_allow_html=True)
+
+    # --- awards (one row each): consensus + best chips ---
+    rows = []
+    for cat, label in AWARD_CATEGORIES.items():
+        entry = data.get("awards", {}).get(cat, {}).get(player)
+        if not entry or not entry.get("prices"):
+            continue
+        prices = entry["prices"]
+        rows.append([label, fmt_odds(consensus_american(prices, all_books, "Average")),
+                     best_chip(prices, subset=SHARP), best_chip(prices)])
+    if rows:
+        card(_mini_table(["Award", "Consensus", "Best (Sharp)", "Best (All)"], rows), "Award markets")
+
+    # --- player props: line range (Hi/Lo + book) + arb/middle ---
+    prows = []
+    for cat, label in PROP_CATEGORIES.items():
+        entry = data.get("player_markets", {}).get(cat, {}).get(player)
+        if not entry:
+            continue
+        q = unify_quotes(entry)
+        lines = [(x["book"], x["line"]) for x in q if x.get("line") is not None]
+        if not lines:
+            continue
+        hi = max(lines, key=lambda x: x[1])
+        lo = min(lines, key=lambda x: x[1])
+        parts = []
+        if prop_arbs(q):
+            parts.append(f"⚡ {max(a['margin'] for a in prop_arbs(q))*100:.2f}%")
+        mids = prop_middles(q, min_gap=1.0, max_gap=3.0)
+        if mids:
+            parts.append(f"🎯 gap {max(m['gap'] for m in mids):g}")
+        prows.append([label, chip(hi[0], f"{hi[1]:g} · {book_label(hi[0])}"),
+                      chip(lo[0], f"{lo[1]:g} · {book_label(lo[0])}"), " · ".join(parts) or "—"])
+    if prows:
+        card(_mini_table(["Prop", "Highest line", "Lowest line", "Arb / Middle"], prows), "Player props")
+    if not rows and not prows:
+        st.info(f"No markets found for {player} yet.")
+
+
+def render_search(data, sharp_cols, nonsharp_cols):
+    st.markdown("<div class='legend'>Type a team or player — e.g. “Toronto” or “McDavid” — for a "
+                "one-stop snapshot of every market they're listed in.</div>", unsafe_allow_html=True)
+    opts = {}
+    for t in sorted(t for t in TEAMS if _team_has_any(data, t)):
+        opts[f"{t}  —  Team"] = ("team", t)
+    for p in sorted(_all_players(data)):
+        opts[f"{p}  —  Player"] = ("player", p)
+    sel = st.selectbox("Search", list(opts), index=None, key="search_sel",
+                       placeholder="Search a team or player name…", label_visibility="collapsed")
+    if not sel:
+        return
+    kind, name = opts[sel]
+    if kind == "team":
+        render_team_view(data, name, sharp_cols, nonsharp_cols)
+    else:
+        render_player_view(data, name, sharp_cols, nonsharp_cols)
+
+
 # --------------------------------------------------------------------------- main
 def main():
     with st.sidebar:
@@ -1183,7 +1326,7 @@ def main():
     sharp_cols, nonsharp_cols = ordered(sharp_active + nonsharp_active)
     # Custom button bar for the section nav — reliable sizing + dark-mode contrast
     # (the native segmented_control ignored our CSS in this Streamlit build).
-    SECTIONS = ["To Win", "Playoffs", "Team Points", "Awards", "Player Props"]
+    SECTIONS = ["Search", "To Win", "Playoffs", "Team Points", "Awards", "Player Props"]
     # FD Desk is reachable only via the top-right KPI tile, not the nav bar.
     if st.session_state.get("nav_section") not in SECTIONS + ["FD Desk"]:
         st.session_state["nav_section"] = "To Win"
@@ -1199,6 +1342,8 @@ def main():
     st.divider()
     if section == "FD Desk":
         render_fd_desk(data, sharp_cols, nonsharp_cols)
+    elif section == "Search":
+        render_search(data, sharp_cols, nonsharp_cols)
     elif section == "Playoffs":
         render_playoffs(data, sharp_cols, nonsharp_cols)
     elif section == "Team Points":
