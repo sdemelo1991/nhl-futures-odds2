@@ -32,6 +32,10 @@ from common import (dump_raw, load, save, set_to_win, set_playoff, set_team_poin
 
 _VERIFY = True
 HOST = "https://sbapi.on.sportsbook.fanduel.ca"
+# Live prices feed (POST marketIds -> odds by selectionId). The content-managed
+# -page hub is a slow CMS snapshot; this is the live board, so we overlay it.
+SMP_PRICES = ("https://smp.on.sportsbook.fanduel.ca/api/sports/fixedodds/"
+              "readonly/v1/getMarketPrices?priceHistory=0")
 API_KEY = "FhMFpcPWXMeyZxOx"  # public web client key
 BOOK = "fanduel"
 HEADERS = {
@@ -131,12 +135,55 @@ def prop_player(name):
     return re.split(r"\s+20\d\d", name, maxsplit=1)[0].strip()
 
 
-def runner_odds(mk):
+def fetch_live_prices(market_ids):
+    """POST marketIds to FanDuel's live getMarketPrices feed; return
+    {(marketId, selectionId): americanOddsInt}. The CMS hub's odds lag (it's a
+    snapshot); these are the live board. Returns {} on any failure so the caller
+    falls back to the hub odds."""
+    out, ids = {}, [str(m) for m in market_ids if m]
+    for i in range(0, len(ids), 100):
+        batch = ids[i:i + 100]
+        try:
+            r = requests.post(SMP_PRICES, timeout=25, verify=_VERIFY,
+                              headers={**HEADERS, "Content-Type": "application/json"},
+                              json={"marketIds": batch})
+        except Exception as e:  # noqa: BLE001
+            print(f"  live-prices fetch error: {e} (using hub odds)")
+            return out
+        if r.status_code != 200:
+            print(f"  live-prices HTTP {r.status_code} (using hub odds)")
+            return out
+        try:
+            data = r.json()
+        except ValueError:
+            print("  live-prices non-JSON (using hub odds)")
+            return out
+        if isinstance(data, dict):
+            data = data.get("marketPrices") or data.get("markets") or []
+        for mk in data or []:
+            mid = str(mk.get("marketId"))
+            for rd in mk.get("runnerDetails", []) or []:
+                sid = rd.get("selectionId")
+                od = (((rd.get("winRunnerOdds") or {}).get("americanDisplayOdds") or {})
+                      .get("americanOddsInt"))
+                if sid is not None and od is not None:
+                    out[(mid, int(sid))] = int(od)
+    return out
+
+
+def runner_odds(mk, live):
+    """Yield (runnerName, americanOdds), preferring the live price for this
+    (marketId, selectionId) and falling back to the hub's snapshot odds."""
+    mid = str(mk.get("marketId"))
     for r in mk.get("runners", []) or []:
-        yield r.get("runnerName", ""), american(r)
+        sid = r.get("selectionId")
+        od = live.get((mid, int(sid))) if (live and sid is not None) else None
+        if od is None:
+            od = american(r)
+        yield r.get("runnerName", ""), od
 
 
-def write(doc, payload):
+def write(doc, payload, live):
     markets = (payload.get("attachments", {}) or {}).get("markets", {}) or {}
     n = defaultdict(int)
     for mk in markets.values():
@@ -148,7 +195,7 @@ def write(doc, payload):
         if mtype in PROP_OU:
             cat, player = PROP_OU[mtype], prop_player(name)
             line = over = under = None
-            for rn, od in runner_odds(mk):
+            for rn, od in runner_odds(mk, live):
                 m = _LINE_RE.search(rn)
                 if not m:
                     continue
@@ -163,7 +210,7 @@ def write(doc, payload):
             continue
         if mtype in PROP_XPLUS:
             cat, player = PROP_XPLUS[mtype], prop_player(name)
-            for rn, od in runner_odds(mk):
+            for rn, od in runner_odds(mk, live):
                 m = _XPLUS_RE.search(rn)
                 if m and od is not None:
                     set_player_prop(doc, cat, player, "", BOOK, plus=int(m.group(1)), yes=od)
@@ -172,43 +219,43 @@ def write(doc, payload):
 
         sp = classify_special(name)
         if sp:  # Conference/Division/State-Province OF WINNER (champion's attribute)
-            for label, od in runner_odds(mk):
+            for label, od in runner_odds(mk, live):
                 if od is not None:
                     set_special(doc, sp, label, BOOK, od); n[f"special:{sp}"] += 1
             continue
 
         if low.endswith("stanley cup - winner"):
-            for team, od in runner_odds(mk):
+            for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_to_win(doc, "cup", team, BOOK, od); n["cup"] += 1
         elif "eastern conference - winner" in low or "western conference - winner" in low:
-            for team, od in runner_odds(mk):
+            for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_to_win(doc, "conference", team, BOOK, od); n["conf"] += 1
         elif re.search(r"(atlantic|metropolitan|central|pacific) division - winner", low):
-            for team, od in runner_odds(mk):
+            for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_to_win(doc, "division", team, BOOK, od); n["div"] += 1
         elif "presidents" in low and "winner" in low:
-            for team, od in runner_odds(mk):
+            for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_to_win(doc, "presidents", team, BOOK, od); n["presidents"] += 1
         elif "worst record" in low or ("fewest" in low and "points" in low):
-            for team, od in runner_odds(mk):
+            for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_to_win(doc, "worst", team, BOOK, od); n["worst"] += 1
         elif low.endswith("team to make playoffs"):
-            for team, od in runner_odds(mk):
+            for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_playoff(doc, team, BOOK, "yes", od); n["po_yes"] += 1
         elif low.endswith("team to miss playoffs"):
-            for team, od in runner_odds(mk):
+            for team, od in runner_odds(mk, live):
                 if od is not None:
                     set_playoff(doc, team, BOOK, "no", od); n["po_no"] += 1
         elif "- o/u regular season points" in low:
             team = name.split(" - ")[0]
             line = over = under = None
-            for rn, od in runner_odds(mk):
+            for rn, od in runner_odds(mk, live):
                 m = _LINE_RE.search(rn)
                 if not m:
                     continue
@@ -222,7 +269,7 @@ def write(doc, payload):
         else:
             for suffix, cat in AWARD_MAP.items():
                 if low.endswith(suffix):
-                    for player, od in runner_odds(mk):
+                    for player, od in runner_odds(mk, live):
                         if od is not None:
                             set_award(doc, cat, player, "", BOOK, od); n[f"award:{cat}"] += 1
                     break
@@ -240,6 +287,7 @@ def main():
     ap.add_argument("--url", default=None, help="fetch an exact captured URL")
     ap.add_argument("--write", action="store_true", help="map + write into odds.json")
     ap.add_argument("--insecure", action="store_true")
+    ap.add_argument("--nolive", action="store_true", help="skip the live-prices overlay (hub odds only)")
     args = ap.parse_args()
     configure_tls(args.insecure)
 
@@ -252,9 +300,14 @@ def main():
         sys.exit(1)
 
     dump_raw("fanduel_page", payload)
+    market_ids = [mk.get("marketId")
+                  for mk in ((payload.get("attachments", {}) or {}).get("markets", {}) or {}).values()]
+    live = {} if args.nolive else fetch_live_prices(market_ids)
+    if live:
+        print(f"  live prices overlaid: {len(live)} selections")
     if args.write:
         doc = load()
-        if write(doc, payload):
+        if write(doc, payload, live):
             save(doc)
     else:
         catalog(payload)
