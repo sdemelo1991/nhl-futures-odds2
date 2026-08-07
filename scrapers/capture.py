@@ -108,8 +108,8 @@ def capture(book, urls, headed):
             except Exception as e:  # noqa: BLE001
                 print(f"    goto failed: {e}")
                 continue
-            try:
-                page.wait_for_load_state("networkidle", timeout=45000)
+            try:  # soft wait — live sportsbook SPAs never truly go idle, so cap it
+                page.wait_for_load_state("networkidle", timeout=8000)
             except Exception:  # noqa: BLE001
                 pass
             for _ in range(4):  # nudge lazy-loaded futures sections into view
