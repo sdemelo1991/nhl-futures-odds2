@@ -7,7 +7,7 @@ $ErrorActionPreference = "Continue"
 Set-Location $PSScriptRoot
 $ts = Get-Date -Format "yyyy-MM-dd HH:mm"
 
-python scrapers\capture.py draftkings | Out-Null   # headless; falls back nowhere — see log
+python scrapers\capture.py draftkings --hidden | Out-Null   # real browser off-screen (Akamai blocks headless)
 python scrapers\draftkings.py --write | Out-Null
 python scrapers\dedupe_players.py --write | Out-Null
 

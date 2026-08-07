@@ -63,7 +63,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
 
 
-def capture(book, urls, headed):
+def capture(book, urls, headed, hidden=False):
     from playwright.sync_api import sync_playwright
 
     cfg = BOOKS[book]
@@ -72,7 +72,12 @@ def capture(book, urls, headed):
     entries, seen = [], set()
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=not headed)
+        if hidden:  # real (headful) browser Akamai accepts, but parked off-screen
+            browser = p.chromium.launch(headless=False,
+                                        args=["--window-position=-32000,-32000",
+                                              "--window-size=1280,900"])
+        else:
+            browser = p.chromium.launch(headless=not headed)
         ctx = browser.new_context(user_agent=UA, locale="en-CA",
                                   viewport={"width": 1440, "height": 900})
         page = ctx.new_page()
@@ -135,6 +140,8 @@ def main():
     ap.add_argument("book", choices=list(BOOKS))
     ap.add_argument("--url", default=None, help="futures-page URL (overrides the config)")
     ap.add_argument("--headed", action="store_true", help="show the browser (first run/debug)")
+    ap.add_argument("--hidden", action="store_true",
+                    help="real browser but off-screen (Akamai-safe, no popup — for the scheduled task)")
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
@@ -144,7 +151,7 @@ def main():
         return
 
     try:
-        entries = capture(args.book, urls, args.headed)
+        entries = capture(args.book, urls, args.headed, args.hidden)
     except ImportError:
         print("Playwright not installed. Run:\n"
               "  pip install playwright\n  playwright install chromium")
