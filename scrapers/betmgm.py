@@ -21,9 +21,58 @@ import re
 import sys
 from collections import defaultdict
 
+import requests
+
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff,
                     set_team_points, set_award, set_player_prop,
                     classify_special, set_special)
+
+# Direct-fetch: the same two widget calls the page makes (from the captured HAR).
+# No auth/cookies needed, so this works server-side like DAZN/Kambi — HAR is the
+# fallback if BetMGM ever starts gating these.
+_WIDGET_BASE = ("https://www.on.betmgm.ca/en/sports/api/widget/widgetdata"
+                "?layoutSize=Small&page=CompetitionLobby&sportId=12&regionId=9"
+                "&competitionId=34&compoundCompetitionId=1:34")
+WIDGET_URLS = [
+    _WIDGET_BASE + "&widgetId=/mobilesports-v1.0/layout/layout_us/modules/competition/"
+                   "nhldefaultcontainer-events-futures-specials-no-header&shouldIncludePayload=true",
+    _WIDGET_BASE + "&widgetId=/mobilesports-v1.0/layout/layout_us/modules/topevents-new/"
+                   "nhl/nhl-dailyprops/nhl-dailyprops&useAggregateMatchList=true&shouldIncludePayload=true",
+]
+_HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
+    "Accept": "application/json",
+    "Referer": "https://www.on.betmgm.ca/en/sports/hockey-12/nhl-34",
+    "X-Requested-With": "XMLHttpRequest",
+}
+
+
+def fetch_direct():
+    """GET the two widget payloads directly (truststore for the corporate MITM).
+    Returns [] on any failure so the caller can fall back to a saved HAR."""
+    try:
+        import truststore
+        truststore.inject_into_ssl()
+    except ImportError:
+        pass
+    out = []
+    for u in WIDGET_URLS:
+        try:
+            r = requests.get(u, headers=_HEADERS, timeout=25)
+        except Exception as e:  # noqa: BLE001
+            print(f"  direct fetch error: {e}")
+            continue
+        if r.status_code != 200:
+            print(f"  HTTP {r.status_code} on {u[:80]}...")
+            continue
+        try:
+            obj = r.json()
+        except ValueError:
+            continue
+        if isinstance(obj, dict) and obj.get("widgets") is not None:
+            out.append(obj)
+    return out
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -240,15 +289,28 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--file", default=None)
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--har", action="store_true", help="skip direct fetch, use saved HAR only")
     args = ap.parse_args()
-    files = [args.file] if args.file else sorted(glob.glob(os.path.join(CACHE_DIR, "betmgm*.har")))
-    if not files:
-        print(f"No capture. Save the HAR as {CACHE_DIR}\\betmgm.har")
-        return
+
     payloads = []
-    for fp in files:
-        payloads += har_payloads(fp)
+    if args.file:
+        payloads = har_payloads(args.file)
+    elif args.har:
+        for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "betmgm*.har"))):
+            payloads += har_payloads(fp)
+    else:
+        payloads = fetch_direct()  # direct API first
+        if payloads:
+            print(f"  (direct fetch: {len(payloads)} widget payloads)")
+        else:  # fall back to a saved HAR
+            print("  direct fetch returned nothing — falling back to saved HAR")
+            for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "betmgm*.har"))):
+                payloads += har_payloads(fp)
+
     print(f"widgetdata payloads: {len(payloads)}")
+    if not payloads:
+        print(f"  No data. Direct fetch failed and no HAR at {CACHE_DIR}\\betmgm.har")
+        return
     if args.write:
         write_all(payloads)
     else:
