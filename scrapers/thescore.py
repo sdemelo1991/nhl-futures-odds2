@@ -77,9 +77,13 @@ def sel_name(s):
 def sel_odds(s):
     o = s.get("odds")
     if isinstance(o, dict) and o.get("formattedOdds"):
+        raw = (str(o["formattedOdds"]).replace("+", "").replace(",", "")
+               .replace("−", "-").strip())
+        # theScore prints even money as "Even" (also EV/E/PK/Pick) instead of +100
+        if raw.lower() in ("even", "evens", "ev", "e", "pk", "pick", "pick'em", "pickem"):
+            return 100
         try:
-            return int(str(o["formattedOdds"]).replace("+", "").replace(",", "")
-                       .replace("−", "-").strip())
+            return int(raw)
         except ValueError:
             return None
     return None

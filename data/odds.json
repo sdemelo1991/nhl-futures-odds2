@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-07 08:56",
+    "last_updated": "2026-08-07 09:51",
     "books": [
       "pinnacle",
       "circa",
@@ -23,8 +23,8 @@
       "circa": "2026-07-24 13:04",
       "bookmaker": "2026-08-05",
       "caesars": "2026-08-06",
-      "kalshi": "2026-08-06",
-      "dazn": "2026-08-06",
+      "kalshi": "2026-08-07",
+      "dazn": "2026-08-07",
       "bet365": "2026-08-06",
       "hardrock": "2026-08-06"
     }
@@ -383,7 +383,7 @@
         "hardrock": 1300,
         "dazn": 1400,
         "thescore": 1400,
-        "kalshi": 1150
+        "kalshi": 1329
       },
       "Nashville Predators": {
         "pinnacle": 15391,
@@ -799,7 +799,7 @@
         "circa": 3500,
         "bookmaker": 3100,
         "caesars": 3000,
-        "kambi": 4000,
+        "kambi": 3300,
         "betano": 3900,
         "hardrock": 4000,
         "bet365": 4000,
@@ -1126,7 +1126,7 @@
         "bet365": 475,
         "hardrock": 475,
         "thescore": 475,
-        "kalshi": 426
+        "kalshi": 400
       }
     },
     "division": {
@@ -2883,7 +2883,8 @@
         "dazn": 125,
         "bet365": 122,
         "hardrock": 110,
-        "kambi": 145
+        "kambi": 145,
+        "thescore": 100
       }
     },
     "Calgary Flames": {
@@ -3127,7 +3128,7 @@
       },
       "thescore": {
         "line": 89.5,
-        "over": null,
+        "over": 100,
         "under": -130
       }
     },
@@ -3457,7 +3458,7 @@
       "thescore": {
         "line": 95.5,
         "over": -130,
-        "under": null
+        "under": 100
       }
     },
     "Carolina Hurricanes": {
@@ -3644,7 +3645,7 @@
       },
       "thescore": {
         "line": 88.5,
-        "over": null,
+        "over": 100,
         "under": -130
       }
     },
@@ -3833,7 +3834,7 @@
       "thescore": {
         "line": 99.5,
         "over": -130,
-        "under": null
+        "under": 100
       }
     },
     "Chicago Blackhawks": {
@@ -4161,7 +4162,7 @@
       },
       "thescore": {
         "line": 96.5,
-        "over": null,
+        "over": 100,
         "under": -130
       }
     },
@@ -4208,7 +4209,7 @@
       },
       "thescore": {
         "line": 87.5,
-        "over": null,
+        "over": 100,
         "under": -130
       }
     },
@@ -4618,8 +4619,7 @@
           "betano": 350,
           "bet365": 350,
           "hardrock": 350,
-          "thescore": 375,
-          "kalshi": 257
+          "thescore": 375
         }
       },
       "Macklin Celebrini": {
@@ -7743,38 +7743,38 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 10304
+        "kalshi": 9467
       },
       "New York Rangers": {
-        "kalshi": 21418
+        "kalshi": 21918
       },
       "Toronto Maple Leafs": {
-        "kalshi": 16072
+        "kalshi": 16572
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 2531
+        "kalshi": 3053
       },
       "Dallas Stars": {
-        "kalshi": 1933
+        "kalshi": 2543
       },
       "Buffalo Sabres": {
-        "kalshi": 21017
+        "kalshi": 21517
       },
       "Carolina Hurricanes": {
-        "kalshi": 9056
+        "kalshi": 9047
       },
       "Montreal Canadiens": {
-        "kalshi": 14158
+        "kalshi": 14658
       },
       "Minnesota Wild": {
-        "kalshi": 6094
+        "kalshi": 1026
       },
       "Pittsburgh Penguins": {
-        "kalshi": 21969
+        "kalshi": 22469
       },
       "Tampa Bay Lightning": {
-        "kalshi": 18020
+        "kalshi": 18520
       },
       "Vancouver Canucks": {},
       "Detroit Red Wings": {},
@@ -7782,58 +7782,58 @@
       "St. Louis Blues": {},
       "Chicago Blackhawks": {},
       "Edmonton Oilers": {
-        "kalshi": 2975
+        "kalshi": 3475
       },
       "Winnipeg Jets": {
-        "kalshi": 18080
+        "kalshi": 18580
       },
       "Colorado Avalanche": {
-        "kalshi": 8240
+        "kalshi": 8734
       },
       "New York Islanders": {
-        "kalshi": 26223
+        "kalshi": 26723
       },
       "New Jersey Devils": {
-        "kalshi": 12757
+        "kalshi": 13257
       },
       "Los Angeles Kings": {
-        "kalshi": 13945
+        "kalshi": 14445
       },
       "Vegas Golden Knights": {
-        "kalshi": 2239
+        "kalshi": 2739
       },
       "Columbus Blue Jackets": {
-        "kalshi": 14794
+        "kalshi": 15294
       },
       "Washington Capitals": {
-        "kalshi": 3442
+        "kalshi": 3942
       },
       "Anaheim Ducks": {
-        "kalshi": 9271
+        "kalshi": 9791
       },
       "Boston Bruins": {
-        "kalshi": 18602
+        "kalshi": 19102
       },
       "Utah Mammoth": {
-        "kalshi": 7124
+        "kalshi": 7584
       },
       "Ottawa Senators": {
-        "kalshi": 5765
+        "kalshi": 6265
       },
       "Philadelphia Flyers": {
-        "kalshi": 7885
+        "kalshi": 8385
       }
     },
     "conference": {
       "Calgary Flames": {},
       "Colorado Avalanche": {
-        "kalshi": 339
+        "kalshi": 319
       },
       "Winnipeg Jets": {
         "kalshi": 699
       },
       "Utah Mammoth": {
-        "kalshi": 362
+        "kalshi": 350
       },
       "St. Louis Blues": {
         "kalshi": 466
@@ -7845,7 +7845,7 @@
         "kalshi": 749
       },
       "Vegas Golden Knights": {
-        "kalshi": 419
+        "kalshi": 926
       },
       "Dallas Stars": {
         "kalshi": 300
@@ -7932,9 +7932,7 @@
       },
       "Mitchell Marner": {},
       "Quinn Hughes": {},
-      "Nathan MacKinnon": {
-        "kalshi": 506
-      },
+      "Nathan MacKinnon": {},
       "Auston Matthews": {
         "kalshi": 421
       },
