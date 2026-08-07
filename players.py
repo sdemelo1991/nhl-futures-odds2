@@ -232,6 +232,14 @@ _OVERRIDES = {
     "Viggo Bjorck": "Winnipeg Jets",
     "Will Zellers": "Colorado Avalanche",
     "William Horcoff": "Pittsburgh Penguins",
+    # --- player-prop logo fixes (override _ROSTER where a player moved) ---
+    "Morgan Geekie": "Boston Bruins",
+    "Alex Tuch": "Washington Capitals",
+    "Pavel Dorofeyev": "New York Rangers",
+    "Tyler Bertuzzi": "Chicago Blackhawks",
+    "Joel Eriksson Ek": "Minnesota Wild",
+    "John Tavares": "Toronto Maple Leafs",
+    "William Eklund": "Ottawa Senators",
 }
 PLAYER_TEAM.update({canonical_player(p): t for p, t in _OVERRIDES.items()})
 
