@@ -1,0 +1,45 @@
+{
+  "_comment": "Bookmaker (manual/paste). Cup + Conference + Division. Update from user pastes.",
+  "updated": "2026-08-05",
+  "cup": {
+    "Anaheim Ducks": 2700, "Boston Bruins": 8000, "Buffalo Sabres": 2510,
+    "Calgary Flames": 36919, "Carolina Hurricanes": 757, "Chicago Blackhawks": 17571,
+    "Colorado Avalanche": 675, "Columbus Blue Jackets": 5300, "Dallas Stars": 1600,
+    "Detroit Red Wings": 8800, "Edmonton Oilers": 888, "Florida Panthers": 625,
+    "Los Angeles Kings": 3100, "Minnesota Wild": 1350, "Montreal Canadiens": 2400,
+    "Nashville Predators": 13000, "New Jersey Devils": 2850, "New York Islanders": 12500,
+    "New York Rangers": 8800, "Ottawa Senators": 2800, "Philadelphia Flyers": 5100,
+    "Pittsburgh Penguins": 6800, "San Jose Sharks": 3800, "Seattle Kraken": 30000,
+    "St. Louis Blues": 12500, "Tampa Bay Lightning": 1400, "Toronto Maple Leafs": 3500,
+    "Utah Mammoth": 3100, "Vancouver Canucks": 40000, "Vegas Golden Knights": 950,
+    "Washington Capitals": 1400, "Winnipeg Jets": 10000
+  },
+  "conference": {
+    "Boston Bruins": 5400, "Buffalo Sabres": 1600, "Carolina Hurricanes": 410,
+    "Columbus Blue Jackets": 2500, "Detroit Red Wings": 3800, "Florida Panthers": 410,
+    "Montreal Canadiens": 1200, "New Jersey Devils": 1400, "New York Islanders": 4000,
+    "New York Rangers": 3100, "Ottawa Senators": 1700, "Philadelphia Flyers": 2000,
+    "Pittsburgh Penguins": 2800, "Tampa Bay Lightning": 600, "Toronto Maple Leafs": 1500,
+    "Washington Capitals": 650,
+    "Anaheim Ducks": 1500, "Calgary Flames": 7500, "Chicago Blackhawks": 7500,
+    "Colorado Avalanche": 410, "Dallas Stars": 810, "Edmonton Oilers": 410,
+    "Los Angeles Kings": 1300, "Minnesota Wild": 615, "Nashville Predators": 4500,
+    "San Jose Sharks": 1600, "St. Louis Blues": 4000, "Seattle Kraken": 7500,
+    "Utah Mammoth": 1300, "Vancouver Canucks": 7500, "Vegas Golden Knights": 475,
+    "Winnipeg Jets": 3300
+  },
+  "division": {
+    "Boston Bruins": 3300, "Buffalo Sabres": 950, "Detroit Red Wings": 2700,
+    "Florida Panthers": 150, "Montreal Canadiens": 600, "Ottawa Senators": 935,
+    "Tampa Bay Lightning": 275, "Toronto Maple Leafs": 775,
+    "Carolina Hurricanes": 115, "Columbus Blue Jackets": 1190, "New Jersey Devils": 550,
+    "New York Islanders": 2800, "New York Rangers": 1500, "Philadelphia Flyers": 1050,
+    "Pittsburgh Penguins": 1800, "Washington Capitals": 305,
+    "Chicago Blackhawks": 5500, "Colorado Avalanche": 128, "Dallas Stars": 400,
+    "Minnesota Wild": 269, "Nashville Predators": 2800, "St. Louis Blues": 3000,
+    "Utah Mammoth": 602, "Winnipeg Jets": 2200,
+    "Anaheim Ducks": 575, "Calgary Flames": 6600, "Edmonton Oilers": 180,
+    "Los Angeles Kings": 525, "San Jose Sharks": 725, "Seattle Kraken": 4800,
+    "Vancouver Canucks": 8800, "Vegas Golden Knights": 188
+  }
+}

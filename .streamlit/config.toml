@@ -1,0 +1,10 @@
+# NHL Futures Pricing Desk — clean light dashboard (purple accent). App-level
+# Light/Dark toggle handles the look; base=light keeps native widgets matching
+# the primary (light) experience.
+[theme]
+base = "light"
+primaryColor = "#6c5ce7"
+backgroundColor = "#f3f4f7"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#191c24"
+font = "sans serif"
