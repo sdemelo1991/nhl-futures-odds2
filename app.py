@@ -182,10 +182,9 @@ table.cmp {{ width:100%; border-collapse:collapse; font-size:.85rem; font-varian
 [class*="st-key-fdkpi_btn"] button:hover {{ background-color:var(--hover) !important;
   color:var(--text) !important; border-color:var(--border) !important;
   border-left-color:#1493FF !important; }}
-/* bigger header toggles (~2x) — widget key gives each an st-key- wrapper.
-   The odds toggle sits below dark-mode; margin-top clears the scaled toggle above. */
-[class*="st-key-thememode"], [class*="st-key-oddsfmt"] {{ transform:scale(1.85); transform-origin:right top; }}
-[class*="st-key-oddsfmt"] {{ margin-top:2.4rem; }}
+/* bigger header toggles — use `zoom` (reserves real layout space, unlike
+   transform:scale) so the enlarged toggle never spills over the search box. */
+[class*="st-key-thememode"], [class*="st-key-oddsfmt"] {{ zoom:1.5; }}
 /* big section nav — custom button bar (proven .stButton selector) */
 .st-key-secnav {{ margin:8px 0 6px 0; }}
 .st-key-secnav .stButton>button {{ font-size:2.0rem !important; font-weight:800 !important;
