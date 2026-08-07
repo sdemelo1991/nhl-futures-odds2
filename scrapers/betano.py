@@ -24,8 +24,55 @@ import sys
 import urllib.parse as up
 from collections import defaultdict
 
+import requests
+
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff, set_award,
                     classify_special, set_special)
+
+# Direct-fetch: the three futures tabs the page requests (no auth/cookies). HAR
+# is the fallback if Betano ever gates these.
+_TABS = ["teams", "awards", "winnerspecials"]
+_URL = "https://www.betano.ca/api/sport/hockey/north-america/nhl/10118/?bt={bt}&req=la,s,stnf,c,mb"
+_HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.betano.ca/sport/hockey/north-america/nhl/10118/",
+    "X-Requested-With": "XMLHttpRequest",
+}
+
+
+def fetch_direct():
+    """GET each futures tab directly (truststore for the corporate MITM).
+    Returns [(bt, obj)] like har_payloads; [] on failure so caller falls back."""
+    try:
+        import truststore
+        truststore.inject_into_ssl()
+    except ImportError:
+        pass
+    out = []
+    for bt in _TABS:
+        u = _URL.format(bt=bt)
+        try:
+            r = requests.get(u, headers=_HEADERS, timeout=25)
+        except Exception as e:  # noqa: BLE001
+            print(f"  {bt}: fetch error {e}")
+            continue
+        if r.status_code != 200:
+            print(f"  {bt}: HTTP {r.status_code}")
+            continue
+        try:
+            obj = r.json()
+        except ValueError:
+            print(f"  {bt}: non-JSON response")
+            continue
+        if isinstance(obj, dict) and obj.get("data") is not None:
+            out.append((bt, obj))
+        else:
+            keys = list(obj.keys())[:8] if isinstance(obj, dict) else type(obj).__name__
+            print(f"  {bt}: 200 but no 'data'; keys={keys}")
+    return out
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -189,15 +236,28 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--file", default=None)
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--har", action="store_true", help="skip direct fetch, use saved HAR only")
     args = ap.parse_args()
-    files = [args.file] if args.file else sorted(glob.glob(os.path.join(CACHE_DIR, "betano*.har")))
-    if not files:
-        print(f"No capture. Save the HAR as {CACHE_DIR}\\betano.har")
-        return
+
     payloads = []
-    for fp in files:
-        payloads += har_payloads(fp)
+    if args.file:
+        payloads = har_payloads(args.file)
+    elif args.har:
+        for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "betano*.har"))):
+            payloads += har_payloads(fp)
+    else:
+        payloads = fetch_direct()  # direct API first
+        if payloads:
+            print(f"  (direct fetch: {len(payloads)} tab payloads)")
+        else:
+            print("  direct fetch returned nothing — falling back to saved HAR")
+            for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "betano*.har"))):
+                payloads += har_payloads(fp)
+
     print(f"bt= payloads: {len(payloads)}")
+    if not payloads:
+        print(f"  No data. Direct fetch failed and no HAR at {CACHE_DIR}\\betano.har")
+        return
     if args.write:
         write_all(payloads)
     else:
