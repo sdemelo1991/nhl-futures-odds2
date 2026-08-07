@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-06 22:51",
+    "last_updated": "2026-08-07 08:56",
     "books": [
       "pinnacle",
       "circa",
@@ -5445,10 +5445,16 @@
           "thescore": 20000
         }
       },
-      "Elias Pettersson (F)": {
+      "Elias Pettersson (f)": {
         "team": "",
         "prices": {
-          "draftkings": 20000
+          "draftkings": 20000,
+          "betmgm": 25000,
+          "kambi": 25000,
+          "betano": 19900,
+          "bet365": 20000,
+          "hardrock": 20000,
+          "thescore": 20000
         }
       },
       "Dylan Guenther": {
@@ -5715,22 +5721,6 @@
           "thescore": 30000
         }
       },
-      "Elias Pettersson (1998)": {
-        "team": "",
-        "prices": {
-          "betmgm": 25000,
-          "kambi": 25000
-        }
-      },
-      "Elias Pettersson": {
-        "team": "",
-        "prices": {
-          "betano": 19900,
-          "draftkings": 20000,
-          "betmgm": 25000,
-          "kambi": 25000
-        }
-      },
       "Pavel Dorofeyev": {
         "team": "",
         "prices": {}
@@ -5739,18 +5729,6 @@
         "team": "",
         "prices": {
           "bet365": 10000
-        }
-      },
-      "Elias Pettersson (f)": {
-        "team": "",
-        "prices": {
-          "bet365": 20000,
-          "hardrock": 20000,
-          "kambi": 25000,
-          "betmgm": 25000,
-          "draftkings": 20000,
-          "betano": 19900,
-          "thescore": 20000
         }
       },
       "Ryan Shea": {
@@ -6377,12 +6355,6 @@
         "prices": {
           "fanduel": 30000,
           "bet365": 20000
-        }
-      },
-      "Joshua Morrissey": {
-        "team": "",
-        "prices": {
-          "kambi": 5000
         }
       },
       "Darnell Nurse": {
@@ -7034,18 +7006,6 @@
           "hardrock": 15000,
           "thescore": 15000
         }
-      },
-      "Daniel Vladar": {
-        "team": "",
-        "prices": {
-          "betmgm": 3000
-        }
-      },
-      "MacKenzie Blackwood": {
-        "team": "",
-        "prices": {
-          "betmgm": 6000
-        }
       }
     },
     "calder": {
@@ -7335,12 +7295,17 @@
           "thescore": 10000
         }
       },
-      "Alberts Smits": {
+      "Alberts Šmits": {
         "team": "",
         "prices": {
           "fanduel": 10000,
           "betmgm": 15000,
-          "kambi": 9000
+          "kambi": 9000,
+          "draftkings": 15000,
+          "betano": 12400,
+          "bet365": 10000,
+          "hardrock": 10000,
+          "thescore": 10000
         }
       },
       "Cole Eiserman": {
@@ -7588,11 +7553,16 @@
           "hardrock": 10000
         }
       },
-      "Oscar Fisker Molgaard": {
+      "Oscar Fisker Mølgaard": {
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "kambi": 10000
+          "kambi": 10000,
+          "draftkings": 15000,
+          "betmgm": 30000,
+          "betano": 19900,
+          "bet365": 15000,
+          "hardrock": 15000
         }
       },
       "Ryker Lee": {
@@ -7655,21 +7625,6 @@
           "hardrock": 10000
         }
       },
-      "Bradley Nadeau": {
-        "team": "",
-        "prices": {
-          "draftkings": 10000,
-          "betonline": 10000,
-          "betano": 9900
-        }
-      },
-      "TJ Hughes": {
-        "team": "",
-        "prices": {
-          "draftkings": 15000,
-          "betano": 12400
-        }
-      },
       "Daxon Rudolph": {
         "team": "",
         "prices": {
@@ -7702,14 +7657,6 @@
           "hardrock": 15000
         }
       },
-      "Oskar Fisker Molgaard": {
-        "team": "",
-        "prices": {
-          "draftkings": 15000,
-          "betmgm": 30000,
-          "betano": 19900
-        }
-      },
       "Brodie Ziemer": {
         "team": "",
         "prices": {
@@ -7718,19 +7665,6 @@
           "betano": 14900,
           "bet365": 15000,
           "hardrock": 15000
-        }
-      },
-      "Albert Smits": {
-        "team": "",
-        "prices": {
-          "draftkings": 15000,
-          "betano": 12400
-        }
-      },
-      "C. Desnoyers": {
-        "team": "",
-        "prices": {
-          "betmgm": 3000
         }
       },
       "Adam Sykora": {
@@ -7793,35 +7727,10 @@
           "kambi": 6500
         }
       },
-      "Alberts Šmits": {
-        "team": "",
-        "prices": {
-          "bet365": 10000,
-          "hardrock": 10000,
-          "kambi": 9000,
-          "fanduel": 10000,
-          "betmgm": 15000,
-          "draftkings": 15000,
-          "betano": 12400,
-          "thescore": 10000
-        }
-      },
       "Trevor Connelly": {
         "team": "",
         "prices": {
           "bet365": 10000
-        }
-      },
-      "Oscar Fisker Mølgaard": {
-        "team": "",
-        "prices": {
-          "bet365": 15000,
-          "hardrock": 15000,
-          "kambi": 10000,
-          "fanduel": 30000,
-          "betmgm": 30000,
-          "draftkings": 15000,
-          "betano": 19900
         }
       }
     },

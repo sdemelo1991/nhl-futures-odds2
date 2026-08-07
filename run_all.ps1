@@ -59,5 +59,8 @@ python scrapers\apply_manual.py hardrock
 # python scrapers\betmgm.py --write
 # python scrapers\betano.py --write
 
+Write-Host "`n[Dedupe] (collapse stale player-name variants across all books)" -ForegroundColor Yellow
+python scrapers\dedupe_players.py --write
+
 Write-Host "`n=== Launching dashboard ===" -ForegroundColor Cyan
 streamlit run app.py
