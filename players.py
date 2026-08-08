@@ -240,6 +240,7 @@ _OVERRIDES = {
     "Joel Eriksson Ek": "Minnesota Wild",
     "John Tavares": "Toronto Maple Leafs",
     "William Eklund": "Ottawa Senators",
+    "Jacob Markstrom": "Florida Panthers",
 }
 PLAYER_TEAM.update({canonical_player(p): t for p, t in _OVERRIDES.items()})
 
