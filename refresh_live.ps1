@@ -20,7 +20,13 @@ $state = (python scrapers\_live_hash.py | Out-String).Trim()
 if ($state -match "CHANGED") {
     git add data/odds.json
     git commit -m "auto: refresh direct-API odds [$ts]" | Out-Null
-    $push = (git push 2>&1 | Out-String)
+    # Never let an unattended push pop a GUI or block waiting for sign-in:
+    # if the stored credential is ever invalid, the push fails fast and logs it
+    # instead of hanging a GitHub-login window open (which is what piled up
+    # dozens of windows overnight). Re-auth once manually to refresh the token.
+    $env:GIT_TERMINAL_PROMPT = "0"   # git won't prompt on the console
+    $env:GCM_INTERACTIVE     = "never" # Git Credential Manager won't show its GUI
+    $push = (git -c credential.interactive=false push 2>&1 | Out-String)
     Add-Content -Path $log -Value "[$ts] CHANGED -> pushed`n$push" -Encoding utf8
 } else {
     Add-Content -Path $log -Value "[$ts] no odds change" -Encoding utf8
