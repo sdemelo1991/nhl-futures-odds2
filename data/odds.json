@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-09 13:08",
+    "last_updated": "2026-08-09 13:17",
     "books": [
       "pinnacle",
       "circa",
@@ -1372,7 +1372,7 @@
       "Colorado Avalanche": {
         "fanduel": 135,
         "draftkings": 120,
-        "betonline": 125,
+        "betonline": 120,
         "betmgm": 125,
         "bookmaker": 128,
         "caesars": 145,
@@ -1400,7 +1400,7 @@
       "Minnesota Wild": {
         "fanduel": 300,
         "draftkings": 330,
-        "betonline": 375,
+        "betonline": 350,
         "betmgm": 310,
         "bookmaker": 269,
         "caesars": 300,
@@ -1414,7 +1414,7 @@
       "Nashville Predators": {
         "fanduel": 3000,
         "draftkings": 5000,
-        "betonline": 5000,
+        "betonline": 3000,
         "betmgm": 5000,
         "bookmaker": 2800,
         "caesars": 5000,
@@ -1442,7 +1442,7 @@
       "Utah Mammoth": {
         "fanduel": 750,
         "draftkings": 800,
-        "betonline": 800,
+        "betonline": 750,
         "betmgm": 750,
         "bookmaker": 602,
         "caesars": 650,
@@ -1484,7 +1484,7 @@
       "Calgary Flames": {
         "fanduel": 7000,
         "draftkings": 10000,
-        "betonline": 10000,
+        "betonline": 7500,
         "betmgm": 10000,
         "bookmaker": 6600,
         "caesars": 10000,
@@ -1512,7 +1512,7 @@
       "Los Angeles Kings": {
         "fanduel": 550,
         "draftkings": 750,
-        "betonline": 700,
+        "betonline": 750,
         "betmgm": 800,
         "bookmaker": 525,
         "caesars": 700,
@@ -1540,7 +1540,7 @@
       "Seattle Kraken": {
         "fanduel": 5000,
         "draftkings": 12000,
-        "betonline": 10000,
+        "betonline": 5000,
         "betmgm": 8000,
         "bookmaker": 4800,
         "caesars": 7000,
@@ -7744,7 +7744,7 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 12630
+        "kalshi": 8757
       },
       "New York Rangers": {
         "kalshi": 23681
