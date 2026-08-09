@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-09 13:28",
+    "last_updated": "2026-08-09 13:37",
     "books": [
       "pinnacle",
       "circa",
@@ -1077,7 +1077,7 @@
         "hardrock": 1750,
         "dazn": 1700,
         "thescore": 1800,
-        "kalshi": 669
+        "kalshi": 733
       },
       "Seattle Kraken": {
         "pinnacle": 20950,
@@ -1127,7 +1127,7 @@
         "bet365": 475,
         "hardrock": 475,
         "thescore": 475,
-        "kalshi": 426
+        "kalshi": 456
       }
     },
     "division": {
@@ -4652,7 +4652,7 @@
           "bet365": 1200,
           "hardrock": 1200,
           "thescore": 1300,
-          "kalshi": 809
+          "kalshi": 400
         }
       },
       "Leon Draisaitl": {
@@ -4805,7 +4805,7 @@
           "bet365": 3000,
           "hardrock": 3000,
           "thescore": 3000,
-          "kalshi": 1624
+          "kalshi": 1595
         }
       },
       "Tage Thompson": {
@@ -7744,10 +7744,10 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 8757
+        "kalshi": 8754
       },
       "New York Rangers": {
-        "kalshi": 23681
+        "kalshi": 23649
       },
       "Toronto Maple Leafs": {
         "kalshi": 17405
@@ -7846,7 +7846,7 @@
         "kalshi": 1000
       },
       "Vegas Golden Knights": {
-        "kalshi": 750
+        "kalshi": 500
       },
       "Dallas Stars": {
         "kalshi": 1236
@@ -7939,7 +7939,7 @@
       },
       "Jack Eichel": {},
       "Nikita Kucherov": {
-        "kalshi": 400
+        "kalshi": 472
       },
       "Connor Hellebuyck": {},
       "Jack Hughes": {},
@@ -9722,7 +9722,7 @@
             "under": -111
           },
           "fanduel": {
-            "line": 85.5,
+            "line": 86.5,
             "over": -114,
             "under": -114
           }
