@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-09 09:58",
+    "last_updated": "2026-08-09 10:08",
     "books": [
       "pinnacle",
       "circa",
@@ -4635,7 +4635,8 @@
           "betano": 500,
           "bet365": 500,
           "hardrock": 650,
-          "thescore": 650
+          "thescore": 650,
+          "kalshi": 213
         }
       },
       "Nikita Kucherov": {
@@ -7743,7 +7744,7 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 8977
+        "kalshi": 8972
       },
       "New York Rangers": {
         "kalshi": 23281
@@ -7753,7 +7754,7 @@
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 3094
+        "kalshi": 3097
       },
       "Dallas Stars": {
         "kalshi": 2495
@@ -7950,7 +7951,9 @@
       "Artemi Panarin": {},
       "Matthew Tkachuk": {},
       "Sidney Crosby": {},
-      "Macklin Celebrini": {},
+      "Macklin Celebrini": {
+        "kalshi": 385
+      },
       "Alex Ovechkin": {},
       "Connor McDavid": {},
       "Igor Shesterkin": {},
