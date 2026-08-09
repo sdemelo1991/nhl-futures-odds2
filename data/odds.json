@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-09 15:37",
+    "last_updated": "2026-08-09 15:47",
     "books": [
       "pinnacle",
       "circa",
@@ -634,8 +634,7 @@
         "hardrock": 6000,
         "bet365": 5000,
         "dazn": 3900,
-        "thescore": 5000,
-        "kalshi": 4900
+        "thescore": 5000
       },
       "Florida Panthers": {
         "pinnacle": 337,
@@ -1092,8 +1091,7 @@
         "bet365": 12500,
         "hardrock": 20000,
         "dazn": 12400,
-        "thescore": 10000,
-        "kalshi": 3233
+        "thescore": 10000
       },
       "Vancouver Canucks": {
         "pinnacle": 25501,
@@ -7838,9 +7836,7 @@
       "San Jose Sharks": {
         "kalshi": 676
       },
-      "Seattle Kraken": {
-        "kalshi": 1000
-      },
+      "Seattle Kraken": {},
       "Vegas Golden Knights": {
         "kalshi": 500
       },
@@ -7899,9 +7895,7 @@
       "Toronto Maple Leafs": {
         "kalshi": 1369
       },
-      "Detroit Red Wings": {
-        "kalshi": 1598
-      },
+      "Detroit Red Wings": {},
       "Buffalo Sabres": {
         "kalshi": 1448
       },
