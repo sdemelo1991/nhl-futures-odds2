@@ -17,7 +17,8 @@ import streamlit as st
 from teams import CONFERENCES, DIVISIONS, TEAMS, teams_in, tricode
 from awards import AWARD_CATEGORIES
 from player_props import PROP_CATEGORIES
-from props_engine import unify_quotes, line_grid, prop_arbs, prop_middles, primary_line
+from props_engine import (unify_quotes, line_grid, prop_arbs, prop_arbs_with_book,
+                          prop_middles, primary_line)
 from players import player_team, canonical_player
 from books import (
     BOOKS, SHARP, HOME_BOOK, book_label, is_sharp, is_home, is_manual, ordered,
@@ -25,7 +26,8 @@ from books import (
 )
 from odds_engine import (
     american_to_decimal, american_to_prob, decimal_to_american, fmt_american,
-    best_price, two_way_arb, points_same_index_arb, points_middles, line_spread,
+    best_price, two_way_arb, two_way_arb_with_book, points_same_index_arb,
+    points_same_index_arb_with_book, points_middles, line_spread,
 )
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "odds.json")
@@ -561,10 +563,12 @@ def fd_signals(data, max_gap=3.0):
         return {"gap": m["gap"], "card": card}
 
     # --- Playoffs (Yes/No arb; no middle concept) ---
+    # Force FanDuel onto a leg: a market can have a bigger arb via two other books
+    # while FD still forms a real arb of its own — the Desk must show FD's.
     for team in TEAMS:
         s = data["playoffs"].get(team, {})
-        a = two_way_arb(s.get("yes", {}), s.get("no", {}))
-        if a and (is_home(a["a_book"]) or is_home(a["b_book"])):
+        a = two_way_arb_with_book(s.get("yes", {}), s.get("no", {}), HOME_BOOK)
+        if a:
             a["legs"] = (f"Yes {leg_badge(a['a_book'], a['a_odds'])} &nbsp;vs&nbsp; "
                          f"No {leg_badge(a['b_book'], a['b_odds'])}")
             arbs.append({"margin": a["margin"], "card": arb_card("Playoffs", esc(team), a, None)})
@@ -574,12 +578,11 @@ def fd_signals(data, max_gap=3.0):
         l = data["team_points"].get(team)
         if not l:
             continue
-        for a in points_same_index_arb(l):
-            if is_home(a["a_book"]) or is_home(a["b_book"]):
-                a["legs"] = (f"Over {leg_badge(a['a_book'], a['a_odds'])} &nbsp;vs&nbsp; "
-                             f"Under {leg_badge(a['b_book'], a['b_odds'])}")
-                arbs.append({"margin": a["margin"],
-                             "card": arb_card("Team Points", f"{esc(team)} · line {a['line']:g}", a, None)})
+        for a in points_same_index_arb_with_book(l, HOME_BOOK):
+            a["legs"] = (f"Over {leg_badge(a['a_book'], a['a_odds'])} &nbsp;vs&nbsp; "
+                         f"Under {leg_badge(a['b_book'], a['b_odds'])}")
+            arbs.append({"margin": a["margin"],
+                         "card": arb_card("Team Points", f"{esc(team)} · line {a['line']:g}", a, None)})
         for m in points_middles(l, min_gap=0.5):
             if is_home(m["over_book"]) or is_home(m["under_book"]):
                 mids.append(mid_item("Team Points", esc(team), m))
@@ -591,12 +594,11 @@ def fd_signals(data, max_gap=3.0):
             q = unify_quotes(entry)
             logo = team_logo(player_team(name) or entry.get("team", ""), "tlogo sm")
             head = f"{esc(name)} {logo}"
-            for a in prop_arbs(q):
-                if HOME_BOOK in (a["a_book"], a["b_book"]):
-                    a["legs"] = (f"Over {leg_badge(a['a_book'], a['a_odds'])} &nbsp;vs&nbsp; "
-                                 f"Under {leg_badge(a['b_book'], a['b_odds'])}")
-                    arbs.append({"margin": a["margin"],
-                                 "card": arb_card(f"Props · {clabel}", f"{head} · o{a['line']:g}", a, None)})
+            for a in prop_arbs_with_book(q, HOME_BOOK):
+                a["legs"] = (f"Over {leg_badge(a['a_book'], a['a_odds'])} &nbsp;vs&nbsp; "
+                             f"Under {leg_badge(a['b_book'], a['b_odds'])}")
+                arbs.append({"margin": a["margin"],
+                             "card": arb_card(f"Props · {clabel}", f"{head} · o{a['line']:g}", a, None)})
             for m in prop_middles(q, min_gap=1.0, max_gap=max_gap):
                 if HOME_BOOK in (m["over_book"], m["under_book"]):
                     mids.append(mid_item(f"Props · {clabel}", head, m))

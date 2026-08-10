@@ -24,7 +24,8 @@ A player entry in odds.json looks like:
 """
 from __future__ import annotations
 
-from odds_engine import american_to_decimal, american_to_prob, best_price, two_way_arb
+from odds_engine import (american_to_decimal, american_to_prob, best_price,
+                         two_way_arb, two_way_arb_with_book)
 
 
 def unify_quotes(entry: dict) -> list[dict]:
@@ -69,6 +70,18 @@ def prop_arbs(quotes: list[dict]) -> list[dict]:
     arbs = []
     for line, sides in line_grid(quotes).items():
         arb = two_way_arb(sides["over"], sides["under"])
+        if arb:
+            arbs.append({"line": line, **arb})
+    return arbs
+
+
+def prop_arbs_with_book(quotes: list[dict], book: str) -> list[dict]:
+    """Like prop_arbs, but only arbs where `book` is a leg — forced onto one
+    side (see two_way_arb_with_book). For the FanDuel Desk, which must surface
+    every FD-leg arb even when another book wins the line's best pairing."""
+    arbs = []
+    for line, sides in line_grid(quotes).items():
+        arb = two_way_arb_with_book(sides["over"], sides["under"], book)
         if arb:
             arbs.append({"line": line, **arb})
     return arbs

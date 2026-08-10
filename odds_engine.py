@@ -92,16 +92,44 @@ def two_way_arb(side_a: dict, side_b: dict) -> dict | None:
     }
 
 
+def two_way_arb_with_book(side_a: dict, side_b: dict, book: str) -> dict | None:
+    """Best two-way arb in which `book` is one of the two legs.
+
+    two_way_arb() only ever considers each side's single best price, so a book's
+    real arb is hidden whenever another book edges it out on one side. The
+    FanDuel Desk must instead surface *every* arb where FanDuel is actually a
+    leg, so this forces `book` onto one side and pairs it with the best price
+    from a *different* book on the opposite side (trying `book` on each side).
+    a_* is always the side_a leg and b_* the side_b leg, mirroring two_way_arb.
+    Returns the higher-margin orientation, or None if neither clears an edge."""
+    candidates = []
+    if book in side_a:                                  # book supplies the side_a leg
+        bb, bo = best_price({k: v for k, v in side_b.items() if k != book})
+        candidates.append((book, side_a[book], bb, bo))
+    if book in side_b:                                  # book supplies the side_b leg
+        ab, ao = best_price({k: v for k, v in side_a.items() if k != book})
+        candidates.append((ab, ao, book, side_b[book]))
+    best = None
+    for a_book, a_odds, b_book, b_odds in candidates:
+        pa, pb = american_to_prob(a_odds), american_to_prob(b_odds)
+        if pa is None or pb is None:
+            continue
+        margin = 1.0 - (pa + pb)
+        if margin <= 1e-6:
+            continue
+        if best is None or margin > best["margin"]:
+            total = pa + pb
+            best = {"a_book": a_book, "a_odds": a_odds, "b_book": b_book, "b_odds": b_odds,
+                    "margin": margin, "stake_a_pct": pa / total, "stake_b_pct": pb / total}
+    return best
+
+
 # ---------------------------------------------------------------------------
 # Team-points: same-index arb + cross-index middles
 # ---------------------------------------------------------------------------
 
-def points_same_index_arb(book_lines: dict) -> list[dict]:
-    """book_lines: {book: {"line": float, "over": odds, "under": odds}}.
-    For each distinct line value, look for an over/under arb across books that
-    both post that exact line. Returns a list of arb dicts (one per line that
-    arbs), each including the line.
-    """
+def _points_by_line(book_lines: dict) -> dict:
+    """{line: {"over": {book: odds}, "under": {book: odds}}} from book_lines."""
     by_line: dict[float, dict] = {}
     for book, q in book_lines.items():
         line = q.get("line")
@@ -112,13 +140,32 @@ def points_same_index_arb(book_lines: dict) -> list[dict]:
             by_line[line]["over"][book] = q["over"]
         if q.get("under") is not None:
             by_line[line]["under"][book] = q["under"]
+    return by_line
 
+
+def points_same_index_arb(book_lines: dict) -> list[dict]:
+    """book_lines: {book: {"line": float, "over": odds, "under": odds}}.
+    For each distinct line value, look for an over/under arb across books that
+    both post that exact line. Returns a list of arb dicts (one per line that
+    arbs), each including the line.
+    """
     arbs = []
-    for line, sides in by_line.items():
+    for line, sides in _points_by_line(book_lines).items():
         arb = two_way_arb(sides["over"], sides["under"])
         if arb:
-            arb = {"line": line, **arb}
-            arbs.append(arb)
+            arbs.append({"line": line, **arb})
+    return arbs
+
+
+def points_same_index_arb_with_book(book_lines: dict, book: str) -> list[dict]:
+    """Like points_same_index_arb, but only arbs where `book` is a leg — forced
+    onto one side (see two_way_arb_with_book). For the FanDuel Desk, which must
+    surface every FD-leg arb even when another book wins the line's best pair."""
+    arbs = []
+    for line, sides in _points_by_line(book_lines).items():
+        arb = two_way_arb_with_book(sides["over"], sides["under"], book)
+        if arb:
+            arbs.append({"line": line, **arb})
     return arbs
 
 
