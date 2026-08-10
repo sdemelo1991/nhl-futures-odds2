@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-10 18:18",
+    "last_updated": "2026-08-10 18:28",
     "books": [
       "pinnacle",
       "circa",
@@ -4601,7 +4601,7 @@
           "betonline": 250,
           "betmgm": 300,
           "caesars": 300,
-          "kambi": 225,
+          "kambi": 250,
           "betano": 275,
           "bet365": 250,
           "hardrock": 250,
@@ -4632,7 +4632,7 @@
           "betonline": 550,
           "betmgm": 500,
           "caesars": 400,
-          "kambi": 600,
+          "kambi": 500,
           "betano": 500,
           "bet365": 500,
           "hardrock": 650,
@@ -7797,7 +7797,7 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 8384
+        "kalshi": 8311
       },
       "New York Rangers": {
         "kalshi": 22572
@@ -7819,10 +7819,10 @@
         "kalshi": 6007
       },
       "Montreal Canadiens": {
-        "kalshi": 1380
+        "kalshi": 1381
       },
       "Minnesota Wild": {
-        "kalshi": 558
+        "kalshi": 552
       },
       "Pittsburgh Penguins": {
         "kalshi": 24231
@@ -10687,6 +10687,447 @@
           },
           "90": {
             "draftkings": 390
+          }
+        }
+      },
+      "Ducks": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 145
+          },
+          "90": {
+            "betmgm": -350
+          },
+          "110": {
+            "betmgm": 675
+          }
+        }
+      },
+      "Bruins": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 475
+          },
+          "90": {
+            "betmgm": 110
+          },
+          "110": {
+            "betmgm": 2800
+          }
+        }
+      },
+      "Sabres": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 145
+          },
+          "90": {
+            "betmgm": -350
+          },
+          "110": {
+            "betmgm": 675
+          }
+        }
+      },
+      "Flames": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 2800
+          },
+          "90": {
+            "betmgm": 475
+          }
+        }
+      },
+      "Hurricanes": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -700
+          },
+          "110": {
+            "betmgm": -105
+          }
+        }
+      },
+      "Blackhawks": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 1700
+          },
+          "90": {
+            "betmgm": 320
+          }
+        }
+      },
+      "Avalanche": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -625
+          },
+          "110": {
+            "betmgm": -102
+          }
+        }
+      },
+      "Blue Jackets": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 260
+          },
+          "90": {
+            "betmgm": -170
+          },
+          "110": {
+            "betmgm": 1300
+          }
+        }
+      },
+      "Stars": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -160
+          },
+          "110": {
+            "betmgm": 280
+          }
+        }
+      },
+      "Red Wings": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 525
+          },
+          "90": {
+            "betmgm": 120
+          },
+          "110": {
+            "betmgm": 3000
+          }
+        }
+      },
+      "Oilers": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -285
+          },
+          "110": {
+            "betmgm": 170
+          }
+        }
+      },
+      "Panthers": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -700
+          },
+          "110": {
+            "betmgm": -105
+          }
+        }
+      },
+      "Kings": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 145
+          },
+          "90": {
+            "betmgm": -350
+          },
+          "110": {
+            "betmgm": 675
+          }
+        }
+      },
+      "Wild": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -190
+          },
+          "110": {
+            "betmgm": 240
+          }
+        }
+      },
+      "Canadiens": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -125
+          },
+          "90": {
+            "betmgm": -900
+          },
+          "110": {
+            "betmgm": 360
+          }
+        }
+      },
+      "Predators": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 625
+          },
+          "90": {
+            "betmgm": 140
+          },
+          "110": {
+            "betmgm": 4000
+          }
+        }
+      },
+      "Devils": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 120
+          },
+          "90": {
+            "betmgm": -450
+          },
+          "110": {
+            "betmgm": 550
+          }
+        }
+      },
+      "Islanders": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 425
+          },
+          "90": {
+            "betmgm": -102
+          },
+          "110": {
+            "betmgm": 2500
+          }
+        }
+      },
+      "Rangers": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 375
+          },
+          "90": {
+            "betmgm": -120
+          },
+          "110": {
+            "betmgm": 2000
+          }
+        }
+      },
+      "Senators": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 160
+          },
+          "90": {
+            "betmgm": -300
+          },
+          "110": {
+            "betmgm": 750
+          }
+        }
+      },
+      "Flyers": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 240
+          },
+          "90": {
+            "betmgm": -190
+          },
+          "110": {
+            "betmgm": 1200
+          }
+        }
+      },
+      "Penguins": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 340
+          },
+          "90": {
+            "betmgm": -135
+          },
+          "110": {
+            "betmgm": 1800
+          }
+        }
+      },
+      "Sharks": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 170
+          },
+          "90": {
+            "betmgm": -285
+          },
+          "110": {
+            "betmgm": 800
+          }
+        }
+      },
+      "Kraken": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 1600
+          },
+          "90": {
+            "betmgm": 310
+          }
+        }
+      },
+      "Blues": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 675
+          },
+          "90": {
+            "betmgm": 145
+          },
+          "110": {
+            "betmgm": 4000
+          }
+        }
+      },
+      "Lightning": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -275
+          },
+          "110": {
+            "betmgm": 175
+          }
+        }
+      },
+      "Maple Leafs": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 130
+          },
+          "90": {
+            "betmgm": -400
+          },
+          "110": {
+            "betmgm": 600
+          }
+        }
+      },
+      "Mammoth": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 130
+          },
+          "90": {
+            "betmgm": -400
+          },
+          "110": {
+            "betmgm": 600
+          }
+        }
+      },
+      "Canucks": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 4000
+          },
+          "90": {
+            "betmgm": 625
+          }
+        }
+      },
+      "Golden Knights": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -250
+          },
+          "110": {
+            "betmgm": 185
+          }
+        }
+      },
+      "Capitals": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": -160
+          },
+          "110": {
+            "betmgm": 280
+          }
+        }
+      },
+      "Jets": {
+        "team": "",
+        "ou": {},
+        "plus": {
+          "100": {
+            "betmgm": 600
+          },
+          "90": {
+            "betmgm": 130
+          },
+          "110": {
+            "betmgm": 3500
           }
         }
       }
