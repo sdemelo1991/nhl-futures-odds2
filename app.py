@@ -18,7 +18,7 @@ from teams import CONFERENCES, DIVISIONS, TEAMS, teams_in, tricode
 from awards import AWARD_CATEGORIES
 from player_props import PROP_CATEGORIES
 from props_engine import (unify_quotes, line_grid, prop_arbs, prop_arbs_with_book,
-                          prop_middles, primary_line)
+                          prop_middles, prop_middles_with_book, primary_line)
 from players import player_team, canonical_player
 from books import (
     BOOKS, SHARP, HOME_BOOK, book_label, is_sharp, is_home, is_manual, ordered,
@@ -27,7 +27,8 @@ from books import (
 from odds_engine import (
     american_to_decimal, american_to_prob, decimal_to_american, fmt_american,
     best_price, two_way_arb, two_way_arb_with_book, points_same_index_arb,
-    points_same_index_arb_with_book, points_middles, line_spread,
+    points_same_index_arb_with_book, points_middles, points_middles_with_book,
+    line_spread,
 )
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "odds.json")
@@ -583,9 +584,8 @@ def fd_signals(data, max_gap=3.0):
                          f"Under {leg_badge(a['b_book'], a['b_odds'])}")
             arbs.append({"margin": a["margin"],
                          "card": arb_card("Team Points", f"{esc(team)} · line {a['line']:g}", a, None)})
-        for m in points_middles(l, min_gap=0.5):
-            if is_home(m["over_book"]) or is_home(m["under_book"]):
-                mids.append(mid_item("Team Points", esc(team), m))
+        for m in points_middles_with_book(l, HOME_BOOK, min_gap=0.5):
+            mids.append(mid_item("Team Points", esc(team), m))
 
     # --- Player Props (unified O/U + X+; arbs + cross-form middles) ---
     for cat, players in (data.get("player_markets", {}) or {}).items():
@@ -599,9 +599,8 @@ def fd_signals(data, max_gap=3.0):
                              f"Under {leg_badge(a['b_book'], a['b_odds'])}")
                 arbs.append({"margin": a["margin"],
                              "card": arb_card(f"Props · {clabel}", f"{head} · o{a['line']:g}", a, None)})
-            for m in prop_middles(q, min_gap=1.0, max_gap=max_gap):
-                if HOME_BOOK in (m["over_book"], m["under_book"]):
-                    mids.append(mid_item(f"Props · {clabel}", head, m))
+            for m in prop_middles_with_book(q, HOME_BOOK, min_gap=1.0, max_gap=max_gap):
+                mids.append(mid_item(f"Props · {clabel}", head, m))
 
     return arbs, mids
 

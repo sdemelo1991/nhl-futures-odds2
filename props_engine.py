@@ -119,6 +119,45 @@ def prop_middles(quotes: list[dict], min_gap: float = 1.0,
     return [best] if best else []
 
 
+def prop_middles_with_book(quotes: list[dict], book: str, min_gap: float = 1.0,
+                           max_gap: float | None = None) -> list[dict]:
+    """Like prop_middles, but only middles where `book` is a leg — forced onto
+    one side (FD's OVER at some line vs the best UNDER at a higher line, and the
+    best OVER at some line vs FD's UNDER at a higher line). For the FanDuel Desk.
+    Returns the single most valuable qualifying middle (lowest combined implied,
+    tightest gap on ties)."""
+    grid = line_grid(quotes)
+    overs_best = [(ln, best_price(s["over"])) for ln, s in grid.items() if s["over"]]
+    unders_best = [(ln, best_price(s["under"])) for ln, s in grid.items() if s["under"]]
+    fd_overs = [(ln, s["over"][book]) for ln, s in grid.items() if book in s["over"]]
+    fd_unders = [(ln, s["under"][book]) for ln, s in grid.items() if book in s["under"]]
+    best = None
+
+    def consider(lo, ob, oo, hi, ub, uo):
+        nonlocal best
+        gap = round(hi - lo, 1)
+        if gap < min_gap or (max_gap is not None and gap > max_gap):
+            return
+        p_o = american_to_prob(oo) or 0
+        p_u = american_to_prob(uo) or 0
+        cand = {"gap": gap,
+                "over_book": ob, "over_line": lo, "over_odds": oo,
+                "under_book": ub, "under_line": hi, "under_odds": uo,
+                "combined_implied": round(p_o + p_u, 4),
+                "is_free_middle": (p_o + p_u) < 1.0}
+        if best is None or (cand["combined_implied"], cand["gap"]) < \
+                (best["combined_implied"], best["gap"]):
+            best = cand
+
+    for lo, oo in fd_overs:                 # FD is the OVER leg
+        for hi, (ub, uo) in unders_best:
+            consider(lo, book, oo, hi, ub, uo)
+    for hi, uo in fd_unders:                # FD is the UNDER leg
+        for lo, (ob, oo) in overs_best:
+            consider(lo, ob, oo, hi, book, uo)
+    return [best] if best else []
+
+
 def primary_line(entry: dict):
     """The representative O/U line for a player (median of posted O/U lines),
     for the summary row. None if the player has only milestones."""

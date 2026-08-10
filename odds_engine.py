@@ -210,6 +210,41 @@ def points_middles(book_lines: dict, min_gap: float = 1.0) -> list[dict]:
     }]
 
 
+def points_middles_with_book(book_lines: dict, book: str, min_gap: float = 1.0) -> list[dict]:
+    """Like points_middles, but only middles where `book` is a leg — forced onto
+    one side and paired with the most extreme opposite line from another book
+    (FD as OVER -> highest under line elsewhere; FD as UNDER -> lowest over line
+    elsewhere). For the FanDuel Desk. Returns the widest qualifying middle."""
+    q = book_lines.get(book)
+    if not q or q.get("line") is None:
+        return []
+    fd_line = q["line"]
+    overs = [(ql["line"], b, ql["over"]) for b, ql in book_lines.items()
+             if b != book and ql.get("line") is not None and ql.get("over") is not None]
+    unders = [(ql["line"], b, ql["under"]) for b, ql in book_lines.items()
+              if b != book and ql.get("line") is not None and ql.get("under") is not None]
+    cands = []
+    if q.get("over") is not None and unders:                 # FD is the OVER leg
+        cands.append(((fd_line, book, q["over"]), max(unders, key=lambda x: x[0])))
+    if q.get("under") is not None and overs:                 # FD is the UNDER leg
+        cands.append((min(overs, key=lambda x: x[0]), (fd_line, book, q["under"])))
+    best = None
+    for (ol, ob, oo), (ul, ub, uo) in cands:
+        gap = round(ul - ol, 1)
+        if gap < min_gap:
+            continue
+        p_o = american_to_prob(oo) or 0
+        p_u = american_to_prob(uo) or 0
+        m = {"gap": gap,
+             "over_book": ob, "over_line": ol, "over_odds": oo,
+             "under_book": ub, "under_line": ul, "under_odds": uo,
+             "combined_implied": round(p_o + p_u, 4),
+             "is_free_middle": (p_o + p_u) < 1.0}
+        if best is None or m["gap"] > best["gap"]:
+            best = m
+    return [best] if best else []
+
+
 def line_spread(book_lines: dict) -> dict:
     """Summary of how far apart the posted lines are across books for one team.
     Returns {min_line, max_line, spread, n_books, distinct_lines}."""
