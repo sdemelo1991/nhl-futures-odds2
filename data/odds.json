@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-10 19:08",
+    "last_updated": "2026-08-10 19:18",
     "books": [
       "pinnacle",
       "circa",
@@ -7807,7 +7807,7 @@
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 3520
+        "kalshi": 3522
       },
       "Dallas Stars": {
         "kalshi": 8069
@@ -7819,16 +7819,16 @@
         "kalshi": 6257
       },
       "Montreal Canadiens": {
-        "kalshi": 1382
+        "kalshi": 1376
       },
       "Minnesota Wild": {
-        "kalshi": 552
+        "kalshi": 557
       },
       "Pittsburgh Penguins": {
         "kalshi": 24231
       },
       "Tampa Bay Lightning": {
-        "kalshi": 1000
+        "kalshi": 1700
       },
       "Vancouver Canucks": {},
       "Detroit Red Wings": {},
@@ -10142,7 +10142,8 @@
         },
         "plus": {
           "60": {
-            "draftkings": -115
+            "draftkings": -115,
+            "betmgm": -115
           },
           "65": {
             "draftkings": 170
@@ -10442,7 +10443,8 @@
             "draftkings": -240
           },
           "50": {
-            "draftkings": 170
+            "draftkings": 170,
+            "betmgm": 170
           },
           "45": {
             "draftkings": -120
@@ -10457,7 +10459,8 @@
             "draftkings": -160
           },
           "50": {
-            "draftkings": 250
+            "draftkings": 250,
+            "betmgm": 250
           },
           "45": {
             "draftkings": 120
@@ -10472,7 +10475,8 @@
             "draftkings": -125
           },
           "50": {
-            "draftkings": 340
+            "draftkings": 340,
+            "betmgm": 340
           },
           "45": {
             "draftkings": 160
@@ -10484,13 +10488,15 @@
         "ou": {},
         "plus": {
           "50": {
-            "draftkings": -220
+            "draftkings": -220,
+            "betmgm": -220
           },
           "55": {
             "draftkings": -110
           },
           "60": {
-            "draftkings": 190
+            "draftkings": 190,
+            "betmgm": 190
           }
         }
       },
@@ -10502,7 +10508,8 @@
             "draftkings": -170
           },
           "60": {
-            "draftkings": 120
+            "draftkings": 120,
+            "betmgm": 120
           },
           "65": {
             "draftkings": 240
@@ -10514,7 +10521,8 @@
         "ou": {},
         "plus": {
           "60": {
-            "draftkings": -225
+            "draftkings": -225,
+            "betmgm": -225
           },
           "65": {
             "draftkings": -110
@@ -10529,7 +10537,8 @@
         "ou": {},
         "plus": {
           "60": {
-            "draftkings": -185
+            "draftkings": -185,
+            "betmgm": -185
           },
           "65": {
             "draftkings": 110
@@ -10544,7 +10553,8 @@
         "ou": {},
         "plus": {
           "60": {
-            "draftkings": -135
+            "draftkings": -135,
+            "betmgm": -135
           },
           "65": {
             "draftkings": 150
