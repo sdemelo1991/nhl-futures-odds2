@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-10 01:17",
+    "last_updated": "2026-08-10 01:27",
     "books": [
       "pinnacle",
       "circa",
@@ -4880,7 +4880,8 @@
           "betano": 6900,
           "bet365": 4000,
           "hardrock": 4000,
-          "thescore": 4000
+          "thescore": 4000,
+          "kalshi": 456
         }
       },
       "Matthew Schaefer": {
@@ -7745,7 +7746,7 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 8739
+        "kalshi": 8738
       },
       "New York Rangers": {
         "kalshi": 22949
@@ -7922,10 +7923,12 @@
     },
     "hart": {
       "Brady Tkachuk": {},
-      "Connor Bedard": {},
+      "Connor Bedard": {
+        "kalshi": 446
+      },
       "Pavel Dorofeyev": {},
       "Nick Suzuki": {
-        "kalshi": 405
+        "kalshi": 400
       },
       "David Pastrnak": {},
       "Mikko Rantanen": {},
@@ -7955,7 +7958,7 @@
       "Matthew Tkachuk": {},
       "Sidney Crosby": {},
       "Macklin Celebrini": {
-        "kalshi": 492
+        "kalshi": 487
       },
       "Alex Ovechkin": {},
       "Connor McDavid": {},
