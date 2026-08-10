@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-10 09:18",
+    "last_updated": "2026-08-10 09:28",
     "books": [
       "pinnacle",
       "circa",
@@ -4684,7 +4684,8 @@
           "betano": 1700,
           "bet365": 1400,
           "hardrock": 1400,
-          "thescore": 1500
+          "thescore": 1500,
+          "kalshi": 223
         }
       },
       "Jack Hughes": {
@@ -7802,7 +7803,7 @@
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 4085
+        "kalshi": 4083
       },
       "Dallas Stars": {
         "kalshi": 3612
@@ -7978,7 +7979,9 @@
       },
       "David Pastrnak": {},
       "Mikko Rantanen": {},
-      "Kirill Kaprizov": {},
+      "Kirill Kaprizov": {
+        "kalshi": 394
+      },
       "Mitchell Marner": {},
       "Quinn Hughes": {
         "kalshi": 455
