@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-10 08:58",
+    "last_updated": "2026-08-10 09:08",
     "books": [
       "pinnacle",
       "circa",
@@ -4668,7 +4668,8 @@
           "betano": 1100,
           "bet365": 1100,
           "hardrock": 900,
-          "thescore": 1200
+          "thescore": 1200,
+          "kalshi": 614
         }
       },
       "Kirill Kaprizov": {
@@ -7716,7 +7717,8 @@
       "Sacha Boisvert": {
         "team": "",
         "prices": {
-          "kambi": 10000
+          "kambi": 10000,
+          "fanduel": 8000
         }
       },
       "Samuel Honzek": {
@@ -7734,7 +7736,50 @@
       "Trevor Connelly": {
         "team": "",
         "prices": {
-          "bet365": 10000
+          "bet365": 10000,
+          "fanduel": 8000
+        }
+      },
+      "Bill Zonnon": {
+        "team": "",
+        "prices": {
+          "fanduel": 8000
+        }
+      },
+      "Carter Bear": {
+        "team": "",
+        "prices": {
+          "fanduel": 8000
+        }
+      },
+      "Charlie Cerrato": {
+        "team": "",
+        "prices": {
+          "fanduel": 8000
+        }
+      },
+      "Justin Carbonneau": {
+        "team": "",
+        "prices": {
+          "fanduel": 8000
+        }
+      },
+      "Filip Bystedt": {
+        "team": "",
+        "prices": {
+          "fanduel": 8000
+        }
+      },
+      "Quentin Musty": {
+        "team": "",
+        "prices": {
+          "fanduel": 8000
+        }
+      },
+      "Trey Augustine": {
+        "team": "",
+        "prices": {
+          "fanduel": 10000
         }
       }
     },
@@ -7769,7 +7814,7 @@
         "kalshi": 6257
       },
       "Montreal Canadiens": {
-        "kalshi": 1402
+        "kalshi": 1400
       },
       "Minnesota Wild": {
         "kalshi": 4079
@@ -7939,7 +7984,7 @@
         "kalshi": 455
       },
       "Nathan MacKinnon": {
-        "kalshi": 318
+        "kalshi": 322
       },
       "Auston Matthews": {
         "kalshi": 564
@@ -7952,7 +7997,9 @@
       "Jack Hughes": {
         "kalshi": 400
       },
-      "Leon Draisaitl": {},
+      "Leon Draisaitl": {
+        "kalshi": 410
+      },
       "Andrei Vasilevskiy": {},
       "Cale Makar": {},
       "Kyle Connor": {},
