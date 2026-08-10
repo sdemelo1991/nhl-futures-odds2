@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-10 02:27",
+    "last_updated": "2026-08-10 02:38",
     "books": [
       "pinnacle",
       "circa",
@@ -2199,7 +2199,7 @@
         "dazn": 250,
         "bet365": 275,
         "hardrock": 250,
-        "kambi": 300,
+        "kambi": 275,
         "thescore": 290
       },
       "no": {
@@ -2212,7 +2212,7 @@
         "dazn": -357,
         "bet365": -385,
         "hardrock": -300,
-        "kambi": -400,
+        "kambi": -375,
         "thescore": -400
       }
     },
@@ -2227,7 +2227,7 @@
         "dazn": -115,
         "bet365": -105,
         "hardrock": -125,
-        "kambi": -118,
+        "kambi": -125,
         "thescore": -115
       },
       "no": {
@@ -2240,7 +2240,7 @@
         "dazn": -115,
         "bet365": -116,
         "hardrock": -105,
-        "kambi": -106,
+        "kambi": 100,
         "thescore": -115
       }
     },
@@ -2647,7 +2647,7 @@
         "dazn": 400,
         "bet365": 350,
         "hardrock": 325,
-        "kambi": 320,
+        "kambi": 375,
         "thescore": 400
       },
       "no": {
@@ -2660,7 +2660,7 @@
         "dazn": -667,
         "bet365": -500,
         "hardrock": -450,
-        "kambi": -435,
+        "kambi": -560,
         "thescore": -600
       }
     },
@@ -3923,8 +3923,8 @@
       },
       "kambi": {
         "line": 106.5,
-        "over": -118,
-        "under": -110
+        "over": -125,
+        "under": 100
       },
       "thescore": {
         "line": 106.5,
