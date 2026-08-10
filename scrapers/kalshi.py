@@ -99,6 +99,24 @@ def get_orderbook(ticker):
     return {}
 
 
+FEE_COEF = 0.07  # Kalshi trading-fee coefficient
+
+
+def with_fee(p):
+    """Fold Kalshi's per-contract trading fee into the contract price.
+
+    Kalshi charges a fee of 0.07 * p * (1-p) dollars per contract (p = price in
+    dollars / probability), paid on top of the price. A YES contract at price p
+    therefore really costs p + fee to get down, so its true implied probability
+    is p + 0.07*p*(1-p). Baking this in keeps Kalshi honest in comparisons — its
+    raw ask often looks like the best line but, after fees, is meaningfully
+    shorter (most so on longshots, where a 13c YES effectively pays ~+625 not
+    ~+669). Returns None on a None input."""
+    if p is None:
+        return None
+    return p + FEE_COEF * p * (1.0 - p)
+
+
 def prob_to_american(p):
     """Implied probability (0-1) -> American odds."""
     if p is None or p <= 0 or p >= 1:
@@ -236,7 +254,7 @@ def main():
         # pass 3 — emit the survivors
         n = 0
         for name, ask, liq, spread in cands:
-            odds = prob_to_american(ask)
+            odds = prob_to_american(with_fee(ask))  # bake in Kalshi's trading fee
             if odds is None:
                 skipped.append(f"{event_ticker}:{name} (bad price {ask:.3f})")
                 continue
