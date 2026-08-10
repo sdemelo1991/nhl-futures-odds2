@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-10 18:58",
+    "last_updated": "2026-08-10 19:08",
     "books": [
       "pinnacle",
       "circa",
@@ -7819,7 +7819,7 @@
         "kalshi": 6257
       },
       "Montreal Canadiens": {
-        "kalshi": 1383
+        "kalshi": 1382
       },
       "Minnesota Wild": {
         "kalshi": 552
@@ -8392,7 +8392,8 @@
         },
         "plus": {
           "30": {
-            "draftkings": -185
+            "draftkings": -185,
+            "betmgm": -185
           },
           "35": {
             "draftkings": 220
@@ -8610,7 +8611,8 @@
         },
         "plus": {
           "30": {
-            "draftkings": -260
+            "draftkings": -260,
+            "betmgm": -250
           },
           "35": {
             "draftkings": 160
@@ -8672,7 +8674,8 @@
         },
         "plus": {
           "30": {
-            "draftkings": -130
+            "draftkings": -130,
+            "betmgm": -130
           },
           "35": {
             "draftkings": 300
@@ -8987,7 +8990,7 @@
         },
         "plus": {
           "30": {
-            "betmgm": 105,
+            "betmgm": 200,
             "draftkings": 220
           },
           "40": {
@@ -9059,7 +9062,8 @@
             "betmgm": -300
           },
           "30": {
-            "draftkings": 500
+            "draftkings": 500,
+            "betmgm": 500
           },
           "25": {
             "draftkings": 140
@@ -9075,7 +9079,8 @@
             "betmgm": -300
           },
           "30": {
-            "draftkings": 500
+            "draftkings": 500,
+            "betmgm": 500
           },
           "25": {
             "draftkings": 140
@@ -9091,7 +9096,8 @@
             "betmgm": -275
           },
           "30": {
-            "draftkings": 600
+            "draftkings": 600,
+            "betmgm": 600
           },
           "25": {
             "draftkings": 160
@@ -9103,7 +9109,8 @@
         "ou": {},
         "plus": {
           "30": {
-            "draftkings": -260
+            "draftkings": -260,
+            "betmgm": -275
           },
           "35": {
             "draftkings": 160
@@ -9124,7 +9131,8 @@
         },
         "plus": {
           "30": {
-            "draftkings": -185
+            "draftkings": -185,
+            "betmgm": -185
           },
           "35": {
             "draftkings": 225
@@ -9145,7 +9153,8 @@
         },
         "plus": {
           "30": {
-            "draftkings": 120
+            "draftkings": 120,
+            "betmgm": 120
           },
           "35": {
             "draftkings": 350
