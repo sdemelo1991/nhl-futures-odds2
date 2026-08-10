@@ -241,6 +241,15 @@ _OVERRIDES = {
     "John Tavares": "Toronto Maple Leafs",
     "William Eklund": "Ottawa Senators",
     "Jacob Markstrom": "Florida Panthers",
+    # Calder longshots FD listed first (no other book to seed the mapping yet):
+    "Bill Zonnon": "Pittsburgh Penguins",
+    "Carter Bear": "Detroit Red Wings",
+    "Charlie Cerrato": "Carolina Hurricanes",
+    "Trey Augustine": "Detroit Red Wings",
+    "Sacha Boisvert": "Chicago Blackhawks",
+    "Quentin Musty": "San Jose Sharks",
+    "Justin Carbonneau": "St. Louis Blues",
+    "Filip Bystedt": "San Jose Sharks",
 }
 PLAYER_TEAM.update({canonical_player(p): t for p, t in _OVERRIDES.items()})
 
