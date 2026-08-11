@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-11 12:30",
+    "last_updated": "2026-08-11 12:31",
     "books": [
       "pinnacle",
       "circa",
@@ -22,7 +22,7 @@
     "book_updated": {
       "circa": "2026-07-24 13:04",
       "bookmaker": "2026-08-11",
-      "caesars": "2026-08-07",
+      "caesars": "2026-08-11",
       "kalshi": "2026-08-11",
       "dazn": "2026-08-11",
       "bet365": "2026-08-06",
@@ -140,7 +140,7 @@
         "betmgm": 4000,
         "circa": 3000,
         "bookmaker": 2800,
-        "caesars": 3300,
+        "caesars": 3500,
         "kambi": 4500,
         "betano": 3400,
         "bet365": 3500,
@@ -410,7 +410,7 @@
         "betmgm": 20000,
         "circa": 6200,
         "bookmaker": 12500,
-        "caesars": 12500,
+        "caesars": 10000,
         "kambi": 15000,
         "betano": 14900,
         "bet365": 15000,
@@ -952,7 +952,7 @@
         "betmgm": 6000,
         "circa": 2600,
         "bookmaker": 4000,
-        "caesars": 5500,
+        "caesars": 5000,
         "kambi": 5000,
         "betano": 4900,
         "bet365": 5000,
@@ -1193,7 +1193,7 @@
         "betonline": 600,
         "betmgm": 575,
         "bookmaker": 600,
-        "caesars": 470,
+        "caesars": 450,
         "kambi": 650,
         "betano": 650,
         "dazn": 650,
@@ -1277,7 +1277,7 @@
         "betonline": 800,
         "betmgm": 750,
         "bookmaker": 545,
-        "caesars": 650,
+        "caesars": 675,
         "kambi": 600,
         "betano": 700,
         "dazn": 650,
@@ -1291,7 +1291,7 @@
         "betonline": 2500,
         "betmgm": 2500,
         "bookmaker": 2800,
-        "caesars": 2600,
+        "caesars": 2400,
         "kambi": 3500,
         "betano": 2400,
         "bet365": 2500,
@@ -1333,7 +1333,7 @@
         "betonline": 1800,
         "betmgm": 1700,
         "bookmaker": 1800,
-        "caesars": 2800,
+        "caesars": 2600,
         "kambi": 2300,
         "betano": 1600,
         "bet365": 1800,
@@ -1361,7 +1361,7 @@
         "betonline": 5000,
         "betmgm": 6000,
         "bookmaker": 5500,
-        "caesars": 6000,
+        "caesars": 7000,
         "kambi": 5000,
         "betano": 5400,
         "bet365": 4500,
@@ -1389,7 +1389,7 @@
         "betonline": 310,
         "betmgm": 400,
         "bookmaker": 400,
-        "caesars": 310,
+        "caesars": 300,
         "kambi": 300,
         "betano": 360,
         "dazn": 360,
@@ -1445,7 +1445,7 @@
         "betonline": 750,
         "betmgm": 750,
         "bookmaker": 600,
-        "caesars": 650,
+        "caesars": 660,
         "kambi": 800,
         "betano": 750,
         "dazn": 750,
@@ -1459,7 +1459,7 @@
         "betonline": 2800,
         "betmgm": 3000,
         "bookmaker": 2200,
-        "caesars": 3800,
+        "caesars": 4000,
         "kambi": 3000,
         "betano": 3400,
         "dazn": 3400,
@@ -1557,7 +1557,7 @@
         "betonline": 20000,
         "betmgm": 25000,
         "bookmaker": 8800,
-        "caesars": 15000,
+        "caesars": 20000,
         "kambi": 10000,
         "betano": 19900,
         "bet365": 10000,
@@ -1669,7 +1669,7 @@
         "fanduel": 3300,
         "draftkings": 3500,
         "betmgm": 4000,
-        "caesars": 6000,
+        "caesars": 5000,
         "kambi": 5000,
         "betano": 3400,
         "bet365": 3500,
@@ -2008,7 +2008,7 @@
       "Tampa Bay Lightning": {
         "fanduel": 35000,
         "betmgm": 30000,
-        "caesars": 17500,
+        "caesars": 25000,
         "bet365": 25000,
         "hardrock": 25000
       },
@@ -2035,7 +2035,7 @@
       "New Jersey Devils": {
         "fanduel": 6500,
         "betmgm": 8000,
-        "caesars": 5500,
+        "caesars": 6000,
         "bet365": 7500,
         "hardrock": 7500
       },
@@ -2090,14 +2090,14 @@
       "Dallas Stars": {
         "fanduel": 17500,
         "betmgm": 15000,
-        "caesars": 12500,
+        "caesars": 15000,
         "bet365": 12500,
         "hardrock": 15000
       },
       "Minnesota Wild": {
         "fanduel": 30000,
         "betmgm": 17500,
-        "caesars": 15000,
+        "caesars": 17500,
         "bet365": 20000,
         "hardrock": 20000
       },
@@ -2132,7 +2132,7 @@
       "Anaheim Ducks": {
         "fanduel": 4000,
         "betmgm": 6600,
-        "caesars": 4500,
+        "caesars": 4000,
         "bet365": 5000,
         "hardrock": 4000
       },
@@ -2160,7 +2160,7 @@
       "San Jose Sharks": {
         "fanduel": 3500,
         "betmgm": 6000,
-        "caesars": 3500,
+        "caesars": 4000,
         "bet365": 4000,
         "hardrock": 3000
       },
@@ -3203,8 +3203,8 @@
       },
       "caesars": {
         "line": 85.5,
-        "over": -115,
-        "under": -115
+        "over": -125,
+        "under": -105
       },
       "bet365": {
         "line": 87.5,
@@ -3297,8 +3297,8 @@
       },
       "caesars": {
         "line": 97.5,
-        "over": -115,
-        "under": -115
+        "over": -125,
+        "under": -105
       },
       "bet365": {
         "line": 99.5,
@@ -3437,9 +3437,9 @@
         "under": -120
       },
       "caesars": {
-        "line": 94.5,
-        "over": -125,
-        "under": -105
+        "line": 95.5,
+        "over": -120,
+        "under": -110
       },
       "bet365": {
         "line": 95.5,
@@ -3719,9 +3719,9 @@
         "under": -120
       },
       "caesars": {
-        "line": 92.5,
-        "over": -120,
-        "under": -110
+        "line": 93.5,
+        "over": -115,
+        "under": -115
       },
       "bet365": {
         "line": 92.5,
@@ -3767,8 +3767,8 @@
       },
       "caesars": {
         "line": 90.5,
-        "over": -105,
-        "under": -125
+        "over": -110,
+        "under": -120
       },
       "bet365": {
         "line": 90.5,
@@ -3908,8 +3908,8 @@
       },
       "caesars": {
         "line": 108.5,
-        "over": -125,
-        "under": -105
+        "over": -130,
+        "under": 100
       },
       "bet365": {
         "line": 107.5,
@@ -3954,9 +3954,9 @@
         "under": -105
       },
       "caesars": {
-        "line": 102.5,
-        "over": -105,
-        "under": -125
+        "line": 101.5,
+        "over": -120,
+        "under": -110
       },
       "bet365": {
         "line": 100.5,
@@ -4143,8 +4143,8 @@
       },
       "caesars": {
         "line": 95.5,
-        "over": -120,
-        "under": -110
+        "over": -125,
+        "under": -105
       },
       "bet365": {
         "line": 96.5,
@@ -4189,9 +4189,9 @@
         "under": -120
       },
       "caesars": {
-        "line": 86.5,
-        "over": -120,
-        "under": -110
+        "line": 85.5,
+        "over": -110,
+        "under": -120
       },
       "bet365": {
         "line": 85.5,
@@ -4425,8 +4425,8 @@
       },
       "caesars": {
         "line": 94.5,
-        "over": -120,
-        "under": -110
+        "over": -130,
+        "under": 100
       },
       "bet365": {
         "line": 94.5,
@@ -4518,9 +4518,9 @@
         "under": -110
       },
       "caesars": {
-        "line": 76.5,
-        "over": -115,
-        "under": -115
+        "line": 74.5,
+        "over": -105,
+        "under": -125
       },
       "bet365": {
         "line": 74.5,

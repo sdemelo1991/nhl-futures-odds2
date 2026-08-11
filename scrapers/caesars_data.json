@@ -1,6 +1,6 @@
 {
   "_comment": "Caesars (manual/paste, from CZR screenshots). Cup/Conf/Div/Presidents/Worst/TeamPoints/Playoffs/Awards/Specials/PlayerProps(goals).",
-  "updated": "2026-08-07",
+  "updated": "2026-08-11",
   "specials": {
     "conf": {
       "Western": -105,
@@ -15,54 +15,246 @@
   },
   "player_markets": {
     "goals": {
-      "Adrian Kempe": {"line": 34.5, "over": -110, "under": -120},
-      "Alex DeBrincat": {"line": 36.5, "over": -115, "under": -115},
-      "Alex Ovechkin": {"line": 29.5, "over": -115, "under": -115},
-      "Alex Tuch": {"line": 32.5, "over": -115, "under": -115},
-      "Auston Matthews": {"line": 41.5, "over": -110, "under": -120},
-      "Bo Horvat": {"line": 31.5, "over": -115, "under": -115},
-      "Brady Tkachuk": {"line": 30.5, "over": -115, "under": -115},
-      "Brandon Hagel": {"line": 35.5, "over": -115, "under": -115},
-      "Clayton Keller": {"line": 29.5, "over": -115, "under": -115},
-      "Cole Caufield": {"line": 39.5, "over": -115, "under": -115},
-      "Connor McDavid": {"line": 41.5, "over": -110, "under": -120},
-      "Cutter Gauthier": {"line": 35.5, "over": -115, "under": -115},
-      "David Pastrnak": {"line": 35.5, "over": -115, "under": -115},
-      "Drake Batherson": {"line": 29.5, "over": -115, "under": -115},
-      "Dylan Guenther": {"line": 35.5, "over": -115, "under": -115},
-      "Filip Forsberg": {"line": 36.5, "over": -110, "under": -120},
-      "Gavin McKenna": {"line": 22.5, "over": -115, "under": -115},
-      "Jack Eichel": {"line": 29.5, "over": -110, "under": -120},
-      "Jack Hughes": {"line": 30.5, "over": -110, "under": -120},
-      "Jake Guentzel": {"line": 34.5, "over": -115, "under": -115},
-      "Jared McCann": {"line": 22.5, "over": -115, "under": -115},
-      "Jason Robertson": {"line": 39.5, "over": -115, "under": -115},
-      "Jordan Kyrou": {"line": 28.5, "over": -115, "under": -115},
-      "Kevin Fiala": {"line": 28.5, "over": -110, "under": -120},
-      "Kirill Kaprizov": {"line": 43.5, "over": -115, "under": -115},
-      "Kirill Marchenko": {"line": 28.5, "over": -115, "under": -115},
-      "Kyle Connor": {"line": 37.5, "over": -115, "under": -115},
-      "Leo Carlsson": {"line": 29.5, "over": -115, "under": -115},
-      "Leon Draisaitl": {"line": 43.5, "over": -115, "under": -115},
-      "Macklin Celebrini": {"line": 40.5, "over": -115, "under": -115},
-      "Mark Scheifele": {"line": 32.5, "over": -115, "under": -115},
-      "Matt Boldy": {"line": 36.5, "over": -115, "under": -115},
-      "Matthew Tkachuk": {"line": 28.5, "over": -110, "under": -120},
-      "Mika Zibanejad": {"line": 26.5, "over": -120, "under": -110},
-      "Mitch Marner": {"line": 25.5, "over": -115, "under": -115},
-      "Morgan Geekie": {"line": 34.5, "over": -115, "under": -115},
-      "Nathan MacKinnon": {"line": 45.5, "over": -115, "under": -115},
-      "Nico Hischier": {"line": 28.5, "over": -115, "under": -115},
-      "Nikita Kucherov": {"line": 40.5, "over": -115, "under": -115},
-      "Owen Tippett": {"line": 27.5, "over": -115, "under": -115},
-      "Pavel Dorofeyev": {"line": 33.5, "over": -115, "under": -115},
-      "Sam Reinhart": {"line": 36.5, "over": -115, "under": -115},
-      "Sebastian Aho": {"line": 29.5, "over": -115, "under": -115},
-      "Sidney Crosby": {"line": 30.5, "over": -115, "under": -115},
-      "Tage Thompson": {"line": 39.5, "over": -110, "under": -120},
-      "Tyler Bertuzzi": {"line": 26.5, "over": -120, "under": -110},
-      "William Nylander": {"line": 37.5, "over": -115, "under": -115},
-      "Wyatt Johnston": {"line": 38.5, "over": -115, "under": -115}
+      "Adrian Kempe": {
+        "line": 34.5,
+        "over": -110,
+        "under": -120
+      },
+      "Alex DeBrincat": {
+        "line": 36.5,
+        "over": -115,
+        "under": -115
+      },
+      "Alex Ovechkin": {
+        "line": 29.5,
+        "over": -115,
+        "under": -115
+      },
+      "Alex Tuch": {
+        "line": 32.5,
+        "over": -115,
+        "under": -115
+      },
+      "Auston Matthews": {
+        "line": 41.5,
+        "over": -110,
+        "under": -120
+      },
+      "Bo Horvat": {
+        "line": 31.5,
+        "over": -115,
+        "under": -115
+      },
+      "Brady Tkachuk": {
+        "line": 30.5,
+        "over": -115,
+        "under": -115
+      },
+      "Brandon Hagel": {
+        "line": 35.5,
+        "over": -115,
+        "under": -115
+      },
+      "Clayton Keller": {
+        "line": 29.5,
+        "over": -115,
+        "under": -115
+      },
+      "Cole Caufield": {
+        "line": 39.5,
+        "over": -115,
+        "under": -115
+      },
+      "Connor McDavid": {
+        "line": 41.5,
+        "over": -110,
+        "under": -120
+      },
+      "Cutter Gauthier": {
+        "line": 35.5,
+        "over": -115,
+        "under": -115
+      },
+      "David Pastrnak": {
+        "line": 35.5,
+        "over": -115,
+        "under": -115
+      },
+      "Drake Batherson": {
+        "line": 29.5,
+        "over": -115,
+        "under": -115
+      },
+      "Dylan Guenther": {
+        "line": 35.5,
+        "over": -115,
+        "under": -115
+      },
+      "Filip Forsberg": {
+        "line": 36.5,
+        "over": -110,
+        "under": -120
+      },
+      "Gavin McKenna": {
+        "line": 22.5,
+        "over": -115,
+        "under": -115
+      },
+      "Jack Eichel": {
+        "line": 29.5,
+        "over": -110,
+        "under": -120
+      },
+      "Jack Hughes": {
+        "line": 30.5,
+        "over": -110,
+        "under": -120
+      },
+      "Jake Guentzel": {
+        "line": 34.5,
+        "over": -115,
+        "under": -115
+      },
+      "Jared McCann": {
+        "line": 22.5,
+        "over": -115,
+        "under": -115
+      },
+      "Jason Robertson": {
+        "line": 39.5,
+        "over": -115,
+        "under": -115
+      },
+      "Jordan Kyrou": {
+        "line": 28.5,
+        "over": -115,
+        "under": -115
+      },
+      "Kevin Fiala": {
+        "line": 28.5,
+        "over": -110,
+        "under": -120
+      },
+      "Kirill Kaprizov": {
+        "line": 43.5,
+        "over": -115,
+        "under": -115
+      },
+      "Kirill Marchenko": {
+        "line": 28.5,
+        "over": -115,
+        "under": -115
+      },
+      "Kyle Connor": {
+        "line": 37.5,
+        "over": -115,
+        "under": -115
+      },
+      "Leo Carlsson": {
+        "line": 29.5,
+        "over": -115,
+        "under": -115
+      },
+      "Leon Draisaitl": {
+        "line": 43.5,
+        "over": -115,
+        "under": -115
+      },
+      "Macklin Celebrini": {
+        "line": 40.5,
+        "over": -115,
+        "under": -115
+      },
+      "Mark Scheifele": {
+        "line": 32.5,
+        "over": -115,
+        "under": -115
+      },
+      "Matt Boldy": {
+        "line": 36.5,
+        "over": -115,
+        "under": -115
+      },
+      "Matthew Tkachuk": {
+        "line": 28.5,
+        "over": -110,
+        "under": -120
+      },
+      "Mika Zibanejad": {
+        "line": 26.5,
+        "over": -120,
+        "under": -110
+      },
+      "Mitch Marner": {
+        "line": 25.5,
+        "over": -115,
+        "under": -115
+      },
+      "Morgan Geekie": {
+        "line": 34.5,
+        "over": -115,
+        "under": -115
+      },
+      "Nathan MacKinnon": {
+        "line": 45.5,
+        "over": -115,
+        "under": -115
+      },
+      "Nico Hischier": {
+        "line": 28.5,
+        "over": -115,
+        "under": -115
+      },
+      "Nikita Kucherov": {
+        "line": 40.5,
+        "over": -115,
+        "under": -115
+      },
+      "Owen Tippett": {
+        "line": 27.5,
+        "over": -115,
+        "under": -115
+      },
+      "Pavel Dorofeyev": {
+        "line": 33.5,
+        "over": -115,
+        "under": -115
+      },
+      "Sam Reinhart": {
+        "line": 36.5,
+        "over": -115,
+        "under": -115
+      },
+      "Sebastian Aho": {
+        "line": 29.5,
+        "over": -115,
+        "under": -115
+      },
+      "Sidney Crosby": {
+        "line": 30.5,
+        "over": -115,
+        "under": -115
+      },
+      "Tage Thompson": {
+        "line": 39.5,
+        "over": -110,
+        "under": -120
+      },
+      "Tyler Bertuzzi": {
+        "line": 26.5,
+        "over": -120,
+        "under": -110
+      },
+      "William Nylander": {
+        "line": 37.5,
+        "over": -115,
+        "under": -115
+      },
+      "Wyatt Johnston": {
+        "line": 38.5,
+        "over": -115,
+        "under": -115
+      }
     }
   },
   "cup": {
@@ -81,7 +273,7 @@
     "Buffalo Sabres": 2500,
     "Los Angeles Kings": 3000,
     "Anaheim Ducks": 3000,
-    "Ottawa Senators": 3300,
+    "Ottawa Senators": 3500,
     "San Jose Sharks": 3500,
     "Toronto Maple Leafs": 4000,
     "Philadelphia Flyers": 5000,
@@ -93,7 +285,7 @@
     "Winnipeg Jets": 10000,
     "Detroit Red Wings": 10000,
     "Nashville Predators": 12500,
-    "St. Louis Blues": 12500,
+    "St. Louis Blues": 10000,
     "Chicago Blackhawks": 20000,
     "Seattle Kraken": 50000,
     "Vancouver Canucks": 50000,
@@ -110,7 +302,7 @@
     "Los Angeles Kings": 1500,
     "San Jose Sharks": 1600,
     "Winnipeg Jets": 5000,
-    "St. Louis Blues": 5500,
+    "St. Louis Blues": 5000,
     "Nashville Predators": 6000,
     "Chicago Blackhawks": 9000,
     "Seattle Kraken": 20000,
@@ -136,15 +328,15 @@
   "division": {
     "Carolina Hurricanes": 115,
     "Washington Capitals": 290,
-    "New Jersey Devils": 650,
+    "New Jersey Devils": 675,
     "Philadelphia Flyers": 900,
     "Columbus Blue Jackets": 1600,
     "New York Rangers": 2200,
-    "New York Islanders": 2600,
-    "Pittsburgh Penguins": 2800,
+    "New York Islanders": 2400,
+    "Pittsburgh Penguins": 2600,
     "Florida Panthers": 160,
     "Tampa Bay Lightning": 380,
-    "Montreal Canadiens": 470,
+    "Montreal Canadiens": 450,
     "Toronto Maple Leafs": 800,
     "Buffalo Sabres": 900,
     "Ottawa Senators": 1000,
@@ -152,12 +344,12 @@
     "Detroit Red Wings": 4000,
     "Colorado Avalanche": 145,
     "Minnesota Wild": 300,
-    "Dallas Stars": 310,
-    "Utah Mammoth": 650,
+    "Dallas Stars": 300,
+    "Utah Mammoth": 660,
     "St. Louis Blues": 3000,
-    "Winnipeg Jets": 3800,
+    "Winnipeg Jets": 4000,
     "Nashville Predators": 5000,
-    "Chicago Blackhawks": 6000,
+    "Chicago Blackhawks": 7000,
     "Edmonton Oilers": 175,
     "Vegas Golden Knights": 200,
     "San Jose Sharks": 500,
@@ -165,7 +357,7 @@
     "Anaheim Ducks": 800,
     "Seattle Kraken": 7000,
     "Calgary Flames": 10000,
-    "Vancouver Canucks": 15000
+    "Vancouver Canucks": 20000
   },
   "presidents": {
     "Colorado Avalanche": 550,
@@ -186,7 +378,7 @@
     "Utah Mammoth": 4000,
     "San Jose Sharks": 5000,
     "Philadelphia Flyers": 5000,
-    "Toronto Maple Leafs": 6000,
+    "Toronto Maple Leafs": 5000,
     "New York Rangers": 10000,
     "Columbus Blue Jackets": 10000,
     "Pittsburgh Penguins": 10000,
@@ -214,21 +406,21 @@
     "Boston Bruins": 2000,
     "Pittsburgh Penguins": 2000,
     "New York Islanders": 2400,
-    "San Jose Sharks": 3500,
+    "San Jose Sharks": 4000,
     "Philadelphia Flyers": 3500,
     "Columbus Blue Jackets": 3500,
-    "Anaheim Ducks": 4500,
+    "Anaheim Ducks": 4000,
     "Utah Mammoth": 5000,
     "Los Angeles Kings": 5500,
-    "New Jersey Devils": 5500,
+    "New Jersey Devils": 6000,
     "Ottawa Senators": 6000,
     "Buffalo Sabres": 6000,
     "Toronto Maple Leafs": 7000,
     "Montreal Canadiens": 7500,
     "Washington Capitals": 10000,
-    "Dallas Stars": 12500,
-    "Minnesota Wild": 15000,
-    "Tampa Bay Lightning": 17500,
+    "Dallas Stars": 15000,
+    "Minnesota Wild": 17500,
+    "Tampa Bay Lightning": 25000,
     "Edmonton Oilers": 22500,
     "Vegas Golden Knights": 25000,
     "Florida Panthers": 35000,
@@ -268,8 +460,8 @@
     },
     "Colorado Avalanche": {
       "line": 108.5,
-      "over": -125,
-      "under": -105
+      "over": -130,
+      "under": 100
     },
     "Columbus Blue Jackets": {
       "line": 90.5,
@@ -277,14 +469,14 @@
       "under": -110
     },
     "Dallas Stars": {
-      "line": 102.5,
-      "over": -105,
-      "under": -125
+      "line": 101.5,
+      "over": -120,
+      "under": -110
     },
     "Detroit Red Wings": {
       "line": 85.5,
-      "over": -115,
-      "under": -115
+      "over": -125,
+      "under": -105
     },
     "Edmonton Oilers": {
       "line": 104.5,
@@ -308,8 +500,8 @@
     },
     "Montreal Canadiens": {
       "line": 97.5,
-      "over": -115,
-      "under": -115
+      "over": -125,
+      "under": -105
     },
     "Nashville Predators": {
       "line": 85.5,
@@ -337,19 +529,19 @@
       "under": -115
     },
     "Philadelphia Flyers": {
-      "line": 92.5,
-      "over": -120,
-      "under": -110
+      "line": 93.5,
+      "over": -115,
+      "under": -115
     },
     "Pittsburgh Penguins": {
       "line": 90.5,
-      "over": -105,
-      "under": -125
+      "over": -110,
+      "under": -120
     },
     "San Jose Sharks": {
       "line": 94.5,
-      "over": -120,
-      "under": -110
+      "over": -130,
+      "under": 100
     },
     "Seattle Kraken": {
       "line": 80.5,
@@ -367,19 +559,19 @@
       "under": -110
     },
     "Toronto Maple Leafs": {
-      "line": 94.5,
-      "over": -125,
-      "under": -105
-    },
-    "Utah Mammoth": {
       "line": 95.5,
       "over": -120,
       "under": -110
     },
+    "Utah Mammoth": {
+      "line": 95.5,
+      "over": -125,
+      "under": -105
+    },
     "Vancouver Canucks": {
-      "line": 76.5,
-      "over": -115,
-      "under": -115
+      "line": 74.5,
+      "over": -105,
+      "under": -125
     },
     "Vegas Golden Knights": {
       "line": 103.5,
@@ -392,9 +584,9 @@
       "under": -110
     },
     "Winnipeg Jets": {
-      "line": 86.5,
-      "over": -120,
-      "under": -110
+      "line": 85.5,
+      "over": -110,
+      "under": -120
     }
   },
   "playoffs": {
