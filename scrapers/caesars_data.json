@@ -21,14 +21,14 @@
         "under": -120
       },
       "Alex DeBrincat": {
-        "line": 36.5,
+        "line": 34.5,
         "over": -115,
         "under": -115
       },
       "Alex Ovechkin": {
         "line": 29.5,
-        "over": -115,
-        "under": -115
+        "over": -110,
+        "under": -120
       },
       "Alex Tuch": {
         "line": 32.5,
@@ -56,19 +56,19 @@
         "under": -115
       },
       "Clayton Keller": {
-        "line": 29.5,
-        "over": -115,
-        "under": -115
+        "line": 30.5,
+        "over": -105,
+        "under": -125
       },
       "Cole Caufield": {
-        "line": 39.5,
+        "line": 41.5,
         "over": -115,
         "under": -115
       },
       "Connor McDavid": {
         "line": 41.5,
-        "over": -110,
-        "under": -120
+        "over": -115,
+        "under": -115
       },
       "Cutter Gauthier": {
         "line": 35.5,
@@ -76,9 +76,9 @@
         "under": -115
       },
       "David Pastrnak": {
-        "line": 35.5,
-        "over": -115,
-        "under": -115
+        "line": 36.5,
+        "over": -120,
+        "under": -110
       },
       "Drake Batherson": {
         "line": 29.5,
@@ -91,7 +91,7 @@
         "under": -115
       },
       "Filip Forsberg": {
-        "line": 36.5,
+        "line": 35.5,
         "over": -110,
         "under": -120
       },
@@ -152,8 +152,8 @@
       },
       "Leo Carlsson": {
         "line": 29.5,
-        "over": -115,
-        "under": -115
+        "over": -110,
+        "under": -120
       },
       "Leon Draisaitl": {
         "line": 43.5,
@@ -176,14 +176,14 @@
         "under": -115
       },
       "Matthew Tkachuk": {
-        "line": 28.5,
+        "line": 27.5,
         "over": -110,
         "under": -120
       },
       "Mika Zibanejad": {
         "line": 26.5,
-        "over": -120,
-        "under": -110
+        "over": -115,
+        "under": -115
       },
       "Mitch Marner": {
         "line": 25.5,
@@ -242,8 +242,8 @@
       },
       "Tyler Bertuzzi": {
         "line": 26.5,
-        "over": -120,
-        "under": -110
+        "over": -110,
+        "under": -120
       },
       "William Nylander": {
         "line": 37.5,
@@ -611,8 +611,8 @@
       "no": 700
     },
     "Chicago Blackhawks": {
-      "yes": 400,
-      "no": -575
+      "yes": 375,
+      "no": -500
     },
     "Colorado Avalanche": {
       "yes": -1600,
@@ -679,8 +679,8 @@
       "no": -270
     },
     "San Jose Sharks": {
-      "yes": -180,
-      "no": 145
+      "yes": -185,
+      "no": 150
     },
     "Seattle Kraken": {
       "yes": 400,
@@ -699,8 +699,8 @@
       "no": -115
     },
     "Utah Mammoth": {
-      "yes": -220,
-      "no": 175
+      "yes": -200,
+      "no": 165
     },
     "Vancouver Canucks": {
       "yes": 800,
@@ -721,94 +721,205 @@
   },
   "awards": {
     "hart": {
-      "Connor McDavid": 300,
-      "Nathan MacKinnon": 350,
+      "Connor McDavid": 260,
+      "Nathan MacKinnon": 375,
       "Macklin Celebrini": 400,
       "Leon Draisaitl": 1100,
       "Nikita Kucherov": 1200,
       "Kirill Kaprizov": 1600,
       "Auston Matthews": 1800,
       "David Pastrnak": 2000,
-      "Nick Suzuki": 2200,
-      "Cale Makar": 2500,
-      "Mikko Rantanen": 3000,
-      "Jack Hughes": 3000,
-      "Quinn Hughes": 3000,
-      "Jack Eichel": 3000,
-      "Matt Boldy": 4000,
-      "Mitch Marner": 4000,
-      "Tage Thompson": 5000,
-      "Jason Robertson": 6000,
-      "William Nylander": 7000,
-      "Connor Bedard": 7000,
-      "Connor Hellebuyck": 7000
+      "Nick Suzuki": 2500,
+      "Jack Hughes": 2800,
+      "Jack Eichel": 3300,
+      "Cale Makar": 3500,
+      "Mitch Marner": 3500,
+      "Quinn Hughes": 4000,
+      "Jason Robertson": 4500,
+      "Mikko Rantanen": 5000,
+      "Tage Thompson": 5500,
+      "Matt Boldy": 7000,
+      "Connor Hellebuyck": 7000,
+      "Cole Caufield": 8000,
+      "Connor Bedard": 8000,
+      "Mark Scheifele": 9000,
+      "Ilya Sorokin": 10000,
+      "Matthew Schaefer": 10000,
+      "Logan Thompson": 10000,
+      "Sam Reinhart": 10000,
+      "Leo Carlsson": 10000,
+      "Matthew Tkachuk": 10000,
+      "Andrei Vasilevskiy": 10000,
+      "Brayden Point": 15000,
+      "Kyle Connor": 15000,
+      "Brandon Hagel": 15000,
+      "Brady Tkachuk": 15000,
+      "William Nylander": 15000,
+      "Zach Werenski": 15000,
+      "Aleksander Barkov": 15000,
+      "Rasmus Dahlin": 15000,
+      "Nikolaj Ehlers": 20000,
+      "Trevor Zegras": 20000,
+      "Porter Martone": 20000,
+      "Filip Forsberg": 20000,
+      "Lane Hutson": 20000,
+      "Jeremy Swayman": 20000,
+      "Sidney Crosby": 20000,
+      "Juraj Slafkovsky": 20000,
+      "Nico Hischier": 20000,
+      "Igor Shesterkin": 20000,
+      "Mathew Barzal": 20000,
+      "Tim Stutzle": 20000,
+      "Logan Cooley": 20000,
+      "Clayton Keller": 20000,
+      "Wyatt Johnston": 20000,
+      "Andrei Svechnikov": 25000,
+      "Dylan Larkin": 25000,
+      "Artemi Panarin": 25000,
+      "Dylan Guenther": 25000,
+      "Roope Hintz": 25000,
+      "Jake Guentzel": 25000,
+      "Jordan Kyrou": 25000,
+      "Alex DeBrincat": 25000,
+      "Gavin McKenna": 25000,
+      "Sebastian Aho": 25000,
+      "Adrian Kempe": 25000,
+      "Kevin Fiala": 25000,
+      "Evan Bouchard": 25000,
+      "Cutter Gauthier": 25000,
+      "Robert Thomas": 25000,
+      "Alex Tuch": 30000,
+      "Kirill Marchenko": 30000,
+      "Mark Stone": 30000,
+      "Elias Pettersson": 30000,
+      "Patrick Kane": 30000,
+      "Alex Ovechkin": 30000,
+      "Jesper Bratt": 30000,
+      "Martin Necas": 30000,
+      "Adam Fox": 30000,
+      "Logan Stankoven": 30000,
+      "Mika Zibanejad": 30000
     },
     "vezina": {
       "Connor Hellebuyck": 400,
-      "Andrei Vasilevskiy": 550,
-      "Ilya Sorokin": 650,
-      "Logan Thompson": 800,
-      "Jeremy Swayman": 1000,
-      "Igor Shesterkin": 1100,
-      "Jesper Wallstedt": 1400,
+      "Ilya Sorokin": 700,
+      "Logan Thompson": 700,
+      "Andrei Vasilevskiy": 850,
+      "Igor Shesterkin": 1000,
+      "Jeremy Swayman": 1100,
+      "Jesper Wallstedt": 1500,
+      "Scott Wedgewood": 2000,
+      "Jet Greaves": 2000,
       "Jakub Dobes": 2000,
-      "Jet Greaves": 2200,
-      "Scott Wedgewood": 2500,
+      "Jacob Markstrom": 2500,
       "Brandon Bussi": 2500,
       "Jake Oettinger": 3000,
-      "Karel Vejmelka": 3000,
       "Sergei Bobrovsky": 3500,
-      "Darcy Kuemper": 3500,
       "Dan Vladar": 3500,
-      "Linus Ullmark": 3500,
-      "Jacob Markstrom": 4000,
+      "Karel Vejmelka": 3500,
+      "Darcy Kuemper": 4000,
       "Lukas Dostal": 5000,
       "Mackenzie Blackwood": 5000,
-      "Yaroslav Askarov": 6000,
+      "Linus Ullmark": 5000,
+      "Jake Allen": 6000,
+      "Jordan Binnington": 6000,
       "Carter Hart": 6000,
       "Frederik Andersen": 7000,
       "Juuse Saros": 7000,
       "Ukko-Pekka Luukkonen": 7000,
-      "Alex Lyon": 7000
+      "Yaroslav Askarov": 7000,
+      "Spencer Knight": 8000,
+      "Thatcher Demko": 8000,
+      "John Gibson": 8000,
+      "Filip Gustavsson": 10000,
+      "Joel Hofer": 12500,
+      "Arturs Silovs": 15000,
+      "Alex Lyon": 15000,
+      "Joey Daccord": 15000,
+      "Dustin Wolf": 15000,
+      "Adin Hill": 20000,
+      "Stuart Skinner": 20000,
+      "Tristan Jarry": 20000,
+      "Arvid Soderblom": 20000,
+      "Alex Nedeljkovic": 20000,
+      "Philipp Grubauer": 20000,
+      "Anthony Stolarz": 20000
     },
     "norris": {
-      "Cale Makar": 250,
+      "Cale Makar": 275,
       "Quinn Hughes": 450,
-      "Zach Werenski": 500,
+      "Zach Werenski": 525,
       "Rasmus Dahlin": 650,
-      "Matthew Schaefer": 950,
-      "Lane Hutson": 1100,
-      "Moritz Seider": 1200,
-      "Evan Bouchard": 1500,
+      "Lane Hutson": 1000,
+      "Evan Bouchard": 1100,
+      "Moritz Seider": 1500,
+      "Matthew Schaefer": 1600,
       "Miro Heiskanen": 2500,
-      "Jackson LaCombe": 2800,
+      "Jackson LaCombe": 3000,
       "Charlie McAvoy": 3000,
       "Adam Fox": 3500,
       "Jake Sanderson": 3500,
       "Victor Hedman": 4000,
-      "Darren Raddysh": 4000,
       "Roman Josi": 4500,
       "Jakob Chychrun": 4500,
-      "Josh Morrissey": 5500
+      "Darren Raddysh": 5000,
+      "Josh Morrissey": 5500,
+      "Bowen Byram": 7500,
+      "Mikhail Sergachev": 7500,
+      "John Carlson": 8000,
+      "Erik Karlsson": 10000,
+      "Brock Faber": 10000,
+      "Shea Theodore": 10000,
+      "Travis Sanheim": 15000,
+      "Jaccob Slavin": 15000,
+      "Dougie Hamilton": 15000,
+      "Vince Dunn": 20000,
+      "Thomas Harley": 20000,
+      "Noah Dobson": 20000,
+      "Shayne Gostisbehere": 20000,
+      "Morgan Rielly": 22500,
+      "Rasmus Andersson": 25000,
+      "Luke Hughes": 25000,
+      "K'Andre Miller": 25000,
+      "Cole Hutson": 25000,
+      "Cam Fowler": 30000,
+      "Devon Toews": 30000,
+      "Zeev Buium": 30000,
+      "Artyom Levshunov": 30000,
+      "Gustav Forsling": 30000,
+      "Dmitry Orlov": 30000
     },
     "calder": {
       "Porter Martone": 190,
       "Gavin McKenna": 260,
-      "Ivar Stenberg": 575,
+      "Ivar Stenberg": 550,
       "Cole Hutson": 850,
       "Anton Frondell": 900,
-      "Roman Kantserov": 1300,
-      "Konsta Helenius": 1500,
+      "Roman Kantserov": 1200,
+      "Konsta Helenius": 1700,
       "Ilya Protas": 2000,
-      "Viggo Bjorck": 3000,
       "James Hagens": 3500,
       "Tij Iginla": 4000,
-      "Jacob Fowler": 4000,
-      "Victor Eklund": 5000,
-      "Caleb Desnoyers": 6000,
-      "Artur Akhtyamov": 6500,
-      "Roger McQueen": 7000,
-      "Carter Yakemchuk": 8000
+      "Viggo Bjorck": 4000,
+      "Victor Eklund": 5500,
+      "Caleb Desnoyers": 6500,
+      "Jacob Fowler": 6500,
+      "Roger McQueen": 6500,
+      "Artur Akhtyamov": 7500,
+      "Carter Yakemchuk": 9000,
+      "Fabian Lysell": 10000,
+      "T.J. Hughes": 12500,
+      "Braeden Cootes": 12500,
+      "Brady Martin": 12500,
+      "Bradly Nadeau": 12500,
+      "Cole Eiserman": 15000,
+      "Alberts Smits": 15000,
+      "Oliver Bonk": 17500,
+      "Oscar Fisker Moelgaard": 27500,
+      "Cole Beaudoin": 30000,
+      "David Reinbacher": 30000,
+      "Harrison Brunicke": 30000,
+      "Theo Lindstein": 30000
     }
   }
 }
