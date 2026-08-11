@@ -28,7 +28,7 @@ import zipfile
 
 import requests
 
-from common import CACHE_DIR, load, save, set_to_win, stamp_book
+from common import CACHE_DIR, load, save, set_to_win, set_award, stamp_book
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -108,8 +108,12 @@ def write():
         for team, odds in data.get(market, {}).items():
             set_to_win(doc, market, team, BOOK, odds)
             n += 1
+    for cat, players in (data.get("awards") or {}).items():
+        for player, odds in players.items():
+            set_award(doc, cat, player, "", BOOK, odds)
+            n += 1
     stamp_book(doc, BOOK, data.get("updated"))
-    print(f"  wrote {n} Circa prices (cup + conference) from circa_data.json "
+    print(f"  wrote {n} Circa prices (cup + conference + awards) from circa_data.json "
           f"[transcribed {data.get('updated')}]")
     if n:
         save(doc)
