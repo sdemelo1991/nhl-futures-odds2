@@ -17,7 +17,6 @@ import argparse
 import sys
 
 import requests
-import time
 
 from common import load, save, dump_raw, set_to_win, classify_special, set_special
 
@@ -59,8 +58,7 @@ BOOK = "pinnacle"
 
 
 def get(path):
-    sep = "&" if "?" in path else "?"
-    url = f"{ARCADIA}{path}{sep}_={int(time.time() * 1000)}"  # cache-buster
+    url = f"{ARCADIA}{path}"
     r = requests.get(url, headers=HEADERS, timeout=20, verify=_VERIFY)
     if r.status_code != 200:
         print(f"  !! {url} -> HTTP {r.status_code}\n{r.text[:300]}")
