@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-11 13:41",
+    "last_updated": "2026-08-11 13:49",
     "books": [
       "pinnacle",
       "circa",
@@ -214,7 +214,8 @@
         "bet365": 5500,
         "hardrock": 6000,
         "dazn": 5400,
-        "thescore": 6000
+        "thescore": 6000,
+        "kalshi": 4579
       },
       "New Jersey Devils": {
         "pinnacle": 2832,
@@ -7868,7 +7869,7 @@
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 6481
+        "kalshi": 6479
       },
       "Dallas Stars": {
         "kalshi": 11178
@@ -7880,16 +7881,16 @@
         "kalshi": 9828
       },
       "Montreal Canadiens": {
-        "kalshi": 4676
+        "kalshi": 6108
       },
       "Minnesota Wild": {
-        "kalshi": 3700
+        "kalshi": 4476
       },
       "Pittsburgh Penguins": {
         "kalshi": 24231
       },
       "Tampa Bay Lightning": {
-        "kalshi": 5700
+        "kalshi": 8200
       },
       "Vancouver Canucks": {},
       "Detroit Red Wings": {},
@@ -7903,7 +7904,7 @@
         "kalshi": 23251
       },
       "Colorado Avalanche": {
-        "kalshi": 1928
+        "kalshi": 2615
       },
       "New York Islanders": {
         "kalshi": 27423
@@ -7917,7 +7918,9 @@
       "Vegas Golden Knights": {
         "kalshi": 7146
       },
-      "Columbus Blue Jackets": {},
+      "Columbus Blue Jackets": {
+        "kalshi": 20873
+      },
       "Washington Capitals": {
         "kalshi": 6766
       },
