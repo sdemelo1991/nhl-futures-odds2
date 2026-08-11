@@ -43,6 +43,10 @@ BOOKS = {
             "team&nav_1=division", "team&nav_1=conference", "team&nav_1=presidents%27-trophy",
             "player&nav_1=goals", "player&nav_1=points",
             "awards&nav_1=hart", "awards&nav_1=norris", "awards&nav_1=vezina", "awards&nav_1=calder",
+            # jack-adams: DK doesn't list it yet (Caesars was first). Best-guess slug so it
+            # auto-captures the moment DK posts it; if their real slug differs, grab the tab
+            # URL off DK's futures page once and correct this line. Harmless 404 until then.
+            "awards&nav_1=jack-adams",
             "stanley-cup-specials&nav_1=winning-state-province",
             "stanley-cup-specials&nav_1=winning-conference",
             "stanley-cup-specials&nav_1=winning-division",
