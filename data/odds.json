@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-12 06:38",
+    "last_updated": "2026-08-12 06:48",
     "books": [
       "pinnacle",
       "circa",
@@ -4620,7 +4620,8 @@
           "betano": 360,
           "bet365": 350,
           "hardrock": 350,
-          "thescore": 375
+          "thescore": 375,
+          "kalshi": 296
         }
       },
       "Macklin Celebrini": {
@@ -4635,7 +4636,8 @@
           "betano": 500,
           "bet365": 500,
           "hardrock": 650,
-          "thescore": 650
+          "thescore": 650,
+          "kalshi": 208
         }
       },
       "Nikita Kucherov": {
@@ -4650,7 +4652,8 @@
           "betano": 1200,
           "bet365": 1200,
           "hardrock": 1200,
-          "thescore": 1300
+          "thescore": 1300,
+          "kalshi": 685
         }
       },
       "Leon Draisaitl": {
@@ -4695,7 +4698,8 @@
           "betano": 2400,
           "bet365": 2500,
           "hardrock": 2250,
-          "thescore": 2500
+          "thescore": 2500,
+          "kalshi": 685
         }
       },
       "David Pastrnak": {
@@ -4725,7 +4729,8 @@
           "betano": 1700,
           "bet365": 1500,
           "hardrock": 1500,
-          "thescore": 1600
+          "thescore": 1600,
+          "kalshi": 1222
         }
       },
       "Jack Eichel": {
@@ -4800,7 +4805,8 @@
           "betano": 3900,
           "bet365": 3000,
           "hardrock": 3000,
-          "thescore": 3000
+          "thescore": 3000,
+          "kalshi": 1490
         }
       },
       "Tage Thompson": {
@@ -4830,7 +4836,8 @@
           "betano": 12400,
           "bet365": 15000,
           "hardrock": 15000,
-          "thescore": 15000
+          "thescore": 15000,
+          "kalshi": 685
         }
       },
       "Quinn Hughes": {
@@ -4845,7 +4852,8 @@
           "betano": 6400,
           "bet365": 6000,
           "hardrock": 6000,
-          "thescore": 6000
+          "thescore": 6000,
+          "kalshi": 625
         }
       },
       "Cole Caufield": {
@@ -4875,7 +4883,8 @@
           "betano": 5900,
           "bet365": 4000,
           "hardrock": 4000,
-          "thescore": 4000
+          "thescore": 4000,
+          "kalshi": 425
         }
       },
       "Matthew Schaefer": {
@@ -8548,7 +8557,7 @@
         "kalshi": 23934
       },
       "Carolina Hurricanes": {
-        "kalshi": 1661
+        "kalshi": 1660
       },
       "Montreal Canadiens": {
         "kalshi": 6291
@@ -8574,7 +8583,7 @@
         "kalshi": 23551
       },
       "Colorado Avalanche": {
-        "kalshi": 8881
+        "kalshi": 8888
       },
       "New York Islanders": {
         "kalshi": 27723
@@ -8706,20 +8715,36 @@
     },
     "hart": {
       "Brady Tkachuk": {},
-      "Connor Bedard": {},
+      "Connor Bedard": {
+        "kalshi": 516
+      },
       "Pavel Dorofeyev": {},
-      "Nick Suzuki": {},
+      "Nick Suzuki": {
+        "kalshi": 400
+      },
       "David Pastrnak": {},
       "Mikko Rantanen": {},
       "Kirill Kaprizov": {},
       "Mitchell Marner": {},
-      "Quinn Hughes": {},
-      "Nathan MacKinnon": {},
-      "Auston Matthews": {},
+      "Quinn Hughes": {
+        "kalshi": 450
+      },
+      "Nathan MacKinnon": {
+        "kalshi": 317
+      },
+      "Auston Matthews": {
+        "kalshi": 621
+      },
       "Jack Eichel": {},
-      "Nikita Kucherov": {},
-      "Connor Hellebuyck": {},
-      "Jack Hughes": {},
+      "Nikita Kucherov": {
+        "kalshi": 650
+      },
+      "Connor Hellebuyck": {
+        "kalshi": 488
+      },
+      "Jack Hughes": {
+        "kalshi": 395
+      },
       "Leon Draisaitl": {},
       "Andrei Vasilevskiy": {},
       "Cale Makar": {},
@@ -8728,7 +8753,9 @@
       "Artemi Panarin": {},
       "Matthew Tkachuk": {},
       "Sidney Crosby": {},
-      "Macklin Celebrini": {},
+      "Macklin Celebrini": {
+        "kalshi": 397
+      },
       "Alex Ovechkin": {},
       "Connor McDavid": {},
       "Igor Shesterkin": {},
