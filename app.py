@@ -463,6 +463,17 @@ def one_way_cell(cell, book, label, trail):
     return popover(cell, book, label, ["Date", "Price"], rows)
 
 
+def ou_cell(cell, book, label, trail):
+    """cell HTML for an O/U price; popover columns Date | Line | Over | Under."""
+    if not trail or len(trail) < 2:
+        return cell
+    rows = [[fmt_updated(d),
+             f"{q['line']:g}" if isinstance(q.get("line"), (int, float)) else str(q.get("line")),
+             fmt_odds(q.get("over")), fmt_odds(q.get("under"))]
+            for d, q in reversed(trail) if isinstance(q, dict)]
+    return popover(cell, book, label, ["Date", "Line", "Over", "Under"], rows)
+
+
 def book_th(b, cls, market=None):
     """Header cell for a book column; manual books get an 'updated <date>' line.
     A per-market date (BOOK_MARKET_UPDATED[b][market]) overrides the book-level one,
@@ -1009,7 +1020,8 @@ def render_team_points(data, sharp_cols, nonsharp_cols):
             if q and q.get("line") is not None:
                 cell = (f"o{q['line']:g} {fmt_odds(q.get('over'))} / "
                         f"u {fmt_odds(q.get('under'))}")
-                tds.append(f"<td class='{bkcls(b)}'>{cell}</td>")
+                trail = PRICE_HISTORY.get("team_points", {}).get(team, {}).get(b)
+                tds.append(f"<td class='{bkcls(b)}'>{ou_cell(cell, b, team, trail)}</td>")
             else:
                 tds.append(f"<td class='{bkcls(b)}'><span class='dim'>—</span></td>")
         gbody.append("<tr>" + "".join(tds) + "</tr>")
@@ -1094,7 +1106,7 @@ def prop_arb_card(name, entry, a):
             f"&nbsp;·&nbsp; Under {fmt_odds(a['b_odds'])} ({esc(book_label(a['b_book']))})</div></div>")
 
 
-def props_table_html(players, sharp_cols, nonsharp_cols):
+def props_table_html(players, sharp_cols, nonsharp_cols, hist=None):
     """One row per player, one column per book — each cell shows that book's O/U
     (line + over/under) and/or its X+ milestone ladder. Low/High = the span of
     posted lines/indexes across the market. For milestone-only books, the
@@ -1156,6 +1168,9 @@ def props_table_html(players, sharp_cols, nonsharp_cols):
                 parts.append(main + (f"<br><span class='pmile'>({' · '.join(others)})</span>"
                                      if others else ""))
             cell = "<br>".join(parts) if parts else "<span class='dim'>—</span>"
+            trail = (hist or {}).get(name, {}).get(b)
+            if q and q.get("line") is not None:  # O/U history popover (milestone-only cells stay plain)
+                cell = ou_cell(cell, b, name, trail)
             tds.append(f"<td class='{bkcls(b)}'>{cell}</td>")
         body.append("<tr>" + "".join(tds) + "</tr>")
     return (f"<div class='tablewrap'><table class='cmp'><thead><tr>{''.join(th)}</tr></thead>"
@@ -1191,7 +1206,8 @@ def render_props(data, sharp_cols, nonsharp_cols):
                 mids.sort(key=lambda x: (x[2]["combined_implied"], x[2]["gap"]))
                 st.markdown("###### Middles")
                 show_cards([prop_middle_card(n, e, m) for n, e, m in mids], top=3, more_label="more middles")
-            card(props_table_html(players, sharp_cols, nonsharp_cols), PROP_CATEGORIES[cat])
+            card(props_table_html(players, sharp_cols, nonsharp_cols,
+                                  hist=PRICE_HISTORY.get(f"prop:{cat}")), PROP_CATEGORIES[cat])
 
 
 def render_fd_desk(data, sharp_cols, nonsharp_cols):
