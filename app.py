@@ -135,8 +135,20 @@ table.cmp {{ width:100%; border-collapse:collapse; font-size:.85rem; font-varian
 .cmp td .liq {{ font-size:.62rem; font-weight:700; color:var(--muted); margin-top:1px;
   letter-spacing:.2px; }}
 .cmp td .pmile {{ font-size:.62rem; color:var(--muted); }}
-/* cells whose price has moved carry a hover tooltip with the full trail */
-.cmp td.hist {{ cursor:help; text-decoration:underline dotted rgba(127,127,127,.55); text-underline-offset:3px; }}
+/* a moved price becomes a click target that opens its history popover */
+.pxcell {{ background:none; border:0; padding:0; margin:0; font:inherit; color:inherit; line-height:inherit;
+  cursor:pointer; text-decoration:underline dotted rgba(127,127,127,.5); text-underline-offset:3px; }}
+.phpop {{ border:1px solid var(--border); border-radius:12px; padding:0; margin:auto; max-height:72vh;
+  overflow:auto; background:var(--card); color:var(--text); box-shadow:0 16px 48px rgba(0,0,0,.5); min-width:230px; }}
+.phpop::backdrop {{ background:rgba(0,0,0,.45); }}
+.phhead {{ font-weight:800; font-size:.9rem; padding:11px 16px 4px; }}
+.phsub {{ font-size:.72rem; color:var(--muted); padding:0 16px 8px; }}
+.phtab {{ width:100%; border-collapse:collapse; font-size:.82rem; }}
+.phtab th {{ text-align:right; color:var(--muted); font-weight:600; padding:6px 16px; position:sticky; top:0;
+  background:var(--card); border-bottom:1px solid var(--border); }}
+.phtab th:first-child, .phtab td:first-child {{ text-align:left; }}
+.phtab td {{ padding:6px 16px; text-align:right; border-top:1px solid rgba(127,127,127,.14); white-space:nowrap; }}
+.phtab tr:first-child td {{ font-weight:700; }}  /* most-recent row stands out */
 .tlogo {{ height:46px; width:46px; vertical-align:middle; object-fit:contain; }}
 .tlogo.sm {{ height:20px; width:20px; }}
 .pname {{ display:inline-flex; align-items:center; gap:7px; vertical-align:middle; line-height:1; }}
@@ -398,18 +410,57 @@ def fmt_updated(s):
         return str(s)
 
 
-def hist_title(entries):
-    """Tooltip text for a price cell from its [[date, value], ...] trail. Shows the
-    change points oldest->newest (the current price is the last); a single entry
-    reads 'since <date>' since nothing has moved."""
-    if not entries:
-        return ""
-    def v(val):
-        return fmt_odds(val) if isinstance(val, (int, float)) else str(val)
-    if len(entries) == 1:
-        return f"since {fmt_updated(entries[0][0])}"
-    trail = "  →  ".join(f"{v(val)} ({fmt_updated(d)})" for d, val in entries[-6:])
-    return "price history:  " + trail
+_POP_ID = [0]
+
+
+def _pid():
+    _POP_ID[0] += 1
+    return f"ph{_POP_ID[0]}"
+
+
+def merge_sides(a, b):
+    """Combine two 1-way trails ([[date, val], ...]) into [(date, aval, bval)] at
+    every change point of either side (forward-filling the other), newest-first.
+    Used for 2-way markets (Yes/No, Over/Under) so both sit on one row per date."""
+    a, b = a or [], b or []
+    def asof(trail, date):
+        val = None
+        for d, v in trail:
+            if d <= date:
+                val = v
+            else:
+                break
+        return val
+    out = []
+    for d in sorted({d for d, _ in a} | {d for d, _ in b}):
+        row = (d, asof(a, d), asof(b, d))
+        if not out or (out[-1][1], out[-1][2]) != (row[1], row[2]):
+            out.append(row)
+    return list(reversed(out))
+
+
+def popover(trigger, book, subtitle, header_cols, rows):
+    """Wrap `trigger` (the visible price) in a click-to-open history popover.
+    header_cols = column labels; rows = list of pre-formatted string lists,
+    newest-first. Returns the full cell HTML (trigger button + hidden popover)."""
+    if not rows:
+        return trigger
+    pid = _pid()
+    thead = "".join(f"<th>{esc(c)}</th>" for c in header_cols)
+    trs = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows)
+    sub = f"<div class='phsub'>{esc(subtitle)}</div>" if subtitle else ""
+    return (f"<button type='button' class='pxcell' popovertarget='{pid}'>{trigger}</button>"
+            f"<div id='{pid}' popover class='phpop'>"
+            f"<div class='phhead'>{esc(book_label(book))}</div>{sub}"
+            f"<table class='phtab'><thead><tr>{thead}</tr></thead><tbody>{trs}</tbody></table></div>")
+
+
+def one_way_cell(cell, book, label, trail):
+    """cell HTML for a 1-way price; adds a Date/Price history popover if it moved."""
+    if not trail or len(trail) < 2:
+        return cell
+    rows = [[fmt_updated(d), fmt_odds(v)] for d, v in reversed(trail)]
+    return popover(cell, book, label, ["Date", "Price"], rows)
 
 
 def book_th(b, cls, market=None):
@@ -497,10 +548,8 @@ def comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, kind="team", team
                 if b == "kalshi" and liq and liq.get(label):
                     cell += f"<div class='liq'>${liq[label]:,.0f}</div>"
                 trail = (hist or {}).get(label, {}).get(b)
-                tip = f" title='{esc(hist_title(trail))}'" if trail else ""
-                cls_h = f"{bkcls(b)} hist" if (trail and len(trail) > 1) else bkcls(b)
-                tds.append(f"<td class='{cls_h}'{tip} style='{shade(b, american_to_prob(v), lo, hi)}'>"
-                           f"{cell}</td>")
+                tds.append(f"<td class='{bkcls(b)}' style='{shade(b, american_to_prob(v), lo, hi)}'>"
+                           f"{one_way_cell(cell, b, label, trail)}</td>")
             else:
                 tds.append(f"<td class='{bkcls(b)}'><span class='dim'>—</span></td>")
         tds.append(f"<td>{fmt_odds(consensus_american(prices, all_books, stat))}</td>")
@@ -806,8 +855,13 @@ def render_playoffs(data, sharp_cols, nonsharp_cols):
                     if (py is not None and pn is not None) else ""
                 lo, hi = lohi[b]
                 sty = shade(b, py, lo, hi) if py is not None else ""
-                tds.append(f"<td class='{bkcls(b)}' style='{sty}'>"
-                           f"{fmt_odds(y)} / {fmt_odds(n)}{hold}</td>")
+                base = f"{fmt_odds(y)} / {fmt_odds(n)}"
+                merged = merge_sides(PRICE_HISTORY.get("playoffs:yes", {}).get(team, {}).get(b),
+                                     PRICE_HISTORY.get("playoffs:no", {}).get(team, {}).get(b))
+                if len(merged) > 1:
+                    prows = [[fmt_updated(d), fmt_odds(yv), fmt_odds(nv)] for d, yv, nv in merged]
+                    base = popover(base, b, f"{team} — Make Playoffs", ["Date", "Yes", "No"], prows)
+                tds.append(f"<td class='{bkcls(b)}' style='{sty}'>{base}{hold}</td>")
             else:
                 tds.append(f"<td class='{bkcls(b)}'><span class='dim'>—</span></td>")
         tds.append(f"<td>{best_chip(yes)}</td><td>{best_chip(no)}</td>")
