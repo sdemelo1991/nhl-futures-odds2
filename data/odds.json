@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-12 22:08",
+    "last_updated": "2026-08-12 22:17",
     "books": [
       "pinnacle",
       "circa",
@@ -651,7 +651,7 @@
         "hardrock": 325,
         "bet365": 350,
         "thescore": 360,
-        "kalshi": 351
+        "kalshi": 313
       },
       "Montreal Canadiens": {
         "pinnacle": 1261,
@@ -702,7 +702,7 @@
         "hardrock": 600,
         "bet365": 650,
         "thescore": 600,
-        "kalshi": 574
+        "kalshi": 456
       },
       "Toronto Maple Leafs": {
         "pinnacle": 1577,
@@ -4651,7 +4651,7 @@
           "bet365": 1200,
           "hardrock": 1200,
           "thescore": 1300,
-          "kalshi": 756
+          "kalshi": 252
         }
       },
       "Leon Draisaitl": {
@@ -4682,7 +4682,7 @@
           "bet365": 1400,
           "hardrock": 1400,
           "thescore": 1500,
-          "kalshi": 296
+          "kalshi": 218
         }
       },
       "Jack Hughes": {
@@ -4698,7 +4698,7 @@
           "bet365": 2500,
           "hardrock": 2250,
           "thescore": 2500,
-          "kalshi": 756
+          "kalshi": 208
         }
       },
       "David Pastrnak": {
@@ -4805,7 +4805,7 @@
           "bet365": 3000,
           "hardrock": 3000,
           "thescore": 3000,
-          "kalshi": 1517
+          "kalshi": 1490
         }
       },
       "Tage Thompson": {
@@ -4835,8 +4835,7 @@
           "betano": 12400,
           "bet365": 15000,
           "hardrock": 15000,
-          "thescore": 15000,
-          "kalshi": 756
+          "thescore": 15000
         }
       },
       "Quinn Hughes": {
@@ -4852,7 +4851,7 @@
           "bet365": 6000,
           "hardrock": 6000,
           "thescore": 6000,
-          "kalshi": 685
+          "kalshi": -121
         }
       },
       "Cole Caufield": {
@@ -8536,7 +8535,7 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 8898
+        "kalshi": 8535
       },
       "New York Rangers": {
         "kalshi": 23254
@@ -8555,7 +8554,7 @@
         "kalshi": 24380
       },
       "Carolina Hurricanes": {
-        "kalshi": 4055
+        "kalshi": 4045
       },
       "Montreal Canadiens": {
         "kalshi": 10704
@@ -8586,7 +8585,7 @@
         "kalshi": 13736
       },
       "Los Angeles Kings": {
-        "kalshi": 1761
+        "kalshi": 3261
       },
       "Vegas Golden Knights": {
         "kalshi": 7904
@@ -8659,7 +8658,7 @@
         "kalshi": 1000
       },
       "Tampa Bay Lightning": {
-        "kalshi": 600
+        "kalshi": 857
       },
       "New Jersey Devils": {
         "kalshi": 848
@@ -8701,7 +8700,7 @@
         "kalshi": 596
       },
       "Florida Panthers": {
-        "kalshi": 513
+        "kalshi": 538
       },
       "Carolina Hurricanes": {
         "kalshi": 666
@@ -8717,11 +8716,11 @@
       "David Pastrnak": {},
       "Mikko Rantanen": {},
       "Kirill Kaprizov": {
-        "kalshi": 466
+        "kalshi": 377
       },
       "Mitchell Marner": {},
       "Quinn Hughes": {
-        "kalshi": 400
+        "kalshi": 326
       },
       "Nathan MacKinnon": {
         "kalshi": 436
@@ -8731,13 +8730,11 @@
       },
       "Jack Eichel": {},
       "Nikita Kucherov": {
-        "kalshi": 400
+        "kalshi": 508
       },
-      "Connor Hellebuyck": {
-        "kalshi": 400
-      },
+      "Connor Hellebuyck": {},
       "Jack Hughes": {
-        "kalshi": 400
+        "kalshi": 306
       },
       "Leon Draisaitl": {},
       "Andrei Vasilevskiy": {},
