@@ -369,6 +369,7 @@ def sort_labels(rows, opt, all_books=(), stat="Average"):
 
 # --------------------------------------------------------------------------- comparison table
 BOOK_UPDATED = {}  # book -> last-updated label, filled from odds.json meta
+BOOK_MARKET_UPDATED = {}  # book -> {market_key -> date}; per-market freshness override
 CONSENSUS = "Average"  # "Average" | "Median", set per section from the UI control
 
 
@@ -380,19 +381,23 @@ def fmt_updated(s):
         return str(s)
 
 
-def book_th(b, cls):
-    """Header cell for a book column; manual books get an 'updated <date>' line."""
+def book_th(b, cls, market=None):
+    """Header cell for a book column; manual books get an 'updated <date>' line.
+    A per-market date (BOOK_MARKET_UPDATED[b][market]) overrides the book-level one,
+    so a market vetted today reads fresh even if the rest of the book wasn't touched."""
     upd = ""
     if b == "kalshi":
         upd = "<br><span class='upd'>liq @ best · $300 min</span>"
-    elif is_manual(b) and BOOK_UPDATED.get(b):
-        upd = f"<br><span class='upd'>updated {esc(fmt_updated(BOOK_UPDATED[b]))}</span>"
+    elif is_manual(b):
+        when = BOOK_MARKET_UPDATED.get(b, {}).get(market) or BOOK_UPDATED.get(b)
+        if when:
+            upd = f"<br><span class='upd'>updated {esc(fmt_updated(when))}</span>"
     return (f"<th class='{cls}'><span class='dot' style='background:{brand_color(b)}'></span>"
             f"{esc(book_label(b))}{upd}</th>")
 
 
 def comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, kind="team", team_map=None,
-                    consensus=None, count_row=False, liq=None, name_hdr=None):
+                    consensus=None, count_row=False, liq=None, name_hdr=None, market=None):
     if not rows:
         return "<div class='legend'>No prices yet.</div>"
     stat = consensus or CONSENSUS
@@ -416,7 +421,7 @@ def comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, kind="team", team
     hdr_style = " style='text-align:center'" if name_hdr else ""
     th = [f"<th class='{namecls}'{hdr_style}>{hdr_lbl}</th>"]
     for b in all_books:
-        th.append(book_th(b, bkcls(b)))
+        th.append(book_th(b, bkcls(b), market))
     th.append(f"<th>{cons_hdr}</th><th>Best (Sharp)</th><th>Best (All)</th>")
 
     # sub-header row: overround / hold
@@ -956,7 +961,7 @@ def render_awards(data, sharp_cols, nonsharp_cols):
             team_map = {p: (player_team(p) or feed_team.get(p, "")) for p in rows}
             card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
                                  kind="player", team_map=team_map, count_row=True,
-                                 liq=kalshi_liq(data)(cat)),
+                                 liq=kalshi_liq(data)(cat), market=f"award:{cat}"),
                  AWARD_CATEGORIES[cat])
 
 
@@ -1308,6 +1313,8 @@ def main():
     meta = data.get("meta", {})
     BOOK_UPDATED.clear()
     BOOK_UPDATED.update(meta.get("book_updated") or {})
+    BOOK_MARKET_UPDATED.clear()
+    BOOK_MARKET_UPDATED.update(meta.get("book_market_updated") or {})
 
     with hc[0]:
         st.markdown(

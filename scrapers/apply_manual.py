@@ -55,6 +55,11 @@ def main():
             set_special(doc, kind, label, book, odds); n += 1
 
     stamp_book(doc, book, data.get("updated"))
+    # Per-market freshness overrides: {"award:rocket_richard": "2026-08-13", ...} lets a
+    # single market read fresh in the dashboard while the rest of the book keeps its date.
+    for mk, when in (data.get("updated_markets") or {}).items():
+        doc.setdefault("meta", {}).setdefault("book_market_updated", {}) \
+            .setdefault(book, {})[mk] = when
     print(f"  applied {n} {book} prices from {os.path.basename(path)} "
           f"[updated {data.get('updated', '?')}]")
     if n:
