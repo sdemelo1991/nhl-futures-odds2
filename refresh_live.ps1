@@ -14,11 +14,12 @@ foreach ($b in @("pinnacle", "fanduel", "kalshi", "kambi", "dazn",
     python "scrapers\$b.py" --write | Out-Null
 }
 python scrapers\dedupe_players.py --write | Out-Null
+python scrapers\history.py | Out-Null   # append any per-selection price changes to price_history.json
 
 # Push only on a real odds change (ignore the timestamp-only bump every write does).
 $state = (python scrapers\_live_hash.py | Out-String).Trim()
 if ($state -match "CHANGED") {
-    git add data/odds.json
+    git add data/odds.json data/price_history.json
     git commit -m "auto: refresh direct-API odds [$ts]" | Out-Null
     # Never let an unattended push pop a GUI or block waiting for sign-in:
     # if the stored credential is ever invalid, the push fails fast and logs it

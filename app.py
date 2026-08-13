@@ -32,6 +32,7 @@ from odds_engine import (
 )
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "odds.json")
+HIST_PATH = os.path.join(os.path.dirname(__file__), "data", "price_history.json")
 ASSETS = os.path.join(os.path.dirname(__file__), "assets", "logos")
 TEAM_ASSETS = os.path.join(os.path.dirname(__file__), "assets", "teams")
 
@@ -134,6 +135,8 @@ table.cmp {{ width:100%; border-collapse:collapse; font-size:.85rem; font-varian
 .cmp td .liq {{ font-size:.62rem; font-weight:700; color:var(--muted); margin-top:1px;
   letter-spacing:.2px; }}
 .cmp td .pmile {{ font-size:.62rem; color:var(--muted); }}
+/* cells whose price has moved carry a hover tooltip with the full trail */
+.cmp td.hist {{ cursor:help; text-decoration:underline dotted rgba(127,127,127,.55); text-underline-offset:3px; }}
 .tlogo {{ height:46px; width:46px; vertical-align:middle; object-fit:contain; }}
 .tlogo.sm {{ height:20px; width:20px; }}
 .pname {{ display:inline-flex; align-items:center; gap:7px; vertical-align:middle; line-height:1; }}
@@ -216,6 +219,19 @@ def load_data(mtime: float):
 def get_data():
     mtime = os.path.getmtime(DATA_PATH) if os.path.exists(DATA_PATH) else 0.0
     return load_data(mtime)
+
+
+@st.cache_data(show_spinner=False)
+def load_history(mtime: float):
+    if not os.path.exists(HIST_PATH):
+        return {}
+    with open(HIST_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def get_history():
+    mtime = os.path.getmtime(HIST_PATH) if os.path.exists(HIST_PATH) else 0.0
+    return load_history(mtime)
 
 
 _LOGO_MIME = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",
@@ -370,6 +386,7 @@ def sort_labels(rows, opt, all_books=(), stat="Average"):
 # --------------------------------------------------------------------------- comparison table
 BOOK_UPDATED = {}  # book -> last-updated label, filled from odds.json meta
 BOOK_MARKET_UPDATED = {}  # book -> {market_key -> date}; per-market freshness override
+PRICE_HISTORY = {}  # market_key -> {selection -> {book -> [[date, value], ...]}}
 CONSENSUS = "Average"  # "Average" | "Median", set per section from the UI control
 
 
@@ -379,6 +396,20 @@ def fmt_updated(s):
         return f"{d.strftime('%b')} {d.day}"
     except (ValueError, TypeError):
         return str(s)
+
+
+def hist_title(entries):
+    """Tooltip text for a price cell from its [[date, value], ...] trail. Shows the
+    change points oldest->newest (the current price is the last); a single entry
+    reads 'since <date>' since nothing has moved."""
+    if not entries:
+        return ""
+    def v(val):
+        return fmt_odds(val) if isinstance(val, (int, float)) else str(val)
+    if len(entries) == 1:
+        return f"since {fmt_updated(entries[0][0])}"
+    trail = "  →  ".join(f"{v(val)} ({fmt_updated(d)})" for d, val in entries[-6:])
+    return "price history:  " + trail
 
 
 def book_th(b, cls, market=None):
@@ -397,7 +428,8 @@ def book_th(b, cls, market=None):
 
 
 def comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, kind="team", team_map=None,
-                    consensus=None, count_row=False, liq=None, name_hdr=None, market=None):
+                    consensus=None, count_row=False, liq=None, name_hdr=None, market=None,
+                    hist=None):
     if not rows:
         return "<div class='legend'>No prices yet.</div>"
     stat = consensus or CONSENSUS
@@ -464,7 +496,10 @@ def comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, kind="team", team
                 cell = fmt_odds(v)
                 if b == "kalshi" and liq and liq.get(label):
                     cell += f"<div class='liq'>${liq[label]:,.0f}</div>"
-                tds.append(f"<td class='{bkcls(b)}' style='{shade(b, american_to_prob(v), lo, hi)}'>"
+                trail = (hist or {}).get(label, {}).get(b)
+                tip = f" title='{esc(hist_title(trail))}'" if trail else ""
+                cls_h = f"{bkcls(b)} hist" if (trail and len(trail) > 1) else bkcls(b)
+                tds.append(f"<td class='{cls_h}'{tip} style='{shade(b, american_to_prob(v), lo, hi)}'>"
                            f"{cell}</td>")
             else:
                 tds.append(f"<td class='{bkcls(b)}'><span class='dim'>—</span></td>")
@@ -663,28 +698,33 @@ def render_to_win(data, sharp_cols, nonsharp_cols):
          "Cup Specials"])
     with t_cup:
         rows = {t: p for t, p in data["to_win"]["cup"].items() if p}
-        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, liq=liq_of("cup")),
+        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, liq=liq_of("cup"),
+                             hist=PRICE_HISTORY.get("cup")),
              "Stanley Cup — To Win")
     with t_conf:
         for conf in CONFERENCES:
             rows = {t: data["to_win"]["conference"].get(t, {}) for t in teams_in(conference=conf)
                     if data["to_win"]["conference"].get(t)}
-            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, liq=liq_of("conference")),
+            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, liq=liq_of("conference"),
+                                 hist=PRICE_HISTORY.get("conference")),
                  f"{conf}ern Conference")
     with t_div:
         for div in DIVISIONS:
             rows = {t: data["to_win"]["division"].get(t, {}) for t in teams_in(division=div)
                     if data["to_win"]["division"].get(t)}
-            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt), f"{div} Division")
+            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
+                                 hist=PRICE_HISTORY.get("division")), f"{div} Division")
     with t_pres:
         pres = data["to_win"].get("presidents", {})
         rows = {t: pres.get(t, {}) for t in TEAMS if pres.get(t)}
-        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt),
+        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
+                             hist=PRICE_HISTORY.get("presidents")),
              "Most Points (Presidents' Trophy)")
     with t_worst:
         worst = data["to_win"].get("worst", {})
         rows = {t: worst.get(t, {}) for t in TEAMS if worst.get(t)}
-        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt),
+        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
+                             hist=PRICE_HISTORY.get("worst")),
              "Least Points (Worst Record)")
     with t_spec:
         sp = data.get("cup_specials", {}) or {}
@@ -961,7 +1001,8 @@ def render_awards(data, sharp_cols, nonsharp_cols):
             team_map = {p: (player_team(p) or feed_team.get(p, "")) for p in rows}
             card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
                                  kind="player", team_map=team_map, count_row=True,
-                                 liq=kalshi_liq(data)(cat), market=f"award:{cat}"),
+                                 liq=kalshi_liq(data)(cat), market=f"award:{cat}",
+                                 hist=PRICE_HISTORY.get(f"award:{cat}")),
                  AWARD_CATEGORIES[cat])
 
 
@@ -1315,6 +1356,8 @@ def main():
     BOOK_UPDATED.update(meta.get("book_updated") or {})
     BOOK_MARKET_UPDATED.clear()
     BOOK_MARKET_UPDATED.update(meta.get("book_market_updated") or {})
+    PRICE_HISTORY.clear()
+    PRICE_HISTORY.update(get_history())
 
     with hc[0]:
         st.markdown(

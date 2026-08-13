@@ -62,5 +62,8 @@ python scrapers\apply_manual.py hardrock
 Write-Host "`n[Dedupe] (collapse stale player-name variants across all books)" -ForegroundColor Yellow
 python scrapers\dedupe_players.py --write
 
+Write-Host "`n[Price history] (log per-selection changes for the hover tooltips)" -ForegroundColor Yellow
+python scrapers\history.py
+
 Write-Host "`n=== Launching dashboard ===" -ForegroundColor Cyan
 streamlit run app.py
