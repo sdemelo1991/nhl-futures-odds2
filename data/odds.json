@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-13 09:49",
+    "last_updated": "2026-08-13 09:58",
     "books": [
       "pinnacle",
       "circa",
@@ -28,6 +28,13 @@
       "bet365": "2026-08-11 (re-verified vs mobile app; no changes since 08-06)",
       "hardrock": "2026-08-11",
       "fanduel": "2026-08-13"
+    },
+    "book_market_updated": {
+      "caesars": {
+        "award:art_ross": "2026-08-13",
+        "award:rocket_richard": "2026-08-13",
+        "award:jack_adams": "2026-08-13"
+      }
     }
   },
   "books": [
@@ -8000,13 +8007,13 @@
       "Ryan Warsofsky": {
         "team": "",
         "prices": {
-          "caesars": 700
+          "caesars": 600
         }
       },
       "Paul Maurice": {
         "team": "",
         "prices": {
-          "caesars": 900
+          "caesars": 800
         }
       },
       "Mike Babcock": {
@@ -8018,31 +8025,31 @@
       "Glen Gulutzan": {
         "team": "",
         "prices": {
-          "caesars": 1100
+          "caesars": 2000
         }
       },
       "Rod Brind'Amour": {
         "team": "",
         "prices": {
-          "caesars": 1200
+          "caesars": 2000
         }
       },
       "Martin St. Louis": {
         "team": "",
         "prices": {
-          "caesars": 1300
+          "caesars": 1600
         }
       },
       "Rick Tocchet": {
         "team": "",
         "prices": {
-          "caesars": 1400
+          "caesars": 1600
         }
       },
       "Ryan Craig": {
         "team": "",
         "prices": {
-          "caesars": 1500
+          "caesars": 2500
         }
       },
       "Jim Hiller": {
@@ -8054,13 +8061,13 @@
       "Andre Tourigny": {
         "team": "",
         "prices": {
-          "caesars": 1600
+          "caesars": 2500
         }
       },
       "Sheldon Keefe": {
         "team": "",
         "prices": {
-          "caesars": 1700
+          "caesars": 1500
         }
       },
       "John Hynes": {
@@ -8078,25 +8085,25 @@
       "Lindy Ruff": {
         "team": "",
         "prices": {
-          "caesars": 2500
+          "caesars": 3000
         }
       },
       "Jon Cooper": {
         "team": "",
         "prices": {
-          "caesars": 2500
+          "caesars": 5000
         }
       },
       "Jared Bednar": {
         "team": "",
         "prices": {
-          "caesars": 2500
+          "caesars": 3500
         }
       },
       "Mike Sullivan": {
         "team": "",
         "prices": {
-          "caesars": 3000
+          "caesars": 2500
         }
       },
       "Travis Green": {
@@ -8108,25 +8115,25 @@
       "Peter DeBoer": {
         "team": "",
         "prices": {
-          "caesars": 4000
+          "caesars": 2800
         }
       },
       "Jim Montgomery": {
         "team": "",
         "prices": {
-          "caesars": 4500
+          "caesars": 2000
         }
       },
       "Joel Quenneville": {
         "team": "",
         "prices": {
-          "caesars": 5000
+          "caesars": 7000
         }
       },
       "Rick Bowness": {
         "team": "",
         "prices": {
-          "caesars": 5000
+          "caesars": 2500
         }
       },
       "Marco Sturm": {
@@ -8138,13 +8145,13 @@
       "Dan Muse": {
         "team": "",
         "prices": {
-          "caesars": 7000
+          "caesars": 8000
         }
       },
       "Andrew Brunette": {
         "team": "",
         "prices": {
-          "caesars": 7000
+          "caesars": 5000
         }
       },
       "Jeff Blashill": {
@@ -8156,7 +8163,7 @@
       "Scott Arniel": {
         "team": "",
         "prices": {
-          "caesars": 10000
+          "caesars": 6000
         }
       },
       "Todd McLellan": {
@@ -8168,166 +8175,641 @@
       "Lane Lambert": {
         "team": "",
         "prices": {
-          "caesars": 15000
+          "caesars": 10000
         }
       },
       "Manny Malhotra": {
         "team": "",
         "prices": {
-          "caesars": 20000
+          "caesars": 15000
         }
       },
       "Ryan Huska": {
         "team": "",
         "prices": {
-          "caesars": 20000
+          "caesars": 15000
         }
       }
     },
-    "art_ross": {},
-    "rocket_richard": {
-      "Nathan MacKinnon": {
-        "team": "",
-        "prices": {
-          "draftkings": 475
-        }
-      },
-      "Cole Caufield": {
-        "team": "",
-        "prices": {
-          "draftkings": 550
-        }
-      },
-      "Leon Draisaitl": {
-        "team": "",
-        "prices": {
-          "draftkings": 550
-        }
-      },
-      "Kirill Kaprizov": {
-        "team": "",
-        "prices": {
-          "draftkings": 850
-        }
-      },
-      "Jason Robertson": {
-        "team": "",
-        "prices": {
-          "draftkings": 950
-        }
-      },
-      "Macklin Celebrini": {
-        "team": "",
-        "prices": {
-          "draftkings": 950
-        }
-      },
-      "Auston Matthews": {
-        "team": "",
-        "prices": {
-          "draftkings": 1000
-        }
-      },
+    "art_ross": {
       "Connor McDavid": {
         "team": "",
         "prices": {
-          "draftkings": 1400
-        }
-      },
-      "Wyatt Johnston": {
-        "team": "",
-        "prices": {
-          "draftkings": 1600
+          "caesars": 275
         }
       },
       "Nikita Kucherov": {
         "team": "",
         "prices": {
-          "draftkings": 1600
+          "caesars": 375
         }
       },
-      "Tage Thompson": {
+      "Nathan MacKinnon": {
         "team": "",
         "prices": {
-          "draftkings": 1900
+          "caesars": 425
+        }
+      },
+      "Macklin Celebrini": {
+        "team": "",
+        "prices": {
+          "caesars": 1000
+        }
+      },
+      "Leon Draisaitl": {
+        "team": "",
+        "prices": {
+          "caesars": 1000
+        }
+      },
+      "David Pastrnak": {
+        "team": "",
+        "prices": {
+          "caesars": 1200
+        }
+      },
+      "Kirill Kaprizov": {
+        "team": "",
+        "prices": {
+          "caesars": 2000
+        }
+      },
+      "Jack Eichel": {
+        "team": "",
+        "prices": {
+          "caesars": 2000
+        }
+      },
+      "Jason Robertson": {
+        "team": "",
+        "prices": {
+          "caesars": 2500
         }
       },
       "Kyle Connor": {
         "team": "",
         "prices": {
-          "draftkings": 1900
+          "caesars": 2800
         }
       },
-      "Zach Hyman": {
+      "Mitchell Marner": {
         "team": "",
         "prices": {
-          "draftkings": 2200
+          "caesars": 3000
         }
       },
-      "Dylan Guenther": {
+      "Cale Makar": {
         "team": "",
         "prices": {
-          "draftkings": 3000
-        }
-      },
-      "Alex DeBrincat": {
-        "team": "",
-        "prices": {
-          "draftkings": 3000
-        }
-      },
-      "Matthew Boldy": {
-        "team": "",
-        "prices": {
-          "draftkings": 3000
-        }
-      },
-      "Cutter Gauthier": {
-        "team": "",
-        "prices": {
-          "draftkings": 3500
+          "caesars": 4000
         }
       },
       "William Nylander": {
         "team": "",
         "prices": {
-          "draftkings": 4000
+          "caesars": 4000
         }
       },
-      "Morgan Geekie": {
+      "Auston Matthews": {
         "team": "",
         "prices": {
-          "draftkings": 4500
+          "caesars": 5000
+        }
+      },
+      "Nick Suzuki": {
+        "team": "",
+        "prices": {
+          "caesars": 5000
+        }
+      },
+      "Mikko Rantanen": {
+        "team": "",
+        "prices": {
+          "caesars": 5000
+        }
+      },
+      "Clayton Keller": {
+        "team": "",
+        "prices": {
+          "caesars": 5000
+        }
+      },
+      "Jake Guentzel": {
+        "team": "",
+        "prices": {
+          "caesars": 5000
+        }
+      },
+      "Jack Hughes": {
+        "team": "",
+        "prices": {
+          "caesars": 7500
+        }
+      },
+      "Quinn Hughes": {
+        "team": "",
+        "prices": {
+          "caesars": 7500
+        }
+      },
+      "Martin Necas": {
+        "team": "",
+        "prices": {
+          "caesars": 7500
+        }
+      },
+      "Matthew Tkachuk": {
+        "team": "",
+        "prices": {
+          "caesars": 7500
+        }
+      },
+      "Cole Caufield": {
+        "team": "",
+        "prices": {
+          "caesars": 7500
+        }
+      },
+      "Rasmus Dahlin": {
+        "team": "",
+        "prices": {
+          "caesars": 10000
+        }
+      },
+      "Lane Hutson": {
+        "team": "",
+        "prices": {
+          "caesars": 10000
+        }
+      },
+      "Robert Thomas": {
+        "team": "",
+        "prices": {
+          "caesars": 10000
+        }
+      },
+      "Zach Werenski": {
+        "team": "",
+        "prices": {
+          "caesars": 10000
+        }
+      },
+      "Jesper Bratt": {
+        "team": "",
+        "prices": {
+          "caesars": 10000
         }
       },
       "Sam Reinhart": {
         "team": "",
         "prices": {
-          "draftkings": 6000
+          "caesars": 10000
         }
       },
       "Brandon Hagel": {
         "team": "",
         "prices": {
-          "draftkings": 7000
+          "caesars": 10000
         }
       },
-      "Steven Stamkos": {
+      "Matthew Boldy": {
         "team": "",
         "prices": {
-          "draftkings": 7000
+          "caesars": 15000
+        }
+      },
+      "Mark Scheifele": {
+        "team": "",
+        "prices": {
+          "caesars": 15000
         }
       },
       "Dylan Larkin": {
         "team": "",
         "prices": {
-          "draftkings": 8000
+          "caesars": 15000
+        }
+      },
+      "Sidney Crosby": {
+        "team": "",
+        "prices": {
+          "caesars": 15000
+        }
+      },
+      "Wyatt Johnston": {
+        "team": "",
+        "prices": {
+          "caesars": 15000
+        }
+      },
+      "Leo Carlsson": {
+        "team": "",
+        "prices": {
+          "caesars": 15000
+        }
+      },
+      "Sebastian Aho": {
+        "team": "",
+        "prices": {
+          "caesars": 15000
+        }
+      },
+      "Tage Thompson": {
+        "team": "",
+        "prices": {
+          "caesars": 15000
+        }
+      },
+      "Brayden Point": {
+        "team": "",
+        "prices": {
+          "caesars": 15000
+        }
+      },
+      "Steven Stamkos": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Artemi Panarin": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Nikolaj Ehlers": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Adam Fox": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Nico Hischier": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Cutter Gauthier": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Morgan Geekie": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Alex DeBrincat": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Connor Bedard": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Aleksander Barkov": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Tim Stutzle": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Drake Batherson": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Alex Tuch": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Ivan Demidov": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Matt Coronato": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Jordan Kyrou": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Alex Ovechkin": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Matthew Knies": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Evgeni Malkin": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Quinton Byfield": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Kevin Fiala": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Kirill Marchenko": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Trevor Zegras": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Adrian Kempe": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Mika Zibanejad": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Mathew Barzal": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "John Tavares": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Brady Tkachuk": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
         }
       },
       "Filip Forsberg": {
         "team": "",
         "prices": {
-          "draftkings": 9000
+          "caesars": 25000
+        }
+      },
+      "Dylan Guenther": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Brock Boeser": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Lucas Raymond": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Adam Fantilli": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "William Eklund": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Gavin McKenna": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Bo Horvat": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      }
+    },
+    "rocket_richard": {
+      "Nathan MacKinnon": {
+        "team": "",
+        "prices": {
+          "draftkings": 475,
+          "caesars": 500
+        }
+      },
+      "Cole Caufield": {
+        "team": "",
+        "prices": {
+          "draftkings": 550,
+          "caesars": 575
+        }
+      },
+      "Leon Draisaitl": {
+        "team": "",
+        "prices": {
+          "draftkings": 550,
+          "caesars": 550
+        }
+      },
+      "Kirill Kaprizov": {
+        "team": "",
+        "prices": {
+          "draftkings": 850,
+          "caesars": 700
+        }
+      },
+      "Jason Robertson": {
+        "team": "",
+        "prices": {
+          "draftkings": 950,
+          "caesars": 1200
+        }
+      },
+      "Macklin Celebrini": {
+        "team": "",
+        "prices": {
+          "draftkings": 950,
+          "caesars": 900
+        }
+      },
+      "Auston Matthews": {
+        "team": "",
+        "prices": {
+          "draftkings": 1000,
+          "caesars": 900
+        }
+      },
+      "Connor McDavid": {
+        "team": "",
+        "prices": {
+          "draftkings": 1400,
+          "caesars": 1500
+        }
+      },
+      "Wyatt Johnston": {
+        "team": "",
+        "prices": {
+          "draftkings": 1600,
+          "caesars": 1600
+        }
+      },
+      "Nikita Kucherov": {
+        "team": "",
+        "prices": {
+          "draftkings": 1600,
+          "caesars": 1500
+        }
+      },
+      "Tage Thompson": {
+        "team": "",
+        "prices": {
+          "draftkings": 1900,
+          "caesars": 2000
+        }
+      },
+      "Kyle Connor": {
+        "team": "",
+        "prices": {
+          "draftkings": 1900,
+          "caesars": 2200
+        }
+      },
+      "Zach Hyman": {
+        "team": "",
+        "prices": {
+          "draftkings": 2200,
+          "caesars": 2500
+        }
+      },
+      "Dylan Guenther": {
+        "team": "",
+        "prices": {
+          "draftkings": 3000,
+          "caesars": 4000
+        }
+      },
+      "Alex DeBrincat": {
+        "team": "",
+        "prices": {
+          "draftkings": 3000,
+          "caesars": 4000
+        }
+      },
+      "Matthew Boldy": {
+        "team": "",
+        "prices": {
+          "draftkings": 3000,
+          "caesars": 3300
+        }
+      },
+      "Cutter Gauthier": {
+        "team": "",
+        "prices": {
+          "draftkings": 3500,
+          "caesars": 3500
+        }
+      },
+      "William Nylander": {
+        "team": "",
+        "prices": {
+          "draftkings": 4000,
+          "caesars": 3500
+        }
+      },
+      "Morgan Geekie": {
+        "team": "",
+        "prices": {
+          "draftkings": 4500,
+          "caesars": 4000
+        }
+      },
+      "Sam Reinhart": {
+        "team": "",
+        "prices": {
+          "draftkings": 6000,
+          "caesars": 3500
+        }
+      },
+      "Brandon Hagel": {
+        "team": "",
+        "prices": {
+          "draftkings": 7000,
+          "caesars": 7500
+        }
+      },
+      "Steven Stamkos": {
+        "team": "",
+        "prices": {
+          "draftkings": 7000,
+          "caesars": 10000
+        }
+      },
+      "Dylan Larkin": {
+        "team": "",
+        "prices": {
+          "draftkings": 8000,
+          "caesars": 10000
+        }
+      },
+      "Filip Forsberg": {
+        "team": "",
+        "prices": {
+          "draftkings": 9000,
+          "caesars": 10000
         }
       },
       "Alex Ovechkin": {
@@ -8339,55 +8821,64 @@
       "Adrian Kempe": {
         "team": "",
         "prices": {
-          "draftkings": 7500
+          "draftkings": 7500,
+          "caesars": 7500
         }
       },
       "David Pastrnak": {
         "team": "",
         "prices": {
-          "draftkings": 10000
+          "draftkings": 10000,
+          "caesars": 7500
         }
       },
       "Nico Hischier": {
         "team": "",
         "prices": {
-          "draftkings": 12000
+          "draftkings": 12000,
+          "caesars": 15000
         }
       },
       "Jake Guentzel": {
         "team": "",
         "prices": {
-          "draftkings": 15000
+          "draftkings": 15000,
+          "caesars": 10000
         }
       },
       "Pavel Dorofeyev": {
         "team": "",
         "prices": {
-          "draftkings": 12000
+          "draftkings": 12000,
+          "caesars": 10000
         }
       },
       "Jack Hughes": {
         "team": "",
         "prices": {
-          "draftkings": 20000
+          "draftkings": 20000,
+          "caesars": 15000
         }
       },
       "Connor Bedard": {
         "team": "",
         "prices": {
-          "draftkings": 20000
+          "draftkings": 20000,
+          "caesars": 20000
         }
       },
       "Tim Stutzle": {
         "team": "",
         "prices": {
-          "draftkings": 20000
+          "draftkings": 20000,
+          "caesars": 20000
         }
       },
       "Seth Jarvis": {
         "team": "",
         "prices": {
-          "draftkings": 20000
+          "draftkings": 20000,
+          "caesars": 20000
         }
       },
       "Nick Suzuki": {
@@ -8399,31 +8890,36 @@
       "Martin Necas": {
         "team": "",
         "prices": {
-          "draftkings": 20000
+          "draftkings": 20000,
+          "caesars": 6000
         }
       },
       "Mark Scheifele": {
         "team": "",
         "prices": {
-          "draftkings": 20000
+          "draftkings": 20000,
+          "caesars": 10000
         }
       },
       "John Tavares": {
         "team": "",
         "prices": {
-          "draftkings": 25000
+          "draftkings": 25000,
+          "caesars": 25000
         }
       },
       "Mikko Rantanen": {
         "team": "",
         "prices": {
-          "draftkings": 25000
+          "draftkings": 25000,
+          "caesars": 15000
         }
       },
       "Matthew Tkachuk": {
         "team": "",
         "prices": {
-          "draftkings": 25000
+          "draftkings": 25000,
+          "caesars": 20000
         }
       },
       "Juraj Slafkovsky": {
@@ -8447,31 +8943,36 @@
       "Jack Eichel": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 15000
         }
       },
       "Gavin McKenna": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 25000
         }
       },
       "Drake Batherson": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 15000
         }
       },
       "Clayton Keller": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 15000
         }
       },
       "Bryan Rust": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 25000
         }
       },
       "Brock Nelson": {
@@ -8483,7 +8984,8 @@
       "Brady Tkachuk": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 20000
         }
       },
       "Bo Horvat": {
@@ -8507,7 +9009,8 @@
       "Sidney Crosby": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 20000
         }
       },
       "Nazem Kadri": {
@@ -8519,13 +9022,153 @@
       "Mika Zibanejad": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 25000
         }
       },
       "Jordan Kyrou": {
         "team": "",
         "prices": {
-          "draftkings": 30000
+          "draftkings": 30000,
+          "caesars": 25000
+        }
+      },
+      "Leo Carlsson": {
+        "team": "",
+        "prices": {
+          "caesars": 15000
+        }
+      },
+      "Adam Fantilli": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Aleksander Barkov": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Mark Stone": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Kirill Marchenko": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Artemi Panarin": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Mitchell Marner": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Trevor Zegras": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Andrei Svechnikov": {
+        "team": "",
+        "prices": {
+          "caesars": 20000
+        }
+      },
+      "Anthony Mantha": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Kevin Fiala": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Roope Hintz": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Morgan Frost": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Owen Tippett": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Ivar Stenberg": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Jordan Eberle": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Brad Marchand": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Lucas Raymond": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Robert Thomas": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Brock Boeser": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Sebastian Aho": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Nikolaj Ehlers": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
+        }
+      },
+      "Porter Martone": {
+        "team": "",
+        "prices": {
+          "caesars": 25000
         }
       }
     },
@@ -8535,7 +9178,7 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 8773
+        "kalshi": 7773
       },
       "New York Rangers": {
         "kalshi": 23254
@@ -8585,7 +9228,7 @@
         "kalshi": 13736
       },
       "Los Angeles Kings": {
-        "kalshi": 3349
+        "kalshi": 4330
       },
       "Vegas Golden Knights": {
         "kalshi": 7904
