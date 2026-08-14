@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-14 07:08",
+    "last_updated": "2026-08-14 07:18",
     "books": [
       "pinnacle",
       "circa",
@@ -1475,7 +1475,7 @@
       "Anaheim Ducks": {
         "fanduel": 650,
         "draftkings": 650,
-        "betonline": 575,
+        "betonline": 650,
         "betmgm": 650,
         "bookmaker": 575,
         "caesars": 800,
@@ -1503,7 +1503,7 @@
       "Edmonton Oilers": {
         "fanduel": 185,
         "draftkings": 160,
-        "betonline": 160,
+        "betonline": 170,
         "betmgm": 175,
         "bookmaker": 180,
         "caesars": 175,
@@ -1531,7 +1531,7 @@
       "San Jose Sharks": {
         "fanduel": 750,
         "draftkings": 850,
-        "betonline": 850,
+        "betonline": 800,
         "betmgm": 800,
         "bookmaker": 725,
         "caesars": 500,
@@ -1545,7 +1545,7 @@
       "Seattle Kraken": {
         "fanduel": 4500,
         "draftkings": 12000,
-        "betonline": 5000,
+        "betonline": 5500,
         "betmgm": 8000,
         "bookmaker": 4800,
         "caesars": 7000,
@@ -1573,7 +1573,7 @@
       "Vegas Golden Knights": {
         "fanduel": 210,
         "draftkings": 185,
-        "betonline": 175,
+        "betonline": 180,
         "betmgm": 180,
         "bookmaker": 188,
         "caesars": 200,
@@ -9189,13 +9189,13 @@
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 3485
+        "kalshi": 3478
       },
       "Dallas Stars": {
         "kalshi": 6395
       },
       "Buffalo Sabres": {
-        "kalshi": 23845
+        "kalshi": 28708
       },
       "Carolina Hurricanes": {
         "kalshi": 3896
