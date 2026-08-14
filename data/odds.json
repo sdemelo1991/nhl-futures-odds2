@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-14 04:58",
+    "last_updated": "2026-08-14 05:18",
     "books": [
       "pinnacle",
       "circa",
@@ -4642,7 +4642,8 @@
           "betano": 500,
           "bet365": 500,
           "hardrock": 650,
-          "thescore": 650
+          "thescore": 650,
+          "kalshi": 208
         }
       },
       "Nikita Kucherov": {
@@ -9387,7 +9388,9 @@
       "Artemi Panarin": {},
       "Matthew Tkachuk": {},
       "Sidney Crosby": {},
-      "Macklin Celebrini": {},
+      "Macklin Celebrini": {
+        "kalshi": 438
+      },
       "Alex Ovechkin": {},
       "Connor McDavid": {
         "kalshi": 796
