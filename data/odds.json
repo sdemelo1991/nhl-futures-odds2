@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-15 01:18",
+    "last_updated": "2026-08-15 01:28",
     "books": [
       "pinnacle",
       "circa",
@@ -221,7 +221,8 @@
         "bet365": 5500,
         "hardrock": 6000,
         "dazn": 5400,
-        "thescore": 6000
+        "thescore": 6000,
+        "kalshi": 4579
       },
       "New Jersey Devils": {
         "pinnacle": 2832,
@@ -1097,7 +1098,8 @@
         "bet365": 12500,
         "hardrock": 20000,
         "dazn": 14900,
-        "thescore": 10000
+        "thescore": 10000,
+        "kalshi": 3021
       },
       "Vancouver Canucks": {
         "pinnacle": 25501,
@@ -9176,7 +9178,7 @@
     "cup": {
       "Calgary Flames": {},
       "Florida Panthers": {
-        "kalshi": 10335
+        "kalshi": 10262
       },
       "New York Rangers": {
         "kalshi": 24004
@@ -9226,12 +9228,14 @@
         "kalshi": 13736
       },
       "Los Angeles Kings": {
-        "kalshi": 3349
+        "kalshi": 4349
       },
       "Vegas Golden Knights": {
         "kalshi": 6624
       },
-      "Columbus Blue Jackets": {},
+      "Columbus Blue Jackets": {
+        "kalshi": 22239
+      },
       "Washington Capitals": {
         "kalshi": 3598
       },
@@ -9248,7 +9252,7 @@
         "kalshi": 11322
       },
       "Philadelphia Flyers": {
-        "kalshi": 12482
+        "kalshi": 13482
       }
     },
     "conference": {
@@ -9268,7 +9272,9 @@
       "San Jose Sharks": {
         "kalshi": 786
       },
-      "Seattle Kraken": {},
+      "Seattle Kraken": {
+        "kalshi": 1211
+      },
       "Vegas Golden Knights": {
         "kalshi": 1069
       },
