@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-16 15:08",
+    "last_updated": "2026-08-16 16:36",
     "books": [
       "pinnacle",
       "circa",
@@ -4674,7 +4674,8 @@
           "betano": 1100,
           "bet365": 1100,
           "hardrock": 900,
-          "thescore": 1200
+          "thescore": 1200,
+          "kalshi": 574
         }
       },
       "Kirill Kaprizov": {
@@ -9183,11 +9184,11 @@
         "kalshi": 15278
       },
       "Toronto Maple Leafs": {
-        "kalshi": 12844
+        "kalshi": 12845
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 1946
+        "kalshi": 1777
       },
       "Dallas Stars": {
         "kalshi": 7080
@@ -9202,7 +9203,7 @@
         "kalshi": 7341
       },
       "Minnesota Wild": {
-        "kalshi": 538
+        "kalshi": 354
       },
       "Pittsburgh Penguins": {
         "kalshi": 17574
@@ -9216,7 +9217,7 @@
       "St. Louis Blues": {},
       "Chicago Blackhawks": {},
       "Edmonton Oilers": {
-        "kalshi": 3902
+        "kalshi": 3903
       },
       "Winnipeg Jets": {},
       "Colorado Avalanche": {
@@ -9239,7 +9240,7 @@
         "kalshi": 4404
       },
       "Anaheim Ducks": {
-        "kalshi": 11767
+        "kalshi": 12067
       },
       "Boston Bruins": {
         "kalshi": 13034
@@ -9257,7 +9258,7 @@
     "conference": {
       "Calgary Flames": {},
       "Colorado Avalanche": {
-        "kalshi": 635
+        "kalshi": 627
       },
       "Winnipeg Jets": {
         "kalshi": 1658
@@ -9281,7 +9282,7 @@
         "kalshi": 1100
       },
       "Minnesota Wild": {
-        "kalshi": 1215
+        "kalshi": 1208
       },
       "Edmonton Oilers": {
         "kalshi": 1170
@@ -9342,7 +9343,7 @@
         "kalshi": 350
       },
       "Florida Panthers": {
-        "kalshi": 697
+        "kalshi": 688
       },
       "Carolina Hurricanes": {
         "kalshi": 799
@@ -9374,7 +9375,9 @@
       "Jack Hughes": {
         "kalshi": 656
       },
-      "Leon Draisaitl": {},
+      "Leon Draisaitl": {
+        "kalshi": 560
+      },
       "Andrei Vasilevskiy": {},
       "Cale Makar": {},
       "Kyle Connor": {},
