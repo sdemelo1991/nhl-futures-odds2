@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-16 23:38",
+    "last_updated": "2026-08-17 00:08",
     "books": [
       "pinnacle",
       "circa",
@@ -23,11 +23,11 @@
       "circa": "2026-08-11 12:25 (Circa mobile app)",
       "bookmaker": "2026-08-11",
       "caesars": "2026-08-11",
-      "kalshi": "2026-08-16",
-      "dazn": "2026-08-16",
+      "kalshi": "2026-08-17",
+      "dazn": "2026-08-17",
       "bet365": "2026-08-11 (re-verified vs mobile app; no changes since 08-06)",
       "hardrock": "2026-08-11",
-      "fanduel": "2026-08-16"
+      "fanduel": "2026-08-17"
     },
     "book_market_updated": {
       "caesars": {
@@ -4674,7 +4674,8 @@
           "betano": 1100,
           "bet365": 1100,
           "hardrock": 900,
-          "thescore": 1200
+          "thescore": 1200,
+          "kalshi": 574
         }
       },
       "Kirill Kaprizov": {
@@ -9374,7 +9375,9 @@
       "Jack Hughes": {
         "kalshi": 651
       },
-      "Leon Draisaitl": {},
+      "Leon Draisaitl": {
+        "kalshi": 578
+      },
       "Andrei Vasilevskiy": {},
       "Cale Makar": {},
       "Kyle Connor": {},
