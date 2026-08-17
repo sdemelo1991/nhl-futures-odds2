@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-17 00:38",
+    "last_updated": "2026-08-17 00:47",
     "books": [
       "pinnacle",
       "circa",
@@ -390,7 +390,7 @@
         "hardrock": 1300,
         "dazn": 1400,
         "thescore": 1400,
-        "kalshi": 1241
+        "kalshi": 1464
       },
       "Nashville Predators": {
         "pinnacle": 15391,
@@ -4611,7 +4611,8 @@
           "betano": 275,
           "bet365": 250,
           "hardrock": 250,
-          "thescore": 260
+          "thescore": 260,
+          "kalshi": 351
         }
       },
       "Nathan MacKinnon": {
@@ -4626,7 +4627,8 @@
           "betano": 360,
           "bet365": 350,
           "hardrock": 350,
-          "thescore": 375
+          "thescore": 375,
+          "kalshi": 296
         }
       },
       "Macklin Celebrini": {
@@ -4656,7 +4658,8 @@
           "betano": 1200,
           "bet365": 1200,
           "hardrock": 1200,
-          "thescore": 1300
+          "thescore": 1300,
+          "kalshi": 756
         }
       },
       "Leon Draisaitl": {
@@ -4671,7 +4674,8 @@
           "betano": 1100,
           "bet365": 1100,
           "hardrock": 900,
-          "thescore": 1200
+          "thescore": 1200,
+          "kalshi": 574
         }
       },
       "Kirill Kaprizov": {
@@ -4701,7 +4705,8 @@
           "betano": 2400,
           "bet365": 2500,
           "hardrock": 2250,
-          "thescore": 2500
+          "thescore": 2500,
+          "kalshi": 756
         }
       },
       "David Pastrnak": {
@@ -4731,7 +4736,8 @@
           "betano": 1700,
           "bet365": 1500,
           "hardrock": 1500,
-          "thescore": 1600
+          "thescore": 1600,
+          "kalshi": 1222
         }
       },
       "Jack Eichel": {
@@ -4851,7 +4857,8 @@
           "betano": 6400,
           "bet365": 6000,
           "hardrock": 6000,
-          "thescore": 6000
+          "thescore": 6000,
+          "kalshi": 685
         }
       },
       "Cole Caufield": {
@@ -9196,7 +9203,7 @@
         "kalshi": 6233
       },
       "Minnesota Wild": {
-        "kalshi": 3299
+        "kalshi": 539
       },
       "Pittsburgh Penguins": {
         "kalshi": 23437
@@ -9351,14 +9358,26 @@
       "Mikko Rantanen": {},
       "Kirill Kaprizov": {},
       "Mitchell Marner": {},
-      "Quinn Hughes": {},
-      "Nathan MacKinnon": {},
-      "Auston Matthews": {},
+      "Quinn Hughes": {
+        "kalshi": 650
+      },
+      "Nathan MacKinnon": {
+        "kalshi": 576
+      },
+      "Auston Matthews": {
+        "kalshi": 874
+      },
       "Jack Eichel": {},
-      "Nikita Kucherov": {},
+      "Nikita Kucherov": {
+        "kalshi": 573
+      },
       "Connor Hellebuyck": {},
-      "Jack Hughes": {},
-      "Leon Draisaitl": {},
+      "Jack Hughes": {
+        "kalshi": 651
+      },
+      "Leon Draisaitl": {
+        "kalshi": 578
+      },
       "Andrei Vasilevskiy": {},
       "Cale Makar": {},
       "Kyle Connor": {},
@@ -9368,7 +9387,9 @@
       "Sidney Crosby": {},
       "Macklin Celebrini": {},
       "Alex Ovechkin": {},
-      "Connor McDavid": {},
+      "Connor McDavid": {
+        "kalshi": 447
+      },
       "Igor Shesterkin": {},
       "William Nylander": {}
     }
