@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-18 04:47",
+    "last_updated": "2026-08-18 04:58",
     "books": [
       "pinnacle",
       "circa",
@@ -4673,7 +4673,8 @@
           "betano": 1100,
           "bet365": 1100,
           "hardrock": 900,
-          "thescore": 1200
+          "thescore": 1200,
+          "kalshi": 574
         }
       },
       "Kirill Kaprizov": {
@@ -9215,7 +9216,7 @@
       "St. Louis Blues": {},
       "Chicago Blackhawks": {},
       "Edmonton Oilers": {
-        "kalshi": 3903
+        "kalshi": 2810
       },
       "Winnipeg Jets": {},
       "Colorado Avalanche": {
@@ -9355,7 +9356,7 @@
       "Kirill Kaprizov": {},
       "Mitchell Marner": {},
       "Quinn Hughes": {
-        "kalshi": 650
+        "kalshi": 655
       },
       "Nathan MacKinnon": {
         "kalshi": 629
@@ -9365,13 +9366,15 @@
       },
       "Jack Eichel": {},
       "Nikita Kucherov": {
-        "kalshi": 573
+        "kalshi": 578
       },
       "Connor Hellebuyck": {},
       "Jack Hughes": {
-        "kalshi": 451
+        "kalshi": 458
       },
-      "Leon Draisaitl": {},
+      "Leon Draisaitl": {
+        "kalshi": 560
+      },
       "Andrei Vasilevskiy": {},
       "Cale Makar": {},
       "Kyle Connor": {},
