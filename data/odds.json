@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-18 19:07",
+    "last_updated": "2026-08-18 19:48",
     "books": [
       "pinnacle",
       "circa",
@@ -4673,7 +4673,8 @@
           "betano": 1100,
           "bet365": 1100,
           "hardrock": 900,
-          "thescore": 1200
+          "thescore": 1200,
+          "kalshi": 574
         }
       },
       "Kirill Kaprizov": {
@@ -9355,7 +9356,7 @@
       "Kirill Kaprizov": {},
       "Mitchell Marner": {},
       "Quinn Hughes": {
-        "kalshi": 400
+        "kalshi": 405
       },
       "Nathan MacKinnon": {
         "kalshi": 473
@@ -9365,13 +9366,15 @@
       },
       "Jack Eichel": {},
       "Nikita Kucherov": {
-        "kalshi": 433
+        "kalshi": 438
       },
       "Connor Hellebuyck": {},
       "Jack Hughes": {
-        "kalshi": 467
+        "kalshi": 472
       },
-      "Leon Draisaitl": {},
+      "Leon Draisaitl": {
+        "kalshi": 426
+      },
       "Andrei Vasilevskiy": {},
       "Cale Makar": {},
       "Kyle Connor": {},
