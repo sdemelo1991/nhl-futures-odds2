@@ -36,7 +36,9 @@ HIST_PATH = os.path.join(os.path.dirname(__file__), "data", "price_history.json"
 ASSETS = os.path.join(os.path.dirname(__file__), "assets", "logos")
 TEAM_ASSETS = os.path.join(os.path.dirname(__file__), "assets", "teams")
 
-st.set_page_config(page_title="NHL Futures · Hub", layout="wide", page_icon="🏒")
+# NOTE: st.set_page_config() lives in main() (not module scope) so this file is
+# import-safe — futures_comp.py / a hub app can import render_comp_tool without
+# triggering a page-config call (the caller owns set_page_config).
 
 SORT_OPTS = ["Best price: fav → long", "Best price: long → fav",
              "Consensus: fav → long", "Consensus: long → fav",
@@ -1378,8 +1380,15 @@ def render_player_view(data, player, sharp_cols, nonsharp_cols):
         st.info(f"No markets found for {player} yet.")
 
 
-# --------------------------------------------------------------------------- main
-def main():
+# --------------------------------------------------------------------------- comp tool
+def render_comp_tool(data, history=None):
+    """Render the full Futures Comparison Tool (sidebar, theme, section nav, and
+    every section) for a given odds.json `data` dict. `history` is an optional
+    price_history.json dict; if omitted it's read from disk (get_history()).
+
+    Does NOT call st.set_page_config — the caller owns that — so this can be
+    imported and embedded in a hub app (see futures_comp.render_comp_tool).
+    app.py's own main() below is a thin wrapper that loads odds.json and calls it."""
     # A nav-tab / FD-tile click asks to leave search; clear the selectbox here,
     # BEFORE it's instantiated (can't modify a widget's state after it renders).
     if st.session_state.pop("_clear_search", False):
@@ -1417,17 +1426,13 @@ def main():
         st.markdown(f"<style>[class*='st-key-fdkpi_btn'] button{{background-image:url('{_fd_logo}');}}</style>",
                     unsafe_allow_html=True)
 
-    if not os.path.exists(DATA_PATH):
-        st.error("data/odds.json not found. Run `python build_seed.py` first.")
-        return
-    data = get_data()
     meta = data.get("meta", {})
     BOOK_UPDATED.clear()
     BOOK_UPDATED.update(meta.get("book_updated") or {})
     BOOK_MARKET_UPDATED.clear()
     BOOK_MARKET_UPDATED.update(meta.get("book_market_updated") or {})
     PRICE_HISTORY.clear()
-    PRICE_HISTORY.update(get_history())
+    PRICE_HISTORY.update(history if history is not None else get_history())
 
     with hc[0]:
         st.markdown(
@@ -1484,6 +1489,15 @@ def main():
         render_props(data, sharp_cols, nonsharp_cols)
     else:
         render_to_win(data, sharp_cols, nonsharp_cols)
+
+
+def main():
+    """Standalone entry point: set page config, load odds.json, render the tool."""
+    st.set_page_config(page_title="NHL Futures · Hub", layout="wide", page_icon="🏒")
+    if not os.path.exists(DATA_PATH):
+        st.error("data/odds.json not found. Run `python build_seed.py` first.")
+        return
+    render_comp_tool(get_data())
 
 
 if __name__ == "__main__":
