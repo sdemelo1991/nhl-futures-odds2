@@ -709,6 +709,40 @@
       "Elvis Merzlikins": 15000,
       "Philipp Grubauer": 15000,
       "Arturs Silovs": 20000
+    },
+    "jack_adams": {
+      "Ryan Warsofsky": 600,
+      "Spencer Carbery": 600,
+      "Paul Maurice": 800,
+      "Mike Babcock": 1000,
+      "Jim Hiller": 1400,
+      "Sheldon Keefe": 1400,
+      "Martin St. Louis": 1600,
+      "Rick Tocchet": 1600,
+      "Glen Gulutzan": 2000,
+      "Jim Montgomery": 2000,
+      "John Hynes": 2000,
+      "Peter Laviolette": 2000,
+      "Rod Brind'Amour": 2000,
+      "Andre Tourigny": 2500,
+      "Mike Sullivan": 2500,
+      "Rick Bowness": 2500,
+      "Ryan Craig": 2500,
+      "Peter DeBoer": 2800,
+      "Lindy Ruff": 3000,
+      "Jared Bednar": 3500,
+      "Travis Green": 4000,
+      "Andrew Brunette": 5000,
+      "Jon Cooper": 5000,
+      "Marco Sturm": 6000,
+      "Scott Arniel": 6000,
+      "Dan Muse": 7500,
+      "Jeff Blashill": 7500,
+      "Joel Quenneville": 7500,
+      "Lane Lambert": 10000,
+      "Todd McLellan": 10000,
+      "Manny Malhotra": 15000,
+      "Ryan Huska": 15000
     }
   },
   "player_markets": {
@@ -1046,5 +1080,8 @@
         "under": -111
       }
     }
+  },
+  "updated_markets": {
+    "award:jack_adams": "2026-08-19"
   }
 }
