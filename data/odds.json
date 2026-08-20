@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": "2026-27",
-    "last_updated": "2026-08-19 22:17",
+    "last_updated": "2026-08-19 22:28",
     "books": [
       "pinnacle",
       "circa",
@@ -4645,7 +4645,8 @@
           "betano": 500,
           "bet365": 500,
           "hardrock": 650,
-          "thescore": 500
+          "thescore": 500,
+          "kalshi": 208
         }
       },
       "Nikita Kucherov": {
@@ -4691,7 +4692,8 @@
           "betano": 1400,
           "bet365": 1400,
           "hardrock": 1400,
-          "thescore": 1500
+          "thescore": 1500,
+          "kalshi": 218
         }
       },
       "Jack Hughes": {
@@ -4768,7 +4770,8 @@
           "betano": 3400,
           "bet365": 3000,
           "hardrock": 3000,
-          "thescore": 3000
+          "thescore": 3000,
+          "kalshi": 198
         }
       },
       "Cale Makar": {
@@ -9221,7 +9224,7 @@
       },
       "Seattle Kraken": {},
       "San Jose Sharks": {
-        "kalshi": 7002
+        "kalshi": 7000
       },
       "Dallas Stars": {
         "kalshi": 7245
@@ -9236,7 +9239,7 @@
         "kalshi": 3517
       },
       "Minnesota Wild": {
-        "kalshi": 4561
+        "kalshi": 4565
       },
       "Pittsburgh Penguins": {
         "kalshi": 15286
@@ -9387,13 +9390,17 @@
       "Nick Suzuki": {},
       "David Pastrnak": {},
       "Mikko Rantanen": {},
-      "Kirill Kaprizov": {},
-      "Mitchell Marner": {},
+      "Kirill Kaprizov": {
+        "kalshi": 343
+      },
+      "Mitchell Marner": {
+        "kalshi": 563
+      },
       "Quinn Hughes": {
         "kalshi": 400
       },
       "Nathan MacKinnon": {
-        "kalshi": 378
+        "kalshi": 382
       },
       "Auston Matthews": {
         "kalshi": 624
@@ -9414,10 +9421,12 @@
       "Artemi Panarin": {},
       "Matthew Tkachuk": {},
       "Sidney Crosby": {},
-      "Macklin Celebrini": {},
+      "Macklin Celebrini": {
+        "kalshi": 393
+      },
       "Alex Ovechkin": {},
       "Connor McDavid": {
-        "kalshi": 719
+        "kalshi": 720
       },
       "Igor Shesterkin": {},
       "William Nylander": {}
