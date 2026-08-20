@@ -1,208 +1,754 @@
 {
-  "futures": {
-    "to_make_playoffs": {},
-    "points": {}
+  "playoffs": {
+    "Anaheim Ducks": {
+      "yes": {
+        "dazn": -154
+      },
+      "no": {
+        "dazn": 115
+      }
+    },
+    "Boston Bruins": {
+      "yes": {
+        "dazn": 250
+      },
+      "no": {
+        "dazn": -357
+      }
+    },
+    "Buffalo Sabres": {
+      "yes": {
+        "dazn": -115
+      },
+      "no": {
+        "dazn": -115
+      }
+    },
+    "Calgary Flames": {
+      "yes": {
+        "dazn": 650
+      },
+      "no": {
+        "dazn": -1429
+      }
+    },
+    "Carolina Hurricanes": {
+      "yes": {
+        "dazn": -1250
+      },
+      "no": {
+        "dazn": 600
+      }
+    },
+    "Chicago Blackhawks": {
+      "yes": {
+        "dazn": 400
+      },
+      "no": {
+        "dazn": -667
+      }
+    },
+    "Colorado Avalanche": {
+      "yes": {
+        "dazn": -2500
+      },
+      "no": {
+        "dazn": 800
+      }
+    },
+    "Columbus Blue Jackets": {
+      "yes": {
+        "dazn": 150
+      },
+      "no": {
+        "dazn": -200
+      }
+    },
+    "Dallas Stars": {
+      "yes": {
+        "dazn": -455
+      },
+      "no": {
+        "dazn": 300
+      }
+    },
+    "Detroit Red Wings": {
+      "yes": {
+        "dazn": 250
+      },
+      "no": {
+        "dazn": -357
+      }
+    },
+    "Edmonton Oilers": {
+      "yes": {
+        "dazn": -909
+      },
+      "no": {
+        "dazn": 500
+      }
+    },
+    "Florida Panthers": {
+      "yes": {
+        "dazn": -1000
+      },
+      "no": {
+        "dazn": 520
+      }
+    },
+    "Los Angeles Kings": {
+      "yes": {
+        "dazn": -200
+      },
+      "no": {
+        "dazn": 150
+      }
+    },
+    "Minnesota Wild": {
+      "yes": {
+        "dazn": -556
+      },
+      "no": {
+        "dazn": 350
+      }
+    },
+    "Montreal Canadiens": {
+      "yes": {
+        "dazn": -182
+      },
+      "no": {
+        "dazn": 135
+      }
+    },
+    "Nashville Predators": {
+      "yes": {
+        "dazn": 215
+      },
+      "no": {
+        "dazn": -303
+      }
+    },
+    "New Jersey Devils": {
+      "yes": {
+        "dazn": -125
+      },
+      "no": {
+        "dazn": -105
+      }
+    },
+    "New York Islanders": {
+      "yes": {
+        "dazn": 230
+      },
+      "no": {
+        "dazn": -333
+      }
+    },
+    "New York Rangers": {
+      "yes": {
+        "dazn": 205
+      },
+      "no": {
+        "dazn": -286
+      }
+    },
+    "Ottawa Senators": {
+      "yes": {
+        "dazn": 100
+      },
+      "no": {
+        "dazn": -133
+      }
+    },
+    "Philadelphia Flyers": {
+      "yes": {
+        "dazn": 115
+      },
+      "no": {
+        "dazn": -154
+      }
+    },
+    "Pittsburgh Penguins": {
+      "yes": {
+        "dazn": 180
+      },
+      "no": {
+        "dazn": -250
+      }
+    },
+    "San Jose Sharks": {
+      "yes": {
+        "dazn": -143
+      },
+      "no": {
+        "dazn": 108
+      }
+    },
+    "Seattle Kraken": {
+      "yes": {
+        "dazn": 450
+      },
+      "no": {
+        "dazn": -769
+      }
+    },
+    "St. Louis Blues": {
+      "yes": {
+        "dazn": 230
+      },
+      "no": {
+        "dazn": -333
+      }
+    },
+    "Tampa Bay Lightning": {
+      "yes": {
+        "dazn": -400
+      },
+      "no": {
+        "dazn": 275
+      }
+    },
+    "Toronto Maple Leafs": {
+      "yes": {
+        "dazn": -118
+      },
+      "no": {
+        "dazn": -111
+      }
+    },
+    "Utah Hockey Club": {
+      "yes": {},
+      "no": {}
+    },
+    "Vancouver Canucks": {
+      "yes": {
+        "dazn": 900
+      },
+      "no": {
+        "dazn": -3333
+      }
+    },
+    "Vegas Golden Knights": {
+      "yes": {
+        "dazn": -833
+      },
+      "no": {
+        "dazn": 460
+      }
+    },
+    "Washington Capitals": {
+      "yes": {
+        "dazn": -286
+      },
+      "no": {
+        "dazn": 205
+      }
+    },
+    "Winnipeg Jets": {
+      "yes": {
+        "dazn": 215
+      },
+      "no": {
+        "dazn": -303
+      }
+    },
+    "Utah Mammoth": {
+      "yes": {
+        "dazn": -200
+      },
+      "no": {
+        "dazn": 150
+      }
+    }
   },
+  "points": {},
   "jack_adams": {},
   "to_win": {
     "conference": {
-      "Anaheim Ducks": {
-        "pinnacle": 1429
-      },
-      "Calgary Flames": {
-        "pinnacle": 52212
-      },
-      "Chicago Blackhawks": {
-        "pinnacle": 12590
-      },
-      "Colorado Avalanche": {
-        "pinnacle": 342
-      },
-      "Dallas Stars": {
-        "pinnacle": 746
-      },
-      "Edmonton Oilers": {
-        "pinnacle": 469
-      },
-      "Los Angeles Kings": {
-        "pinnacle": 1796
-      },
-      "Minnesota Wild": {
-        "pinnacle": 691
-      },
-      "Nashville Predators": {
-        "pinnacle": 5828
-      },
-      "San Jose Sharks": {
-        "pinnacle": 903
-      },
-      "Seattle Kraken": {
-        "pinnacle": 20950
-      },
-      "St. Louis Blues": {
-        "pinnacle": 6309
-      },
-      "Utah Mammoth": {
-        "pinnacle": 1343
-      },
-      "Vancouver Canucks": {
-        "pinnacle": 25501
-      },
-      "Vegas Golden Knights": {
-        "pinnacle": 508
-      },
-      "Winnipeg Jets": {
-        "pinnacle": 5261
-      },
       "Boston Bruins": {
-        "pinnacle": 4311
+        "pinnacle": 4311,
+        "dazn": 3900
       },
       "Buffalo Sabres": {
-        "pinnacle": 1647
+        "pinnacle": 1647,
+        "dazn": 1400
       },
       "Carolina Hurricanes": {
-        "pinnacle": 353
+        "pinnacle": 353,
+        "dazn": 285
       },
       "Columbus Blue Jackets": {
-        "pinnacle": 2773
+        "pinnacle": 2773,
+        "dazn": 1600
       },
       "Detroit Red Wings": {
-        "pinnacle": 5040
+        "pinnacle": 5040,
+        "dazn": 3900
       },
       "Florida Panthers": {
-        "pinnacle": 337
+        "pinnacle": 337,
+        "dazn": 350
       },
       "Montreal Canadiens": {
-        "pinnacle": 1261
+        "pinnacle": 1261,
+        "dazn": 1100
       },
       "New Jersey Devils": {
-        "pinnacle": 1515
+        "pinnacle": 1515,
+        "dazn": 1200
       },
       "New York Islanders": {
-        "pinnacle": 5544
+        "pinnacle": 5544,
+        "dazn": 3400
       },
       "New York Rangers": {
-        "pinnacle": 4032
+        "pinnacle": 4032,
+        "dazn": 2900
       },
       "Ottawa Senators": {
-        "pinnacle": 1749
+        "pinnacle": 1749,
+        "dazn": 1600
       },
       "Philadelphia Flyers": {
-        "pinnacle": 2773
+        "pinnacle": 2773,
+        "dazn": 1900
       },
       "Pittsburgh Penguins": {
-        "pinnacle": 4032
+        "pinnacle": 4032,
+        "dazn": 2900
       },
       "Tampa Bay Lightning": {
-        "pinnacle": 556
+        "pinnacle": 556,
+        "dazn": 500
       },
       "Toronto Maple Leafs": {
-        "pinnacle": 1577
+        "pinnacle": 1577,
+        "dazn": 1400
       },
       "Washington Capitals": {
-        "pinnacle": 757
+        "pinnacle": 757,
+        "dazn": 1100
+      },
+      "Anaheim Ducks": {
+        "pinnacle": 1429,
+        "dazn": 1400
+      },
+      "Calgary Flames": {
+        "pinnacle": 52212,
+        "dazn": 29900
+      },
+      "Chicago Blackhawks": {
+        "pinnacle": 12590,
+        "dazn": 8900
+      },
+      "Colorado Avalanche": {
+        "pinnacle": 342,
+        "dazn": 350
+      },
+      "Dallas Stars": {
+        "pinnacle": 746,
+        "dazn": 750
+      },
+      "Edmonton Oilers": {
+        "pinnacle": 469,
+        "dazn": 450
+      },
+      "Los Angeles Kings": {
+        "pinnacle": 1796,
+        "dazn": 1600
+      },
+      "Minnesota Wild": {
+        "pinnacle": 691,
+        "dazn": 650
+      },
+      "Nashville Predators": {
+        "pinnacle": 5828,
+        "dazn": 5900
+      },
+      "San Jose Sharks": {
+        "pinnacle": 903,
+        "dazn": 1700
+      },
+      "Seattle Kraken": {
+        "pinnacle": 20950,
+        "dazn": 14900
+      },
+      "St. Louis Blues": {
+        "pinnacle": 6309,
+        "dazn": 4900
+      },
+      "Utah Mammoth": {
+        "pinnacle": 1343,
+        "dazn": 1400
+      },
+      "Vancouver Canucks": {
+        "pinnacle": 25501,
+        "dazn": 24900
+      },
+      "Vegas Golden Knights": {
+        "pinnacle": 508,
+        "dazn": 450
+      },
+      "Winnipeg Jets": {
+        "pinnacle": 5261,
+        "dazn": 3400
       }
     },
     "cup": {
       "New Jersey Devils": {
-        "pinnacle": 2854
+        "pinnacle": 2854,
+        "dazn": 2900
       },
       "New York Islanders": {
-        "pinnacle": 12921
+        "pinnacle": 12921,
+        "dazn": 12400
       },
       "New York Rangers": {
-        "pinnacle": 8278
+        "pinnacle": 8278,
+        "dazn": 6900
       },
       "Ottawa Senators": {
-        "pinnacle": 3318
+        "pinnacle": 3318,
+        "dazn": 3400
       },
       "Philadelphia Flyers": {
-        "pinnacle": 5177
+        "pinnacle": 5177,
+        "dazn": 4900
       },
       "Pittsburgh Penguins": {
-        "pinnacle": 8792
+        "pinnacle": 8792,
+        "dazn": 6900
       },
       "San Jose Sharks": {
-        "pinnacle": 3838
+        "pinnacle": 3838,
+        "dazn": 3400
       },
       "Seattle Kraken": {
-        "pinnacle": 30948
+        "pinnacle": 30948,
+        "dazn": 29900
       },
       "St. Louis Blues": {
-        "pinnacle": 13260
+        "pinnacle": 13260,
+        "dazn": 19900
       },
       "Tampa Bay Lightning": {
-        "pinnacle": 1246
+        "pinnacle": 1246,
+        "dazn": 1200
       },
       "Toronto Maple Leafs": {
-        "pinnacle": 2817
+        "pinnacle": 2817,
+        "dazn": 3400
       },
       "Utah Mammoth": {
-        "pinnacle": 3113
+        "pinnacle": 3113,
+        "dazn": 2900
       },
       "Vancouver Canucks": {
-        "pinnacle": 44822
+        "pinnacle": 44822,
+        "dazn": 49900
       },
       "Vegas Golden Knights": {
-        "pinnacle": 937
+        "pinnacle": 937,
+        "dazn": 1100
       },
       "Washington Capitals": {
-        "pinnacle": 1559
+        "pinnacle": 1559,
+        "dazn": 1400
       },
       "Winnipeg Jets": {
-        "pinnacle": 10340
+        "pinnacle": 10340,
+        "dazn": 12400
       },
       "Anaheim Ducks": {
-        "pinnacle": 3113
+        "pinnacle": 3113,
+        "dazn": 3400
       },
       "Boston Bruins": {
-        "pinnacle": 8804
+        "pinnacle": 8804,
+        "dazn": 9900
       },
       "Buffalo Sabres": {
-        "pinnacle": 2725
+        "pinnacle": 2725,
+        "dazn": 3400
       },
       "Calgary Flames": {
-        "pinnacle": 51517
+        "pinnacle": 51517,
+        "dazn": 49900
       },
       "Carolina Hurricanes": {
-        "pinnacle": 677
+        "pinnacle": 677,
+        "dazn": 700
       },
       "Chicago Blackhawks": {
-        "pinnacle": 20650
+        "pinnacle": 20650,
+        "dazn": 24900
       },
       "Colorado Avalanche": {
-        "pinnacle": 728
+        "pinnacle": 728,
+        "dazn": 750
       },
       "Columbus Blue Jackets": {
-        "pinnacle": 5694
+        "pinnacle": 5694,
+        "dazn": 5400
       },
       "Dallas Stars": {
-        "pinnacle": 1559
+        "pinnacle": 1559,
+        "dazn": 1600
       },
       "Detroit Red Wings": {
-        "pinnacle": 10340
+        "pinnacle": 10340,
+        "dazn": 12400
       },
       "Edmonton Oilers": {
-        "pinnacle": 751
+        "pinnacle": 751,
+        "dazn": 900
       },
       "Florida Panthers": {
-        "pinnacle": 675
+        "pinnacle": 675,
+        "dazn": 650
       },
       "Los Angeles Kings": {
-        "pinnacle": 3113
+        "pinnacle": 3113,
+        "dazn": 2900
       },
       "Minnesota Wild": {
-        "pinnacle": 1351
+        "pinnacle": 1351,
+        "dazn": 1400
       },
       "Montreal Canadiens": {
-        "pinnacle": 2285
+        "pinnacle": 2285,
+        "dazn": 2400
       },
       "Nashville Predators": {
-        "pinnacle": 15497
+        "pinnacle": 15497,
+        "dazn": 14900
+      }
+    },
+    "presidents": {
+      "Colorado Avalanche": {
+        "dazn": 550
+      },
+      "Carolina Hurricanes": {
+        "dazn": 550
+      },
+      "Florida Panthers": {
+        "dazn": 800
+      },
+      "Tampa Bay Lightning": {
+        "dazn": 900
+      },
+      "Vegas Golden Knights": {
+        "dazn": 900
+      },
+      "Edmonton Oilers": {
+        "dazn": 1000
+      },
+      "Minnesota Wild": {
+        "dazn": 1100
+      },
+      "Dallas Stars": {
+        "dazn": 1400
+      },
+      "Washington Capitals": {
+        "dazn": 1900
+      },
+      "Ottawa Senators": {
+        "dazn": 1900
+      },
+      "Montreal Canadiens": {
+        "dazn": 2400
+      },
+      "Buffalo Sabres": {
+        "dazn": 2900
+      },
+      "Anaheim Ducks": {
+        "dazn": 2900
+      },
+      "New Jersey Devils": {
+        "dazn": 2900
+      },
+      "Los Angeles Kings": {
+        "dazn": 3400
+      },
+      "Utah Mammoth": {
+        "dazn": 3400
+      },
+      "Columbus Blue Jackets": {
+        "dazn": 4900
+      },
+      "Toronto Maple Leafs": {
+        "dazn": 4900
+      },
+      "Philadelphia Flyers": {
+        "dazn": 4900
+      },
+      "San Jose Sharks": {
+        "dazn": 6900
+      },
+      "Pittsburgh Penguins": {
+        "dazn": 7900
+      },
+      "Winnipeg Jets": {
+        "dazn": 7900
+      },
+      "New York Islanders": {
+        "dazn": 7900
+      },
+      "Detroit Red Wings": {
+        "dazn": 8900
+      },
+      "New York Rangers": {
+        "dazn": 8900
+      },
+      "Boston Bruins": {
+        "dazn": 9900
+      },
+      "St. Louis Blues": {
+        "dazn": 9900
+      },
+      "Nashville Predators": {
+        "dazn": 12400
+      },
+      "Chicago Blackhawks": {
+        "dazn": 19900
+      },
+      "Seattle Kraken": {
+        "dazn": 29900
+      },
+      "Calgary Flames": {
+        "dazn": 49900
+      },
+      "Vancouver Canucks": {
+        "dazn": 49900
+      }
+    },
+    "division": {
+      "Florida Panthers": {
+        "dazn": 150
+      },
+      "Tampa Bay Lightning": {
+        "dazn": 275
+      },
+      "Montreal Canadiens": {
+        "dazn": 650
+      },
+      "Buffalo Sabres": {
+        "dazn": 900
+      },
+      "Toronto Maple Leafs": {
+        "dazn": 900
+      },
+      "Ottawa Senators": {
+        "dazn": 1100
+      },
+      "Detroit Red Wings": {
+        "dazn": 3400
+      },
+      "Boston Bruins": {
+        "dazn": 3400
+      },
+      "Colorado Avalanche": {
+        "dazn": 125
+      },
+      "Minnesota Wild": {
+        "dazn": 300
+      },
+      "Dallas Stars": {
+        "dazn": 360
+      },
+      "Utah Mammoth": {
+        "dazn": 750
+      },
+      "Winnipeg Jets": {
+        "dazn": 2900
+      },
+      "St. Louis Blues": {
+        "dazn": 3400
+      },
+      "Nashville Predators": {
+        "dazn": 3400
+      },
+      "Chicago Blackhawks": {
+        "dazn": 5400
+      },
+      "Carolina Hurricanes": {
+        "dazn": -111
+      },
+      "Washington Capitals": {
+        "dazn": 280
+      },
+      "New Jersey Devils": {
+        "dazn": 650
+      },
+      "Columbus Blue Jackets": {
+        "dazn": 900
+      },
+      "Philadelphia Flyers": {
+        "dazn": 1000
+      },
+      "Pittsburgh Penguins": {
+        "dazn": 1700
+      },
+      "New York Islanders": {
+        "dazn": 1900
+      },
+      "New York Rangers": {
+        "dazn": 1900
+      },
+      "Edmonton Oilers": {
+        "dazn": 170
+      },
+      "Vegas Golden Knights": {
+        "dazn": 195
+      },
+      "Los Angeles Kings": {
+        "dazn": 650
+      },
+      "Anaheim Ducks": {
+        "dazn": 650
+      },
+      "San Jose Sharks": {
+        "dazn": 800
+      },
+      "Seattle Kraken": {
+        "dazn": 7900
+      },
+      "Calgary Flames": {
+        "dazn": 8900
+      },
+      "Vancouver Canucks": {
+        "dazn": 19900
       }
     }
   },
   "meta": {
-    "last_updated": "2026-08-20 11:36"
+    "last_updated": "2026-08-20 12:37",
+    "book_updated": {
+      "dazn": "2026-08-20"
+    }
+  },
+  "cup_specials": {
+    "conf": {
+      "Eastern Conference": {
+        "dazn": -133
+      },
+      "Western Conference": {
+        "dazn": 100
+      }
+    },
+    "div": {
+      "Atlantic Division": {
+        "dazn": 210
+      },
+      "Central Division": {
+        "dazn": 275
+      },
+      "Pacific Division": {
+        "dazn": 290
+      },
+      "Metropolitan Division": {
+        "dazn": 290
+      }
+    }
   }
 }
