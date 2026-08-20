@@ -3089,8 +3089,7 @@
           "draftkings": 1100,
           "caesars": 1100,
           "bet365": 1100,
-          "hardrock": 900,
-          "kalshi": 625
+          "hardrock": 900
         }
       },
       "Nikita Kucherov": {
@@ -3106,7 +3105,7 @@
           "caesars": 1200,
           "bet365": 1200,
           "hardrock": 1200,
-          "kalshi": 841
+          "kalshi": 685
         }
       },
       "Kirill Kaprizov": {
@@ -3274,7 +3273,7 @@
           "caesars": 4000,
           "bet365": 6000,
           "hardrock": 6000,
-          "kalshi": 756
+          "kalshi": 625
         }
       },
       "Connor Bedard": {
@@ -7251,7 +7250,7 @@
         "caesars": 650,
         "bet365": 650,
         "hardrock": 600,
-        "kalshi": 574
+        "kalshi": 625
       },
       "Toronto Maple Leafs": {
         "pinnacle": 1577,
@@ -9090,7 +9089,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-08-20 14:58",
+    "last_updated": "2026-08-20 15:08",
     "book_updated": {
       "dazn": "2026-08-20",
       "fanduel": "2026-08-20",
@@ -12682,7 +12681,7 @@
         "kalshi": 2529
       },
       "Colorado Avalanche": {
-        "kalshi": 2840
+        "kalshi": 3106
       },
       "Tampa Bay Lightning": {
         "kalshi": 17746
@@ -12715,28 +12714,28 @@
         "kalshi": 2781
       },
       "Florida Panthers": {
-        "kalshi": 4475
+        "kalshi": 5294
       },
       "Carolina Hurricanes": {
         "kalshi": 2694
       },
       "San Jose Sharks": {
-        "kalshi": 7382
+        "kalshi": 7384
       },
       "Anaheim Ducks": {
-        "kalshi": 24130
+        "kalshi": 25530
       },
       "Toronto Maple Leafs": {
-        "kalshi": 25839
+        "kalshi": 27239
       },
       "Minnesota Wild": {
-        "kalshi": 3640
+        "kalshi": 4516
       },
       "Buffalo Sabres": {
-        "kalshi": 27621
+        "kalshi": 29021
       },
       "Dallas Stars": {
-        "kalshi": 6854
+        "kalshi": 8222
       },
       "Philadelphia Flyers": {
         "kalshi": 14917
@@ -12747,7 +12746,7 @@
     },
     "conference": {
       "Dallas Stars": {
-        "kalshi": 401
+        "kalshi": 388
       },
       "Winnipeg Jets": {
         "kalshi": 1158
@@ -12813,7 +12812,7 @@
         "kalshi": 851
       },
       "Tampa Bay Lightning": {
-        "kalshi": 650
+        "kalshi": 473
       },
       "Philadelphia Flyers": {
         "kalshi": 700
@@ -12838,9 +12837,7 @@
       }
     },
     "hart": {
-      "Leon Draisaitl": {
-        "kalshi": 400
-      },
+      "Leon Draisaitl": {},
       "Jack Hughes": {
         "kalshi": 600
       },
@@ -12851,13 +12848,13 @@
         "kalshi": 629
       },
       "Quinn Hughes": {
-        "kalshi": 400
+        "kalshi": 501
       },
       "Connor McDavid": {
         "kalshi": 424
       },
       "Nikita Kucherov": {
-        "kalshi": 400
+        "kalshi": 500
       }
     }
   }
