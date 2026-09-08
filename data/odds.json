@@ -1958,7 +1958,7 @@
         "prices": {
           "fanduel": 1800,
           "kambi": 5000,
-          "betmgm": 6000,
+          "betmgm": 4000,
           "betano": 2900,
           "betonline": 1800,
           "thescore": 5000,
@@ -2197,7 +2197,8 @@
           "fanduel": 6000,
           "circa": 5000,
           "caesars": 6000,
-          "bookmaker": 5500
+          "bookmaker": 5500,
+          "betmgm": 6600
         }
       },
       "Joel Hofer": {
@@ -2324,7 +2325,8 @@
           "fanduel": 12500,
           "circa": 10000,
           "bet365": 10000,
-          "bookmaker": 10000
+          "bookmaker": 10000,
+          "betmgm": 15000
         }
       },
       "Thatcher Demko": {
@@ -3826,7 +3828,7 @@
       "Mikko Rantanen": {
         "team": "",
         "prices": {
-          "fanduel": 12500,
+          "fanduel": 6500,
           "kambi": 3000,
           "betmgm": 3000,
           "betano": 7900,
@@ -6138,7 +6140,7 @@
         "prices": {
           "caesars": 600,
           "bet365": 600,
-          "fanduel": 1100,
+          "fanduel": 850,
           "kambi": 850,
           "circa": 600,
           "betmgm": 900
@@ -10513,7 +10515,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-08 16:57",
+    "last_updated": "2026-09-08 17:31",
     "book_updated": {
       "dazn": "2026-09-08",
       "fanduel": "2026-09-08",

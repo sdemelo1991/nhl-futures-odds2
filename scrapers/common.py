@@ -98,14 +98,19 @@ def _valid_jack_adams_coaches():
 
 def set_award(doc, category, player, team, book, odds):
     """Returns the canonical player key on success, None if the roster check
-    rejected it (so callers building a prune_stale `seen` set don't add it)."""
+    rejected it (so callers building a prune_stale `seen` set don't add it).
+    Canonicalize BEFORE the roster check, not after — a book can suffix a
+    disambiguator onto the raw name (e.g. FanDuel's Jack Adams runners went
+    from "Peter DeBoer" to "Peter DeBoer (NYI)"), and canonical_player()
+    already strips a trailing "(...)" the same way it does for players; check
+    the raw string first and every coach fails the roster match."""
+    p = canonical_player(player)
     if category == "jack_adams":
         roster = _valid_jack_adams_coaches()
-        if roster is not None and player.strip().lower() not in roster:
+        if roster is not None and p.strip().lower() not in roster:
             print(f"  !! skipped jack_adams runner not on the coach roster: "
                   f"{player!r} ({book}, {odds:+d})")
             return None
-    p = canonical_player(player)
     doc["awards"].setdefault(category, {}).setdefault(
         p, {"team": normalize_team(team) if team else "", "prices": {}}
     )["prices"][book] = int(odds)
