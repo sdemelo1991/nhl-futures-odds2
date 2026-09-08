@@ -26,7 +26,7 @@ import requests
 import time
 
 from common import (CACHE_DIR, load, save, set_playoff, set_to_win, stamp_book,
-                    classify_special, set_special)
+                    classify_special, set_special, prune_stale)
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from teams import normalize_team  # noqa: E402
@@ -121,7 +121,7 @@ def fetch_event_odds(eid):
         return None
 
 
-def route(payloads, doc, counts, unmatched, seen, live=False):
+def route(payloads, doc, counts, unmatched, seen, tracked, live=False):
     for j in payloads:
         odds_by_id = {o["id"]: o for o in j.get("odds", []) or []}
         ev_of_market = {mid: e.get("id") for e in j.get("events", []) or []
@@ -141,7 +141,8 @@ def route(payloads, doc, counts, unmatched, seen, live=False):
                 for o in (ods or summary_ods):
                     am = dec_to_am(o.get("price"))
                     if o.get("name") and am is not None:
-                        set_special(doc, sp, o["name"], BOOK, am); counts[f"special:{sp}"] += 1
+                        key = set_special(doc, sp, o["name"], BOOK, am); counts[f"special:{sp}"] += 1
+                        tracked["cup_specials"][sp].add(key)
                 continue
             mt = market_type(name)
             if mt is None:
@@ -154,20 +155,29 @@ def route(payloads, doc, counts, unmatched, seen, live=False):
                     side = (o.get("name") or "").strip().lower()
                     am = dec_to_am(o["price"])
                     if side in ("yes", "no") and am is not None:
-                        set_playoff(doc, team, BOOK, side, am)
+                        key = set_playoff(doc, team, BOOK, side, am)
                         counts["playoffs"] += 1
+                        tracked[f"playoffs_{side}"].add(key)
                 continue
             # win markets are truncated to 5 in the summary — fetch the full list
             ods = None
+            fetched_full = False
             if live and ev_of_market.get(mid):
                 ods = fetch_event_odds(ev_of_market[mid])
+                fetched_full = ods is not None
             if not ods:
                 ods = summary_ods  # HAR / offline fallback (top 5 only)
             for o in ods:
                 am = dec_to_am(o.get("price"))
                 if o.get("name") and am is not None:
-                    set_to_win(doc, mt, o["name"], BOOK, am)
+                    key = set_to_win(doc, mt, o["name"], BOOK, am)
                     counts[mt] += 1
+                    # Only trust this market's "seen" set for pruning when we got
+                    # the FULL list (fetch_event_odds) — the truncated top-5
+                    # summary would otherwise look like the other 27+ teams got
+                    # suspended.
+                    if fetched_full:
+                        tracked["to_win"][mt].add(key)
 
 
 def catalog(payloads):
@@ -183,14 +193,16 @@ def catalog(payloads):
 
 
 def get_payloads(args):
+    """Returns (payloads, is_live) — is_live is False whenever we end up
+    reading a HAR file, whether by --file or because the direct fetch failed."""
     if not args.file:
         try:
             print("  fetching DAZN outrights directly...")
-            return fetch_direct()
+            return fetch_direct(), True
         except Exception as e:  # noqa: BLE001
             print(f"  direct fetch failed ({e}); falling back to HAR")
     files = [args.file] if args.file else sorted(glob.glob(os.path.join(CACHE_DIR, "dazn*.har")))
-    return [p for fp in files for p in har_payloads(fp)]
+    return [p for fp in files for p in har_payloads(fp)], False
 
 
 def main():
@@ -199,7 +211,7 @@ def main():
     ap.add_argument("--write", action="store_true")
     args = ap.parse_args()
 
-    payloads = get_payloads(args)
+    payloads, is_live = get_payloads(args)
     if not payloads:
         print(f"No data. Save a capture as {CACHE_DIR}\\dazn.har or check connectivity.")
         return
@@ -211,7 +223,12 @@ def main():
 
     doc = load()
     counts, unmatched, seen = defaultdict(int), [], set()
-    route(payloads, doc, counts, unmatched, seen, live=not args.file)  # per-event full lists
+    tracked = {
+        "to_win": {"cup": set(), "presidents": set(), "conference": set(), "division": set()},
+        "playoffs_yes": set(), "playoffs_no": set(),
+        "cup_specials": {"conf": set(), "div": set(), "state": set()},
+    }
+    route(payloads, doc, counts, unmatched, seen, tracked, live=is_live)  # per-event full lists
     print("  wrote DAZN:", dict(counts))
     if unmatched:
         print("  UNMATCHED (skipped):")
@@ -219,6 +236,8 @@ def main():
             print(f"     - {u}")
     if sum(counts.values()):
         stamp_book(doc, BOOK)
+        if is_live:
+            prune_stale(doc, BOOK, tracked)
         save(doc)
 
 

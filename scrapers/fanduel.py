@@ -28,7 +28,8 @@ from collections import defaultdict
 import requests
 
 from common import (dump_raw, load, save, set_to_win, set_playoff, set_team_points,
-                    set_award, set_player_prop, classify_special, set_special, stamp_book)
+                    set_award, set_player_prop, classify_special, set_special, stamp_book,
+                    prune_stale)
 
 _VERIFY = True
 HOST = "https://sbapi.on.sportsbook.fanduel.ca"
@@ -120,7 +121,7 @@ def catalog(payload):
 AWARD_MAP = {
     "hart trophy winner": "hart", "norris trophy winner": "norris",
     "vezina trophy winner": "vezina", "calder trophy winner": "calder",
-    "jack adams award winner": "jack_adams", "art ross trophy winner": "art_ross",
+    "jack adams winner": "jack_adams", "art ross trophy winner": "art_ross",
     "rocket richard trophy winner": "rocket_richard", "selke trophy winner": "selke",
 }
 _LINE_RE = re.compile(r"(Over|Under)\s+(\d+(?:\.\d+)?)", re.I)
@@ -186,6 +187,16 @@ def runner_odds(mk, live):
 def write(doc, payload, live):
     markets = (payload.get("attachments", {}) or {}).get("markets", {}) or {}
     n = defaultdict(int)
+    # Tracks every selection FanDuel actually priced this run, so we can prune
+    # anything that dropped out (suspended/pulled) since the last scrape.
+    seen = {
+        "to_win": {"cup": set(), "conference": set(), "division": set(),
+                   "presidents": set(), "worst": set()},
+        "playoffs_yes": set(), "playoffs_no": set(),
+        "team_points": set(),
+        "awards": {cat: set() for cat in AWARD_MAP.values()},
+        "cup_specials": {"conf": set(), "div": set(), "state": set()},
+    }
     for mk in markets.values():
         name = mk.get("marketName", "") or ""
         low = name.lower()
@@ -221,40 +232,48 @@ def write(doc, payload, live):
         if sp:  # Conference/Division/State-Province OF WINNER (champion's attribute)
             for label, od in runner_odds(mk, live):
                 if od is not None:
-                    set_special(doc, sp, label, BOOK, od); n[f"special:{sp}"] += 1
+                    key = set_special(doc, sp, label, BOOK, od); n[f"special:{sp}"] += 1
+                    seen["cup_specials"][sp].add(key)
             continue
 
         if low.endswith("stanley cup - winner"):
             for team, od in runner_odds(mk, live):
                 if od is not None:
-                    set_to_win(doc, "cup", team, BOOK, od); n["cup"] += 1
+                    key = set_to_win(doc, "cup", team, BOOK, od); n["cup"] += 1
+                    seen["to_win"]["cup"].add(key)
         elif "eastern conference - winner" in low or "western conference - winner" in low:
             for team, od in runner_odds(mk, live):
                 if od is not None:
-                    set_to_win(doc, "conference", team, BOOK, od); n["conf"] += 1
+                    key = set_to_win(doc, "conference", team, BOOK, od); n["conf"] += 1
+                    seen["to_win"]["conference"].add(key)
         elif re.search(r"(atlantic|metropolitan|central|pacific) division - winner", low):
             for team, od in runner_odds(mk, live):
                 if od is not None:
-                    set_to_win(doc, "division", team, BOOK, od); n["div"] += 1
+                    key = set_to_win(doc, "division", team, BOOK, od); n["div"] += 1
+                    seen["to_win"]["division"].add(key)
         elif "presidents" in low and "winner" in low:
             for team, od in runner_odds(mk, live):
                 if od is not None:
-                    set_to_win(doc, "presidents", team, BOOK, od); n["presidents"] += 1
+                    key = set_to_win(doc, "presidents", team, BOOK, od); n["presidents"] += 1
+                    seen["to_win"]["presidents"].add(key)
         elif "worst record" in low or ("fewest" in low and "points" in low):
             for team, od in runner_odds(mk, live):
                 if od is not None:
-                    set_to_win(doc, "worst", team, BOOK, od); n["worst"] += 1
+                    key = set_to_win(doc, "worst", team, BOOK, od); n["worst"] += 1
+                    seen["to_win"]["worst"].add(key)
         elif "make playoffs" in low and "conference" in low:
             # Conference-split make-playoffs markets carry FanDuel's LIVE prices;
             # the aggregate "Team To Make Playoffs" market is a stale snapshot, so
             # prefer these (32 teams total across East+West) and skip the aggregate.
             for team, od in runner_odds(mk, live):
                 if od is not None:
-                    set_playoff(doc, team, BOOK, "yes", od); n["po_yes"] += 1
+                    key = set_playoff(doc, team, BOOK, "yes", od); n["po_yes"] += 1
+                    seen["playoffs_yes"].add(key)
         elif "miss playoffs" in low and "conference" in low:
             for team, od in runner_odds(mk, live):
                 if od is not None:
-                    set_playoff(doc, team, BOOK, "no", od); n["po_no"] += 1
+                    key = set_playoff(doc, team, BOOK, "no", od); n["po_no"] += 1
+                    seen["playoffs_no"].add(key)
         elif low.endswith("team to make playoffs") or low.endswith("team to miss playoffs"):
             pass  # stale aggregate duplicate — superseded by the conference markets above
         elif "- o/u regular season points" in low:
@@ -270,17 +289,22 @@ def write(doc, payload, live):
                 else:
                     under = od
             if line is not None:
-                set_team_points(doc, team, BOOK, line, over, under); n["points"] += 1
+                key = set_team_points(doc, team, BOOK, line, over, under); n["points"] += 1
+                seen["team_points"].add(key)
         else:
             for suffix, cat in AWARD_MAP.items():
                 if low.endswith(suffix):
                     for player, od in runner_odds(mk, live):
                         if od is not None:
-                            set_award(doc, cat, player, "", BOOK, od); n[f"award:{cat}"] += 1
+                            key = set_award(doc, cat, player, "", BOOK, od)
+                            if key is not None:
+                                n[f"award:{cat}"] += 1
+                                seen["awards"][cat].add(key)
                     break
 
     if sum(n.values()):
         stamp_book(doc, BOOK)  # record freshness (meta.book_updated.fanduel)
+        prune_stale(doc, BOOK, seen)
     print("  wrote FanDuel:", dict(n))
     return sum(n.values())
 

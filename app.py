@@ -14,7 +14,7 @@ import statistics
 
 import streamlit as st
 
-from teams import CONFERENCES, DIVISIONS, TEAMS, teams_in, tricode
+from teams import CONFERENCES, DIVISIONS, TEAMS, teams_in, tricode, normalize_team
 from awards import AWARD_CATEGORIES
 from player_props import PROP_CATEGORIES
 from props_engine import (unify_quotes, line_grid, prop_arbs, prop_arbs_with_book,
@@ -35,6 +35,24 @@ DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "odds.json")
 HIST_PATH = os.path.join(os.path.dirname(__file__), "data", "price_history.json")
 ASSETS = os.path.join(os.path.dirname(__file__), "assets", "logos")
 TEAM_ASSETS = os.path.join(os.path.dirname(__file__), "assets", "teams")
+COACHES_PATH = os.path.join(os.path.dirname(__file__), "coaches_2026-27.json")
+
+
+def coach_team(name):
+    """Current team for an NHL head coach (for the Jack Adams award-table
+    logo) — player_team() only knows players, so Jack Adams rows need this
+    separate lookup or they render with no team/logo at all. Routed through
+    normalize_team() since coaches_2026-27.json's "team" field is hand-
+    maintained and can drift out of sync with a franchise rename (e.g. it
+    still said "Utah Hockey Club" after the Utah Mammoth rebrand, which
+    tricode() — an exact-match lookup — silently failed to resolve)."""
+    if not hasattr(coach_team, "_map"):
+        try:
+            with open(COACHES_PATH, encoding="utf-8") as f:
+                coach_team._map = {c["coach"]: c.get("team", "") for c in json.load(f)}
+        except (FileNotFoundError, json.JSONDecodeError, KeyError):
+            coach_team._map = {}
+    return normalize_team(coach_team._map.get(name, ""))
 
 # NOTE: st.set_page_config() lives in main() (not module scope) so this file is
 # import-safe — futures_comp.py / a hub app can import render_comp_tool without
@@ -483,7 +501,7 @@ def book_th(b, cls, market=None):
     upd = ""
     if b == "kalshi":
         upd = "<br><span class='upd'>liq @ best · $300 min</span>"
-    elif is_manual(b):
+    elif is_manual(b) or (b == "fanduel" and market == "award:jack_adams"):
         when = BOOK_MARKET_UPDATED.get(b, {}).get(market) or BOOK_UPDATED.get(b)
         if when:
             upd = f"<br><span class='upd'>updated {esc(fmt_updated(when))}</span>"
@@ -491,6 +509,7 @@ def book_th(b, cls, market=None):
             f"{esc(book_label(b))}{upd}</th>")
 
 
+@st.cache_data(show_spinner=False)
 def comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, kind="team", team_map=None,
                     consensus=None, count_row=False, liq=None, name_hdr=None, market=None,
                     hist=None):
@@ -760,32 +779,32 @@ def render_to_win(data, sharp_cols, nonsharp_cols):
          "Cup Specials"])
     with t_cup:
         rows = {t: p for t, p in data["to_win"]["cup"].items() if p}
-        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, liq=liq_of("cup"),
-                             hist=PRICE_HISTORY.get("cup")),
+        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
+                             liq=liq_of("cup"), hist=PRICE_HISTORY.get("cup")),
              "Stanley Cup — To Win")
     with t_conf:
         for conf in CONFERENCES:
             rows = {t: data["to_win"]["conference"].get(t, {}) for t in teams_in(conference=conf)
                     if data["to_win"]["conference"].get(t)}
-            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, liq=liq_of("conference"),
-                                 hist=PRICE_HISTORY.get("conference")),
+            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
+                                 liq=liq_of("conference"), hist=PRICE_HISTORY.get("conference")),
                  f"{conf}ern Conference")
     with t_div:
         for div in DIVISIONS:
             rows = {t: data["to_win"]["division"].get(t, {}) for t in teams_in(division=div)
                     if data["to_win"]["division"].get(t)}
-            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
+            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
                                  hist=PRICE_HISTORY.get("division")), f"{div} Division")
     with t_pres:
         pres = data["to_win"].get("presidents", {})
         rows = {t: pres.get(t, {}) for t in TEAMS if pres.get(t)}
-        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
+        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
                              hist=PRICE_HISTORY.get("presidents")),
              "Most Points (Presidents' Trophy)")
     with t_worst:
         worst = data["to_win"].get("worst", {})
         rows = {t: worst.get(t, {}) for t in TEAMS if worst.get(t)}
-        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
+        card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
                              hist=PRICE_HISTORY.get("worst")),
              "Least Points (Worst Record)")
     with t_spec:
@@ -799,7 +818,7 @@ def render_to_win(data, sharp_cols, nonsharp_cols):
             rows = {lab: pr for lab, pr in (sp.get(kind) or {}).items() if pr}
             if rows:
                 any_sp = True
-                card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
+                card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
                                      kind="player", name_hdr="Outcome"), title)
         if not any_sp:
             st.info("No Cup Specials prices yet — they populate the next time a book "
@@ -1066,8 +1085,8 @@ def render_awards(data, sharp_cols, nonsharp_cols):
                 if v.get("team") and not feed_team.get(cname):
                     feed_team[cname] = v["team"]
             rows = {p: pr for p, pr in merged.items() if pr}
-            team_map = {p: (player_team(p) or feed_team.get(p, "")) for p in rows}
-            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt,
+            team_map = {p: (player_team(p) or coach_team(p) or feed_team.get(p, "")) for p in rows}
+            card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
                                  kind="player", team_map=team_map, count_row=True,
                                  liq=kalshi_liq(data)(cat), market=f"award:{cat}",
                                  hist=PRICE_HISTORY.get(f"award:{cat}")),

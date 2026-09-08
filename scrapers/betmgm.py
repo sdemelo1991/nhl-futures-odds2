@@ -26,7 +26,7 @@ import time
 
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff,
                     set_team_points, set_award, set_player_prop,
-                    classify_special, set_special)
+                    classify_special, set_special, prune_stale)
 
 # Direct-fetch: the same two widget calls the page makes (from the captured HAR).
 # No auth/cookies needed, so this works server-side like DAZN/Kambi — HAR is the
@@ -200,14 +200,15 @@ _SKIP = ("exact outcome", "name the finalists", "top 3", "stage of elimination",
          "original six", "new champion", "nation of", "state/province")
 
 
-def _teams(doc, market, opts, counts):
+def _teams(doc, market, opts, counts, tracked):
     for o in opts:
         od, nm = o.get("americanOdds"), name_of(o)
         if od is not None and nm:
-            set_to_win(doc, market, nm, BOOK, od); counts[market] += 1
+            key = set_to_win(doc, market, nm, BOOK, od); counts[market] += 1
+            tracked["to_win"][market].add(key)
 
 
-def route(markets, doc, counts, unmatched, seen):
+def route(markets, doc, counts, unmatched, seen, tracked):
     for m in markets:
         mk = m["market"] or ""
         low = mk.lower()
@@ -234,30 +235,33 @@ def route(markets, doc, counts, unmatched, seen):
             for o in opts:
                 label, od = name_of(o), o.get("americanOdds")
                 if label and od is not None:
-                    set_special(doc, sp, label, BOOK, od); counts[f"special:{sp}"] += 1
+                    key = set_special(doc, sp, label, BOOK, od); counts[f"special:{sp}"] += 1
+                    tracked["cup_specials"][sp].add(key)
             continue
 
         if "player futures" in parent or any(x in low for x in _SKIP):
             continue
 
         if "stanley cup" in low and "winner" in low and "conference" not in low and "division" not in low:
-            _teams(doc, "cup", opts, counts)
+            _teams(doc, "cup", opts, counts, tracked)
         elif "conference winner" in low:
-            _teams(doc, "conference", opts, counts)
+            _teams(doc, "conference", opts, counts, tracked)
         elif "division winner" in low:
-            _teams(doc, "division", opts, counts)
+            _teams(doc, "division", opts, counts, tracked)
         elif "presidents" in low:
-            _teams(doc, "presidents", opts, counts)
+            _teams(doc, "presidents", opts, counts, tracked)
         elif "fewest" in low and "points" in low:
-            _teams(doc, "worst", opts, counts)
+            _teams(doc, "worst", opts, counts, tracked)
         elif "to make the playoffs" in low:
             team = mk[:low.index(" to make")]
             y = next((o.get("americanOdds") for o in opts if name_of(o) == "Yes"), None)
             n = next((o.get("americanOdds") for o in opts if name_of(o) == "No"), None)
             if y is not None:
-                set_playoff(doc, team, BOOK, "yes", y); counts["po_yes"] += 1
+                key = set_playoff(doc, team, BOOK, "yes", y); counts["po_yes"] += 1
+                tracked["playoffs_yes"].add(key)
             if n is not None:
-                set_playoff(doc, team, BOOK, "no", n); counts["po_no"] += 1
+                key = set_playoff(doc, team, BOOK, "no", n); counts["po_no"] += 1
+                tracked["playoffs_no"].add(key)
         elif "regular season points" in low and ":" in mk and len(opts) == 2:
             team = mk.split(":")[0]
             line = over = under = None
@@ -271,7 +275,8 @@ def route(markets, doc, counts, unmatched, seen):
                 elif nm.lower().startswith("under"):
                     under = o.get("americanOdds")
             if line is not None:
-                set_team_points(doc, team, BOOK, line, over, under); counts["points"] += 1
+                key = set_team_points(doc, team, BOOK, line, over, under); counts["points"] += 1
+                tracked["team_points"].add(key)
             else:
                 unmatched.append(f"[pts] {mk}")
         else:
@@ -280,24 +285,37 @@ def route(markets, doc, counts, unmatched, seen):
                 for o in opts:
                     od = o.get("americanOdds")
                     if od is not None:
-                        set_award(doc, cat, name_of(o), "", BOOK, od); counts[f"award:{cat}"] += 1
+                        key = set_award(doc, cat, name_of(o), "", BOOK, od)
+                        if key is not None:
+                            counts[f"award:{cat}"] += 1
+                            tracked["awards"][cat].add(key)
             else:
                 unmatched.append(f"{m['parent']} | {mk}")
 
 
-def write_all(payloads):
+def write_all(payloads, is_live=False):
     doc = load()
     markets = []
     for obj in payloads:
         find_markets(obj, None, markets)
     counts, unmatched, seen = defaultdict(int), [], set()
-    route(markets, doc, counts, unmatched, seen)
+    tracked = {
+        "to_win": {"cup": set(), "conference": set(), "division": set(),
+                   "presidents": set(), "worst": set()},
+        "playoffs_yes": set(), "playoffs_no": set(),
+        "team_points": set(),
+        "awards": {cat: set() for cat in set(AWARD_KW.values())},
+        "cup_specials": {"conf": set(), "div": set(), "state": set()},
+    }
+    route(markets, doc, counts, unmatched, seen, tracked)
     print("  wrote BetMGM:", dict(counts))
     if unmatched:
         print("  UNMATCHED (skipped; paste to Claude if any should map):")
         for u in sorted(set(unmatched)):
             print(f"     - {u}")
     if sum(counts.values()):
+        if is_live:
+            prune_stale(doc, BOOK, tracked)
         save(doc)
 
 
@@ -309,6 +327,7 @@ def main():
     args = ap.parse_args()
 
     payloads = []
+    is_live = False
     if args.file:
         payloads = har_payloads(args.file)
     elif args.har:
@@ -318,6 +337,7 @@ def main():
         payloads = fetch_direct()  # direct API first
         if payloads:
             print(f"  (direct fetch: {len(payloads)} widget payloads)")
+            is_live = True
         else:  # fall back to a saved HAR
             print("  direct fetch returned nothing — falling back to saved HAR")
             for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "betmgm*.har"))):
@@ -328,7 +348,7 @@ def main():
         print(f"  No data. Direct fetch failed and no HAR at {CACHE_DIR}\\betmgm.har")
         return
     if args.write:
-        write_all(payloads)
+        write_all(payloads, is_live=is_live)
     else:
         catalog(payloads)
 

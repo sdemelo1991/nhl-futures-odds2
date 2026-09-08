@@ -28,7 +28,7 @@ import requests
 import time
 
 from common import (CACHE_DIR, load, save, set_to_win, set_award, set_playoff,
-                    set_team_points, classify_special, set_special)
+                    set_team_points, classify_special, set_special, prune_stale)
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -141,15 +141,16 @@ def kam_int(o):
     return None
 
 
-def _teams(doc, market, outs, counts):
+def _teams(doc, market, outs, counts, tracked):
     for o in outs:
         nm = o.get("label") or o.get("participant")
         od = kam_int(o)
         if nm and od is not None:
-            set_to_win(doc, market, nm, BOOK, od); counts[market] += 1
+            key = set_to_win(doc, market, nm, BOOK, od); counts[market] += 1
+            tracked["to_win"][market].add(key)
 
 
-def route(payloads, doc, counts, unmatched, seen):
+def route(payloads, doc, counts, unmatched, seen, tracked):
     for obj in payloads:
         for ev in obj.get("events", []) or []:
             ename = (ev.get("event", {}) or {}).get("name", "") or ""
@@ -170,23 +171,27 @@ def route(payloads, doc, counts, unmatched, seen):
                     for o in outs:
                         nm, od = o.get("label") or o.get("participant"), kam_int(o)
                         if nm and od is not None:
-                            set_special(doc, sp, nm, BOOK, od); counts[f"special:{sp}"] += 1
+                            key = set_special(doc, sp, nm, BOOK, od); counts[f"special:{sp}"] += 1
+                            tracked["cup_specials"][sp].add(key)
                     continue
                 if "winner - including playoffs" in cl or ("championship" in el and "winner" in cl):
-                    _teams(doc, "cup", outs, counts)
+                    _teams(doc, "cup", outs, counts, tracked)
                 elif "conference winner" in cl:
-                    _teams(doc, "conference", outs, counts)
+                    _teams(doc, "conference", outs, counts, tracked)
                 elif "division winner" in cl:
-                    _teams(doc, "division", outs, counts)
+                    _teams(doc, "division", outs, counts, tracked)
                 elif "presidents" in cl or "presidents" in el:
-                    _teams(doc, "presidents", outs, counts)
+                    _teams(doc, "presidents", outs, counts, tracked)
                 else:
                     cat = next((c for k, c in AWARD_KW.items() if k in cl or k in el), None)
                     if cat:
                         for o in outs:
                             nm, od = o.get("label") or o.get("participant"), kam_int(o)
                             if nm and od is not None:
-                                set_award(doc, cat, nm, "", BOOK, od); counts[f"award:{cat}"] += 1
+                                key = set_award(doc, cat, nm, "", BOOK, od)
+                                if key is not None:
+                                    counts[f"award:{cat}"] += 1
+                                    tracked["awards"][cat].add(key)
                     elif outs:
                         unmatched.append(f"{ename} | {crit}")
 
@@ -202,9 +207,13 @@ def fetch_direct():
     return [r.json()]
 
 
-def route_team_markets(payloads, doc, counts):
+def route_team_markets(payloads, doc, counts, tracked):
     """Fetch each '<Team> Markets' event and route its To-reach-Playoffs (Yes/No)
-    and Team-Total-Points (Over/Under) betOffers. These aren't in the listView."""
+    and Team-Total-Points (Over/Under) betOffers. These aren't in the listView.
+    Returns True iff every team's event fetch succeeded — pruning playoffs/
+    team_points is only safe when we got a complete picture this run; a lone
+    network blip on one team's request must not read as "that team's market
+    got suspended.\""""
     team_events = {}
     for obj in payloads:
         for ev in obj.get("events", []) or []:
@@ -213,10 +222,12 @@ def route_team_markets(payloads, doc, counts):
             if "Markets" in nm and e.get("id"):
                 team = re.sub(r"\s*Markets\b.*$", "", nm).strip()
                 team_events[team] = e["id"]
+    all_ok = True
     for team, eid in team_events.items():
         try:
             data = requests.get(EVENT_URL.format(eid) + _cb(), headers=HEADERS, timeout=20).json()
         except Exception:  # noqa: BLE001
+            all_ok = False
             continue
         for bo in data.get("betOffers", []) or []:
             cl = ((bo.get("criterion", {}) or {}).get("label", "") or "").lower()
@@ -226,7 +237,8 @@ def route_team_markets(payloads, doc, counts):
                     side = (o.get("label") or "").strip().lower()
                     od = kam_int(o)
                     if side in ("yes", "no") and od is not None:
-                        set_playoff(doc, team, BOOK, side, od); counts["playoffs"] += 1
+                        key = set_playoff(doc, team, BOOK, side, od); counts["playoffs"] += 1
+                        tracked[f"playoffs_{side}"].add(key)
             elif "total points" in cl and "regular season" in cl:
                 line = over = under = None
                 for o in outs:
@@ -237,15 +249,26 @@ def route_team_markets(payloads, doc, counts):
                     elif lab == "under":
                         under, line = od, ln or line
                 if line is not None and (over is not None or under is not None):
-                    set_team_points(doc, team, BOOK, line, over, under); counts["team_points"] += 1
+                    key = set_team_points(doc, team, BOOK, line, over, under)
+                    counts["team_points"] += 1
+                    tracked["team_points"].add(key)
+    return all_ok and bool(team_events)
 
 
-def write_all(payloads):
+def write_all(payloads, live=False):
     doc = load()
     counts, unmatched, seen = defaultdict(int), [], set()
-    route(payloads, doc, counts, unmatched, seen)
+    tracked = {
+        "to_win": {"cup": set(), "conference": set(), "division": set(), "presidents": set()},
+        "playoffs_yes": set(), "playoffs_no": set(),
+        "team_points": set(),
+        "awards": {cat: set() for cat in set(AWARD_KW.values())},
+        "cup_specials": {"conf": set(), "div": set(), "state": set()},
+    }
+    route(payloads, doc, counts, unmatched, seen, tracked)
+    team_markets_complete = False
     try:
-        route_team_markets(payloads, doc, counts)
+        team_markets_complete = route_team_markets(payloads, doc, counts, tracked)
     except Exception as e:  # noqa: BLE001
         print(f"  (team-markets fetch skipped: {e})")
     print("  wrote Kambi:", dict(counts))
@@ -254,6 +277,13 @@ def write_all(payloads):
         for u in sorted(set(unmatched)):
             print(f"     - {u}")
     if sum(counts.values()):
+        # Only prune off a genuine live listView fetch (never a stale HAR
+        # fallback), and only prune playoffs/team_points if every per-team
+        # event fetch succeeded this run.
+        if live:
+            if not team_markets_complete:
+                tracked["playoffs_yes"] = tracked["playoffs_no"] = tracked["team_points"] = set()
+            prune_stale(doc, BOOK, tracked)
         save(doc)
 
 
@@ -264,6 +294,7 @@ def main():
     args = ap.parse_args()
 
     if args.write:
+        live = True
         try:
             payloads = fetch_direct()
             print("  fetched Kambi listView directly")
@@ -271,7 +302,8 @@ def main():
             print(f"  direct fetch failed ({e}); falling back to HAR")
             files = sorted(glob.glob(os.path.join(CACHE_DIR, "kambi*.har")))
             payloads = [p for fp in files for p in har_payloads(fp)]
-        write_all(payloads)
+            live = False
+        write_all(payloads, live=live)
         return
 
     files = [args.file] if args.file else sorted(glob.glob(os.path.join(CACHE_DIR, "kambi*.har")))

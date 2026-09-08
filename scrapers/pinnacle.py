@@ -18,7 +18,7 @@ import sys
 
 import requests
 
-from common import load, save, dump_raw, set_to_win, classify_special, set_special
+from common import load, save, dump_raw, set_to_win, classify_special, set_special, prune_stale
 
 _VERIFY = True  # set False by --insecure
 
@@ -132,13 +132,20 @@ def route_market(desc):
 
 def write(doc, specials, priced):
     n = 0
+    # fetch() either fully succeeds or raises before write() is ever called, so
+    # reaching here always means a genuine live snapshot — safe to prune on.
+    seen = {
+        "to_win": {"cup": set(), "conference": set(), "division": set()},
+        "cup_specials": {"conf": set(), "div": set(), "state": set()},
+    }
     for mid, info in specials.items():
         sp = classify_special(info["desc"])
         if sp:  # champion's conference/division/state — outcomes are not teams
             for pid, price in priced.get(mid, []):
                 label = info["participants"].get(pid)
                 if label:
-                    set_special(doc, sp, label, BOOK, price); n += 1
+                    key = set_special(doc, sp, label, BOOK, price); n += 1
+                    seen["cup_specials"][sp].add(key)
             continue
         market = route_market(info["desc"])
         if not market:
@@ -147,8 +154,11 @@ def write(doc, specials, priced):
             team = info["participants"].get(pid)
             if not team:
                 continue
-            set_to_win(doc, market, team, BOOK, price)
+            key = set_to_win(doc, market, team, BOOK, price)
             n += 1
+            seen["to_win"][market].add(key)
+    if n:
+        prune_stale(doc, BOOK, seen)
     print(f"  wrote {n} Pinnacle prices into to_win + cup_specials")
     return n
 

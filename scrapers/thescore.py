@@ -25,7 +25,7 @@ from collections import defaultdict
 import requests
 
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff,
-                    set_team_points, set_award, classify_special, set_special)
+                    set_team_points, set_award, classify_special, set_special, prune_stale)
 
 _SKIP_HDRS = {"host", "content-length", "accept-encoding", "connection",
               "cookie", "pragma", "cache-control"}
@@ -196,14 +196,15 @@ def ts_team(label):
     return t
 
 
-def _teams(doc, market, sels, counts):
+def _teams(doc, market, sels, counts, tracked):
     for s in sels:
         nm, od = ts_team(sel_name(s) or ""), sel_odds(s)
         if nm and od is not None:
-            set_to_win(doc, market, nm, BOOK, od); counts[market] += 1
+            key = set_to_win(doc, market, nm, BOOK, od); counts[market] += 1
+            tracked["to_win"][market].add(key)
 
 
-def route(markets, doc, counts, unmatched, seen):
+def route(markets, doc, counts, unmatched, seen, tracked):
     for title, sels in markets:
         if title in seen:
             continue
@@ -216,22 +217,24 @@ def route(markets, doc, counts, unmatched, seen):
             for s in sels:
                 nm, od = sel_name(s), sel_odds(s)
                 if nm and od is not None:
-                    set_special(doc, sp, nm, BOOK, od); counts[f"special:{sp}"] += 1
+                    key = set_special(doc, sp, nm, BOOK, od); counts[f"special:{sp}"] += 1
+                    tracked["cup_specials"][sp].add(key)
             continue
         if "stanley cup winner" in low:
-            _teams(doc, "cup", sels, counts)
+            _teams(doc, "cup", sels, counts, tracked)
         elif "conference winner" in low:
-            _teams(doc, "conference", sels, counts)
+            _teams(doc, "conference", sels, counts, tracked)
         elif "division winner" in low:
-            _teams(doc, "division", sels, counts)
+            _teams(doc, "division", sels, counts, tracked)
         elif "presidents" in low and "winner" in low:
-            _teams(doc, "presidents", sels, counts)
+            _teams(doc, "presidents", sels, counts, tracked)
         elif "to make the playoffs" in low:
             team = title[:low.index(" to make")].strip()
             for s in sels:
                 side, od = (sel_name(s) or "").strip().lower(), sel_odds(s)
                 if side in ("yes", "no") and od is not None:
-                    set_playoff(doc, team, BOOK, side, od); counts["playoffs"] += 1
+                    key = set_playoff(doc, team, BOOK, side, od); counts["playoffs"] += 1
+                    tracked[f"playoffs_{side}"].add(key)
         elif "regular season total points" in low:
             team = title[:low.index(" regular season")].strip()
             line = over = under = None
@@ -246,14 +249,18 @@ def route(markets, doc, counts, unmatched, seen):
                 elif nl.startswith("under") or nl.startswith("u "):
                     under = od
             if line is not None:
-                set_team_points(doc, team, BOOK, line, over, under); counts["points"] += 1
+                key = set_team_points(doc, team, BOOK, line, over, under); counts["points"] += 1
+                tracked["team_points"].add(key)
         else:
             cat = next((c for k, c in AWARD_KW.items() if k in low), None)
             if cat and ("trophy" in low or "winner" in low):
                 for s in sels:
                     nm, od = sel_name(s), sel_odds(s)
                     if nm and od is not None:
-                        set_award(doc, cat, nm, "", BOOK, od); counts[f"award:{cat}"] += 1
+                        key = set_award(doc, cat, nm, "", BOOK, od)
+                        if key is not None:
+                            counts[f"award:{cat}"] += 1
+                            tracked["awards"][cat].add(key)
             elif sels:
                 unmatched.append(title)
 
@@ -266,17 +273,26 @@ def catalog(markets):
     print(f"\n=== {len(markets)} markets ===")
 
 
-def write_all(payloads):
+def write_all(payloads, is_live=False):
     doc = load()
     markets = find_markets(payloads)
     counts, unmatched, seen = defaultdict(int), [], set()
-    route(markets, doc, counts, unmatched, seen)
+    tracked = {
+        "to_win": {"cup": set(), "conference": set(), "division": set(), "presidents": set()},
+        "playoffs_yes": set(), "playoffs_no": set(),
+        "team_points": set(),
+        "awards": {cat: set() for cat in set(AWARD_KW.values())},
+        "cup_specials": {"conf": set(), "div": set(), "state": set()},
+    }
+    route(markets, doc, counts, unmatched, seen, tracked)
     print("  wrote theScore:", dict(counts))
     if unmatched:
         print("  UNMATCHED (skipped):")
         for u in sorted(set(unmatched)):
             print(f"     - {u}")
     if sum(counts.values()):
+        if is_live:
+            prune_stale(doc, BOOK, tracked)
         save(doc)
 
 
@@ -288,6 +304,7 @@ def main():
     args = ap.parse_args()
 
     payloads = []
+    is_live = False
     if args.file:
         payloads = har_payloads(args.file)
     elif args.har:
@@ -295,7 +312,9 @@ def main():
             payloads += har_payloads(fp)
     else:
         payloads = fetch_direct()  # replay the captured queries live
-        if not payloads:
+        if payloads:
+            is_live = True
+        else:
             print("  live replay empty — parsing saved HAR as-is (stale)")
             for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "thescore*.har"))):
                 payloads += har_payloads(fp)
@@ -305,7 +324,7 @@ def main():
         print(f"  No data. No live replay and no HAR at {CACHE_DIR}\\thescore.har")
         return
     if args.write:
-        write_all(payloads)
+        write_all(payloads, is_live=is_live)
     else:
         catalog(find_markets(payloads))
 

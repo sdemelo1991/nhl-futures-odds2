@@ -28,7 +28,7 @@ import requests
 import time
 
 from common import (CACHE_DIR, load, save, set_to_win, set_playoff, set_award,
-                    classify_special, set_special)
+                    classify_special, set_special, prune_stale)
 
 # Direct-fetch: the three futures tabs the page requests (no auth/cookies). HAR
 # is the fallback if Betano ever gates these.
@@ -190,9 +190,19 @@ def winner_market(title):
     return None
 
 
-def write_all(payloads):
+def write_all(payloads, is_live=False):
     doc = load()
     counts, unmatched = defaultdict(int), []
+    tracked = {
+        "to_win": {"cup": set(), "conference": set(), "division": set(), "presidents": set()},
+        "playoffs_yes": set(), "playoffs_no": set(),
+        "awards": {cat: set() for cat in set(_AWARD.values())},
+        "cup_specials": {"conf": set(), "div": set(), "state": set()},
+    }
+    # Betano is scraped as three independent tab requests (teams/awards/
+    # winnerspecials); if one tab's fetch failed this run but the others
+    # succeeded, only the tabs that actually came back live are safe to prune.
+    tabs_seen = {bt for bt, _ in payloads}
     for bt, obj in payloads:
         markets = []
         find_markets(obj.get("data"), markets)
@@ -201,16 +211,21 @@ def write_all(payloads):
                 y = next((price_am(pr) for nm, pr, _ in entries if nm == "Yes"), None)
                 n = next((price_am(pr) for nm, pr, _ in entries if nm == "No"), None)
                 if y is not None:
-                    set_playoff(doc, title, BOOK, "yes", y); counts["po_yes"] += 1
+                    key = set_playoff(doc, title, BOOK, "yes", y); counts["po_yes"] += 1
+                    tracked["playoffs_yes"].add(key)
                 if n is not None:
-                    set_playoff(doc, title, BOOK, "no", n); counts["po_no"] += 1
+                    key = set_playoff(doc, title, BOOK, "no", n); counts["po_no"] += 1
+                    tracked["playoffs_no"].add(key)
             elif bt == "awards" and kind == "table":
                 cat = next((c for k, c in _AWARD.items() if k in (title or "").lower()), None)
                 if cat:
                     for nm, pr, _ in entries:
                         am = price_am(pr)
                         if nm and am is not None:
-                            set_award(doc, cat, nm, "", BOOK, am); counts[f"award:{cat}"] += 1
+                            key = set_award(doc, cat, nm, "", BOOK, am)
+                            if key is not None:
+                                counts[f"award:{cat}"] += 1
+                                tracked["awards"][cat].add(key)
                 else:
                     unmatched.append(f"[awards] {title}")
             elif bt == "winnerspecials" and kind == "block":
@@ -219,19 +234,29 @@ def write_all(payloads):
                     for nm, pr, _ in entries:
                         am = price_am(pr)
                         if nm and am is not None:
-                            set_special(doc, sp, nm, BOOK, am); counts[f"special:{sp}"] += 1
+                            key = set_special(doc, sp, nm, BOOK, am); counts[f"special:{sp}"] += 1
+                            tracked["cup_specials"][sp].add(key)
                     continue
                 market = winner_market(title)
                 if market:
                     for nm, pr, _ in entries:
                         am = price_am(pr)
                         if nm and am is not None:
-                            set_to_win(doc, market, nm, BOOK, am); counts[market] += 1
+                            key = set_to_win(doc, market, nm, BOOK, am); counts[market] += 1
+                            tracked["to_win"][market].add(key)
                 # else: exotic (nation) — skip silently
     print("  wrote Betano:", dict(counts))
     if unmatched:
         print("  UNMATCHED:", sorted(set(unmatched)))
     if sum(counts.values()):
+        if is_live:
+            if "teams" not in tabs_seen:
+                tracked["playoffs_yes"] = tracked["playoffs_no"] = set()
+            if "awards" not in tabs_seen:
+                tracked["awards"] = {}
+            if "winnerspecials" not in tabs_seen:
+                tracked["to_win"], tracked["cup_specials"] = {}, {}
+            prune_stale(doc, BOOK, tracked)
         save(doc)
 
 
@@ -243,6 +268,7 @@ def main():
     args = ap.parse_args()
 
     payloads = []
+    is_live = False
     if args.file:
         payloads = har_payloads(args.file)
     elif args.har:
@@ -252,6 +278,7 @@ def main():
         payloads = fetch_direct()  # direct API first
         if payloads:
             print(f"  (direct fetch: {len(payloads)} tab payloads)")
+            is_live = True
         else:
             print("  direct fetch returned nothing — falling back to saved HAR")
             for fp in sorted(glob.glob(os.path.join(CACHE_DIR, "betano*.har"))):
@@ -262,7 +289,7 @@ def main():
         print(f"  No data. Direct fetch failed and no HAR at {CACHE_DIR}\\betano.har")
         return
     if args.write:
-        write_all(payloads)
+        write_all(payloads, is_live=is_live)
     else:
         catalog(payloads)
 

@@ -28,7 +28,8 @@ import zipfile
 
 import requests
 
-from common import CACHE_DIR, load, save, set_to_win, set_award, stamp_book
+from common import (CACHE_DIR, load, save, set_to_win, set_award, stamp_book,
+                    set_playoff, set_team_points, set_special)
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -104,16 +105,30 @@ def write():
         data = json.load(f)
     doc = load()
     n = 0
-    for market in ("cup", "conference"):
+    for market in ("cup", "conference", "division", "presidents", "worst"):
         for team, odds in data.get(market, {}).items():
             set_to_win(doc, market, team, BOOK, odds)
             n += 1
+    for team, sides in (data.get("playoffs") or {}).items():
+        for side in ("yes", "no"):
+            odds = sides.get(side)
+            if odds is not None:
+                set_playoff(doc, team, BOOK, side, odds)
+                n += 1
+    for team, tp in (data.get("team_points") or {}).items():
+        set_team_points(doc, team, BOOK, tp["line"], tp.get("over"), tp.get("under"))
+        n += 1
     for cat, players in (data.get("awards") or {}).items():
         for player, odds in players.items():
             set_award(doc, cat, player, "", BOOK, odds)
             n += 1
+    for kind, labels in (data.get("cup_specials") or {}).items():
+        for label, odds in labels.items():
+            set_special(doc, kind, label, BOOK, odds)
+            n += 1
     stamp_book(doc, BOOK, data.get("updated"))
-    print(f"  wrote {n} Circa prices (cup + conference + awards) from circa_data.json "
+    print(f"  wrote {n} Circa prices (cup/conference/division/playoffs/worst/"
+          f"team_points/awards/cup_specials) from circa_data.json "
           f"[transcribed {data.get('updated')}]")
     if n:
         save(doc)
