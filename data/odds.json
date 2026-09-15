@@ -1067,8 +1067,8 @@
       },
       "betmgm": {
         "line": 99.5,
-        "over": -115,
-        "under": -115
+        "over": -125,
+        "under": -105
       },
       "betonline": {
         "line": 98.5,
@@ -2702,7 +2702,6 @@
         "team": "",
         "prices": {
           "kambi": 15000,
-          "betmgm": 15000,
           "betano": 14900,
           "thescore": 15000,
           "draftkings": 15000,
@@ -2771,7 +2770,7 @@
           "kambi": 275,
           "betmgm": 290,
           "betano": 300,
-          "betonline": 300,
+          "betonline": 325,
           "thescore": 300,
           "draftkings": 280,
           "caesars": 260,
@@ -2804,7 +2803,7 @@
           "kambi": 900,
           "betmgm": 900,
           "betano": 900,
-          "betonline": 900,
+          "betonline": 1000,
           "thescore": 900,
           "draftkings": 900,
           "caesars": 850,
@@ -2820,7 +2819,7 @@
           "kambi": 800,
           "betmgm": 900,
           "betano": 900,
-          "betonline": 900,
+          "betonline": 1000,
           "thescore": 1000,
           "draftkings": 900,
           "caesars": 900,
@@ -2900,7 +2899,7 @@
           "kambi": 2500,
           "betmgm": 4000,
           "betano": 3900,
-          "betonline": 2800,
+          "betonline": 1400,
           "thescore": 5000,
           "draftkings": 2500,
           "caesars": 4000,
@@ -9440,7 +9439,7 @@
       "Chicago Blackhawks": {
         "pinnacle": 20841,
         "fanduel": 17500,
-        "kambi": 20000,
+        "kambi": 12500,
         "betmgm": 20000,
         "betano": 24900,
         "betonline": 12500,
@@ -10274,7 +10273,7 @@
       "Chicago Blackhawks": {
         "dazn": 5900,
         "fanduel": 7000,
-        "kambi": 5000,
+        "kambi": 4500,
         "betano": 5900,
         "betonline": 6000,
         "thescore": 5000,
@@ -10801,7 +10800,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-15 13:32",
+    "last_updated": "2026-09-15 13:47",
     "book_updated": {
       "dazn": "2026-09-15",
       "fanduel": "2026-09-15",
