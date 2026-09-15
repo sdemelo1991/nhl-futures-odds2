@@ -31,8 +31,15 @@ def save(doc, stamp=True):
     if stamp:
         doc.setdefault("meta", {})["last_updated"] = \
             datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-    with open(DATA_PATH, "w", encoding="utf-8") as f:
+    # Atomic write: a direct write to DATA_PATH left it truncated/corrupt once
+    # when a reboot landed mid-write. Write to a temp file in the same
+    # directory (same filesystem, so os.replace is atomic) and swap it in —
+    # a crash or reboot mid-write now just loses the write, never leaves a
+    # half-written file behind.
+    tmp = DATA_PATH + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(doc, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, DATA_PATH)
     print(f"  saved -> {DATA_PATH}")
 
 
