@@ -18,7 +18,10 @@ import sys
 
 import requests
 
-from common import load, save, dump_raw, set_to_win, classify_special, set_special, prune_stale
+import re
+
+from common import (load, save, dump_raw, set_to_win, classify_special, set_special,
+                    prune_stale, set_playoff, set_team_points, set_award, set_market_overround)
 
 _VERIFY = True  # set False by --insecure
 
@@ -76,8 +79,10 @@ def fetch():
 
 
 def index_specials(matchups):
-    """Return {matchupId: {"desc":.., "participants": {pid: name}}} for the
-    special/futures matchups only."""
+    """Return {matchupId: {"desc":.., "category":.., "participants": {pid: name}}}
+    for the special/futures matchups only. `category` (e.g. "To Make the
+    Playoffs", "Regular Season Points") is Pinnacle's own market-type label —
+    more robust to route on than parsing the free-text description."""
     out = {}
     for m in matchups:
         if m.get("type") != "special" and not m.get("special"):
@@ -85,12 +90,15 @@ def index_specials(matchups):
         sp = m.get("special") or {}
         desc = sp.get("description") or m.get("league", {}).get("name") or str(m.get("id"))
         parts = {p.get("id"): p.get("name") for p in (m.get("participants") or [])}
-        out[m.get("id")] = {"desc": desc, "participants": parts}
+        out[m.get("id")] = {"desc": desc, "category": sp.get("category") or "",
+                            "participants": parts}
     return out
 
 
 def prices_by_matchup(markets):
-    """Return {matchupId: [(participantId, price), ...]} for outright markets."""
+    """Return {matchupId: [(participantId, price, points), ...]} — `points` is
+    the O/U line (e.g. 95.5 for a team-total-points market), None for markets
+    without one (outright winners, Yes/No specials)."""
     out = {}
     for mk in markets:
         mid = mk.get("matchupId")
@@ -99,7 +107,7 @@ def prices_by_matchup(markets):
             price = pr.get("price")
             if pid is None or price is None:
                 continue
-            out.setdefault(mid, []).append((pid, price))
+            out.setdefault(mid, []).append((pid, price, pr.get("points")))
     return out
 
 
@@ -110,12 +118,37 @@ def catalog(specials, priced):
     for mid, info in specials.items():
         plist = priced.get(mid, [])
         print(f"\n• [{mid}] {info['desc']}  ({len(info['participants'])} participants)")
-        for pid, price in plist[:6]:
-            print(f"     {info['participants'].get(pid, pid)}: {price:+d}")
+        for pid, price, pts in plist[:6]:
+            pts_s = f" @ {pts:g}" if pts is not None else ""
+            print(f"     {info['participants'].get(pid, pid)}: {price:+d}{pts_s}")
         if len(plist) > 6:
             print(f"     ... +{len(plist)-6} more")
     print("\n===============================================================")
     print("Paste the above (and/or the two files in scrapers/.cache/) back to Claude.")
+
+
+# Pinnacle sometimes prices a single contentious award favorite as its own
+# 2-way Yes/No prop instead of listing them in a full n-way field (e.g. "Will
+# Gavin McKenna win the Calder Trophy?" alongside a separate full Hart Trophy
+# field). Only the favorite's own "Yes" price is a real selection to show
+# next to every other book's field; "No" isn't a selection at all (it's the
+# other side of a coin flip, not "the field"), so it's never written — but
+# the 2-way Yes+No sum IS Pinnacle's real margin on the market, which the
+# Hold row should reflect instead of just the favorite's lone implied prob.
+_WILL_WIN_AWARD_RE = re.compile(r"^Will (.+) win the (.+) Trophy\?$", re.I)
+_TROPHY_NAME_TO_CATEGORY = {
+    "hart": "hart", "norris": "norris", "vezina": "vezina", "calder": "calder",
+    "jack adams": "jack_adams", "art ross": "art_ross",
+    "rocket richard": "rocket_richard", "selke": "selke",
+}
+
+
+def _american_to_prob(odds):
+    if odds > 0:
+        dec = 1.0 + odds / 100.0
+    else:
+        dec = 1.0 + 100.0 / abs(odds)
+    return 1.0 / dec
 
 
 def route_market(desc):
@@ -123,6 +156,8 @@ def route_market(desc):
     d = desc.lower()
     if "stanley cup" in d or ("cup" in d and "winner" in d):
         return "cup"
+    if "presidents trophy" in d:
+        return "presidents"
     if "conference" in d:
         return "conference"
     if any(div in d for div in ("atlantic", "metropolitan", "central", "pacific")):
@@ -135,22 +170,66 @@ def write(doc, specials, priced):
     # fetch() either fully succeeds or raises before write() is ever called, so
     # reaching here always means a genuine live snapshot — safe to prune on.
     seen = {
-        "to_win": {"cup": set(), "conference": set(), "division": set()},
+        "to_win": {"cup": set(), "conference": set(), "division": set(), "presidents": set()},
         "cup_specials": {"conf": set(), "div": set(), "state": set()},
+        "playoffs_yes": set(), "playoffs_no": set(),
+        "team_points": set(),
+        "awards": {},
     }
     for mid, info in specials.items():
+        category = info["category"]
+
+        m = _WILL_WIN_AWARD_RE.match(info["desc"])
+        if m:  # single-favorite 2-way award prop — see comment above the regex
+            player, trophy = m.group(1).strip(), m.group(2).strip().lower()
+            cat = _TROPHY_NAME_TO_CATEGORY.get(trophy)
+            prices = {(info["participants"].get(pid) or "").strip().lower(): price
+                      for pid, price, _pts in priced.get(mid, [])}
+            yes, no = prices.get("yes"), prices.get("no")
+            if cat and yes is not None:
+                key = set_award(doc, cat, player, "", BOOK, yes)
+                if key is not None:
+                    n += 1
+                    seen["awards"].setdefault(cat, set()).add(key)
+                    if no is not None:
+                        market_ov = _american_to_prob(yes) + _american_to_prob(no)
+                        set_market_overround(doc, BOOK, f"award:{cat}", market_ov)
+            continue
+
         sp = classify_special(info["desc"])
         if sp:  # champion's conference/division/state — outcomes are not teams
-            for pid, price in priced.get(mid, []):
+            for pid, price, _pts in priced.get(mid, []):
                 label = info["participants"].get(pid)
                 if label:
                     key = set_special(doc, sp, label, BOOK, price); n += 1
                     seen["cup_specials"][sp].add(key)
             continue
+        if category == "To Make the Playoffs":
+            team = info["desc"].replace(" To Make the Playoffs", "").strip()
+            for pid, price, _pts in priced.get(mid, []):
+                side_name = (info["participants"].get(pid) or "").strip().lower()
+                if side_name not in ("yes", "no"):
+                    continue
+                key = set_playoff(doc, team, BOOK, side_name, price); n += 1
+                seen[f"playoffs_{side_name}"].add(key)
+            continue
+        if category == "Regular Season Points":
+            team = info["desc"].replace(" Total Regular Season Points", "").strip()
+            line = over = under = None
+            for pid, price, pts in priced.get(mid, []):
+                name = (info["participants"].get(pid) or "").strip().lower()
+                if name == "over":
+                    over, line = price, pts if pts is not None else line
+                elif name == "under":
+                    under, line = price, pts if pts is not None else line
+            if line is not None:
+                key = set_team_points(doc, team, BOOK, line, over, under); n += 1
+                seen["team_points"].add(key)
+            continue
         market = route_market(info["desc"])
         if not market:
             continue
-        for pid, price in priced.get(mid, []):
+        for pid, price, _pts in priced.get(mid, []):
             team = info["participants"].get(pid)
             if not team:
                 continue
@@ -159,7 +238,7 @@ def write(doc, specials, priced):
             seen["to_win"][market].add(key)
     if n:
         prune_stale(doc, BOOK, seen)
-    print(f"  wrote {n} Pinnacle prices into to_win + cup_specials")
+    print(f"  wrote {n} Pinnacle prices into to_win + cup_specials + playoffs + team_points")
     return n
 
 

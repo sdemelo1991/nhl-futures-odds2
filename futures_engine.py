@@ -418,6 +418,10 @@ def sort_labels(rows, opt, all_books=(), stat="Average"):
 # --------------------------------------------------------------------------- comparison table
 BOOK_UPDATED = {}  # book -> last-updated label, filled from odds.json meta
 BOOK_MARKET_UPDATED = {}  # book -> {market_key -> date}; per-market freshness override
+BOOK_MARKET_OVERROUND = {}  # book -> {market_key -> decimal overround}; explicit Hold override
+# for a book that only posts a partial field (e.g. Pinnacle's 2-way "Will X
+# win the Calder?" prop) — the field's real margin, not what summing just the
+# one written selection's implied prob would (wrongly) suggest.
 PRICE_HISTORY = {}  # market_key -> {selection -> {book -> [[date, value], ...]}}
 CONSENSUS = "Average"  # "Average" | "Median", set per section from the UI control
 
@@ -542,7 +546,7 @@ def comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, kind="team", team
     # sub-header row: overround / hold
     hold = ["<td class='name' style='text-align:center'>Hold</td>"]
     for b in all_books:
-        ov = overround(rows, b)
+        ov = BOOK_MARKET_OVERROUND.get(b, {}).get(market) or overround(rows, b)
         hold.append(f"<td class='{bkcls(b)}'>{ov*100:.1f}%</td>" if ov else f"<td class='{bkcls(b)}'>—</td>")
     hold.append(blanks)
 
@@ -1450,6 +1454,8 @@ def render_comp_tool(data, history=None):
     BOOK_UPDATED.update(meta.get("book_updated") or {})
     BOOK_MARKET_UPDATED.clear()
     BOOK_MARKET_UPDATED.update(meta.get("book_market_updated") or {})
+    BOOK_MARKET_OVERROUND.clear()
+    BOOK_MARKET_OVERROUND.update(meta.get("book_market_overround") or {})
     PRICE_HISTORY.clear()
     PRICE_HISTORY.update(history if history is not None else get_history())
 

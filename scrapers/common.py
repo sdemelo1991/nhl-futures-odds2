@@ -51,6 +51,18 @@ def stamp_book(doc, book, when=None):
     doc.setdefault("meta", {}).setdefault("book_updated", {})[book] = when
 
 
+def set_market_overround(doc, book, market, overround):
+    """Override the displayed Hold/overround for one (book, market) cell.
+    Needed when a book only posts a partial field for a market that's a full
+    field everywhere else — e.g. Pinnacle's 2-way "Will X win the Calder?"
+    prop, where only the favorite's own price gets written as a selection, but
+    the real margin the book is taking is the 2-way Yes/No sum, not whatever
+    summing that one lone selection's implied probability would suggest.
+    `overround` is a decimal (e.g. 1.083 for 108.3%)."""
+    doc.setdefault("meta", {}).setdefault("book_market_overround", {}) \
+        .setdefault(book, {})[market] = overround
+
+
 def dump_raw(name, payload):
     os.makedirs(CACHE_DIR, exist_ok=True)
     p = os.path.join(CACHE_DIR, f"{name}.json")
