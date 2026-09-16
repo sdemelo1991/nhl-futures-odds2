@@ -7290,7 +7290,7 @@
         "team": "",
         "prices": {
           "kambi": 125,
-          "betmgm": 400
+          "betmgm": 350
         }
       },
       "Alex Tuch": {
@@ -7381,7 +7381,7 @@
         "team": "",
         "prices": {
           "kambi": 10000,
-          "betmgm": 10000
+          "betmgm": 6600
         }
       },
       "Jordan Kyrou": {
@@ -10836,7 +10836,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-16 10:59",
+    "last_updated": "2026-09-16 13:27",
     "book_updated": {
       "dazn": "2026-09-16",
       "fanduel": "2026-09-16",
@@ -13914,7 +13914,8 @@
           },
           "30": {
             "betmgm": 260,
-            "draftkings": 500
+            "draftkings": 500,
+            "fanduel": 430
           }
         }
       },
