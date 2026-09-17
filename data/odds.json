@@ -265,9 +265,9 @@
         "under": -120
       },
       "betonline": {
-        "line": 107.5,
-        "over": -120,
-        "under": -110
+        "line": 106.5,
+        "over": -115,
+        "under": -115
       },
       "thescore": {
         "line": 106.5,
@@ -2766,7 +2766,7 @@
       "Gavin McKenna": {
         "team": "",
         "prices": {
-          "fanduel": 300,
+          "fanduel": 310,
           "kambi": 275,
           "betmgm": 280,
           "betano": 300,
@@ -2815,7 +2815,7 @@
       "Anton Frondell": {
         "team": "",
         "prices": {
-          "fanduel": 900,
+          "fanduel": 1100,
           "kambi": 800,
           "betmgm": 900,
           "betano": 900,
@@ -2847,7 +2847,7 @@
       "Konsta Helenius": {
         "team": "",
         "prices": {
-          "fanduel": 1900,
+          "fanduel": 1800,
           "kambi": 2000,
           "betmgm": 1900,
           "betano": 1900,
@@ -2879,7 +2879,7 @@
       "Ilya Protas": {
         "team": "",
         "prices": {
-          "fanduel": 3500,
+          "fanduel": 2500,
           "kambi": 2000,
           "betmgm": 3000,
           "betano": 2900,
@@ -10837,7 +10837,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-17 10:28",
+    "last_updated": "2026-09-17 10:57",
     "book_updated": {
       "dazn": "2026-09-17",
       "fanduel": "2026-09-17",
