@@ -199,8 +199,8 @@
       },
       "betmgm": {
         "line": 95.5,
-        "over": -115,
-        "under": -115
+        "over": -110,
+        "under": -120
       },
       "betonline": {
         "line": 95.5,
@@ -942,9 +942,9 @@
         "under": 100
       },
       "betmgm": {
-        "line": 100.5,
-        "over": -130,
-        "under": 100
+        "line": 101.5,
+        "over": -115,
+        "under": -115
       },
       "betonline": {
         "line": 100.5,
@@ -10838,7 +10838,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-19 00:16",
+    "last_updated": "2026-09-19 00:27",
     "book_updated": {
       "dazn": "2026-09-19",
       "fanduel": "2026-09-19",
