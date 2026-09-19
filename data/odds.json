@@ -7546,7 +7546,7 @@
       "yes": {
         "dazn": -143,
         "fanduel": -130,
-        "kambi": -130,
+        "kambi": -118,
         "betmgm": -145,
         "betano": -143,
         "betonline": -125,
@@ -7561,7 +7561,7 @@
       "no": {
         "dazn": 108,
         "fanduel": 102,
-        "kambi": 105,
+        "kambi": -109,
         "betmgm": 115,
         "betano": 108,
         "betonline": -105,
@@ -7994,7 +7994,7 @@
       "yes": {
         "dazn": -182,
         "fanduel": -184,
-        "kambi": -167,
+        "kambi": -182,
         "betmgm": -210,
         "betano": -182,
         "betonline": -190,
@@ -8009,7 +8009,7 @@
       "no": {
         "dazn": 135,
         "fanduel": 142,
-        "kambi": 135,
+        "kambi": 145,
         "betmgm": 165,
         "betano": 135,
         "betonline": 160,
@@ -8314,7 +8314,7 @@
       "yes": {
         "dazn": 205,
         "fanduel": 168,
-        "kambi": 220,
+        "kambi": 175,
         "betmgm": 210,
         "betano": 205,
         "betonline": 250,
@@ -8329,7 +8329,7 @@
       "no": {
         "dazn": -286,
         "fanduel": -225,
-        "kambi": -286,
+        "kambi": -225,
         "betmgm": -275,
         "betano": -286,
         "betonline": -325,
@@ -10838,7 +10838,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-19 17:47",
+    "last_updated": "2026-09-19 17:57",
     "book_updated": {
       "dazn": "2026-09-19",
       "fanduel": "2026-09-19",
