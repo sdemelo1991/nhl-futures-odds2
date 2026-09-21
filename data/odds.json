@@ -2818,7 +2818,7 @@
           "fanduel": 1100,
           "kambi": 800,
           "betmgm": 900,
-          "betano": 900,
+          "betano": 1100,
           "betonline": 1000,
           "thescore": 1000,
           "draftkings": 900,
@@ -2834,7 +2834,7 @@
           "fanduel": 1300,
           "kambi": 600,
           "betmgm": 1200,
-          "betano": 1300,
+          "betano": 1100,
           "betonline": 1200,
           "thescore": 2000,
           "draftkings": 1400,
@@ -2914,7 +2914,7 @@
           "fanduel": 6500,
           "kambi": 4000,
           "betmgm": 5000,
-          "betano": 4900,
+          "betano": 5900,
           "betonline": 4000,
           "thescore": 4000,
           "draftkings": 4000,
@@ -2928,7 +2928,7 @@
         "team": "",
         "prices": {
           "fanduel": 2500,
-          "betano": 4400,
+          "betano": 2400,
           "bookmaker": 4515
         }
       },
@@ -10838,7 +10838,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-21 01:56",
+    "last_updated": "2026-09-21 02:56",
     "book_updated": {
       "dazn": "2026-09-21",
       "fanduel": "2026-09-21",
