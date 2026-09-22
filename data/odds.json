@@ -1062,8 +1062,8 @@
       },
       "kambi": {
         "line": 98.5,
-        "over": -125,
-        "under": -104
+        "over": -134,
+        "under": 105
       },
       "betmgm": {
         "line": 100.5,
@@ -2777,7 +2777,7 @@
           "bet365": 300,
           "hardrock": 300,
           "bookmaker": 276,
-          "pinnacle": 300
+          "pinnacle": 304
         }
       },
       "Ivar Stenberg": {
@@ -7555,7 +7555,7 @@
         "bet365": -156,
         "hardrock": -150,
         "circa": -110,
-        "pinnacle": -117,
+        "pinnacle": -118,
         "dazn": -143
       },
       "no": {
@@ -7570,7 +7570,7 @@
         "bet365": 122,
         "hardrock": 110,
         "circa": -120,
-        "pinnacle": -103,
+        "pinnacle": -102,
         "dazn": 108
       }
     },
@@ -10965,7 +10965,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-22 07:16",
+    "last_updated": "2026-09-22 08:28",
     "book_updated": {
       "dazn": "2026-09-22",
       "fanduel": "2026-09-22",
@@ -10988,7 +10988,7 @@
     },
     "book_market_overround": {
       "pinnacle": {
-        "award:calder": 1.0242663656884874
+        "award:calder": 1.0243104667609617
       }
     }
   },
