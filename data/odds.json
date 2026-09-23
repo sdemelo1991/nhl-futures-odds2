@@ -4066,7 +4066,7 @@
       "Aleksander Barkov": {
         "team": "",
         "prices": {
-          "fanduel": 30000,
+          "fanduel": 25000,
           "kambi": 5000,
           "betmgm": 8000,
           "betano": 19900,
@@ -6743,7 +6743,7 @@
         "prices": {
           "caesars": 1000,
           "kambi": 1200,
-          "betmgm": 1200,
+          "betmgm": 1000,
           "betano": 800
         }
       },
@@ -11347,7 +11347,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-23 14:38",
+    "last_updated": "2026-09-23 14:47",
     "book_updated": {
       "dazn": "2026-09-23",
       "fanduel": "2026-09-23",
@@ -11951,7 +11951,7 @@
         },
         "plus": {
           "110": {
-            "betmgm": 180,
+            "betmgm": 150,
             "draftkings": 150
           },
           "105": {
