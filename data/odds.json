@@ -2000,7 +2000,7 @@
           "fanduel": 500,
           "kambi": 425,
           "betmgm": 450,
-          "betano": 450,
+          "betano": 500,
           "betonline": 600,
           "thescore": 600,
           "draftkings": 450,
@@ -2102,7 +2102,7 @@
           "fanduel": 2200,
           "kambi": 2500,
           "betmgm": 2200,
-          "betano": 2400,
+          "betano": 2100,
           "betonline": 2800,
           "thescore": 2000,
           "draftkings": 2500,
@@ -2753,7 +2753,7 @@
           "fanduel": 270,
           "kambi": 300,
           "betmgm": 275,
-          "betano": 275,
+          "betano": 250,
           "betonline": 275,
           "thescore": 325,
           "draftkings": 280,
@@ -2786,7 +2786,7 @@
           "fanduel": 550,
           "kambi": 550,
           "betmgm": 600,
-          "betano": 550,
+          "betano": 600,
           "betonline": 600,
           "thescore": 600,
           "draftkings": 600,
@@ -7579,7 +7579,7 @@
         "fanduel": 250,
         "kambi": 200,
         "betmgm": 250,
-        "betano": 250,
+        "betano": 230,
         "betonline": 250,
         "thescore": 290,
         "draftkings": 230,
@@ -7588,13 +7588,13 @@
         "hardrock": 250,
         "circa": 290,
         "pinnacle": 251,
-        "dazn": 250
+        "dazn": 230
       },
       "no": {
         "fanduel": -340,
         "kambi": -265,
         "betmgm": -325,
-        "betano": -357,
+        "betano": -333,
         "betonline": -325,
         "thescore": -400,
         "draftkings": -310,
@@ -7603,7 +7603,7 @@
         "hardrock": -300,
         "circa": -370,
         "pinnacle": -314,
-        "dazn": -357
+        "dazn": -333
       }
     },
     "Buffalo Sabres": {
@@ -7707,7 +7707,7 @@
         "fanduel": 390,
         "kambi": 375,
         "betmgm": 500,
-        "betano": 460,
+        "betano": 420,
         "betonline": 400,
         "thescore": 400,
         "draftkings": 600,
@@ -7716,13 +7716,13 @@
         "hardrock": 325,
         "circa": 550,
         "pinnacle": 441,
-        "dazn": 460
+        "dazn": 420
       },
       "no": {
         "fanduel": -590,
         "kambi": -560,
         "betmgm": -750,
-        "betano": -833,
+        "betano": -714,
         "betonline": -600,
         "thescore": -600,
         "draftkings": -900,
@@ -7731,7 +7731,7 @@
         "hardrock": -450,
         "circa": -765,
         "pinnacle": -581,
-        "dazn": -833
+        "dazn": -714
       }
     },
     "Colorado Avalanche": {
@@ -11189,7 +11189,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-23 05:26",
+    "last_updated": "2026-09-23 05:36",
     "book_updated": {
       "dazn": "2026-09-23",
       "fanduel": "2026-09-23",
