@@ -2286,7 +2286,7 @@
       "Dan Vladar": {
         "team": "",
         "prices": {
-          "fanduel": 5500,
+          "fanduel": 8000,
           "kambi": 4000,
           "betmgm": 5000,
           "betano": 4900,
@@ -2724,7 +2724,8 @@
       "Joseph Woll": {
         "team": "",
         "prices": {
-          "circa": 15000
+          "circa": 15000,
+          "fanduel": 8000
         }
       },
       "Sergei Murashov": {
@@ -2777,7 +2778,7 @@
           "bet365": 300,
           "hardrock": 300,
           "bookmaker": 276,
-          "pinnacle": 322
+          "pinnacle": 323
         }
       },
       "Ivar Stenberg": {
@@ -8288,7 +8289,7 @@
         "bet365": 225,
         "hardrock": 210,
         "circa": 185,
-        "pinnacle": 201,
+        "pinnacle": 202,
         "dazn": 205
       },
       "no": {
@@ -8303,7 +8304,7 @@
         "bet365": -303,
         "hardrock": -260,
         "circa": -230,
-        "pinnacle": -248,
+        "pinnacle": -249,
         "dazn": -286
       }
     },
@@ -8320,7 +8321,7 @@
         "bet365": -105,
         "hardrock": 100,
         "circa": -110,
-        "pinnacle": 112,
+        "pinnacle": 100,
         "dazn": -105
       },
       "no": {
@@ -8335,7 +8336,7 @@
         "bet365": -116,
         "hardrock": -125,
         "circa": -120,
-        "pinnacle": -136,
+        "pinnacle": -121,
         "dazn": -125
       }
     },
@@ -8708,7 +8709,7 @@
         "bet365": -192,
         "hardrock": -190,
         "circa": -165,
-        "pinnacle": -202,
+        "pinnacle": -211,
         "dazn": -200
       },
       "no": {
@@ -8723,7 +8724,7 @@
         "bet365": 150,
         "hardrock": 145,
         "circa": 135,
-        "pinnacle": 166,
+        "pinnacle": 173,
         "dazn": 150
       }
     },
@@ -11346,7 +11347,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-23 08:47",
+    "last_updated": "2026-09-23 12:07",
     "book_updated": {
       "dazn": "2026-09-23",
       "fanduel": "2026-09-23",
@@ -11369,7 +11370,7 @@
     },
     "book_market_overround": {
       "pinnacle": {
-        "award:calder": 1.024652599591471
+        "award:calder": 1.0245422126056818
       }
     }
   },
