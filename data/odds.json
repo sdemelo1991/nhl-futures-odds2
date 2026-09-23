@@ -2883,7 +2883,7 @@
           "kambi": 2000,
           "betmgm": 3000,
           "betano": 2400,
-          "betonline": 1600,
+          "betonline": 2000,
           "thescore": 1600,
           "draftkings": 2500,
           "caesars": 2000,
@@ -3480,7 +3480,8 @@
         "team": "",
         "prices": {
           "kambi": 6500,
-          "fanduel": 15000
+          "fanduel": 15000,
+          "betonline": 10000
         }
       },
       "Carson Carels": {
@@ -10964,10 +10965,10 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-22 22:46",
+    "last_updated": "2026-09-23 00:36",
     "book_updated": {
-      "dazn": "2026-09-22",
-      "fanduel": "2026-09-22",
+      "dazn": "2026-09-23",
+      "fanduel": "2026-09-23",
       "kalshi": "2026-08-20",
       "circa": "2026-09-04",
       "bookmaker": "2026-09-04",
