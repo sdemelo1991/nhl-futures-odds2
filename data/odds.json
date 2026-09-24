@@ -322,7 +322,7 @@
         "under": 100
       },
       "betmgm": {
-        "line": 93.5,
+        "line": 94.5,
         "over": -130,
         "under": 100
       },
@@ -8408,7 +8408,7 @@
       "yes": {
         "fanduel": -158,
         "kambi": -143,
-        "betmgm": -145,
+        "betmgm": -155,
         "betano": -154,
         "betonline": -150,
         "thescore": -145,
@@ -8423,7 +8423,7 @@
       "no": {
         "fanduel": 124,
         "kambi": 115,
-        "betmgm": 115,
+        "betmgm": 125,
         "betano": 115,
         "betonline": 120,
         "thescore": 115,
@@ -10286,7 +10286,7 @@
       "San Jose Sharks": {
         "fanduel": 4000,
         "kambi": 5000,
-        "betmgm": 5000,
+        "betmgm": 4000,
         "betano": 5400,
         "thescore": 5000,
         "caesars": 5000,
@@ -11192,7 +11192,7 @@
         "caesars": 4000,
         "bet365": 4000,
         "hardrock": 3000,
-        "betmgm": 6000,
+        "betmgm": 6600,
         "circa": 5000
       },
       "Columbus Blue Jackets": {
@@ -11347,7 +11347,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-23 20:47",
+    "last_updated": "2026-09-23 23:36",
     "book_updated": {
       "dazn": "2026-09-23",
       "fanduel": "2026-09-23",
@@ -12932,13 +12932,13 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": 180
+            "betmgm": 155
           },
           "90": {
-            "betmgm": -250
+            "betmgm": -295
           },
           "110": {
-            "betmgm": 825
+            "betmgm": 700
           }
         }
       },
