@@ -11005,14 +11005,30 @@
         "circa": 30000,
         "pinnacle": 9375
       },
-      "FLA Panthers": {},
-      "TB Lightning": {},
-      "MTL Canadiens": {},
-      "BUF Sabres": {},
-      "TOR Maple Leafs": {},
-      "OTT Senators": {},
-      "BOS Bruins": {},
-      "DET Red Wings": {},
+      "FLA Panthers": {
+        "dazn": 170
+      },
+      "TB Lightning": {
+        "dazn": 275
+      },
+      "MTL Canadiens": {
+        "dazn": 550
+      },
+      "BUF Sabres": {
+        "dazn": 850
+      },
+      "TOR Maple Leafs": {
+        "dazn": 900
+      },
+      "OTT Senators": {
+        "dazn": 900
+      },
+      "BOS Bruins": {
+        "dazn": 2900
+      },
+      "DET Red Wings": {
+        "dazn": 3400
+      },
       "COL Avalanche": {
         "dazn": 120
       },
@@ -11331,7 +11347,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-24 00:07",
+    "last_updated": "2026-09-24 00:16",
     "book_updated": {
       "dazn": "2026-09-24",
       "fanduel": "2026-09-24",
