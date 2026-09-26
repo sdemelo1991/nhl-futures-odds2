@@ -306,8 +306,8 @@
       },
       "pinnacle": {
         "line": 107.5,
-        "over": 104,
-        "under": -126
+        "over": 107,
+        "under": -130
       }
     },
     "San Jose Sharks": {
@@ -554,8 +554,8 @@
       },
       "pinnacle": {
         "line": 102.5,
-        "over": -123,
-        "under": 101
+        "over": -130,
+        "under": 107
       }
     },
     "St. Louis Blues": {
@@ -1970,8 +1970,8 @@
       },
       "pinnacle": {
         "line": 84.5,
-        "over": -111,
-        "under": -109
+        "over": -117,
+        "under": -103
       }
     }
   },
@@ -3594,6 +3594,12 @@
         "team": "",
         "prices": {
           "fanduel": 10000
+        }
+      },
+      "Colten Ellis": {
+        "team": "",
+        "prices": {
+          "fanduel": 7000
         }
       }
     },
@@ -10578,7 +10584,7 @@
       },
       "Toronto Maple Leafs": {
         "fanduel": 1000,
-        "kambi": 1100,
+        "kambi": 1000,
         "betmgm": 950,
         "betano": 900,
         "betonline": 950,
@@ -10759,7 +10765,7 @@
       },
       "Carolina Hurricanes": {
         "fanduel": 120,
-        "kambi": 110,
+        "kambi": 100,
         "betmgm": 110,
         "betano": 110,
         "betonline": 125,
@@ -11342,7 +11348,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-26 16:47",
+    "last_updated": "2026-09-26 18:18",
     "book_updated": {
       "dazn": "2026-09-26",
       "fanduel": "2026-09-26",
