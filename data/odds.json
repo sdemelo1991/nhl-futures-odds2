@@ -3608,7 +3608,7 @@
         "team": "",
         "prices": {
           "fanduel": 250,
-          "kambi": 250,
+          "kambi": 275,
           "betmgm": 270,
           "betano": 275,
           "betonline": 250,
@@ -3626,7 +3626,7 @@
         "team": "",
         "prices": {
           "fanduel": 370,
-          "kambi": 350,
+          "kambi": 300,
           "betmgm": 360,
           "betano": 360,
           "betonline": 350,
@@ -3644,7 +3644,7 @@
         "team": "",
         "prices": {
           "fanduel": 500,
-          "kambi": 500,
+          "kambi": 450,
           "betmgm": 450,
           "betano": 450,
           "betonline": 550,
@@ -8881,7 +8881,7 @@
       "Buffalo Sabres": {
         "pinnacle": 1662,
         "fanduel": 1600,
-        "kambi": 1600,
+        "kambi": 1500,
         "betmgm": 1800,
         "betano": 1600,
         "betonline": 1600,
@@ -8945,7 +8945,7 @@
       "Florida Panthers": {
         "pinnacle": 341,
         "fanduel": 370,
-        "kambi": 375,
+        "kambi": 315,
         "betmgm": 340,
         "betano": 350,
         "betonline": 390,
@@ -8961,7 +8961,7 @@
       "Montreal Canadiens": {
         "pinnacle": 1100,
         "fanduel": 1100,
-        "kambi": 1000,
+        "kambi": 1100,
         "betmgm": 1000,
         "betano": 1200,
         "betonline": 800,
@@ -9027,7 +9027,7 @@
       "Ottawa Senators": {
         "pinnacle": 1765,
         "fanduel": 1700,
-        "kambi": 1800,
+        "kambi": 1500,
         "betmgm": 2200,
         "betano": 1900,
         "betonline": 2500,
@@ -9091,7 +9091,7 @@
       "Toronto Maple Leafs": {
         "pinnacle": 1591,
         "fanduel": 2000,
-        "kambi": 1600,
+        "kambi": 1300,
         "betmgm": 1700,
         "betano": 1900,
         "betonline": 1600,
@@ -9107,7 +9107,7 @@
       "Washington Capitals": {
         "pinnacle": 764,
         "fanduel": 600,
-        "kambi": 650,
+        "kambi": 1100,
         "betmgm": 700,
         "betano": 750,
         "betonline": 1100,
@@ -9123,7 +9123,7 @@
       "Anaheim Ducks": {
         "pinnacle": 1450,
         "fanduel": 1600,
-        "kambi": 1500,
+        "kambi": 1300,
         "betano": 1400,
         "betonline": 1600,
         "thescore": 1200,
@@ -9202,7 +9202,7 @@
       "Edmonton Oilers": {
         "pinnacle": 436,
         "fanduel": 460,
-        "kambi": 450,
+        "kambi": 500,
         "betano": 450,
         "betonline": 550,
         "thescore": 475,
@@ -9218,7 +9218,7 @@
       "Los Angeles Kings": {
         "pinnacle": 1821,
         "fanduel": 1500,
-        "kambi": 1700,
+        "kambi": 1500,
         "betano": 1600,
         "betonline": 1800,
         "thescore": 1500,
@@ -9267,7 +9267,7 @@
       "San Jose Sharks": {
         "pinnacle": 917,
         "fanduel": 1800,
-        "kambi": 2100,
+        "kambi": 2000,
         "betano": 1700,
         "betonline": 1400,
         "thescore": 1800,
@@ -9315,7 +9315,7 @@
       "Utah Mammoth": {
         "pinnacle": 1363,
         "fanduel": 1200,
-        "kambi": 1300,
+        "kambi": 1500,
         "betano": 1400,
         "betonline": 1600,
         "thescore": 1400,
@@ -9347,7 +9347,7 @@
       "Vegas Golden Knights": {
         "pinnacle": 515,
         "fanduel": 500,
-        "kambi": 500,
+        "kambi": 600,
         "betano": 500,
         "betonline": 600,
         "thescore": 475,
@@ -9608,7 +9608,7 @@
       "Tampa Bay Lightning": {
         "pinnacle": 1214,
         "fanduel": 1300,
-        "kambi": 1100,
+        "kambi": 1300,
         "betmgm": 1300,
         "betano": 1100,
         "betonline": 1400,
@@ -9672,7 +9672,7 @@
       "Vegas Golden Knights": {
         "pinnacle": 1021,
         "fanduel": 1100,
-        "kambi": 1000,
+        "kambi": 1100,
         "betmgm": 900,
         "betano": 900,
         "betonline": 1400,
@@ -9781,7 +9781,7 @@
       "Carolina Hurricanes": {
         "pinnacle": 728,
         "fanduel": 750,
-        "kambi": 900,
+        "kambi": 850,
         "betmgm": 750,
         "betano": 700,
         "betonline": 1000,
@@ -9875,7 +9875,7 @@
       "Edmonton Oilers": {
         "pinnacle": 811,
         "fanduel": 1000,
-        "kambi": 1000,
+        "kambi": 1100,
         "betmgm": 900,
         "betano": 900,
         "betonline": 1200,
@@ -9891,7 +9891,7 @@
       "Florida Panthers": {
         "pinnacle": 698,
         "fanduel": 650,
-        "kambi": 500,
+        "kambi": 550,
         "betmgm": 650,
         "betano": 650,
         "betonline": 800,
@@ -11348,7 +11348,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-26 18:28",
+    "last_updated": "2026-09-26 18:57",
     "book_updated": {
       "dazn": "2026-09-26",
       "fanduel": "2026-09-26",
