@@ -3463,7 +3463,7 @@
         "team": "",
         "prices": {
           "kambi": 4000,
-          "fanduel": 8000
+          "fanduel": 10000
         }
       },
       "Samuel Honzek": {
@@ -11342,7 +11342,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-26 14:17",
+    "last_updated": "2026-09-26 14:57",
     "book_updated": {
       "dazn": "2026-09-26",
       "fanduel": "2026-09-26",
@@ -14271,8 +14271,8 @@
         "ou": {
           "fanduel": {
             "line": 31.5,
-            "over": -114,
-            "under": -114
+            "over": -130,
+            "under": 100
           },
           "caesars": {
             "line": 30.5,
