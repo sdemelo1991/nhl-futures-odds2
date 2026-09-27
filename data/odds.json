@@ -2817,7 +2817,7 @@
         "prices": {
           "fanduel": 1200,
           "kambi": 800,
-          "betmgm": 900,
+          "betmgm": 1000,
           "betano": 1100,
           "betonline": 1100,
           "thescore": 1000,
@@ -2833,7 +2833,7 @@
         "prices": {
           "fanduel": 1000,
           "kambi": 600,
-          "betmgm": 1200,
+          "betmgm": 900,
           "betano": 900,
           "betonline": 1000,
           "thescore": 2000,
@@ -11348,7 +11348,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-26 22:27",
+    "last_updated": "2026-09-26 23:56",
     "book_updated": {
       "dazn": "2026-09-26",
       "fanduel": "2026-09-26",
