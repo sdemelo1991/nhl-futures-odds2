@@ -3046,28 +3046,24 @@
       "Carter Bear": {
         "team": "",
         "prices": {
-          "fanduel": 12500,
           "bookmaker": 8832
         }
       },
       "Charlie Cerrato": {
         "team": "",
         "prices": {
-          "fanduel": 20000,
           "bookmaker": 8832
         }
       },
       "Justin Carbonneau": {
         "team": "",
         "prices": {
-          "fanduel": 20000,
           "bookmaker": 8832
         }
       },
       "Filip Bystedt": {
         "team": "",
         "prices": {
-          "fanduel": 20000,
           "bookmaker": 8832
         }
       },
@@ -3117,7 +3113,6 @@
       "Caleb Desnoyers": {
         "team": "",
         "prices": {
-          "fanduel": 12500,
           "kambi": 6500,
           "betmgm": 6600,
           "betano": 7900,
@@ -3238,7 +3233,6 @@
       "Radim Mrtka": {
         "team": "",
         "prices": {
-          "fanduel": 30000,
           "betmgm": 15000,
           "betano": 24900,
           "draftkings": 15000,
@@ -3249,7 +3243,7 @@
       "David Reinbacher": {
         "team": "",
         "prices": {
-          "fanduel": 12500,
+          "fanduel": 30000,
           "kambi": 15000,
           "betmgm": 15000,
           "betano": 14900,
@@ -3287,7 +3281,7 @@
       "Josh Samanski": {
         "team": "",
         "prices": {
-          "fanduel": 12500,
+          "fanduel": 20000,
           "kambi": 25000,
           "betmgm": 15000,
           "thescore": 30000,
@@ -3410,7 +3404,6 @@
       "Jake O'Brien": {
         "team": "",
         "prices": {
-          "fanduel": 30000,
           "betmgm": 10000,
           "betano": 19900,
           "betonline": 10000,
@@ -11346,7 +11339,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-28 12:26",
+    "last_updated": "2026-09-28 12:56",
     "book_updated": {
       "dazn": "2026-09-28",
       "fanduel": "2026-09-28",
