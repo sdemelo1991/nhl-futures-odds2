@@ -2895,7 +2895,7 @@
       "Viggo Bjorck": {
         "team": "",
         "prices": {
-          "fanduel": 4000,
+          "fanduel": 3000,
           "kambi": 2500,
           "betmgm": 2800,
           "betano": 3400,
@@ -3121,7 +3121,8 @@
           "caesars": 6500,
           "bet365": 3300,
           "hardrock": 4000,
-          "bookmaker": 10036
+          "bookmaker": 10036,
+          "fanduel": 15000
         }
       },
       "Kashawn Aitcheson": {
@@ -11344,7 +11345,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-28 17:47",
+    "last_updated": "2026-09-28 17:57",
     "book_updated": {
       "dazn": "2026-09-28",
       "fanduel": "2026-09-28",
