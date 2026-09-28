@@ -1174,8 +1174,8 @@
       },
       "pinnacle": {
         "line": 74.5,
-        "over": 106,
-        "under": -128
+        "over": 107,
+        "under": -129
       }
     },
     "Toronto Maple Leafs": {
@@ -9090,7 +9090,7 @@
         "kambi": 1300,
         "betmgm": 1700,
         "betano": 1900,
-        "betonline": 1600,
+        "betonline": 0,
         "thescore": 1600,
         "draftkings": 1800,
         "circa": 2200,
@@ -10583,7 +10583,7 @@
         "kambi": 900,
         "betmgm": 950,
         "betano": 900,
-        "betonline": 950,
+        "betonline": 0,
         "thescore": 850,
         "draftkings": 950,
         "bookmaker": 776,
@@ -11344,7 +11344,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-28 14:06",
+    "last_updated": "2026-09-28 14:27",
     "book_updated": {
       "dazn": "2026-09-28",
       "fanduel": "2026-09-28",
