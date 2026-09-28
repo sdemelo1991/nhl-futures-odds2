@@ -2911,7 +2911,7 @@
       "Tij Iginla": {
         "team": "",
         "prices": {
-          "fanduel": 10000,
+          "fanduel": 20000,
           "kambi": 4000,
           "betmgm": 5000,
           "betano": 7400,
@@ -2967,7 +2967,7 @@
       "Sam O'Reilly": {
         "team": "",
         "prices": {
-          "fanduel": 6500,
+          "fanduel": 15000,
           "kambi": 6000,
           "betmgm": 6600,
           "thescore": 7500,
@@ -3000,7 +3000,7 @@
       "Liam Greentree": {
         "team": "",
         "prices": {
-          "fanduel": 10000,
+          "fanduel": 20000,
           "betmgm": 30000,
           "betano": 12400,
           "draftkings": 15000,
@@ -3018,13 +3018,14 @@
           "caesars": 15000,
           "bet365": 15000,
           "hardrock": 15000,
-          "bookmaker": 8832
+          "bookmaker": 8832,
+          "fanduel": 20000
         }
       },
       "Roger McQueen": {
         "team": "",
         "prices": {
-          "fanduel": 8000,
+          "fanduel": 7000,
           "betmgm": 5000,
           "betano": 6400,
           "betonline": 4500,
@@ -3039,7 +3040,6 @@
       "Bill Zonnon": {
         "team": "",
         "prices": {
-          "fanduel": 8000,
           "bookmaker": 8832
         }
       },
@@ -3084,7 +3084,7 @@
       "Sacha Boisvert": {
         "team": "",
         "prices": {
-          "fanduel": 20000,
+          "fanduel": 30000,
           "kambi": 10000,
           "bookmaker": 10036
         }
@@ -3092,7 +3092,6 @@
       "Andrew Cristall": {
         "team": "",
         "prices": {
-          "fanduel": 10000,
           "bookmaker": 10036
         }
       },
@@ -3139,7 +3138,7 @@
       "Fabian Lysell": {
         "team": "",
         "prices": {
-          "fanduel": 10000,
+          "fanduel": 15000,
           "betmgm": 10000,
           "betano": 9900,
           "betonline": 10000,
@@ -3165,7 +3164,7 @@
       "Bradly Nadeau": {
         "team": "",
         "prices": {
-          "fanduel": 10000,
+          "fanduel": 20000,
           "kambi": 10000,
           "betmgm": 10000,
           "betano": 9900,
@@ -3268,7 +3267,7 @@
       "Ben Danford": {
         "team": "",
         "prices": {
-          "fanduel": 20000,
+          "fanduel": 30000,
           "kambi": 25000,
           "betmgm": 30000,
           "betano": 19900,
@@ -3281,7 +3280,7 @@
       "Josh Samanski": {
         "team": "",
         "prices": {
-          "fanduel": 20000,
+          "fanduel": 15000,
           "kambi": 25000,
           "betmgm": 15000,
           "thescore": 30000,
@@ -3313,7 +3312,7 @@
       "Felix Unger Sorum": {
         "team": "",
         "prices": {
-          "fanduel": 10000,
+          "fanduel": 20000,
           "betmgm": 30000,
           "betano": 12400,
           "draftkings": 15000,
@@ -3358,7 +3357,7 @@
       "Cole Beaudoin": {
         "team": "",
         "prices": {
-          "fanduel": 10000,
+          "fanduel": 30000,
           "betmgm": 30000,
           "betano": 12400,
           "draftkings": 15000,
@@ -3370,7 +3369,7 @@
       "Harrison Brunicke": {
         "team": "",
         "prices": {
-          "fanduel": 20000,
+          "fanduel": 30000,
           "kambi": 10000,
           "betmgm": 10000,
           "betano": 14900,
@@ -3441,7 +3440,7 @@
         "team": "",
         "prices": {
           "kambi": 8000,
-          "fanduel": 10000
+          "fanduel": 20000
         }
       },
       "Nikita Chibrikov": {
@@ -3552,7 +3551,7 @@
       "Alberts Šmits": {
         "team": "",
         "prices": {
-          "fanduel": 7000,
+          "fanduel": 8000,
           "kambi": 7000,
           "betmgm": 15000,
           "betano": 9900,
@@ -3565,7 +3564,7 @@
       "Oscar Fisker Mølgaard": {
         "team": "",
         "prices": {
-          "fanduel": 20000,
+          "fanduel": 30000,
           "kambi": 10000,
           "betmgm": 30000,
           "betano": 19900,
@@ -3578,13 +3577,13 @@
       "Sandis Vilmanis": {
         "team": "",
         "prices": {
-          "fanduel": 7000
+          "fanduel": 6000
         }
       },
       "Luca Cagnoni": {
         "team": "",
         "prices": {
-          "fanduel": 10000
+          "fanduel": 6500
         }
       },
       "Colten Ellis": {
@@ -6986,7 +6985,7 @@
         "team": "",
         "prices": {
           "caesars": 15000,
-          "kambi": 30000,
+          "kambi": 15000,
           "betmgm": 6600,
           "betano": 4900
         }
@@ -11339,7 +11338,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-28 12:56",
+    "last_updated": "2026-09-28 13:07",
     "book_updated": {
       "dazn": "2026-09-28",
       "fanduel": "2026-09-28",
