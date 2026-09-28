@@ -1248,8 +1248,8 @@
       },
       "kambi": {
         "line": 96.5,
-        "over": -106,
-        "under": -124
+        "over": -112,
+        "under": -118
       },
       "betmgm": {
         "line": 96.5,
@@ -6712,7 +6712,7 @@
         "team": "",
         "prices": {
           "caesars": 275,
-          "kambi": 250,
+          "kambi": 225,
           "betmgm": 225,
           "betano": 225
         }
@@ -10882,7 +10882,7 @@
       },
       "Edmonton Oilers": {
         "fanduel": 160,
-        "kambi": 165,
+        "kambi": 160,
         "betmgm": 165,
         "betano": 160,
         "betonline": 185,
@@ -11343,7 +11343,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-28 17:17",
+    "last_updated": "2026-09-28 17:26",
     "book_updated": {
       "dazn": "2026-09-28",
       "fanduel": "2026-09-28",
