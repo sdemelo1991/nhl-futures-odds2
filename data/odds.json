@@ -4922,7 +4922,7 @@
         "team": "",
         "prices": {
           "fanduel": 300,
-          "kambi": 250,
+          "kambi": 300,
           "betmgm": 300,
           "betano": 300,
           "betonline": 275,
@@ -4954,7 +4954,7 @@
         "team": "",
         "prices": {
           "fanduel": 750,
-          "kambi": 550,
+          "kambi": 650,
           "betmgm": 650,
           "betano": 650,
           "betonline": 600,
@@ -4986,7 +4986,7 @@
         "team": "",
         "prices": {
           "fanduel": 800,
-          "kambi": 700,
+          "kambi": 800,
           "betmgm": 750,
           "betano": 750,
           "betonline": 650,
@@ -5002,7 +5002,7 @@
         "team": "",
         "prices": {
           "fanduel": 800,
-          "kambi": 1100,
+          "kambi": 900,
           "betmgm": 1100,
           "betano": 900,
           "betonline": 1200,
@@ -5018,7 +5018,7 @@
         "team": "",
         "prices": {
           "fanduel": 1500,
-          "kambi": 1200,
+          "kambi": 1500,
           "betmgm": 1400,
           "betano": 1200,
           "betonline": 1000,
@@ -5034,7 +5034,7 @@
         "team": "",
         "prices": {
           "fanduel": 2000,
-          "kambi": 1700,
+          "kambi": 2000,
           "betmgm": 1800,
           "betano": 1700,
           "betonline": 1600,
@@ -5129,7 +5129,7 @@
         "team": "",
         "prices": {
           "fanduel": 5000,
-          "kambi": 1700,
+          "kambi": 3000,
           "betmgm": 5000,
           "betano": 3400,
           "betonline": 2200,
@@ -5161,7 +5161,7 @@
         "team": "",
         "prices": {
           "fanduel": 8000,
-          "kambi": 2100,
+          "kambi": 3000,
           "betmgm": 5500,
           "betano": 5400,
           "betonline": 2500,
@@ -8054,7 +8054,7 @@
     "Florida Panthers": {
       "yes": {
         "fanduel": -590,
-        "kambi": -670,
+        "kambi": -835,
         "betmgm": -750,
         "betano": -769,
         "betonline": -750,
@@ -8069,7 +8069,7 @@
       },
       "no": {
         "fanduel": 390,
-        "kambi": 450,
+        "kambi": 500,
         "betmgm": 500,
         "betano": 450,
         "betonline": 475,
@@ -8943,7 +8943,7 @@
       "Florida Panthers": {
         "pinnacle": 341,
         "fanduel": 370,
-        "kambi": 315,
+        "kambi": 325,
         "betmgm": 340,
         "betano": 350,
         "betonline": 390,
@@ -9073,7 +9073,7 @@
       "Tampa Bay Lightning": {
         "pinnacle": 562,
         "fanduel": 700,
-        "kambi": 650,
+        "kambi": 700,
         "betmgm": 650,
         "betano": 650,
         "betonline": 750,
@@ -9105,7 +9105,7 @@
       "Washington Capitals": {
         "pinnacle": 764,
         "fanduel": 600,
-        "kambi": 1100,
+        "kambi": 1300,
         "betmgm": 700,
         "betano": 750,
         "betonline": 1100,
@@ -9842,7 +9842,7 @@
       "Dallas Stars": {
         "pinnacle": 1411,
         "fanduel": 1700,
-        "kambi": 1300,
+        "kambi": 1500,
         "betmgm": 1700,
         "betano": 1600,
         "betonline": 1600,
@@ -10763,7 +10763,7 @@
       },
       "Carolina Hurricanes": {
         "fanduel": 115,
-        "kambi": 100,
+        "kambi": 110,
         "betmgm": 110,
         "betano": 110,
         "betonline": 125,
@@ -10778,7 +10778,7 @@
       },
       "Washington Capitals": {
         "fanduel": 300,
-        "kambi": 250,
+        "kambi": 275,
         "betmgm": 300,
         "betano": 300,
         "betonline": 325,
@@ -10823,7 +10823,7 @@
       },
       "Philadelphia Flyers": {
         "fanduel": 1100,
-        "kambi": 1500,
+        "kambi": 1100,
         "betmgm": 1200,
         "betano": 1100,
         "betonline": 1400,
@@ -10885,7 +10885,7 @@
       },
       "Edmonton Oilers": {
         "fanduel": 155,
-        "kambi": 150,
+        "kambi": 165,
         "betmgm": 165,
         "betano": 160,
         "betonline": 185,
@@ -10900,7 +10900,7 @@
       },
       "Vegas Golden Knights": {
         "fanduel": 210,
-        "kambi": 185,
+        "kambi": 200,
         "betmgm": 175,
         "betano": 195,
         "betonline": 220,
@@ -10915,7 +10915,7 @@
       },
       "Los Angeles Kings": {
         "fanduel": 600,
-        "kambi": 700,
+        "kambi": 600,
         "betmgm": 775,
         "betano": 650,
         "betonline": 600,
@@ -10931,7 +10931,7 @@
       },
       "Anaheim Ducks": {
         "fanduel": 700,
-        "kambi": 700,
+        "kambi": 600,
         "betmgm": 750,
         "betano": 700,
         "betonline": 700,
@@ -11346,7 +11346,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-28 07:26",
+    "last_updated": "2026-09-28 07:36",
     "book_updated": {
       "dazn": "2026-09-28",
       "fanduel": "2026-09-28",
