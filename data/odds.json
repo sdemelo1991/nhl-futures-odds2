@@ -266,8 +266,8 @@
       },
       "betonline": {
         "line": 107.5,
-        "over": -105,
-        "under": -125
+        "over": 100,
+        "under": -130
       },
       "thescore": {
         "line": 106.5,
@@ -926,8 +926,8 @@
       },
       "pinnacle": {
         "line": 86.5,
-        "over": -105,
-        "under": -115
+        "over": -102,
+        "under": -118
       }
     },
     "Dallas Stars": {
@@ -1112,8 +1112,8 @@
       },
       "pinnacle": {
         "line": 98.5,
-        "over": -128,
-        "under": 106
+        "over": -143,
+        "under": 118
       }
     },
     "Vancouver Canucks": {
@@ -1789,8 +1789,8 @@
       },
       "pinnacle": {
         "line": 88.5,
-        "over": 107,
-        "under": -129
+        "over": 119,
+        "under": -144
       }
     },
     "New Jersey Devils": {
@@ -8191,7 +8191,7 @@
         "bet365": -182,
         "hardrock": -165,
         "circa": -170,
-        "pinnacle": -195,
+        "pinnacle": -206,
         "dazn": -182
       },
       "no": {
@@ -8206,7 +8206,7 @@
         "bet365": 140,
         "hardrock": 135,
         "circa": 140,
-        "pinnacle": 160,
+        "pinnacle": 169,
         "dazn": 135
       }
     },
@@ -11122,7 +11122,7 @@
     },
     "worst": {
       "Vancouver Canucks": {
-        "fanduel": 290,
+        "fanduel": 280,
         "caesars": 325,
         "bet365": 325,
         "hardrock": 325,
@@ -11377,7 +11377,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-29 13:24",
+    "last_updated": "2026-09-29 13:26",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-29",
