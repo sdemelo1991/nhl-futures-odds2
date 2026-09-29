@@ -266,8 +266,8 @@
       },
       "betonline": {
         "line": 107.5,
-        "over": 110,
-        "under": -140
+        "over": 115,
+        "under": -145
       },
       "thescore": {
         "line": 106.5,
@@ -1071,9 +1071,9 @@
         "under": -115
       },
       "betonline": {
-        "line": 98.5,
-        "over": -110,
-        "under": -120
+        "line": 99.5,
+        "over": -115,
+        "under": -115
       },
       "thescore": {
         "line": 98.5,
@@ -11378,7 +11378,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-29 14:38",
+    "last_updated": "2026-09-29 14:47",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-29",
