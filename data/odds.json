@@ -1045,11 +1045,6 @@
         "over": -120,
         "under": -106
       },
-      "kambi": {
-        "line": 98.5,
-        "over": -134,
-        "under": 105
-      },
       "betmgm": {
         "line": 100.5,
         "over": -115,
@@ -1168,11 +1163,6 @@
         "line": 96.5,
         "over": -115,
         "under": -111
-      },
-      "kambi": {
-        "line": 95.5,
-        "over": -130,
-        "under": 100
       },
       "betmgm": {
         "line": 96.5,
@@ -8148,7 +8138,6 @@
     "Montreal Canadiens": {
       "yes": {
         "fanduel": -170,
-        "kambi": -182,
         "betmgm": -210,
         "betano": -182,
         "betonline": -180,
@@ -8163,7 +8152,6 @@
       },
       "no": {
         "fanduel": 132,
-        "kambi": 145,
         "betmgm": 165,
         "betano": 135,
         "betonline": 150,
@@ -8532,7 +8520,6 @@
     "Toronto Maple Leafs": {
       "yes": {
         "fanduel": -125,
-        "kambi": -118,
         "betmgm": -125,
         "betano": -133,
         "betonline": -130,
@@ -8547,7 +8534,6 @@
       },
       "no": {
         "fanduel": -102,
-        "kambi": -106,
         "betmgm": 100,
         "betano": 100,
         "betonline": 100,
@@ -11337,7 +11323,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-29 17:56",
+    "last_updated": "2026-09-29 19:06",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-29",
