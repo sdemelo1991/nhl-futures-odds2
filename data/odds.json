@@ -323,8 +323,8 @@
       },
       "betmgm": {
         "line": 94.5,
-        "over": -130,
-        "under": 100
+        "over": -120,
+        "under": -110
       },
       "betonline": {
         "line": 94.5,
@@ -2219,7 +2219,7 @@
         "team": "",
         "prices": {
           "fanduel": 4500,
-          "kambi": 6000,
+          "kambi": 4000,
           "betmgm": 5000,
           "betano": 4400,
           "betonline": 5000,
@@ -7546,7 +7546,7 @@
       "Joel Eriksson Ek": {
         "team": "",
         "prices": {
-          "kambi": 10000,
+          "kambi": 2500,
           "betmgm": 2500,
           "betano": 2400
         }
@@ -10919,7 +10919,7 @@
         "kambi": 160,
         "betmgm": 165,
         "betano": 160,
-        "betonline": 175,
+        "betonline": 165,
         "thescore": 175,
         "draftkings": 160,
         "bookmaker": 180,
@@ -10934,7 +10934,7 @@
         "kambi": 200,
         "betmgm": 175,
         "betano": 195,
-        "betonline": 210,
+        "betonline": 215,
         "thescore": 200,
         "draftkings": 185,
         "bookmaker": 188,
@@ -10949,7 +10949,7 @@
         "kambi": 600,
         "betmgm": 775,
         "betano": 650,
-        "betonline": 600,
+        "betonline": 750,
         "thescore": 700,
         "draftkings": 750,
         "bookmaker": 525,
@@ -10965,7 +10965,7 @@
         "kambi": 600,
         "betmgm": 750,
         "betano": 700,
-        "betonline": 775,
+        "betonline": 800,
         "thescore": 600,
         "draftkings": 650,
         "bookmaker": 575,
@@ -10980,7 +10980,7 @@
         "kambi": 850,
         "betmgm": 700,
         "betano": 800,
-        "betonline": 850,
+        "betonline": 700,
         "thescore": 800,
         "draftkings": 850,
         "bookmaker": 725,
@@ -11377,7 +11377,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-29 11:17",
+    "last_updated": "2026-09-29 11:37",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-29",
