@@ -7702,7 +7702,8 @@
         "circa": 290,
         "pinnacle": 245,
         "dazn": 230,
-        "betmgm": 225
+        "betmgm": 225,
+        "kambi": 200
       },
       "no": {
         "fanduel": -310,
@@ -7716,7 +7717,8 @@
         "circa": -370,
         "pinnacle": -306,
         "dazn": -333,
-        "betmgm": -285
+        "betmgm": -285,
+        "kambi": -265
       }
     },
     "Buffalo Sabres": {
@@ -7796,7 +7798,8 @@
         "hardrock": -1000,
         "circa": -1000,
         "pinnacle": -1060,
-        "dazn": -1250
+        "dazn": -1250,
+        "kambi": -835
       },
       "no": {
         "fanduel": 520,
@@ -7810,7 +7813,8 @@
         "hardrock": 600,
         "circa": 675,
         "pinnacle": 749,
-        "dazn": 600
+        "dazn": 600,
+        "kambi": 525
       }
     },
     "Chicago Blackhawks": {
@@ -7826,7 +7830,8 @@
         "circa": 550,
         "pinnacle": 441,
         "dazn": 420,
-        "betmgm": 525
+        "betmgm": 525,
+        "kambi": 375
       },
       "no": {
         "fanduel": -670,
@@ -7840,7 +7845,8 @@
         "circa": -765,
         "pinnacle": -581,
         "dazn": -714,
-        "betmgm": -800
+        "betmgm": -800,
+        "kambi": -560
       }
     },
     "Colorado Avalanche": {
@@ -7984,7 +7990,8 @@
         "hardrock": -850,
         "circa": -1100,
         "pinnacle": -791,
-        "dazn": -1000
+        "dazn": -1000,
+        "kambi": -835
       },
       "no": {
         "fanduel": 470,
@@ -7998,7 +8005,8 @@
         "hardrock": 525,
         "circa": 725,
         "pinnacle": 581,
-        "dazn": 520
+        "dazn": 520,
+        "kambi": 525
       }
     },
     "Florida Panthers": {
@@ -8108,7 +8116,8 @@
         "circa": -170,
         "pinnacle": -206,
         "dazn": -182,
-        "betmgm": -220
+        "betmgm": -220,
+        "kambi": -215
       },
       "no": {
         "fanduel": 146,
@@ -8122,7 +8131,8 @@
         "circa": 140,
         "pinnacle": 169,
         "dazn": 135,
-        "betmgm": 175
+        "betmgm": 175,
+        "kambi": 165
       }
     },
     "Nashville Predators": {
@@ -11284,7 +11294,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 02:16",
+    "last_updated": "2026-09-30 02:26",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-30",
