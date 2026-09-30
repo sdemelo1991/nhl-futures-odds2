@@ -4882,9 +4882,9 @@
       "Evan Bouchard": {
         "team": "",
         "prices": {
-          "fanduel": 800,
+          "fanduel": 750,
           "kambi": 800,
-          "betmgm": 1100,
+          "betmgm": 750,
           "betano": 900,
           "betonline": 750,
           "thescore": 1200,
@@ -7655,7 +7655,8 @@
         "hardrock": 250,
         "circa": 290,
         "pinnacle": 245,
-        "dazn": 230
+        "dazn": 230,
+        "betmgm": 230
       },
       "no": {
         "fanduel": -310,
@@ -7668,7 +7669,8 @@
         "hardrock": -300,
         "circa": -370,
         "pinnacle": -306,
-        "dazn": -333
+        "dazn": -333,
+        "betmgm": -300
       }
     },
     "Buffalo Sabres": {
@@ -7777,7 +7779,8 @@
         "hardrock": 325,
         "circa": 550,
         "pinnacle": 441,
-        "dazn": 420
+        "dazn": 420,
+        "betmgm": 500
       },
       "no": {
         "fanduel": -670,
@@ -7790,7 +7793,8 @@
         "hardrock": -450,
         "circa": -765,
         "pinnacle": -581,
-        "dazn": -714
+        "dazn": -714,
+        "betmgm": -750
       }
     },
     "Colorado Avalanche": {
@@ -8057,7 +8061,8 @@
         "hardrock": -165,
         "circa": -170,
         "pinnacle": -206,
-        "dazn": -182
+        "dazn": -182,
+        "betmgm": -220
       },
       "no": {
         "fanduel": 146,
@@ -8070,7 +8075,8 @@
         "hardrock": 135,
         "circa": 140,
         "pinnacle": 169,
-        "dazn": 135
+        "dazn": 135,
+        "betmgm": 175
       }
     },
     "Nashville Predators": {
@@ -8181,7 +8187,8 @@
         "hardrock": 210,
         "circa": 185,
         "pinnacle": 205,
-        "dazn": 205
+        "dazn": 205,
+        "betmgm": 230
       },
       "no": {
         "fanduel": -290,
@@ -8194,7 +8201,8 @@
         "hardrock": -260,
         "circa": -230,
         "pinnacle": -253,
-        "dazn": -286
+        "dazn": -286,
+        "betmgm": -300
       }
     },
     "Ottawa Senators": {
@@ -8433,7 +8441,8 @@
         "hardrock": -125,
         "circa": 105,
         "pinnacle": -128,
-        "dazn": -133
+        "dazn": -133,
+        "betmgm": -105
       },
       "no": {
         "fanduel": -120,
@@ -8446,7 +8455,8 @@
         "hardrock": -105,
         "circa": -135,
         "pinnacle": 106,
-        "dazn": 100
+        "dazn": 100,
+        "betmgm": -118
       }
     },
     "Utah Hockey Club": {
@@ -10977,7 +10987,7 @@
         "caesars": 325,
         "bet365": 325,
         "hardrock": 325,
-        "betmgm": 290,
+        "betmgm": 320,
         "circa": 205
       },
       "Calgary Flames": {
@@ -10985,7 +10995,7 @@
         "caesars": 425,
         "bet365": 475,
         "hardrock": 475,
-        "betmgm": 375,
+        "betmgm": 360,
         "circa": 240
       },
       "Seattle Kraken": {
@@ -10993,7 +11003,7 @@
         "caesars": 650,
         "bet365": 750,
         "hardrock": 700,
-        "betmgm": 850,
+        "betmgm": 825,
         "circa": 725
       },
       "Chicago Blackhawks": {
@@ -11001,7 +11011,7 @@
         "caesars": 600,
         "bet365": 650,
         "hardrock": 650,
-        "betmgm": 775,
+        "betmgm": 750,
         "circa": 680
       },
       "Winnipeg Jets": {
@@ -11009,7 +11019,7 @@
         "caesars": 1600,
         "bet365": 1600,
         "hardrock": 1600,
-        "betmgm": 1500,
+        "betmgm": 1400,
         "circa": 3500
       },
       "St. Louis Blues": {
@@ -11025,7 +11035,7 @@
         "caesars": 1500,
         "bet365": 1600,
         "hardrock": 1600,
-        "betmgm": 1800,
+        "betmgm": 1700,
         "circa": 2800
       },
       "Boston Bruins": {
@@ -11049,7 +11059,7 @@
         "caesars": 2400,
         "bet365": 2000,
         "hardrock": 2000,
-        "betmgm": 2500,
+        "betmgm": 2200,
         "circa": 4000
       },
       "Pittsburgh Penguins": {
@@ -11228,7 +11238,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 00:36",
+    "last_updated": "2026-09-30 00:56",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-30",
