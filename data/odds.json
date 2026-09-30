@@ -298,6 +298,11 @@
         "line": 108.5,
         "over": -113,
         "under": -113
+      },
+      "betmgm": {
+        "line": 107.5,
+        "over": -120,
+        "under": -110
       }
     },
     "San Jose Sharks": {
@@ -779,6 +784,11 @@
         "line": 79.5,
         "over": -101,
         "under": -120
+      },
+      "betmgm": {
+        "line": 79.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Nashville Predators": {
@@ -1012,6 +1022,11 @@
         "line": 103.5,
         "over": -118,
         "under": -103
+      },
+      "betmgm": {
+        "line": 104.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Montreal Canadiens": {
@@ -1064,6 +1079,11 @@
         "line": 100.5,
         "over": -104,
         "under": -122
+      },
+      "betmgm": {
+        "line": 101.5,
+        "over": -110,
+        "under": -120
       }
     },
     "Vancouver Canucks": {
@@ -1163,6 +1183,11 @@
         "line": 95.5,
         "over": -183,
         "under": 150
+      },
+      "betmgm": {
+        "line": 95.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Utah Mammoth": {
@@ -1334,6 +1359,11 @@
         "line": 108.5,
         "over": -125,
         "under": -102
+      },
+      "betmgm": {
+        "line": 108.5,
+        "over": -120,
+        "under": -110
       }
     },
     "Ottawa Senators": {
@@ -1448,6 +1478,11 @@
         "line": 88.5,
         "over": -113,
         "under": -113
+      },
+      "betmgm": {
+        "line": 87.5,
+        "over": -125,
+        "under": -105
       }
     },
     "Anaheim Ducks": {
@@ -1562,6 +1597,11 @@
         "line": 88.5,
         "over": -113,
         "under": -113
+      },
+      "betmgm": {
+        "line": 88.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Edmonton Oilers": {
@@ -1609,6 +1649,11 @@
         "line": 104.5,
         "over": -106,
         "under": -114
+      },
+      "betmgm": {
+        "line": 104.5,
+        "over": -120,
+        "under": -110
       }
     },
     "New York Islanders": {
@@ -7656,7 +7701,7 @@
         "circa": 290,
         "pinnacle": 245,
         "dazn": 230,
-        "betmgm": 230
+        "betmgm": 225
       },
       "no": {
         "fanduel": -310,
@@ -7670,7 +7715,7 @@
         "circa": -370,
         "pinnacle": -306,
         "dazn": -333,
-        "betmgm": -300
+        "betmgm": -285
       }
     },
     "Buffalo Sabres": {
@@ -7780,7 +7825,7 @@
         "circa": 550,
         "pinnacle": 441,
         "dazn": 420,
-        "betmgm": 500
+        "betmgm": 525
       },
       "no": {
         "fanduel": -670,
@@ -7794,7 +7839,7 @@
         "circa": -765,
         "pinnacle": -581,
         "dazn": -714,
-        "betmgm": -750
+        "betmgm": -800
       }
     },
     "Colorado Avalanche": {
@@ -8442,7 +8487,7 @@
         "circa": 105,
         "pinnacle": -128,
         "dazn": -133,
-        "betmgm": -105
+        "betmgm": -110
       },
       "no": {
         "fanduel": -120,
@@ -8456,7 +8501,7 @@
         "circa": -135,
         "pinnacle": 106,
         "dazn": 100,
-        "betmgm": -118
+        "betmgm": -110
       }
     },
     "Utah Hockey Club": {
@@ -11238,7 +11283,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 01:16",
+    "last_updated": "2026-09-30 01:26",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-30",
