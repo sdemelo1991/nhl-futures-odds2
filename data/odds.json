@@ -10076,7 +10076,7 @@
       "Dallas Stars": {
         "fanduel": 1600,
         "kambi": 1300,
-        "betmgm": 1700,
+        "betmgm": 1600,
         "betano": 1600,
         "thescore": 1500,
         "caesars": 1500,
@@ -10112,7 +10112,7 @@
       "Montreal Canadiens": {
         "fanduel": 2000,
         "kambi": 2200,
-        "betmgm": 1800,
+        "betmgm": 1700,
         "betano": 2400,
         "thescore": 2500,
         "caesars": 2200,
@@ -10198,7 +10198,7 @@
       "Toronto Maple Leafs": {
         "fanduel": 4000,
         "kambi": 4000,
-        "betmgm": 3500,
+        "betmgm": 4000,
         "betano": 3900,
         "thescore": 3300,
         "caesars": 5000,
@@ -11032,7 +11032,7 @@
         "caesars": 325,
         "bet365": 325,
         "hardrock": 325,
-        "betmgm": 320,
+        "betmgm": 325,
         "circa": 205
       },
       "Calgary Flames": {
@@ -11048,7 +11048,7 @@
         "caesars": 650,
         "bet365": 750,
         "hardrock": 700,
-        "betmgm": 825,
+        "betmgm": 850,
         "circa": 725
       },
       "Chicago Blackhawks": {
@@ -11056,7 +11056,7 @@
         "caesars": 600,
         "bet365": 650,
         "hardrock": 650,
-        "betmgm": 750,
+        "betmgm": 700,
         "circa": 680
       },
       "Winnipeg Jets": {
@@ -11192,7 +11192,7 @@
         "caesars": 7000,
         "bet365": 7000,
         "hardrock": 7500,
-        "betmgm": 8000,
+        "betmgm": 6600,
         "circa": 6500
       },
       "New Jersey Devils": {
@@ -11270,7 +11270,7 @@
         "caesars": 50000,
         "bet365": 30000,
         "hardrock": 25000,
-        "betmgm": 50000,
+        "betmgm": 40000,
         "circa": -200000
       },
       "Carolina Hurricanes": {
@@ -11283,7 +11283,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 01:26",
+    "last_updated": "2026-09-30 01:36",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-30",
@@ -12559,13 +12559,13 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": 195
+            "betmgm": 210
           },
           "90": {
-            "betmgm": -225
+            "betmgm": -210
           },
           "110": {
-            "betmgm": 900
+            "betmgm": 950
           }
         }
       },
@@ -12574,13 +12574,13 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": 550
+            "betmgm": 425
           },
           "90": {
-            "betmgm": 125
+            "betmgm": 100
           },
           "110": {
-            "betmgm": 3300
+            "betmgm": 2500
           }
         }
       },
@@ -12616,10 +12616,10 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": -550
+            "betmgm": -600
           },
           "110": {
-            "betmgm": 100
+            "betmgm": -105
           }
         }
       },
@@ -12628,10 +12628,10 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": 1800
+            "betmgm": 2000
           },
           "90": {
-            "betmgm": 350
+            "betmgm": 375
           }
         }
       },
@@ -12670,7 +12670,7 @@
             "betmgm": -155
           },
           "110": {
-            "betmgm": 280
+            "betmgm": 275
           },
           "90": {
             "betmgm": -1000
@@ -12697,10 +12697,10 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": -250
+            "betmgm": -275
           },
           "110": {
-            "betmgm": 180
+            "betmgm": 170
           }
         }
       },
@@ -12709,10 +12709,10 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": -425
+            "betmgm": -475
           },
           "110": {
-            "betmgm": 120
+            "betmgm": 110
           }
         }
       },
@@ -12721,13 +12721,13 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": 155
+            "betmgm": 160
           },
           "90": {
-            "betmgm": -300
+            "betmgm": -285
           },
           "110": {
-            "betmgm": 700
+            "betmgm": 725
           }
         }
       },
@@ -12748,13 +12748,13 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": -135
+            "betmgm": -150
           },
           "90": {
             "betmgm": -900
           },
           "110": {
-            "betmgm": 320
+            "betmgm": 290
           }
         }
       },
@@ -12886,7 +12886,7 @@
             "betmgm": 1600
           },
           "90": {
-            "betmgm": 320
+            "betmgm": 310
           }
         }
       },
@@ -12922,13 +12922,13 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": 140
+            "betmgm": 155
           },
           "90": {
-            "betmgm": -325
+            "betmgm": -300
           },
           "110": {
-            "betmgm": 625
+            "betmgm": 700
           }
         }
       },
@@ -12955,7 +12955,7 @@
             "betmgm": 4000
           },
           "90": {
-            "betmgm": 900
+            "betmgm": 750
           }
         }
       },
@@ -12964,10 +12964,10 @@
         "ou": {},
         "plus": {
           "100": {
-            "betmgm": -225
+            "betmgm": -250
           },
           "110": {
-            "betmgm": 195
+            "betmgm": 180
           }
         }
       },
