@@ -10872,8 +10872,7 @@
         "hardrock": 160,
         "circa": 160,
         "pinnacle": 139,
-        "betano": 165,
-        "dazn": 165
+        "betano": 165
       },
       "Vegas Golden Knights": {
         "fanduel": 200,
@@ -10888,8 +10887,7 @@
         "hardrock": 185,
         "circa": 160,
         "pinnacle": 182,
-        "betano": 185,
-        "dazn": 185
+        "betano": 185
       },
       "Los Angeles Kings": {
         "fanduel": 600,
@@ -10920,8 +10918,7 @@
         "hardrock": 650,
         "circa": 800,
         "pinnacle": 631,
-        "betano": 700,
-        "dazn": 700
+        "betano": 700
       },
       "San Jose Sharks": {
         "fanduel": 750,
@@ -10936,8 +10933,7 @@
         "hardrock": 850,
         "circa": 900,
         "pinnacle": 777,
-        "betano": 800,
-        "dazn": 800
+        "betano": 800
       },
       "Seattle Kraken": {
         "fanduel": 4000,
@@ -10952,8 +10948,7 @@
         "hardrock": 10000,
         "circa": 10100,
         "pinnacle": 5844,
-        "betano": 6400,
-        "dazn": 6400
+        "betano": 6400
       },
       "Calgary Flames": {
         "fanduel": 8000,
@@ -10968,8 +10963,7 @@
         "hardrock": 10000,
         "circa": 30000,
         "pinnacle": 7307,
-        "betano": 9900,
-        "dazn": 9900
+        "betano": 9900
       },
       "Vancouver Canucks": {
         "fanduel": 12500,
@@ -10984,8 +10978,7 @@
         "hardrock": 25000,
         "circa": 30000,
         "pinnacle": 9744,
-        "betano": 14900,
-        "dazn": 14900
+        "betano": 14900
       },
       "FLA Panthers": {
         "dazn": 165
@@ -11050,13 +11043,27 @@
       "PIT Penguins": {
         "dazn": 1700
       },
-      "EDM Oilers": {},
-      "VGS Golden Knights": {},
-      "ANA Ducks": {},
-      "SJ Sharks": {},
-      "SEA Kraken": {},
-      "CAL Flames": {},
-      "VAN Canucks": {}
+      "EDM Oilers": {
+        "dazn": 165
+      },
+      "VGS Golden Knights": {
+        "dazn": 185
+      },
+      "ANA Ducks": {
+        "dazn": 700
+      },
+      "SJ Sharks": {
+        "dazn": 800
+      },
+      "SEA Kraken": {
+        "dazn": 6400
+      },
+      "CAL Flames": {
+        "dazn": 9900
+      },
+      "VAN Canucks": {
+        "dazn": 14900
+      }
     },
     "worst": {
       "Vancouver Canucks": {
@@ -11315,7 +11322,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 09:57",
+    "last_updated": "2026-09-30 10:07",
     "book_updated": {
       "dazn": "2026-09-30",
       "fanduel": "2026-09-30",
