@@ -2998,7 +2998,8 @@
         "prices": {
           "fanduel": 6000,
           "bet365": 10000,
-          "bookmaker": 7000
+          "bookmaker": 7000,
+          "betmgm": 6600
         }
       },
       "Quentin Musty": {
@@ -6699,7 +6700,7 @@
         "prices": {
           "caesars": 1000,
           "kambi": 1200,
-          "betmgm": 1000,
+          "betmgm": 800,
           "betano": 800
         }
       },
@@ -6717,7 +6718,7 @@
         "prices": {
           "caesars": 1200,
           "kambi": 3000,
-          "betmgm": 1800,
+          "betmgm": 2000,
           "betano": 1900
         }
       },
@@ -6726,7 +6727,7 @@
         "prices": {
           "caesars": 2000,
           "kambi": 3000,
-          "betmgm": 2800,
+          "betmgm": 3000,
           "betano": 2900
         }
       },
@@ -6798,7 +6799,7 @@
         "prices": {
           "caesars": 5000,
           "kambi": 3500,
-          "betmgm": 3300,
+          "betmgm": 3000,
           "betano": 3400
         }
       },
@@ -11283,7 +11284,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 01:36",
+    "last_updated": "2026-09-30 01:46",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-30",
@@ -11551,11 +11552,11 @@
             "draftkings": -380
           },
           "90": {
-            "betmgm": 125,
+            "betmgm": 105,
             "draftkings": 120
           },
           "100": {
-            "betmgm": 575
+            "betmgm": 500
           },
           "85": {
             "draftkings": -170
