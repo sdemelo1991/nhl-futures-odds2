@@ -789,6 +789,11 @@
         "line": 79.5,
         "over": -115,
         "under": -115
+      },
+      "fanduel": {
+        "line": 79.5,
+        "over": -113,
+        "under": -113
       }
     },
     "Nashville Predators": {
@@ -1027,6 +1032,11 @@
         "line": 104.5,
         "over": -115,
         "under": -115
+      },
+      "fanduel": {
+        "line": 103.5,
+        "over": -111,
+        "under": -115
       }
     },
     "Montreal Canadiens": {
@@ -1131,6 +1141,11 @@
         "line": 74.5,
         "over": 107,
         "under": -130
+      },
+      "fanduel": {
+        "line": 73.5,
+        "over": -106,
+        "under": -120
       }
     },
     "Toronto Maple Leafs": {
@@ -1654,6 +1669,11 @@
         "line": 104.5,
         "over": -120,
         "under": -110
+      },
+      "fanduel": {
+        "line": 104.5,
+        "over": -118,
+        "under": -108
       }
     },
     "New York Islanders": {
@@ -11302,7 +11322,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 02:36",
+    "last_updated": "2026-09-30 03:36",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-30",
