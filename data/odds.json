@@ -798,9 +798,9 @@
     },
     "Nashville Predators": {
       "fanduel": {
-        "line": 85.5,
-        "over": -120,
-        "under": -106
+        "line": 86.5,
+        "over": -106,
+        "under": -120
       },
       "kambi": {
         "line": 86.5,
@@ -1317,6 +1317,11 @@
         "line": 91.5,
         "over": -110,
         "under": -110
+      },
+      "fanduel": {
+        "line": 90.5,
+        "over": -120,
+        "under": -106
       }
     },
     "Carolina Hurricanes": {
@@ -1366,9 +1371,9 @@
         "under": 106
       },
       "fanduel": {
-        "line": 108.5,
-        "over": -125,
-        "under": -102
+        "line": 109.5,
+        "over": -111,
+        "under": -115
       },
       "betmgm": {
         "line": 108.5,
@@ -1378,9 +1383,9 @@
     },
     "Ottawa Senators": {
       "fanduel": {
-        "line": 95.5,
-        "over": -122,
-        "under": -104
+        "line": 96.5,
+        "over": -106,
+        "under": -120
       },
       "kambi": {
         "line": 93.5,
@@ -1735,9 +1740,9 @@
     },
     "New Jersey Devils": {
       "fanduel": {
-        "line": 96.5,
-        "over": -120,
-        "under": -106
+        "line": 97.5,
+        "over": -106,
+        "under": -120
       },
       "kambi": {
         "line": 95.5,
@@ -11317,7 +11322,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 06:56",
+    "last_updated": "2026-09-30 07:06",
     "book_updated": {
       "dazn": "2026-09-29",
       "fanduel": "2026-09-30",
