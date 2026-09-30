@@ -250,9 +250,9 @@
     },
     "Florida Panthers": {
       "betonline": {
-        "line": 107.5,
-        "over": 115,
-        "under": -145
+        "line": 108.5,
+        "over": 100,
+        "under": -130
       },
       "thescore": {
         "line": 106.5,
@@ -446,9 +446,9 @@
         "under": -115
       },
       "betonline": {
-        "line": 101.5,
-        "over": -115,
-        "under": -115
+        "line": 102.5,
+        "over": 100,
+        "under": -130
       },
       "thescore": {
         "line": 101.5,
@@ -508,7 +508,7 @@
         "under": -120
       },
       "betonline": {
-        "line": 102.5,
+        "line": 103.5,
         "over": -115,
         "under": -115
       },
@@ -565,9 +565,9 @@
         "under": 100
       },
       "betonline": {
-        "line": 84.5,
-        "over": -145,
-        "under": 115
+        "line": 85.5,
+        "over": -115,
+        "under": -115
       },
       "thescore": {
         "line": 86.5,
@@ -633,8 +633,8 @@
       },
       "betonline": {
         "line": 80.5,
-        "over": -115,
-        "under": -115
+        "over": 100,
+        "under": -130
       },
       "thescore": {
         "line": 82.5,
@@ -694,9 +694,9 @@
         "under": -120
       },
       "betonline": {
-        "line": 93.5,
-        "over": 115,
-        "under": -145
+        "line": 92.5,
+        "over": -115,
+        "under": -115
       },
       "thescore": {
         "line": 93.5,
@@ -1041,7 +1041,7 @@
     },
     "Montreal Canadiens": {
       "betonline": {
-        "line": 99.5,
+        "line": 100.5,
         "over": -115,
         "under": -115
       },
@@ -1099,8 +1099,8 @@
     "Vancouver Canucks": {
       "betonline": {
         "line": 74.5,
-        "over": 100,
-        "under": -130
+        "over": -115,
+        "under": -115
       },
       "thescore": {
         "line": 74.5,
@@ -1155,7 +1155,7 @@
         "under": -113
       },
       "betonline": {
-        "line": 95.5,
+        "line": 94.5,
         "over": -130,
         "under": 100
       },
@@ -1223,8 +1223,8 @@
       },
       "betonline": {
         "line": 96.5,
-        "over": 100,
-        "under": -130
+        "over": -115,
+        "under": -115
       },
       "thescore": {
         "line": 96.5,
@@ -1445,9 +1445,9 @@
     },
     "New York Rangers": {
       "betonline": {
-        "line": 87.5,
-        "over": -140,
-        "under": 110
+        "line": 88.5,
+        "over": -115,
+        "under": -115
       },
       "thescore": {
         "line": 89.5,
@@ -1694,8 +1694,8 @@
       },
       "betonline": {
         "line": 87.5,
-        "over": -110,
-        "under": -120
+        "over": 100,
+        "under": -130
       },
       "thescore": {
         "line": 88.5,
@@ -1755,9 +1755,9 @@
         "under": -110
       },
       "betonline": {
-        "line": 95.5,
-        "over": -130,
-        "under": 100
+        "line": 96.5,
+        "over": -115,
+        "under": -115
       },
       "thescore": {
         "line": 95.5,
@@ -1818,8 +1818,8 @@
       },
       "betonline": {
         "line": 100.5,
-        "over": -130,
-        "under": 100
+        "over": -145,
+        "under": 115
       },
       "thescore": {
         "line": 99.5,
@@ -1874,7 +1874,7 @@
         "under": -120
       },
       "betonline": {
-        "line": 84.5,
+        "line": 85.5,
         "over": -115,
         "under": -115
       },
@@ -2971,7 +2971,7 @@
       "Roger McQueen": {
         "team": "",
         "prices": {
-          "fanduel": 7000,
+          "fanduel": 4500,
           "betmgm": 5000,
           "betano": 5900,
           "betonline": 4500,
@@ -3016,7 +3016,7 @@
       "Trevor Connelly": {
         "team": "",
         "prices": {
-          "fanduel": 6000,
+          "fanduel": 3000,
           "bet365": 10000,
           "bookmaker": 7000,
           "betmgm": 6600
@@ -3100,7 +3100,7 @@
       "T.J. Hughes": {
         "team": "",
         "prices": {
-          "fanduel": 6000,
+          "fanduel": 2700,
           "betmgm": 6600,
           "betano": 4900,
           "draftkings": 15000,
@@ -7689,7 +7689,7 @@
         "kambi": -118,
         "betmgm": -130,
         "betano": -143,
-        "betonline": -115,
+        "betonline": -130,
         "thescore": -130,
         "draftkings": -150,
         "caesars": -130,
@@ -7704,7 +7704,7 @@
         "kambi": -109,
         "betmgm": 105,
         "betano": 108,
-        "betonline": -115,
+        "betonline": 100,
         "thescore": 100,
         "draftkings": 120,
         "caesars": 105,
@@ -7719,7 +7719,7 @@
       "yes": {
         "fanduel": 230,
         "betano": 215,
-        "betonline": 250,
+        "betonline": 230,
         "thescore": 290,
         "draftkings": 230,
         "caesars": 230,
@@ -7734,7 +7734,7 @@
       "no": {
         "fanduel": -310,
         "betano": -303,
-        "betonline": -325,
+        "betonline": -290,
         "thescore": -400,
         "draftkings": -310,
         "caesars": -300,
@@ -7753,7 +7753,7 @@
         "kambi": -125,
         "betmgm": -125,
         "betano": -125,
-        "betonline": -125,
+        "betonline": -120,
         "thescore": -115,
         "draftkings": -125,
         "caesars": -130,
@@ -7768,7 +7768,7 @@
         "kambi": 100,
         "betmgm": 100,
         "betano": -105,
-        "betonline": -105,
+        "betonline": -110,
         "thescore": -115,
         "draftkings": -105,
         "caesars": 105,
@@ -7785,7 +7785,7 @@
         "kambi": 550,
         "betmgm": 850,
         "betano": 700,
-        "betonline": 750,
+        "betonline": 650,
         "thescore": 550,
         "draftkings": 850,
         "caesars": 600,
@@ -7800,7 +7800,7 @@
         "kambi": -910,
         "betmgm": -1600,
         "betano": -1667,
-        "betonline": -1500,
+        "betonline": -1200,
         "thescore": -900,
         "draftkings": -1600,
         "caesars": -900,
@@ -7816,7 +7816,7 @@
         "fanduel": -900,
         "betmgm": -1000,
         "betano": -1250,
-        "betonline": -1000,
+        "betonline": -900,
         "thescore": -900,
         "draftkings": -1100,
         "caesars": -1100,
@@ -7831,7 +7831,7 @@
         "fanduel": 520,
         "betmgm": 625,
         "betano": 600,
-        "betonline": 600,
+        "betonline": 550,
         "thescore": 550,
         "draftkings": 700,
         "caesars": 700,
@@ -7847,7 +7847,7 @@
       "yes": {
         "fanduel": 430,
         "betano": 450,
-        "betonline": 400,
+        "betonline": 450,
         "thescore": 400,
         "draftkings": 600,
         "caesars": 375,
@@ -7862,7 +7862,7 @@
       "no": {
         "fanduel": -670,
         "betano": -833,
-        "betonline": -600,
+        "betonline": -700,
         "thescore": -600,
         "draftkings": -900,
         "caesars": -500,
@@ -7913,7 +7913,7 @@
         "kambi": 145,
         "betmgm": 150,
         "betano": 140,
-        "betonline": 135,
+        "betonline": 130,
         "thescore": 130,
         "draftkings": 150,
         "caesars": 135,
@@ -7928,7 +7928,7 @@
         "kambi": -182,
         "betmgm": -190,
         "betano": -189,
-        "betonline": -165,
+        "betonline": -160,
         "thescore": -170,
         "draftkings": -185,
         "caesars": -165,
@@ -7945,7 +7945,7 @@
         "kambi": -400,
         "betmgm": -425,
         "betano": -455,
-        "betonline": -400,
+        "betonline": -450,
         "thescore": -400,
         "draftkings": -450,
         "caesars": -440,
@@ -7960,7 +7960,7 @@
         "kambi": 300,
         "betmgm": 310,
         "betano": 300,
-        "betonline": 300,
+        "betonline": 325,
         "thescore": 290,
         "draftkings": 340,
         "caesars": 320,
@@ -7977,7 +7977,7 @@
         "kambi": 225,
         "betmgm": 290,
         "betano": 275,
-        "betonline": 240,
+        "betonline": 250,
         "thescore": 210,
         "draftkings": 250,
         "caesars": 275,
@@ -7992,7 +7992,7 @@
         "kambi": -295,
         "betmgm": -375,
         "betano": -400,
-        "betonline": -300,
+        "betonline": -325,
         "thescore": -280,
         "draftkings": -350,
         "caesars": -350,
@@ -8008,7 +8008,7 @@
         "fanduel": -770,
         "betmgm": -750,
         "betano": -769,
-        "betonline": -900,
+        "betonline": -800,
         "thescore": -800,
         "draftkings": -1100,
         "caesars": -700,
@@ -8023,7 +8023,7 @@
         "fanduel": 470,
         "betmgm": 500,
         "betano": 450,
-        "betonline": 550,
+        "betonline": 500,
         "thescore": 475,
         "draftkings": 650,
         "caesars": 475,
@@ -8040,7 +8040,7 @@
         "fanduel": -670,
         "betmgm": -750,
         "betano": -769,
-        "betonline": -750,
+        "betonline": -800,
         "thescore": -700,
         "draftkings": -1000,
         "caesars": -900,
@@ -8054,7 +8054,7 @@
         "fanduel": 430,
         "betmgm": 500,
         "betano": 450,
-        "betonline": 475,
+        "betonline": 500,
         "thescore": 450,
         "draftkings": 650,
         "caesars": 600,
@@ -8133,7 +8133,7 @@
       "yes": {
         "fanduel": -188,
         "betano": -200,
-        "betonline": -180,
+        "betonline": -200,
         "thescore": -170,
         "draftkings": -180,
         "caesars": -210,
@@ -8148,7 +8148,7 @@
       "no": {
         "fanduel": 146,
         "betano": 150,
-        "betonline": 150,
+        "betonline": 160,
         "thescore": 130,
         "draftkings": 145,
         "caesars": 165,
@@ -8167,7 +8167,7 @@
         "kambi": 220,
         "betmgm": 250,
         "betano": 215,
-        "betonline": 210,
+        "betonline": 225,
         "thescore": 225,
         "draftkings": 250,
         "caesars": 230,
@@ -8182,7 +8182,7 @@
         "kambi": -286,
         "betmgm": -325,
         "betano": -303,
-        "betonline": -270,
+        "betonline": -285,
         "thescore": -300,
         "draftkings": -320,
         "caesars": -300,
@@ -8199,7 +8199,7 @@
         "kambi": -143,
         "betmgm": -135,
         "betano": -139,
-        "betonline": -130,
+        "betonline": -145,
         "thescore": -145,
         "draftkings": -135,
         "caesars": -150,
@@ -8214,7 +8214,7 @@
         "kambi": 115,
         "betmgm": 110,
         "betano": 105,
-        "betonline": 100,
+        "betonline": 115,
         "thescore": 110,
         "draftkings": 105,
         "caesars": 122,
@@ -8231,7 +8231,7 @@
         "kambi": 270,
         "betmgm": 250,
         "betano": 250,
-        "betonline": 250,
+        "betonline": 240,
         "thescore": 250,
         "draftkings": 220,
         "caesars": 215,
@@ -8246,7 +8246,7 @@
         "kambi": -360,
         "betmgm": -325,
         "betano": -357,
-        "betonline": -325,
+        "betonline": -300,
         "thescore": -325,
         "draftkings": -275,
         "caesars": -275,
@@ -8261,7 +8261,7 @@
       "yes": {
         "fanduel": 215,
         "betano": 215,
-        "betonline": 170,
+        "betonline": 200,
         "thescore": 210,
         "draftkings": 235,
         "caesars": 200,
@@ -8276,7 +8276,7 @@
       "no": {
         "fanduel": -290,
         "betano": -303,
-        "betonline": -210,
+        "betonline": -260,
         "thescore": -280,
         "draftkings": -290,
         "caesars": -250,
@@ -8586,7 +8586,7 @@
         "fanduel": -650,
         "betmgm": -550,
         "betano": -667,
-        "betonline": -900,
+        "betonline": -750,
         "thescore": -600,
         "draftkings": -900,
         "caesars": -625,
@@ -8601,7 +8601,7 @@
         "fanduel": 420,
         "betmgm": 400,
         "betano": 400,
-        "betonline": 550,
+        "betonline": 475,
         "thescore": 400,
         "draftkings": 550,
         "caesars": 460,
@@ -8651,7 +8651,7 @@
         "kambi": 200,
         "betmgm": 250,
         "betano": 215,
-        "betonline": 230,
+        "betonline": 200,
         "thescore": 200,
         "draftkings": 240,
         "caesars": 210,
@@ -8666,7 +8666,7 @@
         "kambi": -265,
         "betmgm": -325,
         "betano": -303,
-        "betonline": -290,
+        "betonline": -260,
         "thescore": -260,
         "draftkings": -350,
         "caesars": -265,
@@ -8683,7 +8683,7 @@
         "kambi": -200,
         "betmgm": -185,
         "betano": -200,
-        "betonline": -200,
+        "betonline": -210,
         "thescore": -190,
         "draftkings": -185,
         "caesars": -200,
@@ -8698,7 +8698,7 @@
         "kambi": 160,
         "betmgm": 145,
         "betano": 150,
-        "betonline": 160,
+        "betonline": 170,
         "thescore": 140,
         "draftkings": 150,
         "caesars": 165,
@@ -11328,7 +11328,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 11:27",
+    "last_updated": "2026-09-30 11:37",
     "book_updated": {
       "dazn": "2026-09-30",
       "fanduel": "2026-09-30",
