@@ -1558,8 +1558,8 @@
       },
       "pinnacle": {
         "line": 95.5,
-        "over": 121,
-        "under": -147
+        "over": 135,
+        "under": -164
       }
     },
     "Boston Bruins": {
@@ -1926,7 +1926,7 @@
         "team": "",
         "prices": {
           "fanduel": 600,
-          "kambi": 750,
+          "kambi": 600,
           "betmgm": 650,
           "betano": 600,
           "betonline": 400,
@@ -1943,7 +1943,7 @@
         "team": "",
         "prices": {
           "fanduel": 500,
-          "kambi": 425,
+          "kambi": 500,
           "betmgm": 450,
           "betano": 500,
           "betonline": 1000,
@@ -2011,7 +2011,7 @@
         "team": "",
         "prices": {
           "fanduel": 1400,
-          "kambi": 1600,
+          "kambi": 1000,
           "betmgm": 2000,
           "betano": 1900,
           "betonline": 1600,
@@ -2164,7 +2164,7 @@
         "team": "",
         "prices": {
           "fanduel": 4500,
-          "kambi": 4000,
+          "kambi": 3000,
           "betmgm": 5000,
           "betano": 4400,
           "betonline": 3300,
@@ -2181,7 +2181,7 @@
         "team": "",
         "prices": {
           "fanduel": 5000,
-          "kambi": 5000,
+          "kambi": 3000,
           "betmgm": 5000,
           "betano": 4900,
           "betonline": 4000,
@@ -11328,7 +11328,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 13:57",
+    "last_updated": "2026-09-30 14:47",
     "book_updated": {
       "dazn": "2026-09-30",
       "fanduel": "2026-09-30",
