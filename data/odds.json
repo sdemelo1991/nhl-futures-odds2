@@ -2971,7 +2971,7 @@
       "Roger McQueen": {
         "team": "",
         "prices": {
-          "fanduel": 4500,
+          "fanduel": 6500,
           "betmgm": 5000,
           "betano": 5900,
           "betonline": 4500,
@@ -8517,7 +8517,7 @@
       "yes": {
         "fanduel": -106,
         "betano": -115,
-        "betonline": -130,
+        "betonline": -120,
         "thescore": -115,
         "draftkings": -125,
         "caesars": -105,
@@ -8532,7 +8532,7 @@
       "no": {
         "fanduel": -120,
         "betano": -115,
-        "betonline": 100,
+        "betonline": -110,
         "thescore": -115,
         "draftkings": -105,
         "caesars": -115,
@@ -11328,7 +11328,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 11:37",
+    "last_updated": "2026-09-30 13:37",
     "book_updated": {
       "dazn": "2026-09-30",
       "fanduel": "2026-09-30",
