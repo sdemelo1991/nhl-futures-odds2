@@ -5632,7 +5632,7 @@
           "caesars": 900,
           "circa": 1100,
           "betmgm": 1000,
-          "betano": 1000
+          "betano": 900
         }
       },
       "Connor McDavid": {
@@ -5642,7 +5642,7 @@
           "caesars": 1500,
           "circa": 1100,
           "betmgm": 1400,
-          "betano": 1000
+          "betano": 900
         }
       },
       "Wyatt Johnston": {
@@ -5691,7 +5691,7 @@
           "caesars": 2500,
           "circa": 30000,
           "betmgm": 2200,
-          "betano": 2200
+          "betano": 2100
         }
       },
       "Dylan Guenther": {
@@ -6272,9 +6272,7 @@
       },
       "Tim Stuetzle": {
         "team": "",
-        "prices": {
-          "betano": 19900
-        }
+        "prices": {}
       }
     },
     "jack_adams": {
@@ -6287,7 +6285,7 @@
           "kambi": 850,
           "circa": 600,
           "betmgm": 900,
-          "betano": 850
+          "betano": 800
         }
       },
       "Spencer Carbery": {
@@ -6299,7 +6297,7 @@
           "kambi": 1300,
           "circa": 475,
           "betmgm": 1600,
-          "betano": 1500
+          "betano": 1200
         }
       },
       "Paul Maurice": {
@@ -6323,7 +6321,7 @@
           "kambi": 1700,
           "circa": 1000,
           "betmgm": 2500,
-          "betano": 2400
+          "betano": 2100
         }
       },
       "Jim Hiller": {
@@ -6335,7 +6333,7 @@
           "kambi": 1400,
           "circa": 2000,
           "betmgm": 1600,
-          "betano": 1900
+          "betano": 1700
         }
       },
       "Sheldon Keefe": {
@@ -6347,7 +6345,7 @@
           "kambi": 1500,
           "circa": 1400,
           "betmgm": 1500,
-          "betano": 1600
+          "betano": 1400
         }
       },
       "Rick Tocchet": {
@@ -6359,7 +6357,7 @@
           "kambi": 2000,
           "circa": 4500,
           "betmgm": 2200,
-          "betano": 2200
+          "betano": 2100
         }
       },
       "Martin St. Louis": {
@@ -6371,7 +6369,7 @@
           "kambi": 2000,
           "circa": 2300,
           "betmgm": 1600,
-          "betano": 2200
+          "betano": 1900
         }
       },
       "John Hynes": {
@@ -6383,7 +6381,7 @@
           "kambi": 1700,
           "circa": 2200,
           "betmgm": 2000,
-          "betano": 1900
+          "betano": 1700
         }
       },
       "Glen Gulutzan": {
@@ -6395,7 +6393,7 @@
           "kambi": 2500,
           "circa": 2500,
           "betmgm": 2500,
-          "betano": 2400
+          "betano": 2100
         }
       },
       "Rod Brind'Amour": {
@@ -6407,7 +6405,7 @@
           "kambi": 2300,
           "circa": 2500,
           "betmgm": 3000,
-          "betano": 2900
+          "betano": 2400
         }
       },
       "Jim Montgomery": {
@@ -6419,7 +6417,7 @@
           "kambi": 3500,
           "circa": 1800,
           "betmgm": 4000,
-          "betano": 3900
+          "betano": 2900
         }
       },
       "Peter Laviolette": {
@@ -6443,7 +6441,7 @@
           "kambi": 2500,
           "circa": 3500,
           "betmgm": 2200,
-          "betano": 2200
+          "betano": 2400
         }
       },
       "Mike Sullivan": {
@@ -6467,7 +6465,7 @@
           "kambi": 2500,
           "circa": 3500,
           "betmgm": 2000,
-          "betano": 2200
+          "betano": 2100
         }
       },
       "Rick Bowness": {
@@ -6479,7 +6477,7 @@
           "kambi": 2300,
           "circa": 2200,
           "betmgm": 2000,
-          "betano": 1700
+          "betano": 1900
         }
       },
       "Peter DeBoer": {
@@ -6503,7 +6501,7 @@
           "kambi": 2500,
           "circa": 4000,
           "betmgm": 2200,
-          "betano": 2200
+          "betano": 2400
         }
       },
       "Jared Bednar": {
@@ -6515,7 +6513,7 @@
           "kambi": 2000,
           "circa": 3500,
           "betmgm": 2000,
-          "betano": 1900
+          "betano": 2100
         }
       },
       "Travis Green": {
@@ -6539,7 +6537,7 @@
           "kambi": 5000,
           "circa": 4000,
           "betmgm": 5000,
-          "betano": 3400
+          "betano": 3900
         }
       },
       "Andrew Brunette": {
@@ -6551,7 +6549,7 @@
           "kambi": 5000,
           "circa": 2200,
           "betmgm": 4000,
-          "betano": 3400
+          "betano": 3900
         }
       },
       "Marco Sturm": {
@@ -6563,7 +6561,7 @@
           "kambi": 5000,
           "circa": 7000,
           "betmgm": 3500,
-          "betano": 3400
+          "betano": 4400
         }
       },
       "Scott Arniel": {
@@ -6575,7 +6573,7 @@
           "kambi": 6000,
           "circa": 4000,
           "betmgm": 4000,
-          "betano": 4900
+          "betano": 5400
         }
       },
       "Joel Quenneville": {
@@ -6587,7 +6585,7 @@
           "kambi": 5000,
           "circa": 7000,
           "betmgm": 3500,
-          "betano": 3900
+          "betano": 4900
         }
       },
       "Dan Muse": {
@@ -6599,7 +6597,7 @@
           "kambi": 5000,
           "circa": 7900,
           "betmgm": 3500,
-          "betano": 3400
+          "betano": 3900
         }
       },
       "Jeff Blashill": {
@@ -6623,7 +6621,7 @@
           "kambi": 7500,
           "circa": 7900,
           "betmgm": 5000,
-          "betano": 3900
+          "betano": 6900
         }
       },
       "Todd McLellan": {
@@ -6635,7 +6633,7 @@
           "kambi": 7500,
           "circa": 5000,
           "betmgm": 3000,
-          "betano": 2900
+          "betano": 4400
         }
       },
       "Manny Malhotra": {
@@ -6647,7 +6645,7 @@
           "kambi": 7500,
           "circa": 10000,
           "betmgm": 5000,
-          "betano": 4900
+          "betano": 7400
         }
       },
       "Ryan Huska": {
@@ -6659,7 +6657,7 @@
           "kambi": 7500,
           "circa": 10000,
           "betmgm": 5000,
-          "betano": 4900
+          "betano": 7400
         }
       }
     },
@@ -6706,7 +6704,7 @@
           "caesars": 1000,
           "kambi": 1500,
           "betmgm": 1000,
-          "betano": 1000
+          "betano": 900
         }
       },
       "David Pastrnak": {
@@ -7356,9 +7354,7 @@
       },
       "Tim Stuetzle": {
         "team": "",
-        "prices": {
-          "betano": 29900
-        }
+        "prices": {}
       }
     },
     "selke": {
@@ -7367,7 +7363,7 @@
         "prices": {
           "kambi": 125,
           "betmgm": 175,
-          "betano": 350
+          "betano": 175
         }
       },
       "Alex Tuch": {
@@ -7383,7 +7379,7 @@
         "prices": {
           "kambi": 1100,
           "betmgm": 750,
-          "betano": 750
+          "betano": 700
         }
       },
       "Anton Lundell": {
@@ -7423,7 +7419,7 @@
         "prices": {
           "kambi": 1300,
           "betmgm": 1000,
-          "betano": 1000
+          "betano": 1400
         }
       },
       "Clayton Keller": {
@@ -7439,7 +7435,7 @@
         "prices": {
           "kambi": 5000,
           "betmgm": 5500,
-          "betano": 4900
+          "betano": 5900
         }
       },
       "Dylan Larkin": {
@@ -7479,7 +7475,7 @@
         "prices": {
           "kambi": 17500,
           "betmgm": 12500,
-          "betano": 14900
+          "betano": 9900
         }
       },
       "Jordan Staal": {
@@ -7503,7 +7499,7 @@
         "prices": {
           "kambi": 5000,
           "betmgm": 4000,
-          "betano": 3900
+          "betano": 1900
         }
       },
       "Mark Stone": {
@@ -7543,7 +7539,7 @@
         "prices": {
           "kambi": 4000,
           "betmgm": 3500,
-          "betano": 3400
+          "betano": 7400
         }
       },
       "Nick Suzuki": {
@@ -7551,7 +7547,7 @@
         "prices": {
           "kambi": 500,
           "betmgm": 450,
-          "betano": 450
+          "betano": 400
         }
       },
       "Nico Hischier": {
@@ -7567,7 +7563,7 @@
         "prices": {
           "kambi": 12500,
           "betmgm": 8000,
-          "betano": 7900
+          "betano": 9900
         }
       },
       "Robert Thomas": {
@@ -7599,7 +7595,7 @@
         "prices": {
           "kambi": 1700,
           "betmgm": 1500,
-          "betano": 1500
+          "betano": 1400
         }
       },
       "Sebastian Aho": {
@@ -7607,7 +7603,7 @@
         "prices": {
           "kambi": 1700,
           "betmgm": 1500,
-          "betano": 1500
+          "betano": 1400
         }
       },
       "Seth Jarvis": {
@@ -7623,7 +7619,7 @@
         "prices": {
           "kambi": 2500,
           "betmgm": 2000,
-          "betano": 1900
+          "betano": 2400
         }
       },
       "Sidney Crosby": {
@@ -7646,8 +7642,7 @@
         "team": "",
         "prices": {
           "kambi": 2500,
-          "betmgm": 2000,
-          "betano": 1900
+          "betmgm": 2000
         }
       }
     }
@@ -7858,7 +7853,8 @@
         "circa": -1150,
         "pinnacle": -1604,
         "dazn": -3333,
-        "betano": -3333
+        "betano": -3333,
+        "kambi": -1250
       },
       "no": {
         "fanduel": 870,
@@ -7872,7 +7868,8 @@
         "circa": 750,
         "pinnacle": 1065,
         "dazn": 900,
-        "betano": 900
+        "betano": 900,
+        "kambi": 700
       }
     },
     "Columbus Blue Jackets": {
@@ -7984,8 +7981,7 @@
         "hardrock": -850,
         "circa": -1100,
         "pinnacle": -791,
-        "dazn": -1000,
-        "kambi": -835
+        "dazn": -1000
       },
       "no": {
         "fanduel": 460,
@@ -7999,8 +7995,7 @@
         "hardrock": 525,
         "circa": 725,
         "pinnacle": 581,
-        "dazn": 520,
-        "kambi": 525
+        "dazn": 520
       }
     },
     "Florida Panthers": {
@@ -11284,7 +11279,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-01 04:46",
+    "last_updated": "2026-10-01 07:36",
     "book_updated": {
       "dazn": "2026-10-01",
       "fanduel": "2026-10-01",
