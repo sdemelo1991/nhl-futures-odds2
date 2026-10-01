@@ -3,13 +3,8 @@
     "Colorado Avalanche": {
       "fanduel": {
         "line": 109.5,
-        "over": -108,
-        "under": -118
-      },
-      "betmgm": {
-        "line": 107.5,
-        "over": -125,
-        "under": -105
+        "over": null,
+        "under": null
       },
       "betonline": {
         "line": 107.5,
@@ -184,13 +179,8 @@
     "Los Angeles Kings": {
       "fanduel": {
         "line": 95.5,
-        "over": -111,
-        "under": -115
-      },
-      "betmgm": {
-        "line": 95.5,
-        "over": -110,
-        "under": -120
+        "over": null,
+        "under": null
       },
       "betonline": {
         "line": 95.5,
@@ -11238,10 +11228,10 @@
     }
   },
   "meta": {
-    "last_updated": "2026-09-30 23:27",
+    "last_updated": "2026-10-01 00:36",
     "book_updated": {
-      "dazn": "2026-09-30",
-      "fanduel": "2026-09-30",
+      "dazn": "2026-10-01",
+      "fanduel": "2026-10-01",
       "kalshi": "2026-08-20",
       "circa": "2026-09-04",
       "bookmaker": "2026-09-04",
