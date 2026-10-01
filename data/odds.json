@@ -177,8 +177,8 @@
       },
       "pinnacle": {
         "line": 77.5,
-        "over": 103,
-        "under": -125
+        "over": -101,
+        "under": -120
       }
     },
     "Los Angeles Kings": {
@@ -3689,7 +3689,7 @@
         "team": "",
         "prices": {
           "fanduel": 3000,
-          "kambi": 3700,
+          "kambi": 3500,
           "betmgm": 4000,
           "betano": 3400,
           "betonline": 4000,
@@ -4926,7 +4926,7 @@
         "team": "",
         "prices": {
           "fanduel": 650,
-          "kambi": 650,
+          "kambi": 550,
           "betmgm": 750,
           "betano": 650,
           "betonline": 600,
@@ -6684,7 +6684,7 @@
         "team": "",
         "prices": {
           "caesars": 425,
-          "kambi": 400,
+          "kambi": 300,
           "betmgm": 325,
           "betano": 300
         }
@@ -6693,7 +6693,7 @@
         "team": "",
         "prices": {
           "caesars": 1000,
-          "kambi": 1200,
+          "kambi": 1000,
           "betmgm": 800,
           "betano": 800
         }
@@ -8493,7 +8493,8 @@
         "pinnacle": -128,
         "betmgm": -118,
         "dazn": -115,
-        "betano": -115
+        "betano": -115,
+        "kambi": -134
       },
       "no": {
         "fanduel": -111,
@@ -8507,7 +8508,8 @@
         "pinnacle": 106,
         "betmgm": -105,
         "dazn": -115,
-        "betano": -115
+        "betano": -115,
+        "kambi": 105
       }
     },
     "Utah Hockey Club": {
@@ -10013,7 +10015,7 @@
       },
       "Carolina Hurricanes": {
         "fanduel": 600,
-        "kambi": 600,
+        "kambi": 550,
         "betmgm": 500,
         "betano": 500,
         "thescore": 600,
@@ -10037,7 +10039,7 @@
       },
       "Tampa Bay Lightning": {
         "fanduel": 1000,
-        "kambi": 1100,
+        "kambi": 1000,
         "betmgm": 1100,
         "betano": 900,
         "thescore": 1100,
@@ -10049,7 +10051,7 @@
       },
       "Vegas Golden Knights": {
         "fanduel": 1300,
-        "kambi": 1100,
+        "kambi": 1200,
         "betmgm": 1000,
         "betano": 1100,
         "thescore": 1000,
@@ -10061,7 +10063,7 @@
       },
       "Edmonton Oilers": {
         "fanduel": 1200,
-        "kambi": 1000,
+        "kambi": 1100,
         "betmgm": 950,
         "betano": 900,
         "thescore": 1000,
@@ -10472,7 +10474,7 @@
         "kambi": 160,
         "betmgm": 165,
         "betano": 165,
-        "betonline": 185,
+        "betonline": 190,
         "thescore": 175,
         "draftkings": 140,
         "bookmaker": 150,
@@ -10517,7 +10519,7 @@
         "kambi": 1100,
         "betmgm": 1000,
         "betano": 900,
-        "betonline": 1000,
+        "betonline": 1100,
         "thescore": 850,
         "draftkings": 900,
         "bookmaker": 901,
@@ -10577,7 +10579,7 @@
         "kambi": 4000,
         "betmgm": 2800,
         "betano": 2400,
-        "betonline": 4500,
+        "betonline": 2800,
         "thescore": 3000,
         "draftkings": 3500,
         "bookmaker": 3305,
@@ -10591,7 +10593,7 @@
         "fanduel": 115,
         "kambi": 115,
         "betano": 115,
-        "betonline": 140,
+        "betonline": 135,
         "thescore": 130,
         "draftkings": 120,
         "bookmaker": 125,
@@ -10637,7 +10639,7 @@
         "fanduel": 650,
         "kambi": 800,
         "betano": 700,
-        "betonline": 625,
+        "betonline": 675,
         "thescore": 800,
         "draftkings": 800,
         "bookmaker": 600,
@@ -10834,7 +10836,7 @@
         "fanduel": 165,
         "kambi": 170,
         "betmgm": 170,
-        "betonline": 160,
+        "betonline": 170,
         "thescore": 175,
         "draftkings": 160,
         "bookmaker": 180,
@@ -10849,7 +10851,7 @@
         "fanduel": 190,
         "kambi": 185,
         "betmgm": 160,
-        "betonline": 215,
+        "betonline": 205,
         "thescore": 200,
         "draftkings": 185,
         "bookmaker": 188,
@@ -11293,7 +11295,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-01 07:57",
+    "last_updated": "2026-10-01 08:57",
     "book_updated": {
       "dazn": "2026-10-01",
       "fanduel": "2026-10-01",
