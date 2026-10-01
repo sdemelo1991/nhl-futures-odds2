@@ -50,6 +50,11 @@
         "line": 108.5,
         "over": -115,
         "under": -115
+      },
+      "fanduel": {
+        "line": 109.5,
+        "over": -120,
+        "under": -106
       }
     },
     "Buffalo Sabres": {
@@ -226,6 +231,11 @@
         "line": 94.5,
         "over": -120,
         "under": -110
+      },
+      "fanduel": {
+        "line": 94.5,
+        "over": -111,
+        "under": -115
       }
     },
     "Florida Panthers": {
@@ -397,6 +407,11 @@
         "line": 89.5,
         "over": -130,
         "under": 100
+      },
+      "fanduel": {
+        "line": 89.5,
+        "over": -118,
+        "under": -108
       }
     },
     "Minnesota Wild": {
@@ -697,6 +712,11 @@
         "line": 93.5,
         "over": -104,
         "under": -117
+      },
+      "fanduel": {
+        "line": 92.5,
+        "over": -106,
+        "under": -120
       }
     },
     "Chicago Blackhawks": {
@@ -1158,6 +1178,11 @@
         "line": 96.5,
         "over": -110,
         "under": -120
+      },
+      "fanduel": {
+        "line": 96.5,
+        "over": -108,
+        "under": -118
       }
     },
     "Utah Mammoth": {
@@ -1681,6 +1706,11 @@
         "line": 87.5,
         "over": -110,
         "under": -120
+      },
+      "fanduel": {
+        "line": 84.5,
+        "over": -120,
+        "under": -106
       }
     },
     "New Jersey Devils": {
@@ -11230,7 +11260,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-01 01:56",
+    "last_updated": "2026-10-01 02:06",
     "book_updated": {
       "dazn": "2026-10-01",
       "fanduel": "2026-10-01",
