@@ -45,6 +45,11 @@
         "line": 107.5,
         "over": -110,
         "under": -110
+      },
+      "betmgm": {
+        "line": 108.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Buffalo Sabres": {
@@ -216,6 +221,11 @@
         "line": 95.5,
         "over": -115,
         "under": -105
+      },
+      "betmgm": {
+        "line": 94.5,
+        "over": -120,
+        "under": -110
       }
     },
     "Florida Panthers": {
@@ -7999,7 +8009,8 @@
         "bet365": -200,
         "hardrock": -185,
         "circa": -185,
-        "pinnacle": -166
+        "pinnacle": -166,
+        "betmgm": -170
       },
       "no": {
         "fanduel": 144,
@@ -8010,7 +8021,8 @@
         "bet365": 155,
         "hardrock": 150,
         "circa": 150,
-        "pinnacle": 136
+        "pinnacle": 136,
+        "betmgm": 140
       }
     },
     "Minnesota Wild": {
@@ -11218,7 +11230,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-01 00:46",
+    "last_updated": "2026-10-01 00:56",
     "book_updated": {
       "dazn": "2026-10-01",
       "fanduel": "2026-10-01",
