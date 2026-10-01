@@ -55,8 +55,8 @@
     "Buffalo Sabres": {
       "fanduel": {
         "line": 96.5,
-        "over": -106,
-        "under": -120
+        "over": -111,
+        "under": -115
       },
       "kambi": {
         "line": 96.5,
@@ -117,8 +117,8 @@
     "Calgary Flames": {
       "fanduel": {
         "line": 75.5,
-        "over": -113,
-        "under": -113
+        "over": -115,
+        "under": -111
       },
       "kambi": {
         "line": 78.5,
@@ -288,8 +288,8 @@
     "San Jose Sharks": {
       "fanduel": {
         "line": 92.5,
-        "over": -113,
-        "under": -113
+        "over": -111,
+        "under": -115
       },
       "kambi": {
         "line": 94.5,
@@ -402,8 +402,8 @@
     "Minnesota Wild": {
       "fanduel": {
         "line": 102.5,
-        "over": -113,
-        "under": -113
+        "over": -115,
+        "under": -111
       },
       "kambi": {
         "line": 101.5,
@@ -411,9 +411,9 @@
         "under": -124
       },
       "betmgm": {
-        "line": 102.5,
-        "over": -115,
-        "under": -115
+        "line": 101.5,
+        "over": -105,
+        "under": -125
       },
       "betonline": {
         "line": 102.5,
@@ -588,8 +588,8 @@
     "Seattle Kraken": {
       "fanduel": {
         "line": 80.5,
-        "over": -111,
-        "under": -115
+        "over": -108,
+        "under": -118
       },
       "kambi": {
         "line": 82.5,
@@ -752,15 +752,15 @@
       },
       "fanduel": {
         "line": 79.5,
-        "over": -113,
-        "under": -113
+        "over": -115,
+        "under": -111
       }
     },
     "Nashville Predators": {
       "fanduel": {
         "line": 86.5,
-        "over": -104,
-        "under": -122
+        "over": -106,
+        "under": -120
       },
       "kambi": {
         "line": 86.5,
@@ -821,8 +821,8 @@
     "Detroit Red Wings": {
       "fanduel": {
         "line": 86.5,
-        "over": -108,
-        "under": -118
+        "over": -104,
+        "under": -122
       },
       "kambi": {
         "line": 86.5,
@@ -883,8 +883,8 @@
     "Dallas Stars": {
       "fanduel": {
         "line": 101.5,
-        "over": -125,
-        "under": -102
+        "over": -122,
+        "under": -104
       },
       "kambi": {
         "line": 100.5,
@@ -995,8 +995,8 @@
       },
       "fanduel": {
         "line": 103.5,
-        "over": -111,
-        "under": -115
+        "over": -113,
+        "under": -113
       }
     },
     "Montreal Canadiens": {
@@ -1047,8 +1047,8 @@
       },
       "fanduel": {
         "line": 99.5,
-        "over": -120,
-        "under": -106
+        "over": -115,
+        "under": -111
       },
       "betmgm": {
         "line": 101.5,
@@ -1104,7 +1104,7 @@
       },
       "fanduel": {
         "line": 73.5,
-        "over": -125,
+        "over": -122,
         "under": -104
       }
     },
@@ -1164,7 +1164,7 @@
       "fanduel": {
         "line": 97.5,
         "over": -113,
-        "under": -113
+        "under": -115
       },
       "kambi": {
         "line": 96.5,
@@ -1275,8 +1275,8 @@
       },
       "fanduel": {
         "line": 90.5,
-        "over": -122,
-        "under": -104
+        "over": -115,
+        "under": -111
       }
     },
     "Carolina Hurricanes": {
@@ -1327,8 +1327,8 @@
       },
       "fanduel": {
         "line": 109.5,
-        "over": -111,
-        "under": -115
+        "over": -106,
+        "under": -120
       },
       "betmgm": {
         "line": 108.5,
@@ -1458,8 +1458,8 @@
     "Anaheim Ducks": {
       "fanduel": {
         "line": 92.5,
-        "over": -113,
-        "under": -113
+        "over": -111,
+        "under": -115
       },
       "kambi": {
         "line": 96.5,
@@ -1565,8 +1565,8 @@
       },
       "fanduel": {
         "line": 88.5,
-        "over": -111,
-        "under": -115
+        "over": -113,
+        "under": -113
       },
       "betmgm": {
         "line": 88.5,
@@ -1867,7 +1867,7 @@
         "prices": {
           "fanduel": 600,
           "kambi": 600,
-          "betmgm": 650,
+          "betmgm": 600,
           "betano": 600,
           "betonline": 400,
           "thescore": 600,
@@ -1884,7 +1884,7 @@
         "prices": {
           "fanduel": 500,
           "kambi": 500,
-          "betmgm": 450,
+          "betmgm": 500,
           "betano": 500,
           "betonline": 1000,
           "thescore": 600,
@@ -1901,7 +1901,7 @@
         "prices": {
           "fanduel": 800,
           "kambi": 900,
-          "betmgm": 1000,
+          "betmgm": 900,
           "betano": 900,
           "betonline": 850,
           "thescore": 1000,
@@ -1918,7 +1918,7 @@
         "prices": {
           "fanduel": 1000,
           "kambi": 650,
-          "betmgm": 750,
+          "betmgm": 850,
           "betano": 900,
           "betonline": 900,
           "thescore": 900,
@@ -1935,7 +1935,7 @@
         "prices": {
           "fanduel": 1000,
           "kambi": 700,
-          "betmgm": 900,
+          "betmgm": 850,
           "betano": 900,
           "betonline": 1000,
           "thescore": 900,
@@ -7625,7 +7625,7 @@
   "playoffs": {
     "Anaheim Ducks": {
       "yes": {
-        "fanduel": -128,
+        "fanduel": -125,
         "kambi": -118,
         "betmgm": -130,
         "betano": -143,
@@ -7640,7 +7640,7 @@
         "dazn": -143
       },
       "no": {
-        "fanduel": 100,
+        "fanduel": -102,
         "kambi": -109,
         "betmgm": 105,
         "betano": 108,
@@ -7657,7 +7657,7 @@
     },
     "Boston Bruins": {
       "yes": {
-        "fanduel": 235,
+        "fanduel": 230,
         "betano": 215,
         "betonline": 230,
         "thescore": 290,
@@ -7672,7 +7672,7 @@
         "kambi": 200
       },
       "no": {
-        "fanduel": -330,
+        "fanduel": -310,
         "betano": -303,
         "betonline": -290,
         "thescore": -400,
@@ -7689,7 +7689,7 @@
     },
     "Buffalo Sabres": {
       "yes": {
-        "fanduel": -115,
+        "fanduel": -118,
         "kambi": -125,
         "betmgm": -125,
         "betano": -125,
@@ -7704,7 +7704,7 @@
         "dazn": -125
       },
       "no": {
-        "fanduel": -113,
+        "fanduel": -108,
         "kambi": 100,
         "betmgm": 100,
         "betano": -105,
@@ -7817,7 +7817,7 @@
     },
     "Colorado Avalanche": {
       "yes": {
-        "fanduel": -1600,
+        "fanduel": -2200,
         "betmgm": -1600,
         "betonline": -1600,
         "thescore": -1400,
@@ -7829,7 +7829,7 @@
         "pinnacle": -1604
       },
       "no": {
-        "fanduel": 750,
+        "fanduel": 870,
         "betmgm": 800,
         "betonline": 800,
         "thescore": 750,
@@ -7843,7 +7843,7 @@
     },
     "Columbus Blue Jackets": {
       "yes": {
-        "fanduel": 154,
+        "fanduel": 158,
         "kambi": 145,
         "betmgm": 150,
         "betano": 140,
@@ -7858,7 +7858,7 @@
         "dazn": 140
       },
       "no": {
-        "fanduel": -200,
+        "fanduel": -205,
         "kambi": -182,
         "betmgm": -190,
         "betano": -189,
@@ -7939,7 +7939,7 @@
     },
     "Edmonton Oilers": {
       "yes": {
-        "fanduel": -720,
+        "fanduel": -750,
         "betmgm": -750,
         "betano": -769,
         "betonline": -800,
@@ -7954,7 +7954,7 @@
         "kambi": -835
       },
       "no": {
-        "fanduel": 450,
+        "fanduel": 460,
         "betmgm": 500,
         "betano": 450,
         "betonline": 500,
@@ -8001,7 +8001,7 @@
     },
     "Los Angeles Kings": {
       "yes": {
-        "fanduel": -186,
+        "fanduel": -172,
         "betonline": -180,
         "thescore": -190,
         "draftkings": -185,
@@ -8013,7 +8013,7 @@
         "betmgm": -155
       },
       "no": {
-        "fanduel": 144,
+        "fanduel": 134,
         "betonline": 150,
         "thescore": 140,
         "draftkings": 150,
@@ -8029,7 +8029,7 @@
       "yes": {
         "fanduel": -480,
         "kambi": -500,
-        "betmgm": -450,
+        "betmgm": -375,
         "betano": -500,
         "betonline": -500,
         "thescore": -550,
@@ -8044,7 +8044,7 @@
       "no": {
         "fanduel": 330,
         "kambi": 360,
-        "betmgm": 340,
+        "betmgm": 290,
         "betano": 320,
         "betonline": 350,
         "thescore": 360,
@@ -8059,7 +8059,7 @@
     },
     "Montreal Canadiens": {
       "yes": {
-        "fanduel": -194,
+        "fanduel": -188,
         "betano": -200,
         "betonline": -200,
         "thescore": -170,
@@ -8074,7 +8074,7 @@
         "kambi": -215
       },
       "no": {
-        "fanduel": 150,
+        "fanduel": 146,
         "betano": 150,
         "betonline": 160,
         "thescore": 130,
@@ -8153,7 +8153,7 @@
     },
     "New York Islanders": {
       "yes": {
-        "fanduel": 310,
+        "fanduel": 320,
         "betonline": 240,
         "thescore": 250,
         "draftkings": 220,
@@ -8165,7 +8165,7 @@
         "betmgm": 250
       },
       "no": {
-        "fanduel": -440,
+        "fanduel": -460,
         "betonline": -300,
         "thescore": -325,
         "draftkings": -275,
@@ -8179,7 +8179,7 @@
     },
     "New York Rangers": {
       "yes": {
-        "fanduel": 220,
+        "fanduel": 215,
         "betano": 215,
         "betonline": 200,
         "thescore": 210,
@@ -8194,7 +8194,7 @@
         "kambi": 200
       },
       "no": {
-        "fanduel": -295,
+        "fanduel": -290,
         "betano": -303,
         "betonline": -260,
         "thescore": -280,
@@ -8211,7 +8211,7 @@
     },
     "Ottawa Senators": {
       "yes": {
-        "fanduel": -108,
+        "fanduel": -106,
         "kambi": 100,
         "betmgm": 100,
         "betano": -105,
@@ -8226,7 +8226,7 @@
         "dazn": -105
       },
       "no": {
-        "fanduel": -125,
+        "fanduel": -128,
         "kambi": -125,
         "betmgm": -125,
         "betano": -125,
@@ -8269,7 +8269,7 @@
     },
     "Pittsburgh Penguins": {
       "yes": {
-        "fanduel": 176,
+        "fanduel": 172,
         "betmgm": 180,
         "betonline": 190,
         "thescore": 200,
@@ -8281,7 +8281,7 @@
         "pinnacle": 192
       },
       "no": {
-        "fanduel": -230,
+        "fanduel": -225,
         "betmgm": -225,
         "betonline": -230,
         "thescore": -270,
@@ -8295,7 +8295,7 @@
     },
     "San Jose Sharks": {
       "yes": {
-        "fanduel": -130,
+        "fanduel": -128,
         "kambi": -143,
         "betmgm": -155,
         "betano": -154,
@@ -8310,7 +8310,7 @@
         "dazn": -154
       },
       "no": {
-        "fanduel": 102,
+        "fanduel": 100,
         "kambi": 115,
         "betmgm": 125,
         "betano": 115,
@@ -8423,7 +8423,7 @@
     },
     "Toronto Maple Leafs": {
       "yes": {
-        "fanduel": -118,
+        "fanduel": -115,
         "betonline": -120,
         "thescore": -115,
         "draftkings": -125,
@@ -8435,7 +8435,7 @@
         "betmgm": -118
       },
       "no": {
-        "fanduel": -108,
+        "fanduel": -111,
         "betonline": -110,
         "thescore": -115,
         "draftkings": -105,
@@ -8453,7 +8453,7 @@
     },
     "Vancouver Canucks": {
       "yes": {
-        "fanduel": 800,
+        "fanduel": 750,
         "betmgm": 1000,
         "betano": 900,
         "betonline": 800,
@@ -8468,7 +8468,7 @@
         "kambi": 700
       },
       "no": {
-        "fanduel": -1800,
+        "fanduel": -1600,
         "betmgm": -2500,
         "betano": -3333,
         "betonline": -1600,
@@ -8485,7 +8485,7 @@
     },
     "Vegas Golden Knights": {
       "yes": {
-        "fanduel": -620,
+        "fanduel": -650,
         "betmgm": -550,
         "betano": -667,
         "betonline": -750,
@@ -8746,7 +8746,7 @@
     "conference": {
       "Boston Bruins": {
         "pinnacle": 4371,
-        "fanduel": 4500,
+        "fanduel": 4000,
         "kambi": 5000,
         "betmgm": 5500,
         "betano": 4900,
@@ -8762,7 +8762,7 @@
       },
       "Buffalo Sabres": {
         "pinnacle": 1630,
-        "fanduel": 1800,
+        "fanduel": 1600,
         "kambi": 1700,
         "betmgm": 1900,
         "betano": 1700,
@@ -8778,7 +8778,7 @@
       },
       "Carolina Hurricanes": {
         "pinnacle": 359,
-        "fanduel": 400,
+        "fanduel": 420,
         "kambi": 425,
         "betmgm": 400,
         "betano": 350,
@@ -8826,7 +8826,7 @@
       },
       "Florida Panthers": {
         "pinnacle": 336,
-        "fanduel": 360,
+        "fanduel": 380,
         "kambi": 325,
         "betmgm": 340,
         "betano": 350,
@@ -8842,7 +8842,7 @@
       },
       "Montreal Canadiens": {
         "pinnacle": 1106,
-        "fanduel": 1200,
+        "fanduel": 1100,
         "kambi": 900,
         "betmgm": 1000,
         "betano": 1200,
@@ -8858,7 +8858,7 @@
       },
       "New Jersey Devils": {
         "pinnacle": 1538,
-        "fanduel": 1400,
+        "fanduel": 1300,
         "kambi": 1500,
         "betmgm": 1800,
         "betano": 1600,
@@ -8874,7 +8874,7 @@
       },
       "New York Islanders": {
         "pinnacle": 5618,
-        "fanduel": 6000,
+        "fanduel": 5500,
         "kambi": 5000,
         "betmgm": 5500,
         "betano": 5400,
@@ -8908,7 +8908,7 @@
       },
       "Ottawa Senators": {
         "pinnacle": 1776,
-        "fanduel": 1700,
+        "fanduel": 1800,
         "kambi": 2000,
         "betmgm": 2200,
         "betano": 1900,
@@ -8924,7 +8924,7 @@
       },
       "Philadelphia Flyers": {
         "pinnacle": 2813,
-        "fanduel": 2500,
+        "fanduel": 2200,
         "kambi": 2300,
         "betmgm": 2800,
         "betano": 2400,
@@ -8940,7 +8940,7 @@
       },
       "Pittsburgh Penguins": {
         "pinnacle": 4088,
-        "fanduel": 3300,
+        "fanduel": 3000,
         "kambi": 4000,
         "betmgm": 4000,
         "betano": 3400,
@@ -8972,7 +8972,7 @@
       },
       "Toronto Maple Leafs": {
         "pinnacle": 1601,
-        "fanduel": 1700,
+        "fanduel": 1600,
         "kambi": 1700,
         "betmgm": 1400,
         "betano": 1600,
@@ -9035,7 +9035,7 @@
       },
       "Chicago Blackhawks": {
         "pinnacle": 9270,
-        "fanduel": 8000,
+        "fanduel": 7000,
         "kambi": 7500,
         "betano": 8900,
         "betonline": 10000,
@@ -9051,7 +9051,7 @@
       },
       "Colorado Avalanche": {
         "pinnacle": 348,
-        "fanduel": 360,
+        "fanduel": 350,
         "kambi": 325,
         "betano": 350,
         "betonline": 370,
@@ -9067,7 +9067,7 @@
       },
       "Dallas Stars": {
         "pinnacle": 744,
-        "fanduel": 750,
+        "fanduel": 800,
         "kambi": 700,
         "betano": 700,
         "betonline": 700,
@@ -9099,7 +9099,7 @@
       },
       "Los Angeles Kings": {
         "pinnacle": 1829,
-        "fanduel": 1400,
+        "fanduel": 1500,
         "kambi": 1500,
         "betano": 1600,
         "betonline": 1800,
@@ -9116,7 +9116,7 @@
       },
       "Minnesota Wild": {
         "pinnacle": 705,
-        "fanduel": 650,
+        "fanduel": 600,
         "kambi": 700,
         "betano": 650,
         "betonline": 700,
@@ -9148,7 +9148,7 @@
       },
       "San Jose Sharks": {
         "pinnacle": 922,
-        "fanduel": 1700,
+        "fanduel": 1900,
         "kambi": 2000,
         "betano": 1700,
         "betonline": 1400,
@@ -9196,7 +9196,7 @@
       },
       "Utah Mammoth": {
         "pinnacle": 1369,
-        "fanduel": 1200,
+        "fanduel": 1100,
         "kambi": 1500,
         "betano": 1300,
         "betonline": 1400,
@@ -9244,7 +9244,7 @@
       },
       "Winnipeg Jets": {
         "pinnacle": 5354,
-        "fanduel": 5000,
+        "fanduel": 4500,
         "kambi": 4000,
         "betano": 3900,
         "betonline": 6600,
@@ -9362,7 +9362,7 @@
       },
       "New York Islanders": {
         "pinnacle": 14592,
-        "fanduel": 12500,
+        "fanduel": 10000,
         "kambi": 15000,
         "betmgm": 15000,
         "betano": 12400,
@@ -9411,7 +9411,7 @@
       },
       "Philadelphia Flyers": {
         "pinnacle": 5879,
-        "fanduel": 5000,
+        "fanduel": 4500,
         "kambi": 4500,
         "betmgm": 5500,
         "betano": 4900,
@@ -9459,7 +9459,7 @@
       },
       "Seattle Kraken": {
         "pinnacle": 33056,
-        "fanduel": 25000,
+        "fanduel": 20000,
         "kambi": 40000,
         "betmgm": 40000,
         "betano": 29900,
@@ -9521,7 +9521,7 @@
       },
       "Utah Mammoth": {
         "pinnacle": 3510,
-        "fanduel": 2500,
+        "fanduel": 2700,
         "kambi": 3000,
         "betmgm": 3500,
         "betano": 2900,
@@ -9569,7 +9569,7 @@
       },
       "Washington Capitals": {
         "pinnacle": 1751,
-        "fanduel": 1200,
+        "fanduel": 1100,
         "kambi": 1300,
         "betmgm": 1600,
         "betano": 1400,
@@ -9631,7 +9631,7 @@
       },
       "Buffalo Sabres": {
         "pinnacle": 3107,
-        "fanduel": 3300,
+        "fanduel": 3000,
         "kambi": 3000,
         "betmgm": 3500,
         "betano": 2900,
@@ -9678,7 +9678,7 @@
       },
       "Chicago Blackhawks": {
         "pinnacle": 23261,
-        "fanduel": 17500,
+        "fanduel": 15000,
         "kambi": 12500,
         "betmgm": 25000,
         "betano": 19900,
@@ -9693,7 +9693,7 @@
       },
       "Colorado Avalanche": {
         "pinnacle": 834,
-        "fanduel": 750,
+        "fanduel": 700,
         "kambi": 750,
         "betmgm": 700,
         "betano": 700,
@@ -9709,7 +9709,7 @@
       },
       "Columbus Blue Jackets": {
         "pinnacle": 6302,
-        "fanduel": 6000,
+        "fanduel": 6500,
         "kambi": 6600,
         "betmgm": 6600,
         "betano": 5900,
@@ -9772,7 +9772,7 @@
       },
       "Florida Panthers": {
         "pinnacle": 743,
-        "fanduel": 650,
+        "fanduel": 700,
         "kambi": 550,
         "betmgm": 650,
         "betano": 650,
@@ -9937,7 +9937,7 @@
     },
     "presidents": {
       "Colorado Avalanche": {
-        "fanduel": 550,
+        "fanduel": 500,
         "kambi": 550,
         "betmgm": 525,
         "betano": 550,
@@ -9949,7 +9949,7 @@
         "pinnacle": 503
       },
       "Carolina Hurricanes": {
-        "fanduel": 550,
+        "fanduel": 600,
         "kambi": 650,
         "betmgm": 500,
         "betano": 500,
@@ -9961,7 +9961,7 @@
         "pinnacle": 589
       },
       "Florida Panthers": {
-        "fanduel": 600,
+        "fanduel": 650,
         "kambi": 500,
         "betmgm": 600,
         "betano": 600,
@@ -9999,7 +9999,7 @@
       "Edmonton Oilers": {
         "fanduel": 1200,
         "kambi": 1000,
-        "betmgm": 1000,
+        "betmgm": 950,
         "betano": 900,
         "thescore": 1000,
         "caesars": 1000,
@@ -10009,9 +10009,9 @@
         "pinnacle": 906
       },
       "Minnesota Wild": {
-        "fanduel": 1500,
+        "fanduel": 1400,
         "kambi": 1500,
-        "betmgm": 1400,
+        "betmgm": 1800,
         "betano": 1200,
         "thescore": 1000,
         "caesars": 1200,
@@ -10023,7 +10023,7 @@
       "Dallas Stars": {
         "fanduel": 1500,
         "kambi": 1300,
-        "betmgm": 1700,
+        "betmgm": 1600,
         "betano": 1600,
         "thescore": 1500,
         "caesars": 1500,
@@ -10045,7 +10045,7 @@
         "pinnacle": 1489
       },
       "Ottawa Senators": {
-        "fanduel": 3500,
+        "fanduel": 3300,
         "kambi": 3300,
         "betmgm": 5000,
         "betano": 4900,
@@ -10081,7 +10081,7 @@
         "pinnacle": 4241
       },
       "Anaheim Ducks": {
-        "fanduel": 6000,
+        "fanduel": 5500,
         "kambi": 5000,
         "betmgm": 5500,
         "betano": 3900,
@@ -10105,7 +10105,7 @@
         "pinnacle": 3499
       },
       "Los Angeles Kings": {
-        "fanduel": 4000,
+        "fanduel": 5000,
         "kambi": 5000,
         "betmgm": 5000,
         "betano": 4400,
@@ -10118,7 +10118,7 @@
         "pinnacle": 4241
       },
       "Utah Mammoth": {
-        "fanduel": 2500,
+        "fanduel": 2700,
         "kambi": 4000,
         "betmgm": 3500,
         "betano": 3400,
@@ -10131,7 +10131,7 @@
         "pinnacle": 3713
       },
       "Columbus Blue Jackets": {
-        "fanduel": 7500,
+        "fanduel": 8000,
         "kambi": 7500,
         "betmgm": 8000,
         "betano": 8900,
@@ -10155,7 +10155,7 @@
         "pinnacle": 2934
       },
       "Philadelphia Flyers": {
-        "fanduel": 7000,
+        "fanduel": 6000,
         "kambi": 7500,
         "betmgm": 6000,
         "betano": 6400,
@@ -10200,10 +10200,10 @@
         "hardrock": 20000,
         "bookmaker": 10000,
         "pinnacle": 21185,
-        "fanduel": 17500
+        "fanduel": 20000
       },
       "New York Islanders": {
-        "fanduel": 17500,
+        "fanduel": 20000,
         "kambi": 15000,
         "betmgm": 15000,
         "betano": 14900,
@@ -10241,7 +10241,7 @@
         "pinnacle": 15889
       },
       "Boston Bruins": {
-        "fanduel": 12500,
+        "fanduel": 10000,
         "kambi": 15000,
         "betmgm": 12500,
         "betano": 24900,
@@ -10253,7 +10253,7 @@
         "pinnacle": 21185
       },
       "St. Louis Blues": {
-        "fanduel": 17500,
+        "fanduel": 15000,
         "kambi": 25000,
         "betmgm": 17500,
         "betano": 29900,
@@ -10265,7 +10265,7 @@
         "pinnacle": 26479
       },
       "Nashville Predators": {
-        "fanduel": 12500,
+        "fanduel": 15000,
         "kambi": 25000,
         "betmgm": 17500,
         "betano": 29900,
@@ -10405,7 +10405,7 @@
     },
     "division": {
       "Florida Panthers": {
-        "fanduel": 170,
+        "fanduel": 180,
         "kambi": 160,
         "betmgm": 165,
         "betano": 165,
@@ -10420,7 +10420,7 @@
         "pinnacle": 158
       },
       "Tampa Bay Lightning": {
-        "fanduel": 280,
+        "fanduel": 270,
         "kambi": 300,
         "betmgm": 310,
         "betano": 300,
@@ -10450,7 +10450,7 @@
         "pinnacle": 384
       },
       "Buffalo Sabres": {
-        "fanduel": 950,
+        "fanduel": 900,
         "kambi": 1100,
         "betmgm": 1000,
         "betano": 900,
@@ -10480,7 +10480,7 @@
         "pinnacle": 932
       },
       "Ottawa Senators": {
-        "fanduel": 950,
+        "fanduel": 900,
         "kambi": 1100,
         "betmgm": 1300,
         "betano": 1000,
@@ -10495,7 +10495,7 @@
         "pinnacle": 983
       },
       "Detroit Red Wings": {
-        "fanduel": 3000,
+        "fanduel": 3500,
         "kambi": 3000,
         "betmgm": 4000,
         "betano": 3400,
@@ -10510,7 +10510,7 @@
         "pinnacle": 3409
       },
       "Boston Bruins": {
-        "fanduel": 2700,
+        "fanduel": 2500,
         "kambi": 4000,
         "betmgm": 2800,
         "betano": 2900,
@@ -10525,7 +10525,7 @@
         "pinnacle": 3616
       },
       "Colorado Avalanche": {
-        "fanduel": 125,
+        "fanduel": 115,
         "kambi": 115,
         "betano": 120,
         "betonline": 140,
@@ -10535,7 +10535,7 @@
         "caesars": 145,
         "bet365": 125,
         "hardrock": 120,
-        "betmgm": 125,
+        "betmgm": 115,
         "circa": 165,
         "pinnacle": 103
       },
@@ -10550,12 +10550,12 @@
         "caesars": 300,
         "bet365": 300,
         "hardrock": 325,
-        "betmgm": 320,
+        "betmgm": 350,
         "circa": 260,
         "pinnacle": 315
       },
       "Dallas Stars": {
-        "fanduel": 360,
+        "fanduel": 370,
         "kambi": 325,
         "betano": 350,
         "betonline": 385,
@@ -10565,13 +10565,13 @@
         "caesars": 300,
         "bet365": 400,
         "hardrock": 325,
-        "betmgm": 360,
+        "betmgm": 340,
         "circa": 400,
         "pinnacle": 315
       },
       "Utah Mammoth": {
         "dazn": 700,
-        "fanduel": 600,
+        "fanduel": 650,
         "kambi": 800,
         "betano": 700,
         "betonline": 625,
@@ -10581,7 +10581,7 @@
         "caesars": 660,
         "bet365": 750,
         "hardrock": 800,
-        "betmgm": 750,
+        "betmgm": 825,
         "circa": 705,
         "pinnacle": 721
       },
@@ -10596,12 +10596,12 @@
         "caesars": 4000,
         "bet365": 3300,
         "hardrock": 4000,
-        "betmgm": 3500,
+        "betmgm": 4000,
         "circa": 4600,
         "pinnacle": 3187
       },
       "St. Louis Blues": {
-        "fanduel": 3000,
+        "fanduel": 2700,
         "kambi": 3500,
         "betano": 3400,
         "betonline": 4000,
@@ -10611,7 +10611,7 @@
         "caesars": 3000,
         "bet365": 3500,
         "hardrock": 4000,
-        "betmgm": 3000,
+        "betmgm": 3500,
         "circa": 1600,
         "pinnacle": 3380
       },
@@ -10626,7 +10626,7 @@
         "caesars": 5000,
         "bet365": 4000,
         "hardrock": 5000,
-        "betmgm": 4000,
+        "betmgm": 3500,
         "circa": 2000,
         "pinnacle": 3863
       },
@@ -10646,7 +10646,7 @@
         "pinnacle": 4831
       },
       "Carolina Hurricanes": {
-        "fanduel": 115,
+        "fanduel": 120,
         "kambi": 110,
         "betano": 115,
         "betonline": 125,
@@ -10661,7 +10661,7 @@
         "betmgm": 115
       },
       "Washington Capitals": {
-        "fanduel": 290,
+        "fanduel": 280,
         "kambi": 275,
         "betano": 300,
         "betonline": 300,
@@ -10691,7 +10691,7 @@
         "betmgm": 600
       },
       "Columbus Blue Jackets": {
-        "fanduel": 1400,
+        "fanduel": 1500,
         "kambi": 1700,
         "betano": 1400,
         "betonline": 1200,
@@ -10721,7 +10721,7 @@
         "betmgm": 1400
       },
       "Pittsburgh Penguins": {
-        "fanduel": 1600,
+        "fanduel": 1500,
         "kambi": 1800,
         "betano": 1700,
         "betonline": 2000,
@@ -10737,7 +10737,7 @@
       },
       "New York Islanders": {
         "dazn": 1900,
-        "fanduel": 3000,
+        "fanduel": 3300,
         "kambi": 3500,
         "betano": 2900,
         "betonline": 3500,
@@ -10753,7 +10753,7 @@
       },
       "New York Rangers": {
         "dazn": 1900,
-        "fanduel": 2000,
+        "fanduel": 1900,
         "kambi": 2500,
         "betano": 2200,
         "betonline": 2500,
@@ -10768,7 +10768,7 @@
         "betmgm": 2200
       },
       "Edmonton Oilers": {
-        "fanduel": 170,
+        "fanduel": 165,
         "kambi": 170,
         "betmgm": 170,
         "betonline": 160,
@@ -10798,7 +10798,7 @@
         "betano": 185
       },
       "Los Angeles Kings": {
-        "fanduel": 550,
+        "fanduel": 650,
         "kambi": 600,
         "betmgm": 800,
         "betonline": 750,
@@ -10814,7 +10814,7 @@
         "betano": 650
       },
       "Anaheim Ducks": {
-        "fanduel": 850,
+        "fanduel": 800,
         "kambi": 600,
         "betmgm": 850,
         "betonline": 850,
@@ -10829,7 +10829,7 @@
         "betano": 700
       },
       "San Jose Sharks": {
-        "fanduel": 700,
+        "fanduel": 750,
         "kambi": 750,
         "betmgm": 750,
         "betonline": 750,
@@ -10874,7 +10874,7 @@
         "betano": 9900
       },
       "Vancouver Canucks": {
-        "fanduel": 12500,
+        "fanduel": 10000,
         "kambi": 9000,
         "betmgm": 20000,
         "betonline": 15000,
@@ -10983,11 +10983,11 @@
         "circa": 205
       },
       "Calgary Flames": {
-        "fanduel": 420,
+        "fanduel": 400,
         "caesars": 425,
         "bet365": 475,
         "hardrock": 475,
-        "betmgm": 375,
+        "betmgm": 360,
         "circa": 240
       },
       "Seattle Kraken": {
@@ -11015,7 +11015,7 @@
         "circa": 3500
       },
       "St. Louis Blues": {
-        "fanduel": 1900,
+        "fanduel": 1700,
         "caesars": 1600,
         "bet365": 1600,
         "hardrock": 1600,
@@ -11023,7 +11023,7 @@
         "circa": 6000
       },
       "Nashville Predators": {
-        "fanduel": 1600,
+        "fanduel": 1700,
         "caesars": 1500,
         "bet365": 1600,
         "hardrock": 1600,
@@ -11031,7 +11031,7 @@
         "circa": 2800
       },
       "Boston Bruins": {
-        "fanduel": 2200,
+        "fanduel": 2700,
         "caesars": 2000,
         "bet365": 2000,
         "hardrock": 1750,
@@ -11039,7 +11039,7 @@
         "circa": 4500
       },
       "Detroit Red Wings": {
-        "fanduel": 1600,
+        "fanduel": 1700,
         "caesars": 1900,
         "bet365": 2000,
         "hardrock": 2000,
@@ -11047,7 +11047,7 @@
         "circa": 4500
       },
       "New York Islanders": {
-        "fanduel": 1600,
+        "fanduel": 1500,
         "caesars": 2400,
         "bet365": 2000,
         "hardrock": 2000,
@@ -11087,7 +11087,7 @@
         "circa": 8200
       },
       "Philadelphia Flyers": {
-        "fanduel": 4500,
+        "fanduel": 4000,
         "caesars": 3500,
         "bet365": 3500,
         "hardrock": 4000,
@@ -11099,11 +11099,11 @@
         "caesars": 4000,
         "bet365": 5000,
         "hardrock": 4000,
-        "betmgm": 5000,
+        "betmgm": 5500,
         "circa": 5000
       },
       "Utah Mammoth": {
-        "fanduel": 7000,
+        "fanduel": 6500,
         "caesars": 5000,
         "bet365": 7500,
         "hardrock": 6000,
@@ -11111,7 +11111,7 @@
         "circa": 22500
       },
       "Ottawa Senators": {
-        "fanduel": 7000,
+        "fanduel": 7500,
         "caesars": 6000,
         "bet365": 4000,
         "hardrock": 6000,
@@ -11131,7 +11131,7 @@
         "caesars": 5500,
         "bet365": 6000,
         "hardrock": 6000,
-        "betmgm": 6000,
+        "betmgm": 6600,
         "circa": 12000
       },
       "Toronto Maple Leafs": {
@@ -11151,7 +11151,7 @@
         "circa": 12000
       },
       "Montreal Canadiens": {
-        "fanduel": 15000,
+        "fanduel": 12500,
         "caesars": 7500,
         "bet365": 10000,
         "hardrock": 10000,
@@ -11159,7 +11159,7 @@
         "circa": 20000
       },
       "Dallas Stars": {
-        "fanduel": 20000,
+        "fanduel": 17500,
         "caesars": 15000,
         "bet365": 12500,
         "hardrock": 15000,
@@ -11167,11 +11167,11 @@
         "circa": 50000
       },
       "Minnesota Wild": {
-        "fanduel": 20000,
+        "fanduel": 17500,
         "caesars": 17500,
         "bet365": 20000,
         "hardrock": 20000,
-        "betmgm": 17500,
+        "betmgm": 15000,
         "circa": 50000
       },
       "Vegas Golden Knights": {
@@ -11183,7 +11183,7 @@
         "circa": 40000
       },
       "Washington Capitals": {
-        "fanduel": 20000,
+        "fanduel": 25000,
         "caesars": 10000,
         "bet365": 12500,
         "hardrock": 20000,
@@ -11196,10 +11196,10 @@
         "hardrock": 25000,
         "betmgm": 25000,
         "circa": 40000,
-        "fanduel": 22500
+        "fanduel": 30000
       },
       "Tampa Bay Lightning": {
-        "fanduel": 30000,
+        "fanduel": 35000,
         "caesars": 25000,
         "bet365": 25000,
         "hardrock": 25000,
@@ -11230,7 +11230,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-01 01:46",
+    "last_updated": "2026-10-01 01:56",
     "book_updated": {
       "dazn": "2026-10-01",
       "fanduel": "2026-10-01",
@@ -11261,7 +11261,7 @@
     "conf": {
       "Eastern Conference": {
         "dazn": -133,
-        "fanduel": -126,
+        "fanduel": -124,
         "betmgm": -118,
         "betano": -133,
         "betonline": -115,
@@ -11273,7 +11273,7 @@
       },
       "Western Conference": {
         "dazn": 100,
-        "fanduel": 108,
+        "fanduel": 106,
         "betmgm": -102,
         "betano": 100,
         "betonline": -115,
@@ -11313,7 +11313,7 @@
       },
       "Pacific Division": {
         "dazn": 290,
-        "fanduel": 330,
+        "fanduel": 320,
         "betmgm": 300,
         "betano": 290,
         "betonline": 300,
@@ -11346,7 +11346,7 @@
         "draftkings": -175
       },
       "Florida": {
-        "fanduel": 390,
+        "fanduel": 420,
         "betmgm": 425,
         "thescore": 370,
         "draftkings": 400
@@ -11358,24 +11358,24 @@
         "draftkings": 900
       },
       "California": {
-        "fanduel": 1300,
+        "fanduel": 1400,
         "betmgm": 1300,
         "thescore": 1600,
         "draftkings": 1100
       },
       "Ontario": {
-        "fanduel": 1800,
+        "fanduel": 1700,
         "betmgm": 1800,
         "thescore": 1600,
         "draftkings": 1700
       },
       "New York": {
-        "fanduel": 2200,
+        "fanduel": 2000,
         "betmgm": 2200,
         "draftkings": 1800
       },
       "Pennsylvania": {
-        "fanduel": 3000,
+        "fanduel": 2700,
         "betmgm": 3500,
         "thescore": 2200,
         "draftkings": 3000
