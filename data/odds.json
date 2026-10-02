@@ -400,11 +400,6 @@
       }
     },
     "Minnesota Wild": {
-      "betmgm": {
-        "line": 101.5,
-        "over": -105,
-        "under": -125
-      },
       "betonline": {
         "line": 102.5,
         "over": 100,
@@ -727,11 +722,6 @@
       }
     },
     "Nashville Predators": {
-      "betmgm": {
-        "line": 85.5,
-        "over": -115,
-        "under": -115
-      },
       "betonline": {
         "line": 85.5,
         "over": -115,
@@ -7964,7 +7954,6 @@
     "Minnesota Wild": {
       "yes": {
         "fanduel": -480,
-        "betmgm": -375,
         "betano": -500,
         "betonline": -500,
         "thescore": -550,
@@ -7978,7 +7967,6 @@
       },
       "no": {
         "fanduel": 330,
-        "betmgm": 290,
         "betano": 320,
         "betonline": 350,
         "thescore": 360,
@@ -8026,7 +8014,6 @@
     "Nashville Predators": {
       "yes": {
         "fanduel": 196,
-        "betmgm": 250,
         "betano": 215,
         "betonline": 225,
         "thescore": 225,
@@ -8040,7 +8027,6 @@
       },
       "no": {
         "fanduel": -260,
-        "betmgm": -325,
         "betano": -303,
         "betonline": -285,
         "thescore": -300,
@@ -11172,7 +11158,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-01 20:06",
+    "last_updated": "2026-10-01 20:16",
     "book_updated": {
       "dazn": "2026-10-01",
       "fanduel": "2026-10-01",
