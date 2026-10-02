@@ -1294,16 +1294,6 @@
         "line": 107.5,
         "over": -117,
         "under": 106
-      },
-      "fanduel": {
-        "line": 109.5,
-        "over": -111,
-        "under": -115
-      },
-      "betmgm": {
-        "line": 108.5,
-        "over": -120,
-        "under": -110
       }
     },
     "Ottawa Senators": {
@@ -1706,16 +1696,6 @@
       }
     },
     "Washington Capitals": {
-      "fanduel": {
-        "line": 103.5,
-        "over": -113,
-        "under": -113
-      },
-      "kambi": {
-        "line": 99.5,
-        "over": -127,
-        "under": -104
-      },
       "betmgm": {
         "line": 101.5,
         "over": -130,
@@ -11221,7 +11201,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-02 18:57",
+    "last_updated": "2026-10-02 19:17",
     "book_updated": {
       "dazn": "2026-10-02",
       "fanduel": "2026-10-02",
