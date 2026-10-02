@@ -3485,7 +3485,7 @@
         "team": "",
         "prices": {
           "fanduel": 250,
-          "kambi": 275,
+          "kambi": 225,
           "betmgm": 270,
           "betano": 275,
           "betonline": 250,
@@ -3503,7 +3503,7 @@
         "team": "",
         "prices": {
           "fanduel": 370,
-          "kambi": 300,
+          "kambi": 350,
           "betmgm": 360,
           "betano": 360,
           "betonline": 400,
@@ -3521,7 +3521,7 @@
         "team": "",
         "prices": {
           "fanduel": 500,
-          "kambi": 450,
+          "kambi": 475,
           "betmgm": 450,
           "betano": 450,
           "betonline": 400,
@@ -3538,7 +3538,7 @@
         "team": "",
         "prices": {
           "fanduel": 1100,
-          "kambi": 1000,
+          "kambi": 1100,
           "betmgm": 1100,
           "betano": 1100,
           "betonline": 1200,
@@ -3556,7 +3556,7 @@
         "team": "",
         "prices": {
           "fanduel": 1200,
-          "kambi": 1000,
+          "kambi": 1100,
           "betmgm": 1200,
           "betano": 1200,
           "betonline": 1400,
@@ -3626,7 +3626,7 @@
         "team": "",
         "prices": {
           "fanduel": 2500,
-          "kambi": 2300,
+          "kambi": 2500,
           "betmgm": 2500,
           "betano": 2400,
           "betonline": 2000,
@@ -3678,7 +3678,7 @@
         "team": "",
         "prices": {
           "fanduel": 4500,
-          "kambi": 2700,
+          "kambi": 3000,
           "betmgm": 5000,
           "betano": 3400,
           "betonline": 2500,
@@ -3695,7 +3695,7 @@
         "team": "",
         "prices": {
           "fanduel": 5500,
-          "kambi": 3000,
+          "kambi": 4000,
           "betmgm": 3500,
           "betano": 4400,
           "betonline": 3300,
@@ -3729,7 +3729,7 @@
         "team": "",
         "prices": {
           "fanduel": 6500,
-          "kambi": 5000,
+          "kambi": 6000,
           "betmgm": 6000,
           "betano": 6400,
           "betonline": 5000,
@@ -3746,7 +3746,7 @@
         "team": "",
         "prices": {
           "fanduel": 7500,
-          "kambi": 5000,
+          "kambi": 6000,
           "betmgm": 8000,
           "betano": 6900,
           "betonline": 5000,
@@ -3764,7 +3764,7 @@
         "team": "",
         "prices": {
           "fanduel": 8000,
-          "kambi": 3700,
+          "kambi": 5000,
           "betmgm": 10000,
           "betano": 5900,
           "betonline": 4000,
@@ -3864,7 +3864,7 @@
         "team": "",
         "prices": {
           "fanduel": 6500,
-          "kambi": 3000,
+          "kambi": 4000,
           "betmgm": 6600,
           "betano": 4900,
           "betonline": 3300,
@@ -3945,7 +3945,7 @@
         "team": "",
         "prices": {
           "fanduel": 20000,
-          "kambi": 5000,
+          "kambi": 7500,
           "betmgm": 6000,
           "betano": 12400,
           "betonline": 5000,
@@ -4002,7 +4002,7 @@
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "kambi": 3700,
+          "kambi": 5000,
           "betmgm": 10000,
           "betano": 14900,
           "betonline": 4000,
@@ -4078,7 +4078,7 @@
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "kambi": 5500,
+          "kambi": 8000,
           "betmgm": 10000,
           "betano": 19900,
           "betonline": 6600,
@@ -4126,7 +4126,7 @@
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "kambi": 7000,
+          "kambi": 8000,
           "betmgm": 10000,
           "betano": 19900,
           "betonline": 6600,
@@ -4150,7 +4150,7 @@
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "kambi": 5500,
+          "kambi": 7000,
           "betmgm": 10000,
           "betano": 19900,
           "betonline": 5000,
@@ -4213,7 +4213,7 @@
         "team": "",
         "prices": {
           "fanduel": 30000,
-          "kambi": 4300,
+          "kambi": 5000,
           "betmgm": 8000,
           "betano": 14900,
           "betonline": 4000,
@@ -4519,7 +4519,7 @@
       "Mark Scheifele": {
         "team": "",
         "prices": {
-          "kambi": 5500,
+          "kambi": 5000,
           "betmgm": 6600,
           "betano": 4900,
           "betonline": 5000,
@@ -4676,7 +4676,7 @@
       "Sebastian Aho": {
         "team": "",
         "prices": {
-          "kambi": 7500,
+          "kambi": 8000,
           "betmgm": 8000,
           "betano": 7900,
           "betonline": 7500,
@@ -8413,7 +8413,8 @@
         "circa": -505,
         "pinnacle": -421,
         "dazn": -400,
-        "betmgm": -400
+        "betmgm": -400,
+        "kambi": -400
       },
       "no": {
         "fanduel": 255,
@@ -8427,7 +8428,8 @@
         "circa": 390,
         "pinnacle": 330,
         "dazn": 275,
-        "betmgm": 300
+        "betmgm": 300,
+        "kambi": 300
       }
     },
     "Toronto Maple Leafs": {
@@ -8479,7 +8481,8 @@
         "hardrock": 850,
         "circa": 1100,
         "pinnacle": 1311,
-        "dazn": 800
+        "dazn": 800,
+        "kambi": 800
       },
       "no": {
         "fanduel": -1800,
@@ -8493,7 +8496,8 @@
         "hardrock": -1600,
         "circa": -1950,
         "pinnacle": -2058,
-        "dazn": -2500
+        "dazn": -2500,
+        "kambi": -1667
       }
     },
     "Vegas Golden Knights": {
@@ -8605,7 +8609,8 @@
         "circa": -165,
         "pinnacle": -211,
         "dazn": -222,
-        "betmgm": -200
+        "betmgm": -200,
+        "kambi": -215
       },
       "no": {
         "fanduel": 190,
@@ -8619,7 +8624,8 @@
         "circa": 135,
         "pinnacle": 173,
         "dazn": 165,
-        "betmgm": 160
+        "betmgm": 160,
+        "kambi": 165
       }
     },
     "To Reach the Playoffs 2026/27 - Anaheim Ducks to Reach the Play-offs": {
@@ -11241,7 +11247,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-02 02:36",
+    "last_updated": "2026-10-02 02:46",
     "book_updated": {
       "dazn": "2026-10-01",
       "fanduel": "2026-10-02",
