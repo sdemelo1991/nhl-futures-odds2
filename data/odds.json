@@ -804,21 +804,6 @@
       }
     },
     "Detroit Red Wings": {
-      "fanduel": {
-        "line": 86.5,
-        "over": 122,
-        "under": -156
-      },
-      "kambi": {
-        "line": 86.5,
-        "over": -114,
-        "under": -114
-      },
-      "betmgm": {
-        "line": 85.5,
-        "over": -120,
-        "under": -110
-      },
       "betonline": {
         "line": 86.5,
         "over": -115,
@@ -1428,16 +1413,6 @@
         "line": 86.5,
         "over": -154,
         "under": 127
-      },
-      "fanduel": {
-        "line": 88.5,
-        "over": -130,
-        "under": 102
-      },
-      "betmgm": {
-        "line": 88.5,
-        "over": -115,
-        "under": -115
       }
     },
     "Anaheim Ducks": {
@@ -7896,7 +7871,6 @@
       "yes": {
         "fanduel": 390,
         "kambi": 250,
-        "betmgm": 290,
         "betano": 275,
         "betonline": 250,
         "thescore": 210,
@@ -7911,7 +7885,6 @@
       "no": {
         "fanduel": -590,
         "kambi": -335,
-        "betmgm": -375,
         "betano": -400,
         "betonline": -325,
         "thescore": -280,
@@ -8192,7 +8165,6 @@
         "hardrock": 210,
         "circa": 185,
         "pinnacle": 205,
-        "betmgm": 220,
         "kambi": 200,
         "dazn": 180
       },
@@ -8207,7 +8179,6 @@
         "hardrock": -260,
         "circa": -230,
         "pinnacle": -253,
-        "betmgm": -285,
         "kambi": -265,
         "dazn": -250
       }
@@ -11250,7 +11221,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-02 17:07",
+    "last_updated": "2026-10-02 18:57",
     "book_updated": {
       "dazn": "2026-10-02",
       "fanduel": "2026-10-02",
