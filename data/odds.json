@@ -2629,7 +2629,7 @@
           "kambi": 350,
           "betmgm": 290,
           "betano": 275,
-          "betonline": 300,
+          "betonline": 325,
           "thescore": 325,
           "draftkings": 280,
           "caesars": 190,
@@ -2645,7 +2645,7 @@
           "kambi": 250,
           "betmgm": 280,
           "betano": 275,
-          "betonline": 325,
+          "betonline": 275,
           "thescore": 300,
           "draftkings": 280,
           "caesars": 260,
@@ -2758,7 +2758,7 @@
           "kambi": 2000,
           "betmgm": 2500,
           "betano": 2900,
-          "betonline": 2000,
+          "betonline": 2500,
           "thescore": 1600,
           "draftkings": 2500,
           "caesars": 2000,
@@ -2790,7 +2790,7 @@
           "kambi": 4000,
           "betmgm": 5000,
           "betano": 4900,
-          "betonline": 5000,
+          "betonline": 6600,
           "thescore": 4000,
           "draftkings": 4000,
           "caesars": 4000,
@@ -2830,7 +2830,7 @@
           "kambi": 3500,
           "betmgm": 4000,
           "betano": 2400,
-          "betonline": 3000,
+          "betonline": 3300,
           "thescore": 3500,
           "draftkings": 2500,
           "caesars": 6500,
@@ -3508,7 +3508,7 @@
           "kambi": 350,
           "betmgm": 360,
           "betano": 350,
-          "betonline": 400,
+          "betonline": 350,
           "thescore": 375,
           "draftkings": 350,
           "caesars": 375,
@@ -3614,7 +3614,7 @@
           "kambi": 1700,
           "betmgm": 2500,
           "betano": 1400,
-          "betonline": 1600,
+          "betonline": 1800,
           "thescore": 2200,
           "draftkings": 1500,
           "caesars": 2000,
@@ -3631,7 +3631,7 @@
           "kambi": 2500,
           "betmgm": 2500,
           "betano": 2400,
-          "betonline": 2000,
+          "betonline": 2500,
           "thescore": 2500,
           "draftkings": 2500,
           "caesars": 2800,
@@ -3683,7 +3683,7 @@
           "kambi": 3000,
           "betmgm": 5000,
           "betano": 2400,
-          "betonline": 2500,
+          "betonline": 3300,
           "thescore": 4000,
           "draftkings": 2500,
           "caesars": 3500,
@@ -7959,7 +7959,7 @@
     "Florida Panthers": {
       "yes": {
         "fanduel": -500,
-        "betano": -714,
+        "betano": -667,
         "betonline": -600,
         "thescore": -700,
         "draftkings": -1000,
@@ -7969,11 +7969,11 @@
         "circa": -775,
         "pinnacle": -712,
         "kambi": -835,
-        "dazn": -714,
+        "dazn": -667,
         "betmgm": -500
       },
       "no": {
-        "betano": 420,
+        "betano": 400,
         "betonline": 400,
         "thescore": 450,
         "draftkings": 650,
@@ -7983,8 +7983,9 @@
         "circa": 555,
         "pinnacle": 529,
         "kambi": 500,
-        "dazn": 420,
-        "betmgm": 350
+        "dazn": 400,
+        "betmgm": 350,
+        "fanduel": 340
       }
     },
     "Los Angeles Kings": {
@@ -8118,7 +8119,7 @@
     "New Jersey Devils": {
       "yes": {
         "fanduel": -156,
-        "betano": -143,
+        "betano": -154,
         "betonline": -160,
         "thescore": -145,
         "draftkings": -135,
@@ -8129,11 +8130,11 @@
         "pinnacle": -151,
         "betmgm": -145,
         "kambi": -143,
-        "dazn": -143
+        "dazn": -154
       },
       "no": {
         "fanduel": 122,
-        "betano": 108,
+        "betano": 115,
         "betonline": 130,
         "thescore": 110,
         "draftkings": 105,
@@ -8144,7 +8145,7 @@
         "pinnacle": 124,
         "betmgm": 115,
         "kambi": 115,
-        "dazn": 108
+        "dazn": 115
       }
     },
     "New York Islanders": {
@@ -8182,7 +8183,7 @@
     "New York Rangers": {
       "yes": {
         "fanduel": 190,
-        "betano": 205,
+        "betano": 180,
         "betonline": 170,
         "thescore": 210,
         "draftkings": 235,
@@ -8193,11 +8194,11 @@
         "pinnacle": 205,
         "betmgm": 220,
         "kambi": 200,
-        "dazn": 205
+        "dazn": 180
       },
       "no": {
         "fanduel": -250,
-        "betano": -286,
+        "betano": -250,
         "betonline": -210,
         "thescore": -280,
         "draftkings": -290,
@@ -8208,7 +8209,7 @@
         "pinnacle": -253,
         "betmgm": -285,
         "kambi": -265,
-        "dazn": -286
+        "dazn": -250
       }
     },
     "Ottawa Senators": {
@@ -8342,7 +8343,7 @@
     "Seattle Kraken": {
       "yes": {
         "fanduel": 320,
-        "betano": 380,
+        "betano": 365,
         "betonline": 325,
         "thescore": 380,
         "draftkings": 500,
@@ -8353,11 +8354,11 @@
         "pinnacle": 513,
         "betmgm": 475,
         "kambi": 425,
-        "dazn": 380
+        "dazn": 365
       },
       "no": {
         "fanduel": -460,
-        "betano": -625,
+        "betano": -588,
         "betonline": -450,
         "thescore": -600,
         "draftkings": -800,
@@ -8368,7 +8369,7 @@
         "pinnacle": -687,
         "betmgm": -700,
         "kambi": -670,
-        "dazn": -625
+        "dazn": -588
       }
     },
     "St. Louis Blues": {
@@ -8602,7 +8603,7 @@
     "Utah Mammoth": {
       "yes": {
         "fanduel": -250,
-        "betano": -222,
+        "betano": -250,
         "betonline": -260,
         "thescore": -190,
         "draftkings": -185,
@@ -8613,11 +8614,11 @@
         "pinnacle": -211,
         "betmgm": -200,
         "kambi": -215,
-        "dazn": -222
+        "dazn": -250
       },
       "no": {
         "fanduel": 190,
-        "betano": 165,
+        "betano": 180,
         "betonline": 200,
         "thescore": 140,
         "draftkings": 150,
@@ -8628,7 +8629,7 @@
         "pinnacle": 173,
         "betmgm": 160,
         "kambi": 165,
-        "dazn": 165
+        "dazn": 180
       }
     },
     "To Reach the Playoffs 2026/27 - Anaheim Ducks to Reach the Play-offs": {
@@ -11250,7 +11251,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-02 11:27",
+    "last_updated": "2026-10-02 11:57",
     "book_updated": {
       "dazn": "2026-10-02",
       "fanduel": "2026-10-02",
