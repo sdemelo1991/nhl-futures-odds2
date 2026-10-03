@@ -1396,11 +1396,6 @@
         "over": -113,
         "under": -113
       },
-      "betmgm": {
-        "line": 93.5,
-        "over": -110,
-        "under": -120
-      },
       "betonline": {
         "line": 95.5,
         "over": 120,
@@ -7518,7 +7513,6 @@
       "yes": {
         "fanduel": -125,
         "kambi": -134,
-        "betmgm": -130,
         "betano": -143,
         "betonline": -125,
         "thescore": -130,
@@ -7533,7 +7527,6 @@
       "no": {
         "fanduel": -102,
         "kambi": 105,
-        "betmgm": 105,
         "betano": 108,
         "betonline": -105,
         "thescore": 100,
@@ -9392,7 +9385,7 @@
       "St. Louis Blues": {
         "pinnacle": 10970,
         "fanduel": 10000,
-        "kambi": 10000,
+        "kambi": 9000,
         "betmgm": 20000,
         "betano": 14900,
         "betonline": 15000,
@@ -11146,7 +11139,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-02 22:07",
+    "last_updated": "2026-10-02 22:46",
     "book_updated": {
       "dazn": "2026-10-02",
       "fanduel": "2026-10-02",
