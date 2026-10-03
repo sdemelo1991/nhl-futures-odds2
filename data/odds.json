@@ -947,6 +947,11 @@
         "line": 104.5,
         "over": -115,
         "under": -115
+      },
+      "fanduel": {
+        "line": 102.5,
+        "over": -108,
+        "under": -118
       }
     },
     "Montreal Canadiens": {
@@ -1440,6 +1445,11 @@
         "line": 95.5,
         "over": 154,
         "under": -188
+      },
+      "fanduel": {
+        "line": 93.5,
+        "over": -115,
+        "under": -111
       }
     },
     "Boston Bruins": {
@@ -11148,7 +11158,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-03 00:06",
+    "last_updated": "2026-10-03 00:46",
     "book_updated": {
       "dazn": "2026-10-03",
       "fanduel": "2026-10-03",
