@@ -7815,7 +7815,7 @@
       "yes": {
         "fanduel": 440,
         "kambi": 250,
-        "betano": 320,
+        "betano": 275,
         "betonline": 250,
         "thescore": 210,
         "draftkings": 250,
@@ -7824,12 +7824,12 @@
         "hardrock": 240,
         "circa": 260,
         "pinnacle": 302,
-        "dazn": 320
+        "dazn": 275
       },
       "no": {
         "fanduel": -700,
         "kambi": -335,
-        "betano": -500,
+        "betano": -400,
         "betonline": -325,
         "thescore": -280,
         "draftkings": -350,
@@ -7838,7 +7838,7 @@
         "hardrock": -325,
         "circa": -330,
         "pinnacle": -382,
-        "dazn": -500
+        "dazn": -400
       }
     },
     "Edmonton Oilers": {
@@ -8453,7 +8453,7 @@
       "yes": {
         "fanduel": -390,
         "kambi": -335,
-        "betano": -357,
+        "betano": -400,
         "betonline": -325,
         "thescore": -320,
         "draftkings": -260,
@@ -8462,12 +8462,12 @@
         "hardrock": -275,
         "circa": -300,
         "pinnacle": -275,
-        "dazn": -357
+        "dazn": -400
       },
       "no": {
         "fanduel": 280,
         "kambi": 255,
-        "betano": 250,
+        "betano": 275,
         "betonline": 250,
         "thescore": 230,
         "draftkings": 210,
@@ -8476,7 +8476,7 @@
         "hardrock": 210,
         "circa": -300,
         "pinnacle": 222,
-        "dazn": 250
+        "dazn": 275
       }
     },
     "Winnipeg Jets": {
@@ -11158,7 +11158,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-03 02:16",
+    "last_updated": "2026-10-03 06:27",
     "book_updated": {
       "dazn": "2026-10-03",
       "fanduel": "2026-10-03",
