@@ -558,6 +558,11 @@
         "line": 84.5,
         "over": -157,
         "under": 129
+      },
+      "fanduel": {
+        "line": 87.5,
+        "over": -120,
+        "under": -106
       }
     },
     "Seattle Kraken": {
@@ -885,6 +890,11 @@
         "line": 100.5,
         "over": -141,
         "under": 116
+      },
+      "fanduel": {
+        "line": 100.5,
+        "over": -120,
+        "under": -106
       }
     },
     "Vegas Golden Knights": {
@@ -937,11 +947,6 @@
         "line": 104.5,
         "over": -115,
         "under": -115
-      },
-      "fanduel": {
-        "line": 103.5,
-        "over": 106,
-        "under": -136
       }
     },
     "Montreal Canadiens": {
@@ -1391,11 +1396,6 @@
       }
     },
     "Anaheim Ducks": {
-      "fanduel": {
-        "line": 92.5,
-        "over": -132,
-        "under": 104
-      },
       "betonline": {
         "line": 95.5,
         "over": 120,
@@ -11148,10 +11148,10 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-02 23:47",
+    "last_updated": "2026-10-03 00:06",
     "book_updated": {
-      "dazn": "2026-10-02",
-      "fanduel": "2026-10-02",
+      "dazn": "2026-10-03",
+      "fanduel": "2026-10-03",
       "kalshi": "2026-08-20",
       "circa": "2026-09-04",
       "bookmaker": "2026-09-04",
