@@ -1512,16 +1512,6 @@
         "line": 88.5,
         "over": -110,
         "under": -110
-      },
-      "fanduel": {
-        "line": 88.5,
-        "over": -113,
-        "under": -113
-      },
-      "betmgm": {
-        "line": 88.5,
-        "over": -115,
-        "under": -115
       }
     },
     "Edmonton Oilers": {
@@ -1748,11 +1738,6 @@
       }
     },
     "Winnipeg Jets": {
-      "kambi": {
-        "line": 86.5,
-        "over": -106,
-        "under": -124
-      },
       "betmgm": {
         "line": 84.5,
         "over": -110,
@@ -1787,11 +1772,6 @@
         "line": 85.5,
         "over": -115,
         "under": -115
-      },
-      "fanduel": {
-        "line": 85.5,
-        "over": -113,
-        "under": -113
       },
       "circa": {
         "line": 83.5,
@@ -7603,7 +7583,6 @@
         "hardrock": 250,
         "circa": 290,
         "pinnacle": 245,
-        "betmgm": 225,
         "kambi": 190,
         "dazn": 215
       },
@@ -7618,7 +7597,6 @@
         "hardrock": -300,
         "circa": -370,
         "pinnacle": -306,
-        "betmgm": -285,
         "kambi": -265,
         "dazn": -303
       }
@@ -11202,7 +11180,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-02 19:57",
+    "last_updated": "2026-10-02 20:37",
     "book_updated": {
       "dazn": "2026-10-02",
       "fanduel": "2026-10-02",
