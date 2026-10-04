@@ -843,6 +843,11 @@
         "line": 81.5,
         "over": -115,
         "under": -111
+      },
+      "betmgm": {
+        "line": 84.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Dallas Stars": {
@@ -1787,6 +1792,11 @@
         "line": 85.5,
         "over": -113,
         "under": -113
+      },
+      "betmgm": {
+        "line": 85.5,
+        "over": -105,
+        "under": -125
       }
     }
   },
@@ -7846,7 +7856,8 @@
         "hardrock": 240,
         "circa": 260,
         "pinnacle": 302,
-        "dazn": 365
+        "dazn": 365,
+        "betmgm": 325
       },
       "no": {
         "fanduel": -850,
@@ -7860,7 +7871,8 @@
         "hardrock": -325,
         "circa": -330,
         "pinnacle": -382,
-        "dazn": -588
+        "dazn": -588,
+        "betmgm": -450
       }
     },
     "Edmonton Oilers": {
@@ -8514,7 +8526,8 @@
         "hardrock": 240,
         "circa": 225,
         "pinnacle": 215,
-        "dazn": 230
+        "dazn": 230,
+        "betmgm": 230
       },
       "no": {
         "fanduel": -295,
@@ -8528,7 +8541,8 @@
         "hardrock": -300,
         "circa": -280,
         "pinnacle": -266,
-        "dazn": -333
+        "dazn": -333,
+        "betmgm": -300
       }
     },
     "Utah Mammoth": {
@@ -10930,7 +10944,7 @@
         "caesars": 325,
         "bet365": 325,
         "hardrock": 325,
-        "betmgm": 350,
+        "betmgm": 360,
         "circa": 205
       },
       "Calgary Flames": {
@@ -10962,7 +10976,7 @@
         "caesars": 1600,
         "bet365": 1600,
         "hardrock": 1600,
-        "betmgm": 1500,
+        "betmgm": 1600,
         "circa": 3500
       },
       "St. Louis Blues": {
@@ -10994,7 +11008,7 @@
         "caesars": 1900,
         "bet365": 2000,
         "hardrock": 2000,
-        "betmgm": 1600,
+        "betmgm": 1200,
         "circa": 4500
       },
       "New York Islanders": {
@@ -11181,7 +11195,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-04 14:56",
+    "last_updated": "2026-10-04 16:26",
     "book_updated": {
       "dazn": "2026-10-04",
       "fanduel": "2026-10-04",
