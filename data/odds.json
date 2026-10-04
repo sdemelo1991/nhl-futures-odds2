@@ -1131,11 +1131,6 @@
       }
     },
     "Utah Mammoth": {
-      "betmgm": {
-        "line": 97.5,
-        "over": -115,
-        "under": -115
-      },
       "betonline": {
         "line": 97.5,
         "over": -115,
@@ -1398,11 +1393,6 @@
         "line": 86.5,
         "over": -154,
         "under": 127
-      },
-      "betmgm": {
-        "line": 88.5,
-        "over": -130,
-        "under": 100
       }
     },
     "Anaheim Ducks": {
@@ -8128,8 +8118,7 @@
         "circa": 185,
         "pinnacle": 205,
         "kambi": 170,
-        "dazn": 165,
-        "betmgm": 190
+        "dazn": 165
       },
       "no": {
         "fanduel": -225,
@@ -8143,8 +8132,7 @@
         "circa": -230,
         "pinnacle": -253,
         "kambi": -225,
-        "dazn": -222,
-        "betmgm": -235
+        "dazn": -222
       }
     },
     "Ottawa Senators": {
@@ -8547,7 +8535,6 @@
         "hardrock": -190,
         "circa": -165,
         "pinnacle": -211,
-        "betmgm": -210,
         "kambi": -250,
         "dazn": -278
       },
@@ -8562,7 +8549,6 @@
         "hardrock": 145,
         "circa": 135,
         "pinnacle": 173,
-        "betmgm": 165,
         "kambi": 190,
         "dazn": 200
       }
@@ -11185,7 +11171,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-04 18:06",
+    "last_updated": "2026-10-04 19:56",
     "book_updated": {
       "dazn": "2026-10-04",
       "fanduel": "2026-10-04",
