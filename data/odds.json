@@ -937,11 +937,6 @@
         "line": 104.5,
         "over": 100,
         "under": -130
-      },
-      "fanduel": {
-        "line": 102.5,
-        "over": -111,
-        "under": -115
       }
     },
     "Montreal Canadiens": {
@@ -1046,11 +1041,6 @@
         "line": 74.5,
         "over": 107,
         "under": -130
-      },
-      "fanduel": {
-        "line": 74.5,
-        "over": -113,
-        "under": -113
       }
     },
     "Toronto Maple Leafs": {
@@ -1160,6 +1150,11 @@
         "line": 97.5,
         "over": 100,
         "under": -130
+      },
+      "fanduel": {
+        "line": 98.5,
+        "over": -104,
+        "under": -122
       }
     },
     "Columbus Blue Jackets": {
@@ -1383,6 +1378,11 @@
         "line": 89.5,
         "over": -115,
         "under": -115
+      },
+      "fanduel": {
+        "line": 90.5,
+        "over": -125,
+        "under": -102
       }
     },
     "Anaheim Ducks": {
@@ -11150,7 +11150,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-04 20:56",
+    "last_updated": "2026-10-04 21:36",
     "book_updated": {
       "dazn": "2026-10-04",
       "fanduel": "2026-10-04",
