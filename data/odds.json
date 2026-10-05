@@ -1155,6 +1155,11 @@
         "line": 96.5,
         "over": 101,
         "under": -122
+      },
+      "betmgm": {
+        "line": 97.5,
+        "over": 100,
+        "under": -130
       }
     },
     "Columbus Blue Jackets": {
@@ -1373,6 +1378,11 @@
         "line": 86.5,
         "over": -154,
         "under": 127
+      },
+      "betmgm": {
+        "line": 89.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Anaheim Ducks": {
@@ -8502,7 +8512,8 @@
         "circa": -165,
         "pinnacle": -211,
         "kambi": -250,
-        "dazn": -278
+        "dazn": -278,
+        "betmgm": -200
       },
       "no": {
         "fanduel": 182,
@@ -8516,7 +8527,8 @@
         "circa": 135,
         "pinnacle": 173,
         "kambi": 190,
-        "dazn": 200
+        "dazn": 200,
+        "betmgm": 160
       }
     },
     "To Reach the Playoffs 2026/27 - Anaheim Ducks to Reach the Play-offs": {
@@ -10580,7 +10592,7 @@
         "hardrock": 375,
         "circa": 245,
         "pinnacle": 319,
-        "betmgm": 280
+        "betmgm": 290
       },
       "New Jersey Devils": {
         "fanduel": 650,
@@ -10595,7 +10607,7 @@
         "hardrock": 750,
         "circa": 900,
         "pinnacle": 639,
-        "betmgm": 600
+        "betmgm": 650
       },
       "Columbus Blue Jackets": {
         "fanduel": 1600,
@@ -10640,7 +10652,7 @@
         "hardrock": 1600,
         "circa": 3900,
         "pinnacle": 1772,
-        "betmgm": 1400
+        "betmgm": 1300
       },
       "New York Islanders": {
         "dazn": 1900,
@@ -10672,7 +10684,7 @@
         "hardrock": 2500,
         "circa": 1800,
         "pinnacle": 2166,
-        "betmgm": 1700
+        "betmgm": 1500
       },
       "Edmonton Oilers": {
         "fanduel": 145,
@@ -10886,7 +10898,7 @@
         "caesars": 325,
         "bet365": 325,
         "hardrock": 325,
-        "betmgm": 360,
+        "betmgm": 375,
         "circa": 205
       },
       "Calgary Flames": {
@@ -10894,7 +10906,7 @@
         "caesars": 425,
         "bet365": 475,
         "hardrock": 475,
-        "betmgm": 350,
+        "betmgm": 290,
         "circa": 240
       },
       "Seattle Kraken": {
@@ -10902,7 +10914,7 @@
         "caesars": 650,
         "bet365": 750,
         "hardrock": 700,
-        "betmgm": 850,
+        "betmgm": 1000,
         "circa": 725
       },
       "Chicago Blackhawks": {
@@ -10910,7 +10922,7 @@
         "caesars": 600,
         "bet365": 650,
         "hardrock": 650,
-        "betmgm": 625,
+        "betmgm": 650,
         "circa": 680
       },
       "Winnipeg Jets": {
@@ -10950,7 +10962,7 @@
         "caesars": 1900,
         "bet365": 2000,
         "hardrock": 2000,
-        "betmgm": 1200,
+        "betmgm": 1300,
         "circa": 4500
       },
       "New York Islanders": {
@@ -11138,7 +11150,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-04 20:36",
+    "last_updated": "2026-10-04 20:56",
     "book_updated": {
       "dazn": "2026-10-04",
       "fanduel": "2026-10-04",
