@@ -9351,8 +9351,7 @@
         "bookmaker": 12588,
         "caesars": 10000,
         "bet365": 12500,
-        "hardrock": 15000,
-        "dazn": 14900
+        "hardrock": 15000
       },
       "New York Rangers": {
         "pinnacle": 7994,
@@ -9368,8 +9367,7 @@
         "caesars": 6000,
         "bet365": 8000,
         "hardrock": 7500,
-        "kalshi": 4579,
-        "dazn": 6900
+        "kalshi": 4579
       },
       "Ottawa Senators": {
         "pinnacle": 3789,
@@ -9511,8 +9509,7 @@
         "caesars": 2500,
         "bet365": 3000,
         "hardrock": 3000,
-        "kalshi": 3021,
-        "dazn": 2400
+        "kalshi": 3021
       },
       "Vancouver Canucks": {
         "pinnacle": 51391,
@@ -9778,8 +9775,7 @@
         "caesars": 3000,
         "bet365": 3000,
         "hardrock": 3000,
-        "kalshi": 4579,
-        "dazn": 2900
+        "kalshi": 4579
       },
       "Minnesota Wild": {
         "pinnacle": 1593,
@@ -9828,88 +9824,128 @@
         "bet365": 15000,
         "hardrock": 20000
       },
-      "FLA Panthers": {
-        "dazn": 700
-      },
-      "CAR Hurricanes": {
+      "FLA Panthers": {},
+      "CAR Hurricanes": {},
+      "COL Avalanche": {},
+      "VGS Golden Knights": {},
+      "EDM Oilers": {},
+      "TB Lightning": {},
+      "MIN Wild": {},
+      "WAS Capitals": {},
+      "DAL Stars": {},
+      "MTL Canadiens": {},
+      "ANA Ducks": {},
+      "BUF Sabres": {},
+      "NJ Devils": {},
+      "TOR Maple Leafs": {},
+      "SJ Sharks": {},
+      "OTT Senators": {},
+      "PHI Flyers": {},
+      "CLB Blue Jackets": {},
+      "PIT Penguins": {},
+      "BOS Bruins": {},
+      "DET Red Wings": {},
+      "WIN Jets": {},
+      "STL Blues": {},
+      "NAS Predators": {},
+      "CHI Blackhawks": {},
+      "SEA Kraken": {},
+      "VAN Canucks": {},
+      "CAL Flames": {},
+      "Carolina Hurricanes | Carolina Hurricanes": {
         "dazn": 650
       },
-      "COL Avalanche": {
+      "Florida Panthers | Florida Panthers": {
         "dazn": 700
       },
-      "VGS Golden Knights": {
-        "dazn": 1100
+      "Colorado Avalanche | Colorado Avalanche": {
+        "dazn": 700
       },
-      "EDM Oilers": {
+      "Edmonton Oilers | Edmonton Oilers": {
         "dazn": 900
       },
-      "TB Lightning": {
+      "Tampa Bay Lightning | Tampa Bay Lightning": {
         "dazn": 1100
       },
-      "MIN Wild": {
+      "Vegas Golden Knights | Vegas Golden Knights": {
+        "dazn": 1100
+      },
+      "Minnesota Wild | Minnesota Wild": {
         "dazn": 1300
       },
-      "WAS Capitals": {
+      "Washington Capitals | Washington Capitals": {
         "dazn": 1400
       },
-      "DAL Stars": {
+      "Dallas Stars | Dallas Stars": {
         "dazn": 1400
       },
-      "MTL Canadiens": {
+      "Montréal Canadiens | Montréal Canadiens": {
         "dazn": 2100
       },
-      "ANA Ducks": {
+      "Utah Mammoth | Utah Mammoth": {
+        "dazn": 2400
+      },
+      "New Jersey Devils | New Jersey Devils": {
         "dazn": 2900
       },
-      "BUF Sabres": {
+      "Ottawa Senators | Ottawa Senators": {
         "dazn": 2900
       },
-      "NJ Devils": {
+      "Toronto Maple Leafs | Toronto Maple Leafs": {
         "dazn": 2900
       },
-      "TOR Maple Leafs": {
+      "Los Angeles Kings | Los Angeles Kings": {
         "dazn": 2900
       },
-      "SJ Sharks": {
+      "Buffalo Sabres | Buffalo Sabres": {
+        "dazn": 2900
+      },
+      "Anaheim Ducks | Anaheim Ducks": {
+        "dazn": 2900
+      },
+      "San Jose Sharks | San Jose Sharks": {
         "dazn": 3900
       },
-      "OTT Senators": {
-        "dazn": 2900
-      },
-      "PHI Flyers": {
+      "Philadelphia Flyers | Philadelphia Flyers": {
         "dazn": 5400
       },
-      "CLB Blue Jackets": {
+      "Columbus Blue Jackets | Columbus Blue Jackets": {
         "dazn": 6400
       },
-      "PIT Penguins": {
+      "Pittsburgh Penguins | Pittsburgh Penguins": {
         "dazn": 6900
       },
-      "BOS Bruins": {
+      "New York Rangers | New York Rangers": {
+        "dazn": 6900
+      },
+      "Boston Bruins | Boston Bruins": {
         "dazn": 9900
       },
-      "DET Red Wings": {
+      "New York Islanders | New York Islanders": {
+        "dazn": 14900
+      },
+      "St. Louis Blues | St. Louis Blues": {
+        "dazn": 14900
+      },
+      "Nashville Predators | Nashville Predators": {
+        "dazn": 14900
+      },
+      "Winnipeg Jets | Winnipeg Jets": {
+        "dazn": 14900
+      },
+      "Detroit Red Wings | Detroit Red Wings": {
         "dazn": 19900
       },
-      "WIN Jets": {
-        "dazn": 14900
-      },
-      "STL Blues": {
-        "dazn": 14900
-      },
-      "NAS Predators": {
-        "dazn": 14900
-      },
-      "CHI Blackhawks": {
+      "Chicago Blackhawks | Chicago Blackhawks": {
         "dazn": 24900
       },
-      "SEA Kraken": {
+      "Seattle Kraken | Seattle Kraken": {
         "dazn": 29900
       },
-      "VAN Canucks": {
+      "Vancouver Canucks | Vancouver Canucks": {
         "dazn": 99900
       },
-      "CAL Flames": {
+      "Calgary Flames | Calgary Flames": {
         "dazn": 99900
       }
     },
@@ -11206,7 +11242,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-06 03:26",
+    "last_updated": "2026-10-06 04:26",
     "book_updated": {
       "dazn": "2026-10-06",
       "fanduel": "2026-10-06",
