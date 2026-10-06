@@ -335,11 +335,6 @@
         "line": 92.5,
         "over": -115,
         "under": -113
-      },
-      "betmgm": {
-        "line": 95.5,
-        "over": -130,
-        "under": 100
       }
     },
     "Pittsburgh Penguins": {
@@ -8285,8 +8280,7 @@
         "circa": -140,
         "pinnacle": -130,
         "kambi": -155,
-        "dazn": -143,
-        "betmgm": -145
+        "dazn": -143
       },
       "no": {
         "fanduel": 100,
@@ -8300,8 +8294,7 @@
         "circa": 110,
         "pinnacle": 107,
         "kambi": 120,
-        "dazn": 108,
-        "betmgm": 115
+        "dazn": 108
       }
     },
     "Seattle Kraken": {
@@ -11213,7 +11206,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-06 01:16",
+    "last_updated": "2026-10-06 03:26",
     "book_updated": {
       "dazn": "2026-10-06",
       "fanduel": "2026-10-06",
