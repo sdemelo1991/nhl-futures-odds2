@@ -469,6 +469,11 @@
         "line": 101.5,
         "over": -101,
         "under": -119
+      },
+      "kambi": {
+        "line": 103.5,
+        "over": -118,
+        "under": -106
       }
     },
     "Tampa Bay Lightning": {
@@ -1312,6 +1317,11 @@
         "line": 91.5,
         "over": -110,
         "under": -110
+      },
+      "kambi": {
+        "line": 89.5,
+        "over": -125,
+        "under": 100
       }
     },
     "Carolina Hurricanes": {
@@ -1364,6 +1374,11 @@
         "line": 107.5,
         "over": -117,
         "under": 106
+      },
+      "kambi": {
+        "line": 112.5,
+        "over": -106,
+        "under": -118
       }
     },
     "Ottawa Senators": {
@@ -11187,7 +11202,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-19 13:16",
+    "last_updated": "2026-10-19 13:26",
     "book_updated": {
       "dazn": "2026-10-19",
       "fanduel": "2026-10-19",
