@@ -32,6 +32,8 @@ jobs:
 
       - name: Refresh direct-API books
         working-directory: scrapers
+        env:
+          KALSHI_API_KEY: ${{ secrets.KALSHI_API_KEY }}
         run: |
           set -x
           for b in pinnacle fanduel kalshi kambi dazn betmgm betano betonline thescore; do
