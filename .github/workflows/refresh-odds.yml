@@ -1,0 +1,58 @@
+name: Refresh NHL odds (scheduled)
+
+# Runs independent of any laptop — solves the "local machine isn't always on"
+# problem the Windows Task Scheduler version had. Cron times are UTC; pinned
+# to EST (UTC-5), which covers nearly the whole NHL season. Once EDT kicks in
+# (~mid-March) this will fire an hour early relative to ET — revisit then if
+# it matters, by shifting both crons back one hour.
+#
+#   8:00 AM ET daily        -> 13:00 UTC
+#   12:00 PM ET Mondays too -> 17:00 UTC
+on:
+  schedule:
+    - cron: '0 13 * * *'
+    - cron: '0 17 * * 1'
+  workflow_dispatch: {}  # manual "Run workflow" button, for testing
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh direct-API books
+        working-directory: scrapers
+        run: |
+          set -x
+          for b in pinnacle fanduel kalshi kambi dazn betmgm betano betonline thescore; do
+            python "$b.py" --write || echo "  !! $b failed, continuing"
+          done
+          python dedupe_players.py --write
+          python history.py
+
+      - name: Recompute Jack Adams best_avail
+        run: python recompute_best_avail.py
+
+      - name: Commit and push if odds changed
+        run: |
+          STATE=$(python scrapers/_live_hash.py)
+          echo "change state: $STATE"
+          if [ "$STATE" = "CHANGED" ]; then
+            git config user.name "nhl-odds-bot"
+            git config user.email "actions@github.com"
+            git add data/odds.json data/price_history.json coaches_2026-27.json
+            git commit -m "auto: refresh direct-API odds [$(date -u '+%Y-%m-%d %H:%M UTC')] (GitHub Actions)"
+            git push
+          else
+            echo "No odds change — skipping commit."
+          fi
