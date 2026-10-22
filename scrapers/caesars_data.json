@@ -1,1113 +1,198 @@
 {
-  "_comment": "Caesars (manual/paste, from CZR screenshots). Cup/Conf/Div/Presidents/Worst/TeamPoints/Playoffs/Awards/Specials/PlayerProps(goals).",
-  "updated": "2026-08-11",
-  "specials": {
-    "conf": {
-      "Western": -105,
-      "Eastern": -120
-    },
-    "div": {
-      "Atlantic": 190,
-      "Central": 250,
-      "Metropolitan": 285,
-      "Pacific": 255
-    }
-  },
-  "player_markets": {
-    "goals": {
-      "Adrian Kempe": {
-        "line": 34.5,
-        "over": -110,
-        "under": -120
-      },
-      "Alex DeBrincat": {
-        "line": 34.5,
-        "over": -115,
-        "under": -115
-      },
-      "Alex Ovechkin": {
-        "line": 29.5,
-        "over": -110,
-        "under": -120
-      },
-      "Alex Tuch": {
-        "line": 32.5,
-        "over": -115,
-        "under": -115
-      },
-      "Auston Matthews": {
-        "line": 41.5,
-        "over": -110,
-        "under": -120
-      },
-      "Bo Horvat": {
-        "line": 31.5,
-        "over": -115,
-        "under": -115
-      },
-      "Brady Tkachuk": {
-        "line": 30.5,
-        "over": -115,
-        "under": -115
-      },
-      "Brandon Hagel": {
-        "line": 35.5,
-        "over": -115,
-        "under": -115
-      },
-      "Clayton Keller": {
-        "line": 30.5,
-        "over": -105,
-        "under": -125
-      },
-      "Cole Caufield": {
-        "line": 41.5,
-        "over": -115,
-        "under": -115
-      },
-      "Connor McDavid": {
-        "line": 41.5,
-        "over": -115,
-        "under": -115
-      },
-      "Cutter Gauthier": {
-        "line": 35.5,
-        "over": -115,
-        "under": -115
-      },
-      "David Pastrnak": {
-        "line": 36.5,
-        "over": -120,
-        "under": -110
-      },
-      "Drake Batherson": {
-        "line": 29.5,
-        "over": -115,
-        "under": -115
-      },
-      "Dylan Guenther": {
-        "line": 35.5,
-        "over": -115,
-        "under": -115
-      },
-      "Filip Forsberg": {
-        "line": 35.5,
-        "over": -110,
-        "under": -120
-      },
-      "Gavin McKenna": {
-        "line": 22.5,
-        "over": -115,
-        "under": -115
-      },
-      "Jack Eichel": {
-        "line": 29.5,
-        "over": -110,
-        "under": -120
-      },
-      "Jack Hughes": {
-        "line": 30.5,
-        "over": -110,
-        "under": -120
-      },
-      "Jake Guentzel": {
-        "line": 34.5,
-        "over": -115,
-        "under": -115
-      },
-      "Jared McCann": {
-        "line": 22.5,
-        "over": -115,
-        "under": -115
-      },
-      "Jason Robertson": {
-        "line": 39.5,
-        "over": -115,
-        "under": -115
-      },
-      "Jordan Kyrou": {
-        "line": 28.5,
-        "over": -115,
-        "under": -115
-      },
-      "Kevin Fiala": {
-        "line": 28.5,
-        "over": -110,
-        "under": -120
-      },
-      "Kirill Kaprizov": {
-        "line": 43.5,
-        "over": -115,
-        "under": -115
-      },
-      "Kirill Marchenko": {
-        "line": 28.5,
-        "over": -115,
-        "under": -115
-      },
-      "Kyle Connor": {
-        "line": 37.5,
-        "over": -115,
-        "under": -115
-      },
-      "Leo Carlsson": {
-        "line": 29.5,
-        "over": -110,
-        "under": -120
-      },
-      "Leon Draisaitl": {
-        "line": 43.5,
-        "over": -115,
-        "under": -115
-      },
-      "Macklin Celebrini": {
-        "line": 40.5,
-        "over": -115,
-        "under": -115
-      },
-      "Mark Scheifele": {
-        "line": 32.5,
-        "over": -115,
-        "under": -115
-      },
-      "Matt Boldy": {
-        "line": 36.5,
-        "over": -115,
-        "under": -115
-      },
-      "Matthew Tkachuk": {
-        "line": 27.5,
-        "over": -110,
-        "under": -120
-      },
-      "Mika Zibanejad": {
-        "line": 26.5,
-        "over": -115,
-        "under": -115
-      },
-      "Mitch Marner": {
-        "line": 25.5,
-        "over": -115,
-        "under": -115
-      },
-      "Morgan Geekie": {
-        "line": 34.5,
-        "over": -115,
-        "under": -115
-      },
-      "Nathan MacKinnon": {
-        "line": 45.5,
-        "over": -115,
-        "under": -115
-      },
-      "Nico Hischier": {
-        "line": 28.5,
-        "over": -115,
-        "under": -115
-      },
-      "Nikita Kucherov": {
-        "line": 40.5,
-        "over": -115,
-        "under": -115
-      },
-      "Owen Tippett": {
-        "line": 27.5,
-        "over": -115,
-        "under": -115
-      },
-      "Pavel Dorofeyev": {
-        "line": 33.5,
-        "over": -115,
-        "under": -115
-      },
-      "Sam Reinhart": {
-        "line": 36.5,
-        "over": -115,
-        "under": -115
-      },
-      "Sebastian Aho": {
-        "line": 29.5,
-        "over": -115,
-        "under": -115
-      },
-      "Sidney Crosby": {
-        "line": 30.5,
-        "over": -115,
-        "under": -115
-      },
-      "Tage Thompson": {
-        "line": 39.5,
-        "over": -110,
-        "under": -120
-      },
-      "Tyler Bertuzzi": {
-        "line": 26.5,
-        "over": -110,
-        "under": -120
-      },
-      "William Nylander": {
-        "line": 37.5,
-        "over": -115,
-        "under": -115
-      },
-      "Wyatt Johnston": {
-        "line": 38.5,
-        "over": -115,
-        "under": -115
-      }
-    }
-  },
+  "_comment": "Caesars, transcribed by Claude from Steven's screen recording (2026-10-21). Award categories with very long tails (Art Ross, Rocket Richard, Hart) capped at a reasonable cutoff rather than every +25000-30000 fringe name — Jack Adams, Vezina, Norris, Calder captured in full.",
+  "updated": "2026-10-21",
   "cup": {
-    "Colorado Avalanche": 600,
-    "Florida Panthers": 650,
-    "Carolina Hurricanes": 800,
-    "Vegas Golden Knights": 1000,
-    "Edmonton Oilers": 1200,
-    "Minnesota Wild": 1300,
-    "Tampa Bay Lightning": 1400,
-    "Dallas Stars": 1500,
-    "Montreal Canadiens": 1700,
-    "Washington Capitals": 1800,
-    "Utah Mammoth": 2500,
-    "New Jersey Devils": 2500,
-    "Buffalo Sabres": 2500,
-    "Los Angeles Kings": 3000,
-    "Anaheim Ducks": 3000,
-    "Ottawa Senators": 3500,
-    "San Jose Sharks": 3500,
-    "Toronto Maple Leafs": 4000,
-    "Philadelphia Flyers": 5000,
-    "Columbus Blue Jackets": 6000,
-    "New York Rangers": 6000,
-    "Pittsburgh Penguins": 8000,
-    "Boston Bruins": 8000,
-    "New York Islanders": 10000,
-    "Winnipeg Jets": 10000,
-    "Detroit Red Wings": 10000,
-    "Nashville Predators": 12500,
-    "St. Louis Blues": 10000,
-    "Chicago Blackhawks": 20000,
-    "Seattle Kraken": 50000,
-    "Vancouver Canucks": 50000,
-    "Calgary Flames": 50000
+    "Colorado Avalanche": 700, "Florida Panthers": 700, "Carolina Hurricanes": 800,
+    "Vegas Golden Knights": 1000, "Edmonton Oilers": 1100, "Minnesota Wild": 1300,
+    "Tampa Bay Lightning": 1400, "Dallas Stars": 1400, "Washington Capitals": 1600,
+    "Montreal Canadiens": 1700, "Utah Mammoth": 2000, "New Jersey Devils": 2000,
+    "Buffalo Sabres": 2000, "Anaheim Ducks": 3000, "San Jose Sharks": 3500,
+    "Toronto Maple Leafs": 4000, "Los Angeles Kings": 4000, "Pittsburgh Penguins": 5000,
+    "Ottawa Senators": 5000, "Columbus Blue Jackets": 6000, "Boston Bruins": 8000,
+    "Philadelphia Flyers": 10000, "New York Islanders": 10000, "Detroit Red Wings": 10000,
+    "St. Louis Blues": 10000, "New York Rangers": 10000, "Nashville Predators": 12500,
+    "Winnipeg Jets": 15000, "Chicago Blackhawks": 20000, "Seattle Kraken": 50000,
+    "Vancouver Canucks": 50000, "Calgary Flames": 50000
   },
   "conference": {
-    "Colorado Avalanche": 290,
-    "Vegas Golden Knights": 500,
-    "Minnesota Wild": 600,
-    "Edmonton Oilers": 600,
-    "Dallas Stars": 700,
-    "Utah Mammoth": 1200,
-    "Anaheim Ducks": 1400,
-    "Los Angeles Kings": 1500,
-    "San Jose Sharks": 1600,
-    "Winnipeg Jets": 5000,
-    "St. Louis Blues": 5000,
-    "Nashville Predators": 6000,
-    "Chicago Blackhawks": 9000,
-    "Seattle Kraken": 20000,
-    "Vancouver Canucks": 20000,
-    "Calgary Flames": 20000,
-    "Florida Panthers": 350,
-    "Carolina Hurricanes": 400,
-    "Tampa Bay Lightning": 650,
-    "Montreal Canadiens": 900,
-    "Washington Capitals": 900,
-    "Buffalo Sabres": 1300,
-    "New Jersey Devils": 1300,
-    "Ottawa Senators": 1600,
-    "Toronto Maple Leafs": 1800,
-    "Philadelphia Flyers": 2400,
-    "New York Rangers": 3000,
-    "Columbus Blue Jackets": 3000,
-    "Boston Bruins": 4000,
-    "Pittsburgh Penguins": 4500,
-    "Detroit Red Wings": 5000,
-    "New York Islanders": 5000
+    "Colorado Avalanche": 300, "Vegas Golden Knights": 500, "Edmonton Oilers": 500,
+    "Minnesota Wild": 600, "Dallas Stars": 700, "Utah Mammoth": 1000,
+    "Anaheim Ducks": 1500, "San Jose Sharks": 1600, "Los Angeles Kings": 2000,
+    "St. Louis Blues": 4500, "Nashville Predators": 7000, "Winnipeg Jets": 7500,
+    "Chicago Blackhawks": 10000, "Seattle Kraken": 20000, "Vancouver Canucks": 30000,
+    "Calgary Flames": 30000,
+    "Florida Panthers": 350, "Carolina Hurricanes": 400, "Washington Capitals": 800,
+    "Tampa Bay Lightning": 800, "Montreal Canadiens": 900, "Buffalo Sabres": 1000,
+    "New Jersey Devils": 1000, "Ottawa Senators": 1800, "Toronto Maple Leafs": 2000,
+    "Pittsburgh Penguins": 2500, "Columbus Blue Jackets": 3500, "Boston Bruins": 4000,
+    "Philadelphia Flyers": 5000, "New York Rangers": 5000, "New York Islanders": 5000,
+    "Detroit Red Wings": 6000
   },
   "division": {
-    "Carolina Hurricanes": 115,
-    "Washington Capitals": 290,
-    "New Jersey Devils": 675,
-    "Philadelphia Flyers": 900,
-    "Columbus Blue Jackets": 1600,
-    "New York Rangers": 2200,
-    "New York Islanders": 2400,
-    "Pittsburgh Penguins": 2600,
-    "Florida Panthers": 160,
-    "Tampa Bay Lightning": 380,
-    "Montreal Canadiens": 450,
-    "Toronto Maple Leafs": 800,
-    "Buffalo Sabres": 900,
-    "Ottawa Senators": 1000,
-    "Boston Bruins": 2800,
-    "Detroit Red Wings": 4000,
-    "Colorado Avalanche": 145,
-    "Minnesota Wild": 300,
-    "Dallas Stars": 300,
-    "Utah Mammoth": 660,
-    "St. Louis Blues": 3000,
-    "Winnipeg Jets": 4000,
-    "Nashville Predators": 5000,
-    "Chicago Blackhawks": 7000,
-    "Edmonton Oilers": 175,
-    "Vegas Golden Knights": 200,
-    "San Jose Sharks": 500,
-    "Los Angeles Kings": 700,
-    "Anaheim Ducks": 800,
-    "Seattle Kraken": 7000,
-    "Calgary Flames": 10000,
-    "Vancouver Canucks": 20000
+    "Colorado Avalanche": 165, "Minnesota Wild": 300, "Utah Mammoth": 300,
+    "Dallas Stars": 425, "St. Louis Blues": 4000, "Winnipeg Jets": 4000,
+    "Nashville Predators": 6000, "Chicago Blackhawks": 25000,
+    "Edmonton Oilers": -105, "Vegas Golden Knights": 135, "San Jose Sharks": 1400,
+    "Anaheim Ducks": 1500, "Los Angeles Kings": 2000, "Seattle Kraken": 4500,
+    "Vancouver Canucks": 50000, "Calgary Flames": 50000,
+    "Carolina Hurricanes": -150, "Washington Capitals": 275, "New Jersey Devils": 700,
+    "New York Rangers": 2000, "Columbus Blue Jackets": 3000, "Pittsburgh Penguins": 3500,
+    "New York Islanders": 4000, "Philadelphia Flyers": 10000,
+    "Tampa Bay Lightning": 170, "Florida Panthers": 260, "Ottawa Senators": 600,
+    "Montreal Canadiens": 800, "Toronto Maple Leafs": 1200, "Buffalo Sabres": 1200,
+    "Boston Bruins": 1300, "Detroit Red Wings": 15000
   },
   "presidents": {
-    "Colorado Avalanche": 550,
-    "Florida Panthers": 575,
-    "Carolina Hurricanes": 600,
-    "Vegas Golden Knights": 900,
-    "Edmonton Oilers": 1000,
-    "Minnesota Wild": 1200,
-    "Tampa Bay Lightning": 1300,
-    "Dallas Stars": 1500,
-    "Washington Capitals": 1600,
-    "Montreal Canadiens": 2200,
-    "Buffalo Sabres": 3000,
-    "New Jersey Devils": 4000,
-    "Ottawa Senators": 4000,
-    "Anaheim Ducks": 4000,
-    "Los Angeles Kings": 4000,
-    "Utah Mammoth": 4000,
-    "San Jose Sharks": 5000,
-    "Philadelphia Flyers": 5000,
-    "Toronto Maple Leafs": 5000,
-    "New York Rangers": 10000,
-    "Columbus Blue Jackets": 10000,
-    "Pittsburgh Penguins": 10000,
-    "Detroit Red Wings": 15000,
-    "St. Louis Blues": 15000,
-    "Nashville Predators": 15000,
-    "Winnipeg Jets": 15000,
-    "Boston Bruins": 15000,
-    "New York Islanders": 15000,
-    "Chicago Blackhawks": 25000,
-    "Calgary Flames": 50000,
-    "Vancouver Canucks": 50000,
-    "Seattle Kraken": 50000
-  },
-  "worst": {
-    "Vancouver Canucks": 325,
-    "Calgary Flames": 425,
-    "Chicago Blackhawks": 600,
-    "Seattle Kraken": 650,
-    "Nashville Predators": 1500,
-    "Winnipeg Jets": 1600,
-    "St. Louis Blues": 1600,
-    "New York Rangers": 1900,
-    "Detroit Red Wings": 1900,
-    "Boston Bruins": 2000,
-    "Pittsburgh Penguins": 2000,
-    "New York Islanders": 2400,
-    "San Jose Sharks": 4000,
-    "Philadelphia Flyers": 3500,
-    "Columbus Blue Jackets": 3500,
-    "Anaheim Ducks": 4000,
-    "Utah Mammoth": 5000,
-    "Los Angeles Kings": 5500,
-    "New Jersey Devils": 6000,
-    "Ottawa Senators": 6000,
-    "Buffalo Sabres": 6000,
-    "Toronto Maple Leafs": 7000,
-    "Montreal Canadiens": 7500,
-    "Washington Capitals": 10000,
-    "Dallas Stars": 15000,
-    "Minnesota Wild": 17500,
-    "Tampa Bay Lightning": 25000,
-    "Edmonton Oilers": 22500,
-    "Vegas Golden Knights": 25000,
-    "Florida Panthers": 35000,
-    "Colorado Avalanche": 50000,
-    "Carolina Hurricanes": 50000
-  },
-  "team_points": {
-    "Anaheim Ducks": {
-      "line": 95.5,
-      "over": -115,
-      "under": -115
-    },
-    "Boston Bruins": {
-      "line": 88.5,
-      "over": -120,
-      "under": -110
-    },
-    "Buffalo Sabres": {
-      "line": 96.5,
-      "over": -120,
-      "under": -110
-    },
-    "Calgary Flames": {
-      "line": 78.5,
-      "over": -120,
-      "under": -110
-    },
-    "Carolina Hurricanes": {
-      "line": 107.5,
-      "over": -115,
-      "under": -115
-    },
-    "Chicago Blackhawks": {
-      "line": 79.5,
-      "over": -125,
-      "under": -105
-    },
-    "Colorado Avalanche": {
-      "line": 108.5,
-      "over": -130,
-      "under": 100
-    },
-    "Columbus Blue Jackets": {
-      "line": 90.5,
-      "over": -120,
-      "under": -110
-    },
-    "Dallas Stars": {
-      "line": 101.5,
-      "over": -120,
-      "under": -110
-    },
-    "Detroit Red Wings": {
-      "line": 85.5,
-      "over": -125,
-      "under": -105
-    },
-    "Edmonton Oilers": {
-      "line": 104.5,
-      "over": -115,
-      "under": -115
-    },
-    "Florida Panthers": {
-      "line": 105.5,
-      "over": -125,
-      "under": -105
-    },
-    "Los Angeles Kings": {
-      "line": 95.5,
-      "over": -115,
-      "under": -115
-    },
-    "Minnesota Wild": {
-      "line": 102.5,
-      "over": -115,
-      "under": -115
-    },
-    "Montreal Canadiens": {
-      "line": 97.5,
-      "over": -125,
-      "under": -105
-    },
-    "Nashville Predators": {
-      "line": 85.5,
-      "over": -125,
-      "under": -105
-    },
-    "New Jersey Devils": {
-      "line": 94.5,
-      "over": -125,
-      "under": -105
-    },
-    "New York Islanders": {
-      "line": 88.5,
-      "over": -120,
-      "under": -110
-    },
-    "New York Rangers": {
-      "line": 88.5,
-      "over": -115,
-      "under": -115
-    },
-    "Ottawa Senators": {
-      "line": 94.5,
-      "over": -115,
-      "under": -115
-    },
-    "Philadelphia Flyers": {
-      "line": 93.5,
-      "over": -115,
-      "under": -115
-    },
-    "Pittsburgh Penguins": {
-      "line": 90.5,
-      "over": -110,
-      "under": -120
-    },
-    "San Jose Sharks": {
-      "line": 94.5,
-      "over": -130,
-      "under": 100
-    },
-    "Seattle Kraken": {
-      "line": 80.5,
-      "over": -120,
-      "under": -110
-    },
-    "St. Louis Blues": {
-      "line": 85.5,
-      "over": -130,
-      "under": 100
-    },
-    "Tampa Bay Lightning": {
-      "line": 102.5,
-      "over": -120,
-      "under": -110
-    },
-    "Toronto Maple Leafs": {
-      "line": 95.5,
-      "over": -120,
-      "under": -110
-    },
-    "Utah Mammoth": {
-      "line": 95.5,
-      "over": -125,
-      "under": -105
-    },
-    "Vancouver Canucks": {
-      "line": 74.5,
-      "over": -105,
-      "under": -125
-    },
-    "Vegas Golden Knights": {
-      "line": 103.5,
-      "over": -115,
-      "under": -115
-    },
-    "Washington Capitals": {
-      "line": 100.5,
-      "over": -120,
-      "under": -110
-    },
-    "Winnipeg Jets": {
-      "line": 85.5,
-      "over": -110,
-      "under": -120
-    }
+    "Carolina Hurricanes": 350, "Edmonton Oilers": 500, "Colorado Avalanche": 600,
+    "Tampa Bay Lightning": 800, "Vegas Golden Knights": 950, "Washington Capitals": 1200,
+    "Utah Mammoth": 1200, "Minnesota Wild": 1300, "Florida Panthers": 1300,
+    "Dallas Stars": 2200, "Ottawa Senators": 3000, "New Jersey Devils": 4500,
+    "Montreal Canadiens": 4500, "Buffalo Sabres": 5000, "Boston Bruins": 5000,
+    "Toronto Maple Leafs": 6000, "Anaheim Ducks": 6000, "San Jose Sharks": 7500,
+    "New York Rangers": 10000, "Columbus Blue Jackets": 20000, "Los Angeles Kings": 20000,
+    "Pittsburgh Penguins": 20000, "St. Louis Blues": 25000, "Winnipeg Jets": 25000,
+    "New York Islanders": 25000, "Nashville Predators": 30000, "Calgary Flames": 50000,
+    "Detroit Red Wings": 50000, "Vancouver Canucks": 50000, "Philadelphia Flyers": 50000,
+    "Seattle Kraken": 50000, "Chicago Blackhawks": 50000
   },
   "playoffs": {
-    "Anaheim Ducks": {
-      "yes": -130,
-      "no": 105
-    },
-    "Boston Bruins": {
-      "yes": 230,
-      "no": -300
-    },
-    "Buffalo Sabres": {
-      "yes": -130,
-      "no": 105
-    },
-    "Calgary Flames": {
-      "yes": 600,
-      "no": -900
-    },
-    "Carolina Hurricanes": {
-      "yes": -1100,
-      "no": 700
-    },
-    "Chicago Blackhawks": {
-      "yes": 375,
-      "no": -500
-    },
-    "Colorado Avalanche": {
-      "yes": -1600,
-      "no": 800
-    },
-    "Columbus Blue Jackets": {
-      "yes": 135,
-      "no": -165
-    },
-    "Dallas Stars": {
-      "yes": -440,
-      "no": 320
-    },
-    "Detroit Red Wings": {
-      "yes": 275,
-      "no": -350
-    },
-    "Edmonton Oilers": {
-      "yes": -700,
-      "no": 475
-    },
-    "Florida Panthers": {
-      "yes": -900,
-      "no": 600
-    },
-    "Los Angeles Kings": {
-      "yes": -175,
-      "no": 140
-    },
-    "Minnesota Wild": {
-      "yes": -500,
-      "no": 370
-    },
-    "Montreal Canadiens": {
-      "yes": -210,
-      "no": 165
-    },
-    "Nashville Predators": {
-      "yes": 230,
-      "no": -300
-    },
-    "New Jersey Devils": {
-      "yes": -150,
-      "no": 122
-    },
-    "New York Islanders": {
-      "yes": 215,
-      "no": -275
-    },
-    "New York Rangers": {
-      "yes": 200,
-      "no": -250
-    },
-    "Ottawa Senators": {
-      "yes": 105,
-      "no": -130
-    },
-    "Philadelphia Flyers": {
-      "yes": 105,
-      "no": -130
-    },
-    "Pittsburgh Penguins": {
-      "yes": 210,
-      "no": -270
-    },
-    "San Jose Sharks": {
-      "yes": -185,
-      "no": 150
-    },
-    "Seattle Kraken": {
-      "yes": 400,
-      "no": -550
-    },
-    "St. Louis Blues": {
-      "yes": 200,
-      "no": -250
-    },
-    "Tampa Bay Lightning": {
-      "yes": -380,
-      "no": 290
-    },
-    "Toronto Maple Leafs": {
-      "yes": -105,
-      "no": -115
-    },
-    "Utah Mammoth": {
-      "yes": -200,
-      "no": 165
-    },
-    "Vancouver Canucks": {
-      "yes": 800,
-      "no": -1600
-    },
-    "Vegas Golden Knights": {
-      "yes": -625,
-      "no": 460
-    },
-    "Washington Capitals": {
-      "yes": -280,
-      "no": 220
-    },
-    "Winnipeg Jets": {
-      "yes": 210,
-      "no": -265
-    }
+    "Anaheim Ducks": {"yes": -110, "no": -110}, "Boston Bruins": {"yes": -105, "no": -115},
+    "Buffalo Sabres": {"yes": -120, "no": 100}, "Calgary Flames": {"yes": 1600, "no": -6000},
+    "Carolina Hurricanes": {"yes": -3500, "no": 1200}, "Chicago Blackhawks": {"yes": 800, "no": -1600},
+    "Colorado Avalanche": {"yes": -2800, "no": 1100}, "Columbus Blue Jackets": {"yes": 260, "no": -330},
+    "Dallas Stars": {"yes": -500, "no": 375}, "Detroit Red Wings": {"yes": 525, "no": -800},
+    "Edmonton Oilers": {"yes": -1800, "no": 850}, "Florida Panthers": {"yes": -525, "no": 375},
+    "Los Angeles Kings": {"yes": 125, "no": -150}, "Minnesota Wild": {"yes": -700, "no": 490},
+    "Montreal Canadiens": {"yes": -145, "no": 120}, "Nashville Predators": {"yes": 250, "no": -325},
+    "New Jersey Devils": {"yes": -175, "no": 145}, "New York Islanders": {"yes": 280, "no": -370},
+    "New York Rangers": {"yes": 150, "no": -180}, "Ottawa Senators": {"yes": -220, "no": 175},
+    "Philadelphia Flyers": {"yes": 525, "no": -800}, "Pittsburgh Penguins": {"yes": 230, "no": -290},
+    "San Jose Sharks": {"yes": -105, "no": -115}, "Seattle Kraken": {"yes": 200, "no": -250},
+    "St. Louis Blues": {"yes": 200, "no": -250}, "Tampa Bay Lightning": {"yes": -900, "no": 600},
+    "Toronto Maple Leafs": {"yes": 100, "no": -120}, "Utah Mammoth": {"yes": -620, "no": 420},
+    "Vancouver Canucks": {"yes": 1500, "no": -5000}, "Vegas Golden Knights": {"yes": -1400, "no": 800},
+    "Washington Capitals": {"yes": -500, "no": 370}, "Winnipeg Jets": {"yes": 200, "no": -250}
+  },
+  "team_points": {
+    "Anaheim Ducks": {"line": 92.5, "over": 100, "under": -130},
+    "Boston Bruins": {"line": 94.5, "over": -115, "under": -115},
+    "Buffalo Sabres": {"line": 96.5, "over": -105, "under": -125},
+    "Calgary Flames": {"line": 72.5, "over": 100, "under": -130},
+    "Carolina Hurricanes": {"line": 111.5, "over": -115, "under": -115},
+    "Chicago Blackhawks": {"line": 76.5, "over": -115, "under": -115},
+    "Colorado Avalanche": {"line": 107.5, "over": -105, "under": -125},
+    "Columbus Blue Jackets": {"line": 87.5, "over": -110, "under": -120},
+    "Dallas Stars": {"line": 102.5, "over": -115, "under": -115},
+    "Detroit Red Wings": {"line": 82.5, "over": -115, "under": -115},
+    "Edmonton Oilers": {"line": 109.5, "over": -110, "under": -120},
+    "Florida Panthers": {"line": 105.5, "over": -115, "under": -115},
+    "Los Angeles Kings": {"line": 91.5, "over": -115, "under": -115},
+    "Minnesota Wild": {"line": 105.5, "over": -110, "under": -120},
+    "Montreal Canadiens": {"line": 97.5, "over": -120, "under": -110},
+    "Nashville Predators": {"line": 85.5, "over": -120, "under": -110},
+    "New Jersey Devils": {"line": 97.5, "over": -115, "under": -115},
+    "New York Islanders": {"line": 86.5, "over": -125, "under": -105},
+    "New York Rangers": {"line": 91.5, "over": -110, "under": -120},
+    "Ottawa Senators": {"line": 99.5, "over": -115, "under": -115},
+    "Philadelphia Flyers": {"line": 83.5, "over": -115, "under": -115},
+    "Pittsburgh Penguins": {"line": 87.5, "over": -120, "under": -110},
+    "San Jose Sharks": {"line": 92.5, "over": -110, "under": -120},
+    "Seattle Kraken": {"line": 85.5, "over": -115, "under": -115},
+    "St. Louis Blues": {"line": 87.5, "over": -115, "under": -115},
+    "Tampa Bay Lightning": {"line": 108.5, "over": -110, "under": -120},
+    "Toronto Maple Leafs": {"line": 95.5, "over": -120, "under": -110},
+    "Utah Mammoth": {"line": 103.5, "over": -120, "under": -110},
+    "Vancouver Canucks": {"line": 69.5, "over": -110, "under": -120},
+    "Vegas Golden Knights": {"line": 107.5, "over": -105, "under": -125},
+    "Washington Capitals": {"line": 103.5, "over": -110, "under": -120},
+    "Winnipeg Jets": {"line": 86.5, "over": -120, "under": -110}
+  },
+  "specials": {
+    "conf": {"Western Conference": -110, "Eastern Conference": -110},
+    "div": {"Pacific": 250, "Metropolitan": 270, "Central": 260, "Atlantic": 200}
   },
   "awards": {
-    "hart": {
-      "Connor McDavid": 260,
-      "Nathan MacKinnon": 375,
-      "Macklin Celebrini": 400,
-      "Leon Draisaitl": 1100,
-      "Nikita Kucherov": 1200,
-      "Kirill Kaprizov": 1600,
-      "Auston Matthews": 1800,
-      "David Pastrnak": 2000,
-      "Nick Suzuki": 2500,
-      "Jack Hughes": 2800,
-      "Jack Eichel": 3300,
-      "Cale Makar": 3500,
-      "Mitch Marner": 3500,
-      "Quinn Hughes": 4000,
-      "Jason Robertson": 4500,
-      "Mikko Rantanen": 5000,
-      "Tage Thompson": 5500,
-      "Matt Boldy": 7000,
-      "Connor Hellebuyck": 7000,
-      "Cole Caufield": 8000,
-      "Connor Bedard": 8000,
-      "Mark Scheifele": 9000,
-      "Ilya Sorokin": 10000,
-      "Matthew Schaefer": 10000,
-      "Logan Thompson": 10000,
-      "Sam Reinhart": 10000,
-      "Leo Carlsson": 10000,
-      "Matthew Tkachuk": 10000,
-      "Andrei Vasilevskiy": 10000,
-      "Brayden Point": 15000,
-      "Kyle Connor": 15000,
-      "Brandon Hagel": 15000,
-      "Brady Tkachuk": 15000,
-      "William Nylander": 15000,
-      "Zach Werenski": 15000,
-      "Aleksander Barkov": 15000,
-      "Rasmus Dahlin": 15000,
-      "Nikolaj Ehlers": 20000,
-      "Trevor Zegras": 20000,
-      "Porter Martone": 20000,
-      "Filip Forsberg": 20000,
-      "Lane Hutson": 20000,
-      "Jeremy Swayman": 20000,
-      "Sidney Crosby": 20000,
-      "Juraj Slafkovsky": 20000,
-      "Nico Hischier": 20000,
-      "Igor Shesterkin": 20000,
-      "Mathew Barzal": 20000,
-      "Tim Stutzle": 20000,
-      "Logan Cooley": 20000,
-      "Clayton Keller": 20000,
-      "Wyatt Johnston": 20000,
-      "Andrei Svechnikov": 25000,
-      "Dylan Larkin": 25000,
-      "Artemi Panarin": 25000,
-      "Dylan Guenther": 25000,
-      "Roope Hintz": 25000,
-      "Jake Guentzel": 25000,
-      "Jordan Kyrou": 25000,
-      "Alex DeBrincat": 25000,
-      "Gavin McKenna": 25000,
-      "Sebastian Aho": 25000,
-      "Adrian Kempe": 25000,
-      "Kevin Fiala": 25000,
-      "Evan Bouchard": 25000,
-      "Cutter Gauthier": 25000,
-      "Robert Thomas": 25000,
-      "Alex Tuch": 30000,
-      "Kirill Marchenko": 30000,
-      "Mark Stone": 30000,
-      "Elias Pettersson": 30000,
-      "Patrick Kane": 30000,
-      "Alex Ovechkin": 30000,
-      "Jesper Bratt": 30000,
-      "Martin Necas": 30000,
-      "Adam Fox": 30000,
-      "Logan Stankoven": 30000,
-      "Mika Zibanejad": 30000
+    "jack_adams": {
+      "Travis Green": 700, "Marco Sturm": 800, "Mike Babcock": 800,
+      "Andre Tourigny": 1000, "Spencer Carbery": 1000, "Ryan Warsofsky": 1200,
+      "Mike Sullivan": 1200, "Paul Maurice": 1500, "Ryan Craig": 1800,
+      "Scott Arniel": 2200, "Jim Montgomery": 2200, "John Hynes": 2200,
+      "Glen Gulutzan": 2500, "Sheldon Keefe": 2500, "Martin St. Louis": 2500,
+      "Rod Brind'Amour": 2800, "Lindy Ruff": 3000, "Jim Hiller": 3000,
+      "Dan Muse": 3500, "Lane Lambert": 3500, "Jared Bednar": 3500,
+      "Rick Bowness": 3500, "Peter DeBoer": 4000, "Joel Quenneville": 4500,
+      "Jon Cooper": 5000, "Peter Laviolette": 5000, "Andrew Brunette": 5000,
+      "Rick Tocchet": 8000, "Todd McLellan": 10000, "Jeff Blashill": 10000,
+      "Manny Malhotra": 15000, "Ryan Huska": 20000
     },
     "vezina": {
-      "Connor Hellebuyck": 400,
-      "Ilya Sorokin": 700,
-      "Logan Thompson": 700,
-      "Andrei Vasilevskiy": 850,
-      "Igor Shesterkin": 1000,
-      "Jeremy Swayman": 1100,
-      "Jesper Wallstedt": 1500,
-      "Scott Wedgewood": 2000,
-      "Jet Greaves": 2000,
-      "Jakub Dobes": 2000,
-      "Jacob Markstrom": 2500,
-      "Brandon Bussi": 2500,
-      "Jake Oettinger": 3000,
-      "Sergei Bobrovsky": 3500,
-      "Dan Vladar": 3500,
-      "Karel Vejmelka": 3500,
-      "Darcy Kuemper": 4000,
-      "Lukas Dostal": 5000,
-      "Mackenzie Blackwood": 5000,
-      "Linus Ullmark": 5000,
-      "Jake Allen": 6000,
-      "Jordan Binnington": 6000,
-      "Carter Hart": 6000,
-      "Frederik Andersen": 7000,
-      "Juuse Saros": 7000,
-      "Ukko-Pekka Luukkonen": 7000,
-      "Yaroslav Askarov": 7000,
-      "Spencer Knight": 8000,
-      "Thatcher Demko": 8000,
-      "John Gibson": 8000,
-      "Filip Gustavsson": 10000,
-      "Joel Hofer": 12500,
-      "Arturs Silovs": 15000,
-      "Alex Lyon": 15000,
-      "Joey Daccord": 15000,
-      "Dustin Wolf": 15000,
-      "Adin Hill": 20000,
-      "Stuart Skinner": 20000,
-      "Tristan Jarry": 20000,
-      "Arvid Soderblom": 20000,
-      "Alex Nedeljkovic": 20000,
-      "Philipp Grubauer": 20000,
-      "Anthony Stolarz": 20000
+      "Jake Oettinger": 650, "Jeremy Swayman": 650, "Logan Thompson": 650,
+      "Ilya Sorokin": 800, "Andrei Vasilevskiy": 850, "Linus Ullmark": 850,
+      "Jesper Wallstedt": 1100, "Connor Hellebuyck": 1100, "Mackenzie Blackwood": 2500,
+      "Jet Greaves": 3000, "Brandon Bussi": 3000, "Karel Vejmelka": 3000,
+      "Sergei Bobrovsky": 5000, "Jacob Markstrom": 5000, "Scott Wedgewood": 5000,
+      "Jakub Dobes": 5000, "Darcy Kuemper": 5500, "Dan Vladar": 6000,
+      "Joel Hofer": 7000, "Lukas Dostal": 7000, "Juuse Saros": 7000,
+      "Jake Allen": 7000, "Spencer Knight": 7000, "Carter Hart": 7000,
+      "Ukko-Pekka Luukkonen": 8000, "Yaroslav Askarov": 8000, "Frederik Andersen": 9000,
+      "John Gibson": 10000, "Joey Daccord": 10000, "Filip Gustavsson": 10000,
+      "Jordan Binnington": 12500, "Stuart Skinner": 15000, "Arturs Silovs": 15000,
+      "Alex Lyon": 15000, "Dustin Wolf": 15000, "Adin Hill": 20000,
+      "Tristan Jarry": 20000, "Thatcher Demko": 20000, "Alex Nedeljkovic": 20000,
+      "Philipp Grubauer": 20000, "Anthony Stolarz": 20000, "Arvid Soderblom": 25000
     },
     "norris": {
-      "Cale Makar": 275,
-      "Quinn Hughes": 450,
-      "Zach Werenski": 525,
-      "Rasmus Dahlin": 650,
-      "Lane Hutson": 1000,
-      "Evan Bouchard": 1100,
-      "Moritz Seider": 1500,
-      "Matthew Schaefer": 1600,
-      "Miro Heiskanen": 2500,
-      "Jackson LaCombe": 3000,
-      "Charlie McAvoy": 3000,
-      "Adam Fox": 3500,
-      "Jake Sanderson": 3500,
-      "Victor Hedman": 4000,
-      "Roman Josi": 4500,
-      "Jakob Chychrun": 4500,
-      "Darren Raddysh": 5000,
-      "Josh Morrissey": 5500,
-      "Bowen Byram": 7500,
-      "Mikhail Sergachev": 7500,
-      "John Carlson": 8000,
-      "Erik Karlsson": 10000,
-      "Brock Faber": 10000,
-      "Shea Theodore": 10000,
-      "Travis Sanheim": 15000,
-      "Jaccob Slavin": 15000,
-      "Dougie Hamilton": 15000,
-      "Vince Dunn": 20000,
-      "Thomas Harley": 20000,
-      "Noah Dobson": 20000,
-      "Shayne Gostisbehere": 20000,
-      "Morgan Rielly": 22500,
-      "Rasmus Andersson": 25000,
-      "Luke Hughes": 25000,
-      "K'Andre Miller": 25000,
-      "Cole Hutson": 25000,
-      "Cam Fowler": 30000,
-      "Devon Toews": 30000,
-      "Zeev Buium": 30000,
-      "Artyom Levshunov": 30000,
-      "Gustav Forsling": 30000,
-      "Dmitry Orlov": 30000
+      "Evan Bouchard": 240, "Cale Makar": 325, "Quinn Hughes": 400,
+      "Zach Werenski": 750, "Lane Hutson": 850, "Rasmus Dahlin": 950,
+      "Matthew Schaefer": 1500, "Adam Fox": 2200, "Moritz Seider": 2200,
+      "Jackson LaCombe": 3200, "Jakob Chychrun": 3500, "Jake Sanderson": 4000,
+      "Miro Heiskanen": 4500, "Charlie McAvoy": 5000, "Darren Raddysh": 6500,
+      "Bowen Byram": 7000, "Mikhail Sergachev": 7500, "Roman Josi": 9000,
+      "Josh Morrissey": 10000, "John Carlson": 10000, "Brock Faber": 12500,
+      "Shea Theodore": 12500, "Travis Sanheim": 15000, "Victor Hedman": 15000,
+      "Vince Dunn": 20000, "Thomas Harley": 20000, "Erik Karlsson": 20000,
+      "Noah Dobson": 20000, "Jaccob Slavin": 20000, "Shayne Gostisbehere": 20000,
+      "Dougie Hamilton": 20000, "Morgan Rielly": 22500, "Rasmus Andersson": 25000,
+      "Luke Hughes": 25000, "K'Andre Miller": 25000, "Cole Hutson": 25000
     },
     "calder": {
-      "Porter Martone": 190,
-      "Gavin McKenna": 260,
-      "Ivar Stenberg": 550,
-      "Cole Hutson": 850,
-      "Anton Frondell": 900,
-      "Roman Kantserov": 1200,
-      "Konsta Helenius": 1700,
-      "Ilya Protas": 2000,
-      "James Hagens": 3500,
-      "Tij Iginla": 4000,
-      "Viggo Bjorck": 4000,
-      "Victor Eklund": 5500,
-      "Caleb Desnoyers": 6500,
-      "Jacob Fowler": 6500,
-      "Roger McQueen": 6500,
-      "Artur Akhtyamov": 7500,
-      "Carter Yakemchuk": 9000,
-      "Fabian Lysell": 10000,
-      "T.J. Hughes": 12500,
-      "Braeden Cootes": 12500,
-      "Brady Martin": 12500,
-      "Bradly Nadeau": 12500,
-      "Cole Eiserman": 15000,
-      "Alberts Smits": 15000,
-      "Oliver Bonk": 17500,
-      "Oscar Fisker Moelgaard": 27500,
-      "Cole Beaudoin": 30000,
-      "David Reinbacher": 30000,
-      "Harrison Brunicke": 30000,
-      "Theo Lindstein": 30000
+      "Gavin McKenna": 275, "Ivar Stenberg": 400, "Porter Martone": 400,
+      "Roman Kantserov": 700, "Cole Hutson": 900, "Anton Frondell": 950,
+      "Dylan Garand": 1100, "James Hagens": 1300, "Trevor Connelly": 1600,
+      "Viggo Bjorck": 2400, "T.J. Hughes": 2800, "Konsta Helenius": 3000,
+      "Ilya Protas": 3500, "Jacob Fowler": 5000, "Nikita Klepov": 6000,
+      "Victor Eklund": 6500, "Bradly Nadeau": 7000, "Tij Iginla": 7500,
+      "Artur Akhtyamov": 7500, "Owen Michaels": 7500, "Luca Cagnoni": 7500,
+      "Roger McQueen": 7500, "Sergei Murashov": 8500, "Carter Yakemchuk": 9000,
+      "Colten Ellis": 10000, "Fabian Lysell": 10000, "Caleb Desnoyers": 10000,
+      "Braeden Cootes": 12500, "Brady Martin": 12500, "Sebastian Cossa": 12500,
+      "Cole Eiserman": 15000, "Alberts Smits": 15000, "Oliver Bonk": 17500
     },
-    "jack_adams": {
-      "Ryan Warsofsky": 600,
-      "Spencer Carbery": 600,
-      "Paul Maurice": 800,
-      "Mike Babcock": 1000,
-      "Jim Hiller": 1500,
-      "Sheldon Keefe": 1500,
-      "Rick Tocchet": 1600,
-      "Martin St. Louis": 1600,
-      "John Hynes": 1800,
-      "Glen Gulutzan": 2000,
-      "Rod Brind'Amour": 2000,
-      "Jim Montgomery": 2000,
-      "Peter Laviolette": 2000,
-      "Ryan Craig": 2500,
-      "Mike Sullivan": 2500,
-      "Andre Tourigny": 2500,
-      "Rick Bowness": 2500,
-      "Peter DeBoer": 2800,
-      "Lindy Ruff": 3000,
-      "Jared Bednar": 3500,
-      "Travis Green": 4000,
-      "Jon Cooper": 5000,
-      "Andrew Brunette": 5000,
-      "Marco Sturm": 6000,
-      "Scott Arniel": 6000,
-      "Joel Quenneville": 7000,
-      "Dan Muse": 8000,
-      "Jeff Blashill": 8000,
-      "Lane Lambert": 10000,
-      "Todd McLellan": 10000,
-      "Manny Malhotra": 15000,
-      "Ryan Huska": 15000
-    },
-    "art_ross": {
-      "Connor McDavid": 275,
-      "Nikita Kucherov": 375,
-      "Nathan MacKinnon": 425,
-      "Macklin Celebrini": 1000,
-      "Leon Draisaitl": 1000,
-      "David Pastrnak": 1200,
-      "Kirill Kaprizov": 2000,
-      "Jack Eichel": 2000,
-      "Jason Robertson": 2500,
-      "Kyle Connor": 2800,
-      "Mitch Marner": 3000,
-      "Cale Makar": 4000,
-      "William Nylander": 4000,
-      "Auston Matthews": 5000,
-      "Nick Suzuki": 5000,
-      "Mikko Rantanen": 5000,
-      "Clayton Keller": 5000,
-      "Jake Guentzel": 5000,
-      "Jack Hughes": 7500,
-      "Quinn Hughes": 7500,
-      "Martin Necas": 7500,
-      "Matthew Tkachuk": 7500,
-      "Cole Caufield": 7500,
-      "Rasmus Dahlin": 10000,
-      "Lane Hutson": 10000,
-      "Robert Thomas": 10000,
-      "Zach Werenski": 10000,
-      "Jesper Bratt": 10000,
-      "Sam Reinhart": 10000,
-      "Brandon Hagel": 10000,
-      "Matt Boldy": 15000,
-      "Mark Scheifele": 15000,
-      "Dylan Larkin": 15000,
-      "Sidney Crosby": 15000,
-      "Wyatt Johnston": 15000,
-      "Leo Carlsson": 15000,
-      "Sebastian Aho": 15000,
-      "Tage Thompson": 15000,
-      "Brayden Point": 15000,
-      "Steven Stamkos": 20000,
-      "Artemi Panarin": 20000,
-      "Nikolaj Ehlers": 20000,
-      "Adam Fox": 20000,
-      "Nico Hischier": 20000,
-      "Cutter Gauthier": 20000,
-      "Morgan Geekie": 20000,
-      "Alex DeBrincat": 20000,
-      "Connor Bedard": 20000,
-      "Aleksander Barkov": 20000,
-      "Tim Stutzle": 20000,
-      "Drake Batherson": 25000,
-      "Alex Tuch": 25000,
-      "Ivan Demidov": 25000,
-      "Matt Coronato": 25000,
-      "Jordan Kyrou": 25000,
-      "Alex Ovechkin": 25000,
-      "Matthew Knies": 25000,
-      "Evgeni Malkin": 25000,
-      "Quinton Byfield": 25000,
-      "Kevin Fiala": 25000,
-      "Kirill Marchenko": 25000,
-      "Trevor Zegras": 25000,
-      "Adrian Kempe": 25000,
-      "Mika Zibanejad": 25000,
-      "Mathew Barzal": 25000,
-      "John Tavares": 25000,
-      "Brady Tkachuk": 25000,
-      "Filip Forsberg": 25000,
-      "Dylan Guenther": 25000,
-      "Brock Boeser": 25000,
-      "Lucas Raymond": 25000,
-      "Adam Fantilli": 25000,
-      "William Eklund": 25000,
-      "Gavin McKenna": 25000,
-      "Bo Horvat": 25000
+    "hart": {
+      "Connor McDavid": 160, "Nathan MacKinnon": 375, "Macklin Celebrini": 550,
+      "Kirill Kaprizov": 1200, "Nikita Kucherov": 1400, "Leon Draisaitl": 1500,
+      "David Pastrnak": 2400, "Auston Matthews": 2500, "Jack Hughes": 3000,
+      "Jack Eichel": 3000, "Nick Suzuki": 3500, "Cale Makar": 4000,
+      "Mitch Marner": 4000, "Mikko Rantanen": 5000, "Quinn Hughes": 5000,
+      "Matt Boldy": 6000, "Kyle Connor": 6500, "Jason Robertson": 7000,
+      "Brady Tkachuk": 7000, "Tage Thompson": 7000, "Sebastian Aho": 7500,
+      "Leo Carlsson": 7500, "Cole Caufield": 8000, "Logan Thompson": 8000,
+      "Sam Reinhart": 8500, "Ilya Sorokin": 10000, "Mark Scheifele": 10000,
+      "Connor Bedard": 10000, "Tim Stutzle": 10000, "Clayton Keller": 10000
     },
     "rocket_richard": {
-      "Nathan MacKinnon": 500,
-      "Leon Draisaitl": 550,
-      "Cole Caufield": 575,
-      "Kirill Kaprizov": 700,
-      "Macklin Celebrini": 900,
-      "Auston Matthews": 900,
-      "Jason Robertson": 1200,
-      "Connor McDavid": 1500,
-      "Nikita Kucherov": 1500,
-      "Wyatt Johnston": 1600,
-      "Tage Thompson": 2000,
-      "Kyle Connor": 2200,
-      "Zach Hyman": 2500,
-      "Matt Boldy": 3300,
-      "William Nylander": 3500,
-      "Cutter Gauthier": 3500,
-      "Sam Reinhart": 3500,
-      "Alex DeBrincat": 4000,
-      "Morgan Geekie": 4000,
-      "Dylan Guenther": 4000,
-      "Martin Necas": 6000,
-      "David Pastrnak": 7500,
-      "Brandon Hagel": 7500,
-      "Adrian Kempe": 7500,
-      "Mark Scheifele": 10000,
-      "Filip Forsberg": 10000,
-      "Pavel Dorofeyev": 10000,
-      "Dylan Larkin": 10000,
-      "Jake Guentzel": 10000,
-      "Steven Stamkos": 10000,
-      "Clayton Keller": 15000,
-      "Nico Hischier": 15000,
-      "Mikko Rantanen": 15000,
-      "Jack Hughes": 15000,
-      "Drake Batherson": 15000,
-      "Jack Eichel": 15000,
-      "Leo Carlsson": 15000,
-      "Adam Fantilli": 20000,
-      "Connor Bedard": 20000,
-      "Brady Tkachuk": 20000,
-      "Aleksander Barkov": 20000,
-      "Sidney Crosby": 20000,
-      "Mark Stone": 20000,
-      "Kirill Marchenko": 20000,
-      "Artemi Panarin": 20000,
-      "Mitch Marner": 20000,
-      "Trevor Zegras": 20000,
-      "Andrei Svechnikov": 20000,
-      "Matthew Tkachuk": 20000,
-      "Seth Jarvis": 20000,
-      "Tim Stutzle": 20000,
-      "Anthony Mantha": 25000,
-      "Kevin Fiala": 25000,
-      "Roope Hintz": 25000,
-      "Bryan Rust": 25000,
-      "Morgan Frost": 25000,
-      "Owen Tippett": 25000,
-      "Ivar Stenberg": 25000,
-      "Jordan Eberle": 25000,
-      "Gavin McKenna": 25000,
-      "Brad Marchand": 25000,
-      "Jordan Kyrou": 25000,
-      "Mika Zibanejad": 25000,
-      "Lucas Raymond": 25000,
-      "John Tavares": 25000,
-      "Robert Thomas": 25000,
-      "Brock Boeser": 25000,
-      "Sebastian Aho": 25000,
-      "Nikolaj Ehlers": 25000,
-      "Porter Martone": 25000
+      "Nathan MacKinnon": 450, "Kirill Kaprizov": 450, "Leon Draisaitl": 600,
+      "Cole Caufield": 750, "Auston Matthews": 750, "Macklin Celebrini": 900,
+      "Connor McDavid": 1000, "Kyle Connor": 1600, "Tage Thompson": 2000,
+      "Jason Robertson": 2400, "Nikita Kucherov": 2400, "Dylan Guenther": 2500,
+      "William Nylander": 3000, "Matt Boldy": 3000, "Alex DeBrincat": 3500
+    },
+    "art_ross": {
+      "Connor McDavid": -135, "Nathan MacKinnon": 450, "Nikita Kucherov": 475,
+      "Jack Eichel": 1000, "Macklin Celebrini": 1000, "Leon Draisaitl": 1000,
+      "Kirill Kaprizov": 2500, "David Pastrnak": 3000, "Jack Hughes": 3500,
+      "Nick Suzuki": 3500, "Auston Matthews": 4000, "William Nylander": 4000,
+      "Jason Robertson": 5000, "Mitch Marner": 5000, "Matthew Tkachuk": 6500
     }
-  },
-  "updated_markets": {
-    "award:art_ross": "2026-08-13",
-    "award:rocket_richard": "2026-08-13",
-    "award:jack_adams": "2026-08-13"
   }
 }
