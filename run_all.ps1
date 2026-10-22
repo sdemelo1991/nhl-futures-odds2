@@ -53,7 +53,6 @@ Write-Host "`n[Manual books] (apply transcribed <book>_data.json from your paste
 python scrapers\apply_manual.py bookmaker
 python scrapers\apply_manual.py caesars
 python scrapers\apply_manual.py bet365
-python scrapers\apply_manual.py hardrock
 
 # --- add future direct-API books here, one line each ---
 # python scrapers\betmgm.py --write
@@ -65,5 +64,8 @@ python scrapers\dedupe_players.py --write
 Write-Host "`n[Price history] (log per-selection changes for the hover tooltips)" -ForegroundColor Yellow
 python scrapers\history.py
 
+Write-Host "`n[Jack Adams PM] (recompute best_avail across all books that post it)" -ForegroundColor Yellow
+python recompute_best_avail.py
+
 Write-Host "`n=== Launching dashboard ===" -ForegroundColor Cyan
-streamlit run app.py
+streamlit run app_merged.py --server.fileWatcherType none --server.runOnSave false

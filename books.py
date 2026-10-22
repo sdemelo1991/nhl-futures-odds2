@@ -7,18 +7,19 @@ Sharp = the books whose prices anchor the market (first 5 + Caesars). Non-sharp
 
 BOOKS = [
     "pinnacle", "circa", "fanduel", "kalshi", "bookmaker", "betonline", "caesars",  # sharp
-    "draftkings", "betmgm", "hardrock", "bet365", "thescore", "kambi", "betano", "dazn",  # non-sharp
+    "draftkings", "betmgm", "bet365", "thescore", "kambi", "betano", "dazn",  # non-sharp
 ]
 # Dropped: bet99, betvictor — both blocked by FanDuel corporate network (sites
 # won't load on the work laptop, so neither scrapeable nor readable-to-paste).
-# LABELS/BRAND entries kept below so they're a one-line re-add from a home machine.
+# Dropped: hardrock — manual-only (uncapturable WebSocket board), odds got hard
+# to source reliably and the stale/wrong entries were doing more harm than good.
+# LABELS/BRAND entries kept below so they're a one-line re-add if that changes.
 
 SHARP = {"pinnacle", "circa", "fanduel", "kalshi", "bookmaker", "betonline", "caesars"}
 
 # Books entered by paste (no scraper) — mobile-only / no usable API / blocked
-# on the work network (bet365), or stream odds over an uncapturable WebSocket
-# (hardrock — HAR only yields the static price ladder, not the board). See memory.
-MANUAL = {"circa", "bookmaker", "caesars", "bet365", "hardrock"}
+# on the work network (bet365). See memory.
+MANUAL = {"circa", "bookmaker", "caesars", "bet365"}
 
 # The book we manage / want to be alerted about when it's on an arb or middle.
 HOME_BOOK = "fanduel"

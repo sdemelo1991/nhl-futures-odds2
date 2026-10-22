@@ -9,8 +9,15 @@ Run: streamlit run app.py
 """
 
 import streamlit as st
-import json
-from pathlib import Path
+
+# The live-CDN-backed loader (fetches odds.json from GitHub raw on a 2-minute
+# TTL, falling back to the bundled local file only if that fetch fails) lives
+# in futures_engine.py. Use it here too -- this file previously had its own
+# get_data()/load_odds_cached() that read ONLY the locally bundled file and
+# cached it with no ttl, so the pages below kept showing whatever snapshot was
+# bundled at the last Streamlit Cloud redeploy, no matter how often the data
+# was pushed. That was the actual cause of the dashboard reading stale.
+from futures_engine import get_data as _live_get_data
 
 # Set page config early (must be first Streamlit call)
 st.set_page_config(
@@ -35,23 +42,6 @@ def go_to(page):
     """
     st.session_state.page = page
     st.session_state.nav_radio = page
-
-def get_data():
-    """Load odds.json once, cached by mtime. On Databricks, point to Volume path."""
-    # Local: C:\Users\StevenDeMelo\Downloads\nhl-futures-odds\data\odds.json
-    # Databricks: /Volumes/<catalog>/<schema>/<volume>/odds.json
-    odds_path = Path("data/odds.json")
-    try:
-        with open(odds_path) as f:
-            return json.load(f)
-    except FileNotFoundError:
-        st.error(f"odds.json not found at {odds_path}")
-        return {}
-
-@st.cache_data
-def load_odds_cached():
-    """Cached odds load with mtime tracking."""
-    return get_data()
 
 def render_hub():
     """Landing page: two big squared tabs to choose from."""
@@ -127,7 +117,7 @@ def main():
             # (renders its own sidebar content below the hub nav radio)
             try:
                 from futures_comp import render_comp_tool
-                render_comp_tool(load_odds_cached())
+                render_comp_tool(_live_get_data())
             except ImportError:
                 st.info("Futures Comp Tool not yet integrated. Ensure futures_engine.py is in the same directory.")
         elif st.session_state.page == "jack":
@@ -136,7 +126,7 @@ def main():
             # Import and run the Jack Adams PM tool
             try:
                 from jack_adams_board import render_jack_adams_pm
-                render_jack_adams_pm(load_odds_cached())
+                render_jack_adams_pm(_live_get_data())
             except ImportError as e:
                 st.error(f"Failed to load Jack Adams PM: {e}")
         else:
