@@ -12,6 +12,7 @@ import json
 import os
 import statistics
 
+import requests
 import streamlit as st
 
 from teams import CONFERENCES, DIVISIONS, TEAMS, teams_in, tricode, normalize_team
@@ -242,6 +243,28 @@ table.cmp {{ width:100%; border-collapse:collapse; font-size:.85rem; font-varian
 
 
 # --------------------------------------------------------------------------- data
+# Streamlit Cloud's redeploy-on-push has repeatedly lagged or stuck entirely
+# (confirmed multiple times — the committed data was current on GitHub while
+# the live app kept serving a days-old bundled snapshot). Rather than depend
+# on a redeploy for DATA freshness, fetch the committed files directly from
+# GitHub's raw CDN on a short cache TTL, falling back to the locally bundled
+# copy if that fetch ever fails (offline, GitHub hiccup, etc.) — so the app
+# never hard-fails, it just degrades to whatever was last actually deployed.
+# Code changes still need a real redeploy; this only decouples data updates
+# from that pipeline, since data changes far more often than code does.
+_RAW_BASE = "https://raw.githubusercontent.com/sdemelo1991/nhl-futures-odds2/main"
+
+
+@st.cache_data(show_spinner=False, ttl=120)
+def _fetch_remote_json(url):
+    try:
+        r = requests.get(url, timeout=10)
+        r.raise_for_status()
+        return r.json()
+    except Exception:  # noqa: BLE001 — any failure just falls back to local
+        return None
+
+
 @st.cache_data(show_spinner=False)
 def load_data(mtime: float):
     with open(DATA_PATH, encoding="utf-8") as f:
@@ -249,6 +272,9 @@ def load_data(mtime: float):
 
 
 def get_data():
+    remote = _fetch_remote_json(f"{_RAW_BASE}/data/odds.json")
+    if remote is not None:
+        return remote
     mtime = os.path.getmtime(DATA_PATH) if os.path.exists(DATA_PATH) else 0.0
     return load_data(mtime)
 
@@ -262,6 +288,9 @@ def load_history(mtime: float):
 
 
 def get_history():
+    remote = _fetch_remote_json(f"{_RAW_BASE}/data/price_history.json")
+    if remote is not None:
+        return remote
     mtime = os.path.getmtime(HIST_PATH) if os.path.exists(HIST_PATH) else 0.0
     return load_history(mtime)
 

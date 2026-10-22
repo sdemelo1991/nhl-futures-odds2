@@ -5,9 +5,16 @@ import base64
 import functools
 import json
 import re
+import requests
 from pathlib import Path
 
 TEAM_ASSETS = Path(__file__).parent / "assets" / "teams"
+# See futures_engine.py's matching comment: fetch live from GitHub's raw CDN
+# so coach data (best_avail etc.) doesn't depend on Streamlit Cloud's
+# redeploy-on-push, which has repeatedly lagged. Falls back to the locally
+# bundled file on any fetch failure.
+_RAW_COACHES_URL = ("https://raw.githubusercontent.com/sdemelo1991/"
+                    "nhl-futures-odds2/main/coaches_2026-27.json")
 
 
 @functools.lru_cache(maxsize=None)
@@ -21,8 +28,21 @@ def team_logo_uri(tri):
     return None
 
 
+@st.cache_data(show_spinner=False, ttl=120)
+def _fetch_remote_coaches():
+    try:
+        r = requests.get(_RAW_COACHES_URL, timeout=10)
+        r.raise_for_status()
+        return r.json()
+    except Exception:  # noqa: BLE001 — any failure just falls back to local
+        return None
+
+
 def load_coaches_json():
-    """Load coaches data from JSON file."""
+    """Load coaches data — live from GitHub first, local file as fallback."""
+    remote = _fetch_remote_coaches()
+    if remote is not None:
+        return remote
     coaches_path = Path("coaches_2026-27.json")
     try:
         with open(coaches_path) as f:
