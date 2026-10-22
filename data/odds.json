@@ -9798,7 +9798,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-22 17:43",
+    "last_updated": "2026-10-22 16:13",
     "book_updated": {
       "dazn": "2026-10-22",
       "fanduel": "2026-10-22",
@@ -9810,15 +9810,13 @@
       "hardrock": "2026-08-11"
     },
     "book_market_updated": {
-      "caesars": {
-        "award:art_ross": "2026-08-13",
-        "award:rocket_richard": "2026-08-13",
-        "award:jack_adams": "2026-08-13"
-      },
+      "caesars": {},
       "bet365": {
         "award:jack_adams": "2026-10-21",
         "award:rocket_richard": "2026-10-21"
-      }
+      },
+      "bookmaker": {},
+      "hardrock": {}
     },
     "book_market_overround": {
       "pinnacle": {
