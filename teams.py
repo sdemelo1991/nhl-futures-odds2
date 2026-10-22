@@ -127,7 +127,19 @@ def normalize_team(raw: str) -> str:
             return key
         if key.lower() in _ALIASES:
             return _ALIASES[key.lower()]
-    return raw.strip()
+    # Some books prefix the mascot with a non-standard tricode (DAZN has sent
+    # "CAL Flames", "VGS Golden Knights", "NAS Predators", "WIN Jets" — using
+    # CAL/VGS/NAS/WIN instead of the real CGY/VGK/NSH/WPG), which fails the
+    # exact-match above and silently creates a duplicate row instead of
+    # resolving to the real team. If the label is "<3-4 letter prefix> <rest>"
+    # and the mascot alone resolves, trust that over the unrecognized prefix.
+    stripped = raw.strip()
+    parts = stripped.split(" ", 1)
+    if len(parts) == 2 and 2 <= len(parts[0]) <= 4 and parts[0].isalpha():
+        mascot = parts[1].strip().lower()
+        if mascot in _ALIASES:
+            return _ALIASES[mascot]
+    return stripped
 
 
 def teams_in(conference: str = None, division: str = None):

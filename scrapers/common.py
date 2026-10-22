@@ -228,63 +228,84 @@ def set_special(doc, kind, label, book, odds):
 def prune_stale(doc, book, seen):
     """Drop `book`'s price from any selection under a covered section/market
     that wasn't seen this run — i.e. the book no longer posts a price there,
-    most likely because it got suspended/pulled since the last scrape.
+    whether a single selection got suspended/pulled, or the book dropped the
+    whole market. An empty seen-set for a tracked market means "found nothing
+    there this run" and clears the whole market for this book — deliberately,
+    even though that can't distinguish "book removed the market" from "a
+    parsing bug found nothing" the same way per-selection suspension can.
+    Misleading stale data (e.g. a book that quietly stopped offering Team
+    Points still showing week-old lines) is worse than an occasional false
+    clear, which a book's next successful run re-populates anyway.
 
     Only call this for scrapers that pull a COMPLETE live snapshot of a
     market every run (direct APIs / live replays) — never for HAR-replay
     books falling back to a stale capture, since "not seen" there just means
-    "not in this old file," not "suspended."
+    "not in this old file," not "the book dropped it."
 
-    `seen` covers only the sections/markets this scraper actually touched
-    this run; e.g. {"to_win": {"cup": {...}, "conference": {...}},
+    `seen` must have a key for every market/category this scraper is capable
+    of covering (pre-seeded to an empty set even if nothing is found this
+    run) — a market with NO key at all in `seen` is left completely alone,
+    since that means this scraper never attempts that market in the first
+    place. e.g. {"to_win": {"cup": {...}, "conference": {...}},
     "playoffs_yes": {...}, "playoffs_no": {...}, "team_points": {...},
     "awards": {"jack_adams": {...}, "hart": {...}}, "cup_specials": {"conf": {...}}}.
-    A market is skipped (left untouched) if its seen set came back empty —
-    that almost always means a parsing failure, not a real wipe of the board,
-    so we degrade to leaving old data in place rather than risk nuking it.
     """
     removed = 0
+    cleared_markets = []
 
     for market, keys in (seen.get("to_win") or {}).items():
-        if not keys:
-            continue
+        before = sum(1 for prices in doc.get("to_win", {}).get(market, {}).values() if book in prices)
         for team, prices in doc.get("to_win", {}).get(market, {}).items():
             if team not in keys and book in prices:
                 del prices[book]
                 removed += 1
+        if before and not keys:
+            cleared_markets.append(f"to_win.{market}")
 
     for side_key, side in (("playoffs_yes", "yes"), ("playoffs_no", "no")):
-        keys = seen.get(side_key)
-        if not keys:
+        if side_key not in seen:
             continue
+        keys = seen[side_key]
+        before = sum(1 for sides in doc.get("playoffs", {}).values() if book in sides.get(side, {}))
         for team, sides in doc.get("playoffs", {}).items():
             if team not in keys and book in sides.get(side, {}):
                 del sides[side][book]
                 removed += 1
+        if before and not keys:
+            cleared_markets.append(side_key)
 
-    keys = seen.get("team_points")
-    if keys:
+    if "team_points" in seen:
+        keys = seen["team_points"]
+        before = sum(1 for prices in doc.get("team_points", {}).values() if book in prices)
         for team, prices in doc.get("team_points", {}).items():
             if team not in keys and book in prices:
                 del prices[book]
                 removed += 1
+        if before and not keys:
+            cleared_markets.append("team_points")
 
     for cat, keys in (seen.get("awards") or {}).items():
-        if not keys:
-            continue
+        before = sum(1 for entry in doc.get("awards", {}).get(cat, {}).values()
+                     if book in entry.get("prices", {}))
         for player, entry in doc.get("awards", {}).get(cat, {}).items():
             prices = entry.get("prices", {})
             if player not in keys and book in prices:
                 del prices[book]
                 removed += 1
+        if before and not keys:
+            cleared_markets.append(f"award:{cat}")
 
     for kind, keys in (seen.get("cup_specials") or {}).items():
-        if not keys:
-            continue
+        before = sum(1 for prices in doc.get("cup_specials", {}).get(kind, {}).values() if book in prices)
         for label, prices in doc.get("cup_specials", {}).get(kind, {}).items():
             if label not in keys and book in prices:
                 del prices[book]
                 removed += 1
+        if before and not keys:
+            cleared_markets.append(f"cup_specials.{kind}")
+
+    if cleared_markets:
+        print(f"  !! {book}: fully cleared (0 found this run, had data before): {cleared_markets}")
 
     if removed:
         print(f"  pruned {removed} stale {book} price(s) (suspended/pulled since last scrape)")

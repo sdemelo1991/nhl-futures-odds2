@@ -292,8 +292,13 @@ def write(doc, payload, live):
                 key = set_team_points(doc, team, BOOK, line, over, under); n["points"] += 1
                 seen["team_points"].add(key)
         else:
+            # FanDuel formats some trophy markets as "... Trophy - Winner" (Art
+            # Ross, Rocket Richard) and others as "... Trophy Winner" (Hart,
+            # Norris, Calder) with no dash — collapse " - " before matching so
+            # both forms hit the same AWARD_MAP suffix.
+            low_norm = low.replace(" - ", " ")
             for suffix, cat in AWARD_MAP.items():
-                if low.endswith(suffix):
+                if low_norm.endswith(suffix):
                     for player, od in runner_odds(mk, live):
                         if od is not None:
                             key = set_award(doc, cat, player, "", BOOK, od)

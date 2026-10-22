@@ -228,7 +228,7 @@ def write_all(payloads, is_live=False):
                                 tracked["awards"][cat].add(key)
                 else:
                     unmatched.append(f"[awards] {title}")
-            elif bt == "winnerspecials" and kind == "block":
+            elif bt == "winnerspecials" and kind in ("block", "table"):
                 sp = classify_special(title)
                 if sp:  # Winning Conference / Division / State (champion's attribute)
                     for nm, pr, _ in entries:

@@ -174,7 +174,7 @@ def write(doc, specials, priced):
         "cup_specials": {"conf": set(), "div": set(), "state": set()},
         "playoffs_yes": set(), "playoffs_no": set(),
         "team_points": set(),
-        "awards": {},
+        "awards": {cat: set() for cat in set(_TROPHY_NAME_TO_CATEGORY.values())},
     }
     for mid, info in specials.items():
         category = info["category"]
