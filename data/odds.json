@@ -2476,8 +2476,8 @@
           "bet365": 550,
           "circa": 425,
           "betano": 900,
-          "kalshi": 266,
-          "dazn": 900
+          "dazn": 900,
+          "kalshi": 280
         }
       },
       "Leon Draisaitl": {
@@ -2490,8 +2490,8 @@
           "bet365": 1600,
           "circa": 1000,
           "betano": 1200,
-          "kalshi": 4579,
-          "dazn": 1200
+          "dazn": 1200,
+          "kalshi": 4579
         }
       },
       "Nikita Kucherov": {
@@ -2504,8 +2504,8 @@
           "bet365": 1500,
           "circa": 875,
           "betano": 1900,
-          "kalshi": 398,
-          "dazn": 1900
+          "dazn": 1900,
+          "kalshi": 398
         }
       },
       "Kirill Kaprizov": {
@@ -2518,8 +2518,8 @@
           "bet365": 1200,
           "circa": 2000,
           "betano": 900,
-          "kalshi": 756,
-          "dazn": 900
+          "dazn": 900,
+          "kalshi": 756
         }
       },
       "Auston Matthews": {
@@ -2532,8 +2532,8 @@
           "bet365": 2500,
           "circa": 2800,
           "betano": 1600,
-          "kalshi": 1074,
-          "dazn": 1600
+          "dazn": 1600,
+          "kalshi": 1074
         }
       },
       "David Pastrnak": {
@@ -2546,8 +2546,8 @@
           "bet365": 2200,
           "circa": 1600,
           "betano": 3400,
-          "kalshi": 2243,
-          "dazn": 3400
+          "dazn": 3400,
+          "kalshi": 2243
         }
       },
       "Jack Hughes": {
@@ -2560,8 +2560,8 @@
           "bet365": 2800,
           "circa": 2500,
           "betano": 3400,
-          "kalshi": 1938,
-          "dazn": 3400
+          "dazn": 3400,
+          "kalshi": 1938
         }
       },
       "Jack Eichel": {
@@ -2574,8 +2574,8 @@
           "bet365": 3500,
           "circa": 6000,
           "betano": 1000,
-          "kalshi": 2243,
-          "dazn": 1000
+          "dazn": 1000,
+          "kalshi": 2243
         }
       },
       "Mitchell Marner": {
@@ -2653,8 +2653,8 @@
           "bet365": 6000,
           "circa": 10000,
           "betano": 6900,
-          "kalshi": 4579,
-          "dazn": 6900
+          "dazn": 6900,
+          "kalshi": 4579
         }
       },
       "Connor Bedard": {
@@ -2666,8 +2666,8 @@
           "caesars": 10000,
           "circa": 9000,
           "betano": 8900,
-          "kalshi": 2243,
-          "dazn": 8900
+          "dazn": 8900,
+          "kalshi": 2243
         }
       },
       "Cole Caufield": {
@@ -2746,8 +2746,8 @@
           "draftkings": 10000,
           "circa": 30000,
           "betano": 14900,
-          "kalshi": 5098,
-          "dazn": 14900
+          "dazn": 14900,
+          "kalshi": 5098
         }
       },
       "Ilya Sorokin": {
@@ -2821,8 +2821,8 @@
           "draftkings": 15000,
           "circa": 30000,
           "betano": 24900,
-          "kalshi": 3644,
-          "dazn": 24900
+          "dazn": 24900,
+          "kalshi": 3644
         }
       },
       "Brandon Hagel": {
@@ -6677,7 +6677,7 @@
         "caesars": 350,
         "bet365": 475,
         "dazn": 350,
-        "kalshi": 425
+        "kalshi": 398
       },
       "Montreal Canadiens": {
         "pinnacle": 1136,
@@ -6692,7 +6692,7 @@
         "caesars": 900,
         "bet365": 1200,
         "dazn": 1100,
-        "kalshi": 945
+        "kalshi": 841
       },
       "New Jersey Devils": {
         "pinnacle": 1519,
@@ -6707,7 +6707,7 @@
         "caesars": 1000,
         "bet365": 1200,
         "dazn": 1200,
-        "kalshi": 351
+        "kalshi": 373
       },
       "New York Islanders": {
         "pinnacle": 8091,
@@ -6827,7 +6827,7 @@
         "caesars": 800,
         "bet365": 600,
         "dazn": 1100,
-        "kalshi": 756
+        "kalshi": 685
       },
       "Anaheim Ducks": {
         "pinnacle": 2102,
@@ -6842,7 +6842,7 @@
         "bet365": 2000,
         "betmgm": 2000,
         "dazn": 2100,
-        "kalshi": 2243
+        "kalshi": 1775
       },
       "Calgary Flames": {
         "pinnacle": 50040,
@@ -6945,7 +6945,7 @@
         "bet365": 600,
         "betmgm": 650,
         "dazn": 600,
-        "kalshi": 490
+        "kalshi": 574
       },
       "Nashville Predators": {
         "pinnacle": 8007,
@@ -8418,7 +8418,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-23 13:17",
+    "last_updated": "2026-10-23 13:27",
     "book_updated": {
       "dazn": "2026-10-23",
       "fanduel": "2026-10-23",
@@ -12753,25 +12753,25 @@
         "kalshi": 120042
       },
       "Pittsburgh Penguins": {
-        "kalshi": 85578
+        "kalshi": 90578
       },
       "New York Rangers": {
-        "kalshi": 22551
+        "kalshi": 22853
       },
       "Columbus Blue Jackets": {
-        "kalshi": 137294
+        "kalshi": 142294
       },
       "New Jersey Devils": {
         "kalshi": 530322
       },
       "Montreal Canadiens": {
-        "kalshi": 68096
+        "kalshi": 73096
       },
       "Edmonton Oilers": {
         "kalshi": 553152
       },
       "Vegas Golden Knights": {
-        "kalshi": 22511
+        "kalshi": 44553
       },
       "Florida Panthers": {
         "kalshi": 56004
@@ -12780,16 +12780,16 @@
         "kalshi": 29450
       },
       "San Jose Sharks": {
-        "kalshi": 61545
+        "kalshi": 61601
       },
       "Anaheim Ducks": {
-        "kalshi": 94582
+        "kalshi": 94687
       },
       "Toronto Maple Leafs": {
         "kalshi": 8865
       },
       "Minnesota Wild": {
-        "kalshi": 24700
+        "kalshi": 44700
       },
       "Buffalo Sabres": {
         "kalshi": 77158
@@ -12805,7 +12805,7 @@
         "kalshi": 537783
       },
       "St. Louis Blues": {
-        "kalshi": 58498
+        "kalshi": 58467
       }
     },
     "conference": {
@@ -12816,64 +12816,64 @@
         "kalshi": 8987
       },
       "Vegas Golden Knights": {
-        "kalshi": 3180
+        "kalshi": 5183
       },
       "Nashville Predators": {},
       "Utah Mammoth": {
         "kalshi": 2657
       },
       "Seattle Kraken": {
-        "kalshi": 4378
+        "kalshi": 4778
       },
       "St. Louis Blues": {
-        "kalshi": 5506
+        "kalshi": 5363
       },
       "Minnesota Wild": {
-        "kalshi": 301
+        "kalshi": 1811
       },
       "Los Angeles Kings": {
         "kalshi": 2805
       },
       "Anaheim Ducks": {
-        "kalshi": 2788
+        "kalshi": 4286
       },
       "San Jose Sharks": {
-        "kalshi": 2582
+        "kalshi": 2865
       },
       "Chicago Blackhawks": {},
       "Colorado Avalanche": {
         "kalshi": 694
       },
       "Edmonton Oilers": {
-        "kalshi": 4124
+        "kalshi": 2387
       },
       "Toronto Maple Leafs": {
-        "kalshi": 2012
+        "kalshi": 2002
       },
       "Ottawa Senators": {
-        "kalshi": 3737
+        "kalshi": 3696
       },
       "Montreal Canadiens": {
-        "kalshi": 1772
+        "kalshi": 2107
       },
       "Carolina Hurricanes": {
         "kalshi": 3488
       },
       "New Jersey Devils": {
-        "kalshi": 3689
+        "kalshi": 3433
       },
       "Florida Panthers": {
-        "kalshi": 3257
+        "kalshi": 4368
       },
       "New York Islanders": {
-        "kalshi": 2955
+        "kalshi": 2970
       },
       "Detroit Red Wings": {},
       "Tampa Bay Lightning": {
         "kalshi": 3218
       },
       "Philadelphia Flyers": {
-        "kalshi": 3386
+        "kalshi": 2359
       },
       "Buffalo Sabres": {
         "kalshi": 3358
@@ -12891,7 +12891,7 @@
         "kalshi": 310
       },
       "Washington Capitals": {
-        "kalshi": 1868
+        "kalshi": 2021
       }
     },
     "hart": {
@@ -12929,7 +12929,7 @@
         "kalshi": 309
       },
       "Macklin Celebrini": {
-        "kalshi": 440
+        "kalshi": 456
       },
       "Sidney Crosby": {
         "kalshi": 3659
