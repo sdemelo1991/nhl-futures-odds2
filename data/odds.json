@@ -30,6 +30,11 @@
         "line": 107.5,
         "over": -105,
         "under": -105
+      },
+      "betmgm": {
+        "line": 108.5,
+        "over": -105,
+        "under": -120
       }
     },
     "Buffalo Sabres": {
@@ -126,6 +131,11 @@
         "line": 95.5,
         "over": -105,
         "under": -105
+      },
+      "betmgm": {
+        "line": 91.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Florida Panthers": {
@@ -343,6 +353,11 @@
         "line": 89.5,
         "over": -115,
         "under": -111
+      },
+      "betmgm": {
+        "line": 89.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Seattle Kraken": {
@@ -555,6 +570,11 @@
         "line": 101.5,
         "over": -105,
         "under": -105
+      },
+      "betmgm": {
+        "line": 102.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Vegas Golden Knights": {
@@ -698,6 +718,11 @@
         "line": 94.5,
         "over": -105,
         "under": -105
+      },
+      "betmgm": {
+        "line": 95.5,
+        "over": -115,
+        "under": -115
       }
     },
     "Utah Mammoth": {
@@ -730,6 +755,11 @@
         "line": 95.0,
         "over": -105,
         "under": -105
+      },
+      "betmgm": {
+        "line": 103.5,
+        "over": -105,
+        "under": -125
       }
     },
     "Columbus Blue Jackets": {
@@ -5461,7 +5491,8 @@
         "bet365": 550,
         "circa": 260,
         "dazn": 460,
-        "betano": 460
+        "betano": 460,
+        "betmgm": 500
       },
       "no": {
         "fanduel": -770,
@@ -5472,7 +5503,8 @@
         "bet365": -900,
         "circa": -330,
         "dazn": -833,
-        "betano": -833
+        "betano": -833,
+        "betmgm": -700
       }
     },
     "Edmonton Oilers": {
@@ -7857,7 +7889,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-23 10:07",
+    "last_updated": "2026-10-23 10:17",
     "book_updated": {
       "dazn": "2026-10-23",
       "fanduel": "2026-10-23",
@@ -12177,74 +12209,74 @@
   "liq": {
     "cup": {
       "Washington Capitals": {
-        "kalshi": 528250
+        "kalshi": 558250
       },
       "Colorado Avalanche": {
-        "kalshi": 2065
+        "kalshi": 22091
       },
       "Tampa Bay Lightning": {
-        "kalshi": 521956
+        "kalshi": 551848
       },
       "Ottawa Senators": {
-        "kalshi": 528684
+        "kalshi": 558684
       },
       "Los Angeles Kings": {
-        "kalshi": 101529
+        "kalshi": 131529
       },
       "Pittsburgh Penguins": {
-        "kalshi": 47000
+        "kalshi": 77000
       },
       "New York Rangers": {
-        "kalshi": 1609
+        "kalshi": 1749
       },
       "Columbus Blue Jackets": {
-        "kalshi": 118781
+        "kalshi": 148781
       },
       "New Jersey Devils": {
-        "kalshi": 63224
+        "kalshi": 93224
       },
       "Montreal Canadiens": {
-        "kalshi": 36592
+        "kalshi": 66592
       },
       "Edmonton Oilers": {
-        "kalshi": 510000
+        "kalshi": 540000
       },
       "Vegas Golden Knights": {
         "kalshi": 20014
       },
       "Florida Panthers": {
-        "kalshi": 22524
+        "kalshi": 32531
       },
       "Carolina Hurricanes": {
-        "kalshi": 2056
+        "kalshi": 12052
       },
       "San Jose Sharks": {
         "kalshi": 17891
       },
       "Anaheim Ducks": {
-        "kalshi": 55895
+        "kalshi": 85895
       },
       "Toronto Maple Leafs": {
-        "kalshi": 52400
+        "kalshi": 82400
       },
       "Minnesota Wild": {
         "kalshi": 16544
       },
       "Buffalo Sabres": {
-        "kalshi": 42372
+        "kalshi": 72370
       },
       "Dallas Stars": {
-        "kalshi": 2189
+        "kalshi": 2185
       },
       "Philadelphia Flyers": {},
       "Utah Mammoth": {
-        "kalshi": 516467
+        "kalshi": 546467
       },
       "Boston Bruins": {
-        "kalshi": 500000
+        "kalshi": 530000
       },
       "St. Louis Blues": {
-        "kalshi": 17060
+        "kalshi": 17088
       }
     },
     "conference": {
@@ -12368,7 +12400,7 @@
         "kalshi": 309
       },
       "Macklin Celebrini": {
-        "kalshi": 416
+        "kalshi": 438
       },
       "Sidney Crosby": {
         "kalshi": 2950
