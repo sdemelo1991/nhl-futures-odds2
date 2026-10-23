@@ -6074,7 +6074,7 @@
         "kambi": 2300,
         "betmgm": 3000,
         "betano": 2900,
-        "betonline": 2500,
+        "betonline": 2200,
         "draftkings": 3000,
         "circa": 4000,
         "bookmaker": 2300,
@@ -6119,7 +6119,7 @@
         "kambi": 3500,
         "betmgm": 4500,
         "betano": 3400,
-        "betonline": 4500,
+        "betonline": 5000,
         "draftkings": 3500,
         "circa": 3500,
         "bookmaker": 3541,
@@ -6148,7 +6148,7 @@
         "kambi": 550,
         "betmgm": 425,
         "betano": 500,
-        "betonline": 575,
+        "betonline": 600,
         "draftkings": 475,
         "circa": 325,
         "bookmaker": 450,
@@ -6163,7 +6163,7 @@
         "kambi": 1500,
         "betmgm": 1200,
         "betano": 1400,
-        "betonline": 1000,
+        "betonline": 1200,
         "draftkings": 1300,
         "circa": 1225,
         "bookmaker": 1114,
@@ -6178,14 +6178,14 @@
         "kambi": 1300,
         "betmgm": 800,
         "betano": 1200,
-        "betonline": 0,
+        "betonline": 1000,
         "draftkings": 1300,
         "circa": 1450,
         "bookmaker": 1316,
         "caesars": 1000,
         "bet365": 1200,
         "dazn": 1200,
-        "kalshi": 945
+        "kalshi": 574
       },
       "New York Islanders": {
         "pinnacle": 8091,
@@ -6238,7 +6238,7 @@
         "kambi": 7000,
         "betmgm": 8000,
         "betano": 7400,
-        "betonline": 7500,
+        "betonline": 8000,
         "draftkings": 7500,
         "circa": 3500,
         "bookmaker": 8900,
@@ -6550,7 +6550,7 @@
         "fanduel": 1400,
         "kambi": 2200,
         "betmgm": 1600,
-        "betonline": 2800,
+        "betonline": 2000,
         "draftkings": 2500,
         "circa": 2900,
         "bookmaker": 3303,
@@ -6638,7 +6638,7 @@
         "fanduel": 5500,
         "kambi": 5500,
         "betmgm": 5500,
-        "betonline": 3300,
+        "betonline": 4000,
         "draftkings": 5500,
         "circa": 3600,
         "bookmaker": 4204,
@@ -6682,7 +6682,7 @@
         "fanduel": 1100,
         "kambi": 1000,
         "betmgm": 1100,
-        "betonline": 1400,
+        "betonline": 1200,
         "draftkings": 800,
         "circa": 900,
         "bookmaker": 951,
@@ -6705,7 +6705,7 @@
         "bet365": 3500,
         "dazn": 3400,
         "betano": 3400,
-        "kalshi": 3021
+        "kalshi": 4579
       },
       "Utah Mammoth": {
         "pinnacle": 2299,
@@ -6800,7 +6800,7 @@
         "fanduel": 5500,
         "kambi": 4500,
         "betmgm": 6000,
-        "betonline": 6600,
+        "betonline": 6000,
         "draftkings": 6500,
         "circa": 8000,
         "bookmaker": 4504,
@@ -6844,7 +6844,7 @@
         "fanduel": 700,
         "kambi": 650,
         "betmgm": 700,
-        "betonline": 800,
+        "betonline": 850,
         "draftkings": 600,
         "circa": 700,
         "bookmaker": 726,
@@ -6903,7 +6903,7 @@
         "fanduel": 1800,
         "kambi": 1800,
         "betmgm": 1700,
-        "betonline": 2200,
+        "betonline": 2000,
         "draftkings": 1400,
         "circa": 1650,
         "bookmaker": 1602,
@@ -6911,14 +6911,14 @@
         "bet365": 1600,
         "dazn": 1600,
         "betano": 1600,
-        "kalshi": 1241
+        "kalshi": 1464
       },
       "Detroit Red Wings": {
         "pinnacle": 29173,
         "fanduel": 17500,
         "kambi": 17500,
         "betmgm": 25000,
-        "betonline": 25000,
+        "betonline": 30000,
         "draftkings": 30000,
         "circa": 15000,
         "bookmaker": 13013,
@@ -6947,7 +6947,7 @@
         "fanduel": 950,
         "kambi": 900,
         "betmgm": 800,
-        "betonline": 850,
+        "betonline": 900,
         "draftkings": 850,
         "circa": 650,
         "bookmaker": 811,
@@ -6962,7 +6962,7 @@
         "fanduel": 4000,
         "kambi": 4000,
         "betmgm": 6000,
-        "betonline": 6000,
+        "betonline": 6600,
         "draftkings": 5000,
         "circa": 4200,
         "bookmaker": 5505,
@@ -6992,7 +6992,7 @@
         "fanduel": 3000,
         "kambi": 3000,
         "betmgm": 2500,
-        "betonline": 2000,
+        "betonline": 2500,
         "draftkings": 2500,
         "circa": 2500,
         "bookmaker": 2002,
@@ -7874,7 +7874,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-23 11:37",
+    "last_updated": "2026-10-23 11:47",
     "book_updated": {
       "dazn": "2026-10-23",
       "fanduel": "2026-10-23",
@@ -12194,74 +12194,74 @@
   "liq": {
     "cup": {
       "Washington Capitals": {
-        "kalshi": 557750
+        "kalshi": 565250
       },
       "Colorado Avalanche": {
-        "kalshi": 2094
+        "kalshi": 29594
       },
       "Tampa Bay Lightning": {
-        "kalshi": 551848
+        "kalshi": 559348
       },
       "Ottawa Senators": {
-        "kalshi": 545132
+        "kalshi": 552645
       },
       "Los Angeles Kings": {
-        "kalshi": 117542
+        "kalshi": 125042
       },
       "Pittsburgh Penguins": {
-        "kalshi": 75998
+        "kalshi": 83498
       },
       "New York Rangers": {
-        "kalshi": 22776
+        "kalshi": 60276
       },
       "Columbus Blue Jackets": {
-        "kalshi": 134794
+        "kalshi": 142294
       },
       "New Jersey Devils": {
-        "kalshi": 66203
+        "kalshi": 67653
       },
       "Montreal Canadiens": {
-        "kalshi": 65589
+        "kalshi": 73089
       },
       "Edmonton Oilers": {
-        "kalshi": 540000
+        "kalshi": 548070
       },
       "Vegas Golden Knights": {
-        "kalshi": 20014
+        "kalshi": 57511
       },
       "Florida Panthers": {
-        "kalshi": 42524
+        "kalshi": 60024
       },
       "Carolina Hurricanes": {
-        "kalshi": 21965
+        "kalshi": 29466
       },
       "San Jose Sharks": {
-        "kalshi": 17891
+        "kalshi": 55465
       },
       "Anaheim Ducks": {
-        "kalshi": 84880
+        "kalshi": 92380
       },
       "Toronto Maple Leafs": {
-        "kalshi": 68413
+        "kalshi": 8211
       },
       "Minnesota Wild": {
-        "kalshi": 16074
+        "kalshi": 23574
       },
       "Buffalo Sabres": {
-        "kalshi": 67576
+        "kalshi": 75076
       },
       "Dallas Stars": {
-        "kalshi": 569242
+        "kalshi": 19671
       },
       "Philadelphia Flyers": {},
       "Utah Mammoth": {
-        "kalshi": 546467
+        "kalshi": 553967
       },
       "Boston Bruins": {
-        "kalshi": 530000
+        "kalshi": 537698
       },
       "St. Louis Blues": {
-        "kalshi": 16087
+        "kalshi": 23587
       }
     },
     "conference": {
@@ -12316,7 +12316,7 @@
         "kalshi": 5126
       },
       "New Jersey Devils": {
-        "kalshi": 2752
+        "kalshi": 2688
       },
       "Florida Panthers": {
         "kalshi": 6017
@@ -12338,7 +12338,7 @@
         "kalshi": 2371
       },
       "Boston Bruins": {
-        "kalshi": 505
+        "kalshi": 608
       },
       "Columbus Blue Jackets": {
         "kalshi": 426
@@ -12347,7 +12347,7 @@
         "kalshi": 310
       },
       "Washington Capitals": {
-        "kalshi": 3356
+        "kalshi": 3395
       }
     },
     "hart": {
@@ -12385,7 +12385,7 @@
         "kalshi": 309
       },
       "Macklin Celebrini": {
-        "kalshi": 312
+        "kalshi": 322
       },
       "Sidney Crosby": {
         "kalshi": 2950
