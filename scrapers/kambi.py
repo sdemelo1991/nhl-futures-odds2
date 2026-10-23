@@ -154,14 +154,17 @@ def route(payloads, doc, counts, unmatched, seen, tracked):
     for obj in payloads:
         for ev in obj.get("events", []) or []:
             ename = (ev.get("event", {}) or {}).get("name", "") or ""
-            el = ename.lower()
+            # Kambi labels this "Maurice "Rocket" Richard Trophy" with quotes around
+            # the nickname, which breaks the "rocket richard" substring match below —
+            # strip quote chars (straight + curly) before matching, not just here.
+            el = ename.lower().translate(str.maketrans("", "", "\"“”"))
             for bo in ev.get("betOffers", []) or []:
                 boid = bo.get("id")
                 if boid in seen:
                     continue
                 seen.add(boid)
                 crit = (bo.get("criterion", {}) or {}).get("label", "") or ""
-                cl = crit.lower()
+                cl = crit.lower().translate(str.maketrans("", "", "\"“”"))
                 outs = bo.get("outcomes", []) or []
                 if " @ " in ename or any(k in cl for k in
                                          ("moneyline", "puck line", "total goals", "handicap")):

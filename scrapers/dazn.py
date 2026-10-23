@@ -9,7 +9,9 @@ widget call (no auth), so this is DIRECT-FETCHABLE with a HAR fallback:
 Response: markets[] {id, name, oddIds[]} + odds[] {id, name (competitor),
 price (DECIMAL)}. Route by market name; each oddId -> a competitor + decimal
 price -> American. DAZN offers Cup, Regular-Season Winner (=presidents),
-Conference, Division, and per-team Make-Playoffs (Yes/No). No awards/points.
+Conference, Division, per-team Make-Playoffs (Yes/No), To Finish Bottom
+(=worst), and the trophy awards (Hart/Norris/Vezina/Calder/Jack Adams/
+Art Ross/Rocket Richard/Selke). No team-points O/U.
 
   python scrapers/dazn.py             # catalog from direct fetch (or dazn*.har)
   python scrapers/dazn.py --write     # route into odds.json
@@ -25,7 +27,7 @@ from collections import defaultdict
 import requests
 import time
 
-from common import (CACHE_DIR, load, save, set_playoff, set_to_win, stamp_book,
+from common import (CACHE_DIR, load, save, set_playoff, set_to_win, set_award, stamp_book,
                     classify_special, set_special, prune_stale)
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -52,6 +54,10 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", "Accept": 
 def _cb():
     return f"&_={int(time.time() * 1000)}"  # cache-buster; both URLs already carry a query string
 SKIP = ("winning conference", "winning division", "winning nationality")
+AWARD_KW = {"art ross trophy": "art_ross", "calder memorial trophy": "calder",
+            "hart memorial trophy": "hart", "jack adams award": "jack_adams",
+            "norris trophy": "norris", "rocket richard trophy": "rocket_richard",
+            "vezina trophy": "vezina", "selke trophy": "selke"}
 
 
 def dec_to_am(dec):
@@ -109,6 +115,8 @@ def market_type(name):
         return "division"
     if "to reach the playoffs" in nl:
         return "playoffs"
+    if "to finish bottom" in nl:
+        return "worst"
     return None
 
 
@@ -143,6 +151,24 @@ def route(payloads, doc, counts, unmatched, seen, tracked, live=False):
                     if o.get("name") and am is not None:
                         key = set_special(doc, sp, o["name"], BOOK, am); counts[f"special:{sp}"] += 1
                         tracked["cup_specials"][sp].add(key)
+                continue
+            nl = name.lower()
+            cat = next((c for k, c in AWARD_KW.items() if k in nl), None)
+            if cat:
+                ods, fetched_full = None, False
+                if live and ev_of_market.get(mid):
+                    ods = fetch_event_odds(ev_of_market[mid])
+                    fetched_full = ods is not None
+                if not ods:
+                    ods = summary_ods  # HAR / offline fallback (top 5 only)
+                for o in ods:
+                    am = dec_to_am(o.get("price"))
+                    if o.get("name") and am is not None:
+                        key = set_award(doc, cat, o["name"], "", BOOK, am)
+                        if key is not None:
+                            counts[f"award:{cat}"] += 1
+                            if fetched_full:
+                                tracked["awards"].setdefault(cat, set()).add(key)
                 continue
             mt = market_type(name)
             if mt is None:
@@ -224,8 +250,10 @@ def main():
     doc = load()
     counts, unmatched, seen = defaultdict(int), [], set()
     tracked = {
-        "to_win": {"cup": set(), "presidents": set(), "conference": set(), "division": set()},
+        "to_win": {"cup": set(), "presidents": set(), "conference": set(),
+                   "division": set(), "worst": set()},
         "playoffs_yes": set(), "playoffs_no": set(),
+        "awards": {cat: set() for cat in set(AWARD_KW.values())},
         "cup_specials": {"conf": set(), "div": set(), "state": set()},
     }
     route(payloads, doc, counts, unmatched, seen, tracked, live=is_live)  # per-event full lists
