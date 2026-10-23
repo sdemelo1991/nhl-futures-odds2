@@ -6178,7 +6178,7 @@
         "kambi": 1300,
         "betmgm": 800,
         "betano": 1200,
-        "betonline": 1200,
+        "betonline": 0,
         "draftkings": 1300,
         "circa": 1450,
         "bookmaker": 1316,
@@ -7498,7 +7498,7 @@
         "fanduel": -115,
         "kambi": -155,
         "betmgm": -115,
-        "betonline": -140,
+        "betonline": -120,
         "draftkings": -170,
         "caesars": -150,
         "bet365": -150,
@@ -7522,7 +7522,7 @@
         "fanduel": 390,
         "kambi": 650,
         "betmgm": 400,
-        "betonline": 700,
+        "betonline": 0,
         "draftkings": 700,
         "caesars": 700,
         "bet365": 700,
@@ -7534,7 +7534,7 @@
         "fanduel": 3300,
         "kambi": 3000,
         "betmgm": 4000,
-        "betonline": 3500,
+        "betonline": 4000,
         "draftkings": 3000,
         "caesars": 3000,
         "bet365": 2800,
@@ -7546,7 +7546,7 @@
         "fanduel": 8000,
         "kambi": 8000,
         "betmgm": 8000,
-        "betonline": 7500,
+        "betonline": 8000,
         "draftkings": 6000,
         "caesars": 10000,
         "bet365": 7500,
@@ -7558,7 +7558,7 @@
         "fanduel": 3500,
         "kambi": 3300,
         "betmgm": 4000,
-        "betonline": 4500,
+        "betonline": 5000,
         "draftkings": 4000,
         "caesars": 3500,
         "bet365": 3300,
@@ -7570,7 +7570,7 @@
         "fanduel": 3500,
         "kambi": 3500,
         "betmgm": 4000,
-        "betonline": 4000,
+        "betonline": 4500,
         "draftkings": 3500,
         "caesars": 4000,
         "bet365": 3300,
@@ -7874,7 +7874,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-23 11:27",
+    "last_updated": "2026-10-23 11:37",
     "book_updated": {
       "dazn": "2026-10-23",
       "fanduel": "2026-10-23",
@@ -12197,7 +12197,7 @@
         "kalshi": 557750
       },
       "Colorado Avalanche": {
-        "kalshi": 2091
+        "kalshi": 2094
       },
       "Tampa Bay Lightning": {
         "kalshi": 551848
@@ -12218,7 +12218,7 @@
         "kalshi": 134794
       },
       "New Jersey Devils": {
-        "kalshi": 67719
+        "kalshi": 66203
       },
       "Montreal Canadiens": {
         "kalshi": 65589
@@ -12233,7 +12233,7 @@
         "kalshi": 42524
       },
       "Carolina Hurricanes": {
-        "kalshi": 21959
+        "kalshi": 21965
       },
       "San Jose Sharks": {
         "kalshi": 17891
@@ -12245,13 +12245,13 @@
         "kalshi": 68413
       },
       "Minnesota Wild": {
-        "kalshi": 16371
+        "kalshi": 16074
       },
       "Buffalo Sabres": {
         "kalshi": 67576
       },
       "Dallas Stars": {
-        "kalshi": 569239
+        "kalshi": 569242
       },
       "Philadelphia Flyers": {},
       "Utah Mammoth": {
@@ -12269,7 +12269,7 @@
         "kalshi": 361
       },
       "Winnipeg Jets": {
-        "kalshi": 6487
+        "kalshi": 8987
       },
       "Vegas Golden Knights": {
         "kalshi": 7036
@@ -12301,7 +12301,7 @@
         "kalshi": 696
       },
       "Edmonton Oilers": {
-        "kalshi": 2592
+        "kalshi": 2584
       },
       "Toronto Maple Leafs": {
         "kalshi": 6206
@@ -12338,7 +12338,7 @@
         "kalshi": 2371
       },
       "Boston Bruins": {
-        "kalshi": 655
+        "kalshi": 505
       },
       "Columbus Blue Jackets": {
         "kalshi": 426
