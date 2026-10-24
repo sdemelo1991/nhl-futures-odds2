@@ -141,11 +141,6 @@
         "line": 90.5,
         "over": -125,
         "under": -105
-      },
-      "kambi": {
-        "line": 90.5,
-        "over": -118,
-        "under": -106
       }
     },
     "Florida Panthers": {
@@ -1048,11 +1043,6 @@
         "line": 102.5,
         "over": -130,
         "under": 102
-      },
-      "kambi": {
-        "line": 103.5,
-        "over": -118,
-        "under": -106
       },
       "betonline": {
         "line": 102.5,
@@ -5725,8 +5715,7 @@
         "draftkings": 105,
         "caesars": 125,
         "bet365": -105,
-        "circa": -185,
-        "betmgm": -105
+        "circa": -185
       },
       "no": {
         "fanduel": -111,
@@ -5735,8 +5724,7 @@
         "draftkings": -130,
         "caesars": -150,
         "bet365": -115,
-        "circa": 150,
-        "betmgm": -115
+        "circa": 150
       }
     },
     "Minnesota Wild": {
@@ -5808,7 +5796,6 @@
     "New Jersey Devils": {
       "yes": {
         "fanduel": -400,
-        "kambi": -335,
         "betonline": -450,
         "draftkings": -155,
         "caesars": -175,
@@ -5818,7 +5805,6 @@
       },
       "no": {
         "fanduel": 285,
-        "kambi": 230,
         "betonline": 325,
         "draftkings": 125,
         "caesars": 145,
@@ -7772,7 +7758,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-24 15:27",
+    "last_updated": "2026-10-24 15:37",
     "book_updated": {
       "dazn": "2026-10-24",
       "fanduel": "2026-10-24",
@@ -12107,16 +12093,16 @@
         "kalshi": 140508
       },
       "New Jersey Devils": {
-        "kalshi": 2143
+        "kalshi": 2147
       },
       "Montreal Canadiens": {
         "kalshi": 71371
       },
       "Edmonton Oilers": {
-        "kalshi": 3111
+        "kalshi": 3184
       },
       "Vegas Golden Knights": {
-        "kalshi": 7990
+        "kalshi": 58862
       },
       "Florida Panthers": {
         "kalshi": 54772
@@ -12128,7 +12114,7 @@
         "kalshi": 13036
       },
       "Anaheim Ducks": {
-        "kalshi": 15563
+        "kalshi": 15477
       },
       "Toronto Maple Leafs": {
         "kalshi": 6736
@@ -12147,7 +12133,7 @@
         "kalshi": 47295
       },
       "Boston Bruins": {
-        "kalshi": 6932
+        "kalshi": 6990
       },
       "St. Louis Blues": {
         "kalshi": 58016
@@ -12250,7 +12236,7 @@
         "kalshi": 1267
       },
       "Nathan MacKinnon": {
-        "kalshi": 598
+        "kalshi": 596
       },
       "Quinn Hughes": {
         "kalshi": 407
