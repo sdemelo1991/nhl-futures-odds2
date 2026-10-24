@@ -9,11 +9,23 @@ import json
 import os
 import re
 import sys
+from zoneinfo import ZoneInfo
 
 # make teams.py importable when run as `python scrapers/xxx.py`
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
+
+# GitHub Actions runners are UTC; Steven's own machine is whatever its clock is
+# set to. datetime.now() with no tz is silently "whatever box ran this," so a
+# GH Actions run would stamp a UTC clock-reading with no indication it isn't
+# Eastern, showing e.g. "updated 16:20" at 12:20pm ET and badly confusing
+# anyone reading it as a local time. Always stamp Eastern explicitly instead.
+_ET = ZoneInfo("America/New_York")
+
+
+def _now_et():
+    return datetime.datetime.now(_ET)
 
 from teams import normalize_team  # noqa: E402
 from players import canonical_player  # noqa: E402
@@ -29,8 +41,7 @@ def load():
 
 def save(doc, stamp=True):
     if stamp:
-        doc.setdefault("meta", {})["last_updated"] = \
-            datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+        doc.setdefault("meta", {})["last_updated"] = _now_et().strftime("%Y-%m-%d %H:%M")
     # Atomic write: a direct write to DATA_PATH left it truncated/corrupt once
     # when a reboot landed mid-write. Write to a temp file in the same
     # directory (same filesystem, so os.replace is atomic) and swap it in —
@@ -47,7 +58,7 @@ def stamp_book(doc, book, when=None):
     """Record when a book's odds were last set (per-book freshness). `when` is a
     date/label string (e.g. from a manual data file); defaults to today."""
     if when is None:
-        when = datetime.datetime.now().strftime("%Y-%m-%d")
+        when = _now_et().strftime("%Y-%m-%d")
     doc.setdefault("meta", {}).setdefault("book_updated", {})[book] = when
 
 

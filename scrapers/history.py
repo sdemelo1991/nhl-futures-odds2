@@ -18,7 +18,8 @@ import json
 import os
 import subprocess
 import sys
-import datetime
+
+from common import _now_et
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -122,7 +123,7 @@ def update():
     with open(ODDS, encoding="utf-8") as f:
         doc = json.load(f)
     hist = load_hist()
-    date = datetime.datetime.now().strftime("%Y-%m-%d")
+    date = _now_et().strftime("%Y-%m-%d")
     n = apply_snapshot(hist, doc, date)
     save_hist(hist)
     print(f"  logged {n} price changes [{date}]")
