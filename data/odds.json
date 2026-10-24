@@ -427,21 +427,6 @@
         "line": 92.0,
         "over": -105,
         "under": -105
-      },
-      "fanduel": {
-        "line": 82.5,
-        "over": -122,
-        "under": -104
-      },
-      "kambi": {
-        "line": 85.5,
-        "over": -118,
-        "under": -106
-      },
-      "betmgm": {
-        "line": 83.5,
-        "over": -125,
-        "under": -105
       }
     },
     "Chicago Blackhawks": {
@@ -921,16 +906,6 @@
       }
     },
     "Anaheim Ducks": {
-      "fanduel": {
-        "line": 88.5,
-        "over": -120,
-        "under": -106
-      },
-      "kambi": {
-        "line": 90.5,
-        "over": -125,
-        "under": 100
-      },
       "betmgm": {
         "line": 90.5,
         "over": 100,
@@ -1189,7 +1164,6 @@
           "draftkings": 650,
           "circa": 500,
           "caesars": 650,
-          "betano": 650,
           "kambi": 650,
           "betmgm": 750
         }
@@ -1201,7 +1175,6 @@
           "draftkings": 1100,
           "circa": 600,
           "caesars": 1100,
-          "betano": 1200,
           "kambi": 700,
           "betmgm": 1000
         }
@@ -1221,7 +1194,6 @@
           "draftkings": 900,
           "circa": 800,
           "caesars": 850,
-          "betano": 900,
           "kambi": 900,
           "betmgm": 1000
         }
@@ -1233,7 +1205,6 @@
           "draftkings": 900,
           "circa": 800,
           "caesars": 800,
-          "betano": 800,
           "kambi": 1000,
           "betmgm": 1100
         }
@@ -1245,7 +1216,6 @@
           "draftkings": 4000,
           "circa": 1500,
           "caesars": 5000,
-          "betano": 3900,
           "kambi": 2000,
           "betmgm": 5000
         }
@@ -1257,7 +1227,6 @@
           "draftkings": 700,
           "circa": 1200,
           "caesars": 650,
-          "betano": 800,
           "kambi": 600,
           "betmgm": 500
         }
@@ -1269,7 +1238,6 @@
           "draftkings": 1000,
           "circa": 2000,
           "caesars": 1100,
-          "betano": 1200,
           "kambi": 700,
           "betmgm": 600
         }
@@ -1281,7 +1249,6 @@
           "draftkings": 3000,
           "circa": 1700,
           "caesars": 3000,
-          "betano": 2900,
           "kambi": 2500,
           "betmgm": 3500
         }
@@ -1293,7 +1260,6 @@
           "draftkings": 650,
           "circa": 2800,
           "caesars": 650,
-          "betano": 500,
           "kambi": 600,
           "betmgm": 550
         }
@@ -1305,7 +1271,6 @@
           "draftkings": 4000,
           "circa": 3000,
           "caesars": 7000,
-          "betano": 3900,
           "kambi": 4500,
           "betmgm": 5500
         }
@@ -1317,7 +1282,6 @@
           "draftkings": 4000,
           "circa": 2800,
           "caesars": 5000,
-          "betano": 3900,
           "kambi": 4000,
           "betmgm": 6600
         }
@@ -1329,7 +1293,6 @@
           "draftkings": 3000,
           "circa": 3500,
           "caesars": 3000,
-          "betano": 2900,
           "kambi": 3500,
           "betmgm": 3500
         }
@@ -1341,7 +1304,6 @@
           "draftkings": 3000,
           "circa": 4000,
           "caesars": 3000,
-          "betano": 2900,
           "kambi": 2500,
           "betmgm": 3500
         }
@@ -1353,7 +1315,6 @@
           "draftkings": 800,
           "circa": 3500,
           "caesars": 850,
-          "betano": 1000,
           "kambi": 1500,
           "betmgm": 1100
         }
@@ -1365,7 +1326,6 @@
           "draftkings": 4500,
           "circa": 7000,
           "caesars": 5000,
-          "betano": 4400,
           "kambi": 5000,
           "betmgm": 5000
         }
@@ -1377,7 +1337,6 @@
           "draftkings": 4000,
           "circa": 6000,
           "caesars": 2500,
-          "betano": 3900,
           "kambi": 4000,
           "betmgm": 4000
         }
@@ -1389,7 +1348,6 @@
           "draftkings": 5000,
           "circa": 6000,
           "caesars": 7000,
-          "betano": 4900,
           "kambi": 5000,
           "betmgm": 5000
         }
@@ -1401,7 +1359,6 @@
           "draftkings": 5000,
           "circa": 5000,
           "caesars": 6000,
-          "betano": 4900,
           "kambi": 4000,
           "betmgm": 6000
         }
@@ -1413,7 +1370,6 @@
           "draftkings": 4000,
           "circa": 7000,
           "caesars": 5000,
-          "betano": 3900,
           "kambi": 3500,
           "betmgm": 5000
         }
@@ -1425,7 +1381,6 @@
           "draftkings": 8000,
           "circa": 9000,
           "caesars": 9000,
-          "betano": 7900,
           "kambi": 6000,
           "betmgm": 10000
         }
@@ -1437,7 +1392,6 @@
           "draftkings": 4000,
           "circa": 7500,
           "caesars": 5500,
-          "betano": 3900,
           "kambi": 4000,
           "betmgm": 6000
         }
@@ -1457,7 +1411,6 @@
           "circa": 6500,
           "caesars": 7000,
           "betonline": 6000,
-          "betano": 5900,
           "kambi": 6000,
           "betmgm": 6000
         }
@@ -1469,7 +1422,6 @@
           "draftkings": 6000,
           "circa": 8000,
           "caesars": 7000,
-          "betano": 5900,
           "kambi": 5000,
           "betmgm": 6600
         }
@@ -1481,7 +1433,6 @@
           "draftkings": 10000,
           "circa": 5000,
           "caesars": 8000,
-          "betano": 9900,
           "kambi": 10000,
           "betmgm": 10000
         }
@@ -1493,7 +1444,6 @@
           "draftkings": 6000,
           "circa": 10000,
           "caesars": 10000,
-          "betano": 5900,
           "kambi": 5000,
           "betmgm": 10000
         }
@@ -1505,7 +1455,6 @@
           "draftkings": 4000,
           "circa": 7000,
           "caesars": 8000,
-          "betano": 3900,
           "kambi": 4000,
           "betmgm": 6000
         }
@@ -1517,7 +1466,6 @@
           "draftkings": 6000,
           "circa": 12500,
           "caesars": 10000,
-          "betano": 5900,
           "kambi": 5000,
           "betmgm": 10000
         }
@@ -1529,7 +1477,6 @@
           "draftkings": 5000,
           "circa": 6000,
           "caesars": 7000,
-          "betano": 4900,
           "kambi": 4000,
           "betmgm": 6600
         }
@@ -1550,7 +1497,6 @@
           "draftkings": 10000,
           "circa": 15000,
           "caesars": 20000,
-          "betano": 9900,
           "kambi": 5000,
           "betmgm": 15000
         }
@@ -1561,7 +1507,6 @@
           "betonline": 8000,
           "draftkings": 8000,
           "caesars": 15000,
-          "betano": 7900,
           "kambi": 7500,
           "betmgm": 10000
         }
@@ -1572,7 +1517,6 @@
           "draftkings": 15000,
           "circa": 30000,
           "caesars": 15000,
-          "betano": 14900,
           "kambi": 15000,
           "betmgm": 15000
         }
@@ -1584,7 +1528,6 @@
           "draftkings": 8000,
           "circa": 15000,
           "caesars": 12500,
-          "betano": 7900,
           "kambi": 6000,
           "betmgm": 10000
         }
@@ -1595,7 +1538,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "caesars": 15000,
-          "betano": 9900,
           "kambi": 5000,
           "betmgm": 10000
         }
@@ -1607,7 +1549,6 @@
           "draftkings": 8000,
           "circa": 20000,
           "caesars": 10000,
-          "betano": 7900,
           "kambi": 6000,
           "betmgm": 10000
         }
@@ -1618,7 +1559,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "caesars": 20000,
-          "betano": 9900,
           "kambi": 9000,
           "betmgm": 10000
         }
@@ -1630,7 +1570,6 @@
           "draftkings": 15000,
           "circa": 20000,
           "caesars": 20000,
-          "betano": 14900,
           "kambi": 10000,
           "betmgm": 15000
         }
@@ -1640,7 +1579,6 @@
         "prices": {
           "betonline": 10000,
           "draftkings": 10000,
-          "betano": 9900,
           "kambi": 9000,
           "betmgm": 15000
         }
@@ -1652,7 +1590,6 @@
           "draftkings": 8000,
           "circa": 12500,
           "caesars": 15000,
-          "betano": 7900,
           "kambi": 5000,
           "betmgm": 10000
         }
@@ -1664,7 +1601,6 @@
           "draftkings": 6000,
           "circa": 30000,
           "caesars": 20000,
-          "betano": 5900,
           "kambi": 6000,
           "betmgm": 15000
         }
@@ -1673,7 +1609,6 @@
         "team": "",
         "prices": {
           "draftkings": 15000,
-          "betano": 14900,
           "kambi": 15000,
           "betmgm": 15000
         }
@@ -1685,7 +1620,6 @@
           "draftkings": 5000,
           "circa": 17500,
           "caesars": 20000,
-          "betano": 4900,
           "kambi": 5000,
           "betmgm": 10000
         }
@@ -1698,7 +1632,6 @@
         "team": "",
         "prices": {
           "draftkings": 15000,
-          "betano": 14900,
           "kambi": 15000
         }
       },
@@ -1713,8 +1646,7 @@
         "prices": {
           "circa": 12500,
           "draftkings": 6000,
-          "betonline": 6000,
-          "betano": 5900
+          "betonline": 6000
         }
       },
       "Joseph Woll": {
@@ -1746,16 +1678,13 @@
         "prices": {
           "draftkings": 5000,
           "betonline": 5000,
-          "betano": 4900,
           "kambi": 7500,
           "betmgm": 5500
         }
       },
       "Devin Levi": {
         "team": "",
-        "prices": {
-          "betano": 3400
-        }
+        "prices": {}
       }
     },
     "calder": {
@@ -1767,8 +1696,6 @@
           "draftkings": 700,
           "caesars": 400,
           "bet365": 450,
-          "betano": 1100,
-          "dazn": 1100,
           "betmgm": 950
         }
       },
@@ -1780,8 +1707,6 @@
           "draftkings": 280,
           "caesars": 275,
           "bet365": 250,
-          "betano": 250,
-          "dazn": 250,
           "betmgm": 270
         }
       },
@@ -1793,8 +1718,6 @@
           "draftkings": 450,
           "caesars": 400,
           "bet365": 425,
-          "betano": 400,
-          "dazn": 350,
           "betmgm": 450
         }
       },
@@ -1806,7 +1729,6 @@
           "draftkings": 850,
           "caesars": 900,
           "bet365": 850,
-          "betano": 650,
           "betmgm": 600
         }
       },
@@ -1818,8 +1740,6 @@
           "draftkings": 1000,
           "caesars": 950,
           "bet365": 1000,
-          "betano": 1400,
-          "dazn": 1400,
           "betmgm": 1300
         }
       },
@@ -1831,8 +1751,6 @@
           "draftkings": 900,
           "caesars": 700,
           "bet365": 800,
-          "betano": 1400,
-          "dazn": 1400,
           "betmgm": 850
         }
       },
@@ -1844,8 +1762,6 @@
           "draftkings": 3500,
           "caesars": 3000,
           "bet365": 3500,
-          "betano": 3900,
-          "dazn": 3900,
           "betmgm": 4000
         }
       },
@@ -1857,8 +1773,6 @@
           "draftkings": 1500,
           "caesars": 1300,
           "bet365": 1500,
-          "betano": 1600,
-          "dazn": 1600,
           "betmgm": 1300
         }
       },
@@ -1870,8 +1784,6 @@
           "draftkings": 4000,
           "caesars": 3500,
           "bet365": 4000,
-          "betano": 3900,
-          "dazn": 3900,
           "betmgm": 4000
         }
       },
@@ -1883,8 +1795,6 @@
           "draftkings": 3000,
           "caesars": 2400,
           "bet365": 2500,
-          "betano": 1900,
-          "dazn": 1900,
           "betmgm": 3000
         }
       },
@@ -1895,8 +1805,6 @@
           "betonline": 8000,
           "draftkings": 8000,
           "caesars": 7500,
-          "betano": 7900,
-          "dazn": 7900,
           "betmgm": 10000
         }
       },
@@ -1905,8 +1813,6 @@
         "prices": {
           "kambi": 10000,
           "caesars": 6000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 10000
         }
       },
@@ -1918,7 +1824,6 @@
           "draftkings": 6000,
           "caesars": 6500,
           "bet365": 6000,
-          "betano": 7900,
           "betmgm": 6600
         }
       },
@@ -1930,8 +1835,6 @@
           "draftkings": 5000,
           "caesars": 5000,
           "bet365": 3000,
-          "betano": 2400,
-          "dazn": 2400,
           "betmgm": 2500
         }
       },
@@ -1953,8 +1856,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "caesars": 12500,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 20000
         }
       },
@@ -1963,8 +1864,6 @@
         "prices": {
           "draftkings": 20000,
           "kambi": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 30000
         }
       },
@@ -1974,7 +1873,6 @@
           "draftkings": 15000,
           "caesars": 15000,
           "kambi": 15000,
-          "betano": 14900,
           "betmgm": 15000
         }
       },
@@ -1985,7 +1883,6 @@
           "draftkings": 8000,
           "caesars": 7500,
           "kambi": 10000,
-          "betano": 7900,
           "betmgm": 10000
         }
       },
@@ -2017,8 +1914,6 @@
           "kambi": 800,
           "draftkings": 1000,
           "caesars": 1600,
-          "betano": 800,
-          "dazn": 800,
           "betmgm": 900
         }
       },
@@ -2040,8 +1935,6 @@
           "kambi": 6000,
           "betonline": 6600,
           "caesars": 9000,
-          "betano": 6400,
-          "dazn": 6400,
           "betmgm": 8000
         }
       },
@@ -2053,8 +1946,6 @@
           "draftkings": 8000,
           "caesars": 10000,
           "bet365": 8000,
-          "betano": 7900,
-          "dazn": 7900,
           "betmgm": 8000
         }
       },
@@ -2063,8 +1954,6 @@
         "prices": {
           "draftkings": 15000,
           "kambi": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2075,8 +1964,6 @@
           "draftkings": 15000,
           "caesars": 10000,
           "kambi": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 30000
         }
       },
@@ -2087,8 +1974,6 @@
           "caesars": 2800,
           "betonline": 3300,
           "bet365": 3000,
-          "betano": 3400,
-          "dazn": 3400,
           "betmgm": 3000
         }
       },
@@ -2099,8 +1984,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "caesars": 7000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 10000
         }
       },
@@ -2116,8 +1999,6 @@
           "kambi": 20000,
           "draftkings": 20000,
           "caesars": 12500,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 30000
         }
       },
@@ -2128,8 +2009,6 @@
           "draftkings": 8000,
           "caesars": 7500,
           "bet365": 8000,
-          "betano": 7900,
-          "dazn": 7900,
           "betmgm": 10000
         }
       },
@@ -2147,8 +2026,6 @@
         "team": "",
         "prices": {
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 15000
         }
       },
@@ -2158,8 +2035,6 @@
           "kambi": 15000,
           "betonline": 10000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2172,8 +2047,6 @@
         "prices": {
           "kambi": 20000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 30000
         }
       },
@@ -2195,8 +2068,6 @@
           "draftkings": 15000,
           "caesars": 17500,
           "kambi": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 30000
         }
       },
@@ -2205,8 +2076,6 @@
         "prices": {
           "draftkings": 20000,
           "kambi": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 30000
         }
       },
@@ -2215,8 +2084,6 @@
         "prices": {
           "betonline": 10000,
           "draftkings": 10000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 30000
         }
       },
@@ -2225,8 +2092,6 @@
         "prices": {
           "draftkings": 15000,
           "kambi": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 30000
         }
       },
@@ -2236,8 +2101,6 @@
           "betonline": 10000,
           "draftkings": 20000,
           "kambi": 15000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 15000
         }
       },
@@ -2246,8 +2109,6 @@
         "prices": {
           "draftkings": 15000,
           "kambi": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 30000
         }
       },
@@ -2257,8 +2118,6 @@
           "kambi": 20000,
           "betonline": 10000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 30000
         }
       },
@@ -2274,8 +2133,6 @@
           "betonline": 10000,
           "draftkings": 15000,
           "kambi": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 30000
         }
       },
@@ -2285,7 +2142,6 @@
           "betonline": 10000,
           "draftkings": 15000,
           "kambi": 15000,
-          "betano": 14900,
           "betmgm": 20000
         }
       },
@@ -2313,8 +2169,6 @@
           "kambi": 1100,
           "draftkings": 4000,
           "betonline": 4000,
-          "betano": 3400,
-          "dazn": 3400,
           "betmgm": 1600
         }
       },
@@ -2343,8 +2197,6 @@
         "prices": {
           "kambi": 15000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2355,8 +2207,6 @@
           "betonline": 8000,
           "draftkings": 8000,
           "bet365": 8000,
-          "betano": 7900,
-          "dazn": 7900,
           "betmgm": 8000
         }
       },
@@ -2365,8 +2215,6 @@
         "prices": {
           "draftkings": 15000,
           "kambi": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2375,8 +2223,6 @@
         "prices": {
           "betonline": 10000,
           "draftkings": 10000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 10000
         }
       },
@@ -2385,8 +2231,6 @@
         "prices": {
           "draftkings": 15000,
           "kambi": 20000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2395,8 +2239,6 @@
         "prices": {
           "betonline": 10000,
           "draftkings": 10000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 8000
         }
       },
@@ -2405,8 +2247,6 @@
         "prices": {
           "draftkings": 15000,
           "kambi": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2416,8 +2256,6 @@
           "kambi": 10000,
           "draftkings": 15000,
           "caesars": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2426,8 +2264,6 @@
         "prices": {
           "kambi": 15000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 30000
         }
       },
@@ -2441,9 +2277,7 @@
         "team": "",
         "prices": {
           "kambi": 10000,
-          "caesars": 7500,
-          "betano": 9900,
-          "dazn": 9900
+          "caesars": 7500
         }
       },
       "Adam Jiricek": {
@@ -2462,8 +2296,6 @@
           "draftkings": 1200,
           "caesars": 1100,
           "bet365": 1200,
-          "betano": 1000,
-          "dazn": 1000,
           "betmgm": 1200
         }
       },
@@ -2506,15 +2338,11 @@
       },
       "Roger Mcqueen": {
         "team": "",
-        "prices": {
-          "dazn": 7900
-        }
+        "prices": {}
       },
       "Jake O'brien": {
         "team": "",
-        "prices": {
-          "dazn": 14900
-        }
+        "prices": {}
       }
     },
     "hart": {
@@ -2527,9 +2355,8 @@
           "caesars": 160,
           "bet365": 175,
           "circa": 240,
-          "betano": 135,
-          "kalshi": -191,
-          "betmgm": -130
+          "betmgm": -130,
+          "kalshi": -191
         }
       },
       "Nathan MacKinnon": {
@@ -2541,9 +2368,8 @@
           "caesars": 375,
           "bet365": 350,
           "circa": 325,
-          "betano": 750,
-          "kalshi": 134,
-          "betmgm": 750
+          "betmgm": 750,
+          "kalshi": 134
         }
       },
       "Macklin Celebrini": {
@@ -2555,10 +2381,8 @@
           "caesars": 550,
           "bet365": 550,
           "circa": 425,
-          "betano": 900,
-          "dazn": 900,
-          "kalshi": 296,
-          "betmgm": 1000
+          "betmgm": 1000,
+          "kalshi": 296
         }
       },
       "Leon Draisaitl": {
@@ -2570,10 +2394,8 @@
           "caesars": 1500,
           "bet365": 1600,
           "circa": 1000,
-          "betano": 1200,
-          "dazn": 1400,
-          "kalshi": 4579,
-          "betmgm": 1900
+          "betmgm": 1900,
+          "kalshi": 4579
         }
       },
       "Nikita Kucherov": {
@@ -2585,10 +2407,8 @@
           "caesars": 1400,
           "bet365": 1500,
           "circa": 875,
-          "betano": 1900,
-          "dazn": 1900,
-          "kalshi": 398,
-          "betmgm": 2000
+          "betmgm": 2000,
+          "kalshi": 398
         }
       },
       "Kirill Kaprizov": {
@@ -2600,10 +2420,8 @@
           "caesars": 1200,
           "bet365": 1200,
           "circa": 2000,
-          "betano": 900,
-          "dazn": 900,
-          "kalshi": 756,
-          "betmgm": 1300
+          "betmgm": 1300,
+          "kalshi": 756
         }
       },
       "Auston Matthews": {
@@ -2615,10 +2433,8 @@
           "caesars": 2500,
           "bet365": 2500,
           "circa": 2800,
-          "betano": 1600,
-          "dazn": 1900,
-          "kalshi": 1074,
-          "betmgm": 2500
+          "betmgm": 2500,
+          "kalshi": 1074
         }
       },
       "David Pastrnak": {
@@ -2630,10 +2446,8 @@
           "caesars": 2400,
           "bet365": 2200,
           "circa": 1600,
-          "betano": 3400,
-          "dazn": 3400,
-          "kalshi": 2243,
-          "betmgm": 3500
+          "betmgm": 3500,
+          "kalshi": 2243
         }
       },
       "Jack Hughes": {
@@ -2645,10 +2459,8 @@
           "caesars": 3000,
           "bet365": 2800,
           "circa": 2500,
-          "betano": 3400,
-          "dazn": 3400,
-          "kalshi": 1938,
-          "betmgm": 3500
+          "betmgm": 3500,
+          "kalshi": 1938
         }
       },
       "Jack Eichel": {
@@ -2660,10 +2472,8 @@
           "caesars": 3000,
           "bet365": 3500,
           "circa": 6000,
-          "betano": 1000,
-          "dazn": 1100,
-          "kalshi": 2243,
-          "betmgm": 1700
+          "betmgm": 1700,
+          "kalshi": 2243
         }
       },
       "Mitchell Marner": {
@@ -2675,8 +2485,6 @@
           "caesars": 4000,
           "bet365": 4000,
           "circa": 6000,
-          "betano": 5900,
-          "dazn": 5900,
           "betmgm": 8000
         }
       },
@@ -2689,8 +2497,6 @@
           "caesars": 4000,
           "bet365": 5000,
           "circa": 4500,
-          "betano": 5900,
-          "dazn": 5900,
           "betmgm": 8000
         }
       },
@@ -2703,8 +2509,6 @@
           "caesars": 3500,
           "bet365": 3000,
           "circa": 7500,
-          "betano": 6400,
-          "dazn": 6400,
           "betmgm": 12500
         }
       },
@@ -2717,8 +2521,6 @@
           "caesars": 7000,
           "bet365": 6000,
           "circa": 7000,
-          "betano": 6400,
-          "dazn": 6400,
           "betmgm": 8000
         }
       },
@@ -2731,8 +2533,6 @@
           "caesars": 7000,
           "bet365": 6000,
           "circa": 5000,
-          "betano": 6400,
-          "dazn": 6400,
           "betmgm": 8000
         }
       },
@@ -2745,10 +2545,8 @@
           "caesars": 5000,
           "bet365": 6000,
           "circa": 10000,
-          "betano": 6900,
-          "dazn": 6900,
-          "kalshi": 4579,
-          "betmgm": 8000
+          "betmgm": 8000,
+          "kalshi": 4579
         }
       },
       "Connor Bedard": {
@@ -2759,10 +2557,8 @@
           "draftkings": 10000,
           "caesars": 10000,
           "circa": 9000,
-          "betano": 8900,
-          "dazn": 8900,
-          "kalshi": 2243,
-          "betmgm": 10000
+          "betmgm": 10000,
+          "kalshi": 2243
         }
       },
       "Cole Caufield": {
@@ -2774,8 +2570,6 @@
           "caesars": 8000,
           "bet365": 7500,
           "circa": 10000,
-          "betano": 8900,
-          "dazn": 8900,
           "betmgm": 10000
         }
       },
@@ -2786,8 +2580,6 @@
           "betonline": 15000,
           "draftkings": 20000,
           "circa": 7500,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 15000
         }
       },
@@ -2798,8 +2590,6 @@
           "betonline": 15000,
           "draftkings": 15000,
           "circa": 17500,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2810,8 +2600,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "circa": 12500,
-          "betano": 12400,
-          "dazn": 12400,
           "betmgm": 15000
         }
       },
@@ -2820,8 +2608,6 @@
         "prices": {
           "kambi": 12500,
           "draftkings": 20000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -2834,8 +2620,6 @@
           "caesars": 5000,
           "bet365": 5000,
           "circa": 12500,
-          "betano": 5900,
-          "dazn": 5900,
           "betmgm": 5000
         }
       },
@@ -2846,10 +2630,8 @@
           "betonline": 10000,
           "draftkings": 10000,
           "circa": 30000,
-          "betano": 14900,
-          "dazn": 14900,
-          "kalshi": 5098,
-          "betmgm": 20000
+          "betmgm": 20000,
+          "kalshi": 5098
         }
       },
       "Ilya Sorokin": {
@@ -2859,8 +2641,6 @@
           "draftkings": 20000,
           "caesars": 10000,
           "circa": 15000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 25000
         }
       },
@@ -2877,8 +2657,6 @@
           "kambi": 17500,
           "betonline": 15000,
           "draftkings": 15000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 20000
         }
       },
@@ -2889,8 +2667,6 @@
           "betonline": 5000,
           "draftkings": 30000,
           "circa": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -2900,8 +2676,6 @@
           "kambi": 30000,
           "draftkings": 30000,
           "circa": 15000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -2915,8 +2689,6 @@
           "kambi": 17500,
           "betonline": 15000,
           "draftkings": 15000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 20000
         }
       },
@@ -2927,17 +2699,13 @@
           "betonline": 10000,
           "draftkings": 15000,
           "circa": 30000,
-          "betano": 24900,
-          "dazn": 24900,
-          "kalshi": 3644,
-          "betmgm": 15000
+          "betmgm": 15000,
+          "kalshi": 3644
         }
       },
       "Brandon Hagel": {
         "team": "",
         "prices": {
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 20000
         }
       },
@@ -2950,8 +2718,6 @@
           "caesars": 7000,
           "bet365": 10000,
           "circa": 30000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 10000
         }
       },
@@ -2964,8 +2730,6 @@
           "caesars": 7500,
           "bet365": 7500,
           "circa": 25000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 10000
         }
       },
@@ -2975,8 +2739,6 @@
           "kambi": 30000,
           "draftkings": 30000,
           "circa": 25000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -2987,8 +2749,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "circa": 15000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 15000
         }
       },
@@ -3003,8 +2763,6 @@
           "betonline": 3300,
           "draftkings": 8000,
           "bet365": 6000,
-          "betano": 2400,
-          "dazn": 2400,
           "betmgm": 15000
         }
       },
@@ -3019,16 +2777,12 @@
           "betonline": 8000,
           "draftkings": 8000,
           "bet365": 8000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 10000
         }
       },
       "Gavin McKenna": {
         "team": "",
         "prices": {
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3040,8 +2794,6 @@
           "draftkings": 5000,
           "caesars": 6500,
           "bet365": 5000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 10000
         }
       },
@@ -3050,8 +2802,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3062,8 +2812,6 @@
           "betonline": 15000,
           "draftkings": 15000,
           "circa": 25000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 20000
         }
       },
@@ -3072,8 +2820,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3086,8 +2832,6 @@
           "caesars": 6000,
           "bet365": 6000,
           "circa": 25000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 15000
         }
       },
@@ -3096,8 +2840,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 35000
         }
       },
@@ -3107,8 +2849,6 @@
           "kambi": 17500,
           "betonline": 15000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 25000
         }
       },
@@ -3118,8 +2858,6 @@
           "kambi": 17500,
           "betonline": 15000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -3128,8 +2866,6 @@
         "prices": {
           "kambi": 20000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 25000
         }
       },
@@ -3140,8 +2876,6 @@
           "betonline": 7500,
           "draftkings": 15000,
           "circa": 27500,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 20000
         }
       },
@@ -3149,9 +2883,7 @@
         "team": "",
         "prices": {
           "kambi": 30000,
-          "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900
+          "draftkings": 30000
         }
       },
       "Clayton Keller": {
@@ -3161,8 +2893,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "caesars": 10000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 15000
         }
       },
@@ -3171,8 +2901,6 @@
         "prices": {
           "kambi": 25000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 25000
         }
       },
@@ -3182,8 +2910,6 @@
           "kambi": 17500,
           "betonline": 15000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 25000
         }
       },
@@ -3192,8 +2918,6 @@
         "prices": {
           "kambi": 25000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 25000
         }
       },
@@ -3202,8 +2926,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 50000
         }
       },
@@ -3212,8 +2934,6 @@
         "prices": {
           "kambi": 25000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 25000
         }
       },
@@ -3222,8 +2942,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 50000
         }
       },
@@ -3233,8 +2951,6 @@
           "kambi": 17500,
           "betonline": 15000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -3243,8 +2959,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 25000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 30000
         }
       },
@@ -3254,8 +2968,6 @@
           "kambi": 17500,
           "betonline": 15000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 20000
         }
       },
@@ -3265,8 +2977,6 @@
           "kambi": 30000,
           "draftkings": 30000,
           "circa": 20000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3275,8 +2985,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3285,8 +2993,6 @@
         "prices": {
           "kambi": 25000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 30000
         }
       },
@@ -3295,8 +3001,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3305,8 +3009,6 @@
         "prices": {
           "kambi": 25000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 25000
         }
       },
@@ -3315,8 +3017,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 25000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 30000
         }
       },
@@ -3328,8 +3028,6 @@
           "draftkings": 6000,
           "caesars": 10000,
           "bet365": 6000,
-          "betano": 5900,
-          "dazn": 5900,
           "betmgm": 10000
         }
       },
@@ -3338,8 +3036,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3348,8 +3044,6 @@
         "prices": {
           "kambi": 25000,
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 25000
         }
       },
@@ -3358,8 +3052,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3368,8 +3060,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3378,8 +3068,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3388,8 +3076,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3398,8 +3084,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 50000
         }
       },
@@ -3410,8 +3094,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "circa": 22500,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 15000
         }
       },
@@ -3421,8 +3103,6 @@
           "kambi": 17500,
           "betonline": 15000,
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 25000
         }
       },
@@ -3431,8 +3111,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 50000
         }
       },
@@ -3441,8 +3119,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 25000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 30000
         }
       },
@@ -3453,8 +3129,6 @@
           "betonline": 10000,
           "draftkings": 10000,
           "caesars": 7500,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 10000
         }
       },
@@ -3463,8 +3137,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 50000
         }
       },
@@ -3476,8 +3148,6 @@
           "draftkings": 10000,
           "caesars": 10000,
           "circa": 30000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 8000
         }
       },
@@ -3486,8 +3156,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3496,8 +3164,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 25000
         }
       },
@@ -3506,8 +3172,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 50000
         }
       },
@@ -3570,15 +3234,11 @@
       },
       "Connor Mcdavid": {
         "team": "",
-        "prices": {
-          "dazn": 100
-        }
+        "prices": {}
       },
       "Nathan Mackinnon": {
         "team": "",
-        "prices": {
-          "dazn": 800
-        }
+        "prices": {}
       }
     },
     "norris": {
@@ -3591,8 +3251,6 @@
           "caesars": 325,
           "bet365": 325,
           "circa": 225,
-          "betano": 400,
-          "dazn": 400,
           "betmgm": 400
         }
       },
@@ -3605,8 +3263,6 @@
           "caesars": 400,
           "bet365": 425,
           "circa": 400,
-          "betano": 450,
-          "dazn": 450,
           "betmgm": 400
         }
       },
@@ -3619,8 +3275,6 @@
           "caesars": 750,
           "bet365": 650,
           "circa": 550,
-          "betano": 1200,
-          "dazn": 1200,
           "betmgm": 1000
         }
       },
@@ -3633,8 +3287,6 @@
           "caesars": 850,
           "bet365": 900,
           "circa": 825,
-          "betano": 700,
-          "dazn": 700,
           "betmgm": 900
         }
       },
@@ -3647,8 +3299,6 @@
           "caesars": 950,
           "bet365": 1000,
           "circa": 775,
-          "betano": 1200,
-          "dazn": 1200,
           "betmgm": 900
         }
       },
@@ -3661,8 +3311,6 @@
           "caesars": 240,
           "bet365": 275,
           "circa": 775,
-          "betano": 175,
-          "dazn": 175,
           "betmgm": 155
         }
       },
@@ -3675,8 +3323,6 @@
           "caesars": 2200,
           "bet365": 2000,
           "circa": 1400,
-          "betano": 2400,
-          "dazn": 2400,
           "betmgm": 1900
         }
       },
@@ -3689,8 +3335,6 @@
           "caesars": 1500,
           "bet365": 1400,
           "circa": 1400,
-          "betano": 1000,
-          "dazn": 1000,
           "betmgm": 1300
         }
       },
@@ -3703,8 +3347,6 @@
           "caesars": 4000,
           "bet365": 3000,
           "circa": 2800,
-          "betano": 2900,
-          "dazn": 2900,
           "betmgm": 3500
         }
       },
@@ -3717,8 +3359,6 @@
           "caesars": 2200,
           "bet365": 2000,
           "circa": 3300,
-          "betano": 2400,
-          "dazn": 2400,
           "betmgm": 2000
         }
       },
@@ -3730,7 +3370,6 @@
           "draftkings": 4000,
           "caesars": 3200,
           "circa": 4000,
-          "betano": 4400,
           "betmgm": 3500
         }
       },
@@ -3742,8 +3381,6 @@
           "draftkings": 5000,
           "caesars": 3500,
           "circa": 5000,
-          "betano": 4900,
-          "dazn": 4900,
           "betmgm": 5000
         }
       },
@@ -3754,8 +3391,6 @@
           "draftkings": 20000,
           "caesars": 20000,
           "circa": 7500,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 20000
         }
       },
@@ -3768,8 +3403,6 @@
           "caesars": 4500,
           "bet365": 2500,
           "circa": 3800,
-          "betano": 4400,
-          "dazn": 4400,
           "betmgm": 5000
         }
       },
@@ -3781,8 +3414,6 @@
           "draftkings": 6000,
           "caesars": 6500,
           "circa": 5900,
-          "betano": 7900,
-          "dazn": 7900,
           "betmgm": 6600
         }
       },
@@ -3795,7 +3426,6 @@
           "caesars": 5000,
           "bet365": 2500,
           "circa": 15000,
-          "betano": 3900,
           "betmgm": 5500
         }
       },
@@ -3807,8 +3437,6 @@
           "draftkings": 5000,
           "caesars": 9000,
           "circa": 10000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 8000
         }
       },
@@ -3817,8 +3445,6 @@
         "prices": {
           "caesars": 7000,
           "circa": 20000,
-          "betano": 9900,
-          "dazn": 9900,
           "betmgm": 10000
         }
       },
@@ -3830,8 +3456,6 @@
           "draftkings": 5000,
           "caesars": 10000,
           "circa": 20000,
-          "betano": 4900,
-          "dazn": 4900,
           "betmgm": 10000
         }
       },
@@ -3843,8 +3467,6 @@
           "draftkings": 10000,
           "caesars": 15000,
           "circa": 17500,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -3854,8 +3476,6 @@
           "kambi": 25000,
           "draftkings": 25000,
           "circa": 20000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 25000
         }
       },
@@ -3867,8 +3487,6 @@
           "draftkings": 12000,
           "caesars": 12500,
           "circa": 30000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 15000
         }
       },
@@ -3888,8 +3506,6 @@
           "kambi": 15000,
           "draftkings": 15000,
           "caesars": 20000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 30000
         }
       },
@@ -3898,8 +3514,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3909,8 +3523,6 @@
           "kambi": 20000,
           "draftkings": 20000,
           "caesars": 20000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 20000
         }
       },
@@ -3919,8 +3531,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3930,8 +3540,6 @@
           "kambi": 20000,
           "draftkings": 20000,
           "circa": 30000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 25000
         }
       },
@@ -3942,8 +3550,6 @@
           "draftkings": 25000,
           "caesars": 25000,
           "circa": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 25000
         }
       },
@@ -3952,8 +3558,6 @@
         "prices": {
           "kambi": 20000,
           "draftkings": 20000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 20000
         }
       },
@@ -3963,8 +3567,6 @@
           "kambi": 20000,
           "draftkings": 20000,
           "caesars": 22500,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 25000
         }
       },
@@ -3973,8 +3575,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -3986,8 +3586,6 @@
           "draftkings": 10000,
           "caesars": 10000,
           "circa": 7500,
-          "betano": 7900,
-          "dazn": 7900,
           "betmgm": 15000
         }
       },
@@ -3995,8 +3593,6 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4006,7 +3602,6 @@
           "kambi": 30000,
           "draftkings": 30000,
           "caesars": 25000,
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -4017,8 +3612,6 @@
           "draftkings": 25000,
           "caesars": 25000,
           "circa": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4027,8 +3620,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4039,8 +3630,6 @@
           "draftkings": 20000,
           "caesars": 20000,
           "circa": 30000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 20000
         }
       },
@@ -4050,8 +3639,6 @@
           "kambi": 15000,
           "draftkings": 15000,
           "caesars": 20000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 20000
         }
       },
@@ -4063,8 +3650,6 @@
           "draftkings": 10000,
           "caesars": 20000,
           "circa": 10000,
-          "betano": 12400,
-          "dazn": 12400,
           "betmgm": 15000
         }
       },
@@ -4075,8 +3660,6 @@
           "draftkings": 20000,
           "caesars": 20000,
           "circa": 30000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 25000
         }
       },
@@ -4085,8 +3668,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4095,8 +3676,6 @@
         "prices": {
           "kambi": 25000,
           "draftkings": 25000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4105,8 +3684,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4116,8 +3693,6 @@
           "kambi": 15000,
           "draftkings": 15000,
           "caesars": 15000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 15000
         }
       },
@@ -4129,8 +3704,6 @@
           "draftkings": 7500,
           "caesars": 7500,
           "circa": 30000,
-          "betano": 6400,
-          "dazn": 6400,
           "betmgm": 8000
         }
       },
@@ -4139,8 +3712,6 @@
         "prices": {
           "kambi": 30000,
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4151,7 +3722,6 @@
           "draftkings": 25000,
           "caesars": 25000,
           "circa": 30000,
-          "betano": 24900,
           "betmgm": 30000
         }
       },
@@ -4177,8 +3747,6 @@
           "kambi": 7500,
           "draftkings": 7500,
           "betonline": 8000,
-          "betano": 7400,
-          "dazn": 7400,
           "betmgm": 10000
         }
       },
@@ -4188,21 +3756,15 @@
       },
       "Charlie Mcavoy": {
         "team": "",
-        "prices": {
-          "dazn": 3900
-        }
+        "prices": {}
       },
       "Jackson Lacombe": {
         "team": "",
-        "prices": {
-          "dazn": 4400
-        }
+        "prices": {}
       },
       "K'andre Miller": {
         "team": "",
-        "prices": {
-          "dazn": 29900
-        }
+        "prices": {}
       }
     },
     "rocket_richard": {
@@ -4213,7 +3775,6 @@
           "caesars": 450,
           "circa": 500,
           "bet365": 550,
-          "betano": 600,
           "kambi": 700,
           "betmgm": 650
         }
@@ -4225,9 +3786,7 @@
           "caesars": 750,
           "circa": 825,
           "bet365": 800,
-          "betano": 750,
           "kambi": 600,
-          "dazn": 750,
           "betmgm": 750
         }
       },
@@ -4238,9 +3797,7 @@
           "caesars": 600,
           "circa": 600,
           "bet365": 550,
-          "betano": 450,
           "kambi": 300,
-          "dazn": 450,
           "betmgm": 450
         }
       },
@@ -4251,9 +3808,7 @@
           "caesars": 450,
           "circa": 825,
           "bet365": 400,
-          "betano": 375,
           "kambi": 300,
-          "dazn": 375,
           "betmgm": 400
         }
       },
@@ -4264,9 +3819,7 @@
           "caesars": 2400,
           "circa": 1300,
           "bet365": 2200,
-          "betano": 2900,
           "kambi": 1500,
-          "dazn": 2900,
           "betmgm": 2500
         }
       },
@@ -4277,9 +3830,7 @@
           "caesars": 900,
           "circa": 675,
           "bet365": 1400,
-          "betano": 1400,
           "kambi": 1300,
-          "dazn": 1400,
           "betmgm": 1400
         }
       },
@@ -4290,9 +3841,7 @@
           "caesars": 750,
           "circa": 1100,
           "bet365": 750,
-          "betano": 700,
           "kambi": 800,
-          "dazn": 700,
           "betmgm": 700
         }
       },
@@ -4303,7 +3852,6 @@
           "caesars": 1000,
           "circa": 1100,
           "bet365": 1000,
-          "betano": 1200,
           "kambi": 1400,
           "betmgm": 1200
         }
@@ -4313,9 +3861,7 @@
         "prices": {
           "draftkings": 3000,
           "circa": 2100,
-          "betano": 6400,
           "kambi": 3000,
-          "dazn": 6400,
           "betmgm": 4500
         }
       },
@@ -4326,9 +3872,7 @@
           "caesars": 2400,
           "circa": 2100,
           "bet365": 2500,
-          "betano": 3400,
           "kambi": 1500,
-          "dazn": 3400,
           "betmgm": 2500
         }
       },
@@ -4339,9 +3883,7 @@
           "caesars": 2000,
           "circa": 2500,
           "bet365": 2500,
-          "betano": 2400,
           "kambi": 2300,
-          "dazn": 2400,
           "betmgm": 1900
         }
       },
@@ -4351,9 +3893,7 @@
           "draftkings": 1800,
           "caesars": 1600,
           "bet365": 1800,
-          "betano": 1700,
           "kambi": 1700,
-          "dazn": 1700,
           "betmgm": 1500
         }
       },
@@ -4362,9 +3902,7 @@
         "prices": {
           "draftkings": 4000,
           "circa": 30000,
-          "betano": 14900,
           "kambi": 15000,
-          "dazn": 14900,
           "betmgm": 8000
         }
       },
@@ -4374,9 +3912,7 @@
           "draftkings": 3000,
           "caesars": 2500,
           "circa": 3300,
-          "betano": 5400,
           "kambi": 3000,
-          "dazn": 5400,
           "betmgm": 3000
         }
       },
@@ -4387,9 +3923,7 @@
           "caesars": 3500,
           "circa": 10000,
           "bet365": 3000,
-          "betano": 3400,
           "kambi": 7500,
-          "dazn": 3400,
           "betmgm": 3500
         }
       },
@@ -4399,9 +3933,7 @@
           "draftkings": 3000,
           "caesars": 3000,
           "circa": 3300,
-          "betano": 6400,
           "kambi": 3000,
-          "dazn": 6400,
           "betmgm": 3000
         }
       },
@@ -4410,9 +3942,7 @@
         "prices": {
           "draftkings": 3500,
           "circa": 2500,
-          "betano": 4900,
           "kambi": 3000,
-          "dazn": 4900,
           "betmgm": 4000
         }
       },
@@ -4422,9 +3952,7 @@
           "draftkings": 4000,
           "caesars": 3000,
           "circa": 4000,
-          "betano": 3900,
           "kambi": 3000,
-          "dazn": 3900,
           "betmgm": 4000
         }
       },
@@ -4432,8 +3960,6 @@
         "team": "",
         "prices": {
           "draftkings": 7500,
-          "betano": 7400,
-          "dazn": 7400,
           "betmgm": 8000
         }
       },
@@ -4442,9 +3968,7 @@
         "prices": {
           "draftkings": 7000,
           "circa": 10000,
-          "betano": 5400,
           "kambi": 4000,
-          "dazn": 5400,
           "betmgm": 8000
         }
       },
@@ -4454,9 +3978,7 @@
           "draftkings": 3000,
           "circa": 1500,
           "bet365": 3000,
-          "betano": 6400,
           "kambi": 2500,
-          "dazn": 6400,
           "betmgm": 3500
         }
       },
@@ -4465,9 +3987,7 @@
         "prices": {
           "draftkings": 5000,
           "circa": 30000,
-          "betano": 3900,
           "kambi": 2300,
-          "dazn": 3900,
           "betmgm": 3500
         }
       },
@@ -4476,9 +3996,7 @@
         "prices": {
           "draftkings": 7000,
           "circa": 9000,
-          "betano": 6400,
           "kambi": 5500,
-          "dazn": 6400,
           "betmgm": 8000
         }
       },
@@ -4487,8 +4005,6 @@
         "prices": {
           "draftkings": 7500,
           "circa": 15000,
-          "betano": 7400,
-          "dazn": 7400,
           "betmgm": 8000
         }
       },
@@ -4496,8 +4012,6 @@
         "team": "",
         "prices": {
           "draftkings": 15000,
-          "betano": 14900,
-          "dazn": 14900,
           "betmgm": 20000
         }
       },
@@ -4506,9 +4020,7 @@
         "prices": {
           "draftkings": 9000,
           "circa": 8000,
-          "betano": 19900,
           "kambi": 12500,
-          "dazn": 19900,
           "betmgm": 10000
         }
       },
@@ -4517,9 +4029,7 @@
         "prices": {
           "draftkings": 9000,
           "circa": 7000,
-          "betano": 19900,
           "kambi": 30000,
-          "dazn": 19900,
           "betmgm": 10000
         }
       },
@@ -4528,9 +4038,7 @@
         "prices": {
           "draftkings": 12000,
           "circa": 30000,
-          "betano": 19900,
           "kambi": 20000,
-          "dazn": 19900,
           "betmgm": 10000
         }
       },
@@ -4538,8 +4046,6 @@
         "team": "",
         "prices": {
           "draftkings": 12000,
-          "betano": 12400,
-          "dazn": 12400,
           "betmgm": 12500
         }
       },
@@ -4548,9 +4054,7 @@
         "prices": {
           "draftkings": 8000,
           "circa": 30000,
-          "betano": 12400,
           "kambi": 6000,
-          "dazn": 12400,
           "betmgm": 8000
         }
       },
@@ -4559,9 +4063,7 @@
         "prices": {
           "draftkings": 15000,
           "circa": 6000,
-          "betano": 14900,
           "kambi": 20000,
-          "dazn": 14900,
           "betmgm": 15000
         }
       },
@@ -4570,9 +4072,7 @@
         "prices": {
           "draftkings": 7500,
           "circa": 3200,
-          "betano": 14900,
           "kambi": 7500,
-          "dazn": 14900,
           "betmgm": 10000
         }
       },
@@ -4581,8 +4081,6 @@
         "prices": {
           "draftkings": 20000,
           "circa": 30000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 25000
         }
       },
@@ -4599,8 +4097,6 @@
         "team": "",
         "prices": {
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 20000
         }
       },
@@ -4608,8 +4104,6 @@
         "team": "",
         "prices": {
           "draftkings": 20000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 20000
         }
       },
@@ -4618,8 +4112,6 @@
         "prices": {
           "draftkings": 20000,
           "circa": 30000,
-          "betano": 19900,
-          "dazn": 19900,
           "betmgm": 15000
         }
       },
@@ -4627,9 +4119,7 @@
         "team": "",
         "prices": {
           "draftkings": 20000,
-          "betano": 24900,
           "kambi": 20000,
-          "dazn": 24900,
           "betmgm": 17500
         }
       },
@@ -4637,8 +4127,6 @@
         "team": "",
         "prices": {
           "draftkings": 25000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 25000
         }
       },
@@ -4647,9 +4135,7 @@
         "prices": {
           "draftkings": 25000,
           "circa": 15000,
-          "betano": 29900,
           "kambi": 15000,
-          "dazn": 29900,
           "betmgm": 15000
         }
       },
@@ -4658,25 +4144,19 @@
         "prices": {
           "draftkings": 25000,
           "circa": 9000,
-          "betano": 24900,
-          "dazn": 24900,
           "betmgm": 25000
         }
       },
       "Joel Eriksson Ek": {
         "team": "",
         "prices": {
-          "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900
+          "draftkings": 30000
         }
       },
       "Jesper Bratt": {
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4685,9 +4165,7 @@
         "prices": {
           "draftkings": 30000,
           "circa": 30000,
-          "betano": 29900,
           "kambi": 30000,
-          "dazn": 29900,
           "betmgm": 25000
         }
       },
@@ -4696,8 +4174,6 @@
         "prices": {
           "draftkings": 30000,
           "circa": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4705,8 +4181,6 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4714,9 +4188,7 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
           "kambi": 30000,
-          "dazn": 29900,
           "betmgm": 25000
         }
       },
@@ -4724,8 +4196,6 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4733,8 +4203,6 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4743,9 +4211,7 @@
         "prices": {
           "draftkings": 5000,
           "circa": 5100,
-          "betano": 7400,
           "kambi": 5000,
-          "dazn": 7400,
           "betmgm": 5000
         }
       },
@@ -4753,8 +4219,6 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 25000
         }
       },
@@ -4762,8 +4226,6 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 25000
         }
       },
@@ -4772,8 +4234,6 @@
         "prices": {
           "draftkings": 30000,
           "circa": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4782,8 +4242,6 @@
         "prices": {
           "draftkings": 30000,
           "circa": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4791,8 +4249,6 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4800,8 +4256,6 @@
         "team": "",
         "prices": {
           "draftkings": 30000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4810,8 +4264,6 @@
         "prices": {
           "draftkings": 30000,
           "circa": 15000,
-          "betano": 29900,
-          "dazn": 29900,
           "betmgm": 30000
         }
       },
@@ -4852,9 +4304,7 @@
         "team": "",
         "prices": {
           "circa": 30000,
-          "betano": 12400,
           "kambi": 5500,
-          "dazn": 12400,
           "betmgm": 20000
         }
       },
@@ -4960,8 +4410,6 @@
         "team": "",
         "prices": {
           "draftkings": 5000,
-          "betano": 4900,
-          "dazn": 4900,
           "betmgm": 5500
         }
       },
@@ -4973,15 +4421,11 @@
       },
       "Nathan Mackinnon": {
         "team": "",
-        "prices": {
-          "dazn": 600
-        }
+        "prices": {}
       },
       "Connor Mcdavid": {
         "team": "",
-        "prices": {
-          "dazn": 1200
-        }
+        "prices": {}
       }
     },
     "jack_adams": {
@@ -4992,8 +4436,6 @@
           "bet365": 600,
           "circa": 600,
           "draftkings": 1100,
-          "betano": 1200,
-          "dazn": 1200,
           "kambi": 1100,
           "betmgm": 1200
         }
@@ -5005,8 +4447,6 @@
           "bet365": 600,
           "circa": 475,
           "draftkings": 900,
-          "betano": 900,
-          "dazn": 900,
           "kambi": 900,
           "betmgm": 1300
         }
@@ -5018,8 +4458,6 @@
           "bet365": 800,
           "circa": 650,
           "draftkings": 1500,
-          "betano": 1600,
-          "dazn": 1600,
           "kambi": 1500,
           "betmgm": 2200
         }
@@ -5031,8 +4469,6 @@
           "bet365": 1000,
           "circa": 1000,
           "draftkings": 900,
-          "betano": 900,
-          "dazn": 900,
           "kambi": 900,
           "betmgm": 800
         }
@@ -5044,8 +4480,6 @@
           "bet365": 1400,
           "circa": 2000,
           "draftkings": 2500,
-          "betano": 2400,
-          "dazn": 2400,
           "kambi": 2300,
           "betmgm": 3000
         }
@@ -5057,8 +4491,6 @@
           "bet365": 1400,
           "circa": 1400,
           "draftkings": 2000,
-          "betano": 2400,
-          "dazn": 2400,
           "kambi": 1100,
           "betmgm": 1700
         }
@@ -5070,8 +4502,6 @@
           "bet365": 1600,
           "circa": 4500,
           "draftkings": 6000,
-          "betano": 5900,
-          "dazn": 5900,
           "kambi": 5000,
           "betmgm": 6600
         }
@@ -5083,8 +4513,6 @@
           "bet365": 1600,
           "circa": 2300,
           "draftkings": 2500,
-          "betano": 1700,
-          "dazn": 1700,
           "kambi": 1700,
           "betmgm": 2500
         }
@@ -5096,8 +4524,6 @@
           "bet365": 2000,
           "circa": 2200,
           "draftkings": 1700,
-          "betano": 1700,
-          "dazn": 1700,
           "kambi": 1700,
           "betmgm": 2000
         }
@@ -5109,8 +4535,6 @@
           "bet365": 2000,
           "circa": 2500,
           "draftkings": 2500,
-          "betano": 2400,
-          "dazn": 2400,
           "kambi": 2300,
           "betmgm": 2200
         }
@@ -5122,7 +4546,6 @@
           "bet365": 2000,
           "circa": 2500,
           "draftkings": 2500,
-          "betano": 2400,
           "kambi": 2500,
           "betmgm": 2800
         }
@@ -5134,8 +4557,6 @@
           "bet365": 2000,
           "circa": 1800,
           "draftkings": 2200,
-          "betano": 2400,
-          "dazn": 2400,
           "kambi": 2500,
           "betmgm": 2200
         }
@@ -5147,8 +4568,6 @@
           "bet365": 2000,
           "circa": 3000,
           "draftkings": 3500,
-          "betano": 3400,
-          "dazn": 3400,
           "kambi": 4000,
           "betmgm": 5000
         }
@@ -5160,8 +4579,6 @@
           "bet365": 2500,
           "circa": 3500,
           "draftkings": 1800,
-          "betano": 1900,
-          "dazn": 1900,
           "kambi": 2000,
           "betmgm": 2000
         }
@@ -5173,8 +4590,6 @@
           "bet365": 2500,
           "circa": 1800,
           "draftkings": 1100,
-          "betano": 1200,
-          "dazn": 1200,
           "kambi": 1100,
           "betmgm": 1200
         }
@@ -5186,8 +4601,6 @@
           "bet365": 2500,
           "circa": 3500,
           "draftkings": 1000,
-          "betano": 1000,
-          "dazn": 1000,
           "kambi": 1000,
           "betmgm": 1000
         }
@@ -5199,8 +4612,6 @@
           "bet365": 2500,
           "circa": 2200,
           "draftkings": 2800,
-          "betano": 2400,
-          "dazn": 2400,
           "kambi": 2500,
           "betmgm": 4000
         }
@@ -5212,7 +4623,6 @@
           "bet365": 2800,
           "circa": 3000,
           "draftkings": 3000,
-          "betano": 2900,
           "kambi": 2500,
           "betmgm": 4000
         }
@@ -5224,8 +4634,6 @@
           "bet365": 3000,
           "circa": 4000,
           "draftkings": 2500,
-          "betano": 2400,
-          "dazn": 2400,
           "kambi": 2500,
           "betmgm": 4000
         }
@@ -5237,8 +4645,6 @@
           "bet365": 3500,
           "circa": 3500,
           "draftkings": 2500,
-          "betano": 2400,
-          "dazn": 2400,
           "kambi": 2500,
           "betmgm": 3500
         }
@@ -5250,8 +4656,6 @@
           "bet365": 4000,
           "circa": 4000,
           "draftkings": 700,
-          "betano": 600,
-          "dazn": 600,
           "kambi": 700,
           "betmgm": 750
         }
@@ -5263,8 +4667,6 @@
           "bet365": 5000,
           "circa": 4000,
           "draftkings": 4500,
-          "betano": 4400,
-          "dazn": 4400,
           "kambi": 5000,
           "betmgm": 5500
         }
@@ -5276,8 +4678,6 @@
           "bet365": 5000,
           "circa": 2200,
           "draftkings": 4000,
-          "betano": 3900,
-          "dazn": 3900,
           "kambi": 4000,
           "betmgm": 6600
         }
@@ -5289,8 +4689,6 @@
           "bet365": 6000,
           "circa": 7000,
           "draftkings": 900,
-          "betano": 800,
-          "dazn": 800,
           "kambi": 600,
           "betmgm": 500
         }
@@ -5302,8 +4700,6 @@
           "bet365": 6000,
           "circa": 4000,
           "draftkings": 1700,
-          "betano": 1700,
-          "dazn": 1700,
           "kambi": 1300,
           "betmgm": 2000
         }
@@ -5315,8 +4711,6 @@
           "bet365": 7500,
           "circa": 7000,
           "draftkings": 5000,
-          "betano": 4900,
-          "dazn": 4900,
           "kambi": 6500,
           "betmgm": 6600
         }
@@ -5328,8 +4722,6 @@
           "bet365": 7500,
           "circa": 7900,
           "draftkings": 4000,
-          "betano": 3900,
-          "dazn": 3900,
           "kambi": 4000,
           "betmgm": 4000
         }
@@ -5341,8 +4733,6 @@
           "bet365": 7500,
           "circa": 5000,
           "draftkings": 3500,
-          "betano": 3400,
-          "dazn": 3400,
           "kambi": 3000,
           "betmgm": 8000
         }
@@ -5354,8 +4744,6 @@
           "bet365": 10000,
           "circa": 7900,
           "draftkings": 8000,
-          "betano": 7900,
-          "dazn": 7900,
           "kambi": 10000,
           "betmgm": 3000
         }
@@ -5367,7 +4755,6 @@
           "bet365": 10000,
           "circa": 5000,
           "draftkings": 6000,
-          "betano": 5900,
           "kambi": 5000,
           "betmgm": 10000
         }
@@ -5379,8 +4766,6 @@
           "bet365": 15000,
           "circa": 10000,
           "draftkings": 10000,
-          "betano": 9900,
-          "dazn": 9900,
           "kambi": 10000,
           "betmgm": 15000
         }
@@ -5392,29 +4777,21 @@
           "bet365": 15000,
           "circa": 10000,
           "draftkings": 10000,
-          "betano": 9900,
-          "dazn": 9900,
           "kambi": 10000,
           "betmgm": 15000
         }
       },
       "Rod Brind'amour": {
         "team": "",
-        "prices": {
-          "dazn": 2400
-        }
+        "prices": {}
       },
       "Peter Deboer": {
         "team": "",
-        "prices": {
-          "dazn": 2900
-        }
+        "prices": {}
       },
       "Todd Mclellan": {
         "team": "",
-        "prices": {
-          "dazn": 5900
-        }
+        "prices": {}
       }
     },
     "art_ross": {
@@ -5423,7 +4800,6 @@
         "prices": {
           "caesars": -135,
           "kambi": -182,
-          "betano": -149,
           "betmgm": -220
         }
       },
@@ -5432,7 +4808,6 @@
         "prices": {
           "caesars": 475,
           "kambi": 650,
-          "betano": 600,
           "betmgm": 600
         }
       },
@@ -5441,7 +4816,6 @@
         "prices": {
           "caesars": 450,
           "kambi": 650,
-          "betano": 600,
           "betmgm": 600
         }
       },
@@ -5450,7 +4824,6 @@
         "prices": {
           "caesars": 1000,
           "kambi": 1100,
-          "betano": 1100,
           "betmgm": 1000
         }
       },
@@ -5459,7 +4832,6 @@
         "prices": {
           "caesars": 1000,
           "kambi": 900,
-          "betano": 700,
           "betmgm": 1000
         }
       },
@@ -5468,7 +4840,6 @@
         "prices": {
           "caesars": 3000,
           "kambi": 5000,
-          "betano": 3900,
           "betmgm": 4000
         }
       },
@@ -5477,7 +4848,6 @@
         "prices": {
           "caesars": 2500,
           "kambi": 3000,
-          "betano": 3400,
           "betmgm": 3000
         }
       },
@@ -5486,7 +4856,6 @@
         "prices": {
           "caesars": 1000,
           "kambi": 2000,
-          "betano": 1600,
           "betmgm": 1600
         }
       },
@@ -5495,7 +4864,6 @@
         "prices": {
           "caesars": 5000,
           "kambi": 17500,
-          "betano": 12400,
           "betmgm": 10000
         }
       },
@@ -5503,7 +4871,6 @@
         "team": "",
         "prices": {
           "kambi": 17500,
-          "betano": 14900,
           "betmgm": 15000
         }
       },
@@ -5512,14 +4879,12 @@
         "prices": {
           "caesars": 5000,
           "kambi": 12500,
-          "betano": 9900,
           "betmgm": 5500
         }
       },
       "Cale Makar": {
         "team": "",
         "prices": {
-          "betano": 7400,
           "betmgm": 15000
         }
       },
@@ -5528,7 +4893,6 @@
         "prices": {
           "caesars": 4000,
           "kambi": 8000,
-          "betano": 7900,
           "betmgm": 6600
         }
       },
@@ -5537,7 +4901,6 @@
         "prices": {
           "caesars": 4000,
           "kambi": 7000,
-          "betano": 3400,
           "betmgm": 5500
         }
       },
@@ -5546,7 +4909,6 @@
         "prices": {
           "caesars": 3500,
           "kambi": 10000,
-          "betano": 19900,
           "betmgm": 25000
         }
       },
@@ -5554,7 +4916,6 @@
         "team": "",
         "prices": {
           "kambi": 12500,
-          "betano": 24900,
           "betmgm": 10000
         }
       },
@@ -5562,7 +4923,6 @@
         "team": "",
         "prices": {
           "kambi": 10000,
-          "betano": 24900,
           "betmgm": 10000
         }
       },
@@ -5570,7 +4930,6 @@
         "team": "",
         "prices": {
           "kambi": 17500,
-          "betano": 24900,
           "betmgm": 10000
         }
       },
@@ -5579,21 +4938,18 @@
         "prices": {
           "caesars": 3500,
           "kambi": 10000,
-          "betano": 12400,
           "betmgm": 5000
         }
       },
       "Quinn Hughes": {
         "team": "",
         "prices": {
-          "betano": 9900,
           "betmgm": 15000
         }
       },
       "Martin Necas": {
         "team": "",
         "prices": {
-          "betano": 9900,
           "betmgm": 15000
         }
       },
@@ -5602,7 +4958,6 @@
         "prices": {
           "caesars": 6500,
           "kambi": 10000,
-          "betano": 7900,
           "betmgm": 8000
         }
       },
@@ -5610,42 +4965,36 @@
         "team": "",
         "prices": {
           "kambi": 35000,
-          "betano": 24900,
           "betmgm": 20000
         }
       },
       "Rasmus Dahlin": {
         "team": "",
         "prices": {
-          "betano": 14900,
           "betmgm": 15000
         }
       },
       "Lane Hutson": {
         "team": "",
         "prices": {
-          "betano": 14900,
           "betmgm": 15000
         }
       },
       "Robert Thomas": {
         "team": "",
         "prices": {
-          "betano": 14900,
           "betmgm": 15000
         }
       },
       "Zach Werenski": {
         "team": "",
         "prices": {
-          "betano": 14900,
           "betmgm": 15000
         }
       },
       "Jesper Bratt": {
         "team": "",
         "prices": {
-          "betano": 14900,
           "betmgm": 15000
         }
       },
@@ -5653,14 +5002,12 @@
         "team": "",
         "prices": {
           "kambi": 35000,
-          "betano": 29900,
           "betmgm": 20000
         }
       },
       "Brandon Hagel": {
         "team": "",
         "prices": {
-          "betano": 14900,
           "betmgm": 15000
         }
       },
@@ -5668,7 +5015,6 @@
         "team": "",
         "prices": {
           "kambi": 35000,
-          "betano": 24900,
           "betmgm": 15000
         }
       },
@@ -5676,7 +5022,6 @@
         "team": "",
         "prices": {
           "kambi": 25000,
-          "betano": 29900,
           "betmgm": 15000
         }
       },
@@ -5687,14 +5032,12 @@
       "Sidney Crosby": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 20000
         }
       },
       "Wyatt Johnston": {
         "team": "",
         "prices": {
-          "betano": 19900,
           "betmgm": 20000
         }
       },
@@ -5702,7 +5045,6 @@
         "team": "",
         "prices": {
           "kambi": 15000,
-          "betano": 5900,
           "betmgm": 10000
         }
       },
@@ -5710,7 +5052,6 @@
         "team": "",
         "prices": {
           "kambi": 20000,
-          "betano": 19900,
           "betmgm": 20000
         }
       },
@@ -5718,7 +5059,6 @@
         "team": "",
         "prices": {
           "kambi": 35000,
-          "betano": 29900,
           "betmgm": 20000
         }
       },
@@ -5726,7 +5066,6 @@
         "team": "",
         "prices": {
           "kambi": 35000,
-          "betano": 29900,
           "betmgm": 20000
         }
       },
@@ -5738,14 +5077,12 @@
         "team": "",
         "prices": {
           "kambi": 20000,
-          "betano": 29900,
           "betmgm": 20000
         }
       },
       "Nikolaj Ehlers": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -5768,21 +5105,18 @@
       "Alex DeBrincat": {
         "team": "",
         "prices": {
-          "betano": 24900,
           "betmgm": 30000
         }
       },
       "Connor Bedard": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
       "Aleksander Barkov": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -5796,7 +5130,6 @@
       "Drake Batherson": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -5853,14 +5186,12 @@
       "Adrian Kempe": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
       "Mika Zibanejad": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -5873,7 +5204,6 @@
       "John Tavares": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -5881,14 +5211,12 @@
         "team": "",
         "prices": {
           "kambi": 35000,
-          "betano": 29900,
           "betmgm": 30000
         }
       },
       "Filip Forsberg": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -5903,7 +5231,6 @@
       "Lucas Raymond": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -5920,7 +5247,6 @@
       "Gavin McKenna": {
         "team": "",
         "prices": {
-          "betano": 29900,
           "betmgm": 30000
         }
       },
@@ -5955,7 +5281,6 @@
       "Mark Stone": {
         "team": "",
         "prices": {
-          "betano": 19900,
           "betmgm": 30000
         }
       },
@@ -5972,7 +5297,6 @@
       "Evan Bouchard": {
         "team": "",
         "prices": {
-          "betano": 3900,
           "betmgm": 5000
         }
       },
@@ -6136,27 +5460,19 @@
     "Anaheim Ducks": {
       "yes": {
         "fanduel": 138,
-        "kambi": -125,
         "betonline": 110,
         "draftkings": -115,
         "caesars": -110,
         "bet365": -115,
-        "circa": -110,
-        "dazn": 110,
-        "betano": 110,
-        "betmgm": 110
+        "circa": -110
       },
       "no": {
         "fanduel": -178,
-        "kambi": -106,
         "betonline": -140,
         "draftkings": -110,
         "caesars": -110,
         "bet365": -105,
-        "circa": -120,
-        "dazn": -149,
-        "betano": -149,
-        "betmgm": -130
+        "circa": -120
       }
     },
     "Boston Bruins": {
@@ -6168,8 +5484,6 @@
         "caesars": -105,
         "bet365": 100,
         "circa": 290,
-        "dazn": -139,
-        "betano": -125,
         "betmgm": -125
       },
       "no": {
@@ -6180,8 +5494,6 @@
         "caesars": -115,
         "bet365": -130,
         "circa": -370,
-        "dazn": 105,
-        "betano": -105,
         "betmgm": 105
       }
     },
@@ -6194,9 +5506,7 @@
         "bet365": -115,
         "circa": -110,
         "kambi": -118,
-        "dazn": -105,
-        "betmgm": -105,
-        "betano": -105
+        "betmgm": -105
       },
       "no": {
         "fanduel": -138,
@@ -6206,9 +5516,7 @@
         "bet365": -105,
         "circa": -120,
         "kambi": -110,
-        "dazn": -125,
-        "betmgm": -118,
-        "betano": -125
+        "betmgm": -118
       }
     },
     "Calgary Flames": {
@@ -6220,9 +5528,7 @@
         "draftkings": 1600,
         "caesars": 1600,
         "bet365": 1800,
-        "circa": 1000,
-        "dazn": 1100,
-        "betano": 1100
+        "circa": 1000
       },
       "no": {
         "fanduel": -10000,
@@ -6232,9 +5538,7 @@
         "draftkings": -20000,
         "caesars": -6000,
         "bet365": -15000,
-        "circa": -1700,
-        "betano": -5000,
-        "dazn": -5000
+        "circa": -1700
       }
     },
     "Carolina Hurricanes": {
@@ -6246,9 +5550,7 @@
         "draftkings": -4000,
         "caesars": -3500,
         "bet365": -2500,
-        "circa": -1000,
-        "dazn": -5000,
-        "betano": -5000
+        "circa": -1000
       },
       "no": {
         "fanduel": 900,
@@ -6258,9 +5560,7 @@
         "draftkings": 1200,
         "caesars": 1200,
         "bet365": 950,
-        "circa": 675,
-        "dazn": 1100,
-        "betano": 1100
+        "circa": 675
       }
     },
     "Chicago Blackhawks": {
@@ -6272,9 +5572,7 @@
         "draftkings": 850,
         "caesars": 800,
         "bet365": 800,
-        "circa": 550,
-        "dazn": 800,
-        "betano": 800
+        "circa": 550
       },
       "no": {
         "fanduel": -2500,
@@ -6284,9 +5582,7 @@
         "draftkings": -1800,
         "caesars": -1600,
         "bet365": -1600,
-        "circa": -765,
-        "dazn": -2500,
-        "betano": -2500
+        "circa": -765
       }
     },
     "Colorado Avalanche": {
@@ -6298,9 +5594,7 @@
         "draftkings": -1200,
         "caesars": -2800,
         "bet365": -1500,
-        "circa": -1150,
-        "dazn": -2000,
-        "betano": -2000
+        "circa": -1150
       },
       "no": {
         "fanduel": 830,
@@ -6310,9 +5604,7 @@
         "draftkings": 650,
         "caesars": 1100,
         "bet365": 750,
-        "circa": 750,
-        "dazn": 750,
-        "betano": 750
+        "circa": 750
       }
     },
     "Columbus Blue Jackets": {
@@ -6324,9 +5616,7 @@
         "caesars": 260,
         "bet365": 250,
         "circa": 120,
-        "betmgm": 250,
-        "dazn": 250,
-        "betano": 250
+        "betmgm": 250
       },
       "no": {
         "fanduel": -390,
@@ -6336,9 +5626,7 @@
         "caesars": -330,
         "bet365": -340,
         "circa": -150,
-        "betmgm": -325,
-        "dazn": -357,
-        "betano": -357
+        "betmgm": -325
       }
     },
     "Dallas Stars": {
@@ -6350,8 +5638,6 @@
         "caesars": -500,
         "bet365": -450,
         "circa": -460,
-        "dazn": -500,
-        "betano": -500,
         "betmgm": -600
       },
       "no": {
@@ -6362,8 +5648,6 @@
         "caesars": 375,
         "bet365": 320,
         "circa": 360,
-        "dazn": 330,
-        "betano": 330,
         "betmgm": 425
       }
     },
@@ -6376,8 +5660,6 @@
         "caesars": 525,
         "bet365": 550,
         "circa": 260,
-        "dazn": 460,
-        "betano": 460,
         "betmgm": 450
       },
       "no": {
@@ -6388,8 +5670,6 @@
         "caesars": -800,
         "bet365": -900,
         "circa": -330,
-        "dazn": -833,
-        "betano": -833,
         "betmgm": -650
       }
     },
@@ -6402,8 +5682,7 @@
         "draftkings": -6000,
         "caesars": -1800,
         "bet365": -3500,
-        "circa": -1100,
-        "betano": -10000
+        "circa": -1100
       },
       "no": {
         "fanduel": 1100,
@@ -6413,9 +5692,7 @@
         "draftkings": 1300,
         "caesars": 850,
         "bet365": 1100,
-        "circa": 725,
-        "dazn": 1200,
-        "betano": 1200
+        "circa": 725
       }
     },
     "Florida Panthers": {
@@ -6427,8 +5704,6 @@
         "bet365": -500,
         "circa": -775,
         "kambi": -400,
-        "dazn": -370,
-        "betano": -370,
         "betmgm": -400
       },
       "no": {
@@ -6439,8 +5714,6 @@
         "bet365": 350,
         "circa": 555,
         "kambi": 275,
-        "dazn": 250,
-        "betano": 250,
         "betmgm": 300
       }
     },
@@ -6453,8 +5726,6 @@
         "caesars": 125,
         "bet365": -105,
         "circa": -185,
-        "dazn": -110,
-        "betano": -110,
         "betmgm": -105
       },
       "no": {
@@ -6465,8 +5736,6 @@
         "caesars": -150,
         "bet365": -115,
         "circa": 150,
-        "dazn": -120,
-        "betano": -120,
         "betmgm": -115
       }
     },
@@ -6479,8 +5748,6 @@
         "caesars": -700,
         "bet365": -800,
         "circa": -470,
-        "dazn": -667,
-        "betano": -667,
         "betmgm": -800
       },
       "no": {
@@ -6491,8 +5758,6 @@
         "caesars": 490,
         "bet365": 500,
         "circa": 365,
-        "dazn": 400,
-        "betano": 400,
         "betmgm": 525
       }
     },
@@ -6505,9 +5770,7 @@
         "draftkings": -140,
         "caesars": -145,
         "bet365": -140,
-        "circa": -170,
-        "dazn": -133,
-        "betano": -125
+        "circa": -170
       },
       "no": {
         "fanduel": -102,
@@ -6517,9 +5780,7 @@
         "draftkings": 110,
         "caesars": 120,
         "bet365": 110,
-        "circa": 140,
-        "dazn": 100,
-        "betano": -105
+        "circa": 140
       }
     },
     "Nashville Predators": {
@@ -6531,8 +5792,6 @@
         "caesars": 250,
         "bet365": 225,
         "circa": 225,
-        "dazn": 250,
-        "betano": 250,
         "betmgm": 240
       },
       "no": {
@@ -6543,8 +5802,6 @@
         "caesars": -325,
         "bet365": -300,
         "circa": -280,
-        "dazn": -357,
-        "betano": -357,
         "betmgm": -300
       }
     },
@@ -6557,8 +5814,6 @@
         "caesars": -175,
         "bet365": -165,
         "circa": -145,
-        "dazn": -400,
-        "betano": -200,
         "betmgm": -350
       },
       "no": {
@@ -6569,8 +5824,6 @@
         "caesars": 145,
         "bet365": 130,
         "circa": 115,
-        "dazn": 275,
-        "betano": 150,
         "betmgm": 260
       }
     },
@@ -6583,8 +5836,6 @@
         "caesars": 280,
         "bet365": 275,
         "circa": 210,
-        "dazn": 275,
-        "betano": 275,
         "betmgm": 290
       },
       "no": {
@@ -6595,8 +5846,6 @@
         "caesars": -370,
         "bet365": -380,
         "circa": -260,
-        "dazn": -400,
-        "betano": -400,
         "betmgm": -375
       }
     },
@@ -6609,8 +5858,6 @@
         "caesars": 150,
         "bet365": 135,
         "circa": 185,
-        "dazn": 150,
-        "betano": 150,
         "betmgm": 165
       },
       "no": {
@@ -6621,8 +5868,6 @@
         "caesars": -180,
         "bet365": -170,
         "circa": -230,
-        "dazn": -200,
-        "betano": -200,
         "betmgm": -210
       }
     },
@@ -6635,8 +5880,6 @@
         "bet365": -180,
         "circa": -110,
         "kambi": -225,
-        "dazn": -167,
-        "betano": -167,
         "betmgm": -165
       },
       "no": {
@@ -6647,8 +5890,6 @@
         "bet365": 140,
         "circa": -120,
         "kambi": 165,
-        "dazn": 125,
-        "betano": 125,
         "betmgm": 135
       }
     },
@@ -6659,11 +5900,7 @@
         "draftkings": 400,
         "caesars": 525,
         "bet365": 450,
-        "circa": 135,
-        "kambi": 410,
-        "dazn": 400,
-        "betmgm": 400,
-        "betano": 400
+        "circa": 135
       },
       "no": {
         "fanduel": -850,
@@ -6671,11 +5908,7 @@
         "draftkings": -575,
         "caesars": -800,
         "bet365": -700,
-        "circa": -165,
-        "kambi": -670,
-        "dazn": -667,
-        "betmgm": -550,
-        "betano": -667
+        "circa": -165
       }
     },
     "Pittsburgh Penguins": {
@@ -6687,8 +5920,6 @@
         "caesars": 230,
         "bet365": 270,
         "circa": 220,
-        "dazn": 230,
-        "betano": 230,
         "betmgm": 250
       },
       "no": {
@@ -6699,8 +5930,6 @@
         "caesars": -290,
         "bet365": -370,
         "circa": -275,
-        "dazn": -333,
-        "betano": -333,
         "betmgm": -325
       }
     },
@@ -6713,8 +5942,6 @@
         "caesars": -105,
         "bet365": -105,
         "circa": -140,
-        "dazn": -120,
-        "betano": -120,
         "betmgm": -135
       },
       "no": {
@@ -6725,8 +5952,6 @@
         "caesars": -115,
         "bet365": -115,
         "circa": 110,
-        "dazn": -110,
-        "betano": -110,
         "betmgm": 110
       }
     },
@@ -6739,8 +5964,6 @@
         "caesars": 200,
         "bet365": 200,
         "circa": 575,
-        "dazn": 175,
-        "betano": 175,
         "betmgm": 175
       },
       "no": {
@@ -6751,8 +5974,6 @@
         "caesars": -250,
         "bet365": -270,
         "circa": -805,
-        "dazn": -238,
-        "betano": -238,
         "betmgm": -220
       }
     },
@@ -6765,8 +5986,6 @@
         "caesars": 200,
         "bet365": 210,
         "circa": 195,
-        "dazn": 150,
-        "betano": 150,
         "betmgm": 135
       },
       "no": {
@@ -6777,8 +5996,6 @@
         "caesars": -250,
         "bet365": -280,
         "circa": -240,
-        "dazn": -200,
-        "betano": -200,
         "betmgm": -165
       }
     },
@@ -6791,9 +6008,7 @@
         "draftkings": -1100,
         "caesars": -900,
         "bet365": -750,
-        "circa": -505,
-        "dazn": -769,
-        "betano": -1000
+        "circa": -505
       },
       "no": {
         "fanduel": 370,
@@ -6803,9 +6018,7 @@
         "draftkings": 600,
         "caesars": 600,
         "bet365": 475,
-        "circa": 390,
-        "dazn": 450,
-        "betano": 520
+        "circa": 390
       }
     },
     "Toronto Maple Leafs": {
@@ -6817,8 +6030,6 @@
         "caesars": 100,
         "bet365": 105,
         "circa": 105,
-        "dazn": -110,
-        "betano": -110,
         "betmgm": -115
       },
       "no": {
@@ -6829,8 +6040,6 @@
         "caesars": -120,
         "bet365": -135,
         "circa": -135,
-        "dazn": -120,
-        "betano": -120,
         "betmgm": -105
       }
     },
@@ -6843,9 +6052,7 @@
         "draftkings": 3000,
         "caesars": 1500,
         "bet365": 1800,
-        "circa": 1100,
-        "dazn": 1400,
-        "betano": 1400
+        "circa": 1100
       },
       "no": {
         "fanduel": -20000,
@@ -6855,8 +6062,7 @@
         "draftkings": -20000,
         "caesars": -5000,
         "bet365": -15000,
-        "circa": -1950,
-        "betano": -10000
+        "circa": -1950
       }
     },
     "Vegas Golden Knights": {
@@ -6868,9 +6074,7 @@
         "draftkings": -2000,
         "caesars": -1400,
         "bet365": -1500,
-        "circa": -635,
-        "dazn": -1250,
-        "betano": -1250
+        "circa": -635
       },
       "no": {
         "fanduel": 540,
@@ -6880,9 +6084,7 @@
         "draftkings": 900,
         "caesars": 800,
         "bet365": 750,
-        "circa": 470,
-        "dazn": 600,
-        "betano": 600
+        "circa": 470
       }
     },
     "Washington Capitals": {
@@ -6894,9 +6096,7 @@
         "draftkings": -360,
         "caesars": -500,
         "bet365": -450,
-        "circa": -300,
-        "dazn": -500,
-        "betano": -500
+        "circa": -300
       },
       "no": {
         "fanduel": 250,
@@ -6906,9 +6106,7 @@
         "draftkings": 270,
         "caesars": 370,
         "bet365": 320,
-        "circa": -300,
-        "dazn": 330,
-        "betano": 330
+        "circa": -300
       }
     },
     "Winnipeg Jets": {
@@ -6920,8 +6118,6 @@
         "caesars": 200,
         "bet365": 190,
         "circa": 225,
-        "dazn": 200,
-        "betano": 200,
         "betmgm": 180
       },
       "no": {
@@ -6932,8 +6128,6 @@
         "caesars": -250,
         "bet365": -250,
         "circa": -280,
-        "dazn": -278,
-        "betano": -278,
         "betmgm": -225
       }
     },
@@ -6946,8 +6140,6 @@
         "caesars": -620,
         "bet365": -600,
         "circa": -165,
-        "dazn": -556,
-        "betano": -556,
         "betmgm": -700
       },
       "no": {
@@ -6958,8 +6150,6 @@
         "caesars": 420,
         "bet365": 400,
         "circa": 135,
-        "dazn": 350,
-        "betano": 350,
         "betmgm": 500
       }
     }
@@ -6973,44 +6163,38 @@
         "fanduel": 2000,
         "kambi": 2300,
         "betmgm": 2800,
-        "betano": 2900,
         "betonline": 2200,
         "draftkings": 3000,
         "circa": 4000,
         "bookmaker": 2300,
         "caesars": 4000,
         "bet365": 2800,
-        "dazn": 3900,
-        "kalshi": 574
+        "kalshi": 685
       },
       "Buffalo Sabres": {
         "pinnacle": 2329,
         "fanduel": 1800,
         "kambi": 1700,
         "betmgm": 1900,
-        "betano": 1700,
         "betonline": 2000,
         "draftkings": 1600,
         "circa": 1100,
         "bookmaker": 2200,
         "caesars": 1000,
         "bet365": 1600,
-        "dazn": 1400,
-        "kalshi": 1074
+        "kalshi": 945
       },
       "Carolina Hurricanes": {
         "pinnacle": 366,
         "fanduel": 370,
         "kambi": 350,
         "betmgm": 360,
-        "betano": 300,
         "betonline": 400,
         "draftkings": 310,
         "circa": 345,
         "bookmaker": 355,
         "caesars": 400,
         "bet365": 325,
-        "dazn": 285,
         "kalshi": 373
       },
       "Columbus Blue Jackets": {
@@ -7018,14 +6202,12 @@
         "fanduel": 3500,
         "kambi": 3500,
         "betmgm": 4500,
-        "betano": 3400,
         "betonline": 5500,
         "draftkings": 3500,
         "circa": 3500,
         "bookmaker": 3541,
         "caesars": 3500,
         "bet365": 3500,
-        "dazn": 1600,
         "kalshi": 4579
       },
       "Detroit Red Wings": {
@@ -7033,28 +6215,24 @@
         "fanduel": 8000,
         "kambi": 8000,
         "betmgm": 15000,
-        "betano": 12400,
         "betonline": 12500,
         "draftkings": 15000,
         "circa": 7300,
         "bookmaker": 12641,
         "caesars": 6000,
-        "bet365": 12500,
-        "dazn": 3900
+        "bet365": 12500
       },
       "Florida Panthers": {
         "pinnacle": 401,
         "fanduel": 500,
-        "kambi": 550,
+        "kambi": 500,
         "betmgm": 500,
-        "betano": 500,
         "betonline": 600,
         "draftkings": 475,
         "circa": 325,
         "bookmaker": 450,
         "caesars": 350,
         "bet365": 475,
-        "dazn": 350,
         "kalshi": 425
       },
       "Montreal Canadiens": {
@@ -7062,14 +6240,12 @@
         "fanduel": 1500,
         "kambi": 1500,
         "betmgm": 1300,
-        "betano": 1400,
         "betonline": 1200,
         "draftkings": 1300,
         "circa": 1225,
         "bookmaker": 1114,
         "caesars": 900,
         "bet365": 1200,
-        "dazn": 1100,
         "kalshi": 945
       },
       "New Jersey Devils": {
@@ -7077,29 +6253,25 @@
         "fanduel": 700,
         "kambi": 600,
         "betmgm": 750,
-        "betano": 1200,
         "betonline": 750,
         "draftkings": 1300,
         "circa": 1450,
         "bookmaker": 1316,
         "caesars": 1000,
         "bet365": 1200,
-        "dazn": 1200,
-        "kalshi": 425
+        "kalshi": 456
       },
       "New York Islanders": {
         "pinnacle": 8091,
         "fanduel": 6000,
         "kambi": 5000,
         "betmgm": 8000,
-        "betano": 6400,
         "betonline": 7500,
         "draftkings": 7500,
         "circa": 7500,
         "bookmaker": 7889,
         "caesars": 5000,
         "bet365": 7500,
-        "dazn": 3400,
         "kalshi": 4579
       },
       "New York Rangers": {
@@ -7107,14 +6279,12 @@
         "fanduel": 2700,
         "kambi": 3000,
         "betmgm": 4000,
-        "betano": 3900,
         "betonline": 4500,
         "draftkings": 4500,
         "circa": 3500,
         "bookmaker": 3555,
         "caesars": 5000,
         "bet365": 3500,
-        "dazn": 2900,
         "kalshi": 945
       },
       "Ottawa Senators": {
@@ -7122,14 +6292,12 @@
         "fanduel": 1200,
         "kambi": 1300,
         "betmgm": 1400,
-        "betano": 1200,
         "betonline": 1800,
         "draftkings": 1200,
         "circa": 1500,
         "bookmaker": 1316,
         "caesars": 1800,
         "bet365": 1200,
-        "dazn": 1600,
         "kalshi": 1775
       },
       "Philadelphia Flyers": {
@@ -7137,14 +6305,12 @@
         "fanduel": 8000,
         "kambi": 7000,
         "betmgm": 8000,
-        "betano": 7400,
         "betonline": 8000,
         "draftkings": 7500,
         "circa": 3500,
         "bookmaker": 8900,
         "caesars": 5000,
         "bet365": 7500,
-        "dazn": 1900,
         "kalshi": 3021
       },
       "Pittsburgh Penguins": {
@@ -7152,44 +6318,38 @@
         "fanduel": 3500,
         "kambi": 3500,
         "betmgm": 4500,
-        "betano": 3900,
         "betonline": 4500,
         "draftkings": 4000,
         "circa": 4000,
         "bookmaker": 3035,
         "caesars": 2500,
         "bet365": 3500,
-        "dazn": 2900,
         "kalshi": 3021
       },
       "Tampa Bay Lightning": {
         "pinnacle": 401,
         "fanduel": 600,
-        "kambi": 550,
+        "kambi": 500,
         "betmgm": 550,
-        "betano": 450,
         "betonline": 600,
         "draftkings": 400,
         "circa": 450,
         "bookmaker": 362,
         "caesars": 800,
         "bet365": 550,
-        "dazn": 500,
-        "kalshi": 425
+        "kalshi": 351
       },
       "Toronto Maple Leafs": {
         "pinnacle": 1772,
         "fanduel": 1800,
         "kambi": 1700,
         "betmgm": 1900,
-        "betano": 1900,
         "betonline": 1800,
         "draftkings": 1900,
         "circa": 2200,
         "bookmaker": 1822,
         "caesars": 2000,
         "bet365": 1800,
-        "dazn": 1400,
         "kalshi": 1775
       },
       "Washington Capitals": {
@@ -7197,21 +6357,18 @@
         "fanduel": 750,
         "kambi": 600,
         "betmgm": 700,
-        "betano": 650,
         "betonline": 850,
         "draftkings": 750,
         "circa": 1050,
         "bookmaker": 659,
         "caesars": 800,
         "bet365": 600,
-        "dazn": 1100,
         "kalshi": 841
       },
       "Anaheim Ducks": {
         "pinnacle": 2102,
         "fanduel": 2700,
         "kambi": 2300,
-        "betano": 2100,
         "betonline": 1800,
         "draftkings": 2000,
         "circa": 1450,
@@ -7219,42 +6376,36 @@
         "caesars": 1500,
         "bet365": 2000,
         "betmgm": 3000,
-        "dazn": 2100,
         "kalshi": 2243
       },
       "Calgary Flames": {
         "pinnacle": 50040,
         "fanduel": 10000,
         "kambi": 10000,
-        "betano": 29900,
         "betonline": 50000,
         "draftkings": 50000,
         "circa": 33000,
         "bookmaker": 30298,
         "caesars": 30000,
         "bet365": 50000,
-        "betmgm": 50000,
-        "dazn": 29900
+        "betmgm": 50000
       },
       "Chicago Blackhawks": {
         "pinnacle": 25021,
         "fanduel": 10000,
         "kambi": 10000,
-        "betano": 19900,
         "betonline": 15000,
         "draftkings": 25000,
         "circa": 15000,
         "bookmaker": 18177,
         "caesars": 10000,
         "bet365": 25000,
-        "betmgm": 25000,
-        "dazn": 19900
+        "betmgm": 25000
       },
       "Colorado Avalanche": {
         "pinnacle": 320,
         "fanduel": 350,
         "kambi": 350,
-        "betano": 300,
         "betonline": 360,
         "draftkings": 350,
         "circa": 316,
@@ -7262,14 +6413,12 @@
         "caesars": 300,
         "bet365": 340,
         "betmgm": 350,
-        "dazn": 300,
-        "kalshi": 351
+        "kalshi": 331
       },
       "Dallas Stars": {
         "pinnacle": 626,
         "fanduel": 750,
         "kambi": 800,
-        "betano": 750,
         "betonline": 900,
         "draftkings": 650,
         "circa": 775,
@@ -7277,14 +6426,12 @@
         "caesars": 700,
         "bet365": 750,
         "betmgm": 750,
-        "dazn": 750,
         "kalshi": 756
       },
       "Edmonton Oilers": {
         "pinnacle": 393,
         "fanduel": 420,
         "kambi": 400,
-        "betano": 400,
         "betonline": 475,
         "draftkings": 390,
         "circa": 575,
@@ -7292,14 +6439,12 @@
         "caesars": 500,
         "bet365": 400,
         "betmgm": 400,
-        "dazn": 400,
-        "kalshi": 373
+        "kalshi": 296
       },
       "Los Angeles Kings": {
         "pinnacle": 2502,
         "fanduel": 2000,
         "kambi": 2000,
-        "betano": 2100,
         "betonline": 2500,
         "draftkings": 2200,
         "circa": 1700,
@@ -7307,14 +6452,12 @@
         "caesars": 2000,
         "bet365": 2000,
         "betmgm": 5000,
-        "dazn": 2100,
         "kalshi": 3021
       },
       "Minnesota Wild": {
         "pinnacle": 751,
         "fanduel": 600,
         "kambi": 600,
-        "betano": 600,
         "betonline": 750,
         "draftkings": 600,
         "circa": 575,
@@ -7322,28 +6465,24 @@
         "caesars": 600,
         "bet365": 600,
         "betmgm": 600,
-        "dazn": 600,
-        "kalshi": 529
+        "kalshi": 490
       },
       "Nashville Predators": {
         "pinnacle": 8007,
         "fanduel": 6000,
         "kambi": 5000,
-        "betano": 6400,
         "betonline": 6600,
         "draftkings": 7000,
         "circa": 3400,
         "bookmaker": 10098,
         "caesars": 7000,
         "bet365": 6500,
-        "betmgm": 6600,
-        "dazn": 6400
+        "betmgm": 6600
       },
       "San Jose Sharks": {
         "pinnacle": 1802,
         "fanduel": 2500,
         "kambi": 2300,
-        "betano": 2100,
         "betonline": 2000,
         "draftkings": 2200,
         "circa": 1550,
@@ -7351,14 +6490,12 @@
         "caesars": 1600,
         "bet365": 2200,
         "betmgm": 2200,
-        "dazn": 2100,
         "kalshi": 1464
       },
       "Seattle Kraken": {
         "pinnacle": 7507,
         "fanduel": 6000,
         "kambi": 6000,
-        "betano": 7400,
         "betonline": 7500,
         "draftkings": 9000,
         "circa": 13500,
@@ -7366,14 +6503,12 @@
         "caesars": 20000,
         "bet365": 15000,
         "betmgm": 8000,
-        "dazn": 7400,
         "kalshi": 4579
       },
       "St. Louis Blues": {
         "pinnacle": 4004,
         "fanduel": 3000,
         "kambi": 3300,
-        "betano": 4900,
         "betonline": 5000,
         "draftkings": 6500,
         "circa": 2900,
@@ -7381,14 +6516,12 @@
         "caesars": 4500,
         "bet365": 4500,
         "betmgm": 4000,
-        "dazn": 4900,
         "kalshi": 3021
       },
       "Utah Mammoth": {
         "pinnacle": 1026,
         "fanduel": 800,
         "kambi": 800,
-        "betano": 800,
         "betonline": 1000,
         "draftkings": 850,
         "circa": 1100,
@@ -7396,28 +6529,24 @@
         "caesars": 1000,
         "bet365": 800,
         "betmgm": 800,
-        "dazn": 800,
         "kalshi": 945
       },
       "Vancouver Canucks": {
         "pinnacle": 30025,
         "fanduel": 10000,
         "kambi": 10000,
-        "betano": 29900,
         "betonline": 50000,
         "draftkings": 50000,
         "circa": 25000,
         "bookmaker": 25247,
         "caesars": 30000,
         "bet365": 50000,
-        "betmgm": 50000,
-        "dazn": 29900
+        "betmgm": 50000
       },
       "Vegas Golden Knights": {
         "pinnacle": 411,
         "fanduel": 500,
         "kambi": 500,
-        "betano": 450,
         "betonline": 525,
         "draftkings": 425,
         "circa": 410,
@@ -7425,14 +6554,12 @@
         "caesars": 500,
         "bet365": 475,
         "betmgm": 450,
-        "dazn": 450,
         "kalshi": 529
       },
       "Winnipeg Jets": {
         "pinnacle": 4004,
         "fanduel": 5000,
         "kambi": 4500,
-        "betano": 4400,
         "betonline": 5500,
         "draftkings": 4500,
         "circa": 5400,
@@ -7440,7 +6567,6 @@
         "caesars": 7500,
         "bet365": 4500,
         "betmgm": 5000,
-        "dazn": 4400,
         "kalshi": 4579
       }
     },
@@ -7457,7 +6583,7 @@
         "caesars": 2000,
         "bet365": 2500,
         "dazn": 1400,
-        "betano": 2400,
+        "betano": 1400,
         "kalshi": 1241
       },
       "New York Islanders": {
@@ -7923,187 +7049,145 @@
         "kambi": 700,
         "betmgm": 675,
         "caesars": 600,
-        "bet365": 700,
-        "dazn": 550,
-        "betano": 700
+        "bet365": 700
       },
       "Carolina Hurricanes": {
         "fanduel": 430,
         "kambi": 400,
         "betmgm": 450,
         "caesars": 350,
-        "bet365": 375,
-        "dazn": 550,
-        "betano": 400
+        "bet365": 375
       },
       "Florida Panthers": {
         "fanduel": 1900,
         "kambi": 1300,
         "betmgm": 1200,
         "caesars": 1300,
-        "bet365": 1100,
-        "dazn": 800,
-        "betano": 1400
+        "bet365": 1100
       },
       "Tampa Bay Lightning": {
         "fanduel": 900,
         "kambi": 800,
         "betmgm": 800,
         "caesars": 800,
-        "bet365": 750,
-        "dazn": 900,
-        "betano": 700
+        "bet365": 750
       },
       "Vegas Golden Knights": {
         "fanduel": 1300,
         "kambi": 900,
         "betmgm": 1200,
         "caesars": 950,
-        "bet365": 850,
-        "dazn": 900,
-        "betano": 1000
+        "bet365": 850
       },
       "Edmonton Oilers": {
         "fanduel": 490,
         "kambi": 450,
         "betmgm": 525,
         "caesars": 500,
-        "bet365": 550,
-        "dazn": 1000,
-        "betano": 500
+        "bet365": 550
       },
       "Minnesota Wild": {
         "fanduel": 1300,
         "kambi": 1300,
         "betmgm": 1500,
         "caesars": 1300,
-        "bet365": 1200,
-        "dazn": 1100,
-        "betano": 1400
+        "bet365": 1200
       },
       "Dallas Stars": {
         "fanduel": 1700,
         "kambi": 2000,
         "betmgm": 1700,
         "caesars": 2200,
-        "bet365": 2000,
-        "dazn": 1400,
-        "betano": 1900
+        "bet365": 2000
       },
       "Washington Capitals": {
         "fanduel": 1600,
         "kambi": 1500,
         "betmgm": 1700,
         "caesars": 1200,
-        "bet365": 1200,
-        "dazn": 1900,
-        "betano": 1400
+        "bet365": 1200
       },
       "Ottawa Senators": {
         "fanduel": 3000,
         "kambi": 2300,
         "betmgm": 3500,
         "caesars": 3000,
-        "bet365": 2500,
-        "dazn": 1900,
-        "betano": 2900
+        "bet365": 2500
       },
       "Montreal Canadiens": {
         "fanduel": 4500,
         "kambi": 4000,
         "betmgm": 2800,
         "caesars": 4500,
-        "bet365": 3500,
-        "dazn": 2400,
-        "betano": 3900
+        "bet365": 3500
       },
       "Buffalo Sabres": {
         "fanduel": 6000,
         "kambi": 5000,
         "betmgm": 5500,
         "caesars": 5000,
-        "bet365": 4500,
-        "dazn": 2900,
-        "betano": 5400
+        "bet365": 4500
       },
       "Anaheim Ducks": {
         "fanduel": 17500,
         "kambi": 5500,
         "betmgm": 10000,
         "caesars": 6000,
-        "bet365": 10000,
-        "dazn": 2900,
-        "betano": 9900
+        "bet365": 10000
       },
       "New Jersey Devils": {
         "fanduel": 1500,
         "kambi": 1300,
         "betmgm": 1700,
         "caesars": 4500,
-        "bet365": 3500,
-        "dazn": 2900,
-        "betano": 3900
+        "bet365": 3500
       },
       "Los Angeles Kings": {
         "fanduel": 10000,
         "kambi": 10000,
         "betmgm": 10000,
         "caesars": 20000,
-        "bet365": 10000,
-        "dazn": 3400,
-        "betano": 9900
+        "bet365": 10000
       },
       "Utah Mammoth": {
         "fanduel": 1600,
         "kambi": 1500,
         "betmgm": 1700,
         "caesars": 1200,
-        "bet365": 1400,
-        "dazn": 3400,
-        "betano": 1600
+        "bet365": 1400
       },
       "Columbus Blue Jackets": {
         "fanduel": 17500,
         "kambi": 20000,
         "betmgm": 15000,
         "caesars": 20000,
-        "bet365": 20000,
-        "dazn": 4900,
-        "betano": 19900
+        "bet365": 20000
       },
       "Toronto Maple Leafs": {
         "fanduel": 5500,
         "kambi": 6000,
         "betmgm": 5000,
         "caesars": 6000,
-        "bet365": 6500,
-        "dazn": 4900,
-        "betano": 7400
+        "bet365": 6500
       },
       "Philadelphia Flyers": {
         "kambi": 50000,
         "betmgm": 25000,
         "caesars": 50000,
-        "bet365": 30000,
-        "dazn": 4900,
-        "betano": 49900
+        "bet365": 30000
       },
       "San Jose Sharks": {
         "fanduel": 10000,
         "kambi": 10000,
         "betmgm": 6600,
         "caesars": 7500,
-        "bet365": 10000,
-        "dazn": 6900,
-        "betano": 9900
+        "bet365": 10000
       },
       "Pittsburgh Penguins": {
         "kambi": 22500,
         "betmgm": 12500,
         "caesars": 20000,
         "bet365": 20000,
-        "dazn": 7900,
-        "betano": 24900,
         "fanduel": 22500
       },
       "Winnipeg Jets": {
@@ -8111,95 +7195,73 @@
         "kambi": 25000,
         "betmgm": 15000,
         "caesars": 25000,
-        "bet365": 20000,
-        "dazn": 7900,
-        "betano": 24900
+        "bet365": 20000
       },
       "New York Islanders": {
         "kambi": 22500,
         "betmgm": 17500,
         "caesars": 25000,
         "bet365": 25000,
-        "fanduel": 20000,
-        "dazn": 7900,
-        "betano": 29900
+        "fanduel": 20000
       },
       "Detroit Red Wings": {
         "kambi": 30000,
         "betmgm": 25000,
         "caesars": 50000,
-        "bet365": 35000,
-        "dazn": 8900,
-        "betano": 49900
+        "bet365": 35000
       },
       "New York Rangers": {
         "fanduel": 8000,
         "kambi": 8000,
         "betmgm": 10000,
         "caesars": 10000,
-        "bet365": 10000,
-        "dazn": 8900,
-        "betano": 9900
+        "bet365": 10000
       },
       "Boston Bruins": {
         "fanduel": 3300,
         "kambi": 5500,
         "betmgm": 5000,
         "caesars": 5000,
-        "bet365": 6000,
-        "dazn": 9900,
-        "betano": 4900
+        "bet365": 6000
       },
       "St. Louis Blues": {
         "kambi": 25000,
         "betmgm": 12500,
         "caesars": 25000,
         "bet365": 25000,
-        "fanduel": 12500,
-        "dazn": 9900,
-        "betano": 24900
+        "fanduel": 12500
       },
       "Nashville Predators": {
         "kambi": 22500,
         "betmgm": 20000,
         "caesars": 30000,
         "bet365": 25000,
-        "dazn": 12400,
-        "betano": 29900,
         "fanduel": 25000
       },
       "Chicago Blackhawks": {
         "kambi": 50000,
         "betmgm": 50000,
         "caesars": 50000,
-        "bet365": 40000,
-        "dazn": 19900,
-        "betano": 49900
+        "bet365": 40000
       },
       "Seattle Kraken": {
         "kambi": 25000,
         "betmgm": 17500,
         "caesars": 50000,
         "bet365": 25000,
-        "dazn": 29900,
-        "betano": 29900,
         "fanduel": 17500
       },
       "Calgary Flames": {
         "kambi": 50000,
         "betmgm": 50000,
         "caesars": 50000,
-        "bet365": 50000,
-        "dazn": 49900,
-        "betano": 49900
+        "bet365": 50000
       },
       "Vancouver Canucks": {
         "kambi": 50000,
         "betmgm": 50000,
         "caesars": 50000,
-        "bet365": 50000,
-        "dazn": 49900,
-        "betano": 49900
+        "bet365": 50000
       }
     },
     "division": {
@@ -8211,9 +7273,7 @@
         "draftkings": 250,
         "caesars": 260,
         "bet365": 260,
-        "circa": 140,
-        "dazn": 325,
-        "betano": 320
+        "circa": 140
       },
       "Tampa Bay Lightning": {
         "fanduel": 180,
@@ -8223,9 +7283,7 @@
         "draftkings": 150,
         "caesars": 170,
         "bet365": 160,
-        "circa": 225,
-        "dazn": 150,
-        "betano": 155
+        "circa": 225
       },
       "Montreal Canadiens": {
         "fanduel": 800,
@@ -8235,9 +7293,7 @@
         "draftkings": 950,
         "caesars": 800,
         "bet365": 900,
-        "circa": 750,
-        "dazn": 800,
-        "betano": 900
+        "circa": 750
       },
       "Buffalo Sabres": {
         "fanduel": 1100,
@@ -8247,9 +7303,7 @@
         "draftkings": 1100,
         "caesars": 1200,
         "bet365": 1000,
-        "circa": 850,
-        "dazn": 1200,
-        "betano": 1200
+        "circa": 850
       },
       "Toronto Maple Leafs": {
         "fanduel": 1100,
@@ -8259,9 +7313,7 @@
         "draftkings": 1400,
         "caesars": 1200,
         "bet365": 1200,
-        "circa": 2400,
-        "dazn": 1100,
-        "betano": 1100
+        "circa": 2400
       },
       "Ottawa Senators": {
         "fanduel": 600,
@@ -8271,9 +7323,7 @@
         "draftkings": 700,
         "caesars": 600,
         "bet365": 650,
-        "circa": 890,
-        "dazn": 700,
-        "betano": 700
+        "circa": 890
       },
       "Detroit Red Wings": {
         "fanduel": 6000,
@@ -8283,9 +7333,7 @@
         "draftkings": 14000,
         "caesars": 15000,
         "bet365": 10000,
-        "circa": 10000,
-        "dazn": 6400,
-        "betano": 6400
+        "circa": 10000
       },
       "Boston Bruins": {
         "fanduel": 650,
@@ -8295,21 +7343,17 @@
         "draftkings": 1500,
         "caesars": 1300,
         "bet365": 1200,
-        "circa": 7600,
-        "dazn": 900,
-        "betano": 900
+        "circa": 7600
       },
       "Colorado Avalanche": {
         "fanduel": 150,
         "kambi": 150,
-        "betonline": 160,
+        "betonline": 165,
         "draftkings": 195,
         "caesars": 165,
         "bet365": 180,
         "betmgm": 155,
-        "circa": 165,
-        "dazn": 170,
-        "betano": 170
+        "circa": 165
       },
       "Minnesota Wild": {
         "fanduel": 320,
@@ -8319,45 +7363,37 @@
         "caesars": 300,
         "bet365": 250,
         "betmgm": 333,
-        "circa": 260,
-        "dazn": 300,
-        "betano": 300
+        "circa": 260
       },
       "Dallas Stars": {
         "fanduel": 410,
         "kambi": 425,
-        "betonline": 425,
+        "betonline": 350,
         "draftkings": 370,
         "caesars": 425,
         "bet365": 425,
         "betmgm": 400,
-        "circa": 400,
-        "dazn": 350,
-        "betano": 375
+        "circa": 400
       },
       "Utah Mammoth": {
         "fanduel": 370,
         "kambi": 350,
-        "betonline": 400,
+        "betonline": 450,
         "draftkings": 350,
         "caesars": 300,
         "bet365": 325,
         "betmgm": 400,
-        "circa": 705,
-        "dazn": 350,
-        "betano": 350
+        "circa": 705
       },
       "Winnipeg Jets": {
         "fanduel": 4000,
         "kambi": 3500,
-        "betonline": 4500,
+        "betonline": 5000,
         "draftkings": 3500,
         "caesars": 4000,
         "bet365": 3500,
         "betmgm": 4000,
-        "circa": 4600,
-        "dazn": 3400,
-        "betano": 3400
+        "circa": 4600
       },
       "St. Louis Blues": {
         "fanduel": 2700,
@@ -8367,9 +7403,7 @@
         "caesars": 4000,
         "bet365": 4000,
         "betmgm": 2800,
-        "circa": 1600,
-        "dazn": 2900,
-        "betano": 2900
+        "circa": 1600
       },
       "Nashville Predators": {
         "fanduel": 5500,
@@ -8379,9 +7413,7 @@
         "caesars": 6000,
         "bet365": 4000,
         "betmgm": 6000,
-        "circa": 2000,
-        "dazn": 4900,
-        "betano": 4900
+        "circa": 2000
       },
       "Chicago Blackhawks": {
         "fanduel": 30000,
@@ -8391,9 +7423,7 @@
         "caesars": 25000,
         "bet365": 25000,
         "betmgm": 25000,
-        "circa": 25000,
-        "dazn": 19900,
-        "betano": 19900
+        "circa": 25000
       },
       "Carolina Hurricanes": {
         "fanduel": -120,
@@ -8403,9 +7433,7 @@
         "draftkings": -170,
         "caesars": -150,
         "bet365": -150,
-        "circa": -111,
-        "dazn": -149,
-        "betano": -149
+        "circa": -111
       },
       "Washington Capitals": {
         "fanduel": 380,
@@ -8415,9 +7443,7 @@
         "draftkings": 310,
         "caesars": 275,
         "bet365": 290,
-        "circa": 245,
-        "dazn": 280,
-        "betano": 300
+        "circa": 245
       },
       "New Jersey Devils": {
         "fanduel": 340,
@@ -8427,9 +7453,7 @@
         "draftkings": 700,
         "caesars": 700,
         "bet365": 700,
-        "circa": 900,
-        "dazn": 650,
-        "betano": 650
+        "circa": 900
       },
       "Columbus Blue Jackets": {
         "fanduel": 3300,
@@ -8439,9 +7463,7 @@
         "draftkings": 3000,
         "caesars": 3000,
         "bet365": 2800,
-        "circa": 1900,
-        "dazn": 3400,
-        "betano": 2900
+        "circa": 1900
       },
       "Philadelphia Flyers": {
         "fanduel": 8000,
@@ -8451,9 +7473,7 @@
         "draftkings": 6000,
         "caesars": 10000,
         "bet365": 7500,
-        "circa": 1800,
-        "dazn": 5900,
-        "betano": 7900
+        "circa": 1800
       },
       "Pittsburgh Penguins": {
         "fanduel": 3500,
@@ -8463,9 +7483,7 @@
         "draftkings": 4000,
         "caesars": 3500,
         "bet365": 3300,
-        "circa": 3900,
-        "dazn": 3000,
-        "betano": 3400
+        "circa": 3900
       },
       "New York Islanders": {
         "fanduel": 3500,
@@ -8475,9 +7493,7 @@
         "draftkings": 3500,
         "caesars": 4000,
         "bet365": 3300,
-        "circa": 6600,
-        "dazn": 3400,
-        "betano": 3400
+        "circa": 6600
       },
       "New York Rangers": {
         "fanduel": 1600,
@@ -8487,9 +7503,7 @@
         "draftkings": 1900,
         "caesars": 2000,
         "bet365": 1600,
-        "circa": 1800,
-        "dazn": 1900,
-        "betano": 1900
+        "circa": 1800
       },
       "Edmonton Oilers": {
         "fanduel": -140,
@@ -8499,9 +7513,7 @@
         "draftkings": -115,
         "caesars": -105,
         "bet365": -115,
-        "circa": 160,
-        "dazn": -133,
-        "betano": -133
+        "circa": 160
       },
       "Vegas Golden Knights": {
         "fanduel": 210,
@@ -8511,9 +7523,7 @@
         "draftkings": 145,
         "caesars": 135,
         "bet365": 155,
-        "circa": 160,
-        "dazn": 200,
-        "betano": 200
+        "circa": 160
       },
       "Los Angeles Kings": {
         "fanduel": 1300,
@@ -8523,9 +7533,7 @@
         "draftkings": 1700,
         "caesars": 2000,
         "bet365": 1500,
-        "circa": 775,
-        "dazn": 1400,
-        "betano": 1400
+        "circa": 775
       },
       "Anaheim Ducks": {
         "fanduel": 2200,
@@ -8535,9 +7543,7 @@
         "draftkings": 1600,
         "caesars": 1500,
         "bet365": 1400,
-        "circa": 800,
-        "dazn": 1900,
-        "betano": 1900
+        "circa": 800
       },
       "San Jose Sharks": {
         "fanduel": 1300,
@@ -8547,9 +7553,7 @@
         "draftkings": 1600,
         "caesars": 1400,
         "bet365": 1500,
-        "circa": 900,
-        "dazn": 1400,
-        "betano": 1400
+        "circa": 900
       },
       "Seattle Kraken": {
         "fanduel": 2500,
@@ -8559,9 +7563,7 @@
         "draftkings": 5000,
         "caesars": 4500,
         "bet365": 3500,
-        "circa": 10100,
-        "dazn": 3400,
-        "betano": 3400
+        "circa": 10100
       },
       "Calgary Flames": {
         "fanduel": 50000,
@@ -8571,9 +7573,7 @@
         "draftkings": 30000,
         "caesars": 50000,
         "bet365": 50000,
-        "circa": 30000,
-        "dazn": 49900,
-        "betano": 49900
+        "circa": 30000
       },
       "Vancouver Canucks": {
         "fanduel": 50000,
@@ -8583,9 +7583,7 @@
         "draftkings": 30000,
         "caesars": 50000,
         "bet365": 50000,
-        "circa": 30000,
-        "dazn": 49900,
-        "betano": 49900
+        "circa": 30000
       }
     },
     "worst": {
@@ -8593,113 +7591,97 @@
         "fanduel": 145,
         "betmgm": 195,
         "circa": 205,
-        "caesars": 185,
-        "dazn": 175
+        "caesars": 185
       },
       "Calgary Flames": {
         "fanduel": 220,
         "betmgm": 290,
         "circa": 240,
-        "caesars": 165,
-        "dazn": 200
+        "caesars": 165
       },
       "Seattle Kraken": {
         "fanduel": 4000,
         "betmgm": 2500,
         "circa": 725,
-        "caesars": 2800,
-        "dazn": 3400
+        "caesars": 2800
       },
       "Chicago Blackhawks": {
         "fanduel": 500,
         "betmgm": 600,
         "circa": 680,
-        "caesars": 650,
-        "dazn": 550
+        "caesars": 650
       },
       "Winnipeg Jets": {
         "fanduel": 3300,
         "betmgm": 3000,
         "circa": 3500,
-        "caesars": 3500,
-        "dazn": 2900
+        "caesars": 3500
       },
       "St. Louis Blues": {
         "fanduel": 5500,
         "betmgm": 3500,
         "circa": 6000,
-        "caesars": 4000,
-        "dazn": 4900
+        "caesars": 4000
       },
       "Nashville Predators": {
         "fanduel": 2200,
         "betmgm": 2200,
         "circa": 2800,
-        "caesars": 2000,
-        "dazn": 2200
+        "caesars": 2000
       },
       "Boston Bruins": {
         "fanduel": 20000,
         "betmgm": 8000,
         "circa": 4500,
-        "caesars": 10000,
-        "dazn": 14900
+        "caesars": 10000
       },
       "Detroit Red Wings": {
         "fanduel": 2200,
         "betmgm": 1900,
         "circa": 4500,
-        "caesars": 1600,
-        "dazn": 1900
+        "caesars": 1600
       },
       "New York Islanders": {
         "fanduel": 3500,
         "betmgm": 2800,
         "circa": 4000,
-        "caesars": 3000,
-        "dazn": 3400
+        "caesars": 3000
       },
       "Pittsburgh Penguins": {
         "fanduel": 4000,
         "betmgm": 3300,
         "circa": 2000,
-        "caesars": 3000,
-        "dazn": 3400
+        "caesars": 3000
       },
       "New York Rangers": {
         "fanduel": 10000,
         "betmgm": 5000,
         "circa": 8200,
-        "caesars": 5000,
-        "dazn": 7900
+        "caesars": 5000
       },
       "San Jose Sharks": {
         "fanduel": 7000,
         "betmgm": 6000,
         "circa": 5000,
-        "caesars": 5000,
-        "dazn": 7900
+        "caesars": 5000
       },
       "Columbus Blue Jackets": {
         "fanduel": 3500,
         "betmgm": 3000,
         "circa": 8200,
-        "caesars": 3000,
-        "dazn": 3400
+        "caesars": 3000
       },
       "Philadelphia Flyers": {
         "fanduel": 2000,
         "betmgm": 2000,
         "circa": 5500,
-        "caesars": 1600,
-        "dazn": 1900
+        "caesars": 1600
       },
       "Anaheim Ducks": {
         "fanduel": 4000,
         "betmgm": 4000,
         "circa": 5000,
-        "caesars": 4000,
-        "dazn": 4900
+        "caesars": 4000
       },
       "Utah Mammoth": {
         "betmgm": 20000,
@@ -8710,48 +7692,41 @@
         "fanduel": 30000,
         "betmgm": 10000,
         "circa": 25000,
-        "caesars": 15000,
-        "dazn": 24900
+        "caesars": 15000
       },
       "Buffalo Sabres": {
         "fanduel": 12500,
         "betmgm": 8000,
         "circa": 3500,
-        "caesars": 7500,
-        "dazn": 12400
+        "caesars": 7500
       },
       "Los Angeles Kings": {
         "fanduel": 6000,
         "betmgm": 4000,
         "circa": 12000,
-        "caesars": 3500,
-        "dazn": 6400
+        "caesars": 3500
       },
       "Toronto Maple Leafs": {
         "fanduel": 15000,
         "betmgm": 8000,
         "circa": 6500,
-        "caesars": 7500,
-        "dazn": 12400
+        "caesars": 7500
       },
       "New Jersey Devils": {
         "betmgm": 20000,
         "circa": 12000,
-        "caesars": 15000,
-        "dazn": 19900
+        "caesars": 15000
       },
       "Montreal Canadiens": {
         "fanduel": 17500,
         "betmgm": 12500,
         "circa": 20000,
-        "caesars": 10000,
-        "dazn": 14900
+        "caesars": 10000
       },
       "Dallas Stars": {
         "betmgm": 20000,
         "circa": 50000,
-        "caesars": 20000,
-        "dazn": 49900
+        "caesars": 20000
       },
       "Minnesota Wild": {
         "betmgm": 25000,
@@ -8797,7 +7772,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-24 14:20",
+    "last_updated": "2026-10-24 14:27",
     "book_updated": {
       "dazn": "2026-10-24",
       "fanduel": "2026-10-24",
@@ -8831,9 +7806,7 @@
         "betonline": -115,
         "draftkings": -115,
         "caesars": -110,
-        "bet365": -130,
-        "dazn": -115,
-        "betano": -115
+        "bet365": -130
       },
       "Western Conference": {
         "fanduel": 100,
@@ -8841,9 +7814,7 @@
         "betonline": -115,
         "draftkings": -115,
         "caesars": -110,
-        "bet365": 100,
-        "dazn": -115,
-        "betano": -115
+        "bet365": 100
       }
     },
     "div": {
@@ -8853,9 +7824,7 @@
         "betonline": 200,
         "draftkings": 215,
         "caesars": 200,
-        "bet365": 225,
-        "dazn": 225,
-        "betano": 225
+        "bet365": 225
       },
       "Central Division": {
         "fanduel": 220,
@@ -8863,9 +7832,7 @@
         "betonline": 250,
         "draftkings": 275,
         "caesars": 260,
-        "bet365": 250,
-        "dazn": 275,
-        "betano": 275
+        "bet365": 250
       },
       "Pacific Division": {
         "fanduel": 350,
@@ -8873,9 +7840,7 @@
         "betonline": 300,
         "draftkings": 300,
         "caesars": 250,
-        "bet365": 340,
-        "dazn": 300,
-        "betano": 300
+        "bet365": 340
       },
       "Metropolitan Division": {
         "fanduel": 250,
@@ -8883,9 +7848,7 @@
         "betonline": 325,
         "draftkings": 280,
         "caesars": 270,
-        "bet365": 270,
-        "dazn": 275,
-        "betano": 275
+        "bet365": 270
       }
     },
     "state": {
@@ -13120,82 +12083,82 @@
   "liq": {
     "cup": {
       "Washington Capitals": {
-        "kalshi": 31133
+        "kalshi": 60209
       },
       "Colorado Avalanche": {
-        "kalshi": 13518
+        "kalshi": 33518
       },
       "Tampa Bay Lightning": {
-        "kalshi": 28543
+        "kalshi": 44236
       },
       "Ottawa Senators": {
-        "kalshi": 18325
+        "kalshi": 13819
       },
       "Los Angeles Kings": {
-        "kalshi": 89239
+        "kalshi": 118575
       },
       "Pittsburgh Penguins": {
-        "kalshi": 60883
+        "kalshi": 89445
       },
       "New York Rangers": {
-        "kalshi": 8042
+        "kalshi": 7861
       },
       "Columbus Blue Jackets": {
-        "kalshi": 112265
+        "kalshi": 140376
       },
       "New Jersey Devils": {
-        "kalshi": 3419
+        "kalshi": 2687
       },
       "Montreal Canadiens": {
-        "kalshi": 42666
+        "kalshi": 71239
       },
       "Edmonton Oilers": {
-        "kalshi": 3991
+        "kalshi": 3849
       },
       "Vegas Golden Knights": {
-        "kalshi": 29846
+        "kalshi": 60138
       },
       "Florida Panthers": {
-        "kalshi": 25170
+        "kalshi": 55170
       },
       "Carolina Hurricanes": {
-        "kalshi": 8681
+        "kalshi": 28181
       },
       "San Jose Sharks": {
-        "kalshi": 12976
+        "kalshi": 12907
       },
       "Anaheim Ducks": {
-        "kalshi": 13845
+        "kalshi": 15431
       },
       "Toronto Maple Leafs": {
-        "kalshi": 8069
+        "kalshi": 7444
       },
       "Minnesota Wild": {
-        "kalshi": 20746
+        "kalshi": 40679
       },
       "Buffalo Sabres": {
-        "kalshi": 41106
+        "kalshi": 69912
       },
       "Dallas Stars": {
-        "kalshi": 22980
+        "kalshi": 22808
       },
       "Philadelphia Flyers": {},
       "Utah Mammoth": {
-        "kalshi": 28255
+        "kalshi": 49362
       },
       "Boston Bruins": {
-        "kalshi": 7062
+        "kalshi": 6839
       },
       "St. Louis Blues": {
-        "kalshi": 28792
+        "kalshi": 57885
       }
     },
     "conference": {
       "Dallas Stars": {
-        "kalshi": 2050
+        "kalshi": 1870
       },
       "Winnipeg Jets": {
-        "kalshi": 7995
+        "kalshi": 7245
       },
       "Vegas Golden Knights": {
         "kalshi": 1572
@@ -13205,32 +12168,32 @@
         "kalshi": 2971
       },
       "Seattle Kraken": {
-        "kalshi": 3570
+        "kalshi": 3320
       },
       "St. Louis Blues": {
-        "kalshi": 4514
+        "kalshi": 4264
       },
       "Minnesota Wild": {
-        "kalshi": 1469
+        "kalshi": 1358
       },
       "Los Angeles Kings": {
-        "kalshi": 2173
+        "kalshi": 1423
       },
       "Anaheim Ducks": {
-        "kalshi": 2945
+        "kalshi": 2695
       },
       "San Jose Sharks": {
-        "kalshi": 2919
+        "kalshi": 2671
       },
       "Chicago Blackhawks": {},
       "Colorado Avalanche": {
-        "kalshi": 693
+        "kalshi": 612
       },
       "Edmonton Oilers": {
-        "kalshi": 691
+        "kalshi": 332
       },
       "Toronto Maple Leafs": {
-        "kalshi": 1701
+        "kalshi": 1708
       },
       "Ottawa Senators": {
         "kalshi": 3184
@@ -13242,29 +12205,29 @@
         "kalshi": 2368
       },
       "New Jersey Devils": {
-        "kalshi": 702
+        "kalshi": 1420
       },
       "Florida Panthers": {
-        "kalshi": 3355
+        "kalshi": 2615
       },
       "New York Islanders": {
         "kalshi": 2528
       },
       "Detroit Red Wings": {},
       "Tampa Bay Lightning": {
-        "kalshi": 1456
+        "kalshi": 2794
       },
       "Philadelphia Flyers": {
         "kalshi": 1941
       },
       "Buffalo Sabres": {
-        "kalshi": 1458
+        "kalshi": 2722
       },
       "New York Rangers": {
-        "kalshi": 2528
+        "kalshi": 2602
       },
       "Boston Bruins": {
-        "kalshi": 2812
+        "kalshi": 2042
       },
       "Columbus Blue Jackets": {
         "kalshi": 426
@@ -13273,7 +12236,7 @@
         "kalshi": 353
       },
       "Washington Capitals": {
-        "kalshi": 2842
+        "kalshi": 2795
       }
     },
     "hart": {
@@ -13284,7 +12247,7 @@
         "kalshi": 697
       },
       "Auston Matthews": {
-        "kalshi": 987
+        "kalshi": 1267
       },
       "Nathan MacKinnon": {
         "kalshi": 598
@@ -13293,10 +12256,10 @@
         "kalshi": 407
       },
       "Connor McDavid": {
-        "kalshi": 390
+        "kalshi": 375
       },
       "Nikita Kucherov": {
-        "kalshi": 1192
+        "kalshi": 1242
       },
       "Kirill Kaprizov": {
         "kalshi": 478
@@ -13311,10 +12274,10 @@
         "kalshi": 309
       },
       "Macklin Celebrini": {
-        "kalshi": 567
+        "kalshi": 582
       },
       "Sidney Crosby": {
-        "kalshi": 2950
+        "kalshi": 3659
       },
       "Matthew Tkachuk": {
         "kalshi": 509
