@@ -2217,8 +2217,7 @@
           "draftkings": 150,
           "caesars": 160,
           "bet365": 175,
-          "circa": 240,
-          "kalshi": -208
+          "circa": 240
         }
       },
       "Nathan MacKinnon": {
@@ -2229,8 +2228,7 @@
           "draftkings": 500,
           "caesars": 375,
           "bet365": 350,
-          "circa": 325,
-          "kalshi": 134
+          "circa": 325
         }
       },
       "Macklin Celebrini": {
@@ -2241,8 +2239,7 @@
           "draftkings": 1000,
           "caesars": 550,
           "bet365": 550,
-          "circa": 425,
-          "kalshi": 296
+          "circa": 425
         }
       },
       "Leon Draisaitl": {
@@ -2253,8 +2250,7 @@
           "draftkings": 1700,
           "caesars": 1500,
           "bet365": 1600,
-          "circa": 1000,
-          "kalshi": 4579
+          "circa": 1000
         }
       },
       "Nikita Kucherov": {
@@ -2265,8 +2261,7 @@
           "draftkings": 1600,
           "caesars": 1400,
           "bet365": 1500,
-          "circa": 875,
-          "kalshi": 398
+          "circa": 875
         }
       },
       "Kirill Kaprizov": {
@@ -2277,8 +2272,7 @@
           "draftkings": 1300,
           "caesars": 1200,
           "bet365": 1200,
-          "circa": 2000,
-          "kalshi": 756
+          "circa": 2000
         }
       },
       "Auston Matthews": {
@@ -2289,8 +2283,7 @@
           "draftkings": 3000,
           "caesars": 2500,
           "bet365": 2500,
-          "circa": 2800,
-          "kalshi": 1074
+          "circa": 2800
         }
       },
       "David Pastrnak": {
@@ -2301,8 +2294,7 @@
           "draftkings": 3000,
           "caesars": 2400,
           "bet365": 2200,
-          "circa": 1600,
-          "kalshi": 2302
+          "circa": 1600
         }
       },
       "Jack Hughes": {
@@ -2313,8 +2305,7 @@
           "draftkings": 3000,
           "caesars": 3000,
           "bet365": 2800,
-          "circa": 2500,
-          "kalshi": 1983
+          "circa": 2500
         }
       },
       "Jack Eichel": {
@@ -2325,8 +2316,7 @@
           "draftkings": 1600,
           "caesars": 3000,
           "bet365": 3500,
-          "circa": 6000,
-          "kalshi": 2302
+          "circa": 6000
         }
       },
       "Mitchell Marner": {
@@ -2392,8 +2382,7 @@
           "draftkings": 6000,
           "caesars": 5000,
           "bet365": 6000,
-          "circa": 10000,
-          "kalshi": 4579
+          "circa": 10000
         }
       },
       "Connor Bedard": {
@@ -2403,8 +2392,7 @@
           "betonline": 8000,
           "draftkings": 10000,
           "caesars": 10000,
-          "circa": 9000,
-          "kalshi": 2302
+          "circa": 9000
         }
       },
       "Cole Caufield": {
@@ -2469,8 +2457,7 @@
           "kambi": 10000,
           "betonline": 10000,
           "draftkings": 10000,
-          "circa": 30000,
-          "kalshi": 5098
+          "circa": 30000
         }
       },
       "Ilya Sorokin": {
@@ -2532,8 +2519,7 @@
           "kambi": 10000,
           "betonline": 10000,
           "draftkings": 15000,
-          "circa": 30000,
-          "kalshi": 3644
+          "circa": 30000
         }
       },
       "Brandon Hagel": {
@@ -3007,9 +2993,7 @@
       },
       "Alexis Lafreniere": {
         "team": "",
-        "prices": {
-          "kalshi": 1366
-        }
+        "prices": {}
       },
       "Connor Mcdavid": {
         "team": "",
@@ -7586,7 +7570,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-10-25 11:57",
+    "last_updated": "2026-10-25 12:07",
     "book_updated": {
       "dazn": "2026-10-25",
       "fanduel": "2026-10-25",
@@ -11912,68 +11896,68 @@
         "kalshi": 49229
       },
       "Colorado Avalanche": {
-        "kalshi": 13781
+        "kalshi": 13802
       },
       "Tampa Bay Lightning": {
-        "kalshi": 24757
+        "kalshi": 24667
       },
       "Ottawa Senators": {
-        "kalshi": 8795
+        "kalshi": 8782
       },
       "Los Angeles Kings": {
-        "kalshi": 90182
+        "kalshi": 90108
       },
       "Pittsburgh Penguins": {
-        "kalshi": 59659
+        "kalshi": 59629
       },
       "New York Rangers": {
         "kalshi": 13173
       },
       "Columbus Blue Jackets": {
-        "kalshi": 112433
+        "kalshi": 112359
       },
       "New Jersey Devils": {
-        "kalshi": 5636
+        "kalshi": 5614
       },
       "Montreal Canadiens": {
         "kalshi": 42357
       },
       "Edmonton Oilers": {
-        "kalshi": 17497
+        "kalshi": 7463
       },
       "Vegas Golden Knights": {
-        "kalshi": 29654
+        "kalshi": 29655
       },
       "Florida Panthers": {
-        "kalshi": 14381
+        "kalshi": 14376
       },
       "Carolina Hurricanes": {
-        "kalshi": 13801
+        "kalshi": 13727
       },
       "San Jose Sharks": {
-        "kalshi": 10535
+        "kalshi": 10534
       },
       "Anaheim Ducks": {
-        "kalshi": 11923
+        "kalshi": 11849
       },
       "Toronto Maple Leafs": {
-        "kalshi": 36080
+        "kalshi": 36075
       },
       "Minnesota Wild": {
-        "kalshi": 12904
+        "kalshi": 12792
       },
       "Buffalo Sabres": {
-        "kalshi": 40772
+        "kalshi": 40699
       },
       "Dallas Stars": {
-        "kalshi": 23716
+        "kalshi": 23650
       },
       "Philadelphia Flyers": {},
       "Utah Mammoth": {
-        "kalshi": 14233
+        "kalshi": 25578
       },
       "Boston Bruins": {
-        "kalshi": 3328
+        "kalshi": 3883
       },
       "St. Louis Blues": {
         "kalshi": 28920
@@ -12016,7 +12000,7 @@
         "kalshi": 696
       },
       "Edmonton Oilers": {
-        "kalshi": 647
+        "kalshi": 1677
       },
       "Toronto Maple Leafs": {
         "kalshi": 1716
@@ -12031,7 +12015,7 @@
         "kalshi": 2376
       },
       "New Jersey Devils": {
-        "kalshi": 1351
+        "kalshi": 1383
       },
       "Florida Panthers": {
         "kalshi": 2623
@@ -12047,7 +12031,7 @@
         "kalshi": 1916
       },
       "Buffalo Sabres": {
-        "kalshi": 1479
+        "kalshi": 1500
       },
       "New York Rangers": {
         "kalshi": 2610
@@ -12066,51 +12050,21 @@
       }
     },
     "hart": {
-      "Leon Draisaitl": {
-        "kalshi": 724
-      },
-      "Jack Hughes": {
-        "kalshi": 700
-      },
-      "Auston Matthews": {
-        "kalshi": 1267
-      },
-      "Nathan MacKinnon": {
-        "kalshi": 596
-      },
-      "Quinn Hughes": {
-        "kalshi": 407
-      },
-      "Connor McDavid": {
-        "kalshi": 302
-      },
-      "Nikita Kucherov": {
-        "kalshi": 1539
-      },
-      "Kirill Kaprizov": {
-        "kalshi": 478
-      },
-      "Connor Bedard": {
-        "kalshi": 394
-      },
-      "Alexis Lafreniere": {
-        "kalshi": 2340
-      },
-      "Jack Eichel": {
-        "kalshi": 310
-      },
-      "Macklin Celebrini": {
-        "kalshi": 701
-      },
-      "Sidney Crosby": {
-        "kalshi": 3659
-      },
-      "Matthew Tkachuk": {
-        "kalshi": 509
-      },
-      "David Pastrnak": {
-        "kalshi": 643
-      }
+      "Leon Draisaitl": {},
+      "Jack Hughes": {},
+      "Auston Matthews": {},
+      "Nathan MacKinnon": {},
+      "Quinn Hughes": {},
+      "Connor McDavid": {},
+      "Nikita Kucherov": {},
+      "Kirill Kaprizov": {},
+      "Connor Bedard": {},
+      "Alexis Lafreniere": {},
+      "Jack Eichel": {},
+      "Macklin Celebrini": {},
+      "Sidney Crosby": {},
+      "Matthew Tkachuk": {},
+      "David Pastrnak": {}
     }
   }
 }
