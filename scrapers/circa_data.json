@@ -4,235 +4,235 @@
   "source_file": "NHL Futures 2026-27.pdf",
   "source_sha256": "8c59b06fdef5934a254d3c6db89d93968ffede64265139e3ce78c37f0c4b9262",
   "cup": {
-    "Boston Bruins": 8000,
-    "Montreal Canadiens": 2500,
-    "Tampa Bay Lightning": 900,
-    "Toronto Maple Leafs": 4000,
-    "Florida Panthers": 650,
-    "Detroit Red Wings": 15000,
-    "Buffalo Sabres": 4800,
-    "Ottawa Senators": 2800,
-    "Columbus Blue Jackets": 6000,
+    "Carolina Hurricanes": 625,
+    "Colorado Avalanche": 830,
+    "Edmonton Oilers": 905,
+    "Florida Panthers": 905,
+    "New Jersey Devils": 920,
+    "Vegas Golden Knights": 925,
+    "Tampa Bay Lightning": 1000,
+    "Minnesota Wild": 1000,
+    "Dallas Stars": 1200,
+    "Utah Mammoth": 1700,
     "Washington Capitals": 2200,
-    "New Jersey Devils": 2900,
-    "Philadelphia Flyers": 8000,
-    "Carolina Hurricanes": 700,
-    "New York Islanders": 15000,
-    "Pittsburgh Penguins": 8000,
-    "New York Rangers": 6000,
-    "Colorado Avalanche": 725,
-    "Chicago Blackhawks": 40000,
-    "St. Louis Blues": 6300,
-    "Winnipeg Jets": 12500,
-    "Utah Mammoth": 2500,
+    "Montreal Canadiens": 2800,
+    "Ottawa Senators": 3500,
+    "Toronto Maple Leafs": 4200,
+    "Boston Bruins": 4700,
+    "Buffalo Sabres": 5000,
+    "San Jose Sharks": 7700,
+    "St. Louis Blues": 9000,
+    "Los Angeles Kings": 9000,
     "Nashville Predators": 10000,
-    "Dallas Stars": 1650,
-    "Minnesota Wild": 1350,
-    "Vancouver Canucks": 100000,
-    "Anaheim Ducks": 4000,
-    "Calgary Flames": 100000,
-    "Vegas Golden Knights": 1100,
-    "Los Angeles Kings": 4200,
-    "Seattle Kraken": 50000,
-    "Edmonton Oilers": 900,
-    "San Jose Sharks": 3600
+    "Anaheim Ducks": 12500,
+    "New York Islanders": 13000,
+    "Columbus Blue Jackets": 15000,
+    "Pittsburgh Penguins": 15000,
+    "Seattle Kraken": 20000,
+    "New York Rangers": 21000,
+    "Winnipeg Jets": 22500,
+    "Detroit Red Wings": 30000,
+    "Calgary Flames": 50000,
+    "Philadelphia Flyers": 72500,
+    "Chicago Blackhawks": 120000,
+    "Vancouver Canucks": 200000
   },
   "conference": {
-    "Boston Bruins": 4000,
-    "Montreal Canadiens": 1225,
-    "Tampa Bay Lightning": 450,
-    "Toronto Maple Leafs": 2200,
-    "Florida Panthers": 325,
-    "Detroit Red Wings": 7300,
-    "Buffalo Sabres": 1100,
-    "Ottawa Senators": 1500,
-    "Columbus Blue Jackets": 3500,
+    "Carolina Hurricanes": 320,
+    "Florida Panthers": 440,
+    "New Jersey Devils": 465,
+    "Tampa Bay Lightning": 490,
     "Washington Capitals": 1050,
-    "New Jersey Devils": 1450,
-    "Philadelphia Flyers": 3500,
-    "Carolina Hurricanes": 345,
-    "New York Islanders": 7500,
-    "Pittsburgh Penguins": 4000,
-    "New York Rangers": 3500,
-    "Colorado Avalanche": 316,
-    "Chicago Blackhawks": 15000,
-    "St. Louis Blues": 2900,
-    "Winnipeg Jets": 5400,
-    "Utah Mammoth": 1100,
-    "Nashville Predators": 3400,
-    "Dallas Stars": 775,
-    "Minnesota Wild": 575,
-    "Vancouver Canucks": 25000,
-    "Anaheim Ducks": 1450,
-    "Calgary Flames": 33000,
-    "Vegas Golden Knights": 410,
-    "Los Angeles Kings": 1700,
-    "Seattle Kraken": 13500,
-    "Edmonton Oilers": 575,
-    "San Jose Sharks": 1550
+    "Montreal Canadiens": 1300,
+    "Ottawa Senators": 1650,
+    "Toronto Maple Leafs": 1900,
+    "Boston Bruins": 2100,
+    "Buffalo Sabres": 2300,
+    "New York Islanders": 5700,
+    "Columbus Blue Jackets": 6800,
+    "Pittsburgh Penguins": 6800,
+    "New York Rangers": 9000,
+    "Detroit Red Wings": 13000,
+    "Philadelphia Flyers": 31000,
+    "Colorado Avalanche": 385,
+    "Edmonton Oilers": 400,
+    "Vegas Golden Knights": 415,
+    "Minnesota Wild": 475,
+    "Dallas Stars": 575,
+    "Utah Mammoth": 800,
+    "San Jose Sharks": 3100,
+    "St. Louis Blues": 3700,
+    "Los Angeles Kings": 3700,
+    "Nashville Predators": 4100,
+    "Anaheim Ducks": 5100,
+    "Seattle Kraken": 8200,
+    "Winnipeg Jets": 9500,
+    "Calgary Flames": 22500,
+    "Chicago Blackhawks": 52500,
+    "Vancouver Canucks": 80000
   },
   "division": {
-    "Boston Bruins": 7600,
-    "Montreal Canadiens": 750,
-    "Tampa Bay Lightning": 225,
+    "Boston Bruins": 1250,
+    "Montreal Canadiens": 575,
+    "Tampa Bay Lightning": 165,
     "Toronto Maple Leafs": 2400,
-    "Florida Panthers": 140,
-    "Detroit Red Wings": 10000,
-    "Buffalo Sabres": 850,
-    "Ottawa Senators": 890,
-    "Columbus Blue Jackets": 1900,
-    "Washington Capitals": 245,
-    "New Jersey Devils": 900,
-    "Philadelphia Flyers": 1800,
-    "Carolina Hurricanes": -111,
-    "New York Islanders": 6600,
-    "Pittsburgh Penguins": 3900,
-    "New York Rangers": 1800,
-    "Colorado Avalanche": 165,
-    "Chicago Blackhawks": 25000,
-    "St. Louis Blues": 1600,
-    "Winnipeg Jets": 4600,
-    "Utah Mammoth": 705,
-    "Nashville Predators": 2000,
-    "Dallas Stars": 400,
-    "Minnesota Wild": 260,
-    "Vancouver Canucks": 30000,
-    "Anaheim Ducks": 800,
-    "Calgary Flames": 30000,
-    "Vegas Golden Knights": 160,
-    "Los Angeles Kings": 775,
-    "Seattle Kraken": 10100,
-    "Edmonton Oilers": 160,
-    "San Jose Sharks": 900
+    "Florida Panthers": 285,
+    "Detroit Red Wings": 6400,
+    "Buffalo Sabres": 1300,
+    "Ottawa Senators": 700,
+    "Columbus Blue Jackets": 12500,
+    "Washington Capitals": 655,
+    "New Jersey Devils": 425,
+    "Philadelphia Flyers": 33500,
+    "Carolina Hurricanes": -280,
+    "New York Islanders": 7600,
+    "Pittsburgh Penguins": 12500,
+    "New York Rangers": 13500,
+    "Colorado Avalanche": 185,
+    "Chicago Blackhawks": 200000,
+    "St. Louis Blues": 7000,
+    "Winnipeg Jets": 19500,
+    "Utah Mammoth": 595,
+    "Nashville Predators": 7000,
+    "Dallas Stars": 425,
+    "Minnesota Wild": 155,
+    "Vancouver Canucks": 300000,
+    "Anaheim Ducks": 4500,
+    "Calgary Flames": 42500,
+    "Vegas Golden Knights": 196,
+    "Los Angeles Kings": 4100,
+    "Seattle Kraken": 4000,
+    "Edmonton Oilers": -200,
+    "San Jose Sharks": 4500
   },
   "playoffs": {
     "Boston Bruins": {
-      "yes": 290,
-      "no": -370
+      "yes": -125,
+      "no": -105
     },
     "Montreal Canadiens": {
-      "yes": -170,
-      "no": 140
+      "yes": -200,
+      "no": 165
     },
     "Tampa Bay Lightning": {
-      "yes": -505,
-      "no": 390
-    },
-    "Toronto Maple Leafs": {
-      "yes": 105,
-      "no": -135
-    },
-    "Florida Panthers": {
-      "yes": -775,
-      "no": 555
-    },
-    "Detroit Red Wings": {
-      "yes": 260,
-      "no": -330
-    },
-    "Buffalo Sabres": {
-      "yes": -110,
-      "no": -120
-    },
-    "Ottawa Senators": {
-      "yes": -110,
-      "no": -120
-    },
-    "Columbus Blue Jackets": {
-      "yes": 120,
-      "no": -150
-    },
-    "Washington Capitals": {
-      "yes": -300,
-      "no": -300
-    },
-    "New Jersey Devils": {
-      "yes": -145,
-      "no": 115
-    },
-    "Philadelphia Flyers": {
-      "yes": 135,
-      "no": -165
-    },
-    "Carolina Hurricanes": {
-      "yes": -1000,
-      "no": 675
-    },
-    "New York Islanders": {
-      "yes": 210,
-      "no": -260
-    },
-    "Pittsburgh Penguins": {
-      "yes": 220,
-      "no": -275
-    },
-    "New York Rangers": {
-      "yes": 185,
-      "no": -230
-    },
-    "Colorado Avalanche": {
-      "yes": -1150,
-      "no": 750
-    },
-    "Chicago Blackhawks": {
-      "yes": 550,
-      "no": -765
-    },
-    "St. Louis Blues": {
-      "yes": 195,
-      "no": -240
-    },
-    "Winnipeg Jets": {
-      "yes": 225,
-      "no": -280
-    },
-    "Utah Mammoth": {
-      "yes": -165,
-      "no": 135
-    },
-    "Nashville Predators": {
-      "yes": 225,
-      "no": -280
-    },
-    "Dallas Stars": {
-      "yes": -460,
-      "no": 360
-    },
-    "Minnesota Wild": {
-      "yes": -470,
-      "no": 365
-    },
-    "Vancouver Canucks": {
-      "yes": 1100,
-      "no": -1950
-    },
-    "Anaheim Ducks": {
-      "yes": -110,
-      "no": -120
-    },
-    "Calgary Flames": {
-      "yes": 1000,
-      "no": -1700
-    },
-    "Vegas Golden Knights": {
       "yes": -635,
       "no": 470
     },
+    "Toronto Maple Leafs": {
+      "yes": 140,
+      "no": -170
+    },
+    "Florida Panthers": {
+      "yes": -415,
+      "no": 325
+    },
+    "Detroit Red Wings": {
+      "yes": 475,
+      "no": -645
+    },
+    "Buffalo Sabres": {
+      "yes": -120,
+      "no": -110
+    },
+    "Ottawa Senators": {
+      "yes": -165,
+      "no": 135
+    },
+    "Columbus Blue Jackets": {
+      "yes": 275,
+      "no": -350
+    },
+    "Washington Capitals": {
+      "yes": -350,
+      "no": 275
+    },
+    "New Jersey Devils": {
+      "yes": -485,
+      "no": 375
+    },
+    "Philadelphia Flyers": {
+      "yes": 475,
+      "no": -645
+    },
+    "Carolina Hurricanes": {
+      "yes": -8200,
+      "no": 2300
+    },
+    "New York Islanders": {
+      "yes": 305,
+      "no": -390
+    },
+    "Pittsburgh Penguins": {
+      "yes": 240,
+      "no": -300
+    },
+    "New York Rangers": {
+      "yes": 285,
+      "no": -360
+    },
+    "Colorado Avalanche": {
+      "yes": -2100,
+      "no": 1150
+    },
+    "Chicago Blackhawks": {
+      "yes": 1850,
+      "no": -4800
+    },
+    "St. Louis Blues": {
+      "yes": 135,
+      "no": -165
+    },
+    "Winnipeg Jets": {
+      "yes": 295,
+      "no": -375
+    },
+    "Utah Mammoth": {
+      "yes": -440,
+      "no": 345
+    },
+    "Nashville Predators": {
+      "yes": 175,
+      "no": -215
+    },
+    "Dallas Stars": {
+      "yes": -715,
+      "no": 515
+    },
+    "Minnesota Wild": {
+      "yes": -2150,
+      "no": 1200
+    },
+    "Vancouver Canucks": {
+      "yes": 5000,
+      "no": -27500
+    },
+    "Anaheim Ducks": {
+      "yes": 140,
+      "no": -170
+    },
+    "Calgary Flames": {
+      "yes": 925,
+      "no": -1500
+    },
+    "Vegas Golden Knights": {
+      "yes": -2250,
+      "no": 1200
+    },
     "Los Angeles Kings": {
-      "yes": -185,
-      "no": 150
+      "yes": -110,
+      "no": -120
     },
     "Seattle Kraken": {
-      "yes": 575,
-      "no": -805
+      "yes": 240,
+      "no": -300
     },
     "Edmonton Oilers": {
-      "yes": -1100,
-      "no": 725
+      "yes": -10000,
+      "no": 2500
     },
     "San Jose Sharks": {
-      "yes": -140,
-      "no": 110
+      "yes": 155,
+      "no": -190
     }
   },
   "worst": {

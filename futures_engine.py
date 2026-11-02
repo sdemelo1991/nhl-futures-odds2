@@ -534,7 +534,7 @@ def book_th(b, cls, market=None):
     upd = ""
     if b == "kalshi":
         upd = "<br><span class='upd'>liq @ best · $300 min</span>"
-    elif is_manual(b) or (b == "fanduel" and market == "award:jack_adams"):
+    elif is_manual(b) or b == "draftkings" or (b == "fanduel" and market == "award:jack_adams"):
         when = BOOK_MARKET_UPDATED.get(b, {}).get(market) or BOOK_UPDATED.get(b)
         if when:
             upd = f"<br><span class='upd'>updated {esc(fmt_updated(when))}</span>"
@@ -813,32 +813,33 @@ def render_to_win(data, sharp_cols, nonsharp_cols):
     with t_cup:
         rows = {t: p for t, p in data["to_win"]["cup"].items() if p}
         card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
-                             liq=liq_of("cup"), hist=PRICE_HISTORY.get("cup")),
+                             liq=liq_of("cup"), hist=PRICE_HISTORY.get("cup"), market="cup"),
              "Stanley Cup — To Win")
     with t_conf:
         for conf in CONFERENCES:
             rows = {t: data["to_win"]["conference"].get(t, {}) for t in teams_in(conference=conf)
                     if data["to_win"]["conference"].get(t)}
             card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
-                                 liq=liq_of("conference"), hist=PRICE_HISTORY.get("conference")),
+                                 liq=liq_of("conference"), hist=PRICE_HISTORY.get("conference"), market="conference"),
                  f"{conf}ern Conference")
     with t_div:
         for div in DIVISIONS:
             rows = {t: data["to_win"]["division"].get(t, {}) for t in teams_in(division=div)
                     if data["to_win"]["division"].get(t)}
             card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
-                                 hist=PRICE_HISTORY.get("division")), f"{div} Division")
+                                 hist=PRICE_HISTORY.get("division"), market="division"),
+                 f"{div} Division")
     with t_pres:
         pres = data["to_win"].get("presidents", {})
         rows = {t: pres.get(t, {}) for t in TEAMS if pres.get(t)}
         card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
-                             hist=PRICE_HISTORY.get("presidents")),
+                             hist=PRICE_HISTORY.get("presidents"), market="presidents"),
              "Most Points (Presidents' Trophy)")
     with t_worst:
         worst = data["to_win"].get("worst", {})
         rows = {t: worst.get(t, {}) for t in TEAMS if worst.get(t)}
         card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
-                             hist=PRICE_HISTORY.get("worst")),
+                             hist=PRICE_HISTORY.get("worst"), market="worst"),
              "Least Points (Worst Record)")
     with t_spec:
         sp = data.get("cup_specials", {}) or {}
@@ -852,7 +853,8 @@ def render_to_win(data, sharp_cols, nonsharp_cols):
             if rows:
                 any_sp = True
                 card(comparison_html(rows, sharp_cols, nonsharp_cols, sort_opt, consensus=CONSENSUS,
-                                     kind="player", name_hdr="Outcome"), title)
+                                     kind="player", name_hdr="Outcome", market=f"cup_specials:{kind}"),
+                     title)
         if not any_sp:
             st.info("No Cup Specials prices yet — they populate the next time a book "
                     "that lists them is refreshed (FanDuel, theScore, DAZN, Betano, etc.).")
@@ -905,7 +907,7 @@ def render_playoffs(data, sharp_cols, nonsharp_cols):
 
     th = ["<th class='name logocell'>Team</th>"]
     for b in all_books:
-        th.append(book_th(b, bkcls(b)))
+        th.append(book_th(b, bkcls(b), "playoffs"))
     th.append("<th>Best Yes</th><th>Best No</th>")
     body = []
     for team in sort_labels(rows, sort_opt):
@@ -1065,7 +1067,7 @@ def render_team_points(data, sharp_cols, nonsharp_cols):
     # ---- All-teams grid (third component) ----
     st.divider()
     st.markdown("#### All Teams — Points O/U by Book")
-    gth = [f"<th class='name logocell'>Team</th>"] + [book_th(b, bkcls(b)) for b in all_books]
+    gth = [f"<th class='name logocell'>Team</th>"] + [book_th(b, bkcls(b), "team_points") for b in all_books]
     gbody = []
     for team in sorted(teams_with):
         tds = [f"<td class='name logocell'>{team_logo(team)}</td>"]
