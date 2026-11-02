@@ -724,7 +724,7 @@
       "fanduel": {
         "line": 102.5,
         "over": -108,
-        "under": -115
+        "under": -118
       },
       "kambi": {
         "line": 100.5,
@@ -1039,7 +1039,7 @@
       "fanduel": {
         "line": 102.5,
         "over": -120,
-        "under": -106
+        "under": -108
       },
       "kambi": {
         "line": 102.5,
@@ -2352,7 +2352,7 @@
           "betano": -167,
           "draftkings": -165,
           "fanduel": -220,
-          "kalshi": -306
+          "kalshi": -404
         }
       },
       "Nathan MacKinnon": {
@@ -6173,7 +6173,7 @@
     },
     "San Jose Sharks": {
       "yes": {
-        "fanduel": 122,
+        "fanduel": 124,
         "kambi": -112,
         "betonline": 120,
         "caesars": -105,
@@ -8012,7 +8012,7 @@
         "draftkings": 3000
       },
       "San Jose Sharks": {
-        "fanduel": 2000,
+        "fanduel": 2200,
         "kambi": 2000,
         "betmgm": 2800,
         "betonline": 1600,
@@ -8266,7 +8266,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-11-02 10:57",
+    "last_updated": "2026-11-02 11:07",
     "book_updated": {
       "dazn": "2026-11-02",
       "fanduel": "2026-11-02",
@@ -11468,10 +11468,10 @@
   "liq": {
     "cup": {
       "Washington Capitals": {
-        "kalshi": 684783
+        "kalshi": 684780
       },
       "Colorado Avalanche": {
-        "kalshi": 139816
+        "kalshi": 139814
       },
       "Tampa Bay Lightning": {
         "kalshi": 121561
@@ -11502,13 +11502,13 @@
         "kalshi": 40345
       },
       "Florida Panthers": {
-        "kalshi": 133344
+        "kalshi": 133346
       },
       "Carolina Hurricanes": {
-        "kalshi": 551774
+        "kalshi": 551669
       },
       "San Jose Sharks": {
-        "kalshi": 105484
+        "kalshi": 105485
       },
       "Anaheim Ducks": {
         "kalshi": 147581
@@ -11517,7 +11517,7 @@
         "kalshi": 167020
       },
       "Minnesota Wild": {
-        "kalshi": 607115
+        "kalshi": 607124
       },
       "Buffalo Sabres": {
         "kalshi": 142367
@@ -11571,7 +11571,7 @@
         "kalshi": 4786
       },
       "Edmonton Oilers": {
-        "kalshi": 5538
+        "kalshi": 4538
       },
       "Toronto Maple Leafs": {
         "kalshi": 340
@@ -11580,7 +11580,7 @@
         "kalshi": 3510
       },
       "Montreal Canadiens": {
-        "kalshi": 2752
+        "kalshi": 2702
       },
       "Carolina Hurricanes": {
         "kalshi": 2707
@@ -11633,7 +11633,7 @@
         "kalshi": 409
       },
       "Connor McDavid": {
-        "kalshi": 310
+        "kalshi": 336
       },
       "Nikita Kucherov": {
         "kalshi": 1543
@@ -11651,7 +11651,7 @@
         "kalshi": 312
       },
       "Macklin Celebrini": {
-        "kalshi": 300
+        "kalshi": 322
       },
       "Sidney Crosby": {
         "kalshi": 715
