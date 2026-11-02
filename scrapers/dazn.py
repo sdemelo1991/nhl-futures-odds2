@@ -253,7 +253,7 @@ def main():
         "to_win": {"cup": set(), "presidents": set(), "conference": set(),
                    "division": set(), "worst": set()},
         "playoffs_yes": set(), "playoffs_no": set(),
-        "awards": {cat: set() for cat in set(AWARD_KW.values())},
+        "awards": {},  # a category is only tracked once its full event list was fetched
         "cup_specials": {"conf": set(), "div": set(), "state": set()},
     }
     route(payloads, doc, counts, unmatched, seen, tracked, live=is_live)  # per-event full lists
