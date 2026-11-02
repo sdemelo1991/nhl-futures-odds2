@@ -1690,8 +1690,8 @@
           "betonline": 1000,
           "caesars": 400,
           "bet365": 450,
-          "betano": 1700,
-          "dazn": 1700,
+          "betano": 1900,
+          "dazn": 1900,
           "draftkings": 1800,
           "fanduel": 2000
         }
@@ -1703,8 +1703,8 @@
           "betonline": 250,
           "caesars": 275,
           "bet365": 250,
-          "betano": 250,
-          "dazn": 250,
+          "betano": 275,
+          "dazn": 275,
           "draftkings": 255,
           "fanduel": 300
         }
@@ -1729,7 +1729,7 @@
           "betonline": 650,
           "caesars": 900,
           "bet365": 850,
-          "betano": 700,
+          "betano": 600,
           "draftkings": 700,
           "fanduel": 500
         }
@@ -1741,8 +1741,8 @@
           "betonline": 1400,
           "caesars": 950,
           "bet365": 1000,
-          "betano": 900,
-          "dazn": 900,
+          "betano": 1300,
+          "dazn": 1300,
           "draftkings": 1000,
           "fanduel": 1700
         }
@@ -1754,8 +1754,8 @@
           "betonline": 1000,
           "caesars": 700,
           "bet365": 800,
-          "betano": 1200,
-          "dazn": 1200,
+          "betano": 1700,
+          "dazn": 1700,
           "draftkings": 1200,
           "fanduel": 2200
         }
@@ -1767,8 +1767,8 @@
           "betonline": 4000,
           "caesars": 3000,
           "bet365": 3500,
-          "betano": 9900,
-          "dazn": 9900,
+          "betano": 7400,
+          "dazn": 7400,
           "draftkings": 10000,
           "fanduel": 4500
         }
@@ -1780,8 +1780,8 @@
           "betonline": 1600,
           "caesars": 1300,
           "bet365": 1500,
-          "betano": 900,
-          "dazn": 900,
+          "betano": 1300,
+          "dazn": 1300,
           "draftkings": 1000,
           "fanduel": 1700
         }
@@ -1793,8 +1793,8 @@
           "betonline": 4000,
           "caesars": 3500,
           "bet365": 4000,
-          "betano": 9900,
-          "dazn": 9900,
+          "betano": 6900,
+          "dazn": 6900,
           "draftkings": 10000,
           "fanduel": 3500
         }
@@ -1806,8 +1806,8 @@
           "betonline": 1800,
           "caesars": 2400,
           "bet365": 2500,
-          "betano": 7400,
-          "dazn": 7400,
+          "betano": 5400,
+          "dazn": 5400,
           "draftkings": 7500,
           "fanduel": 3500
         }
@@ -1834,7 +1834,7 @@
           "betonline": 6600,
           "caesars": 6500,
           "bet365": 6000,
-          "betano": 14900,
+          "betano": 12400,
           "draftkings": 15000,
           "fanduel": 10000
         }
@@ -1893,7 +1893,7 @@
           "betonline": 8000,
           "caesars": 7500,
           "kambi": 10000,
-          "betano": 14900,
+          "betano": 12400,
           "draftkings": 15000,
           "fanduel": 8000
         }
@@ -1925,8 +1925,8 @@
           "betonline": 1200,
           "kambi": 1300,
           "caesars": 1600,
-          "betano": 1400,
-          "dazn": 1400,
+          "betano": 1200,
+          "dazn": 1200,
           "draftkings": 1500,
           "fanduel": 950
         }
@@ -1949,7 +1949,9 @@
           "kambi": 8000,
           "betonline": 6600,
           "caesars": 9000,
-          "fanduel": 6500
+          "fanduel": 6500,
+          "dazn": 6400,
+          "betano": 6400
         }
       },
       "Caleb Desnoyers": {
@@ -1981,8 +1983,8 @@
           "caesars": 2800,
           "betonline": 3300,
           "bet365": 3000,
-          "betano": 2900,
-          "dazn": 2900,
+          "betano": 4900,
+          "dazn": 4900,
           "draftkings": 3000,
           "fanduel": 6500
         }
@@ -2097,8 +2099,8 @@
         "prices": {
           "betonline": 10000,
           "kambi": 15000,
-          "betano": 29900,
-          "dazn": 29900,
+          "betano": 24900,
+          "dazn": 24900,
           "draftkings": 30000,
           "fanduel": 15000
         }
@@ -2158,8 +2160,8 @@
         "prices": {
           "kambi": 1100,
           "betonline": 4000,
-          "betano": 1400,
-          "dazn": 1400,
+          "betano": 1600,
+          "dazn": 1600,
           "draftkings": 1500,
           "fanduel": 1600
         }
@@ -2259,7 +2261,9 @@
         "prices": {
           "kambi": 10000,
           "caesars": 7500,
-          "fanduel": 10000
+          "fanduel": 10000,
+          "dazn": 9900,
+          "betano": 9900
         }
       },
       "Adam Jiricek": {
@@ -2277,8 +2281,8 @@
           "kambi": 4000,
           "caesars": 1100,
           "bet365": 1200,
-          "betano": 3400,
-          "dazn": 3400,
+          "betano": 2100,
+          "dazn": 2100,
           "draftkings": 3500,
           "fanduel": 1000
         }
@@ -2328,7 +2332,7 @@
       "Roger Mcqueen": {
         "team": "",
         "prices": {
-          "dazn": 14900
+          "dazn": 12400
         }
       },
       "Jake O'brien": {
@@ -8262,7 +8266,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-11-02 10:27",
+    "last_updated": "2026-11-02 10:37",
     "book_updated": {
       "dazn": "2026-11-02",
       "fanduel": "2026-11-02",
