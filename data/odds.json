@@ -34,9 +34,9 @@
     },
     "Buffalo Sabres": {
       "betonline": {
-        "line": 94.5,
-        "over": -115,
-        "under": -115
+        "line": 97.5,
+        "over": 100,
+        "under": -130
       },
       "caesars": {
         "line": 96.5,
@@ -108,9 +108,9 @@
         "under": -111
       },
       "betonline": {
-        "line": 91.5,
-        "over": -115,
-        "under": -115
+        "line": 89.5,
+        "over": -130,
+        "under": 100
       },
       "caesars": {
         "line": 91.5,
@@ -224,7 +224,7 @@
         "under": 100
       },
       "betonline": {
-        "line": 87.5,
+        "line": 86.5,
         "over": -130,
         "under": 100
       },
@@ -256,7 +256,7 @@
         "under": -106
       },
       "betonline": {
-        "line": 102.5,
+        "line": 106.5,
         "over": -130,
         "under": 100
       },
@@ -325,9 +325,9 @@
         "under": 100
       },
       "betonline": {
-        "line": 87.5,
-        "over": -130,
-        "under": 100
+        "line": 88.5,
+        "over": -145,
+        "under": 115
       },
       "caesars": {
         "line": 87.5,
@@ -367,7 +367,7 @@
         "under": -115
       },
       "betonline": {
-        "line": 86.5,
+        "line": 85.5,
         "over": -115,
         "under": -115
       },
@@ -394,9 +394,9 @@
     },
     "Philadelphia Flyers": {
       "betonline": {
-        "line": 85.5,
-        "over": -115,
-        "under": -115
+        "line": 83.5,
+        "over": -130,
+        "under": 100
       },
       "caesars": {
         "line": 83.5,
@@ -479,8 +479,8 @@
       },
       "betonline": {
         "line": 85.5,
-        "over": -115,
-        "under": -115
+        "over": -130,
+        "under": 100
       },
       "caesars": {
         "line": 85.5,
@@ -547,7 +547,7 @@
         "under": -118
       },
       "betonline": {
-        "line": 102.5,
+        "line": 101.5,
         "over": -115,
         "under": -115
       },
@@ -663,9 +663,9 @@
         "under": -120
       },
       "betonline": {
-        "line": 68.5,
-        "over": 100,
-        "under": -130
+        "line": 67.5,
+        "over": 115,
+        "under": -145
       },
       "caesars": {
         "line": 69.5,
@@ -759,9 +759,9 @@
         "under": -118
       },
       "betonline": {
-        "line": 89.5,
-        "over": 100,
-        "under": -130
+        "line": 87.5,
+        "over": -115,
+        "under": -115
       },
       "caesars": {
         "line": 87.5,
@@ -791,9 +791,9 @@
         "under": -120
       },
       "betonline": {
-        "line": 111.5,
-        "over": -110,
-        "under": -120
+        "line": 114.5,
+        "over": 100,
+        "under": -130
       },
       "caesars": {
         "line": 111.5,
@@ -818,7 +818,7 @@
     },
     "Ottawa Senators": {
       "betonline": {
-        "line": 96.5,
+        "line": 95.5,
         "over": -115,
         "under": -115
       },
@@ -856,8 +856,8 @@
       },
       "betonline": {
         "line": 90.5,
-        "over": -130,
-        "under": 100
+        "over": 100,
+        "under": -130
       },
       "caesars": {
         "line": 91.5,
@@ -882,9 +882,9 @@
         "under": -112
       },
       "betonline": {
-        "line": 90.5,
-        "over": -115,
-        "under": -115
+        "line": 88.5,
+        "over": 100,
+        "under": -130
       },
       "caesars": {
         "line": 92.5,
@@ -946,7 +946,7 @@
         "under": -112
       },
       "betonline": {
-        "line": 110.5,
+        "line": 109.5,
         "over": -115,
         "under": -115
       },
@@ -979,8 +979,8 @@
       },
       "betonline": {
         "line": 87.5,
-        "over": 100,
-        "under": -130
+        "over": -115,
+        "under": -115
       },
       "caesars": {
         "line": 86.5,
@@ -1010,7 +1010,7 @@
         "under": 100
       },
       "betonline": {
-        "line": 102.5,
+        "line": 104.5,
         "over": -130,
         "under": 100
       },
@@ -1047,7 +1047,7 @@
         "under": -112
       },
       "betonline": {
-        "line": 104.5,
+        "line": 102.5,
         "over": -115,
         "under": -115
       },
@@ -6501,7 +6501,7 @@
         "bet365": 475,
         "dazn": 350,
         "draftkings": 500,
-        "kalshi": 456
+        "kalshi": 490
       },
       "Montreal Canadiens": {
         "pinnacle": 1242,
@@ -6843,7 +6843,7 @@
         "betmgm": 800,
         "dazn": 800,
         "draftkings": 850,
-        "kalshi": 1074
+        "kalshi": 841
       },
       "Vancouver Canucks": {
         "pinnacle": 50000,
@@ -8262,7 +8262,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-11-02 10:07",
+    "last_updated": "2026-11-02 10:17",
     "book_updated": {
       "dazn": "2026-11-02",
       "fanduel": "2026-11-02",
@@ -11467,7 +11467,7 @@
         "kalshi": 684783
       },
       "Colorado Avalanche": {
-        "kalshi": 139815
+        "kalshi": 139816
       },
       "Tampa Bay Lightning": {
         "kalshi": 121561
@@ -11501,7 +11501,7 @@
         "kalshi": 133461
       },
       "Carolina Hurricanes": {
-        "kalshi": 551769
+        "kalshi": 551774
       },
       "San Jose Sharks": {
         "kalshi": 105484
@@ -11513,7 +11513,7 @@
         "kalshi": 167020
       },
       "Minnesota Wild": {
-        "kalshi": 607118
+        "kalshi": 607113
       },
       "Buffalo Sabres": {
         "kalshi": 142367
@@ -11540,7 +11540,7 @@
       },
       "Nashville Predators": {},
       "Utah Mammoth": {
-        "kalshi": 556
+        "kalshi": 4737
       },
       "Seattle Kraken": {
         "kalshi": 5264
@@ -11573,7 +11573,7 @@
         "kalshi": 340
       },
       "Ottawa Senators": {
-        "kalshi": 1010
+        "kalshi": 3510
       },
       "Montreal Canadiens": {
         "kalshi": 2702
@@ -11609,7 +11609,7 @@
         "kalshi": 445
       },
       "Washington Capitals": {
-        "kalshi": 2686
+        "kalshi": 2844
       }
     },
     "hart": {
@@ -11629,7 +11629,7 @@
         "kalshi": 409
       },
       "Connor McDavid": {
-        "kalshi": 313
+        "kalshi": 310
       },
       "Nikita Kucherov": {
         "kalshi": 1543
