@@ -501,8 +501,8 @@
     "Detroit Red Wings": {
       "fanduel": {
         "line": 82.5,
-        "over": -122,
-        "under": -104
+        "over": -120,
+        "under": -106
       },
       "kambi": {
         "line": 82.5,
@@ -723,8 +723,8 @@
     "Utah Mammoth": {
       "fanduel": {
         "line": 102.5,
-        "over": -108,
-        "under": -118
+        "over": -111,
+        "under": -115
       },
       "kambi": {
         "line": 100.5,
@@ -1039,7 +1039,7 @@
       "fanduel": {
         "line": 102.5,
         "over": -120,
-        "under": -108
+        "under": -106
       },
       "kambi": {
         "line": 102.5,
@@ -5834,7 +5834,7 @@
     },
     "Dallas Stars": {
       "yes": {
-        "fanduel": -530,
+        "fanduel": -560,
         "kambi": -500,
         "betonline": -550,
         "caesars": -500,
@@ -6733,7 +6733,7 @@
       },
       "Edmonton Oilers": {
         "pinnacle": 390,
-        "fanduel": 430,
+        "fanduel": 440,
         "kambi": 400,
         "betano": 400,
         "betonline": 425,
@@ -7696,8 +7696,8 @@
         "caesars": 170,
         "bet365": 160,
         "circa": 225,
-        "dazn": 225,
-        "betano": 225,
+        "dazn": 200,
+        "betano": 200,
         "draftkings": 240
       },
       "Montreal Canadiens": {
@@ -7708,8 +7708,8 @@
         "caesars": 800,
         "bet365": 900,
         "circa": 750,
-        "dazn": 500,
-        "betano": 500,
+        "dazn": 550,
+        "betano": 550,
         "draftkings": 500
       },
       "Buffalo Sabres": {
@@ -7744,8 +7744,8 @@
         "caesars": 600,
         "bet365": 650,
         "circa": 890,
-        "dazn": 800,
-        "betano": 800,
+        "dazn": 850,
+        "betano": 850,
         "draftkings": 750
       },
       "Detroit Red Wings": {
@@ -7768,8 +7768,8 @@
         "caesars": 1300,
         "bet365": 1200,
         "circa": 7600,
-        "dazn": 700,
-        "betano": 700,
+        "dazn": 750,
+        "betano": 750,
         "draftkings": 700
       },
       "Colorado Avalanche": {
@@ -8267,7 +8267,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-11-02 11:57",
+    "last_updated": "2026-11-02 12:07",
     "book_updated": {
       "dazn": "2026-11-02",
       "fanduel": "2026-11-02",
