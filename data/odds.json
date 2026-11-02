@@ -2345,21 +2345,21 @@
         "team": "",
         "prices": {
           "kambi": -200,
-          "betonline": 100,
+          "betonline": -200,
           "caesars": 160,
           "bet365": 175,
           "circa": 240,
           "betano": -167,
           "draftkings": -165,
           "fanduel": -220,
-          "kalshi": -404
+          "kalshi": -306
         }
       },
       "Nathan MacKinnon": {
         "team": "",
         "prices": {
           "kambi": 800,
-          "betonline": 650,
+          "betonline": 800,
           "caesars": 375,
           "bet365": 350,
           "circa": 325,
@@ -2373,7 +2373,7 @@
         "team": "",
         "prices": {
           "kambi": 2000,
-          "betonline": 750,
+          "betonline": 1500,
           "caesars": 550,
           "bet365": 550,
           "circa": 425,
@@ -2388,7 +2388,7 @@
         "team": "",
         "prices": {
           "kambi": 1800,
-          "betonline": 1400,
+          "betonline": 2000,
           "caesars": 1500,
           "bet365": 1600,
           "circa": 1000,
@@ -2403,7 +2403,7 @@
         "team": "",
         "prices": {
           "kambi": 2000,
-          "betonline": 1400,
+          "betonline": 2000,
           "caesars": 1400,
           "bet365": 1500,
           "circa": 875,
@@ -2418,7 +2418,7 @@
         "team": "",
         "prices": {
           "kambi": 1000,
-          "betonline": 900,
+          "betonline": 950,
           "caesars": 1200,
           "bet365": 1200,
           "circa": 2000,
@@ -2433,7 +2433,7 @@
         "team": "",
         "prices": {
           "kambi": 3000,
-          "betonline": 1800,
+          "betonline": 2500,
           "caesars": 2500,
           "bet365": 2500,
           "circa": 2800,
@@ -2448,7 +2448,7 @@
         "team": "",
         "prices": {
           "kambi": 3000,
-          "betonline": 2800,
+          "betonline": 3300,
           "caesars": 2400,
           "bet365": 2200,
           "circa": 1600,
@@ -2463,7 +2463,7 @@
         "team": "",
         "prices": {
           "kambi": 3500,
-          "betonline": 2800,
+          "betonline": 3300,
           "caesars": 3000,
           "bet365": 2800,
           "circa": 2500,
@@ -2478,7 +2478,7 @@
         "team": "",
         "prices": {
           "kambi": 2000,
-          "betonline": 1800,
+          "betonline": 2000,
           "caesars": 3000,
           "bet365": 3500,
           "circa": 6000,
@@ -2493,7 +2493,7 @@
         "team": "",
         "prices": {
           "kambi": 8000,
-          "betonline": 4000,
+          "betonline": 6600,
           "caesars": 4000,
           "bet365": 4000,
           "circa": 6000,
@@ -2507,7 +2507,7 @@
         "team": "",
         "prices": {
           "kambi": 7500,
-          "betonline": 4000,
+          "betonline": 6600,
           "caesars": 4000,
           "bet365": 5000,
           "circa": 4500,
@@ -2521,7 +2521,7 @@
         "team": "",
         "prices": {
           "kambi": 5000,
-          "betonline": 6600,
+          "betonline": 10000,
           "caesars": 3500,
           "bet365": 3000,
           "circa": 7500,
@@ -2535,7 +2535,7 @@
         "team": "",
         "prices": {
           "kambi": 4000,
-          "betonline": 6000,
+          "betonline": 7500,
           "caesars": 7000,
           "bet365": 6000,
           "circa": 7000,
@@ -2549,7 +2549,7 @@
         "team": "",
         "prices": {
           "kambi": 6000,
-          "betonline": 6000,
+          "betonline": 6600,
           "caesars": 7000,
           "bet365": 6000,
           "circa": 5000,
@@ -2563,7 +2563,7 @@
         "team": "",
         "prices": {
           "kambi": 6000,
-          "betonline": 5000,
+          "betonline": 6600,
           "caesars": 5000,
           "bet365": 6000,
           "circa": 10000,
@@ -2578,7 +2578,7 @@
         "team": "",
         "prices": {
           "kambi": 10000,
-          "betonline": 8000,
+          "betonline": 10000,
           "caesars": 10000,
           "circa": 9000,
           "betano": 9900,
@@ -2651,7 +2651,7 @@
         "team": "",
         "prices": {
           "kambi": 5000,
-          "betonline": 5000,
+          "betonline": 6600,
           "caesars": 5000,
           "bet365": 5000,
           "circa": 12500,
@@ -2779,7 +2779,7 @@
         "team": "",
         "prices": {
           "kambi": 15000,
-          "betonline": 6000,
+          "betonline": 12500,
           "caesars": 7500,
           "bet365": 7500,
           "circa": 25000,
@@ -2820,7 +2820,7 @@
         "team": "",
         "prices": {
           "kambi": 6000,
-          "betonline": 3300,
+          "betonline": 6600,
           "bet365": 6000,
           "betano": 7900,
           "dazn": 7900,
@@ -2836,7 +2836,7 @@
         "team": "",
         "prices": {
           "kambi": 15000,
-          "betonline": 8000,
+          "betonline": 7500,
           "bet365": 8000,
           "betano": 12400,
           "dazn": 12400,
@@ -2852,7 +2852,7 @@
         "team": "",
         "prices": {
           "kambi": 20000,
-          "betonline": 5000,
+          "betonline": 10000,
           "caesars": 6500,
           "bet365": 5000,
           "betano": 14900,
@@ -2897,7 +2897,7 @@
         "team": "",
         "prices": {
           "kambi": 20000,
-          "betonline": 6000,
+          "betonline": 12500,
           "caesars": 6000,
           "bet365": 6000,
           "circa": 25000,
@@ -3119,7 +3119,7 @@
         "team": "",
         "prices": {
           "kambi": 10000,
-          "betonline": 6000,
+          "betonline": 10000,
           "caesars": 10000,
           "bet365": 6000,
           "betano": 14900,
@@ -3253,7 +3253,7 @@
         "team": "",
         "prices": {
           "kambi": 10000,
-          "betonline": 8000,
+          "betonline": 10000,
           "caesars": 10000,
           "circa": 30000,
           "draftkings": 8000
@@ -6520,7 +6520,7 @@
         "bet365": 1200,
         "dazn": 1100,
         "draftkings": 1400,
-        "kalshi": 685
+        "kalshi": 625
       },
       "New Jersey Devils": {
         "pinnacle": 652,
@@ -8266,7 +8266,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-11-02 11:27",
+    "last_updated": "2026-11-02 11:37",
     "book_updated": {
       "dazn": "2026-11-02",
       "fanduel": "2026-11-02",
@@ -11502,13 +11502,13 @@
         "kalshi": 40345
       },
       "Florida Panthers": {
-        "kalshi": 132621
+        "kalshi": 132620
       },
       "Carolina Hurricanes": {
         "kalshi": 551669
       },
       "San Jose Sharks": {
-        "kalshi": 105486
+        "kalshi": 105485
       },
       "Anaheim Ducks": {
         "kalshi": 147581
@@ -11577,10 +11577,10 @@
         "kalshi": 340
       },
       "Ottawa Senators": {
-        "kalshi": 1010
+        "kalshi": 3510
       },
       "Montreal Canadiens": {
-        "kalshi": 2702
+        "kalshi": 2774
       },
       "Carolina Hurricanes": {
         "kalshi": 2707
@@ -11633,7 +11633,7 @@
         "kalshi": 409
       },
       "Connor McDavid": {
-        "kalshi": 336
+        "kalshi": 313
       },
       "Nikita Kucherov": {
         "kalshi": 1543
