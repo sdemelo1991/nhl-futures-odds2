@@ -661,6 +661,11 @@
         "line": 64.5,
         "over": -112,
         "under": -112
+      },
+      "betmgm": {
+        "line": 62.5,
+        "over": -105,
+        "under": -125
       }
     },
     "Toronto Maple Leafs": {
@@ -2331,9 +2336,9 @@
           "bet365": 175,
           "circa": 240,
           "draftkings": -165,
-          "kalshi": -322,
           "kambi": -315,
-          "betano": -278
+          "betano": -278,
+          "kalshi": -381
         }
       },
       "Nathan MacKinnon": {
@@ -2344,9 +2349,9 @@
           "bet365": 350,
           "circa": 325,
           "draftkings": 800,
-          "kalshi": 331,
           "kambi": 1000,
-          "betano": 1200
+          "betano": 1200,
+          "kalshi": 331
         }
       },
       "Macklin Celebrini": {
@@ -2358,9 +2363,9 @@
           "circa": 425,
           "dazn": 1700,
           "draftkings": 1700,
-          "kalshi": 625,
           "kambi": 1500,
-          "betano": 1700
+          "betano": 1700,
+          "kalshi": 625
         }
       },
       "Leon Draisaitl": {
@@ -2372,9 +2377,9 @@
           "circa": 1000,
           "dazn": 1900,
           "draftkings": 2000,
-          "kalshi": 4579,
           "kambi": 2000,
-          "betano": 1900
+          "betano": 1900,
+          "kalshi": 4579
         }
       },
       "Nikita Kucherov": {
@@ -2386,9 +2391,9 @@
           "circa": 875,
           "dazn": 1700,
           "draftkings": 2000,
-          "kalshi": 890,
           "kambi": 1500,
-          "betano": 1700
+          "betano": 1700,
+          "kalshi": 890
         }
       },
       "Kirill Kaprizov": {
@@ -2400,9 +2405,9 @@
           "circa": 2000,
           "dazn": 900,
           "draftkings": 950,
-          "kalshi": 529,
           "kambi": 1000,
-          "betano": 900
+          "betano": 900,
+          "kalshi": 529
         }
       },
       "Auston Matthews": {
@@ -2414,9 +2419,9 @@
           "circa": 2800,
           "dazn": 3400,
           "draftkings": 3000,
-          "kalshi": 1074,
           "kambi": 2500,
-          "betano": 3400
+          "betano": 3400,
+          "kalshi": 1074
         }
       },
       "David Pastrnak": {
@@ -2428,9 +2433,9 @@
           "circa": 1600,
           "dazn": 5900,
           "draftkings": 3000,
-          "kalshi": 4825,
           "kambi": 5000,
-          "betano": 5900
+          "betano": 5900,
+          "kalshi": 4825
         }
       },
       "Jack Hughes": {
@@ -2442,9 +2447,9 @@
           "circa": 2500,
           "dazn": 3900,
           "draftkings": 3500,
-          "kalshi": 4579,
           "kambi": 4000,
-          "betano": 3900
+          "betano": 3900,
+          "kalshi": 4579
         }
       },
       "Jack Eichel": {
@@ -2456,9 +2461,9 @@
           "circa": 6000,
           "dazn": 1900,
           "draftkings": 2000,
-          "kalshi": 4579,
           "kambi": 1700,
-          "betano": 1900
+          "betano": 1900,
+          "kalshi": 4579
         }
       },
       "Mitchell Marner": {
@@ -2535,9 +2540,9 @@
           "circa": 10000,
           "dazn": 9900,
           "draftkings": 7500,
-          "kalshi": 4579,
           "kambi": 6000,
-          "betano": 9900
+          "betano": 9900,
+          "kalshi": 4579
         }
       },
       "Connor Bedard": {
@@ -2548,9 +2553,9 @@
           "circa": 9000,
           "dazn": 9900,
           "draftkings": 10000,
-          "kalshi": 4579,
           "kambi": 8000,
-          "betano": 9900
+          "betano": 9900,
+          "kalshi": 4579
         }
       },
       "Cole Caufield": {
@@ -2627,10 +2632,10 @@
           "betonline": 10000,
           "circa": 30000,
           "draftkings": 15000,
-          "kalshi": 5404,
           "kambi": 10000,
           "dazn": 19900,
-          "betano": 19900
+          "betano": 19900,
+          "kalshi": 5404
         }
       },
       "Ilya Sorokin": {
@@ -2701,10 +2706,10 @@
           "betonline": 10000,
           "circa": 30000,
           "draftkings": 10000,
-          "kalshi": 4825,
           "kambi": 10000,
           "dazn": 14900,
-          "betano": 14900
+          "betano": 14900,
+          "kalshi": 4825
         }
       },
       "Brandon Hagel": {
@@ -8350,7 +8355,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-11-09 10:52",
+    "last_updated": "2026-11-09 10:57",
     "book_updated": {
       "dazn": "2026-11-09",
       "fanduel": "2026-11-09",
@@ -11611,7 +11616,7 @@
         "kalshi": 142629
       },
       "Carolina Hurricanes": {
-        "kalshi": 599040
+        "kalshi": 599012
       },
       "San Jose Sharks": {
         "kalshi": 128281
@@ -11652,7 +11657,7 @@
         "kalshi": 4097
       },
       "Utah Mammoth": {
-        "kalshi": 4574
+        "kalshi": 4674
       },
       "Seattle Kraken": {},
       "St. Louis Blues": {
@@ -11739,7 +11744,7 @@
         "kalshi": 462
       },
       "Connor McDavid": {
-        "kalshi": 328
+        "kalshi": 502
       },
       "Nikita Kucherov": {
         "kalshi": 326
@@ -11757,7 +11762,7 @@
         "kalshi": 339
       },
       "Macklin Celebrini": {
-        "kalshi": 587
+        "kalshi": 630
       },
       "Sidney Crosby": {
         "kalshi": 765
