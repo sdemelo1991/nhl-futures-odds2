@@ -7,6 +7,11 @@
 # capture (see capture.py once built). Logs to live_refresh.log.
 $ErrorActionPreference = "Continue"
 Set-Location $PSScriptRoot
+# Start each run from the latest pushed odds. GitHub Actions also commits to
+# this branch; a stale local base makes the push below get rejected and the
+# local commits pile up unpushed.
+git fetch -q origin
+git reset -q --hard origin/main
 $ts  = Get-Date -Format "yyyy-MM-dd HH:mm"
 $log = "$PSScriptRoot\live_refresh.log"
 
